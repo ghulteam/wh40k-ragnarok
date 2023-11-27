@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="7" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/3QtaU2g" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="8" battleScribeVersion="2.03" authorName="GhuLTeAm" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
@@ -428,6 +428,7 @@
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -617,6 +618,7 @@
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -650,6 +652,7 @@
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -675,6 +678,74 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d71-2e6b-fc47-123d" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5250-c8e4-c1df-c101" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="a669-56e8-0aee-ba8d" name="Transport Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="d170-414b-15fa-343e" value="3.0">
+          <repeats>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="102b-272b-0d3c-2da0" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="113d-50e8-996e-70c3" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9991-47ca-82d2-1371" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06e1-90a4-1407-f38b" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7657-ae85-fd30-3993" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="d170-414b-15fa-343e" value="1.0">
+          <repeats>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb01-8e54-8822-7de4" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d170-414b-15fa-343e" type="max"/>
+      </constraints>
+      <forceEntries>
+        <forceEntry id="2623-75c5-176c-e2fa" name="Transport Detachment" hidden="false">
+          <categoryLinks>
+            <categoryLink id="ae30-b5f1-7c6d-9dd3" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
+            <categoryLink id="b0a9-092b-251b-4018" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
+            <categoryLink id="8da8-0329-fb5c-37f6" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+            <categoryLink id="7609-572a-307e-9258" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
+            <categoryLink id="bb6b-e4f4-d4e6-0afd" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
+            <categoryLink id="a521-2ed6-cb58-5053" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+            <categoryLink id="21cb-1def-6b1f-708d" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="04d9-c26f-6014-e4be" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
+        <categoryLink id="1c0d-33a9-9011-1264" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
+        <categoryLink id="0dbd-e55c-44c4-a67f" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1381-ae7d-590d-a08f" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3882-13fa-2a38-0771" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2ca5-2438-dca3-e8b8" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1db4-1f34-e15b-bf5a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d6ad-da68-4d4b-30d3" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2f89-bcd0-2fa7-434d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b431-934a-a13e-e723" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8503-a07c-b424-5460" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3e18-8c7f-1cb6-2376" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dcfe-0486-bcf8-bd5d" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>

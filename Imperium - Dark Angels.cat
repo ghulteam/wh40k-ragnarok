@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -23,7 +23,107 @@
     <categoryEntry id="e3bd-cef6-9d66-30f1" name="Ravenwing Black Knights" hidden="false"/>
     <categoryEntry id="aa71-2348-e01f-c59d" name="Dark Talon" hidden="false"/>
     <categoryEntry id="3bfb-ebb6-76f1-9343" name="Nephilim Jetfighter" hidden="false"/>
+    <categoryEntry id="11a0-e6a8-32a3-9620" name="Lion El&apos;Jonson" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="d678-5d37-d566-499f" name="Lion El&apos;Jonson" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="036f-4eb2-cda9-d51a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cdd7-bb3e-6c48-bdcd" name="Lion El&apos;Jonson" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">
+3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36a0-c3c8-376e-8cde" name="I Primarch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made by friendly DARK ANGELS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e8a-3950-b337-af2d" name="Forestwalker" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, this unit can be set up in Tactical Reserves instead of being set up on the battlefield. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 6&quot; from any enemy units. No more than half the total number of units in your army can be set up in Tactical Reserves.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="374c-c2fa-7f6a-c9d6" name="The Emperor&apos;s Shield" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Large blast markers must be removed before small blast markers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b489-73ef-82e8-cbc5" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="ab84-9b94-0e04-4240" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1483-0e54-97e2-e112" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="b59b-872f-f86d-ba3b" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="b90a-53d8-802c-6a56" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="90bb-0e69-87a0-6722" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="8652-27e9-351c-d027" name="Primarch" hidden="false" targetId="9376-59f2-9b7f-cce3" primary="false"/>
+        <categoryLink id="2df4-cd1d-e062-47bc" name="Lion El&apos;Jonson" hidden="false" targetId="11a0-e6a8-32a3-9620" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="da39-e13f-41b6-19b1" name="Arma Luminis" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="331d-8fa8-9ebc-b64f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3384-cffb-8fa8-0514" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f1b0-5037-3571-04f2" name="Arma Luminis" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="96f7-ed0a-e64f-209d" name="Fealty" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f9-3de5-16b4-5074" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22e0-7cc9-f6bb-113c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="caa5-c05d-4f6f-b906" name="Fealty" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="179b-59c1-8eda-16a6" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1d48-499f-b3d8-0aa1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
       <categoryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="47a8-3923-ccde-a7f4" name="Chaos - Legiones Daemonica" revision="6" battleScribeVersion="2.03" authorName="Mad Spy" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="47a8-3923-ccde-a7f4" name="Chaos - Legiones Daemonica" revision="7" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -2989,6 +2989,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="54ba-c224-9ea7-bbe5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="b074-565d-afb1-5479" name="Plagueswords" hidden="false" collective="false" import="true" targetId="b3ad-b936-78dc-c0ca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -7126,6 +7127,102 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a98-d05a-9cdc-48a3" name="Ka&apos;Bandha" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d3b-e535-814d-65f5" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="050f-bb85-5854-0ccc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7784-b73d-948b-36ba" name="Ka&apos;Bandha" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44cd-3159-ead7-6586" name="Emissary of the Blood God" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly KHORNE units can use this unit’s Leadership characteristic instead of their own whilst they are within 9&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef34-63c9-f905-b793" name="Scythe of Hatred" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, select a point in 8&quot; of this unit and draw a 1&quot; line between the selected point and the base of this unit. Roll a D12 for each enemy unit under the line; on a 10+ place one blast marker next to the unit being rolled for.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e81e-5fcc-7458-c3aa" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="1fcf-f723-3d23-1f67" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="a8d5-e857-216e-28c7" name="Faction: Khorne" hidden="false" targetId="46c0-996e-ee14-7c0a" primary="false"/>
+        <categoryLink id="9ea6-3add-7d63-c1d8" name="Faction: Daemon" hidden="false" targetId="87a6-0f8f-7d40-7deb" primary="false"/>
+        <categoryLink id="bd14-8e9f-a5b0-21e6" name="Faction: Legiones Daemonica" hidden="false" targetId="fab3-7acf-351d-537b" primary="false"/>
+        <categoryLink id="a212-b60f-2bb4-e5aa" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="2718-025f-8d24-dcf0" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="fb49-043b-4ea5-c839" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="a55e-60b2-3cc3-2fdd" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7957-7bd7-40da-6a37" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="5dd8-8318-35c2-93f2" name="Bloodthirster" hidden="false" targetId="f022-0576-f1c4-d167" primary="false"/>
+        <categoryLink id="eed0-1684-db3a-fc3d" name="An&apos;ggrath the Unbound" hidden="false" targetId="22c1-4d5c-d984-6087" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4a1b-dce9-2ca8-6b6b" name="Armaments of Ka&apos;bandha" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be21-804b-48d4-cd26" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7db0-5a03-ea57-844f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2e59-cced-6453-e5fc" name="Armaments of Ka&apos;bandha (Ranged)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9aec-6be7-ba98-af64" name="Armaments of Ka&apos;bandha (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dc06-bee7-c3ad-6e2f" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2e06-349c-60d2-6e6b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="28.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
