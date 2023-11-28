@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5a-b452-7741-6a5b" name="Library - Space Marines" revision="15" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df5a-b452-7741-6a5b" name="Library - Space Marines" revision="16" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -125,6 +125,9 @@
     <categoryEntry id="51a4-b9ba-ad85-7ad0" name="Desolation Squad" hidden="false"/>
     <categoryEntry id="54e0-77df-960c-b0b6" name="Assault Intercessor Squad" hidden="false"/>
     <categoryEntry id="4dd7-766e-63bf-72a2" name="Heavy Intercessor Squad" hidden="false"/>
+    <categoryEntry id="61e8-3175-9981-7f18" name="Bladeguard Veteran Squad" hidden="false"/>
+    <categoryEntry id="8293-b982-b93f-be0c" name="Brutalis Dreadnought" page="" hidden="false"/>
+    <categoryEntry id="af0f-a591-56a4-a662" name="Outrider Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11331,29 +11334,6 @@ otherwise, place one blast marker next to it.</characteristic>
         <categoryLink id="a7a3-5b49-6256-c12f" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="2137-7e89-16a2-b41c" name="Assault Intercessor Squad" hidden="false" targetId="54e0-77df-960c-b0b6" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4e41-9408-9331-2f00" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e7-b59a-461a-4326" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="349b-2446-6d77-e283" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="a8df-db65-c5d0-0185" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="adbc-ea5d-585e-5869" name="5 - 10 models" hidden="false" collective="false" import="true" targetId="dfca-1772-18d0-ab91" type="selectionEntryGroup"/>
         <entryLink id="ffea-3581-0df4-d28f" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry">
@@ -11363,6 +11343,7 @@ otherwise, place one blast marker next to it.</characteristic>
           </constraints>
         </entryLink>
         <entryLink id="72af-07aa-1c98-8101" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="0e8d-4a92-4c99-1a1a" name="Astartes Chainsword" hidden="false" collective="false" import="true" targetId="4d3b-aae8-2134-3b93" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -11463,6 +11444,256 @@ otherwise, place one blast marker next to it.</characteristic>
       </infoLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d3b-aae8-2134-3b93" name="Astartes Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be1-3636-2c36-bc34" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dc2-78a5-e8b1-1263" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="412d-7537-0f25-31cc" name="Astartes Chainsword" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5f0e-8649-1eff-2f56" name="Bladeguard Veteran Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="a906-1ece-0664-53c4" name="Primaris Profile" hidden="false" targetId="b2c7-a677-95c3-6c20" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Bladeguard Veteran Squad"/>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="5f0e-8649-1eff-2f56" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="22b9-04fc-1ee7-4808" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3ba5-b444-de82-4181" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="18aa-caa3-3fbe-ddd0" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f712-63fa-de9c-c354" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ef5a-3798-3a75-5796" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="6b99-72fa-7f45-a974" name="Bladeguard Veteran Squad" hidden="false" targetId="61e8-3175-9981-7f18" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6f9a-d25d-8c20-7d54" name="Master-Crafted Power Swords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d6-7d79-b8be-e36f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7494-d885-3768-6d0b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="48ee-aafe-7b0d-97fb" name="Master-Crafted Power Swords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6482-23d5-556f-17e2" name="3 - 6 models" hidden="false" collective="false" import="true" targetId="fd57-db55-b1b1-9b16" type="selectionEntryGroup"/>
+        <entryLink id="7134-c455-17d2-f167" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="95e1-c57d-b621-8bc7" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5614-7652-044a-1897" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e364-5e5d-2623-4201" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfa4-bb93-c2fd-0e83" name="Brutalis Dreadnought" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="50b5-11b6-7f31-bb15" name="Brutalis Dreadnought" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d25a-8878-09f8-76e5" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="5a29-527a-1f82-931a" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink id="8628-ade7-6ec5-4b64" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="924c-1b39-0c45-d029" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="b2f5-18d4-532b-337a" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="31d2-4873-a298-c553" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="142f-c649-a6cf-eed9" name="Brutalis Dreadnought" hidden="false" targetId="8293-b982-b93f-be0c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fb3d-a0a2-e0b1-be48" name="Brutalis Talons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a7-3419-589d-573e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f1-fc57-7181-ea88" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="74ef-6361-d4a8-e3a2" name="Brutalis Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cfb4-eff9-7fba-4cfe" name="Chest Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1761-fb59-9a56-1b8f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4747-8d2e-141b-e56c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2c3f-0b65-ca50-9caa" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
+            <entryLink id="687e-db56-2b5f-bb56" name="Twin Multi-melta" hidden="false" collective="false" import="true" targetId="8db9-b9be-885f-5a5f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d245-f863-4148-36a8" name="Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7a6-70f3-67b1-724c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce7-2fc3-def6-d085" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5626-81d6-d0e6-d7a0" name="Heavy Onslaught Gatling Cannon" hidden="false" collective="false" import="true" targetId="0c51-98df-45c7-060a" type="selectionEntry"/>
+            <entryLink id="18f5-86ea-b06d-5470" name="Macro Plasma Incinerator" hidden="false" collective="false" import="true" targetId="c155-f8af-a649-6407" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ff7f-f26f-de77-a7f0" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" collective="false" import="true" targetId="6747-6d07-cdbb-8414" type="selectionEntry"/>
+        <entryLink id="8c18-6879-a8bd-0665" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6747-6d07-cdbb-8414" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e810-f0be-f00d-678c" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f914-3a95-2bc4-8207" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c22e-1399-48d6-5839" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d6d5-1acf-31b2-f7e8" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24cc-a5c2-fec0-81b3" name="Outrider Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2f2c-1d89-cabb-af15" name="Outrider Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="63bf-b655-d716-fbe9" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="6ad1-f7d2-13c4-3f4a" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="49ea-134d-d073-a085" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="dd8a-5e18-e523-0ff3" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="2e62-b96a-1daa-d0a6" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="b2a6-5421-3ebc-56f3" name="Outrider Squad" hidden="false" targetId="af0f-a591-56a4-a662" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="eb77-3640-c66c-360e" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b922-fd7d-9c30-60c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="345b-0f62-94ea-4280" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5e15-e24f-4537-63fa" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e38a-a459-9c52-98cd" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Twin Bolt Rifles"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a006-3f7f-9f2d-b25d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b3-3860-1b2c-a297" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d908-1a81-1555-8d45" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="1d2b-3133-3e47-b42a" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b1-7903-11d9-6d42" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd0b-3544-98ee-c80d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -11671,6 +11902,11 @@ otherwise, place one blast marker next to it.</characteristic>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c608-6a5b-42d5-48e2" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="10.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61e8-3175-9981-7f18" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="a9ec-6432-91ba-f8bf" name="3 models" hidden="false" collective="false" import="true" targetId="973a-0f6f-0bb6-eb25" type="selectionEntry">
@@ -11683,6 +11919,11 @@ otherwise, place one blast marker next to it.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="11.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="57ca-d94a-0480-077c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="5.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61e8-3175-9981-7f18" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
