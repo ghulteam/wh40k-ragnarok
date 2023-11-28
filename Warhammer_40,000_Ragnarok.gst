@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Ragnarok" revision="8" battleScribeVersion="2.03" authorName="GhuLTeAm" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Ragnarok" revision="8" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
