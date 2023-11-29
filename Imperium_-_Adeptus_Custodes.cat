@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c992-ed63-7030-2691" name="Imperium - Adeptus Custodes" revision="5" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c992-ed63-7030-2691" name="Imperium - Adeptus Custodes" revision="6" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a70b-b27c-4926-d99c" name="Faction: Adeptus Custodes" hidden="false"/>
     <categoryEntry id="e6c3-ba23-fdf0-2498" name="Captain-General Trajann Valoris" hidden="false"/>
@@ -25,6 +25,7 @@
     <categoryEntry id="0642-34c8-35d0-ea34" name="Sagittarum Custodians" hidden="false"/>
     <categoryEntry id="6a14-8a51-f3db-2233" name="Coronus Grav-carrier" hidden="false"/>
     <categoryEntry id="1609-aa77-03ad-c077" name="Orion Assault Dropship" hidden="false"/>
+    <categoryEntry id="70f9-1505-dea5-9e17" name="Blade Champion" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="4723-62f6-a2f8-2990" name="Captain-General Trajann Valoris" hidden="false" collective="false" import="true" type="unit">
@@ -2296,6 +2297,60 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1311-31f0-8a27-21ed" name="Blade Champion" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6444-9c2a-c74c-a469" name="Blade Champion" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a7b0-278a-2cbb-226b" name="Consummate Swordsman" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="090e-7f68-72d8-c01b" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="e5ee-d066-c926-e794" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="4db1-6d8d-4d95-08da" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="af4b-58d7-3811-e86a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b1d6-a199-7fb3-e0fb" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="c1d9-e04a-84fc-b049" name="Blade Champion" hidden="false" targetId="70f9-1505-dea5-9e17" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6b3d-9002-0270-0bdc" name="Vaultswords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2f-3a93-018c-293b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fa6-5d1d-b680-7f41" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="da2d-1462-821c-7b4a" name="Vaultswords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="92e5-fb5c-2989-278f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
