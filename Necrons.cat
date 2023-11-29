@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="6" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="8" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -71,7 +71,28 @@
     <categoryEntry id="57aa-b1cc-4600-b858" name="Skorpekh Lord" hidden="false"/>
     <categoryEntry id="838d-7bb7-42dc-59d0" name="Destroyer Cult" hidden="false"/>
     <categoryEntry id="6407-ed26-3c4a-da35" name="Skorpekh Destroyers" hidden="false"/>
+    <categoryEntry id="f781-20cc-0754-8dac" name="Endless Phalanx" hidden="false"/>
   </categoryEntries>
+  <forceEntries>
+    <forceEntry id="0fca-c942-6c70-c3ed" name="Endless Phalanx" hidden="false">
+      <forceEntries>
+        <forceEntry id="c570-c13d-127f-1855" name="Endless Phalanx" hidden="false">
+          <categoryLinks>
+            <categoryLink id="0213-2337-8254-4fa1" name="Endless Phalanx" hidden="false" targetId="f781-20cc-0754-8dac" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="4aa6-1ab5-2014-80fe" name="Endless Phalanx" hidden="false" targetId="f781-20cc-0754-8dac" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0b-456c-5f62-18db" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="357a-f7f9-b2f5-5fff" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4ffd-ebf2-2408-4f1d" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
       <categoryLinks>
@@ -338,6 +359,11 @@
         <categoryLink id="9867-ee98-2ae5-88cc" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="c841-6fb0-5a91-aab1" name="Endless Phalanx" hidden="false" collective="false" import="true" targetId="38fb-b75d-1f2e-882a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="faaa-3b64-03fc-cf55" name="New CategoryLink" hidden="false" targetId="f781-20cc-0754-8dac" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="52ca-2535-b12b-af38" name="Living Metal" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -439,7 +465,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="845d-202c-c295-1d1d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0ddd-dcc4-4cc0-594f" name="Guass Flayers" hidden="false" collective="false" import="true" targetId="9080-30ca-629d-5b9e" type="selectionEntry">
+        <entryLink id="0ddd-dcc4-4cc0-594f" name="Gauss Flayers" hidden="false" collective="false" import="true" targetId="9080-30ca-629d-5b9e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb0-04de-9730-8d9a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61e3-44d3-c1f6-aa61" type="min"/>
@@ -5500,6 +5526,194 @@
       <entryLinks>
         <entryLink id="eecd-22cf-0775-190a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="38fb-b75d-1f2e-882a" name="Endless Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b1a6-0cd3-858c-46a5" name="Reanimationmatrix" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 100 models, add 1 to your rolls for Living Metal. If this unit contains 150 or more models, add 2 to your rolls for Living Metal. You cannot increase this roll any further.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e9ab-170a-85c5-1c1e" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d1b2-1284-e11c-d608" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="3054-ffc0-be02-3807" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="be70-9766-5e02-3026" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8f7d-9ae8-a7f3-c54f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="1ed2-6cf3-54c6-afb9" name="Necron Warriors" hidden="false" targetId="ac2b-5e27-1683-ed55" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3a5b-ce91-11c6-9bca" name="Unit Size" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe4f-f57d-5c93-f48c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2503-b7f0-3053-30b3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f0e2-bdb3-757b-6c47" name="Necron Warriors (100 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd26-1453-f551-278d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="471d-5cfe-210f-31c9" name="Necron Warriors (100 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">10</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">20</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="70.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="44ff-de5e-b9bc-74fb" name="Necron Warriors (150 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e35-5cc9-c693-d6a1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ccac-685b-8b6f-2693" name="Necron Warriors (150 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">10</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">30</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="82e1-1c1f-0f00-774d" name="Necron Warriors (200 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2427-e1c0-ab21-b3b2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8120-ec08-6f7b-a4d1" name="Necron Warriors (200 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">10</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">40</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="160.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="35c4-e905-ae17-ec89" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2836-546d-1732-b0f5" name="Heavy Blades Phalanx" hidden="false" collective="false" import="true" targetId="88b3-99dc-406a-788f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="4c56-fa82-8406-d2d9" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82e1-1c1f-0f00-774d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9979-7e26-3bce-335f" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82e1-1c1f-0f00-774d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="4c56-fa82-8406-d2d9" value="3.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44ff-de5e-b9bc-74fb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9979-7e26-3bce-335f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44ff-de5e-b9bc-74fb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c56-fa82-8406-d2d9" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9979-7e26-3bce-335f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5baa-17de-dc6d-134a" name="Gauss Flayers Phalanx" hidden="false" collective="false" import="true" targetId="18e7-1b96-19fe-8ca7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="eb4c-4186-cfc4-06eb" value="3.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44ff-de5e-b9bc-74fb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="422e-9f15-2f83-d3f7" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82e1-1c1f-0f00-774d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="422e-9f15-2f83-d3f7" value="3.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44ff-de5e-b9bc-74fb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="422e-9f15-2f83-d3f7" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82e1-1c1f-0f00-774d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb4c-4186-cfc4-06eb" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="422e-9f15-2f83-d3f7" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="18e7-1b96-19fe-8ca7" name="Gauss Flayers Phalanx" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="21eb-efba-0851-5b5a" name="Gauss Flayers Phalanx" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bfaa-8851-cc6c-dc7f" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88b3-99dc-406a-788f" name="Heavy Blades Phalanx" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9961-8046-1b2a-024e" name="Heavy Blades Phalanx" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
