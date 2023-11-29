@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="13" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -86,6 +86,7 @@
     <categoryEntry id="fa00-f806-0bac-f213" name="Manticore" hidden="false"/>
     <categoryEntry id="acc7-cc8d-2ab9-23cd" name="Rough Riders" hidden="false"/>
     <categoryEntry id="3489-ca5c-23ab-dc6d" name="Carnodon" hidden="false"/>
+    <categoryEntry id="5329-f200-d92e-3f16" name="Ursula Creed" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="1df4-025c-99c1-3120" name="Hades Breaching Drill Squadron" hidden="false" collective="false" import="true" type="upgrade">
@@ -1889,6 +1890,13 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="6df1-234a-2175-10e6" name="Lord Castellan Creed" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638a-95f7-061c-3657" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="93c7-6154-52db-b8c1" type="max"/>
       </constraints>
@@ -5477,6 +5485,79 @@ Praetor Launcher for this action.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="638a-95f7-061c-3657" name="Ursula Creed" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6df1-234a-2175-10e6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d33-d116-c246-eb07" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d61c-dd09-eab4-434b" name="Ursula Creed" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7750-133b-26fe-6b70" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2186-63a8-18a4-dd17" name="Officer" hidden="false" targetId="0422-c0a5-6f82-4868" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="20fe-6e04-f9e6-7093" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="b68b-8148-a3a6-80e3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="a6e3-8fc2-d3e9-3a99" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="1c44-22d8-bb5d-97ee" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
+        <categoryLink id="4dec-6bf8-ba1c-a22c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6cce-fd8d-1c84-c882" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3b9a-9c31-62d4-194d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="6ac6-ba39-52b4-ef73" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="eabd-f6fa-a05e-4108" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3b5a-336d-de01-74a9" name="Signature Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba3c-c7b5-3e01-e29d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd3-34c7-aefe-bb77" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="db5c-6af5-c2d9-6aa9" name="Signature Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5ee2-c633-72ed-05ba" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -5693,7 +5774,7 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="f422-05ee-c103-2daf" name="Malcador Infernus" hidden="false" targetId="5b52-5f48-d0c0-65e9" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="167d-a876-7c55-a08d" name="Armageddon Pattern Medusa" hidden="false" collective="false" import="true" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry">
+    <entryLink id="167d-a876-7c55-a08d" name="Armageddon Pattern Medusa Battery" hidden="false" collective="false" import="true" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="cc06-5e68-1a9b-7e35" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="0f13-4eed-976b-2fe1" name="Armageddon Pattern Medusa" hidden="false" targetId="8914-40c7-e38b-4c80" primary="false"/>
@@ -5760,7 +5841,7 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="027c-2fe0-0277-c75a" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="57bd-88a8-cd0a-830a" name="Heavy Mortar" hidden="false" collective="false" import="true" targetId="23aa-209f-b675-fda0" type="selectionEntry">
+    <entryLink id="57bd-88a8-cd0a-830a" name="Heavy Mortar Battery" hidden="false" collective="false" import="true" targetId="23aa-209f-b675-fda0" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7df3-4b17-983a-cc2c" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="de9d-bac0-f43c-fbdd" name="Artillery" hidden="false" targetId="c2cd-6e10-a4dd-093c" primary="false"/>
@@ -6132,6 +6213,34 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="d49a-eb4e-1d62-4b0a" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
         <categoryLink id="4d48-713c-0a67-9efd" name="Rogal Dorn Battle Tank" hidden="false" targetId="f492-941b-56d1-ae93" primary="false"/>
         <categoryLink id="59ca-38d5-ad99-5de7" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca67-27c0-1a03-6b20" name="Lord Solar Leontus" hidden="false" collective="false" import="true" targetId="5599-89fe-7d63-8432" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70ca-f136-5ce1-5b76" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4760-0ce8-166c-9c71" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="be7c-6406-d5c7-e7b1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="9068-85c7-def2-1f53" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
+        <categoryLink id="f7c7-3254-eb7a-1478" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="38b8-e235-030e-f9ed" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="aee7-1d39-355d-be2f" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="8050-0dd9-de11-aca2" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7034-a2a5-6e04-8e13" name="Lord Solar Leontus" hidden="false" targetId="b238-8f9b-ddc1-6d49" primary="false"/>
+        <categoryLink id="8251-a31b-a3d1-c9da" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a0ab-cc37-40a0-a8c7" name="Field Ordnance Battery" hidden="false" collective="false" import="true" targetId="8cff-c71f-faff-456b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cf7e-439d-685c-dc38" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="88b8-2a63-3ce0-3c18" name="Artillery" hidden="false" targetId="c2cd-6e10-a4dd-093c" primary="false"/>
+        <categoryLink id="0b84-8aec-d613-60cc" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="85df-6c2d-2799-af47" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7080-4421-9133-bcea" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="486f-53dd-7e42-0ca7" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="1505-8455-7658-5079" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
+        <categoryLink id="7f1f-b6f8-58e5-8ef8" name="Field Ordnance Battery" hidden="false" targetId="3f94-dff2-8eaa-b9c2" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
