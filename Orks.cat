@@ -90,6 +90,8 @@
     <categoryEntry id="8ce6-ca21-09cd-0717" name="Dethrolla Battle Fortress" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="e28d-eb85-1284-8f77" name="Nob" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="67f1-0cab-b562-4002" name="Green Tide" hidden="false"/>
+    <categoryEntry id="5df2-6271-244e-eb40" name="Beast Snagga" hidden="false"/>
+    <categoryEntry id="24ae-d311-0f6a-fe00" name="Beastboss" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="false">
@@ -449,6 +451,11 @@
     <entryLink id="d3c2-a6d1-3042-10d3" name="Green Tide" hidden="false" collective="false" import="true" targetId="2aaa-8889-6b75-22e8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fa38-7a2b-9814-868f" name="New CategoryLink" hidden="false" targetId="67f1-0cab-b562-4002" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fac1-38e9-53e7-2f17" name="Beastboss" hidden="false" collective="false" import="true" targetId="660b-7280-f536-f868" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="506f-e8bc-4173-da2c" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9564,6 +9571,50 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="660b-7280-f536-f868" name="Beastboss" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d9e8-7095-2f46-fccd" name="Beastboss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ccda-b31c-8aeb-39c4" name="Beast Snagga Boss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly BEAST SNAGGA units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bfef-4715-365c-71ab" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="50df-cd7d-2060-c0df" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="193b-8f4d-e789-7e1b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="86c7-4eb2-f0ca-f9e4" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="2fbb-b331-4e2e-0e9c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="24d0-39c1-4001-faa8" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="c5d3-edb4-71fe-e0b0" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="e4c4-a879-cc9d-7cab" name="Beastboss" hidden="false" targetId="24ae-d311-0f6a-fe00" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1638-fd9d-dbf0-d347" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e5a3-6a88-ca3c-8f35" name="Boss Weapons" hidden="false" collective="false" import="true" targetId="4ccb-2eae-0a99-c726" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fa5-a638-9fa8-6547" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c211-b46d-cf8f-f757" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="3c56-0907-3b21-244e" name="Lifta Droppa" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -9589,6 +9640,11 @@
     <profile id="5aab-1ee5-6f53-88ef" name="Effigy" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll Morale tests taken for friendly ORKS units whilst they are within 6&quot; of this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c37-ddc6-af2a-1d62" name="Beast Snagga" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made by this unit when targeting MONSTER or VEHICLE units.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
