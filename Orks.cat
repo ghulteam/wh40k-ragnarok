@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="10" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -89,7 +89,27 @@
     <categoryEntry id="b0f0-a51b-db62-c355" name="Fighta-Bommer" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="8ce6-ca21-09cd-0717" name="Dethrolla Battle Fortress" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="e28d-eb85-1284-8f77" name="Nob" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="67f1-0cab-b562-4002" name="Green Tide" hidden="false"/>
   </categoryEntries>
+  <forceEntries>
+    <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="false">
+      <forceEntries>
+        <forceEntry id="9ae7-7127-2117-429d" name="Green Tide" hidden="false">
+          <categoryLinks>
+            <categoryLink id="d172-e3a9-1960-6e01" name="Green Tide" hidden="false" targetId="67f1-0cab-b562-4002" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="82ec-d48f-0bb3-fc23" name="Green Tide" hidden="false" targetId="67f1-0cab-b562-4002" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8d3-cfd5-37e9-270c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e377-c1df-8ee7-679d" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
       <categoryLinks>
@@ -424,6 +444,11 @@
     <entryLink id="a4ad-a971-c801-3c54" name="Mekboy Workshop" hidden="false" collective="false" import="true" targetId="39c7-dbab-c476-e28d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="843f-e9ca-046c-6e37" name="New CategoryLink" hidden="false" targetId="e2ad-0813-395c-442a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d3c2-a6d1-3042-10d3" name="Green Tide" hidden="false" collective="false" import="true" targetId="2aaa-8889-6b75-22e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fa38-7a2b-9814-868f" name="New CategoryLink" hidden="false" targetId="67f1-0cab-b562-4002" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7716,7 +7741,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac9-60e1-c496-5279" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="06ee-d859-9062-535e" name="Close Combat Weapons (Boyz)" hidden="false" collective="false" import="true" targetId="ae1d-5245-9af1-3a63" type="selectionEntry">
+        <entryLink id="06ee-d859-9062-535e" name="Close Combat Weapons (x2/7+/9+)" hidden="false" collective="false" import="true" targetId="ae1d-5245-9af1-3a63" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b5-0b6e-264a-1779" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e5a-daab-40c0-5a10" type="min"/>
@@ -9395,6 +9420,148 @@
       </profiles>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2aaa-8889-6b75-22e8" name="Green Tide" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1eff-c6e1-ae59-844d" name="Waaagh! (Green Tide)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with melee weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="954d-3554-2f27-ebae" name="Follow me Ladz" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the turn every friendly &lt;CLAN&gt; BOYZ unit within 2&quot; of this GREEN TIDE unit merges into this unit. Transfer all Wound marker of the affected Units to this GREEN TIDE unit and count the Instances of Big Shoota and Rokkit Launcha Upgrades of all affected units and remove them from play. Afterwards set up the removed models within cohesion of this GREEN TIDE unit. Models set up this way may not be set up within 1&quot; of enemy units. For each 10 Models added this way, increase the maximum number of Wounds of this GREEN TIDE unit by 2 and attacks by 1. Increase the Number of Equiped Big Shoota and Rokkit Launcha by the Number counted before. If a unit is affected by multiple &quot;Follow me Ladz&quot; abilities, the controlling player may choose which Green Tide the affect Unit may merge into.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ded-42fe-269c-8839" name="Green Tide Boyz" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="increment" field="7c7f-f763-1f39-410c" value="2">
+              <repeats>
+                <repeat field="selections" scope="2aaa-8889-6b75-22e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9187-5ed1-de70-b83a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ddfe-6a9e-32c1-a51c" value="1">
+              <repeats>
+                <repeat field="selections" scope="2aaa-8889-6b75-22e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9187-5ed1-de70-b83a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">0</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1697-5ccb-2e1f-4b75" name="Stampede" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When declaring targets for this attacks by this unit you may count each attack generated by Green Tide Weaponry as its own weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b351-6765-2320-4fe4" name="Green Tide" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This Unit contains at least 100 Ork Boyz and has 1 Warboss embedded into this Unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4e2b-a70b-f876-6ca9" name="Boyz" hidden="false" targetId="562a-7947-819b-4e4e" primary="false"/>
+        <categoryLink id="6ac8-87b9-0bff-80df" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="9d31-22d8-573f-1448" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="5bff-a968-386d-bb25" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7895-c5b5-6513-42fb" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="92e4-e1eb-dff2-5b93" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7581-ce58-7be8-cb54" name="Boss Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="008b-bf81-9af1-c496" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aaa-9820-83b7-dd8e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="c851-dab9-1821-b1ac" name="Boss Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d14c-f5da-f933-ff4e" name="Green Tide Weaponry" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3795-2661-68ec-a865" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4efd-995c-2ca1-a3c4" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5543-503b-1bde-a4e0" name="Green Tide Weaponry (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="93ef-8e2f-7042-7a36" name="Green Tide Weaponry (Ranged)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="da43-56d2-e54e-acd6" name="Number of 10 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2f-a538-e20f-014b" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9187-5ed1-de70-b83a" name="Green Tide Boyz" hidden="false" collective="false" import="true" type="model">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c9af-563e-c266-5198" name="Special Weapon" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="2e93-274e-b623-a382" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="2aaa-8889-6b75-22e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9187-5ed1-de70-b83a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e93-274e-b623-a382" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f520-1c8f-ac6b-3c06" name="Big Shoota" hidden="false" collective="false" import="true" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry"/>
+            <entryLink id="80f1-0bb1-e1e2-4c75" name="Rokkit Launcha" hidden="false" collective="false" import="true" targetId="9376-7743-9569-3886" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="204a-571e-4b1b-a951" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
