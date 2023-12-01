@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="13" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="14" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1887,79 +1887,6 @@ Praetor Launcher for this action.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6df1-234a-2175-10e6" name="Lord Castellan Creed" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638a-95f7-061c-3657" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="93c7-6154-52db-b8c1" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="5a76-11c9-6943-ce9c" name="Lord Castellan Creed" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e0c8-371c-9a03-20c8" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="9556-596d-ccd2-8e76" name="Officer" hidden="false" targetId="0422-c0a5-6f82-4868" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0540-177b-edd5-2bd7" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="af78-03e4-5e5b-adfb" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="d18a-a9f0-34b5-ee3b" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
-        <categoryLink id="ae0f-c2fb-3ba8-047c" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
-        <categoryLink id="f3b8-5f0e-d22a-2df9" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="1ba1-d48d-81ef-faf1" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="0857-75de-58a4-d713" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="caab-6bfd-a578-043a" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
-        <categoryLink id="f321-0d11-0ebd-ddcc" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="049d-8187-adf6-8992" name="Signature Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de9-845d-fe2f-0bc4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edde-e856-f326-b3bb" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ecdf-81ed-1370-b4cb" name="Signature Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="3b26-4326-b917-075e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="233f-ea7c-fcbb-68b3" name="Astropath" hidden="false" collective="false" import="true" type="unit">
@@ -4807,107 +4734,6 @@ Praetor Launcher for this action.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="99f3-850a-ea11-6a18" name="Stormlord" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="5cdc-c175-bd9d-232f" name="Stormlord" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2bc4-ac1e-b0dc-f721" name="Extended Firing Deck" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">No more than two units can make use of this unit’s Open-topped ability each turn – those units combined can contain no more than 20 models.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d913-6272-0e64-49ed" name="Stormlord" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 40 friendly ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other INFANTRY models and each OGRYN model takes the space of 3 other INFANTRY models.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="07ad-8709-354e-f26f" name="Open-topped" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="392b-9486-b6f7-0c8d" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
-        <categoryLink id="7b37-a624-0c72-9e87" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="6fcd-c7af-4bf5-f0dd" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
-        <categoryLink id="c2c5-caeb-1c8e-dfdb" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
-        <categoryLink id="958f-85a0-a255-ed97" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="8adb-1f40-6fd9-e43c" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="7689-9907-b9bb-74da" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="5620-f4fb-30a8-2da4" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
-        <categoryLink id="e10d-823c-991e-46fa" name="Stormlord" hidden="false" targetId="86a1-41e3-5fe3-e661" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="3243-9f9a-50b2-b117" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c28-43cf-a277-74ab" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e10e-3269-039d-af2b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="eeb9-8eb0-e62b-0594" name="Vulcan Mega-bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">8</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8bd5-b364-45db-3902" name="Stormlord Anti-personnel Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ae-4e3d-60a3-c405" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9cfc-3214-a5e4-618a" name="Stormlord Anti-personnel Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="fe11-af6c-1eac-cfe5" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b24-b601-ef89-e35d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca07-f94c-95c6-1aa5" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="2f64-de8c-b950-90f6" name="Adamantium Tracks" hidden="false" collective="false" import="true" targetId="7302-47ca-aa60-861b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fec-25e7-f2ce-788c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd69-44c1-a997-3955" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="9196-2930-b72d-623e" name="Baneblade Sponsons" hidden="false" collective="false" import="true" targetId="3195-3f38-819b-9f45" type="selectionEntryGroup"/>
-        <entryLink id="78d4-5687-ab63-dd5b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="26.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e581-6d33-956b-efed" name="Taurox" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="aa11-bb6d-d6e9-10a6" name="Taurox" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -5483,79 +5309,6 @@ Praetor Launcher for this action.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="638a-95f7-061c-3657" name="Ursula Creed" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6df1-234a-2175-10e6" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d33-d116-c246-eb07" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="d61c-dd09-eab4-434b" name="Ursula Creed" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7750-133b-26fe-6b70" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2186-63a8-18a4-dd17" name="Officer" hidden="false" targetId="0422-c0a5-6f82-4868" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="20fe-6e04-f9e6-7093" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="b68b-8148-a3a6-80e3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="a6e3-8fc2-d3e9-3a99" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
-        <categoryLink id="1c44-22d8-bb5d-97ee" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
-        <categoryLink id="4dec-6bf8-ba1c-a22c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="6cce-fd8d-1c84-c882" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="3b9a-9c31-62d4-194d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="6ac6-ba39-52b4-ef73" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
-        <categoryLink id="eabd-f6fa-a05e-4108" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="3b5a-336d-de01-74a9" name="Signature Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba3c-c7b5-3e01-e29d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd3-34c7-aefe-bb77" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="db5c-6af5-c2d9-6aa9" name="Signature Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="5ee2-c633-72ed-05ba" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -6243,6 +5996,41 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="7f1f-b6f8-58e5-8ef8" name="Field Ordnance Battery" hidden="false" targetId="3f94-dff2-8eaa-b9c2" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="41b1-63a2-5355-3427" name="Lord Castellan Creed" hidden="false" collective="false" import="true" targetId="3dbf-7620-a012-3a50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c46f-31dd-c990-780c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9e80-5b4d-a16a-f90f" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7d4b-1b0f-88c3-2d8d" name="Ursula Creed" hidden="false" collective="false" import="true" targetId="c46f-31dd-c990-780c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dbf-7620-a012-3a50" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2414-3131-28a1-233f" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f58c-d055-4719-b109" name="Stormlord" hidden="false" collective="false" import="true" targetId="ca0c-bb8a-d91c-d704" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="66d5-0b70-a858-39c0" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="6e1f-9f46-3535-890a" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8ca7-50ea-c28e-b954" name="Stormlord" hidden="false" collective="false" import="true" targetId="ca0c-bb8a-d91c-d704" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="beaa-d961-7cf5-52fe" name="Lord of War, Transport" hidden="false" targetId="38d6-4782-ed3b-5187" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f34f-f037-d96b-d46d" name="Officer Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -6561,6 +6349,235 @@ Praetor Launcher for this action.</characteristic>
       </profiles>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3dbf-7620-a012-3a50" name="Lord Castellan Creed" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="faad-daaf-23ab-2930" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7d3a-f25a-ca1c-8dc0" name="Lord Castellan Creed" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8943-e00d-640b-d602" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="41e4-0b8f-67ab-25eb" name="Officer" hidden="false" targetId="0422-c0a5-6f82-4868" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1888-78d3-136f-d99b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1d27-2a0f-5277-15ba" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="1148-d8fa-918c-7bbc" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
+        <categoryLink id="eeff-9805-4a7c-ea82" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="d216-1a33-5e78-ea1d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="17fd-fac5-9733-ef72" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="01a9-380b-669e-aa76" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="d56c-64b8-c383-ede1" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="47f8-15bc-007d-c037" name="Signature Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f9-f102-54cc-6492" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff6b-5bce-eb68-88b4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="362b-d455-58fd-1d2c" name="Signature Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1859-4977-8537-b6a1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c46f-31dd-c990-780c" name="Ursula Creed" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c68c-821e-6cac-7544" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8e68-9352-7757-13f6" name="Ursula Creed" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="67e6-660d-8fb3-fe28" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d7ee-6a49-3a44-30be" name="Officer" hidden="false" targetId="0422-c0a5-6f82-4868" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="29b2-1de8-1ccc-9742" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d4dc-3f4f-ebca-23a3" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="769b-0195-82df-6599" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
+        <categoryLink id="eefc-ed57-07dd-7fad" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2484-4054-5f17-984c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a8a7-5d30-fbcd-611c" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="8345-94d5-83bf-7fc1" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="155c-c4ae-288a-3c8c" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fba5-b429-9709-3982" name="Signature Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a06-489c-0adb-dc06" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="121c-5666-ee41-ec12" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="50f8-e19a-74ea-50e4" name="Signature Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3382-35ab-97dd-d364" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca0c-bb8a-d91c-d704" name="Stormlord" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d366-ff84-7448-6419" name="Stormlord" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6013-372e-adef-115c" name="Extended Firing Deck" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">No more than two units can make use of this unit’s Open-topped ability each turn – those units combined can contain no more than 20 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a33-7ffa-3667-3626" name="Stormlord" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 40 friendly ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other INFANTRY models and each OGRYN model takes the space of 3 other INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b36a-8602-cac0-6591" name="Open-topped" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="47a4-9939-3c9d-a261" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f1c0-85d4-ce55-5352" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="908a-33d7-a62d-851c" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
+        <categoryLink id="3de4-13dd-2642-b06d" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="82f1-5c45-3859-8a84" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="5a56-1495-06d4-fab9" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="85ec-d6bd-3001-0cde" name="Stormlord" hidden="false" targetId="86a1-41e3-5fe3-e661" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c13b-5155-acb2-ca4c" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76d9-0e6f-41f0-d4a8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f983-b0f4-50f3-67f7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d307-d118-cfe0-dce6" name="Vulcan Mega-bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">8</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5e62-c541-dc45-fd81" name="Stormlord Anti-personnel Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a54-af92-41cd-60e8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3612-2be9-ee2d-12e5" name="Stormlord Anti-personnel Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="83e1-15d0-efdc-de85" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ce-d274-70f8-41bb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b7-cce5-8ea6-f311" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a9e7-ec4b-e7be-c473" name="Adamantium Tracks" hidden="false" collective="false" import="true" targetId="7302-47ca-aa60-861b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6891-9952-f7ea-ceba" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d02-db7c-8689-23e7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8b79-74da-974d-b118" name="Baneblade Sponsons" hidden="false" collective="false" import="true" targetId="3195-3f38-819b-9f45" type="selectionEntryGroup"/>
+        <entryLink id="0a95-0520-e58b-98d4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="26.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
