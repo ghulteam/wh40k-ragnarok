@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="4" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="5" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="466a-33f5-0faf-5cd1" name="Faction: The Tainted" hidden="false"/>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
@@ -23,7 +23,6 @@
     <categoryEntry id="6a8b-ddea-e1b0-9e8f" name="Myphitic Blight-haulers" hidden="false"/>
     <categoryEntry id="af7c-c010-74dc-c316" name="Plague Drones" hidden="false"/>
     <categoryEntry id="48ae-aa44-e518-6fe5" name="Plagueburst Crawler" hidden="false"/>
-    <categoryEntry id="3e46-c33d-fcab-96c5" name="Mortarion" hidden="false"/>
     <categoryEntry id="813a-f91c-a238-b454" name="Mamon Transfigured" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
@@ -351,13 +350,6 @@
     </entryLink>
     <entryLink id="4746-e56e-73c5-7ff6" name="Malignant Plaguecaster" hidden="false" collective="false" import="true" targetId="4b4f-14f0-0b4c-cc6d" type="selectionEntry"/>
     <entryLink id="fbd7-2faa-8634-aa81" name="Plague Marines" hidden="false" collective="false" import="true" targetId="d31e-96b7-567b-db1d" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685-6098-8f1b-f9cb" type="notInstanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="872c-a98b-4d66-446d" name="Lords of the Plague Host" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -375,20 +367,6 @@
       <categoryLinks>
         <categoryLink id="05a1-8b28-19f9-6461" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
         <categoryLink id="5e67-5cf7-ed1d-e1a3" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="7c5f-e0ae-c4a0-fb51" name="Plague Marines" hidden="false" collective="false" import="true" targetId="d31e-96b7-567b-db1d" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685-6098-8f1b-f9cb" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="45e1-7ed3-bb6d-c213" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
-        <categoryLink id="c978-eb2e-19d9-362f" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
-        <categoryLink id="23dc-a9cd-c469-edec" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c4c1-258a-a8c9-085e" name="Poxwalkers" hidden="false" collective="false" import="true" targetId="cde4-c2c1-7c7a-48b9" type="selectionEntry"/>
@@ -442,7 +420,11 @@
         <categoryLink id="1136-174f-f5c1-9615" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0b2f-87a1-775f-f506" name="Mortarion" hidden="false" collective="false" import="true" targetId="4960-c06e-c1c6-1657" type="selectionEntry"/>
+    <entryLink id="0b2f-87a1-775f-f506" name="Mortarion" hidden="false" collective="false" import="true" targetId="8423-f6af-7449-fc14" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="13b6-46f8-01c8-2090" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40f2-0d55-9248-1a38" name="Necrosius the Undying" hidden="false" collective="false" import="true" type="unit">
@@ -2479,108 +2461,6 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4960-c06e-c1c6-1657" name="Mortarion" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ba7-0357-6a25-c31c" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="4b17-1253-e1e6-b6e5" name="The Barbaran Plate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not suffer the penalty for being critically damaged.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="85f8-5b0e-98bf-9c2c" name="Primarch of the Death Guard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made by friendly DEATH GUARD units whilst they are within 7&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6ccf-c5e3-a6dc-b4a6" name="Host of Plagues" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D12 for each enemy unit within 7&quot; of this unit; on a 10+ place one blast marker next to the unit being rolled for.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a978-f735-08ce-49fd" name="Mortarion" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="8d45-3d5e-de5b-ce08" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0d5c-c52a-8805-8637" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
-        <categoryLink id="adbc-7569-3504-aabc" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="cc30-adcf-399b-d31e" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
-        <categoryLink id="8d71-5299-8a15-5dfb" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
-        <categoryLink id="282b-9425-5cb3-ae64" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
-        <categoryLink id="d52e-d243-2ab6-786b" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="dc27-e1b1-8cf3-f105" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="1d36-5a04-eb9e-7e03" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
-        <categoryLink id="06ec-e2f9-2e2e-81e4" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="9b8c-8439-0829-fbb8" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
-        <categoryLink id="9e10-a36a-92af-d09a" name="Primarch" hidden="false" targetId="9376-59f2-9b7f-cce3" primary="false"/>
-        <categoryLink id="79ca-56d0-44ba-8950" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
-        <categoryLink id="1ca0-c86f-3df2-270e" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
-        <categoryLink id="1662-b376-2d4c-ed2d" name="Mortarion" hidden="false" targetId="3e46-c33d-fcab-96c5" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5b32-9b8c-7b18-5eba" name="The Lantern" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c90d-70de-e9b5-d0dd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a6-aa04-4ad9-b3a3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="cf5a-60a4-b286-2e2a" name="The Lantern" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5592-83a9-f198-06bc" name="Silence" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="333a-0c76-9239-1eeb" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3405-d063-2207-f23b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="cfee-200b-1f53-cbb3" name="Silence" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="60e9-8ebd-a33d-f06c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="a95b-fa5f-3684-b250" name="Nurgle&apos;s Gift" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -2592,5 +2472,6 @@
   <catalogueLinks>
     <catalogueLink id="4099-0c9f-eae7-0a14" name="Chaos - Chaos Space Marines" targetId="df5c-f15d-f672-a301" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="7369-fef8-6ea5-e989" name="Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="a930-0d29-65c6-0464" name="Library - Chaos Primarchs" targetId="6638-9778-3d62-e10b" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
