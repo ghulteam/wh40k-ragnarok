@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="9" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="10" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -97,6 +97,10 @@
     <categoryEntry id="c2cd-6e10-a4dd-093c" name="Artillery" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="dfc6-5d64-127f-97a1" name="Daemon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="b1fd-719c-4789-4656" name="List Configuration" hidden="false"/>
+    <categoryEntry id="8ef1-4695-4ea0-030c" name="Elites, Transport" hidden="false"/>
+    <categoryEntry id="1aa3-a793-7c54-abe7" name="Heavy Support, Transport" hidden="false"/>
+    <categoryEntry id="4c58-0435-44f4-4154" name="Fast Attack, Transport" hidden="false"/>
+    <categoryEntry id="38d6-4782-ed3b-5187" name="Lord of War, Transport" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Ad Hoc Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -713,11 +717,11 @@
         <forceEntry id="2623-75c5-176c-e2fa" name="Transport Detachment" hidden="false">
           <categoryLinks>
             <categoryLink id="ae30-b5f1-7c6d-9dd3" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
-            <categoryLink id="b0a9-092b-251b-4018" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
+            <categoryLink id="b0a9-092b-251b-4018" name="Fast Attack, Transport" hidden="false" targetId="4c58-0435-44f4-4154" primary="false"/>
             <categoryLink id="8da8-0329-fb5c-37f6" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
-            <categoryLink id="7609-572a-307e-9258" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
-            <categoryLink id="bb6b-e4f4-d4e6-0afd" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
-            <categoryLink id="a521-2ed6-cb58-5053" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+            <categoryLink id="7609-572a-307e-9258" name="Elite, Transport" hidden="false" targetId="8ef1-4695-4ea0-030c" primary="false"/>
+            <categoryLink id="bb6b-e4f4-d4e6-0afd" name="Heavy Support, Transport" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="false"/>
+            <categoryLink id="a521-2ed6-cb58-5053" name="Lord of War, Transport" hidden="false" targetId="38d6-4782-ed3b-5187" primary="false"/>
             <categoryLink id="21cb-1def-6b1f-708d" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
           </categoryLinks>
         </forceEntry>
@@ -731,22 +735,22 @@
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3882-13fa-2a38-0771" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2ca5-2438-dca3-e8b8" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false">
+        <categoryLink id="2ca5-2438-dca3-e8b8" name="Elites, Transport" hidden="false" targetId="8ef1-4695-4ea0-030c" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1db4-1f34-e15b-bf5a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="d6ad-da68-4d4b-30d3" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false">
+        <categoryLink id="d6ad-da68-4d4b-30d3" name="Fast Attack, Transport" hidden="false" targetId="4c58-0435-44f4-4154" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2f89-bcd0-2fa7-434d" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b431-934a-a13e-e723" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false">
+        <categoryLink id="b431-934a-a13e-e723" name="Heavy Support, Transport" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8503-a07c-b424-5460" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3e18-8c7f-1cb6-2376" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false">
+        <categoryLink id="3e18-8c7f-1cb6-2376" name="Lord of War, Transport" hidden="false" targetId="38d6-4782-ed3b-5187" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dcfe-0486-bcf8-bd5d" type="max"/>
           </constraints>
