@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bc18-dce9-603f-55f1" name="Aeldari - Ynnari" revision="5" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bc18-dce9-603f-55f1" name="Aeldari - Ynnari" revision="6" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b8eb-af0c-4700-6863" name="Faction: Ynnari" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="1e85-4238-c259-0ea8" name="Yvraine" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -7,9 +7,21 @@
     <categoryEntry id="78fe-128c-abc7-e310" name="The Yncarne" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="8f7b-63ad-22e1-e896" name="The Visarch" hidden="false" collective="false" import="true" targetId="7a5a-a144-d8bf-314f" type="selectionEntry"/>
-    <entryLink id="1716-8d01-b28d-a222" name="The Yncarne" hidden="false" collective="false" import="true" targetId="fa64-5ec0-197e-c36e" type="selectionEntry"/>
-    <entryLink id="da48-8c7e-b09f-a82c" name="Yvraine" hidden="false" collective="false" import="true" targetId="3b6b-b0f9-6361-03b4" type="selectionEntry"/>
+    <entryLink id="8f7b-63ad-22e1-e896" name="The Visarch" hidden="false" collective="false" import="true" targetId="7a5a-a144-d8bf-314f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ca9a-ec2a-7ab9-1696" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1716-8d01-b28d-a222" name="The Yncarne" hidden="false" collective="false" import="true" targetId="fa64-5ec0-197e-c36e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ae98-f27e-c6a5-6114" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da48-8c7e-b09f-a82c" name="Yvraine" hidden="false" collective="false" import="true" targetId="3b6b-b0f9-6361-03b4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8af2-cb1b-8bf1-c021" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3b6b-b0f9-6361-03b4" name="Yvraine" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -38,7 +50,6 @@
         <categoryLink id="8a6a-5173-c33f-d44d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="871f-4270-f228-ea91" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
         <categoryLink id="9b40-8dad-b4ef-55f2" name="Faction: Ynnari" hidden="false" targetId="b8eb-af0c-4700-6863" primary="false"/>
-        <categoryLink id="df25-03d8-b7e1-812c" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="34ae-a044-227a-efd6" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="8625-cb7c-e161-0d2f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="c577-878d-d43a-cc6b" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
@@ -100,7 +111,6 @@
         <categoryLink id="69c6-d3fc-6f40-7335" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="5d80-34c6-00dd-19af" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
         <categoryLink id="c37e-f070-8b8a-b1b7" name="Faction: Ynnari" hidden="false" targetId="b8eb-af0c-4700-6863" primary="false"/>
-        <categoryLink id="0274-4898-66bf-c3b3" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="ca26-9879-1811-8176" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="de1b-3513-fe50-0e4e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="287e-80f7-02a4-00f3" name="The Visarch" hidden="false" targetId="de09-cabf-12f3-e71e" primary="false"/>
@@ -167,7 +177,6 @@
         <infoLink id="f77c-310e-ef48-516c" name="Ignore Damage (6+)" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="307d-1c09-45e1-4734" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="849d-bbd2-f089-0198" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
         <categoryLink id="ccf6-9b83-68e4-8ff0" name="Faction: Ynnari" hidden="false" targetId="b8eb-af0c-4700-6863" primary="false"/>
         <categoryLink id="8cbb-5c36-bb3e-b4e6" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
