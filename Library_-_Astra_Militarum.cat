@@ -3961,10 +3961,22 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <selectionEntry id="a772-346b-1baa-1923" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
                     <profile id="ffbd-bda2-bae4-60ab" name="Vanquisher Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <modifiers>
+                        <modifier type="set" field="2883-af07-d4e8-d8d0" value="1">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c68c-be57-318c-8802" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd9-1863-d624-9a64" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
                       <characteristics>
                         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
                         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
                         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
                         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
