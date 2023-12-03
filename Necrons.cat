@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="13" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="14" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -80,6 +80,8 @@
     <categoryEntry id="e80c-fb61-a0b3-ce86" name="Ophydian Destroyers" hidden="false"/>
     <categoryEntry id="2d2b-5f4f-4648-fe09" name="Canoptek Doomstalker" hidden="false"/>
     <categoryEntry id="6098-e7d8-5cf9-5d47" name="Technomancer" hidden="false"/>
+    <categoryEntry id="ee3d-4dc2-67b4-d03c" name="The Silent King" hidden="false"/>
+    <categoryEntry id="b4d4-1527-1e92-16fd" name="Faction: Szarekhan" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="0fca-c942-6c70-c3ed" name="Endless Phalanx" hidden="false">
@@ -6459,14 +6461,14 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
           </characteristics>
         </profile>
-        <profile id="79e8-5b9a-9360-02c1" name="Phaeron" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+        <profile id="79e8-5b9a-9360-02c1" name="Phaeron" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly LIGHT &lt;DYNASTY&gt; units whilst they are within 9&quot; of this unit. In addation re-roll wound rolls of 1 for attacks made by friendly LIGHT &lt;DYNASTY&gt; units whilst they are within 9&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly LIGHT NECRONS units whilst they are within 9&quot; of this unit. In addation re-roll wound rolls of 1 for attacks made by friendly LIGHT NECRONS units whilst they are within 9&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
         <profile id="4b3f-42d4-3274-27c4" name="Relentless March (Silent King)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a LIGHT &lt;DYNASTY&gt; units unit starts a Move action within 6&quot; of any friendly units with this ability, add 9&quot; to its Move characteristic whilst making that Move action.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a LIGHT NECRONS units unit starts a Move action within 9&quot; of any friendly units with this ability, add 1&quot; to its Move characteristic whilst making that Move action.</characteristic>
           </characteristics>
         </profile>
         <profile id="1470-518c-e1ac-b571" name="The Silent King" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -6476,17 +6478,18 @@
         </profile>
         <profile id="0ba7-e50e-394e-28e8" name="Triarch Menhir" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this Unit is Wounded, it may no longer use its Annihilator Beam Weapons.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this Unit is critically damaged it may no longer use its Annihilator Beam Weapons.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="29af-d295-e422-9439" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
         <categoryLink id="8de1-00e8-096e-d64e" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
         <categoryLink id="ddb9-17ad-8b84-6597" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
         <categoryLink id="237e-f209-2ef0-3c49" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink id="303e-af77-f33b-2079" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
         <categoryLink id="3fae-30de-0587-f30f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="b291-fc13-dfa6-03d3" name="The Silent King" hidden="false" targetId="ee3d-4dc2-67b4-d03c" primary="false"/>
+        <categoryLink id="68d9-0f69-5c60-684c" name="Faction: Szarekhan" hidden="false" targetId="b4d4-1527-1e92-16fd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="430f-022c-cff3-5d54" name="Sceptre of Eternal Glory" hidden="false" collective="false" import="true" type="upgrade">
@@ -6519,6 +6522,9 @@
           <infoLinks>
             <infoLink id="3e9d-f8ec-1fe9-0130" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7ca1-9ee7-c7c0-889f" name="Annihilator Beam" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -6540,6 +6546,9 @@
           <infoLinks>
             <infoLink id="acac-d3a9-7b2a-a44b" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8c60-ec7f-b85b-b29d" name="Advisors Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -6568,6 +6577,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
