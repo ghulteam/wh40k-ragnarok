@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="15" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="16" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -640,32 +640,29 @@
         <categoryLink id="35eb-117b-9074-10f9" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
         <categoryLink id="853c-3076-bb98-8b87" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1235-3f56-785e-23d7" name="Side Weaponry" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6bb9-2735-61a0-e662" name="Side Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9667-1023-36ea-345f">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1340-9898-cc0a-12fd" type="max"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a940-7c21-d098-cfd5" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aef-9712-ee5b-adda" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff59-dbe3-75fa-a4af" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9ecf-f558-8bc7-1b8b" name="Death Ray" hidden="false" collective="false" import="true" targetId="dc7e-fa16-4764-35c9" type="selectionEntry">
+            <entryLink id="db04-0008-3876-4329" name="Death Ray" hidden="false" collective="false" import="true" targetId="dc7e-fa16-4764-35c9" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968b-b842-b09f-9f34" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e0-525d-2f76-9749" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="7f7c-16a3-ab60-82b3" name="Gauss Flux Arc" hidden="false" collective="false" import="true" targetId="fdb3-3efc-8cf1-9c76" type="selectionEntry">
+            <entryLink id="9667-1023-36ea-345f" name="Gauss Flux Arc" hidden="false" collective="false" import="true" targetId="fdb3-3efc-8cf1-9c76" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fbe-0f4c-9b8a-4129" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9840-fe4b-4260-59b7" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="344f-cf27-678a-90a9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink id="a5fa-2f28-7e7d-50b2" name="Crushing Bulk" hidden="false" collective="false" import="true" targetId="6344-8f72-146f-6da0" type="selectionEntry">
