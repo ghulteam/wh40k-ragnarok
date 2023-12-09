@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="8" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="9" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -36,6 +36,9 @@
     <categoryEntry id="d53c-6d11-8d70-a95a" name="Pteraxii Skystalkers" hidden="false"/>
     <categoryEntry id="1dc0-04a3-61cc-6482" name="Serberys Raiders" hidden="false"/>
     <categoryEntry id="1434-f292-33f5-a122" name="Serberys Sulphurhounds" hidden="false"/>
+    <categoryEntry id="3d6f-d9df-03b4-50ac" name="Archaeopter Transvector" hidden="false"/>
+    <categoryEntry id="620f-6a3e-c3a1-3edb" name="Archaeopter Stratoraptor" hidden="false"/>
+    <categoryEntry id="27b4-e40f-761f-06c4" name="Archaeopter Fusilave" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -171,6 +174,21 @@
     <entryLink id="5f76-95af-3449-7dcd" name="Serberys Sulphurhounds" hidden="false" collective="false" import="true" targetId="433a-842b-78b0-add9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9c9d-d7d0-f853-9d6f" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b630-694c-42cd-afaa" name="Archaeopter Transvector" hidden="false" collective="false" import="true" targetId="303a-2ece-3e3f-9292" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="46a9-9cbe-54a7-9e28" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="93eb-260a-741a-2f85" name="Archaeopter Stratoraptor" hidden="false" collective="false" import="true" targetId="f512-f465-31dd-bf13" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1b22-22cc-56c4-9edd" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd59-4def-eb32-9fd7" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" targetId="a5e4-d67e-45c3-44b9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6c5a-5c5e-25f5-2a40" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2885,6 +2903,9 @@
         </entryLink>
         <entryLink id="b412-25d7-208e-8c34" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ddc-6ce9-5bac-6e71" name="Flechette Carbines" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2899,6 +2920,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b783-ec93-03ec-47a0" name="Pteraxii Sterylizors" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2975,6 +2999,9 @@
         </entryLink>
         <entryLink id="8006-dd1b-ceb4-49d9" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="eedc-cccb-08b9-8dd3" name="Phosphor torches" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2992,6 +3019,9 @@
       <infoLinks>
         <infoLink id="f3d9-e670-f33f-270b" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3a1b-94e4-1f6f-2915" name="Serberys Raiders" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3082,6 +3112,9 @@
           <infoLinks>
             <infoLink id="76af-80e4-69b6-a44d" name="Sniper" hidden="false" targetId="d452-1a22-2e0c-7a9e" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3093,6 +3126,9 @@
         </entryLink>
         <entryLink id="0465-0dfa-ecdc-0f0b" name="3-9 models" hidden="false" collective="false" import="true" targetId="cd49-5340-f60d-2857" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="739c-56fa-06cd-1c58" name="Clawed Limbs" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3199,6 +3235,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4f33-1292-e207-a314" name="Phosphor Pistols" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3217,6 +3256,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3228,6 +3270,258 @@
         </entryLink>
         <entryLink id="17ff-5cf0-f8ff-ec64" name="3-9 models" hidden="false" collective="false" import="true" targetId="cd49-5340-f60d-2857" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="303a-2ece-3e3f-9292" name="Archaeopter Transvector" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4c82-13da-f855-24b5" name="Archaeopter Transvector" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-50&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ba5-17cf-8097-414f" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 6 Secutarii Infantry or &lt;Forge World&gt; Infantry models. It cannot transport Belisarius Cawl, Kataphron Breacher or Kataphron Destroyer units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5053-d95f-bf23-a6b3" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="14b8-7dba-974c-b7f2" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="49f6-4871-6e42-9932" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="8479-f19b-79dd-4dbb" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="92cc-3fcd-3f68-fbee" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="e664-9f0d-3ef7-16a3" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="b719-68ba-695d-e1e2" name="Archaeopter Transvector" hidden="false" targetId="3d6f-d9df-03b4-50ac" primary="false"/>
+        <categoryLink id="d007-b7bb-e87b-f424" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="32b9-d1c7-7998-3f30" name="Cognis Heavy Stubber" hidden="false" collective="false" import="true" targetId="8911-7e10-0253-95be" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4dc-682b-c374-b3da" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ea-2fde-ad63-871c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="af63-14a6-792a-e4af" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+        <entryLink id="8492-7494-affe-f984" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="9061-b4cf-1422-8bc9" name="Twin Cognis Heavy Stubber" hidden="false" collective="false" import="true" targetId="992a-6f27-ab3a-e0df" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be7-2cb0-1374-48fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a2-3473-1f4c-bb67" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f512-f465-31dd-bf13" name="Archaeopter Stratoraptor" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="977c-ee1f-28bf-15d7" name="Archaeopter Stratoraptor" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-50&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="23f9-8d76-2fdb-8103" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d56a-bb62-a0fc-f094" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="f83e-8b0c-bc4d-403c" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="ce76-1fdb-6d32-cb1b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="990d-4afc-0b3a-798e" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="409d-adc8-1a18-4456" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="2c46-4b85-0aec-61c7" name="Archaeopter Stratoraptor" hidden="false" targetId="620f-6a3e-c3a1-3edb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5740-2898-89db-8fc3" name="Cognis Heavy Stubber" hidden="false" collective="false" import="true" targetId="8911-7e10-0253-95be" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="419d-789c-3505-2c6d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a04a-cafd-8a9f-979a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8840-acc0-2efd-ac91" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+        <entryLink id="6cd9-9d7e-4920-5050" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="aafb-f819-180d-5258" name="Heavy Phosphor Blaster" hidden="false" collective="false" import="true" targetId="fa06-9e0a-ecd0-56ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b13-3005-3c87-3df2" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8371-71f9-8b67-9128" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b1c8-5260-e132-9c7e" name="Twin Cognis Lascannon" hidden="false" collective="false" import="true" targetId="e7a2-d332-8c6a-8cc4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b741-cec0-57e5-1386" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa43-25d8-69b9-5500" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f31-1ae7-aaff-ab60" name="Cognis Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4260-71e7-e5e5-1dce" name="Cognis Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="992a-6f27-ab3a-e0df" name="Twin Cognis Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="28da-0b59-db2a-8082" name="Twin Cognis Heavy Stubber" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e7a2-d332-8c6a-8cc4" name="Twin Cognis Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3ae0-d307-1b57-30e9" name="Twin Cognis Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a5e4-d67e-45c3-44b9" name="Archaeopter Fusilave" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1dd2-edaf-1e7f-eae3" name="Archaeopter Fusilave" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-50&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ad32-6ba0-ae66-d0e7" name="Bomb Rack" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, select one enemy unit it moved over whilst making that Move action. Roll two D6, subtracting 1 from each result if that unit is a CHARACTER and adding 1 to each result if that unit is HEAVY or SUPER-HEAVY; for each result of 3+ place one blast marker next to that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a615-2bcb-65bc-c1c3" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5d0e-45b9-4d02-122f" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="f1f4-1397-a465-7cd3" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="cc87-9135-544d-0dc3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="4ff4-3175-4677-b8c1" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="a6a0-39e5-705c-9e4a" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="b531-f0cd-577c-b01a" name="Archaeopter Fusilave" hidden="false" targetId="27b4-e40f-761f-06c4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8a5d-aa15-22a2-3548" name="Cognis Heavy Stubber" hidden="false" collective="false" import="true" targetId="8911-7e10-0253-95be" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ba0-c0ba-5528-7ea2" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aff-4961-aa00-2707" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="15c3-2746-f818-1e86" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+        <entryLink id="5c91-e545-b17d-0fad" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3171-8844-70ba-84b5" name="Skitarii Marshal" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3ab1-e3de-d337-82e7" name="Skitarii Marshal" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e97-9d24-5ac3-8e48" name="Servo-skull Uplink" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly &lt;FORGEWORLD&gt; SKITARII units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3099-9b13-ebca-325b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="4672-a8da-f186-e091" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="9087-7acd-b608-3ac0" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="986a-a1a8-56b2-aa42" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="0bf3-7380-c810-b725" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3c77-b5bd-0c4e-73cd" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="d829-e7ca-01a0-6c50" name="Faction: Skitarii" hidden="false" targetId="47b6-38f8-7a3a-5ccd" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="72f2-ec19-55b5-53af" name="Control Stave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1d-4b7d-ba16-90e3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae1-2a9a-054c-5c45" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="39e3-eb59-c72d-c2f0" name="Control Stave" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="75ad-7512-fc9c-96ca" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
