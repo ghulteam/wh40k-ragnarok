@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="18" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="19" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -128,9 +128,10 @@
     <categoryEntry id="61e8-3175-9981-7f18" name="Bladeguard Veteran Squad" hidden="false"/>
     <categoryEntry id="8293-b982-b93f-be0c" name="Brutalis Dreadnought" page="" hidden="false"/>
     <categoryEntry id="af0f-a591-56a4-a662" name="Outrider Squad" hidden="false"/>
-    <categoryEntry id="8cb1-3cb0-a06a-8ae4" name="Ballistus Dreadnought" hidden="false">
-      <comment></comment>
-    </categoryEntry>
+    <categoryEntry id="8cb1-3cb0-a06a-8ae4" name="Ballistus Dreadnought" hidden="false"/>
+    <categoryEntry id="4717-f485-12b8-23c7" name="Centurion" hidden="false"/>
+    <categoryEntry id="fa6a-c341-2e6f-798d" name="Centurion Assault Squad" hidden="false"/>
+    <categoryEntry id="a78e-a675-6d75-295a" name="Centurion Devastator Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11764,6 +11765,9 @@ otherwise, place one blast marker next to it.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="fd96-4cef-4eba-9c5b" name="Ballistus Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -11782,6 +11786,9 @@ otherwise, place one blast marker next to it.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -11790,6 +11797,373 @@ otherwise, place one blast marker next to it.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b44d-6713-35e2-e142" name="Centurion Assault Squad" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="5947-1505-f7e2-016a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="6904-29a0-4249-7ef0" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="4dc7-18f6-4528-2b9a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="bbc7-0925-bf50-161d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c4cf-0cb7-a379-a61d" name="Centurion Assault Squad" hidden="false" targetId="fa6a-c341-2e6f-798d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4691-c0e9-2e42-aacb" name="Centurion Siege Drills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c74-201f-03c6-d43d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe2-7c16-4f9f-5130" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9861-a313-6df6-02cd" name="Centurion Siege Drills" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="170f-3d6d-369b-8d87" name="3 -6 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9734-c9e8-f0f0-e785" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d6-45eb-b288-b902" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f37b-cc9e-8d03-73b9" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5167-60dc-10d9-811d" name="Centurion Assault Squad (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ac0-9ff3-5980-3ac9" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9840-c365-e78c-6cc5" name="Centurion Assault Squad (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a0b2-2fd0-d803-791c" name="Arm Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="47c3-bbbe-a8a9-5f27" value="6.0">
+              <conditions>
+                <condition field="selections" scope="b44d-6713-35e2-e142" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ac0-9ff3-5980-3ac9" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="fdcc-d40b-5045-a1dd" value="6.0">
+              <conditions>
+                <condition field="selections" scope="b44d-6713-35e2-e142" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ac0-9ff3-5980-3ac9" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47c3-bbbe-a8a9-5f27" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdcc-d40b-5045-a1dd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7a9a-f990-63d3-7f21" name="Paired Flamers" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b9-a678-b691-0113" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="135e-2e3b-070b-01a5" name="Paired Flamers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7ffc-6aba-0f18-4b14" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c918-20f6-a426-149d" name="Paired meltaguns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97a3-a960-78d6-656d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dd78-17ff-bca6-8f15" name="Paired meltaguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="94f4-7931-0ab7-50ac" name="Body Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="386e-32be-7628-ddbb" value="6.0">
+              <conditions>
+                <condition field="selections" scope="b44d-6713-35e2-e142" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ac0-9ff3-5980-3ac9" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="40f4-a569-59dc-1ab0" value="6.0">
+              <conditions>
+                <condition field="selections" scope="b44d-6713-35e2-e142" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ac0-9ff3-5980-3ac9" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f4-a569-59dc-1ab0" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="386e-32be-7628-ddbb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8b28-7b27-c39a-41c3" name="Centurion Assault Launchers" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c90-f38c-f260-c4b2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d811-e760-fbd2-2c88" name="Centurion Assault Launchers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="ee2b-6782-4be8-c64a" name="Hurricane Bolter" hidden="false" collective="false" import="true" targetId="abd4-677c-38d8-044d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1b-ff47-c1e0-df4a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5944-c861-143d-bc5c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c30a-4be2-c46c-7a87" name="Centurion Devastator Squad" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d433-0189-d51e-554d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="3599-46a7-df7e-1fce" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="cb92-cc0b-b78f-f5a8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2c0a-1ed3-5114-305f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4844-9341-6316-d4e9" name="Centurion Devastator Squad" hidden="false" targetId="a78e-a675-6d75-295a" primary="false"/>
+        <categoryLink id="4ced-1dd7-9a50-fd9c" name="Centurion" hidden="false" targetId="4717-f485-12b8-23c7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a72f-f269-9412-74fd" name="Armoured Gauntlets" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c56-e511-1976-e21f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92af-f104-b97f-8f4d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="33fb-7a77-089c-ec43" name="Armoured Gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1174-c3bc-45d8-0648" name="3 -6 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3238-9883-805e-0b92" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a67-c6aa-b3f4-badd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4083-591d-8015-d836" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9eb2-c2c5-b6f0-21b7" name="Centurion Devastator Squad (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5269-3a2e-d237-40a0" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="94a7-bcf6-13e6-5ffe" name="Centurion Devastator Squad (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e9dc-2855-2d45-6989" name="Body Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="f54f-3c53-f82c-f9d5" value="6.0">
+              <conditions>
+                <condition field="selections" scope="c30a-4be2-c46c-7a87" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5269-3a2e-d237-40a0" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="88c0-bc19-2e51-1e29" value="6.0">
+              <conditions>
+                <condition field="selections" scope="c30a-4be2-c46c-7a87" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5269-3a2e-d237-40a0" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88c0-bc19-2e51-1e29" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54f-3c53-f82c-f9d5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="aed2-d4ce-b5d4-ec57" name="Centurion Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe5-4da5-fc23-ba6d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6b9e-0b2f-2c90-56d7" name="Centurion Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="2df1-9207-da22-a94d" name="Hurricane Bolter" hidden="false" collective="false" import="true" targetId="abd4-677c-38d8-044d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1553-c3c3-0d45-34c5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ea81-fee3-ee7a-7e5d" name="Arm Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="dcd2-06d5-692e-27d6" value="6.0">
+              <conditions>
+                <condition field="selections" scope="c30a-4be2-c46c-7a87" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5269-3a2e-d237-40a0" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="b7bd-8e4c-30e3-4dee" value="6.0">
+              <conditions>
+                <condition field="selections" scope="c30a-4be2-c46c-7a87" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5269-3a2e-d237-40a0" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7bd-8e4c-30e3-4dee" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcd2-06d5-692e-27d6" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4f1c-0e48-b34b-3059" name="Grav-Cannon" hidden="false" collective="false" import="true" targetId="2767-582b-0ce4-bab4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c3-9aca-c606-f33c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8af3-a63f-ff64-f128" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fb6-0b77-7b94-ef46" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5044-5439-dac8-9fbe" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8980-8515-ac90-9224" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e107-def4-419d-6548" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
