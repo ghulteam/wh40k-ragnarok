@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="11" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="12" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -94,6 +94,7 @@
     <categoryEntry id="b42b-c274-27e1-98bf" name="Spined Chaos Beast" hidden="false"/>
     <categoryEntry id="a984-f9de-3a4b-6033" name="Giant Chaos Spawn" hidden="false"/>
     <categoryEntry id="68e0-d8a3-a5c1-74cd" name="Scabeiathrax the Bloated" hidden="false"/>
+    <categoryEntry id="9d56-3e41-332a-ba5b" name="Ku&apos;gath the Plaguefather" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="a0cf-1e2f-7d5b-412a" name="Aetaos’rau’keres" hidden="false" collective="false" import="true" targetId="83b2-5a4e-bfc3-ad1f" type="selectionEntry">
@@ -395,7 +396,7 @@
         <categoryLink id="5c62-9501-9319-98c0" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="52df-a386-12b7-5ade" name="Rotigus" hidden="false" collective="false" import="true" targetId="e6e4-2b03-a4fd-9349" type="selectionEntry">
+    <entryLink id="52df-a386-12b7-5ade" name="Ku&apos;gath the Plaguefather" hidden="false" collective="false" import="true" targetId="52d6-4f50-4959-5536" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5c6e-3771-1019-e980" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -8308,6 +8309,117 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52d6-4f50-4959-5536" name="Ku&apos;gath the Plaguefather" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13dd-e8b8-5428-f7c9" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6918-9897-6cc9-d668" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cefc-f7b5-9fc5-8305" name="Ku&apos;gath the Plaguefather" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9c6a-b89b-56f9-4b68" name="Greater Daemon of Nurgle" hidden="false" targetId="99c8-7681-b9fb-3d4f" type="profile"/>
+        <infoLink id="7295-b9de-e56b-ab0c" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="38cf-56f5-0143-c500" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="7231-4068-c1e2-d5e0" name="Faction: Nurgle" hidden="false" targetId="deea-5fa0-0ab5-be6f" primary="false"/>
+        <categoryLink id="a13b-34e3-4252-f9f2" name="Faction: Daemon" hidden="false" targetId="87a6-0f8f-7d40-7deb" primary="false"/>
+        <categoryLink id="3c43-a88e-4e01-1719" name="Faction: Legiones Daemonica" hidden="false" targetId="fab3-7acf-351d-537b" primary="false"/>
+        <categoryLink id="e895-9b6a-0da0-d1fc" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="fc6a-fd51-6ce8-f287" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="c24b-2b9d-d776-58aa" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="28b0-273c-ece5-b64f" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="2d97-9b41-7386-3259" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
+        <categoryLink id="61ce-c5e7-387c-85f0" name="Ku&apos;gath the Plaguefather" hidden="false" targetId="9d56-3e41-332a-ba5b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="23f2-fcdc-e106-d24a" name="Bilesword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7813-03e3-feaf-7f62" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad57-ff11-5ff9-c538" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e6f1-600d-cf20-5e83" name="Bilesword" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="40da-0810-f7b4-8cd9" name="Ku&apos;gaths Nurglings" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b4-f070-4ad2-8ac3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ec-4931-f687-cc3e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0e3c-0175-bd5f-7116" name="Ku&apos;gaths Nurglings" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5059-2257-b921-e776" name="Necrotic Missile" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="224b-ded3-a250-d14e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e5-217c-a2fc-61a9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3cf7-0935-7e19-f4a4" name="Necrotic Missile" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0836-7a8c-dac6-1e31" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
