@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -1068,7 +1068,7 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
       <description>Each time a Super-heavy unit is destroyed, the controlling player rolls one D12 before removing it from the battlefield. On a 10+ that unit explodes or collapses in such a way as to crush those nearby; place one blast marker next to every unit (excluding Super-heavy units) that is within 6&quot; of the destroyed unit before removing it from the battlefield.  If the destroyed Super-heavy unit is a Transport, units must attempt to disembark before these blast markers are applied.</description>
     </rule>
     <rule id="5c6e-8e31-0425-1422" name="Turret Weapon" hidden="false">
-      <description>If this model is in base contact with any enemy units, it can still target and resolve attacks against enemy units that are not within base contact with it or any allied units with weapons with this ability. While performing such attacks substract 1 from hit rolls. Each time this model makes an attack with this weapon, add 1 to that attack&apos;s hit roll.</description>
+      <description>Each time this model makes an attack with this weapon, add 1 to that attack&apos;s hit roll. If this model is not a SUPER-HEAVY and is in base contact with any enemy units, it can still target and resolve attacks against enemy units that are not within base contact with it or any allied units with weapons with this ability. While performing such attacks substract 1 from hit rolls. </description>
     </rule>
   </sharedRules>
   <sharedProfiles>
