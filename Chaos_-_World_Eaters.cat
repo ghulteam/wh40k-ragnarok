@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="3" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="4" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
     <categoryEntry id="58e8-2e73-4c1b-d90e" name="Eightbound" hidden="false"/>
     <categoryEntry id="7d26-0251-53f5-b032" name="Jakhals" hidden="false"/>
     <categoryEntry id="cb0b-8313-b267-bba9" name="Exalted Eightbound" hidden="false"/>
+    <categoryEntry id="0e74-9b80-290b-c2f2" name="Faction: Butcher Astartes" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="86ab-5eac-5402-be03" name="Angron" hidden="false" collective="false" import="true" targetId="9b8e-914b-6e41-3c04" type="selectionEntry">
@@ -66,6 +67,26 @@
     </entryLink>
     <entryLink id="eb5a-c13d-429e-a657" name="Greater Brass Scorpion of Khorne" hidden="false" collective="false" import="true" targetId="f692-9c00-d320-323c" type="selectionEntry"/>
     <entryLink id="4948-9df9-ba33-2462" name="Kytan Ravager" hidden="false" collective="false" import="true" targetId="43af-be45-7918-425b" type="selectionEntry"/>
+    <entryLink id="97af-6cb4-c7e4-3ee8" name="Lord Invocatus" hidden="false" collective="false" import="true" targetId="6768-9d78-9c17-71ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c4ac-e4bd-561e-34de" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5d21-00b2-5c7e-858a" name="World Eaters Lord on Juggernaut" hidden="false" collective="false" import="true" targetId="e7d0-5ee7-e143-44f2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ac79-02c6-1e59-c3af" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7ee7-1f3f-485b-f246" name="Eightbound" hidden="false" collective="false" import="true" targetId="3186-1046-911d-d8a5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f36e-e496-f70f-65c4" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5362-0959-a87b-70a3" name="Exalted Eightbound" hidden="false" collective="false" import="true" targetId="cccf-9e4f-bd07-0355" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="15b6-4d4f-d081-8c45" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4d14-2f5a-e38e-07a1" name="Jakhals" hidden="false" collective="false" import="true" type="unit">
@@ -218,6 +239,246 @@
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="6768-9d78-9c17-71ca" name="Lord Invocatus" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580c-af59-eeff-e3cf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1cf9-2418-78c5-6129" name="Lord Invocatus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1242-f332-082a-f3b9" name="Leading the Charge" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a WORLD EATER LIGHT unit starts a Move action within 6&quot; of any friendly units with this ability, add 2&quot; to its Move characteristic whilst making that Move action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d9ba-15c2-755f-97fa" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="5615-274b-fa4a-7470" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="8382-3005-f4d3-6faa" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="423a-22be-0c74-7e3f" name="Faction: World Eaters" hidden="false" targetId="f93a-a857-d0c4-0fed" primary="false"/>
+        <categoryLink id="b053-f4c0-c105-257c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b602-a8c7-df5d-1d23" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="5abf-92a4-c0a5-9f10" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="d277-ac2a-db43-b5f3" name="Lord Invocatus" hidden="false" targetId="148a-bbc1-ce95-3eb8" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6cb3-cbcc-abc5-f4ee" name="Coward&apos;s Bane" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2b7-c695-b7f8-b639" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="732f-577e-c226-e948" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ea84-9605-504f-11d5" name="Coward&apos;s Bane" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d69f-8568-4efd-f660" name="Bladed Horn" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f52f-defc-8581-7c54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d68-f0db-4c2c-e085" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7427-2d66-2427-d25f" name="Bladed Horn" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e7d0-5ee7-e143-44f2" name="World Eaters Lord on Juggernaut" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="35db-4eba-c662-f865" name="Lord of Chaos" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;LEGION&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2796-f45b-44fb-191c" name="World Eaters Lord on Juggernaut" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7107-7bd9-e248-be42" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="5732-85c3-ea06-df45" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="74a3-c798-2aa9-8b38" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ba22-7d83-c502-cdf9" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="13a9-c39d-419d-7fb0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="20b8-61d6-094c-77ae" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="7bef-25fd-2216-2bbd" name="Chaos Lord" hidden="false" targetId="2f53-570e-fcef-604b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0882-bfd9-ac7e-6bf9" name="Helwrought Weapons" hidden="false" collective="false" import="true" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+        <entryLink id="9452-e1e1-7ad2-81a0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3186-1046-911d-d8a5" name="Eightbound" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e13b-a723-4b3c-5742" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="80e7-b8dc-046f-64b9" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="196e-0cf3-771b-d414" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="0072-ad00-598a-296c" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="eb0b-36dd-2540-3473" name="Faction: World Eaters" hidden="false" targetId="f93a-a857-d0c4-0fed" primary="false"/>
+        <categoryLink id="01c3-837d-7e46-a96c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="8543-8b92-2107-f63f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a84f-dcba-1116-f773" name="Faction: Butcher Astartes" hidden="false" targetId="0e74-9b80-290b-c2f2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="90e6-cd51-5c2a-bf0b" name="3-6 Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="f727-3625-3e37-d47e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f801-e774-31f5-657a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b3-887a-77fe-3b2e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f727-3625-3e37-d47e" name="3 Models" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e694-a459-c263-0ff8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6dfd-6671-8ffc-1bc8" name="Eightbound (3 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2d74-e79e-f29f-4364" name="6 Models" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dc4-0156-0cd3-8afb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fb8c-fa79-3acc-6e61" name="Eightbound (6 Models)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7e56-7d5b-56ca-7ba5" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" targetId="948d-d4eb-1364-08c4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4d-bd92-7297-6af6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4589-a9dc-e867-21cd" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="cccf-9e4f-bd07-0355" name="Exalted Eightbound" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f987-9c0b-695b-9784" name="Exalted Eightbound (3 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a13a-2ba3-24a5-046e" name="Blood Fury" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Roll a dice if an enemy LIGHT units wants to make a Fall Back move whilst they are within 6&quot; of this unit; on a 7+ the unit cannot Fall Back this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aa9d-532a-26be-9f31" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3263-fd4a-8a1b-b735" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="72ba-c0b3-cd8d-e3cd" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="c2db-7447-a82a-7649" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="6edd-465c-1b76-bf65" name="Faction: World Eaters" hidden="false" targetId="f93a-a857-d0c4-0fed" primary="false"/>
+        <categoryLink id="8d23-b997-4a62-3bcb" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ae7b-cddf-e417-e00d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a69a-c697-97e2-828d" name="Faction: Butcher Astartes" hidden="false" targetId="0e74-9b80-290b-c2f2" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cb97-25db-66bf-5586" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" targetId="948d-d4eb-1364-08c4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6537-5499-5600-1d76" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="083d-1e7b-1ae1-1d09" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="948d-d4eb-1364-08c4" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3676-93ad-e7b0-8be3" name="Eightbound Eviscerator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
