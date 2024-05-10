@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="10" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -588,76 +588,6 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7a88-172e-ca96-4246" name="Chaplain Dreadnought Titus" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83ca-6d50-ac48-7fdc" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2083-6ee4-f2ad-52a6" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="047c-ad58-5bed-eb00" name="Icon of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by friendly HOWLING GRIFFONS units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b5aa-766e-043d-2051" name="Ignore Damage (5+)" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="91e5-d554-fecb-b4dc" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="f36a-4a96-845c-33c1" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="69ce-38f7-71dc-5f39" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="bda6-3f4e-0315-864b" name="Faction: Howling Griffons" hidden="false" targetId="4132-84b3-3131-57b0" primary="false"/>
-        <categoryLink id="2f3e-7f56-27f3-c66b" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-        <categoryLink id="4126-a638-b088-2530" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="de95-d921-f7df-8d8e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="3b7c-7e8e-9548-8121" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
-        <categoryLink id="b9da-8da7-092d-7537" name="Chaplain Dreadnought Titus" hidden="false" targetId="a6a2-1f25-f0da-40bc" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4fd5-cb48-266d-65c7" name="Dreadnought Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5022-10b1-ad87-9e8f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bab-eef2-67f3-63fc" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4828-55a3-9cfa-0fd0" name="Dreadnought Combat Weapon" hidden="false" targetId="e199-b982-8946-993d" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="b27b-3441-afd1-35f2" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbc6-b07e-8b7f-34b2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8784-ab62-628d-2fda" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="549f-c8fb-973b-cbd9" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10d0-ded9-498c-2cb0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1274-cedc-4b48-01ed" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b103-9e02-2bb3-8bc6" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="76ca-309f-3be0-f48b" name="Lieutenant Commander Anton Narvaez" hidden="false" collective="false" import="true" type="unit">
@@ -2610,7 +2540,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9449-4fba-2e80-f56b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b81b-8746-4bb5-8e73" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b81b-8746-4bb5-8e73" name="05 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="990a-8db1-30c7-6361" name="Crusader Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -2618,7 +2548,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
                   </characteristics>
@@ -2636,7 +2566,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
                   </characteristics>
@@ -2654,7 +2584,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
                   </characteristics>
@@ -2672,7 +2602,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
                   </characteristics>
@@ -4751,6 +4681,16 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="3fd7-42e4-0637-11e1" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0962-66ca-2f31-6fee" name="Invader ATV Squad" hidden="false" collective="false" import="true" targetId="3842-e7c3-6bfa-2b59" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9cc5-8388-f8e6-2d16" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cfb1-39ec-f375-9856" name="Chaplain Dreadnought Titus" hidden="false" collective="false" import="true" targetId="523a-c1db-0b76-025c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0bae-d6b2-bbb8-21a8" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="27b6-232c-68c6-567a" name="Primaris Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
@@ -6571,6 +6511,75 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="523a-c1db-0b76-025c" name="Chaplain Dreadnought Titus" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83ca-6d50-ac48-7fdc" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a792-3e85-b00d-ec02" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="090e-cacf-4892-2bef" name="Icon of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by friendly HOWLING GRIFFONS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="92a0-09d2-2e98-46e7" name="Ignore Damage (5+)" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3aa9-388a-1347-4586" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ed34-5f86-67f0-db44" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="631a-2b8a-1ea3-9e3e" name="Faction: Howling Griffons" hidden="false" targetId="4132-84b3-3131-57b0" primary="false"/>
+        <categoryLink id="daae-dea6-e291-cc42" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="ba90-3696-6a0a-1e13" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="33b6-2faa-607c-ecb1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="0076-485a-d326-9306" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink id="7e8f-5985-2f82-dfa9" name="Chaplain Dreadnought Titus" hidden="false" targetId="a6a2-1f25-f0da-40bc" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="41e6-46f1-3d4c-fb65" name="Dreadnought Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b42b-7b4e-8bba-bd5f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="140c-dde0-544b-9a19" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a07d-b53e-0bdd-6081" name="Dreadnought Combat Weapon" hidden="false" targetId="e199-b982-8946-993d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6ab6-6da0-8ea2-d534" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d0-2113-bb36-08e4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c5-e83d-472d-7122" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ab07-b1df-d989-5394" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b1-a990-e8ba-d04b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5105-0a98-3f5d-b1a3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ef56-c51e-5020-5c1c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
