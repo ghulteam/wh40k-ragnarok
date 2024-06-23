@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="5" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="6" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="571e-a83e-e771-780a" name="Faction: Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="21f5-1b47-2570-42d1" name="Faction: Adepta Sororitas" hidden="false"/>
@@ -38,6 +38,7 @@
     <categoryEntry id="31e9-0c9c-5055-9fed" name="Mortifiers" hidden="false"/>
     <categoryEntry id="1793-5781-3815-7a0d" name="Palatine" hidden="false"/>
     <categoryEntry id="a84b-4691-a64a-a111" name="Sisters Novitate Squad" hidden="false"/>
+    <categoryEntry id="c0aa-231e-af63-b4f4" name="Dogmata" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="42db-5e55-cf04-5981" name="Geminae Superia" hidden="false" collective="false" import="true" targetId="ef0f-f67c-da10-8dcf" type="selectionEntry">
@@ -268,6 +269,11 @@
     <entryLink id="5631-7567-bf1c-186b" name="Sisters Novitate Squad" hidden="false" collective="false" import="true" targetId="f07d-4c86-6fd7-9706" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4bdb-4714-5f69-9d71" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="18d6-50a7-fee8-31a7" name="Dogmata" hidden="false" collective="false" import="true" targetId="1513-2e2c-c4bf-c713" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dbc2-bc3a-b819-e524" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3035,6 +3041,9 @@
               <infoLinks>
                 <infoLink id="819e-3906-7c5a-a742" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="694c-dbde-80c0-ca0c" name="Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3062,6 +3071,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3071,6 +3083,65 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1513-2e2c-c4bf-c713" name="Dogmata" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9865-19d2-f121-f7ae" name="Dogmata" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1877-7b3b-c79c-e88f" name="War Hymn" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Attacks characteristic of friendly LIGHT &lt;Order&gt; units whilst they are making Fight actions within 6&quot; of this unit. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cc56-b4a0-6455-b4a8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="04c2-656d-67b3-7959" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="71d4-8a9e-0ec1-7c81" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="8d58-d222-9aa5-70e9" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="9b33-95e1-b626-8100" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="383f-f4e0-9ad5-fc28" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="cf02-e01a-97da-9fd6" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="b8cf-bbcd-858f-74f9" name="Dogmata" hidden="false" targetId="c0aa-231e-af63-b4f4" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="35a1-5014-68dc-943e" name="Mace of the Righteous" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8040-c321-133b-6b4e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc06-07dc-450f-67a3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7c1a-fac0-8524-34be" name="Mace of the Righteous" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9527-285d-a490-ec7c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

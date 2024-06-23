@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -5430,6 +5430,14 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55e-032c-8d73-ba06" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="7561-9dca-07fa-8c32" name="Heavy Plague Weapon" hidden="false" collective="false" import="true" targetId="928c-367b-647c-c1aa" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df0-cbb2-cd01-2257" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6787,7 +6795,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           <modifiers>
             <modifier type="increment" field="632d-6610-1d6f-c52e" value="1.0">
               <conditions>
-                <condition field="selections" scope="a26a-75ca-e0c7-17fd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="088e-2500-824f-0738" type="equalTo"/>
+                <condition field="selections" scope="a26a-75ca-e0c7-17fd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fac5-c5a4-d92a-f25a" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7759,6 +7767,24 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="928c-367b-647c-c1aa" name="Heavy Plague Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd4-37f7-0e56-cb31" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aca-eeb5-cc9f-40f2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2c1b-175c-8224-b416" name="Heavy Plague Weapon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

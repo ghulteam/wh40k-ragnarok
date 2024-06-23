@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -95,6 +95,8 @@
     <categoryEntry id="5f4e-4759-7b6c-2c54" name="Carab Culln the Risen" hidden="false"/>
     <categoryEntry id="e8c6-0bfd-449b-b3ad" name="Primaris Crusader Squad" hidden="false"/>
     <categoryEntry id="b86b-8400-a28f-4730" name="Primaris Sword Brethren" hidden="false"/>
+    <categoryEntry id="aaaa-96d2-985d-3e1e" name="Sigismund" hidden="false"/>
+    <categoryEntry id="bac1-ab3e-e700-0b47" name="Marshal" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="1843-1f7a-63ca-0acc" name="Lord High Commander Carab Culln" hidden="false" collective="false" import="true" type="unit">
@@ -347,86 +349,6 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="508c-5358-bc85-4ddd" name="Chaplain Ivanus Enkomi" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e00-5892-f9d4-177f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="76e1-bb86-8f29-7a67" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="ba45-0317-23a4-4cf8" name="Spiritual Leader" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly MINOTAURS units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="f420-731e-51a0-4deb" name="Chaplain Ivanus Enkomi" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="01d6-89f7-1967-2d6f" name="Litanies of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly MINOTAURS units when using melee weapons whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="942f-124a-7aed-ec8d" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="17a0-6ccb-e568-ad31" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="f144-9eab-d309-f402" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="eb12-56db-57a1-6616" name="Faction: Minotaurs" hidden="false" targetId="926a-6459-f629-9aec" primary="false"/>
-        <categoryLink id="c764-2286-29c2-1b74" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="a884-6678-1e26-977b" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="adb9-add9-16f3-e1a1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="d468-1b53-fb67-2950" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
-        <categoryLink id="7a33-08d7-daf1-462d" name="Ivanus Enkomi" hidden="false" targetId="b8c9-1a96-bced-43f5" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6e82-aad1-54ae-c01e" name="Crozius Arkanos &amp; Power Fist" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a1-5f3a-d65e-d8cb" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb7-49b2-50de-8fdd" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e3ba-f4a8-2083-8ffe" name="Crozius Arkanos &amp; Power Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="79c1-0183-8ece-55bc" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bead-45e2-7f89-f5cd" name="Magister Sevrin Loth" hidden="false" collective="false" import="true" type="unit">
@@ -2440,75 +2362,6 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a875-29ec-6a94-a2b3" name="Chaplain Grimaldus" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca78-2035-6c8e-8373" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0319-2d7e-d0ad-16af" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="be0d-0a01-8dcf-2712" name="Litanies of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made with melee weapons by friendly BLACK TEMPLARS units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3b7f-ffed-a377-b454" name="Spiritual Leader" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly BLACK TEMPLARS units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3fa5-4141-1212-75f2" name="Unmatched Zeal" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, in the Action phase, when you select this unit’s Detachment to carry out its order, but before any units in that Detachment make an action (excluding free actions) that phase, you can replace that Detachment’s order with Assault.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="cc14-ff9b-a8ce-4163" name="Chaplain Grimaldus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="073c-c836-021a-25a8" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="5e22-0877-1994-5021" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="ee1a-fbd5-287e-cf24" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="e07d-49dc-107d-95e3" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
-        <categoryLink id="b50b-0257-7f20-7ae8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="3f58-d166-f8a3-12e3" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="4d79-33d8-f103-e966" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="3c14-9a7e-5935-db2b" name="Priest" hidden="false" targetId="0642-3d2d-db41-9ddd" primary="false"/>
-        <categoryLink id="de1e-ed55-e875-637d" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
-        <categoryLink id="354a-7a9d-239c-80a9" name="Grimaldus" hidden="false" targetId="db54-b743-58b3-5e39" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="7e66-7a81-a145-ada8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="edd3-207f-a3d3-c7ec" name="Crozius Arcanum" hidden="false" collective="false" import="true" targetId="6b0f-d313-fbcc-8c90" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3997-3d62-daa2-cd72" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc5b-eaa9-0aac-4e40" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a8e-efa7-d434-a692" name="Crusader Squad" hidden="false" collective="false" import="true" type="unit">
@@ -4691,6 +4544,26 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="0bae-d6b2-bbb8-21a8" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="29dc-a41b-7a02-644a" name="Sigismund" hidden="false" collective="false" import="true" targetId="a6d1-bb68-97bb-2e61" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="90a7-2ebd-6e52-148b" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ce1a-d0b5-ebea-c226" name="Chaplain Grimaldus" hidden="false" collective="false" import="true" targetId="e676-627e-a3ba-2723" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3016-62d1-45ff-896b" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3fa6-78c7-e4d1-b7dc" name="Chaplain Ivanus Enkomi" hidden="false" collective="false" import="true" targetId="7d60-e660-5e81-577f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ba5f-9b48-b19b-4150" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6f9b-cb7f-7e03-f4f1" name="Marshal" hidden="false" collective="false" import="true" targetId="b38b-5ab0-a016-e787" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0f2c-41d8-4e82-dd35" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="27b6-232c-68c6-567a" name="Primaris Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
@@ -6580,6 +6453,301 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6d1-bb68-97bb-2e61" name="Sigismund" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca78-2035-6c8e-8373" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8546-d77b-58a2-aa72" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="53e3-7d64-319f-72ba" name="Sigismund" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d1d-4769-09aa-e24f" name="Slayer of Kings" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made with melee weapons by this unit that target CHARACTER units. Melee attacks of this unit that target CHARACTER units count as having the DESTROYER special rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f922-a928-4897-2c53" name="Death&apos;s Champion" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a BLACK TEMPLARS INFANTRY unit starts a Move action within 6&quot; of any friendly units with this ability, add 2&quot; to its Move characteristic whilst making that Move action. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ce43-8e01-b109-710d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="75f9-d487-bcec-0739" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="c51b-a250-bb2c-45cd" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
+        <categoryLink id="4eba-9052-1323-ce41" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="623a-92d8-2599-8ff0" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0e05-7f65-44ea-82c6" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="56e1-79f4-ad9e-88ad" name="Sigismund" hidden="false" targetId="aaaa-96d2-985d-3e1e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f634-a1ca-0a56-efa2" name="The Black Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a01-79aa-6312-1e23" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b238-746f-b758-d97e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3831-0246-0c0d-f775" name="The Black Sword" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="71dc-1516-efac-d316" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e676-627e-a3ba-2723" name="Chaplain Grimaldus" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca78-2035-6c8e-8373" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6016-87fb-e836-fe6a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ea3d-4d89-d2b8-097e" name="Litanies of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made with melee weapons by friendly BLACK TEMPLARS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6054-101e-90dd-493c" name="Spiritual Leader" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly BLACK TEMPLARS units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d51a-a06e-a8b2-975f" name="Unmatched Zeal" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, in the Action phase, when you select this unit’s Detachment to carry out its order, but before any units in that Detachment make an action (excluding free actions) that phase, you can replace that Detachment’s order with Assault.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76bf-b9a6-665b-f1c4" name="Chaplain Grimaldus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="fadf-7430-d602-1da5" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1e04-ac8c-687a-0760" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3e8e-a095-a090-6164" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
+        <categoryLink id="65fc-7c62-d13b-5f5f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f729-86ab-e760-b743" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4f28-c33d-fa28-b58b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="a7c4-b33d-ab0f-eafd" name="Priest" hidden="false" targetId="0642-3d2d-db41-9ddd" primary="false"/>
+        <categoryLink id="e801-50cf-c2e8-d9f1" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
+        <categoryLink id="bda6-36bf-56f2-7ba1" name="Grimaldus" hidden="false" targetId="db54-b743-58b3-5e39" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2268-2b28-fd91-8a84" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2fa1-8b7b-45f2-0d24" name="Crozius Arcanum" hidden="false" collective="false" import="true" targetId="6b0f-d313-fbcc-8c90" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f50-93cf-a6c0-c161" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37fd-4041-66b0-6381" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d60-e660-5e81-577f" name="Chaplain Ivanus Enkomi" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e00-5892-f9d4-177f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="abec-0b94-d022-34f5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c607-faef-0ffe-e668" name="Spiritual Leader" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly MINOTAURS units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b325-5a48-0a4b-b4b5" name="Chaplain Ivanus Enkomi" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ccd2-abe4-17fe-78c5" name="Litanies of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly MINOTAURS units when using melee weapons whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f1d5-3ac3-32ef-a557" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1ef1-bef4-dbab-ced7" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="0878-16fc-bd0e-472d" name="Faction: Minotaurs" hidden="false" targetId="926a-6459-f629-9aec" primary="false"/>
+        <categoryLink id="e5e0-3db5-5e02-e84a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="9def-f5b1-4a9a-4b0c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4f8b-bc24-5302-ba74" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="9757-5a44-8398-7587" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
+        <categoryLink id="8ad2-638c-0c44-4056" name="Ivanus Enkomi" hidden="false" targetId="b8c9-1a96-bced-43f5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="abdc-2cd2-b680-e8a6" name="Crozius Arkanos &amp; Power Fist" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f36c-2c27-2359-ae24" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a295-bdee-caa7-5c5e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e56e-6723-a363-c6d8" name="Crozius Arkanos &amp; Power Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c706-614f-d84e-714a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b38b-5ab0-a016-e787" name="Marshal" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca78-2035-6c8e-8373" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a2fd-b731-14f3-5629" name="Crusade of Wrath" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the wound rolls for attacks made with melee weapons by friendly BLACK TEMPLARS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f175-f41b-e7f6-5369" name="Marshal" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b3f8-5375-0d68-18be" name="Marshal" hidden="false" targetId="bac1-ab3e-e700-0b47" primary="false"/>
+        <categoryLink id="9fbb-5776-3ec5-0e48" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="55a6-b5cc-f975-e6ed" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
+        <categoryLink id="9fd4-2e3f-8287-ebe2" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="5169-074c-2952-315f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d9f9-9d2a-0d5a-f92d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c2a2-4ddf-c3f2-45aa" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="50c9-bc5b-bd6c-2b9c" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bec0-7f22-166a-79fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c1-5e94-5117-ad03" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="882b-b79f-8b4d-6a85" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="cd78-947f-04a0-565d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

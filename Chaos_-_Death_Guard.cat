@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="7" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="9" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="466a-33f5-0faf-5cd1" name="Faction: The Tainted" hidden="false"/>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
@@ -24,6 +24,7 @@
     <categoryEntry id="af7c-c010-74dc-c316" name="Plague Drones" hidden="false"/>
     <categoryEntry id="48ae-aa44-e518-6fe5" name="Plagueburst Crawler" hidden="false"/>
     <categoryEntry id="813a-f91c-a238-b454" name="Mamon Transfigured" hidden="false"/>
+    <categoryEntry id="7800-197e-994c-1bd9" name="Lord of Virulence" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="973c-a187-23eb-367c" name="Necrosius the Undying" hidden="false" collective="false" import="true" targetId="40f2-0d55-9248-1a38" type="selectionEntry">
@@ -489,6 +490,11 @@
         <categoryLink id="9bfa-1319-edc9-a45b" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
         <categoryLink id="6e42-c263-1aa8-1197" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
         <categoryLink id="d7fb-0b8b-0ec1-839d" name="New CategoryLink" hidden="false" targetId="38d6-4782-ed3b-5187" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="572f-f523-017a-b011" name="Lord of Virulence" hidden="false" collective="false" import="true" targetId="7036-6411-6ccb-473c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e3cd-8dba-b60f-1493" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2619,11 +2625,82 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7036-6411-6ccb-473c" name="Lord of Virulence" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fb9c-788a-8592-3bf0" name="Lord of Virulence" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4a8e-257b-3772-c945" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="0953-2531-6057-c1c2" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+        <infoLink id="5eda-77d8-7e6d-b471" name="Master of Destruction" hidden="false" targetId="1e3c-3543-742e-3a4f" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9bf6-61ee-8218-93a3" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="fc14-059c-4863-a51e" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
+        <categoryLink id="e09b-75e5-b0b3-c369" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="b0cd-399d-1245-e67e" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
+        <categoryLink id="b49d-47b1-c3ee-92c6" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="06f9-5a90-81e3-2e63" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="dc7e-d5f5-8577-f864" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="6c1f-6cd5-d0b2-fa34" name="Terminator" hidden="false" targetId="24bd-5192-53cb-efe8" primary="false"/>
+        <categoryLink id="be60-0842-d1a6-e558" name="Lord of Virulence" hidden="false" targetId="7800-197e-994c-1bd9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="78dc-2b0b-9b49-ffb2" name="Prodigious Plague Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a779-e1ef-f125-c8df" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fef-421e-0953-faa3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e1e0-f0c9-6af0-4646" name="Plague Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="da52-21bc-311a-7e98" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2902-a73b-733f-9dc0" name="Plague Spewer" hidden="false" collective="false" import="true" targetId="2cd7-4619-1257-e108" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ad1-974c-a960-b6fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40df-e38e-1141-2031" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="a95b-fa5f-3684-b250" name="Nurgle&apos;s Gift" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D12 for each unit within 7&quot; of any enemy units with this ability; on a 12 place one blast marker next to the unit being rolled for.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e3c-3543-742e-3a4f" name="Master of Destruction" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for ranged attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
