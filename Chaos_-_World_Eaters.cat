@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="4" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="5" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -7,6 +7,11 @@
     <categoryEntry id="7d26-0251-53f5-b032" name="Jakhals" hidden="false"/>
     <categoryEntry id="cb0b-8313-b267-bba9" name="Exalted Eightbound" hidden="false"/>
     <categoryEntry id="0e74-9b80-290b-c2f2" name="Faction: Butcher Astartes" hidden="false"/>
+    <categoryEntry id="aea4-048b-5dea-9da6" name="Bloodcrushers" hidden="false"/>
+    <categoryEntry id="5314-8dcc-7828-3385" name="Faction: Legiones Daemonica" hidden="false"/>
+    <categoryEntry id="ecfb-a0d3-7169-fe19" name="Bloodletters" hidden="false"/>
+    <categoryEntry id="e9de-f230-ba2f-fe32" name="Skull Cannon" hidden="false"/>
+    <categoryEntry id="ec14-ffb6-f130-02ed" name="Bloodletter" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="86ab-5eac-5402-be03" name="Angron" hidden="false" collective="false" import="true" targetId="9b8e-914b-6e41-3c04" type="selectionEntry">
@@ -85,6 +90,21 @@
     <entryLink id="5362-0959-a87b-70a3" name="Exalted Eightbound" hidden="false" collective="false" import="true" targetId="cccf-9e4f-bd07-0355" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="15b6-4d4f-d081-8c45" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c7bb-73dc-81c6-2f1e" name="Bloodcrushers" hidden="false" collective="false" import="true" targetId="ae6c-b395-43dd-dc9f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="088c-4cea-d7d1-a9f9" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ff31-4acd-8e1b-d9db" name="Bloodletters" hidden="false" collective="false" import="true" targetId="f1ed-c537-9e71-01de" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5d9c-4a02-f3cd-a535" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d44f-2158-b95d-8e03" name="Skull Cannon" hidden="false" collective="false" import="true" targetId="38f7-15a3-38fd-a0dd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3e0d-7eb5-3437-2dd8" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -493,7 +513,314 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f1ed-c537-9e71-01de" name="Bloodletters" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9711-3b8a-c6d1-9def" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="a227-f921-f478-8d8b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="26c6-c862-3ea5-dd9c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="287a-03a5-4641-7894" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="7e4f-6600-018e-0345" name="Faction: Legiones Daemonica" hidden="false" targetId="5314-8dcc-7828-3385" primary="false"/>
+        <categoryLink id="7579-2064-b7bc-2111" name="Bloodletters" hidden="false" targetId="ecfb-a0d3-7169-fe19" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f6cd-4470-7eff-23ae" name="10 - 30 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a7-a494-a828-e0f0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fd3-5fea-a847-66ce" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="06cb-e67d-cf7e-fbc9" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="d60c-9a45-b01a-732f" name="Bloodletters (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b654-371c-5771-1953" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2821-6579-e95b-de52" name="Bloodletters (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0f84-df61-5f79-a309" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e1e0-04e3-3ea4-b62b" name="Bloodletters (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="de33-70dc-215c-cf5a" name="Hellblades" hidden="false" collective="false" import="true" targetId="0715-7ec2-0726-2939" type="selectionEntry"/>
+        <entryLink id="52f4-01d8-a396-08c6" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae6c-b395-43dd-dc9f" name="Bloodcrushers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8a05-8efb-3c7a-276e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="7a16-738a-3bf5-7f31" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4ba0-e0e5-2c57-6673" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="104a-3046-a507-18be" name="Faction: Legiones Daemonica" hidden="false" targetId="80f5-c959-6de1-e5d5" primary="false"/>
+        <categoryLink id="d3f3-ec3b-384c-d026" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="de67-0daf-d447-65a8" name="Bloodcrushers" hidden="false" targetId="aea4-048b-5dea-9da6" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="14fe-c9ba-9fce-3218" name="Bladed Horns" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="492b-c68b-9167-3800" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31ac-1b5c-985a-527a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7ee9-9d4a-cb37-8634" name="Bladed Horns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cd3e-819e-4bc5-7a49" name="3 - 12 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff2-f50e-2227-13a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51f-b8fa-e605-196d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f37f-f5be-95ec-da20" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f609-4a2a-d028-574e" name="Bloodcrushers (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ea2f-bdb8-4e30-e8fa" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8429-3a7b-ee9a-f5b2" name="Bloodcrushers (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3bde-d864-760c-f920" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2c31-b268-4722-ce88" name="Bloodcrushers (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a8bc-82a3-c152-040c" name="12 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="caee-8a35-7030-d737" name="Bloodcrushers (12 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="19eb-a6fb-3cf4-9f0e" name="Hellblades" hidden="false" collective="false" import="true" targetId="0715-7ec2-0726-2939" type="selectionEntry"/>
+        <entryLink id="301d-2298-045d-9436" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="38f7-15a3-38fd-a0dd" name="Skull Cannon" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2099-ed9f-1624-b00f" name="Skull Cannon" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d8e1-1ed3-afcd-a3b6" name="Gorefeast" hidden="false" targetId="43e5-1fc5-8f2d-988b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a31b-926e-4945-f912" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="f4df-7d6c-c698-bcb2" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="752a-cf12-af5c-6892" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+        <categoryLink id="6c4c-a387-f2f4-1458" name="Faction: Legiones Daemonica" hidden="false" targetId="5314-8dcc-7828-3385" primary="false"/>
+        <categoryLink id="5368-98e8-9df9-6127" name="Skull Cannon" hidden="false" targetId="e9de-f230-ba2f-fe32" primary="false"/>
+        <categoryLink id="aeab-47ab-0a36-4116" name="Bloodletter" hidden="false" targetId="ec14-ffb6-f130-02ed" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f63d-e65f-e84d-7db3" name="Skull Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0deb-69eb-378e-78e0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0283-3189-13a6-7396" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b31c-c423-1269-be40" name="Skull Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c611-7b08-28d3-c0a0" name="Hellblades &amp; Gnashing Maw" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6a-a962-56ec-e1b0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3f-1626-587b-0d79" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5b7f-3bd0-fdd3-3de3" name="Hellblades &amp; Gnashing Maw" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0d5e-28e1-e899-c6a0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0715-7ec2-0726-2939" name="Hellblades" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e130-f8e3-df89-3d1c" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-cd9e-ee59-1cca" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bf9f-b40a-86f6-acec" name="Hellblades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="43e5-1fc5-8f2d-988b" name="Gorefeast" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a blast marker is placed next to an enemy unit as a result of an attack made with a melee weapon by this unit, you can remove one blast marker from this unit. Small blast markers must be removed before large blast markers.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="5c89-ef95-8084-9b82" name="Library - Chaos Space Marines" targetId="df5c-f15d-f672-a301" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="f63a-b8a1-3f51-6731" name="Library - Chaos Primarchs" targetId="6638-9778-3d62-e10b" type="catalogue" importRootEntries="true"/>
