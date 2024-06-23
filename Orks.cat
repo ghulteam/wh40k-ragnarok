@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -249,6 +249,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="edcc-bbe7-bdf3-e330" name="Ghazghkull Thraka" hidden="false" collective="false" import="true" targetId="892e-1ec0-f484-651e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-911e-46de-9721" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c867-6e0e-dc5c-75ab" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -456,6 +463,18 @@
     <entryLink id="fac1-38e9-53e7-2f17" name="Beastboss" hidden="false" collective="false" import="true" targetId="660b-7280-f536-f868" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="506f-e8bc-4173-da2c" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fd23-8b07-1874-c1ad" name="Ghazghkull Thraka Ascended" hidden="false" collective="false" import="true" targetId="d187-911e-46de-9721" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892e-1ec0-f484-651e" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="41b4-56bf-6057-7dd5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9532,6 +9551,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9613,6 +9635,93 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d187-911e-46de-9721" name="Ghazghkull Thraka Ascended" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1d80-40bd-b92c-2787" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="575d-38cc-1e4c-68bd" name="Ghazghkull Thraka" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="398b-ab17-479d-3d7b" name="Great Waaagh!" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Attacks characteristic of friendly ORKS LIGHT units whilst they are making Fight actions whilst within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a074-670a-26cc-1228" name="Waaagh! (Goff)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with melee weapons by friendly GOFF units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9077-2921-85ff-9eff" name="Prophet of Gork and Mork" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time you roll damage for this unit, you can roll one D12 for one of that unit&apos;s saving throws instead of one D6.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="747e-42d1-0ca0-6946" name="Faction: Goff" hidden="false" targetId="1a8c-71a8-0fdb-4340" primary="false"/>
+        <categoryLink id="7501-26aa-1bc1-eed4" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="e35b-6b9b-bd25-26d9" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="dfcb-f4f6-b333-6070" name="Mega Armour" hidden="false" targetId="6d33-213f-1a98-c8ca" primary="false"/>
+        <categoryLink id="139b-2384-2d5f-dff3" name="Ghazghkull Thraka" hidden="false" targetId="7321-94fd-ebf2-58d1" primary="false"/>
+        <categoryLink id="be45-5144-0c54-a357" name="Warboss" hidden="false" targetId="b0f1-57b5-c3df-d786" primary="false"/>
+        <categoryLink id="eadc-ca26-8d71-5e0c" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="231c-33cc-ba00-fea1" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="00c7-2b0c-7ae9-5898" name="Mork&apos;s Roar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5965-aab2-d561-2384" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0e-7665-6566-e312" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8fae-9e06-1d2b-1b2e" name="Mork&apos;s Roar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="d1e5-7aac-d313-ff26" name="Gork&apos;s Klaw" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23e0-d393-47ba-2c78" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deff-569e-5a55-7fd2" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5d9a-69f8-69b4-43a7" name="Gork&apos;s Klaw" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="446d-c67b-df00-c9a2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
