@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="21" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="22" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -133,6 +133,7 @@
     <categoryEntry id="fa6a-c341-2e6f-798d" name="Centurion Assault Squad" hidden="false"/>
     <categoryEntry id="a78e-a675-6d75-295a" name="Centurion Devastator Squad" hidden="false"/>
     <categoryEntry id="7f4e-3c91-e41b-8a27" name="Invader ATV" hidden="false"/>
+    <categoryEntry id="e63b-6d6c-bf94-f0d4" name="Eradicator Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -3046,23 +3047,16 @@
       <profiles>
         <profile id="36b4-9f09-2ea9-58f0" name="Imperial Space Marine" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce"/>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"/>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77"/>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c"/>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c"/>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290"/>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc"/>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="27d8-719c-ae2a-2173" name="Marine Profile" hidden="false" targetId="9fd5-e263-b9aa-02b7" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Imperial Space Marine"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="a7f0-bf98-4ab5-f00d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="d873-fad7-b705-2c7a" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
@@ -12309,6 +12303,96 @@ otherwise, place one blast marker next to it.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="31c8-f07f-d8cb-71da" name="Eradicator Squad" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="5e99-a8e0-c0bc-2acb" name="Eradicator Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="31c8-f07f-d8cb-71da" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e7c3-5441-86c5-1be4" name="Total Obliteration" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made with Weapons by this unit that target MONSTER or VEHICLE units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="96dc-bfd8-c486-aab5" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="fcb8-0d8a-3a81-0f75" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="283b-796d-3cc8-3966" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5fa6-e6da-a737-13f8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="122a-3ed9-1062-316c" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="4d2f-ae7a-36c8-9c8c" name="Eradicator Squad" hidden="false" targetId="e63b-6d6c-bf94-f0d4" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1b08-1fba-6104-9719" name="Melta Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01a8-0550-77d6-480d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-df74-5981-3f1d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="2495-0e39-c251-467e" name="Melta Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="289c-700f-dcef-87ea" name="3 - 6 models" hidden="false" collective="false" import="true" targetId="fd57-db55-b1b1-9b16" type="selectionEntryGroup"/>
+        <entryLink id="4d06-078e-bed2-9ced" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="22a0-cc70-0775-b6a4" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b157-dcfd-2e99-acf7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c07-f6fc-52e0-6fa7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="535b-62a4-0c07-2025" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="a11e-0a25-90bd-d6dc" value="1.0">
+              <conditions>
+                <condition field="selections" scope="31c8-f07f-d8cb-71da" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a11e-0a25-90bd-d6dc" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -12509,6 +12593,7 @@ otherwise, place one blast marker next to it.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="16.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c608-6a5b-42d5-48e2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e63b-6d6c-bf94-f0d4" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="10.0">
@@ -12523,6 +12608,7 @@ otherwise, place one blast marker next to it.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="8.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c608-6a5b-42d5-48e2" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e63b-6d6c-bf94-f0d4" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="11.0">
