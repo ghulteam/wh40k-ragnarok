@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="16" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="17" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -82,6 +82,7 @@
     <categoryEntry id="6098-e7d8-5cf9-5d47" name="Technomancer" hidden="false"/>
     <categoryEntry id="ee3d-4dc2-67b4-d03c" name="The Silent King" hidden="false"/>
     <categoryEntry id="b4d4-1527-1e92-16fd" name="Faction: Szarekhan" hidden="false"/>
+    <categoryEntry id="14a3-33bc-8e9a-6c4f" name="Unholy Necropolis" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="0fca-c942-6c70-c3ed" name="Endless Phalanx" hidden="false">
@@ -100,6 +101,35 @@
           </constraints>
         </categoryLink>
         <categoryLink id="4ffd-ebf2-2408-4f1d" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="11c8-a35c-105f-4cc1" name="Unholy Necropolis" hidden="false">
+      <rules>
+        <rule id="9e3e-09b9-c8a0-9fa6" name="Unholy Necropolis" hidden="false">
+          <description>The &quot;Unholy Necropolis&quot; Detachement consists of one Tesseract Vault and eight Monoliths. The Commander of a &quot;Unholy Necropolis&quot; Detachement has to be the Tesseract Vault. If the Tesseract Vault is removed from play move the command token to another model as normal. </description>
+        </rule>
+      </rules>
+      <forceEntries>
+        <forceEntry id="7a28-d2cb-297e-b386" name="Unholy Necropolis" hidden="false">
+          <categoryLinks>
+            <categoryLink id="9a74-9531-3cef-a032" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="false"/>
+            <categoryLink id="a00d-7177-a118-1a9c" name="Tesseract Vault" hidden="false" targetId="3e69-aa98-e66a-d778" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="7d8d-a432-9bb2-b627" name="Tesseract Vault" hidden="false" targetId="3e69-aa98-e66a-d778" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3769-e7e6-f55e-8753" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207f-b558-2f62-9f76" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cce5-00f9-b9e0-5688" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="-8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e0-986b-599e-de61" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d937-5c14-c978-e846" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -436,6 +466,42 @@
     <entryLink id="4806-e58d-c4a7-6a90" name="The Silent King" hidden="false" collective="false" import="true" targetId="5880-5044-d2da-cc8f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="be33-cd08-de18-e6d1" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="acf2-a039-4d35-b9af" name="Tesseract Vault" hidden="false" collective="false" import="true" targetId="6cd7-6932-2556-f11c" type="selectionEntry">
+      <profiles>
+        <profile id="6cb3-73b3-2280-35df" name="Destroyer-Beam" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">A Tesseract Vault that is part of a Unholy Necropolis Detachement gains an additional Weapon, the Destroyer-Beam. Every Monolith that is part of the same Unholy Necropolis Detachement and in 3&quot; of the Tesseract Vault may forego their Shooting this turn to enhance the Profile of the Destroyer-Beam to increase the Range by 12&quot; and the Number of Shots by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2503-3f4b-704c-0929" name="Destroyer-Beam" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;+</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1+</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Apocalyptic Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="63bf-6976-0393-1b4b" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
+        <categoryLink id="7b94-8df3-735d-c31b" name="New CategoryLink" hidden="false" targetId="3e69-aa98-e66a-d778" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="237f-f7d6-9025-2000" name="Monolith" hidden="false" collective="false" import="true" targetId="0548-6292-45ff-ee21" type="selectionEntry">
+      <profiles>
+        <profile id="de63-f199-0ada-b7ec" name="Superior Shieldmatrix" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">A Monolith that is part of an Unholy Necropolis Detachement in 3&quot; of the Tesseract Vault of that Detachement may increase its save characteristic by 1 for each other Monolith that is part of this Detachement in 3&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d9d1-1a4a-f1c1-3837" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
+        <categoryLink id="495f-f795-1d31-e917" name="New CategoryLink" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
