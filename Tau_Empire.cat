@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="10" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6e11-42ed-c084-ce74" name="Datasheet T&apos;au Empire"/>
     <publication id="e282-a216-345a-e73a" name="Datasheet FW T&apos;au Empire"/>
@@ -84,19 +84,20 @@
     <categoryEntry id="8b55-92b1-52d4-b39d" name="Great Knarloc" hidden="false"/>
     <categoryEntry id="3353-9ce0-97e3-e5d5" name="Hammerhead" publicationId="e282-a216-345a-e73a" hidden="false"/>
     <categoryEntry id="2518-fd4d-62f8-d78c" name="The Eight" hidden="false"/>
+    <categoryEntry id="76eb-f4dd-c8bf-e7f3" name="Kroot Lone-spear" hidden="false"/>
+    <categoryEntry id="fe83-8e75-08f5-0cc3" name="Kroot Farstalkers" hidden="false"/>
+    <categoryEntry id="b6b4-0b9d-2c78-0715" name="Krootox Rampagers" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="ed9a-239a-acce-bf94" name="The Eight" hidden="false">
       <constraints>
         <constraint field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2465-e5cb-d712-5dea" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="b245-2f18-c5e4-b06c" name="The Eight" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">A &quot;The Eight&quot; Detachements consist of the following 8 Special Characters: Commander Farsight, Commander Brightsword, Commander Bravestorm, Shas’o Sha’vastos, Shas’o Arra’kon, Sub-Commander Torchstar, Broadside Shas’vre Ob’lotai 9-0 and O’Vesa. The Commander of a &quot;The Eight&quot; Detachement has to be Commander Farsight. If Commander Farsight is removed from play move the command token to another model as normal. Only place an Out of Command marker next to units of this detachement if, at the start of the Orders phase, it is more than 24&quot; from its Detachement&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachments&apos;s Commander). When issued an Assault Command, Units that are part of this Detachement may perform either one Shoot action or one Fight action after their Move action.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <rules>
+        <rule id="f3ef-8adb-0b43-6fba" name="The Eight" hidden="false">
+          <description>A &quot;The Eight&quot; Detachements consist of the following 8 Special Characters: Commander Farsight, Commander Brightsword, Commander Bravestorm, Shas’o Sha’vastos, Shas’o Arra’kon, Sub-Commander Torchstar, Broadside Shas’vre Ob’lotai 9-0 and O’Vesa. The Commander of a &quot;The Eight&quot; Detachement has to be Commander Farsight. If Commander Farsight is removed from play move the command token to another model as normal. Only place an Out of Command marker next to units of this detachement if, at the start of the Orders phase, it is more than 24&quot; from its Detachement&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachments&apos;s Commander). When issued an Assault Command, Units that are part of this Detachement may perform either one Shoot action or one Fight action after their Move action.</description>
+        </rule>
+      </rules>
       <forceEntries>
         <forceEntry id="3f5b-c338-1a89-7b32" name="The Eight" hidden="false">
           <categoryLinks>
@@ -175,7 +176,7 @@
         <categoryLink id="c835-a88f-358c-b2e9" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7f0c-c990-dd21-54d2" name="Kroot Shaper" hidden="false" collective="false" import="true" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry">
+    <entryLink id="7f0c-c990-dd21-54d2" name="Kroot War Shaper" hidden="false" collective="false" import="true" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="00c8-ec32-7dd2-d088" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
@@ -453,6 +454,31 @@
     <entryLink id="cd1a-460d-570f-77bb" name="O’Vesa" hidden="false" collective="false" import="true" targetId="92a5-4d00-4597-bd63" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ab09-5e6e-682c-386a" name="The Eight" hidden="false" targetId="2518-fd4d-62f8-d78c" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="613f-4204-6db7-92d0" name="Kroot Flesh Shaper" hidden="false" collective="false" import="true" targetId="e16f-3ad9-739a-5c6a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9b22-7ac4-9dce-701c" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f588-cfb1-3638-4b45" name="Kroot Trail Shaper" hidden="false" collective="false" import="true" targetId="481e-f123-b4cd-e428" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f57d-daae-b0e8-6e50" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="db6f-f75a-ea62-41b4" name="Kroot Lone-Spear" hidden="false" collective="false" import="true" targetId="92ce-df66-0da8-5993" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e71-4df3-f9d4-aa02" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a0ca-b47a-e90f-4e44" name="Kroot Farstalkers" hidden="false" collective="false" import="true" targetId="e240-2de3-ef56-d769" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="32f9-2ae9-0634-eafc" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6f49-134f-20e5-f398" name="Krootox Rampagers" hidden="false" collective="false" import="true" targetId="2184-60e6-9736-b03c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="86ff-2e0a-8d0a-062a" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1959,9 +1985,9 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ceb6-a16f-b5af-ee1e" name="Kroot Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ceb6-a16f-b5af-ee1e" name="Kroot War Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="bc88-0f28-e692-4168" name="Kroot Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="bc88-0f28-e692-4168" name="Kroot War Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -9998,6 +10024,434 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e16f-3ad9-739a-5c6a" name="Kroot Flesh Shaper" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="96be-f201-6865-fcd0" name="Kroot Flesh Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b1a-f0a9-4242-5ba8" name="Wisest of their Kind" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Kroot units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="076a-e566-5cd2-3bf9" name="Ritual Butchery" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Kroot units have the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6d85-1948-7282-b1c1" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5df3-0e5e-312d-3ad4" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="e45a-a7ba-0734-29b9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5948-bda9-9f7e-51c8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b4a1-b2f2-590c-80f2" name="Faction: Kroot" hidden="false" targetId="3892-f72e-b0ab-21bc" primary="false"/>
+        <categoryLink id="d0aa-d9dc-b1e8-7358" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="716a-8106-86f6-ba79" name="Kroot Shaper" hidden="false" targetId="2f39-07ec-282d-5dc1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5ef1-f87d-c932-b3dd" name="Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="648a-c147-1491-57e8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab29-432f-79bf-b194" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ee10-bde0-1f91-175b" name="Ritual Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e6fb-6b8e-1643-d6a2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="481e-f123-b4cd-e428" name="Kroot Trail Shaper" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="077b-c1c8-3b08-66ee" name="Kroot Trail Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d8d-4e99-c944-16d2" name="Wisest of their Kind" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Kroot units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a5f-ff13-4a6d-8e28" name="Trail Finding" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly Kroot unit starts a Move action within 6&quot; of any friendly units with this ability, add 2&quot; to its Move characteristic whilst making that Move action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9cf8-9002-e87a-dcb0" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="0311-a538-7696-0ca7" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="2f50-eac5-c89c-6e17" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="fc22-ece6-c767-93fe" name="Faction: Kroot" hidden="false" targetId="3892-f72e-b0ab-21bc" primary="false"/>
+        <categoryLink id="9e0c-ee68-bc50-0ffc" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f304-1c82-873d-5e60" name="Kroot Shaper" hidden="false" targetId="2f39-07ec-282d-5dc1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e292-f124-6922-bc5f" name="Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d521-c998-a40b-0e47" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d72-5baa-40ec-b2f3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6eaa-f737-ddcd-6df4" name="Ritual Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d18c-5995-fbba-21c7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92ce-df66-0da8-5993" name="Kroot Lone-Spear" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="82e5-ed60-79c5-22b9" name="Kroot Lone-Spear" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1146-cabb-058a-a0fd" name="Fire and Fade" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After performing a Shoot action, this unit may perform a Move action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c97-83b8-cf10-115d" name="Advanced Scouting" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After shooting against an enemy unit, until the end of this turn friendly Kroot units may reroll hit-rolls targeting that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="43d9-af03-e967-bdb7" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f370-dbb2-52cb-7586" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="f494-8b60-1723-e2f6" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="3036-9773-6201-ac65" name="Faction: Kroot" hidden="false" targetId="3892-f72e-b0ab-21bc" primary="false"/>
+        <categoryLink id="a7f0-69e2-bc47-caf5" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="303f-1443-d5ee-748f" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="e011-2d48-9512-b4f7" name="Kroot Lone-spear" hidden="false" targetId="76eb-f4dd-c8bf-e7f3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d3c7-b335-5fb2-5239" name="Kalamandra&apos;s bite" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9f-fc1c-0dac-c83e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0cc-98f9-1d0b-5313" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1a77-9c6d-c982-65cb" name="Kalamandra&apos;s bite" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="64ce-6fa6-e98e-e0d2" name="Kroot long gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43b3-9dbc-828d-38f8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="663f-76f1-774c-02ff" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3c5c-8053-c36f-01c2" name="Kroot long gun" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy&quot;</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8bb6-9545-fc78-51cf" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e240-2de3-ef56-d769" name="Kroot Farstalkers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="dd7a-4da2-881e-87d6" name="Kroot Farstalkers (12 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8028-0faf-15c0-d92f" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ad06-fab9-7023-0ebe" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="6a54-763f-5fc6-8b7a" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="201d-52ab-3f43-1d5c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="74e3-2420-e905-a6c6" name="Faction: Kroot" hidden="false" targetId="3892-f72e-b0ab-21bc" primary="false"/>
+        <categoryLink id="087f-415b-8194-b415" name="Kroot Farstalker" hidden="false" targetId="fe83-8e75-08f5-0cc3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5cea-eb39-1b59-0122" name="Kroot Rifles (Ranged)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2c-1dce-c5b0-b448" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="439d-3be2-9355-cf29" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="577e-a58e-980c-46d2" name="Kroot Rifles (Ranged)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8e5b-58aa-0817-6bc2" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6cdb-9040-0dc3-1cdf" name="Kroot Rifles (Melee)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f11-fc1f-8366-3132" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1250-b3bb-fa40-a8d1" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e030-8194-d657-6574" name="Kroot Rifles (Melee)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8a10-6921-c022-7e68" name="Pech&apos;ra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d746-4216-8c5f-ab5c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="61b8-a439-4234-e3cc" name="Pech&apos;ra" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a model equipped with a Pech&apos;ra it does not suffer the penalty for attacks made with ranged weapons that target obscured targets.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3131-7c49-bea9-3c0f" name="Kroot Special Weaponry" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e63b-b0e6-44ba-95d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0fdd-08de-5d2d-b6d8" name="Kroot Special Weaponry" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1ee1-629e-a1bd-7c81" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2184-60e6-9736-b03c" name="Krootox Rampagers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="182d-8ea9-898b-8fed" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="7f17-ba5e-c543-37c9" name="Faction: Kroot" hidden="false" targetId="3892-f72e-b0ab-21bc" primary="false"/>
+        <categoryLink id="4c18-0199-1b18-ca2d" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="a917-5dec-2931-73a7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0248-cee4-abf4-df4f" name="Krootox Rampagers" hidden="false" targetId="b6b4-0b9d-2c78-0715" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9791-6228-7a78-342e" name="Hunting Javelins" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8d-d9af-626e-6814" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047f-346b-bfc5-65ae" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7c8f-f772-aeb0-e276" name="Hunting Javelins" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="073d-7187-1f39-cdd8" name="Rampager Fists" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc0-d61e-ca50-04dd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d6b-6549-a0e7-4616" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7194-8141-7474-9be6" name="Rampager Fists" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9166-645b-b71e-7fe6" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bbd-954d-5f33-ae8d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bfe-39d4-28e5-5170" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="339f-9544-2302-cc51" name="3 Models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7f1c-21c0-553f-9f30" name="Krootox Rampagers (3 Models)" publicationId="e282-a216-345a-e73a" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="517a-bfdd-aae6-50aa" name="6 Models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8698-e981-d6dc-02e8" name="Krootox Rampagers (6 Models)" publicationId="e282-a216-345a-e73a" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e844-660f-44ce-e82a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
