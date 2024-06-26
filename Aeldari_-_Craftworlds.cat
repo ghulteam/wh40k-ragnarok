@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="16" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="18" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
   </publications>
@@ -84,7 +84,30 @@
     <categoryEntry id="9d23-393f-a633-5265" name="Corsair Falcon" publicationId="280a-43bb-426c-aa7c" hidden="false"/>
     <categoryEntry id="fe5f-ae76-6a2f-7d22" name="Corsair Venom" publicationId="280a-43bb-426c-aa7c" hidden="false"/>
     <categoryEntry id="c31f-3ff2-43cf-51d3" name="Faction: &lt;Conclave&gt;" publicationId="280a-43bb-426c-aa7c" hidden="false"/>
+    <categoryEntry id="b570-dcb6-f885-f99e" name="Phoenixcourt of Khaine" hidden="false"/>
   </categoryEntries>
+  <forceEntries>
+    <forceEntry id="9d75-1364-4824-6e6f" name="Phoenixcourt of Khaine" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d08-4cee-d706-c53e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bbaa-8c7e-4b33-eb5c" name="Phoenixcourt of Khaine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">A Phoenixcourt of Khaine Detachement consist of the following 7 Special Characters: AVATAR OF KHAINE, ASURMEN, BAHARROTH, FUEGAN, JAIN ZAR, KARANDRAS and MAUGAN RA. The Commander of a Phoenix Court of Khaine Detachement has to be the AVATAR OF KHAINE taken as part of this Detachement. If the AVATAR OF KHAINE is removed from play move the command token to another model as normal. Only place an Out of Command marker next to units of this detachement if, at the start of the Orders phase, it is more than 24&quot; from its Detachement&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachments&apos;s Commander). When issued an Assault Command, Units that are part of this Detachement may perform either one Shoot action or one Fight action after their Move action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="82c7-c768-e271-dfed" name="Phoenixcourt of Khaine" hidden="false" targetId="b570-dcb6-f885-f99e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f30-d863-33f5-7de6" type="max"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0675-1549-069f-2fb6" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <entryLinks>
     <entryLink id="8785-9bd8-6adf-940c" name="Eldrad Ulthran" hidden="false" collective="false" import="true" targetId="e4e5-fffd-9435-163e" type="selectionEntry">
       <categoryLinks>
@@ -137,6 +160,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="c9ba-d304-017c-3844" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="629f-fd39-b3e9-96f0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f664-8d55-f7eb-ed79" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1f46-1d9b-3d2d-d1be" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -448,6 +478,94 @@
     <entryLink id="2f64-4e08-e817-22fe" name="Vampire Raider" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="0e14-7bf4-496b-8530" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3c52-1cb1-dd27-2d0e" name="Lord of War, Transport" hidden="false" targetId="38d6-4782-ed3b-5187" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a8b0-0fc6-d78a-c384" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" targetId="f664-8d55-f7eb-ed79" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="629f-fd39-b3e9-96f0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="042a-a1cf-87e6-ee01" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ab98-6c37-77c5-c6af" name="Avatar of Khaine" hidden="false" collective="false" import="true" targetId="629f-fd39-b3e9-96f0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f664-8d55-f7eb-ed79" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3f80-cce7-7993-37bc" name="Rage of Khaine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">For every PHOENIX LORD unit in 6&quot; of this Avatar of Khaine increase the attack characteristic of this model by 1. In addition the range of his shooting attacks and aura abilities are doubled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9045-cb65-40e5-7b82" name="Phoenixcourt of Khaine" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+        <categoryLink id="9286-aea4-ea2a-7f42" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="72ae-157a-5ee2-f166" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" targetId="f664-8d55-f7eb-ed79" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="629f-fd39-b3e9-96f0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="26c5-3844-7106-8125" name="Rage of Khaine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">For every PHOENIX LORD unit in 6&quot; of this Avatar of Khaine increase the attack characteristic of this model by 1. In addition the range of his shooting attacks and aura abilities are doubled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="78d0-f760-1c90-328d" name="Phoenixcourt of Khaine" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+        <categoryLink id="8a14-3b04-3634-a3de" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="085e-a960-c0b6-5bdf" name="Asurmen" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="b1e9-150f-2d7c-2053" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="200d-8389-4233-063f" name="New CategoryLink" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+        <categoryLink id="8a6d-567b-a9ee-b04c" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="80e1-2488-243a-ec7a" name="Baharroth" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="3562-c0f4-6625-577d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="673b-e816-888d-1087" name="New CategoryLink" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+        <categoryLink id="640c-b6d5-d62d-4d94" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d2aa-ff93-d449-a675" name="Fuegan" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="8cc2-4200-3c18-116b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="43fe-33e8-4314-dd3e" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+        <categoryLink id="e05c-6771-2e3c-5d48" name="New CategoryLink" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a4aa-7c9b-f014-34b3" name="Jain Zar" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="4426-bfdb-0078-52cc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a751-308f-bcdf-f3e8" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+        <categoryLink id="f9fb-e436-9b95-b211" name="Phoenixcourt of Khaine" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7dd6-7e04-e9c3-6204" name="Karandras" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="0cf3-b3f6-b571-97de" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="08d5-fc66-7d79-8209" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+        <categoryLink id="ea66-c61f-1e66-2807" name="New CategoryLink" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="98b6-a0fb-d45b-b509" name="Maugan Ra" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="3673-2d76-83e7-62a5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="12a6-b50f-d4e4-4dc7" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+        <categoryLink id="bede-2fe1-3827-ed49" name="New CategoryLink" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7287,6 +7405,87 @@ weapons by this unit.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f664-8d55-f7eb-ed79" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="503a-97e4-a7f7-580f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3fb9-8dd1-4b89-54b4" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="06f5-2cc5-d332-37a2" name="Khaine Awakened" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly Asuryani units are automatically passed whilst they are within 12&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="51b6-345a-b995-71ba" name="The Bloody-Handed" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a AELDARI unit starts a Move action within 6&quot; of any friendly units with this ability, add 1&quot; to its Move characteristic whilst making that Move action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b8d1-21a3-9a2e-c52a" name="Ignore Damage (5+)" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3a6e-2ba6-49a1-9d58" name="Avatar of Khaine" hidden="false" targetId="2e91-aa9f-83cf-7eb8" primary="false"/>
+        <categoryLink id="a0b3-7eb4-002c-aa35" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="37e1-d619-a31b-b884" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
+        <categoryLink id="6067-7d37-8ab4-471c" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="5436-7c29-c06a-74ef" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="3410-937f-df12-e408" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="19c1-0806-e232-e649" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="9c32-b65f-14f2-79f8" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="4a4e-0a58-12e9-8622" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4a8d-5779-d78a-9444" name="The Wailing Doom" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0453-83c7-0c5d-830f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f27-d2fd-b4d2-9092" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7f9a-0449-889b-b619" name="The Wailing Doom (Ranged)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="834c-7eb0-7d3d-e069" name="The Wailing Doom (Melee)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="62cf-5d49-5d44-b1ad" name="Commander" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
