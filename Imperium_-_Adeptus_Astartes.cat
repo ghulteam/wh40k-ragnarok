@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="15" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="17" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -3782,7 +3782,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="2db4-d136-32a9-9194" name="Crusader Squad" hidden="false" targetId="c766-3827-14ca-a053" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2311-473e-d30a-a6b7" name="5 - 20 models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2311-473e-d30a-a6b7" name="5 - 20 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="57e9-c6fa-9f51-0578">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2a-c8a2-ef63-a5d3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31b0-ee87-3049-9585" type="max"/>
@@ -3899,14 +3899,44 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="950d-16d8-f9be-6a15" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a401-eb59-7b0d-dfd3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f034-cf94-4ef5-b78c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2235-9784-e34a-91ea" name="Boltguns" hidden="false" collective="false" import="true" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+              <profiles>
+                <profile id="a04b-1402-771d-ead6" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </entryLink>
+            <entryLink id="e41a-976e-3c06-f88a" name="Chainswords" hidden="false" collective="false" import="true" targetId="6d39-29c6-0022-b959" type="selectionEntry">
+              <profiles>
+                <profile id="fdb3-e740-8570-56ea" name="Bolt Pistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="120c-c493-aafd-a011" name="Boltguns" hidden="false" collective="false" import="true" targetId="2d61-a814-63d8-0398" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e0a-87a2-1a48-f41f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66cb-94d4-f34e-5339" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="de90-0d0e-f4bd-60f8" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d41-cf21-dd3a-d164" type="min"/>
@@ -3965,7 +3995,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6bc5-07b0-3938-0b67" name="5 - 10 models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6bc5-07b0-3938-0b67" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b6c-c995-d361-88ee">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f9d-33b1-e009-8beb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ff-c3f4-87b0-9119" type="max"/>
@@ -5787,7 +5817,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0a10-16a9-cd46-521e" name="5 - 20 models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0a10-16a9-cd46-521e" name="5 - 20 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dd9-66bb-1ffe-eb11">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e069-eba9-9c63-fb07" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dcf-24aa-cd4b-1871" type="max"/>
@@ -5795,7 +5825,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
           <selectionEntries>
             <selectionEntry id="3dd9-66bb-1ffe-eb11" name="05 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="a8ba-fb5a-a983-7321" name="Crusader Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="a8ba-fb5a-a983-7321" name="Primaris Crusader Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -5813,7 +5843,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             </selectionEntry>
             <selectionEntry id="844a-b9ec-d0b7-ddde" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="11e7-a309-1414-c69a" name="Crusader Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="11e7-a309-1414-c69a" name="Primaris Crusader Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -5831,7 +5861,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             </selectionEntry>
             <selectionEntry id="d81e-321f-b388-005a" name="15 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="0366-af16-c1fc-a1f6" name="Crusader Squad (15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="0366-af16-c1fc-a1f6" name="Primaris Crusader Squad (15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -5849,7 +5879,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             </selectionEntry>
             <selectionEntry id="2936-0f50-8d38-2461" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="af3b-5d58-cdc1-1606" name="Crusader Squad (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="af3b-5d58-cdc1-1606" name="Primaris Crusader Squad (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -6870,7 +6900,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9a49-79f2-54b1-fb43" name="5 - 10 models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9a49-79f2-54b1-fb43" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="987e-55d5-ec1b-36ff">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5f9-cb08-e3a4-c2c9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99fa-6ac8-1b6d-c3a0" type="max"/>
