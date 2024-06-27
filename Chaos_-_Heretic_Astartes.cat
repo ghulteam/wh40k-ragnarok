@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="10" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="11" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -21,6 +21,10 @@
     <categoryEntry id="7a29-6c65-5685-6480" name="Cultists of the Abyss" hidden="false"/>
     <categoryEntry id="2a03-6a72-c48c-5978" name="Priest" hidden="false"/>
     <categoryEntry id="46a5-c3ea-bb1e-a3ea" name="Dark Apostle" hidden="false"/>
+    <categoryEntry id="b609-45f3-3a80-cd0b" name="Accursed Cultists" hidden="false"/>
+    <categoryEntry id="1b0c-876b-6751-a275" name="Dark Commune" hidden="false"/>
+    <categoryEntry id="210a-44a6-fd99-a311" name="Cultists" hidden="false"/>
+    <categoryEntry id="0419-1721-e268-7d27" name="Vashtorr the Arkifane " hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e3a-9e52-abb6-9692" name="Hellforged Mastodon" hidden="false" collective="false" import="true" targetId="033e-f9c8-c4b0-2f34" type="selectionEntry">
@@ -877,6 +881,21 @@
     <entryLink id="54df-b842-e93b-a4ce" name="Cultists of the Abyss" hidden="false" collective="false" import="true" targetId="440b-ff5e-5bdb-0ecc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f30b-032c-ee21-f20e" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4ec3-4162-7135-6884" name="Accursed Cultists" hidden="false" collective="false" import="true" targetId="94dd-dbf3-528a-d11f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5012-8108-3649-9e20" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2d38-b5b0-1dbb-efee" name="Dark Commune" hidden="false" collective="false" import="true" targetId="c60a-4730-fd40-7037" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8ec5-9e80-c689-3f66" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1b75-7297-fb2f-3543" name="Vashtorr the Arkifane " hidden="false" collective="false" import="true" targetId="9f5b-7e28-b03e-18b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4e71-c576-ed50-cea5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2581,6 +2600,254 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="94dd-dbf3-528a-d11f" name="Accursed Cultists" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="20fb-9981-416d-540b" name="Accursed Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the stort of the turn, you may remove one damage marker from this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a679-9fa8-07bc-181d" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="958f-59b0-6eb4-5017" name="Accursed Cultists" hidden="false" targetId="b609-45f3-3a80-cd0b" primary="false"/>
+        <categoryLink id="1a74-38d4-9d90-d4e9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="aff0-8c34-9fee-950f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4fe1-9a83-e86d-fa10" name="Faction: &lt;Legion&gt;" hidden="false" targetId="a9db-51a0-4be9-9856" primary="false"/>
+        <categoryLink id="d059-cd60-d0a1-4717" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="1ade-691d-1484-fdbf" name="Cultists" hidden="false" targetId="210a-44a6-fd99-a311" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="54ed-0813-3b5b-6c93" name="Blasphemous appendages" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d70-9153-62ad-f04d" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974e-d9a0-7fe4-b233" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b8b5-05a1-a7f3-e43d" name="Blasphemous appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="426b-33b1-9626-7438" name="5 - 10 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8866-12f8-71d0-2cc5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7b-72bb-901c-c77e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dfe1-73c2-c42d-c7b6" name="08 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f8e4-0785-dba5-8cfb" name="Accursed Cultists (08 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1d99-b949-9677-792e" name="16 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="27ad-e55c-c9cd-f0c9" name="Accursed Cultists (16 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c440-2662-c38b-9599" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c60a-4730-fd40-7037" name="Dark Commune" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fe98-a497-2284-138f" name="Dark Commune" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0524-d056-688f-c922" name="Iconarch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Cultists units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd81-06b1-9e04-831b" name="Dark Zealotry (Cultists)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made with melee weapons by friendly Cultists units whilst they are within 6&quot; of this unit. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="818c-2412-ffad-4a37" name="Dark Commune" hidden="false" targetId="1b0c-876b-6751-a275" primary="false"/>
+        <categoryLink id="9641-4c1f-40e0-5610" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="dc7f-914b-b27a-f753" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c9d9-4172-6f6a-e13a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2035-eb47-8a6e-0b8b" name="Faction: &lt;Legion&gt;" hidden="false" targetId="a9db-51a0-4be9-9856" primary="false"/>
+        <categoryLink id="302a-ac28-e529-2f60" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="3c7c-a7f3-575c-6a8b" name="Cultists" hidden="false" targetId="210a-44a6-fd99-a311" primary="false"/>
+        <categoryLink id="e39f-2fa7-f039-7ead" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="dd13-a2b0-f022-dbfb" name="Commune weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ff8-14ed-73f3-55c2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eaa-d7ad-83e5-f078" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1f36-14c7-36b4-1efc" name="Commune weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1f9b-44d1-3f18-7e4b" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ecf-ca3d-616e-e7ae" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9acf-178f-5291-7f68" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a95b-e1e5-89a6-ecb3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f5b-7e28-b03e-18b1" name="Vashtorr the Arkifane " hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3d6-2f48-838e-df14" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5a09-882d-24fa-cbe2" name="Vashtorr the Arkifane " hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f21-369a-7ef7-355c" name="Unholy Mechanisms" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made  by friendly Daemon Vehicle units whilst they are within 6&quot; of any units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eaf7-32f4-fb2e-1518" name="Will of the Arkifane" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Attacks made with melee weapons by this unit that target Vehicle units count as having the DESTROYER special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="162f-b7dc-1ea5-9b8b" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="087a-bae4-aa33-9995" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="6192-77b9-c929-c75c" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="2b4b-a359-01f8-2b54" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="a44d-1ec2-8251-8949" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="b30e-0287-6f27-37de" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="930d-1aad-b881-55a8" name="Daemon Prince" hidden="false" targetId="b457-340c-c8e2-d60b" primary="false"/>
+        <categoryLink id="60eb-0035-cc2a-fdef" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="79ae-45fd-1e69-dc2b" name="Vashtorr the Arkifane " hidden="false" targetId="0419-1721-e268-7d27" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="92c0-b5f2-d761-c36f" name="Vashtorr&apos;s hammer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3050-9da8-7308-51e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f7-d76f-4ba3-e8c4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="92ba-2925-d4a8-b181" name="Vashtorr&apos;s hammer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab17-fd01-2266-d8f7" name="Vashtorr&apos;s claw" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd5-689b-20a5-fc53" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b5-7b8d-8846-ae43" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ec59-e670-e1ab-9a8e" name="Vashtorr&apos;s claw" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9fad-d188-fb32-64f5" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8567-d310-6896-2f51" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
