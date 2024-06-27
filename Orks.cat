@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="11" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -92,6 +92,9 @@
     <categoryEntry id="67f1-0cab-b562-4002" name="Green Tide" hidden="false"/>
     <categoryEntry id="5df2-6271-244e-eb40" name="Beast Snagga" hidden="false"/>
     <categoryEntry id="24ae-d311-0f6a-fe00" name="Beastboss" hidden="false"/>
+    <categoryEntry id="faf9-1b87-dd4d-a6b8" name="Squig" hidden="false"/>
+    <categoryEntry id="f115-c9d4-2b56-ab48" name="Mozrog Skragbad " hidden="false"/>
+    <categoryEntry id="743e-d483-ad3e-71de" name="Painboss" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="false">
@@ -385,7 +388,7 @@
         <categoryLink id="062d-85fa-a26d-ed48" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="310b-7633-95c2-3845" name="Big Gun" hidden="false" collective="false" import="true" targetId="a482-8705-0d66-7db1" type="selectionEntry">
+    <entryLink id="310b-7633-95c2-3845" name="Big Guns" hidden="false" collective="false" import="true" targetId="a482-8705-0d66-7db1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="eb83-0d4d-f653-a42b" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
@@ -475,6 +478,21 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="41b4-56bf-6057-7dd5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ac1f-d8bb-afab-7ad7" name="Beastboss on Squigosaur" hidden="false" collective="false" import="true" targetId="b002-b43e-96d2-7269" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d4c9-acf2-3b5c-0f54" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="63c0-3a4c-f396-a96c" name="Mozrog Skragbad " hidden="false" collective="false" import="true" targetId="576e-20fd-b525-3c3d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f360-64dd-a9a8-539a" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9f67-3f27-8a41-f1ce" name="Painboss" hidden="false" collective="false" import="true" targetId="7359-4eca-4b90-5ba7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="19bb-4bb1-c6be-9d47" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9603,7 +9621,7 @@
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
           </characteristics>
         </profile>
         <profile id="ccda-b31c-8aeb-39c4" name="Beast Snagga Boss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -9697,6 +9715,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d1e5-7aac-d313-ff26" name="Gork&apos;s Klaw" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9715,6 +9736,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -9722,6 +9746,191 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b002-b43e-96d2-7269" name="Beastboss on Squigosaur" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="343e-57c9-1b09-ddca" name="Beastboss on Squigosaur" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4388-0120-3bba-073f" name="Beast Snagga Boss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly BEAST SNAGGA units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ad5d-c81c-15f2-2085" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e644-3adb-e33d-2f6c" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="c834-ea23-b5fc-285b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="1650-cce5-86c1-a67e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a972-c8b7-3148-b5b3" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="d54e-0958-82a5-e6c7" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="49ec-4260-1adb-0cdf" name="Beastboss" hidden="false" targetId="24ae-d311-0f6a-fe00" primary="false"/>
+        <categoryLink id="2ee9-082b-5fb2-6e8a" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="0029-ffeb-1e9b-d7e4" name="Squig" hidden="false" targetId="faf9-1b87-dd4d-a6b8" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e909-f237-1c35-4863" name="Squigosaur&apos;s Jaws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d344-5c53-9026-859f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2458-0f90-7012-5f44" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b2d5-ff07-e906-7758" name="Squigosaur&apos;s Jaws" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3001-b67e-9438-0f8a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="775a-fde0-adee-a2a6" name="Boss Weapons" hidden="false" collective="false" import="true" targetId="4ccb-2eae-0a99-c726" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cd9-09f4-3e2a-f4a7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfba-07ed-6824-87f8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="576e-20fd-b525-3c3d" name="Mozrog Skragbad " hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a429-0b69-5f5f-17c2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d8b1-c5bb-76e3-1c56" name="Mozrog Skragbad " hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="363d-4c52-81c6-ed05" name="Beast Snagga Boss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly BEAST SNAGGA units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="218c-68c2-3d02-6120" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4e77-5eb2-8f05-edd4" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="90f2-55d9-79a9-154a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f904-2166-dea4-703e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4b8a-205d-5a4c-9f64" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="4f8f-0837-4732-5d85" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="0b47-8f5c-c02e-45e6" name="Beastboss" hidden="false" targetId="24ae-d311-0f6a-fe00" primary="false"/>
+        <categoryLink id="cf6f-16c2-8f71-0e3c" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="7c11-3106-5372-9a08" name="Squig" hidden="false" targetId="faf9-1b87-dd4d-a6b8" primary="false"/>
+        <categoryLink id="071b-f34a-e33f-502c" name="Mozrog Skragbad " hidden="false" targetId="f115-c9d4-2b56-ab48" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1822-84fc-6b38-949e" name="Big Chompa&apos;s Jaws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2684-7bed-e78f-4c14" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4666-b18d-5c6a-bf60" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d90a-4112-8941-9f20" name="Big Chompa&apos;s Jaws" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="bc97-8e47-1d3e-7d76" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="a376-beed-7a19-f178" name="Boss Weapons" hidden="false" collective="false" import="true" targetId="4ccb-2eae-0a99-c726" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e0-08b2-43a6-78a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d47-50f5-f165-3e03" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7359-4eca-4b90-5ba7" name="Painboss" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="a327-c081-4fd3-a32f" name="Sawbonez" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly &lt;CLAN&gt; LIGHT unit in base contact with it. If it does, roll one D6; on a 4+, remove one damage marker from that LIGHT unit. Only one attempt to heal each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9c6e-78d1-266b-82ad" name="Painboss" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b13c-91f7-c06d-1a7e" name="Dok&apos;s Toolz" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly LIGHT units have the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d14c-663e-acfe-bb68" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+        <infoLink id="571d-59bd-d8ef-c084" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a9b9-68d8-9377-0546" name="Faction: Ork" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="ef7d-862b-6582-3bfd" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="2b5b-7539-c8dd-0fd7" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="1f22-bc52-bdd3-df0b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f46b-d5ef-edec-3765" name="Painboy" hidden="false" targetId="c9c0-ed87-24b0-fd6e" primary="false"/>
+        <categoryLink id="47b4-535a-2b9c-1e20" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="5fbc-24c4-04ec-c0d4" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="a40b-7b63-b622-d974" name="Painboss" hidden="false" targetId="743e-d483-ad3e-71de" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f00d-d010-6b1f-a596" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="afe2-fdd5-8a37-91b2" name="Dok&apos;s Tools" hidden="false" collective="false" import="true" targetId="e021-061f-bf3a-586b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0589-da69-09fb-9f4e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="640c-b5f6-2983-aebb" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
