@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="18" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="19" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1112,9 +1112,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="99d5-e2a5-e1a3-e7c2" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="34e2-7bff-5f25-84f6" name="Ironclad Dreadnought" hidden="false" collective="false" import="true" targetId="0dac-387a-8c33-71b3" type="selectionEntry">
+    <entryLink id="34e2-7bff-5f25-84f6" name="Ironclad Dreadnought" page="" hidden="false" collective="false" import="true" targetId="b35a-e241-c26c-bb4d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="daa0-a333-b44b-0dbc" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="5ea3-0901-9823-34bc" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5a63-f514-e56c-138b" name="Lord Asterion Moloch" hidden="false" collective="false" import="true" targetId="8dc4-300b-2fca-6e5e" type="selectionEntry">
@@ -1212,9 +1212,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="2982-6bff-0f23-51c9" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2bd9-1c2d-f324-47c0" name="Thunderfire Cannon" hidden="false" collective="false" import="true" targetId="c833-8905-8cdf-f3e9" type="selectionEntry">
+    <entryLink id="2bd9-1c2d-f324-47c0" name="Thunderfire Cannon" hidden="false" collective="false" import="true" targetId="5a83-28e2-a8eb-69ea" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="03db-218b-6e0d-8f17" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="3332-fe91-31e1-5d2e" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="643d-c3d4-d922-3b7b" name="Tyberos the Red Wake" hidden="false" collective="false" import="true" targetId="5328-bae0-1958-b4c8" type="selectionEntry">
@@ -1235,6 +1235,11 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
     <entryLink id="afb9-b225-ad74-5fbb" name="Tyrannic War Veterans" hidden="false" collective="false" import="true" targetId="dcaa-6003-ef52-dc8d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c0ab-2b1f-d029-bc91" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8c14-7622-03a2-7a49" name="Judiciar" hidden="false" collective="false" import="true" targetId="1375-504a-766c-0c66" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a741-01c9-7e27-f6a5" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4542,130 +4547,6 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0dac-387a-8c33-71b3" name="Ironclad Dreadnought" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="e8bf-5fa6-8bb7-c229" name="Ironclad Dreadnought" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="e2a3-fade-c12d-860b" value="2+">
-              <conditions>
-                <condition field="selections" scope="0dac-387a-8c33-71b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6431-b2b9-7a16-f717" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1449-4c87-aef5-1d08" name="Wrecker" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0dac-387a-8c33-71b3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6e4-8111-ff27-3590" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit with melee weapons if it is equipped with 2 Ironclad Combat Weapons.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="f3dd-ffdc-a4da-5503" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="980b-8b5d-98f9-a1f2" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="51c5-2cea-cd73-4279" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-        <categoryLink id="cfa1-df9e-324c-adc5" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-        <categoryLink id="e238-8f1d-48c2-046d" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="fc97-8b0c-a367-0fbd" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
-        <categoryLink id="7e20-f0d9-42d9-ae21" name="Ironclad Dreadnought" hidden="false" targetId="f1a7-1cab-b790-d9a6" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6431-b2b9-7a16-f717" name="Ironclad Assault Launchers" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87db-10a0-a041-e59f" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3227-f3c5-adff-71f2" name="Ironclad Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6e5-e5a2-fb47-b9be" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce8c-325b-7d43-75ff" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="19c3-f230-0b88-5705" name="Dreadnought Combat Weapon" hidden="false" targetId="e199-b982-8946-993d" type="profile">
-              <modifiers>
-                <modifier type="set" field="name" value="Ironclad Combat Weapon"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="40c3-20b6-95fb-864d" name="Mounted weapon" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb3-e0e5-a258-1aeb" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cb3-8505-86d8-9cdd" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6ae8-bf78-5fd7-2556" name="Meltagun" hidden="false" collective="false" import="true" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
-                <entryLink id="32b2-7f5c-be60-62f1" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0f60-c87e-25dc-f064" name="Arm swap" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dba-530f-1573-6f3f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="919a-d3a5-1700-a6d2" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="d6e4-8111-ff27-3590" name="Ironclad Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="49c2-321a-a16c-e990" name="Dreadnought Combat Weapon" hidden="false" targetId="e199-b982-8946-993d" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Ironclad Combat Weapon"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="a84e-534d-fd20-8f5f" name="Mounted weapon" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf06-f32c-ae45-7554" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cf-5302-e4f1-4988" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="8238-4b69-8fcc-a14a" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="7457-58c5-d5f1-11a0" type="selectionEntry"/>
-                    <entryLink id="cd30-8698-d835-ef26" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="adf6-1eaf-b189-001b" name="Hurricane Bolter" hidden="false" collective="false" import="true" targetId="abd4-677c-38d8-044d" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f6c5-bd87-8e55-1e10" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="8dc4-300b-2fca-6e5e" name="Lord Asterion Moloch" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -6471,108 +6352,6 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c833-8905-8cdf-f3e9" name="Thunderfire Cannon" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="02b9-0dcd-0025-b7c3" name="Thunderfire Cannon" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">
-3&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="6eb8-ec40-0589-e3cd" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="7b38-cdff-98f0-c5db" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="10b2-7ef7-b518-43bd" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-        <categoryLink id="16fa-6de1-8153-638e" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-        <categoryLink id="42c1-e31e-e5cf-5844" name="Artillery" hidden="false" targetId="c2cd-6e10-a4dd-093c" primary="false"/>
-        <categoryLink id="97ae-b6f4-ee05-53d7" name="Techmarine" hidden="false" targetId="aba1-da6d-7a57-d464" primary="false"/>
-        <categoryLink id="92df-1c9c-c7b0-67a1" name="Thunderfire Cannon" hidden="false" targetId="0d02-7867-b5d8-e96d" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="84a6-4746-0a93-e6a1" name="Techmarine Gunner’s Servo-arms" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee6d-d238-b5c7-9eba" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f767-2572-cde2-3cbe" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="3ade-6f33-9a16-96ea" name="Techmarine Gunner’s Servo-arms" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4d63-fea7-0e10-3ace" name="Techmarine Gunner’s Flamer &amp; Plasma Cutter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857d-bed2-3869-0ad2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7875-915f-6328-8c99" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="8779-48d7-9a42-a107" name="Techmarine Gunner’s Flamer &amp; Plasma Cutter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="13ef-d7bd-3c88-189a" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f694-f004-2364-1764" name="Thunderfire Cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9342-22e6-6e1a-abd8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe35-9601-8bad-c65c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b684-7ec7-43b1-d65e" name="Thunderfire Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="47a8-d24f-183d-679b" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="f066-640c-da29-e8dd" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5328-bae0-1958-b4c8" name="Tyberos the Red Wake" hidden="false" collective="false" import="true" type="unit">
