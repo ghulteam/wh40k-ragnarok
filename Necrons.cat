@@ -140,13 +140,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="a4f6-95b0-8e25-2482" name="Illuminor Szeras" hidden="false" collective="false" import="true" targetId="8908-d04e-955f-7e3c" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" childId="f982-faab-a711-a4b5" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="ef12-7264-0996-1099" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -412,13 +405,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="c952-8b9f-8c2d-93f1" name="Illuminor Szeras Ascended" hidden="false" collective="false" import="true" targetId="f982-faab-a711-a4b5" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" childId="8908-d04e-955f-7e3c" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="ee87-60d0-5d23-6df0" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -1105,8 +1091,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8908-d04e-955f-7e3c" name="Illuminor Szeras" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="11cc-a688-bc8a-4511" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f982-faab-a711-a4b5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="11cc-a688-bc8a-4511" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="11cc-a688-bc8a-4511" type="max"/>
       </constraints>
       <profiles>
         <profile id="d2ec-c626-3c60-4667" name="Illuminor Szeras" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -5875,8 +5868,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f982-faab-a711-a4b5" name="Illuminor Szeras Ascended" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="141e-75e0-616a-10fc" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8908-d04e-955f-7e3c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="141e-75e0-616a-10fc" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="141e-75e0-616a-10fc" type="max"/>
       </constraints>
       <profiles>
         <profile id="ebe1-cd7d-56dc-a341" name="Illuminor Szeras Ascended" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="12" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="13" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -252,13 +252,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="edcc-bbe7-bdf3-e330" name="Ghazghkull Thraka" hidden="false" collective="false" import="true" targetId="892e-1ec0-f484-651e" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-911e-46de-9721" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="c867-6e0e-dc5c-75ab" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -469,13 +462,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="fd23-8b07-1874-c1ad" name="Ghazghkull Thraka Ascended" hidden="false" collective="false" import="true" targetId="d187-911e-46de-9721" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892e-1ec0-f484-651e" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="41b4-56bf-6057-7dd5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -3171,6 +3157,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="892e-1ec0-f484-651e" name="Ghazghkull Thraka" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="c6a5-d057-79ba-178e" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-911e-46de-9721" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c6a5-d057-79ba-178e" type="max"/>
       </constraints>
@@ -9656,6 +9649,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d187-911e-46de-9721" name="Ghazghkull Thraka Ascended" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="1d80-40bd-b92c-2787" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892e-1ec0-f484-651e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1d80-40bd-b92c-2787" type="max"/>
       </constraints>
@@ -9798,6 +9798,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -9867,6 +9870,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

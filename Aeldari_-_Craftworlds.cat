@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="19" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="20" battleScribeVersion="2.03" authorName="ghulteam" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
   </publications>
@@ -165,13 +165,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="c9ba-d304-017c-3844" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="629f-fd39-b3e9-96f0" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f664-8d55-f7eb-ed79" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="1f46-1d9b-3d2d-d1be" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -486,25 +479,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="a8b0-0fc6-d78a-c384" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" targetId="f664-8d55-f7eb-ed79" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="629f-fd39-b3e9-96f0" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="042a-a1cf-87e6-ee01" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ab98-6c37-77c5-c6af" name="Avatar of Khaine" hidden="false" collective="false" import="true" targetId="629f-fd39-b3e9-96f0" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f664-8d55-f7eb-ed79" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="3f80-cce7-7993-37bc" name="Rage of Khaine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -518,13 +497,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="72ae-157a-5ee2-f166" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" targetId="f664-8d55-f7eb-ed79" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="629f-fd39-b3e9-96f0" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="26c5-3844-7106-8125" name="Rage of Khaine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -1153,6 +1125,13 @@ target Necrons units.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="629f-fd39-b3e9-96f0" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="79aa-f42c-a9e3-741f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f664-8d55-f7eb-ed79" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="79aa-f42c-a9e3-741f" type="max"/>
       </constraints>
@@ -7413,6 +7392,13 @@ weapons by this unit.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="f664-8d55-f7eb-ed79" name="Avatar of Khaine Ascended" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="503a-97e4-a7f7-580f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="629f-fd39-b3e9-96f0" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="503a-97e4-a7f7-580f" type="max"/>
       </constraints>

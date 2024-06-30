@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -95,7 +95,57 @@
     <categoryEntry id="a984-f9de-3a4b-6033" name="Giant Chaos Spawn" hidden="false"/>
     <categoryEntry id="68e0-d8a3-a5c1-74cd" name="Scabeiathrax the Bloated" hidden="false"/>
     <categoryEntry id="9d56-3e41-332a-ba5b" name="Ku&apos;gath the Plaguefather" hidden="false"/>
+    <categoryEntry id="712e-ed85-d7ce-43fc" name="Tetragon of Darkness" hidden="false"/>
   </categoryEntries>
+  <forceEntries>
+    <forceEntry id="a823-c13b-7a1d-8ba7" name="Tetragon of Darkness" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084e-d724-c357-e31f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="0096-e776-1773-c3de" name="Tetragon of Darkness" hidden="false">
+          <description>A &quot;Tetragon of Darkness&quot; Detachements consist of 1 of each Gods Greater Daemons.Only place an Out of Command marker next to units of this detachement if, at the start of the Orders phase, it is more than 24&quot; from its Detachement&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachments&apos;s Commander). While all units from the Tetragon of Darkness Formation are on the battlefield, connect the units with a straight line to create a quadrilateral. This quadrilateral the the Tetragon of Darkness. Every unit atleast partial in the Tetragon of Darkness (including the Greater Daemons themselves) are granted following effects:
+- The unit is granted the Stealth special rule.
+- Roll D12s when making saving throws for this unit, irrespective of the size of the blast markers next to it.</description>
+        </rule>
+        <rule id="6802-3f36-ab78-686b" name="Stealth" hidden="false">
+          <description>Substract 1 from hit rolls for attacks made with ranged weapons that target this unit.</description>
+        </rule>
+      </rules>
+      <forceEntries>
+        <forceEntry id="c91d-11c7-56ec-4919" name="Tetragon of Darkness" hidden="false">
+          <categoryLinks>
+            <categoryLink id="6bed-fbfe-e520-fd2b" name="Bloodthirster" hidden="false" targetId="f022-0576-f1c4-d167" primary="false"/>
+            <categoryLink id="73a6-ab2c-9795-8823" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
+            <categoryLink id="4735-d1f6-cb4d-1acd" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false"/>
+            <categoryLink id="4ed7-4994-67d2-7ac9" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="f911-4444-3599-6c94" name="Bloodthirster" hidden="false" targetId="f022-0576-f1c4-d167" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563b-2ed1-ecae-160a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e853-928f-4ad4-8a75" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd97-4bc1-894f-07f5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b3ee-db0d-ec17-ba00" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a2-ab72-16f3-0c87" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4073-461f-3122-bfb6" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd9-3ca8-9233-7715" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <entryLinks>
     <entryLink id="a0cf-1e2f-7d5b-412a" name="Aetaos’rau’keres" hidden="false" collective="false" import="true" targetId="83b2-5a4e-bfc3-ad1f" type="selectionEntry">
       <categoryLinks>
@@ -108,25 +158,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="cd88-9d76-2b65-fc28" name="Be&apos;lakor" hidden="false" collective="false" import="true" targetId="a1e7-9d51-f229-0458" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5eb-2e07-4139-c90f" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="15fa-e316-af91-efde" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c9f4-c6cb-2f49-3013" name="Be&apos;lakor Ascended" hidden="false" collective="false" import="true" targetId="b5eb-2e07-4139-c90f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1e7-9d51-f229-0458" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="1a4a-1973-04f7-e9a7" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -1374,6 +1410,11 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="4509-41fe-a144-0ef4" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5eb-2e07-4139-c90f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4509-41fe-a144-0ef4" type="max"/>
@@ -1468,6 +1509,11 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7135-6e67-aded-1613" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1e7-9d51-f229-0458" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3260,7 +3306,7 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7e5-86d2-3f19-bde9" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1b5c-4eb1-e9f5-255d" name="Daemonic Allegiance" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1b5c-4eb1-e9f5-255d" name="Daemonic Allegiance" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3bc-bcf7-740c-9d56">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7654-32aa-6c0f-b4f6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8544-49c5-b75e-c5e9" type="max"/>
