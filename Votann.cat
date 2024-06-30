@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="3" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="4" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -34,6 +34,17 @@
     <entryLink id="8ebd-06ee-6bac-57db" name="Cthonian Beserks" hidden="false" collective="false" import="true" targetId="aae7-f72d-6367-1ccf" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3fef-c050-3c65-e2d8" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a05d-97ed-a2b8-d080" name="Hekaton Land Fortress" hidden="false" collective="false" import="true" targetId="9120-be63-4506-88d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7c0c-c628-62be-ce4a" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="c6da-cc3a-a78c-631e" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e957-062d-7532-5be1" name="Hekaton Land Fortress" hidden="false" collective="false" import="true" targetId="9120-be63-4506-88d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bd62-c0fc-5f74-0803" name="New CategoryLink" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -714,18 +725,65 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="a4b8-0409-e94c-5cb4" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc68-3ce3-aaf9-54b0" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e6-5bf4-ccd7-ba47" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc68-3ce3-aaf9-54b0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e6-5bf4-ccd7-ba47" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="5b9a-bc72-72f5-5542" name="Bolt cannon" hidden="false" collective="false" import="true" targetId="9e6d-d855-01ed-462d" type="selectionEntry"/>
-            <entryLink id="bb10-79a9-fbb3-110d" name="Graviton blast cannon" hidden="false" collective="false" import="true" targetId="d8ba-be03-5a5f-6230" type="selectionEntry"/>
-            <entryLink id="1030-fb54-ea8f-995a" name="SP conversion beamer" hidden="false" collective="false" import="true" targetId="24af-2765-4b6d-7073" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="3f69-4c17-1f6d-5e03" name="Bolt cannons" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ebe7-e859-e896-ce40" name="Bolt cannons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f045-8123-770f-9c87" name="Graviton blast cannons" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3c17-10b7-9fe9-fbaa" name="Graviton blast cannons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3203-3009-a517-b42c" name="SP conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7af4-21e6-ce47-0115" name="SP conversion beamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Beam</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="485b-dd85-af36-5975" name="Beam" hidden="false" targetId="ca00-064d-266b-5e27" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -755,8 +813,81 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="679c-07f9-d2a2-02d7" name="Faction: &lt;LEAGUE&gt;" hidden="false" targetId="2e93-f104-3473-9b4a" primary="false"/>
+        <categoryLink id="c302-8da6-fcd9-c878" name="Faction: Votann" hidden="false" targetId="c004-b9ae-7fc1-1792" primary="false"/>
+        <categoryLink id="2ef2-425d-5e31-87bb" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="d3b6-22bd-8771-e670" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="3b27-8144-2b6b-6ae8" name="Hekaton Land Fortress" hidden="false" targetId="3c5e-fe9c-d646-4362" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4129-a6e8-9931-a169" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ee5-5e67-7406-8210">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e25-6ef0-75ee-21f1" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6018-490c-8fb8-69e4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4ee5-5e67-7406-8210" name="Two Bolt Cannons" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="725d-3a38-5c7c-3407" name="Bolt cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="797c-de8b-82a1-f3e5" name="Two Ion Beamers" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2cdf-ab22-3840-9fa0" name="Two Ion Beamers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Beam</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="20f3-1bf8-f191-eed0" name="Beam" hidden="false" targetId="ca00-064d-266b-5e27" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6a42-5d3e-244c-d8f1" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="235a-5fab-b058-9f57">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f71-961c-9827-f101" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ab4-b90f-5033-3a22" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="235a-5fab-b058-9f57" name="Cyclic Ion Cannon" hidden="false" collective="false" import="true" targetId="1d46-3424-53be-8b82" type="selectionEntry">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="32fe-b62f-92f9-508b" name=" Heavy magna-rail cannon " hidden="false" collective="false" import="true" targetId="67fa-3c06-a87b-d940" type="selectionEntry"/>
+            <entryLink id="e689-644b-b600-7ef7" name="SP heavy conversion beamer" hidden="false" collective="false" import="true" targetId="1ebd-d5ce-8f14-de06" type="selectionEntry">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="25fa-fa5a-46f0-f0e0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="bd8b-e2f1-a7c4-5be6" name="MATR autocannon" hidden="false" collective="false" import="true" targetId="ccec-2235-4fd7-6d84" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="908b-be92-f8c9-4989" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="750e-899b-f75b-5359" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
@@ -863,6 +994,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8308-1636-b3c8-639d" name="Mole grenade launche" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -877,6 +1011,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="44fe-6497-abd8-1f3f" name="Volkanite disintegrator" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -891,6 +1028,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="29a7-db2b-4364-2160" name="EtaCarn plasma gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -905,6 +1045,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="04b9-1142-ec3f-a24b" name="Magna-coil autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -919,6 +1062,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2e3b-f9f6-b3cf-35a2" name="HYLas beam cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -936,6 +1082,9 @@
       <infoLinks>
         <infoLink id="a00c-ee05-c1dd-c770" name="Beam" hidden="false" targetId="ca00-064d-266b-5e27" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="195b-7c10-ce45-2dfd" name="Twin bolt cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -950,16 +1099,105 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ccec-2235-4fd7-6d84" name="MATR autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d3b5-ddfa-9627-234d" name="MATR autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="7d63-ac09-3eb6-81dc" name="Ion Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9be1-044b-24f7-ce2d" name="Ion Beamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Beam</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2435-da4e-4b49-2eae" name="Beam" hidden="false" targetId="ca00-064d-266b-5e27" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1d46-3424-53be-8b82" name="Cyclic Ion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8b4e-a622-3330-f6bf" name="Cyclic Ion Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="67fa-3c06-a87b-d940" name=" Heavy magna-rail cannon " hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7663-0c86-d717-c3fe" name=" Heavy magna-rail cannon " hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1ebd-d5ce-8f14-de06" name="SP heavy conversion beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ed07-febd-ea31-8a39" name="SP conversion beamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Beam</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="feac-25be-4c19-b9bc" name="Beam" hidden="false" targetId="ca00-064d-266b-5e27" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f543-d03c-0b4e-84f4" name="Crest" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="4886-0676-67b0-6378" name="Weavefield crest" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="4886-0676-67b0-6378" name="Weavefield crest" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="1c0b-5b14-5430-e178" name="Teleport crest" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="7345-1224-1583-f807" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
