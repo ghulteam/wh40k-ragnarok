@@ -15,7 +15,9 @@ This extends the Original Repository [Apocalypse][] and will add new Datasheets 
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
-The Files will be available through Github, when they are Ready.
+You can add this repository to Battlescribe or New Recruit. 
+Battlescribe URL: https://github.com/ghulteam/wh40k-ragnarok/releases/latest/download/wh40k-ragnarok.latest.bsi
+New Recruit: ghulteam/wh40k-ragnarok
 
 __I found a bug!__ / *I have another request*
 
