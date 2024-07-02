@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -707,6 +707,11 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <categoryLinks>
         <categoryLink id="b3bb-8c66-e136-869c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
         <categoryLink id="899a-2aeb-cf27-7892" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e475-0f72-6513-2d9e" name="Deathwatch Terminator Squad" hidden="false" collective="false" import="true" targetId="976e-7bb8-595a-160c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d7a8-1553-145a-e466" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1454,6 +1459,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1512,7 +1520,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="291a-a4cf-493b-6181" type="equalTo"/>
+                <condition field="selections" scope="1f1b-c07c-795b-d63d" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="291a-a4cf-493b-6181" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1537,11 +1545,17 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <infoLink id="3781-a311-910f-23a5" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
                 <infoLink id="4599-b35f-d0ff-1f50" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dbe0-2f8b-0f85-bbdd" name="Outriders" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dc1-ce45-8bc8-8632" type="max"/>
               </constraints>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a51f-500a-9bdf-142a" name="Assault Intercessors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1569,6 +1583,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1595,6 +1612,29 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="4cc2-a1f9-ea98-da48" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="7b05-969c-8dfe-b524" name="Indomitor Kill Team" hidden="false" targetId="4891-e68a-73f9-c817" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e51e-d728-3c3b-579d" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5719-5e9b-a009-2b29" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff0-726a-2b3d-ae95" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3e7f-6bfb-de1d-2985" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="85e7-e474-c764-4de9" name="5 - 10 models" hidden="false" collective="false" import="true">
           <constraints>
@@ -1644,7 +1684,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6fba-1d86-c39a-0ef7" type="equalTo"/>
+                <condition field="selections" scope="d4c6-cb68-0062-fbbb" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6fba-1d86-c39a-0ef7" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1662,6 +1702,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2fd9-b190-962e-805e" name="Eradicators" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -1676,6 +1719,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2c4f-e2e0-606c-28c4" name="Inceptors" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -1690,6 +1736,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1766,42 +1815,12 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a1-193c-8b0a-0fed" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb63-9f16-cf2a-310b" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6f28-47bb-857e-049d" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
-              <profiles>
-                <profile id="ba71-aa7f-a5b9-9aaa" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </entryLink>
-            <entryLink id="f014-7c42-4767-8f83" name="Astartes Chainsword" hidden="false" collective="false" import="true" targetId="4d3b-aae8-2134-3b93" type="selectionEntry">
-              <profiles>
-                <profile id="90bd-4a1c-5c7b-6185" name="Heavy Bolt Pistol" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="3f0d-44b0-cbd3-e43f" name="Mixed Unit" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76f8-f048-831a-0890" type="equalTo"/>
+                <condition field="selections" scope="fa4a-964f-28ea-0841" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76f8-f048-831a-0890" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1819,6 +1838,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6223-0fa6-0c43-0c55" name="Veteran Bikers" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -1833,6 +1855,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c04b-3b1b-9d62-b0c5" name="Vanguard Veterans" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -1847,6 +1872,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1888,6 +1916,9 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1939,14 +1970,26 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b22-9fcb-2c96-0d49" type="equalTo"/>
+                <condition field="selections" scope="af4e-a4e1-abc2-eec1" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b22-9fcb-2c96-0d49" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry id="c63f-3645-dd44-0e77" name="Incursors" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="a000-c2fb-4d80-4e78" name="Reivers" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="2ebc-c26e-92db-6880" name="Eliminators" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="c63f-3645-dd44-0e77" name="Incursors" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a000-c2fb-4d80-4e78" name="Reivers" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2ebc-c26e-92db-6880" name="Eliminators" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1958,6 +2001,167 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6776-7969-1226-9296" type="min"/>
           </constraints>
         </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="976e-7bb8-595a-160c" name="Deathwatch Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="a309-06b3-e389-1734" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd3c-37cd-8b59-cf5b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d105-27f7-e3a1-31bd" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="7416-5b21-4e6b-2caa" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4bee-8926-2e01-fc93" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f26d-2dbc-ca21-58a9" name="Terminator" hidden="false" targetId="3726-f1d3-1b96-0eb0" primary="false"/>
+        <categoryLink id="69af-68d5-2129-c5b2" name="Terminator Squad" hidden="false" targetId="bbab-ae5c-37ce-fdd1" primary="false"/>
+        <categoryLink id="6d58-0216-bd2a-0e2a" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6e75-04ed-2b87-acf5" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c6-a83a-9ff5-57ee" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c90e-2031-ee0f-f24d" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="20c5-2b7d-8d4e-260c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5d32-ae31-7389-b407" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="098d-bedf-91b5-c61b" type="selectionEntry"/>
+            <entryLink id="bd45-14fc-cdbd-8832" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="d9c9-34cc-fbf1-5c83" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="80d9-5374-e76a-60a9" name="5 - 10 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e9-90c7-1a3c-aa97" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a1c-6158-1eed-90b4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="02c1-3521-3399-5d9e" name="05 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="750a-f1b9-df9e-d162" name="Deathwatch Terminator Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="3+">
+                      <conditions>
+                        <condition field="selections" scope="976e-7bb8-595a-160c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ee-1b28-a1b5-e80c" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e933-bf8e-c821-909f" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="a98a-ab42-dee6-e7b2" name="Deathwatch Terminator Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="3+">
+                      <conditions>
+                        <condition field="selections" scope="976e-7bb8-595a-160c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ee-1b28-a1b5-e80c" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="423c-3ab0-0506-10df" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e5-e8a5-02d2-88c2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7423-7b52-78ce-e9ef" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c2ed-fe15-5cde-fa97" name="Lightning Claws" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1261-c5bd-c1c5-7925" name="Lightning Claws" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e5ee-1b28-a1b5-e80c" name="Thunder Hammers and Storm Shields" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="988c-2a43-6573-54f5" name="Thunder Hammers and Storm Shields" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="70f9-982c-a564-71b6" name="Storm Bolters" hidden="false" collective="false" import="true" targetId="6069-9596-0014-6808" type="selectionEntry">
+              <profiles>
+                <profile id="e2ae-de43-39eb-4a37" name="Terminator Power Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dd8d-4ed2-31d5-f505" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
