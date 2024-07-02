@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="13" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="14" battleScribeVersion="2.03" authorName="ghulteam" authorContact="" authorUrl="" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -95,6 +95,8 @@
     <categoryEntry id="faf9-1b87-dd4d-a6b8" name="Squig" hidden="false"/>
     <categoryEntry id="f115-c9d4-2b56-ab48" name="Mozrog Skragbad " hidden="false"/>
     <categoryEntry id="743e-d483-ad3e-71de" name="Painboss" hidden="false"/>
+    <categoryEntry id="ca1a-7e60-ef5b-3fe0" name="Kill Rig" hidden="false"/>
+    <categoryEntry id="714a-60d6-494e-4092" name="Hunta Rig" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="false">
@@ -186,7 +188,7 @@
         <categoryLink id="d88f-3fca-aaed-ba55" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5e5b-3455-7531-5a97" name="Battlewagon with Supa-Kannon" hidden="false" collective="false" import="true" targetId="f880-bd92-c41f-d0b1" type="selectionEntry">
+    <entryLink id="5e5b-3455-7531-5a97" name="Battlewagon with Supa-kannon" hidden="false" collective="false" import="true" targetId="f880-bd92-c41f-d0b1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="364a-b3df-88a4-eb7a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
@@ -479,6 +481,28 @@
     <entryLink id="9f67-3f27-8a41-f1ce" name="Painboss" hidden="false" collective="false" import="true" targetId="7359-4eca-4b90-5ba7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="19bb-4bb1-c6be-9d47" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6809-4b72-42ec-dc76" name="Hunta Rig" hidden="false" collective="false" import="true" targetId="df60-fcbc-bf80-3913" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8bee-50a9-b325-ace8" name="New CategoryLink" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e5b6-39c5-6090-2f20" name="Kill Rig" hidden="false" collective="false" import="true" targetId="b9e3-8fa7-5240-134d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1a51-8837-d023-96e3" name="New CategoryLink" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="697d-7885-6d82-e5c9" name="Hunta Rig" hidden="false" collective="false" import="true" targetId="df60-fcbc-bf80-3913" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="86b0-6c7b-063e-af01" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="5d4d-86c4-06f4-86fc" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e6ad-fbbe-9726-e594" name="Kill Rig" hidden="false" collective="false" import="true" targetId="b9e3-8fa7-5240-134d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="911f-03d6-9be2-0ba2" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="9a7d-b1fd-b5de-c5e5" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9937,6 +9961,187 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9e3-8fa7-5240-134d" name="Kill Rig" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="824e-d964-56fa-4f4b" name="Kill Rig" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0c07-93fa-66ca-5d2c" name="Kill Rig (Transport)" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly BEAST SNAGGA INFANTRY models. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1152-efd3-f231-2156" name="Snagged" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this models Stikka Kanon attack hits an enemy VEHICLE or MONSTER model (excluding TITANIC or AIRCRAFT models), the enemy model cannot finish any type of move more than 12&quot; from this model until the start of your next turn. If this model moves for any reason, or is destroysed, this effect ends.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f5b3-c045-e12c-cbb2" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="415e-c5e8-ce5c-5325" name="Kill Rig" hidden="false" targetId="ca1a-7e60-ef5b-3fe0" primary="false"/>
+        <categoryLink id="e6db-c120-1ec2-e9c6" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="a5dc-950b-e0dd-1d28" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="a643-2076-816a-1f3c" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="5b53-6882-36d6-d6cd" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="dda1-3d8a-4ea2-7d24" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="0437-f3d2-cb15-8e55" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="9fbd-faa1-f429-7662" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="33a6-e86a-d5dd-0492" name="Wurrtower" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb42-0db4-5a12-e95b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44b3-0784-23c5-b6c3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="c88f-3a9f-7619-d114" name="Wurrtower" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire, Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="62f4-e5d7-5d4f-e0a2" name="Witchfire" hidden="false" targetId="8ce8-6dd3-c0a8-35ad" type="rule"/>
+            <infoLink id="374d-cefc-c269-4d2f" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="f15c-6209-55cd-693e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d0e0-b83a-244d-9733" name="&apos;Eavy Lobba" hidden="false" collective="false" import="true" targetId="fa20-d947-1b62-963a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dc3-3a52-3452-daa8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="972a-d5c6-b4e1-a9f0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="968e-0cbc-66e3-5168" name="Close Combat Weapons (x2/6+/7+)" hidden="false" collective="false" import="true" targetId="5edc-99fd-db46-8c9f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="296b-7305-40fc-8a5d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3d5-9553-6390-b1f2" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df60-fcbc-bf80-3913" name="Hunta Rig" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f7ee-1b97-89b9-99d6" name="Hunta Rig" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7d8-6d73-96a5-96cf" name="Hunta Rig (Transport)" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 15 friendly BEAST SNAGGA INFANTRY models. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e32a-c2e0-4b66-a390" name="Snagged" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this models Stikka Kanon attack hits an enemy VEHICLE or MONSTER model (excluding TITANIC or AIRCRAFT models), the enemy model cannot finish any type of move more than 12&quot; from this model until the start of your next turn. If this model moves for any reason, or is destroysed, this effect ends.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4449-4d4a-49ef-93c1" name="Beast Snagga" hidden="false" targetId="8c37-ddc6-af2a-1d62" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="059d-8522-4af7-899b" name="Faction: &lt;Clan&gt;" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="8bc4-351b-35e9-3681" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="98d0-d41f-485a-9eeb" name="Beast Snagga" hidden="false" targetId="5df2-6271-244e-eb40" primary="false"/>
+        <categoryLink id="01ff-27bc-da90-329f" name="Hunta Rig" hidden="false" targetId="714a-60d6-494e-4092" primary="false"/>
+        <categoryLink id="0e1a-b444-0e70-5777" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c800-f8b7-7789-e333" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="f084-86eb-9779-8c43" name="&apos;Eavy Lobba" hidden="false" collective="false" import="true" targetId="fa20-d947-1b62-963a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e450-4b1b-711e-8337" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2490-5347-dc38-b7a0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8a8f-94d8-565d-866d" name="Close Combat Weapons (x2/6+/7+)" hidden="false" collective="false" import="true" targetId="5edc-99fd-db46-8c9f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b02d-9088-9291-9427" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce4-9b1f-efa1-e323" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa20-d947-1b62-963a" name="&apos;Eavy Lobba" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6792-8fb2-722f-49c3" name="&apos;Eavy Lobba" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="86eb-0db2-69ae-b68c" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fe25-1c13-2303-e62a" name="Stikka Kannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e29e-c400-f15a-e4e4" name="Stikka Kannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5edc-99fd-db46-8c9f" name="Close Combat Weapons (x2/6+/7+)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="120f-b9a1-2f07-0d95" name="Close Combat Weapons (x2/6+/7+)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
