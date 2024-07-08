@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="6" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="7" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -1266,9 +1266,6 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <categoryLink id="d3b6-22bd-8771-e670" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink id="3b27-8144-2b6b-6ae8" name="Hekaton Land Fortress" hidden="false" targetId="3c5e-fe9c-d646-4362" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a50b-30e6-f1b9-2b1d" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade"/>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4129-a6e8-9931-a169" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ee5-5e67-7406-8210">
           <constraints>
@@ -1745,6 +1742,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d2ca-d819-bfbf-a9d2" name="Hernkyn Yaegirs" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1788,7 +1788,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
                 </profile>
               </profiles>
             </entryLink>
-            <entryLink id="7b2e-50d1-285f-22d8" name="Bolt shotgun" hidden="false" collective="false" import="true" targetId="cd4d-c4a3-ed13-0fe3" type="selectionEntry">
+            <entryLink id="7b2e-50d1-285f-22d8" name="Bolt shotguns" hidden="false" collective="false" import="true" targetId="cd4d-c4a3-ed13-0fe3" type="selectionEntry">
               <profiles>
                 <profile id="c3ff-ff90-a889-6c7b" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -1810,7 +1810,6 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <entryLink id="7a9e-3d50-8805-9098" name="APM launcher" hidden="false" collective="false" import="true" targetId="2672-53f3-fcbf-0941" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d2d-dfde-0913-cff3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a7-5298-2865-c371" type="max"/>
           </constraints>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
@@ -1819,13 +1818,15 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <entryLink id="e79a-9497-dc06-c12a" name="Magna-coil rifle" hidden="false" collective="false" import="true" targetId="c87f-4623-072c-72e6" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5011-f664-b38d-50a4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6478-f6f1-1dc2-0694" type="min"/>
           </constraints>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ac5f-a490-ce5f-44a4" name="Plasma blade gauntlets" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1840,6 +1841,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c87f-4623-072c-72e6" name="Magna-coil rifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1871,6 +1875,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cd4d-c4a3-ed13-0fe3" name="Bolt shotguns" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1885,6 +1892,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a974-f27c-b9d6-d20a" name="Bolt revolvers" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1899,6 +1909,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2530-a5d8-3d87-95da" name="Armoured wheels" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1913,6 +1926,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
