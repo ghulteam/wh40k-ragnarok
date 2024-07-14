@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f801-a577-7be7-1fff" name="Chaos - Gellerpox Infected" revision="4" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f801-a577-7be7-1fff" name="Chaos - Gellerpox Infected" revision="5" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="822b-13e1-7116-4490" name="Faction: Gellerpox Infected" hidden="false"/>
     <categoryEntry id="0a29-a423-00d9-6cb9" name="Twisted Lord" hidden="false"/>
@@ -18,41 +18,41 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e6aa-9e5f-47aa-9942" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="e6aa-9e5f-47aa-9942" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dc18-a084-f238-1ebb" name="Mutoid Vermin" hidden="false" collective="false" import="true" targetId="d968-ea96-4863-9ddf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="78ec-0313-953b-c7f4" name="Glitchlings" hidden="false" collective="false" import="true" targetId="df70-d9a5-5b93-f4fb" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="884c-526d-5691-1d7c" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="884c-526d-5691-1d7c" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1eec-8b22-4d43-c8f0" name="The Hullbreakers" hidden="false" collective="false" import="true" targetId="118b-6724-c738-94d1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="d45d-2d8e-d2da-111d" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="d45d-2d8e-d2da-111d" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="aea8-716c-54dd-5356" name="The Vox Shamblers" hidden="false" collective="false" import="true" targetId="3df0-4877-4833-16f5" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4517-1eb2-8803-d438" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="4517-1eb2-8803-d438" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5b71-014e-1323-025f" name="Vulgrar Thrice-cursed" hidden="false" collective="false" import="true" targetId="a5e4-7146-b3eb-3f99" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c335-2014-d5fc-31e8" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="c335-2014-d5fc-31e8" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -79,7 +79,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf0b-69c9-2055-d34a" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -100,8 +100,8 @@
       <selectionEntries>
         <selectionEntry id="a32f-b072-2874-7382" name="Insectile Appendages" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e0-d286-2bb7-96e9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5934-0b28-8529-9edb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e0-d286-2bb7-96e9" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5934-0b28-8529-9edb" type="max"/>
           </constraints>
           <profiles>
             <profile id="e89a-0b74-cfbb-21ae" name="Insectile Appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -116,17 +116,17 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df70-d9a5-5b93-f4fb" name="Glitchlings" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fcec-cc0e-da82-215b" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fcec-cc0e-da82-215b" type="max"/>
       </constraints>
       <profiles>
         <profile id="15fb-b75e-f570-99ae" name="Glitchlings (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -157,8 +157,8 @@
       <selectionEntries>
         <selectionEntry id="6940-5043-ff4e-775b" name="Diseased Claws &amp; Fangs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dcd-1e8f-e71f-d937" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3097-5e74-c7ad-5e8b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dcd-1e8f-e71f-d937" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3097-5e74-c7ad-5e8b" type="max"/>
           </constraints>
           <profiles>
             <profile id="371b-9d96-1d2c-b0d3" name="Diseased Claws &amp; Fangs" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -173,17 +173,17 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="118b-6724-c738-94d1" name="The Hullbreakers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ec4-59ab-110b-d3e5" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ec4-59ab-110b-d3e5" type="max"/>
       </constraints>
       <profiles>
         <profile id="949a-32e4-05d9-ec16" name="The Hullbreakers (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -219,8 +219,8 @@
       <selectionEntries>
         <selectionEntry id="9838-0f3b-3cee-3799" name="Hideous Mutations" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aac-580d-6117-580c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09dc-6b7c-ef17-e654" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aac-580d-6117-580c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09dc-6b7c-ef17-e654" type="max"/>
           </constraints>
           <profiles>
             <profile id="4feb-221a-54b6-e763" name="Hideous Mutations" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -235,17 +235,17 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3df0-4877-4833-16f5" name="The Vox Shamblers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d90-86a4-f007-4b97" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d90-86a4-f007-4b97" type="max"/>
       </constraints>
       <profiles>
         <profile id="bcb4-a843-1806-8546" name="The Vox Shamblers (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -275,8 +275,8 @@
       <selectionEntries>
         <selectionEntry id="8763-7aa3-9f63-9afe" name="Mutated Limbs &amp; Improvised Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da8-ca6f-ca04-6f14" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d404-55d8-86cd-5e08" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da8-ca6f-ca04-6f14" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d404-55d8-86cd-5e08" type="max"/>
           </constraints>
           <profiles>
             <profile id="9d91-2b77-8591-2421" name="Mutated Limbs &amp; Improvised Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -291,17 +291,17 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a5e4-7146-b3eb-3f99" name="Vulgrar Thrice-cursed" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c23-5803-09d5-63e3" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c23-5803-09d5-63e3" type="max"/>
       </constraints>
       <profiles>
         <profile id="1a75-ec0e-9363-a929" name="Lord of Resentment" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -338,14 +338,14 @@
       <selectionEntries>
         <selectionEntry id="9545-fd0f-9d53-baf2" name="Belly Flamer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0154-51da-918f-a0bf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ab-a057-2207-3176" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0154-51da-918f-a0bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ab-a057-2207-3176" type="max"/>
           </constraints>
           <profiles>
             <profile id="0e5c-6d79-fcbe-2038" name="Belly Flamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
@@ -357,13 +357,13 @@
             <infoLink id="b092-0205-3769-f1d6" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="afb2-4c67-e435-cb10" name="Fleshripper Claws" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d503-1203-4078-40a7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2abe-1e24-45a4-83b3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d503-1203-4078-40a7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2abe-1e24-45a4-83b3" type="max"/>
           </constraints>
           <profiles>
             <profile id="2ac5-5cc0-6050-9406" name="Fleshripper Claws" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -378,12 +378,12 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
