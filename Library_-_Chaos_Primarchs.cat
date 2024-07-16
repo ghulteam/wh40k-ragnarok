@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6638-9778-3d62-e10b" name="Library - Chaos Primarchs" revision="3" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6638-9778-3d62-e10b" name="Library - Chaos Primarchs" revision="4" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c94c-a102-a50c-a357" name="Angron" hidden="false"/>
     <categoryEntry id="0270-f8eb-8d51-e8f7" name="Magnus the Red" hidden="false"/>
     <categoryEntry id="6892-4c3f-2516-3431" name="Mortarion" hidden="false"/>
     <categoryEntry id="80f5-c959-6de1-e5d5" name="Faction: Legiones Daemonica" hidden="false"/>
-    <categoryEntry id="df7a-9bef-87c5-5073" name="Faction: Heretic Astartes" hidden="false"/>
-    <categoryEntry id="7b3a-6480-c47d-2dd2" name="Faction: World Eaters" hidden="false"/>
-    <categoryEntry id="59ab-8996-f867-1f0a" name="Faction: Thousand Sons" hidden="false"/>
-    <categoryEntry id="a7ff-05a1-97e1-9153" name="Faction: Death Guard" hidden="false"/>
-    <categoryEntry id="56e9-1048-24f6-1b0b" name="Faction: Tzeentch" hidden="false"/>
-    <categoryEntry id="8450-6c30-1711-65da" name="Faction: Khorne" hidden="false"/>
-    <categoryEntry id="7d93-ac9a-4226-a717" name="Faction: Nurgle" hidden="false"/>
-    <categoryEntry id="5cc8-a2ff-f96c-b06d" name="Faction: Slaanesh" hidden="false"/>
-    <categoryEntry id="d289-dc7f-6db1-9c63" name="Faction: Emperors Children" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="9b8e-914b-6e41-3c04" name="Angron" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c9f-8de3-8529-852c" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c9f-8de3-8529-852c" type="max"/>
       </constraints>
       <profiles>
         <profile id="d117-994c-e47a-9c26" name="Primarch of the World Eaters" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -52,15 +43,16 @@
         <categoryLink id="af27-5a72-9d68-d2fb" name="Primarch" hidden="false" targetId="9376-59f2-9b7f-cce3" primary="false"/>
         <categoryLink id="df10-6216-8660-b6e1" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="73ce-bb4f-265f-d4dd" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
-        <categoryLink id="d7a9-94c2-d494-e54a" name="Faction: Heretic Astartes" hidden="false" targetId="df7a-9bef-87c5-5073" primary="false"/>
-        <categoryLink id="4aa4-c902-027d-afd8" name="Faction: Khorne" hidden="false" targetId="8450-6c30-1711-65da" primary="false"/>
-        <categoryLink id="a2ca-f628-5e0c-c60f" name="Faction: World Eaters" hidden="false" targetId="7b3a-6480-c47d-2dd2" primary="false"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="4f73-406f-d193-2570" primary="false" name="Faction: Heretic Astartes"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="728e-1faf-c35f-2612" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="75b6-9228-aafb-9a6e" primary="false" name="Faction: Khorne"/>
+        <categoryLink targetId="c94c-a102-a50c-a357" id="14f5-c094-d925-d606" primary="false" name="Angron"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ab96-dc28-7ba2-be17" name="Samni&apos;arius" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2085-3e0e-2fc9-54b0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="800a-9d83-2f0e-4b2f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2085-3e0e-2fc9-54b0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="800a-9d83-2f0e-4b2f" type="max"/>
           </constraints>
           <profiles>
             <profile id="96ee-4f31-097c-9eec" name="Samni&apos;arius" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -78,13 +70,13 @@
             <infoLink id="fcde-1e4e-0f6b-1446" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e434-6fc8-bcff-21a1" name="Spinegrinder" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a5-4b5b-7d12-8e8a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7667-f46e-3cc4-4b4c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a5-4b5b-7d12-8e8a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7667-f46e-3cc4-4b4c" type="max"/>
           </constraints>
           <profiles>
             <profile id="83da-af68-12c8-d849" name="Spinegrinder" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -99,7 +91,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -107,12 +99,12 @@
         <entryLink id="8d27-beb8-cf60-91e1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8423-f6af-7449-fc14" name="Mortarion" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa81-6236-108c-cee9" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa81-6236-108c-cee9" type="max"/>
       </constraints>
       <profiles>
         <profile id="ade8-e5dd-f408-a9c4" name="The Barbaran Plate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -155,15 +147,16 @@
         <categoryLink id="ab72-8330-079d-f322" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="cf00-b86d-f212-a810" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="57a4-a025-2651-6d56" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
-        <categoryLink id="8455-5963-fe4d-2943" name="Faction: Death Guard" hidden="false" targetId="a7ff-05a1-97e1-9153" primary="false"/>
-        <categoryLink id="a650-b90e-db35-a15c" name="Faction: Heretic Astartes" hidden="false" targetId="df7a-9bef-87c5-5073" primary="false"/>
-        <categoryLink id="ffde-2532-b5c8-be9f" name="Faction: Nurgle" hidden="false" targetId="7d93-ac9a-4226-a717" primary="false"/>
+        <categoryLink targetId="bb55-331f-06ab-80e9" id="a8ee-5890-5b24-bcc7" primary="false" name="Faction: Nurgle"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="3f84-16b5-22a7-4bbc" primary="false" name="Faction: Death Guard"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="d7a5-6518-aabd-e05c" primary="false" name="Faction: Heretic Astartes"/>
+        <categoryLink targetId="6892-4c3f-2516-3431" id="6ac8-982b-60c2-0970" primary="false" name="Mortarion"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2dec-8bfc-b962-959b" name="The Lantern" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-aa58-343d-9785" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4581-bc31-64aa-0db0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b6-aa58-343d-9785" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4581-bc31-64aa-0db0" type="max"/>
           </constraints>
           <profiles>
             <profile id="7639-77b2-709a-5c57" name="The Lantern" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -178,13 +171,13 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a57f-0e9f-b12f-b5c9" name="Silence" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb57-bda6-3ed5-0e1e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="290d-5f16-5b10-474f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb57-bda6-3ed5-0e1e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="290d-5f16-5b10-474f" type="max"/>
           </constraints>
           <profiles>
             <profile id="6c8b-8f40-5517-45e0" name="Silence" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -199,7 +192,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -207,12 +200,12 @@
         <entryLink id="de26-a84a-fb7a-aa49" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="19"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db04-b0f6-1b28-c83d" name="Magnus the Red" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3ee-b863-1d79-a036" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3ee-b863-1d79-a036" type="max"/>
       </constraints>
       <profiles>
         <profile id="dfa9-e01a-195e-2a98" name="Primarch of the Thousand Sons" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -248,15 +241,15 @@
         <categoryLink id="115a-7c90-33bd-b350" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="6bb2-34b0-ff75-e35d" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
         <categoryLink id="79fb-4e7a-3d2c-fe29" name="Magnus the Red" hidden="false" targetId="0270-f8eb-8d51-e8f7" primary="false"/>
-        <categoryLink id="090b-a985-467f-3555" name="Faction: Heretic Astartes" hidden="false" targetId="df7a-9bef-87c5-5073" primary="false"/>
-        <categoryLink id="2c06-49c1-022b-7732" name="Faction: Thousand Sons" hidden="false" targetId="59ab-8996-f867-1f0a" primary="false"/>
-        <categoryLink id="c093-2bca-f9c3-0e62" name="Faction: Tzeentch" hidden="false" targetId="56e9-1048-24f6-1b0b" primary="false"/>
+        <categoryLink targetId="a1e7-ad03-b978-ec8a" id="0a5d-30ac-129d-851b" primary="false" name="Faction: Tzeentch"/>
+        <categoryLink targetId="d0ec-2044-09f4-f7ff" id="dc37-f9e8-23d6-ad91" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="8be6-bb37-26db-8df4" primary="false" name="Faction: Heretic Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3cb9-85b6-807b-4104" name="Gaze of Magnus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e54-8095-ab00-7cf6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3668-ad13-43f0-a05d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e54-8095-ab00-7cf6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3668-ad13-43f0-a05d" type="max"/>
           </constraints>
           <profiles>
             <profile id="bab3-cf49-d919-a322" name="Gaze of Magnus" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -275,13 +268,13 @@
             <infoLink id="0b4d-f0be-64de-49ac" name="Witchfire" hidden="false" targetId="8ce8-6dd3-c0a8-35ad" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="367a-bfb4-741f-bf02" name="The Blade of Magnus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f2-6044-feac-d680" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff2f-3d86-45ce-9314" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f2-6044-feac-d680" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff2f-3d86-45ce-9314" type="max"/>
           </constraints>
           <profiles>
             <profile id="97b0-efeb-5f3c-31f5" name="The Blade of Magnus" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -296,7 +289,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -304,11 +297,11 @@
         <entryLink id="b22d-8327-1b0d-7dc7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
-    <catalogueLink id="05bb-b218-158e-0813" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Chaos" id="2d3a-4184-3488-38a7" targetId="e1a8-50a4-821a-eda1"/>
   </catalogueLinks>
 </catalogue>
