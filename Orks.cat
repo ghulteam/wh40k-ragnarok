@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -100,7 +100,10 @@
     <categoryEntry name="Zodgrod Wortsnagga" id="ecd9-92f6-3a6a-124d" hidden="false"/>
     <categoryEntry name="Faction: Snakebite" id="b854-267e-f610-b349" hidden="false"/>
     <categoryEntry name="Walkerz" id="14d5-fffd-faa1-4aa6" hidden="false"/>
-    <categoryEntry name="Big&apos;ed Bossbunka " id="677e-373d-a587-10f6" hidden="false"/>
+    <categoryEntry name="Big&apos;ed Bossbunka" id="677e-373d-a587-10f6" hidden="false"/>
+    <categoryEntry name="Ufthak Blackhawk" id="95a7-f6cd-be55-0daa" hidden="false"/>
+    <categoryEntry name="Beast Snagga Boyz" id="fe9d-f2b1-95fe-b94b" hidden="false"/>
+    <categoryEntry name="Squighog Boyz " id="cb0b-7ccb-7824-3c92" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="false">
@@ -524,9 +527,34 @@
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="c8dc-61a6-6f9a-2ba9" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Big&apos;ed Bossbunka " hidden="false" id="de56-9dc8-a23e-b90a" type="selectionEntry" targetId="a15a-5de1-bedb-7822">
+    <entryLink import="true" name="Big&apos;ed Bossbunka" hidden="false" id="de56-9dc8-a23e-b90a" type="selectionEntry" targetId="a15a-5de1-bedb-7822">
       <categoryLinks>
         <categoryLink targetId="e2ad-0813-395c-442a" id="3ffa-8a3f-fb28-0727" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ufthak Blackhawk" hidden="false" id="402a-4b86-f899-a648" type="selectionEntry" targetId="024e-746e-af54-20ae">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="352b-586b-d081-e2ba" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Painboy on Warbike" hidden="false" id="d42d-7ab0-4a52-1076" type="selectionEntry" targetId="f199-c814-8909-62fa">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="d84d-9bf4-0ffb-b1bb" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Beast Snagga Boyz" hidden="false" id="5963-827f-29e3-78b2" type="selectionEntry" targetId="0f21-5311-af45-803a">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="2e81-94b6-7308-30ac" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warbikers" hidden="false" id="9e9a-f5b4-c6ab-bf67" collective="false" targetId="7d3e-680c-25e9-0889" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="46e3-68dd-99d5-84b7" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Squighog Boyz" hidden="false" id="0bec-e238-b93f-0522" type="selectionEntry" targetId="55a7-0d0b-5ff2-f848">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="7650-9c7a-9231-5996" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10390,9 +10418,9 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cf28-0765-098d-9c20" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Big&apos;ed Bossbunka " hidden="false" id="a15a-5de1-bedb-7822" collective="false">
+    <selectionEntry type="unit" import="true" name="Big&apos;ed Bossbunka" hidden="false" id="a15a-5de1-bedb-7822" collective="false">
       <profiles>
-        <profile name="Big&apos;ed Bossbunka " typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2acd-f4cc-1fff-c6b7">
+        <profile name="Big&apos;ed Bossbunka" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2acd-f4cc-1fff-c6b7">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
@@ -10417,7 +10445,7 @@
         <categoryLink name="Building" hidden="false" id="1c32-63c9-9e2d-48fc" targetId="8951-2d88-3b2b-4de4" primary="false"/>
         <categoryLink name="Transport" hidden="false" id="ba1c-692c-f1fe-9757" targetId="6f18-a45e-43de-b8b8" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="477d-a737-f5f5-7a1b" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink targetId="677e-373d-a587-10f6" id="eb23-576d-d2f7-c2c6" primary="false" name="Big&apos;ed Bossbunka "/>
+        <categoryLink targetId="677e-373d-a587-10f6" id="eb23-576d-d2f7-c2c6" primary="false" name="Big&apos;ed Bossbunka"/>
         <categoryLink targetId="6e8c-3054-cdbb-4a5a" id="c1c2-8fd9-42a9-9130" primary="false" name="Faction: Orks"/>
         <categoryLink targetId="8694-0cc5-9ed1-bff2" id="f7be-16de-24bf-2c4e" primary="false" name="Faction: &lt;Clan&gt;"/>
       </categoryLinks>
@@ -10452,6 +10480,286 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ufthak Blackhawk" hidden="false" id="024e-746e-af54-20ae" collective="false">
+      <profiles>
+        <profile name="Ufthak Blackhawk" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9b1f-6f8e-eeb9-204a" publicationId="8df9-0b3e-abea-3c15">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gargantsmasha" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="e591-0931-b200-4463">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time this model makes an attack that targets a TITANIC unit, you can re-roll the Hit roll and you can re-roll the Wound roll.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Orks" hidden="false" id="2028-2061-1cfb-4deb" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="4387-4417-2398-c610" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="8c38-49a6-7b69-e02a" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="329f-9080-c46a-a123" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Warboss" hidden="false" id="ce93-708a-8653-8b87" targetId="b0f1-57b5-c3df-d786" primary="false"/>
+        <categoryLink name="Faction: &lt;Clan&gt;" hidden="false" id="b11a-b00c-143a-8d60" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink targetId="95a7-f6cd-be55-0daa" id="2279-73d4-04de-af02" primary="false" name="Ufthak Blackhawk"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="8405-207f-7144-0cef" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Snazzhammer" hidden="false" id="06ff-5f04-7cd8-f739">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07bb-1564-3eba-22b0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b8f-71b1-b882-c43c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Snazzhammer" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0837-5e9f-6822-6653">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer" id="ffd4-b27c-f447-6db4" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="9395-e846-fb72-9d87" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Painboy on Warbike" hidden="false" id="f199-c814-8909-62fa" publicationId="8df9-0b3e-abea-3c15" collective="false">
+      <profiles>
+        <profile name="Sawbonez" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="bce6-d936-ca13-3527" publicationId="8df9-0b3e-abea-3c15">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly &lt;CLAN&gt; LIGHT unit in base contact with it. If it does, roll one D6; on a 4+, remove one damage marker from that LIGHT unit. Only one attempt to heal each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Painboy on Warbike" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9a48-d40e-26f9-1e52" publicationId="8df9-0b3e-abea-3c15">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Orks" hidden="false" id="54ef-a26a-437b-9a20" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="9ba0-d707-c653-07c4" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="2c26-a354-4ffe-3216" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Painboy" hidden="false" id="45e8-b2a1-45d2-b4ab" targetId="c9c0-ed87-24b0-fd6e" primary="false"/>
+        <categoryLink name="Faction: &lt;Clan&gt;" hidden="false" id="3e48-7db4-7147-c69d" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink targetId="c8b5-9ad5-d8df-45f2" id="a46f-d0e4-edc5-91f8" primary="false" name="Biker"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="4471-9e20-fd7b-ec4d" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Dok&apos;s Tools" hidden="false" id="2d9f-2a52-f699-d44a" collective="false" targetId="e021-061f-bf3a-586b" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e776-d714-173a-14d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d4-1be7-b0dc-c677" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Beast Snagga Boyz" hidden="false" id="0f21-5311-af45-803a" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: &lt;Clan&gt;" hidden="false" id="2f6d-402f-318f-a1d4" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink name="Faction: Orks" hidden="false" id="b85e-43c9-6201-a6e2" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="28b5-d71a-0e2c-5171" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="21a7-52d7-28c9-16e5" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink targetId="5df2-6271-244e-eb40" id="3698-5a16-213b-d406" primary="false" name="Beast Snagga"/>
+        <categoryLink targetId="fe9d-f2b1-95fe-b94b" id="e12a-f62c-be8c-7f23" primary="false" name="Beast Snagga Boyz"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="60d7-76ac-cb4a-475e" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="b601-8f2b-6671-0637">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4036-3e88-fa22-262e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8daa-fb1d-f523-3d2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Beast Snagga Boyz (10 Models)" hidden="false" id="b601-8f2b-6671-0637" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9df3-f049-cbff-da1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Beast Snagga Boyz (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="088d-1e2f-e858-8d1b" publicationId="8df9-0b3e-abea-3c15">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Beast Snagga Boyz (20 Models)" hidden="false" id="a3c6-eaae-b167-29c2" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5208-8382-eeea-6288" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Beast Snagga Boyz (20 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="63be-054d-07c3-fb8f" publicationId="8df9-0b3e-abea-3c15">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="27f7-c8be-0c1a-deaa" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Sluggas and Choppas" hidden="false" id="77f0-fea9-ef8a-be71" collective="false" targetId="9991-1414-1a30-1e41" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fea-1279-3bf4-7401" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6612-9398-fc2a-2dcd"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Beast Snagga" id="7947-f141-c809-0544" hidden="false" type="profile" targetId="8c37-ddc6-af2a-1d62"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Squighog Boyz" hidden="false" id="55a7-0d0b-5ff2-f848" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Orks" hidden="false" id="2b1a-5524-ff9b-7b1c" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="9c17-758b-91ed-e5f9" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Faction: &lt;Clan&gt;" hidden="false" id="fde1-08a9-90aa-4aae" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink name="Speed Freeks" hidden="false" id="7a51-1160-0150-b736" targetId="4e25-a69c-f6d6-e2c1" primary="false"/>
+        <categoryLink targetId="cb0b-7ccb-7824-3c92" id="5cb6-87a3-a200-1eb3" primary="false" name="Squighog Boyz "/>
+        <categoryLink targetId="351c-b6fa-4d4f-70f3" id="e556-eef9-a7f8-5c98" primary="false" name="Cavalry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="3a14-b30f-c415-434e" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="6b92-3ca2-9704-e7a9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91e0-9785-9b10-c6d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd6d-133c-87dd-28d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Squighog Boyz (3 Models)" hidden="false" id="2f09-5dd2-5e7f-9a7c" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd8b-8653-f26b-8177" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Squighog Boyz (3 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="dda5-d5cc-97ab-9ecd">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Squighog Boyz (6 Models)" hidden="false" id="8d26-a1ae-2542-65bf" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e6-8970-330e-1235" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Squighog Boyz (6 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="5abf-a349-b937-b05e">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f0c0-186b-4445-b486" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stikkaz" hidden="false" id="6a66-7c82-f78c-bd99">
+          <profiles>
+            <profile name="Stikkaz" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c6ac-2c77-6ca4-ccba">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Squighog Jaws" hidden="false" id="86c7-26c7-b62b-c8e1">
+          <profiles>
+            <profile name="Squighog Jaws" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="edeb-d90a-b090-f5f3">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Beast Snagga" id="9619-beb3-b3d3-afbd" hidden="false" type="profile" targetId="8c37-ddc6-af2a-1d62"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
