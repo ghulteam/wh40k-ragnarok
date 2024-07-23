@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="9055-71bd-c713-3f2a" name="Genestealer Cults"/>
   </publications>
@@ -1975,7 +1975,7 @@
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="267b-204d-5250-46ff" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="5dd1-940c-fb28-bf31" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="46ca-759b-cc5a-d960" type="selectionEntry">
+            <entryLink id="5dd1-940c-fb28-bf31" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="257b-2e43-40d4-aebe" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="3"/>
               </modifiers>
@@ -2263,51 +2263,32 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b85c-5745-0f13-fde2" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="896d-94ec-9d5e-1c3d" name="2x Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="ceb8-7d95-9840-cb86" name="Heavy Bolter" hidden="false" targetId="f063-5876-36f0-2695" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a52e-139d-3ba8-ccd7" name="2x Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="d89c-3563-4334-1835" name="Heavy Flamer" hidden="false" targetId="d1f8-d189-e393-b993" type="profile"/>
-                <infoLink id="0733-610f-3a0b-bfa6" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2257-cb6f-8bd2-dc21" name="2x Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="f5f6-c843-cb39-867c" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
-                <infoLink id="9892-dfef-6449-0ab2" name="Plasma Cannon" hidden="false" targetId="11ec-73ab-1cf5-48a0" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1bf5-185b-5256-cc55" name="2x Multi-melta" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d9d9-6b85-062f-57da" name="Multi-melta" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="0e25-59d8-4db3-c061" type="selectionEntry" targetId="46e7-d278-1268-caaf">
+              <modifiers>
+                <modifier type="set" value="2x Heavy Flamer" field="name"/>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="ef41-b5b3-3402-bc6b" type="selectionEntry" targetId="5049-c0b5-625c-a7af">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+                <modifier type="set" value="2x Heavy Bolter" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="ee99-2c44-1d35-edcd" type="selectionEntry" targetId="1a13-f0be-ca42-c44b">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+                <modifier type="set" value="2x Multi-melta" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Plasma Cannon" hidden="false" id="c007-569b-9123-abfe" type="selectionEntry" targetId="257b-2e43-40d4-aebe">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+                <modifier type="set" value="2x Plasma Cannon" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="cb20-2069-5669-0f6c" name="Pintle Weapon" hidden="false" collective="false" import="true">
           <constraints>
@@ -3202,15 +3183,6 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="46ca-759b-cc5a-d960" name="Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e9f5-5e0f-fa6c-60b8" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
-        <infoLink id="0384-80f9-67eb-207c" name="Plasma Cannon" hidden="false" targetId="11ec-73ab-1cf5-48a0" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="b6da-adcb-a0dc-1836" name="Armoured Feet" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="06f4-09eb-4ba9-78cd" name="Armoured Feet" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -3266,38 +3238,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile id="f063-5876-36f0-2695" name="Heavy Bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="d1f8-d189-e393-b993" name="Heavy Flamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="11ec-73ab-1cf5-48a0" name="Plasma Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Weapons" id="5314-6553-bd70-14e6" targetId="4c20-063f-968c-8547"/>
   </catalogueLinks>

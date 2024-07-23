@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="6e11-42ed-c084-ce74" name="Datasheet T&apos;au Empire"/>
     <publication id="e282-a216-345a-e73a" name="Datasheet FW T&apos;au Empire"/>
@@ -965,17 +965,6 @@
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4a7d-8396-70bb-67cd" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df24-f0ae-ee13-5cf9" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4291-718a-99fc-6a80" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="b4e3-84e7-1d60-5712" name="Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae1d-2b63-7b06-b2e0" type="max"/>
@@ -988,6 +977,16 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="fb32-972d-9061-3859" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b62b-72f7-547b-6603"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="216b-f9d7-a388-0310" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true">
           <constraints>
@@ -2556,17 +2555,6 @@
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="110f-c09d-1b7d-fb68" name="3 Flamers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60f-b489-71ea-6aa4" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3368-afb3-fe83-da51" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="7deb-d74a-dce0-52d2" name="3 Plasma Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8808-f3dd-16a8-674b" type="max"/>
@@ -2579,6 +2567,17 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="986a-7cbc-912f-2640" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a539-2521-a4b9-b1f5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="1466-da3f-0d27-dace"/>
+                <modifier type="set" value="3 Flamers" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2835,17 +2834,6 @@
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="30ec-a4b7-1cd0-5e0e" name="3 Flamers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd2-7da8-144d-9ddb" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="af72-7e9b-3daa-f27a" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="5638-188b-c0ab-5a9e" name="3 Plasma Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eab4-97ea-4742-6204" type="max"/>
@@ -2858,6 +2846,17 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="a347-1ef0-e93c-7698" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="46fb-79db-87ef-c936"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="1466-da3f-0d27-dace"/>
+                <modifier type="set" value="3 Flamers" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -8704,17 +8703,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="51ab-1714-f291-16fa" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e352-8e5d-aa24-1838" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c431-263f-3349-33b8" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="e1df-d403-8877-dace" name="Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="748e-e78c-4cc4-af68" type="max"/>
@@ -8727,6 +8715,16 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="b1b0-0957-2c1d-15ed" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ede1-294c-2db9-775d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -8889,17 +8887,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="94b3-1e77-5cc0-2dc0" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9de-bb6d-29d5-d71f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c36b-7333-9e9a-0b5a" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="a551-91f0-058d-4223" name="Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="108f-7778-ac95-c55a" type="max"/>
@@ -8912,6 +8899,16 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="3f62-b3b3-4111-9fae" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3895-87d8-fbb9-5b9e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -9316,18 +9313,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a124-2603-bf8e-24b4" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e98-2cf3-8956-0cc6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcbb-4028-d515-4cf0" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="1684-c862-5b85-419f" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="52d4-107b-1c00-c9d3" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true">
@@ -9343,6 +9328,15 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8517-3836-048e-d4ce" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Flamer" hidden="false" id="6513-d52d-fee9-78f3" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d21d-03a4-0e23-b182"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcdf-0d90-b3b1-ce02"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
@@ -9516,18 +9510,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="78a6-52bf-d728-c3b9" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212b-c571-32c4-8abb" type="max"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b35-d257-552d-3d20" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="1476-7fc9-a235-5b0e" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="23e0-e1de-767f-33ea" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true">
@@ -9543,6 +9525,15 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="af87-0777-8d80-fbe9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Flamer" hidden="false" id="be81-32f6-e542-9112" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fcd5-1532-cdac-1421"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7adb-f161-a76a-801e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
@@ -9617,18 +9608,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="011d-9677-8678-7c9e" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b4a-050f-73c7-a9e9" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="740a-31b5-df37-e11c" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4067-4fd6-f12f-4962" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="40b7-484c-c07c-e39a" name="Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73e1-04e1-dd7a-23b9" type="max"/>
@@ -9656,6 +9635,15 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="16d3-3e0d-5543-d6d2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Flamer" hidden="false" id="76f7-e03f-505b-c534" type="selectionEntry" targetId="0367-a01f-0c7d-7b64">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ead5-2c8c-c36c-612a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c4-4980-e1ec-2d06"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -10504,23 +10492,6 @@ Unless stated otherwise, the Master of War ability can only be used once per bat
         <infoLink id="595e-d34d-6237-fb72" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
       </infoLinks>
     </infoGroup>
-    <infoGroup id="8ab4-d68e-4164-1448" name="Flamer" hidden="false">
-      <profiles>
-        <profile id="08ea-7e38-6e6a-008a" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7c9d-6b70-bfcc-2e60" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
-      </infoLinks>
-    </infoGroup>
     <infoGroup id="32bf-abd8-f77b-a925" name="Plasma Rifle" hidden="false">
       <profiles>
         <profile id="0651-6a82-1b08-9b9e" name="Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -10660,4 +10631,7 @@ Unless stated otherwise, the Master of War ability can only be used once per bat
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Library - Weapons" id="bbb9-a876-81de-cf1f" targetId="4c20-063f-968c-8547" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
