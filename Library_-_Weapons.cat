@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c20-063f-968c-8547" name="Library - Weapons" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4c20-063f-968c-8547" name="Library - Weapons" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4b2d-6f39-3754-8981" name="Cypher" hidden="false"/>
     <categoryEntry id="fbe6-07fa-0346-50fa" name="Faction: Fallen" hidden="false"/>
@@ -9,18 +9,9 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Meltagun" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c205-34c0-5306-82f7" publicationId="8df9-0b3e-abea-3c15">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Meltagun" id="1e43-3314-74fc-6578" hidden="false" type="profile" targetId="f167-5ca5-16c9-7f21"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="1896-0c3b-29df-97e4" name="Heavy Stubber" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -59,22 +50,11 @@
     <selectionEntry id="46e7-d278-1268-caaf" name="Heavy Flamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="589b-384b-a342-8b8d" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+        <infoLink name="Heavy Flamer" id="f763-ed4c-8aaf-4acc" hidden="false" type="profile" targetId="59d9-521f-7559-6fa6"/>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Heavy Flamer" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6ca8-c9b9-f1a5-6226" publicationId="8df9-0b3e-abea-3c15">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry id="0529-702c-4138-7704" name="Ironstorm Missile Pod" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -308,21 +288,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f802-b5d6-9147-26ec" name="Twin Meltagun" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="37b2-27ed-ef62-57e1" name="Twin Meltagun" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Meltagun" id="4d19-4f85-0cb7-c4c6" hidden="false" type="profile" targetId="f167-5ca5-16c9-7f21">
+          <modifiers>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+            <modifier type="set" value="Twin Meltagun" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="b2c9-1549-7a82-cda6" name="Twin Siegebreaker Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -651,21 +627,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dd55-a2c1-238b-569f" name="Lascannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="b67f-3b2d-46c0-db12" name="Lascannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Lascannon" id="7697-d9f5-15ba-af1a" hidden="false" type="profile" targetId="a2a5-d715-45b5-a270"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="4837-c723-8a48-e155" name="Twin Magna Lascannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -756,38 +723,25 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1a13-f0be-ca42-c44b" name="Multi-melta" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="72f4-fe4f-f030-db81" name="Multi-melta" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Multi-melta" id="500b-8c5d-08ef-b474" hidden="false" type="profile" targetId="e226-b04c-9fce-14d0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ca25-e5ce-34c4-ec69" name="Twin Lascannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="ad49-9ec4-8b7f-8dcb" name="Twin Lascannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Lascannon" id="b036-4e2c-9189-0329" hidden="false" type="profile" targetId="a2a5-d715-45b5-a270">
+          <modifiers>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+            <modifier type="set" value="Twin Lascannon" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="229a-7522-471b-45de" name="C-beam Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -824,37 +778,27 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0cfc-41f8-afb2-2f24" name="Twin Autocannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="87b1-d332-74c3-c227" name="Twin Autocannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Autocannon" id="06db-fe56-4328-3cc1" hidden="false" type="profile" targetId="a12a-de6a-e32e-fdc6">
+          <modifiers>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+            <modifier type="set" value="Twin Autocannon" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ef0f-d8ec-5be7-d039" name="Twin Heavy Flamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="6019-8df2-40cf-6672" name="Twin Heavy Flamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="34e3-7ad4-77e7-0de9" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+        <infoLink name="Heavy Flamer" id="2777-81bf-4659-e705" hidden="false" type="profile" targetId="59d9-521f-7559-6fa6">
+          <modifiers>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+            <modifier type="set" value="Twin Heavy Flamer" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -932,7 +876,7 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Heavy Bolter" id="6b02-18ca-398b-62b0" hidden="false" type="profile" targetId="3ba6-c9eb-0113-b222"/>
+        <infoLink name="Heavy Bolter" id="8428-2bcf-a2cc-8e38" hidden="false" type="profile" targetId="3ba6-c9eb-0113-b222"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="438f-bf4c-a121-f08f" name="Infernus Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
@@ -1879,18 +1823,9 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="30ad-0e5d-72d1-3615">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Missile Launcher" id="a8a4-d234-14c9-b5d8" hidden="false" type="profile" targetId="ea9a-f527-d74d-91e5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="2911-f56b-eec4-ad12" name="Twin Boltguns" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2248,7 +2183,7 @@
         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
         <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
@@ -2261,6 +2196,26 @@
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lascannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a2a5-d715-45b5-a270" publicationId="8df9-0b3e-abea-3c15">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ea9a-f527-d74d-91e5">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
