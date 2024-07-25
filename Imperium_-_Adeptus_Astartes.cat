@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -5777,41 +5777,35 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="bcfc-2fe4-d435-4696" name="Weapon Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="9856-9cf7-7e6f-7141">
+        <selectionEntryGroup id="bcfc-2fe4-d435-4696" name="Weapon Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="f383-86c2-ae14-f2e6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc02-9ce1-6c0a-313f" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bf-daf1-7d62-a773" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="9856-9cf7-7e6f-7141" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
-              <profiles>
-                <profile id="8c34-368a-79a1-615d" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </entryLink>
-            <entryLink id="ef88-ff5b-1dec-9ee1" name="Astartes Chainsword" hidden="false" collective="false" import="true" targetId="4d3b-aae8-2134-3b93" type="selectionEntry">
-              <profiles>
-                <profile id="2b1a-d54b-db41-0dde" name="Heavy Bolt Pistol" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Astartes Chainswords and Heavy Bolt Pistols" hidden="false" id="70f3-1769-ddcc-5110">
+              <entryLinks>
+                <entryLink import="true" name="Astartes Chainswords" hidden="false" id="3821-abb2-3046-78b2" type="selectionEntry" targetId="4d3b-aae8-2134-3b93"/>
+                <entryLink import="true" name="Heavy Bolt Pistols" hidden="false" id="d01d-77d6-a47f-3d5f" type="selectionEntry" targetId="35bb-c4c0-0e46-cd22"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt Rifles and Primaris Close Combat Weapons" hidden="false" id="f383-86c2-ae14-f2e6">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Rifles" hidden="false" id="d68d-ea70-4ce8-611e" collective="false" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e16-5c27-bdd0-45b6" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="864a-fd49-ff60-7a13" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Primaris Close Combat Weapons" hidden="false" id="0742-cdaf-572c-0331" type="selectionEntry" targetId="edff-e974-c4ed-0ee3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e504-6bef-5451-d629" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b96b-a663-6747-eb8e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
