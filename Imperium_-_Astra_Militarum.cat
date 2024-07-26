@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="22" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -88,6 +88,7 @@
     <categoryEntry id="3489-ca5c-23ab-dc6d" name="Carnodon" hidden="false"/>
     <categoryEntry id="5329-f200-d92e-3f16" name="Ursula Creed" hidden="false"/>
     <categoryEntry id="ba94-8dea-0c56-4257" name="Fortress of Arrogance" hidden="false"/>
+    <categoryEntry name="Kaskrin" id="cd19-a6bc-d5e5-6074" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -1160,6 +1161,11 @@
         <categoryLink id="a405-a5ad-27f1-d425" name="Faction: Officio Prefectus" hidden="false" targetId="b6a8-41e3-5fe3-e661" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Kaskrin" hidden="false" id="106f-46d4-c0c7-d1d2" type="selectionEntry" targetId="3931-522f-4269-5e3b">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="dbbf-7435-0d6e-8c16" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f34f-f037-d96b-d46d" name="Officer Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -1501,7 +1507,7 @@
         </profile>
         <profile id="8943-e00d-640b-d602" name="Tactical Genius" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warmaster, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Point.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4267,27 +4273,9 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bda-a6e1-7894-f769" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f53c-9f16-3450-fb2a" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="8bf7-fed9-7154-5613" name="Special Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ded1-39fe-2ef4-d133" name="Special Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="2a32-6be9-d339-fea1" name="Sniper Rifles" hidden="false" collective="false" import="true" targetId="f936-ddf2-766b-3a6c" type="selectionEntry"/>
+            <entryLink import="true" name="Special Weapons" hidden="false" id="78bf-c83c-04b4-97fa" type="selectionEntry" targetId="b3ee-c855-213f-6ff5"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7157,11 +7145,99 @@ Praetor Launcher for this action.</characteristic>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="35"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kaskrin" hidden="false" id="3931-522f-4269-5e3b" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="04ed-a86f-d346-63c8" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="6ce7-2b18-2547-a3f2" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="465b-bef6-1853-5ed3" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="5f18-96a4-a6dd-4b6e" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink targetId="cd19-a6bc-d5e5-6074" id="1aa4-405a-caf2-4f84" primary="false" name="Kaskrin"/>
+        <categoryLink targetId="b6a1-41e3-0fe3-e661" id="d255-6011-1893-fe85" primary="false" name="Faction: Cadian"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="8ec6-842a-e8bb-6906" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa2-9e9b-9232-7965" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ed-d7d6-42ad-11f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Close Combat Weapons (Kaskrin)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8d7f-7439-3d64-40cd">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Hot-shot Lasguns" hidden="false" id="039a-22c2-3ce1-eab2" collective="false" targetId="afbb-4b97-441a-98f6" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad0e-1620-4589-9f00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bedd-329b-fd95-2c1b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="ca54-2bda-0851-c70c" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Special Weapons" hidden="false" id="caa3-f154-ef37-3c2e" type="selectionEntry" targetId="b3ee-c855-213f-6ff5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6608-631a-700b-b1ea" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+      </costs>
+      <profiles>
+        <profile name="Kaskrin (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4b78-28d2-2b62-8ce8">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warrior Elites" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="d0d3-297c-722a-b9aa">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units with this ability roll D12s instead of D6s for hit rolls for attack made with ranged weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Special Weapons" hidden="false" id="b3ee-c855-213f-6ff5" collective="false">
+      <profiles>
+        <profile name="Special Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="568c-3923-0aa1-9e9f">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="0422-c0a5-6f82-4868" name="Officer" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Generate Command Assets step, if this unit is a WARLORD and is on the battlefield, you generate one extra Command Asset.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Generate Command Assets step, if this unit is a WARLORD and is on the battlefield, you generate one extra Command Point.</characteristic>
       </characteristics>
     </profile>
     <profile id="ab92-9606-c265-b3f4" name="Aura of Discipline" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
