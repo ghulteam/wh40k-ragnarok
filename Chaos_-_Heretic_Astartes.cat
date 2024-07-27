@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -2732,13 +2732,6 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       </costs>
     </selectionEntry>
     <selectionEntry id="94dd-dbf3-528a-d11f" name="Accursed Cultists" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="20fb-9981-416d-540b" name="Accursed Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the stort of the turn, you may remove one damage marker from this unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="a679-9fa8-07bc-181d" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
@@ -2754,14 +2747,14 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
         <selectionEntry id="54ed-0813-3b5b-6c93" name="Blasphemous appendages" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d70-9153-62ad-f04d" type="max"/>
-            <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974e-d9a0-7fe4-b233" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974e-d9a0-7fe4-b233" type="min"/>
           </constraints>
           <profiles>
             <profile id="b8b5-05a1-a7f3-e43d" name="Blasphemous appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -2787,15 +2780,15 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">D3</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1d99-b949-9677-792e" name="16 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -2805,7 +2798,7 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2D3</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
@@ -2813,7 +2806,7 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
