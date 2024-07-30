@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -155,7 +155,7 @@
     </entryLink>
     <entryLink id="1c88-5737-0d07-b7de" name="Hellforged Fellblade" hidden="false" collective="false" import="true" targetId="1481-8054-00fd-6add" type="selectionEntry">
       <categoryLinks>
-        <categoryLink targetId="bb96-706c-0589-c037" id="4570-0f71-6924-eac1" primary="false" name="Faction: &lt;Legion&gt;"/>
+        <categoryLink targetId="bb96-706c-0589-c037" id="26f9-bf68-9361-0759" primary="false" name="Faction: &lt;Legion&gt;"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8ce3-bdea-57b6-c7e4" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5009-c375-ffa4-faa6" type="selectionEntryGroup"/>
@@ -1019,6 +1019,14 @@
       <categoryLinks>
         <categoryLink id="4e71-c576-ed50-cea5" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hellforged Glaive" hidden="false" id="e158-7b2e-252e-ad8a" type="selectionEntry" targetId="179e-a840-10b4-9389">
+      <categoryLinks>
+        <categoryLink targetId="bb96-706c-0589-c037" id="52dd-5d88-fe29-d0c0" primary="false" name="Faction: &lt;Legion&gt;"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Mark of Chaos" hidden="false" id="d9f4-c745-cc0f-f06d" collective="false" targetId="5009-c375-ffa4-faa6" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -3007,4 +3015,36 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
   <catalogueLinks>
     <catalogueLink id="605a-63db-516d-a80c" name="Library - Chaos Space Marines" targetId="df5c-f15d-f672-a301" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <rules>
+    <rule name="Let The Galaxy Burn" id="2051-1e25-e7e2-4973" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ba0-7df9-3f27-d4b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0d22-806b-bfc5-db54" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c2bc-37e7-468c-5e76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="5642-ce25-4f9d-5cb3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.</description>
+    </rule>
+  </rules>
 </catalogue>

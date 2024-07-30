@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -138,39 +138,8 @@
     <categoryEntry id="167b-2a5f-ffc3-ca87" name="Hammerfall Bunker" hidden="false"/>
     <categoryEntry id="6e71-208e-ad7f-5a57" name="Veteran Intercessor Squad" hidden="false"/>
     <categoryEntry id="c3b5-c2f7-79f7-9548" name="Judiciar" hidden="false"/>
+    <categoryEntry name="Relic Glaive Super-heavy Tank" id="2e94-533d-9b89-7239" hidden="false"/>
   </categoryEntries>
-  <rules>
-    <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <description>Re-roll failed Morale tests taken for ADEPTUS ASTARTES units in this Detachment.</description>
-    </rule>
-  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -7525,7 +7494,7 @@
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">100&quot;</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
               </characteristics>
@@ -7628,7 +7597,7 @@
     </selectionEntry>
     <selectionEntry id="0f93-c25d-2b63-2f39" name="Relic Falchion Super-heavy Tank Destroyer" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="d0d9-3a6d-00b5-6da9" name="Relic Fellblade Super-heavy Tank" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="d0d9-3a6d-00b5-6da9" name="Relic Falchion Super-heavy Tank" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
@@ -13604,6 +13573,143 @@ otherwise, place one blast marker next to it.</characteristic>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Relic Glaive Super-heavy Tank" hidden="false" id="3e7f-8266-25fe-32bd" collective="false">
+      <profiles>
+        <profile name="Relic Glaive Super-heavy Tank" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ee1b-7749-a7cd-d275">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Volkite Carronade" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b696-b3d6-9823-b8f6">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit performs an attack with its Glaive Volkanite Carronade, if a hit is scored, draw a 1&quot; wide line between the closest point of this model&apos;s base (or hull) and that of the closest model in the target unit. Make one wound roll against the target, and each other unit this line passes over (excluding units that were not eligible to be targeted by this weapon when targets were selected).
+After the attack by the Glaive Volkite Carronade was resolves, count the number of wounds that were scored by the attack and immediately resolve a number of additional automatic hits on the original target equal to the wounds caused this way.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="7fd4-8ee5-66d8-12e8" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="e4f1-039a-f09c-2e87" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="2b62-fdb5-6663-7a9e" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Super-heavy" hidden="false" id="a464-e56c-041c-c770" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink name="Titanic" hidden="false" id="70ff-5893-2057-942e" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="2063-7fe0-2e87-db0c" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Relic" hidden="false" id="6bf2-721e-6a45-7b29" targetId="59eb-2fd1-6cdc-fcc5" primary="false"/>
+        <categoryLink targetId="2e94-533d-9b89-7239" id="ac5d-57a8-e8a3-0bf5" primary="false" name="Relic Glaive Super-heavy Tank"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Glaive Volkanite Carronade" hidden="false" id="5eba-b69c-8f49-56dd" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3172-cc65-573a-8d1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bba-566f-591b-57e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Glaive Volkanite Carronade" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3dbd-7edf-4539-bdb8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">45&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer" id="aa98-f62f-8c13-a26a" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Sponson weapons" id="122b-c08a-390d-9220" hidden="false" collective="false" import="true" defaultSelectionEntryId="50e7-3eea-115e-803c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8023-7063-d9ca-6fdd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b466-e371-a388-c153" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Laser Destroyers" hidden="false" id="f8e2-74e7-c271-137f" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Laser Destroyer" hidden="false" id="d223-d148-2bf8-2a2c" collective="false" targetId="4a10-191b-f9d8-a3f4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a6ec-fd34-56f4-848d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f5b4-79eb-9a8e-7ba8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Quad Lascannons" hidden="false" id="602a-7c26-c6a5-1323" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Quad Lascannon" hidden="false" id="f42f-d6ef-4867-e875" collective="false" targetId="67b9-2305-da39-1259" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c807-3fc4-79b9-d560" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eda2-944e-06e6-93d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Front weapon" id="68e4-ca87-21b7-c899" hidden="false" collective="false" import="true" defaultSelectionEntryId="efbf-45b5-8b05-568f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5596-45b3-1070-483c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e1f-758c-1e2e-cc39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="645b-771f-e97e-28dc" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Heavy Flamer" hidden="false" id="dc8d-96aa-8c3b-d832" collective="false" targetId="ef0f-d8ec-5be7-d039" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Pintle weapon" id="dbc7-3541-90cd-a5fa" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="124d-1398-b7f2-6cd7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="a05f-7b34-4164-e1fc" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="3f4f-7ce9-6583-7286" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="6ad3-d19f-1207-a6ed" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="4731-e408-bf4d-dcfc" collective="false" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Armoured Tracks" hidden="false" id="4411-4a52-9777-a61a" collective="false" targetId="2b3b-d361-f599-8aad" type="selectionEntry"/>
+        <entryLink import="true" name="Commander" hidden="false" id="bfad-fa56-8198-9a22" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

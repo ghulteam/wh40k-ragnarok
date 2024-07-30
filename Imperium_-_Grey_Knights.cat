@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e69b-9027-dfed-8d30" name="Imperium - Grey Knights" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e69b-9027-dfed-8d30" name="Imperium - Grey Knights" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a3ae-0df8-209f-4979" name="Faction: Grey Knights" hidden="false"/>
     <categoryEntry id="bb03-fbb1-1b83-32ee" name="Grand Master" hidden="false"/>
@@ -2331,4 +2331,36 @@
     <catalogueLink id="4ce0-8a71-3e20-8a4b" name="Library - Space Marines" targetId="04e4-e851-ec5e-d9e6" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="28b8-60df-da41-f5ee" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <rules>
+    <rule name="And They Shall Know No Fear" id="d805-327e-94bb-7bd7" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c2bc-37e7-468c-5e76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ba0-7df9-3f27-d4b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0d22-806b-bfc5-db54" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="5642-ce25-4f9d-5cb3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll failed Morale tests taken for ADEPTUS ASTARTES units in this Detachment.</description>
+    </rule>
+  </rules>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c992-ed63-7030-2691" name="Imperium - Adeptus Custodes" revision="9" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c992-ed63-7030-2691" name="Imperium - Adeptus Custodes" revision="10" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a70b-b27c-4926-d99c" name="Faction: Adeptus Custodes" hidden="false"/>
     <categoryEntry id="e6c3-ba23-fdf0-2498" name="Captain-General Trajann Valoris" hidden="false"/>
@@ -26,6 +26,8 @@
     <categoryEntry id="6a14-8a51-f3db-2233" name="Coronus Grav-carrier" hidden="false"/>
     <categoryEntry id="1609-aa77-03ad-c077" name="Orion Assault Dropship" hidden="false"/>
     <categoryEntry id="70f9-1505-dea5-9e17" name="Blade Champion" hidden="false"/>
+    <categoryEntry name="Emperor&apos;s Chosen" id="7d77-7767-5735-7437" hidden="false"/>
+    <categoryEntry name="Emperor&apos;s Legion" id="7ad4-2e7f-1329-7f4b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="b3a0-1d8f-156d-4061" name="Agamatus Custodians" hidden="false" collective="false" import="true" targetId="e6b4-c9e3-4cbb-4fa6" type="selectionEntry">
@@ -164,9 +166,14 @@
         <categoryLink id="e0a0-a128-67ff-69b8" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Faction Abilities" hidden="false" id="33b4-5f7a-01d3-16cd" type="selectionEntry" targetId="b312-ebe6-482e-014c">
+      <categoryLinks>
+        <categoryLink targetId="9f9b-a0ff-1523-746d" id="3fe0-b719-811e-a3a3" primary="true" name="No Force Org Slot"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
-    <rule id="c2ce-ef86-f02b-2d81" name="The Emperor&apos;s Chosen" hidden="false">
+    <rule id="c2ce-ef86-f02b-2d81" name="The Emperor&apos;s Legion" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -175,6 +182,7 @@
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7d77-7767-5735-7437" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -205,6 +213,7 @@
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7ad4-2e7f-1329-7f4b" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -225,6 +234,37 @@
         </modifier>
       </modifiers>
       <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+    </rule>
+    <rule name="The Emperor&apos;s Chosen" id="9652-9168-9303-3004" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ba0-7df9-3f27-d4b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0d22-806b-bfc5-db54" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c2bc-37e7-468c-5e76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7ad4-2e7f-1329-7f4b" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="5642-ce25-4f9d-5cb3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>ADEPTUS CUSTODES units in this Detachment do not suffer penalties for being critically damaged.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -2782,6 +2822,20 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faction Abilities (Custodes)" hidden="false" id="b312-ebe6-482e-014c">
+      <entryLinks>
+        <entryLink import="true" name="Faction Abilities" hidden="false" id="fd49-2f14-bcad-f1fd" type="selectionEntryGroup" targetId="8455-6c1f-3d4c-fc79">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2196-ea75-247a-32a7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e737-f3bf-b239-a36f"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9b86-be02-1ca6-f0c4"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a20-fd7b-e95f-7121"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="0b3c-9c63-6141-f2e8" name="Inspirational Fighter" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -2798,4 +2852,20 @@
   <catalogueLinks>
     <catalogueLink id="2fd7-efb3-a039-29dc" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Faction Abilities (Custodes)" id="8455-6c1f-3d4c-fc79" hidden="false" defaultSelectionEntryId="abb5-3feb-0290-98c5">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Chosen" hidden="false" id="abb5-3feb-0290-98c5">
+          <categoryLinks>
+            <categoryLink targetId="7d77-7767-5735-7437" id="2238-1a55-61b5-1be5" primary="false" name="Emperor&apos;s Chosen"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Legion" hidden="false" id="c22c-fb1b-5c10-3d3b">
+          <categoryLinks>
+            <categoryLink targetId="7ad4-2e7f-1329-7f4b" id="89f6-f92e-d3a6-9441" primary="false" name="Emperor&apos;s Legion"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

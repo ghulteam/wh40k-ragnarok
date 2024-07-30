@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -871,6 +871,11 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
     <entryLink import="true" name="Inner Circle Companions" hidden="false" id="a3c0-9cf0-26ff-9f88" type="selectionEntry" targetId="4cf6-16a8-5653-995b">
       <categoryLinks>
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="b4df-91ca-d0f1-277e" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Relic Glaive Super-heavy Tank" hidden="false" id="a713-5a47-aa7a-ba17" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
+      <categoryLinks>
+        <categoryLink targetId="6ac9-811a-fe59-5de1" id="89d4-9f87-f607-29e0" primary="false" name="Faction: Dark Angels"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3256,4 +3261,36 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
   <catalogueLinks>
     <catalogueLink id="4404-0180-5b33-35b4" name="Library - Space Marines" targetId="04e4-e851-ec5e-d9e6" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <rules>
+    <rule name="And They Shall Know No Fear" id="5e12-a036-51ae-494a" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c2bc-37e7-468c-5e76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ba0-7df9-3f27-d4b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0d22-806b-bfc5-db54" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="5642-ce25-4f9d-5cb3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll failed Morale tests taken for ADEPTUS ASTARTES units in this Detachment.</description>
+    </rule>
+  </rules>
 </catalogue>
