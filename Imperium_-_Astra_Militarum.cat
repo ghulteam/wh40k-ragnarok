@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1733,7 +1733,7 @@
         </profile>
         <profile id="387b-8ad5-9da6-96c7" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 7 friendly Astra Militarum Infantry models. Each weapons team model takes the space of 2 other Infantry models. It cannot transport Ogryn units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 7 friendly ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other Infantry models. It cannot transport OGRYN units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5160,14 +5160,15 @@
     </selectionEntry>
     <selectionEntry id="20d7-13e2-2de8-4eea" name="Valdor Tank Hunter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="6b35-1f45-959a-03be" name="Valdor Tank Hunter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="6b35-1f45-959a-03be" name="Valdor Tank Hunter" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
         <profile id="8b6e-1b79-a82c-9ea0" name="Neutron Laser Projector" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -5177,7 +5178,7 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5357,7 +5358,7 @@
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2x</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
@@ -5385,7 +5386,7 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5610,19 +5611,20 @@
     </selectionEntry>
     <selectionEntry id="14ca-f3b4-1137-d04e" name="Gryphonne Pattern Chimera" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="918f-d89c-0dc1-b588" name="Gryphonne Pattern Chimera" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="918f-d89c-0dc1-b588" name="Gryphonne Pattern Chimera" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
         <profile id="a234-4e9a-619d-df9a" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other INFANTRY models and each Ogryn model takes the space of 3 other INFANTRY models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other INFANTRY models and each OGRYN model takes the space of 3 other INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5851,14 +5853,14 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
         <profile id="5fa0-1c8e-082e-d8ed" name="Shotguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2x</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
@@ -6358,7 +6360,7 @@
       <profiles>
         <profile id="d31a-579c-9836-f682" name="Auspex Surveyor" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can select one friendly [REGIMENT] Vehicle unit within 24&quot; of this unit. Until the end of that phase, add 1 to hit rolls for attacks made with ranged weapons by that unit. A unit cannot be targeted by this ability more than once in a turn.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can select one friendly [REGIMENT] VEHICLE unit within 24&quot; of this unit. Until the end of that phase, add 1 to hit rolls for attacks made with ranged weapons by that unit. A unit cannot be targeted by this ability more than once in a turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6457,7 +6459,7 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
         <profile id="3ba6-a6ef-1e61-5c8a" name="Marauder Bombs" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -6654,14 +6656,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="106f-43e7-5ed2-81d5" type="min"/>
           </constraints>
           <profiles>
-            <profile id="a655-0021-6f3a-a15d" name="Ryza Pattern Leman Russ Vanquisher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="a655-0021-6f3a-a15d" name="Ryza Pattern Leman Russ Vanquisher" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
               <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6716,7 +6719,7 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
         <profile id="ba17-5b0d-57f6-5ff2" name="Praetor Missiles" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">

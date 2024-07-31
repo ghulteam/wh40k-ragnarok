@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="13" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="14" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -833,7 +833,9 @@
           <profiles>
             <profile id="2838-7f5e-7bac-5104" name="01 - Master Strategist" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="96ed-cabc-a90c-b284" typeName="Warmaster Trait">
               <characteristics>
-                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Increase your Command Asset hand limit by 2 whilst this unit is alive.</characteristic>
+                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Increase your Command Asset Array limit for Tactical Assets by 2 whilst this unit is alive. Decide which two additional Assets are added after you generate this Warmaster Trait. This can be either anything from the original Tactical Assets or any other Command Asset you can replace them with. If the model is removed from play, remove these two Assets from your Array.
+
+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1040,7 +1042,7 @@
       <description>Double the attacks characteristic of this weapon if the target is with in half of the weapon&apos;s range.</description>
     </rule>
     <rule id="9988-c2ea-2f30-09c1" name="Supercharge" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>Before a unit attacks with this weapon, it can super charge it. If it does, then until the end of the turn add 1 to wound rolls for attacks made with this weapon, but you cannot re-roll or modify unmodified hit rolls of 1 made for these attacks and each time you roll an unmodified hit roll of 1 for an attack with this weapon place one blast marker next to the firing unit. </description>
+      <description>Before a unit attacks with this weapon, it can super charge it. If it does, then until the end of the turn add 1 to wound rolls for attacks made with this weapon, but you cannot re-roll or modify unmodified hit rolls of 1 made for these attacks and each time you roll an unmodified hit roll of 1 for an attack with this weapon place one blast marker next to the firing unit.</description>
     </rule>
     <rule id="d452-1a22-2e0c-7a9e" name="Sniper" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>Add 2 to hit rolls made with this weapon that target CHARACTERS.</description>
