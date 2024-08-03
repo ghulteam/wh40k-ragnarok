@@ -22,7 +22,7 @@ New Recruit: ghulteam/wh40k-ragnarok
 
 __I found a bug!__ / *I have another request*
 
-Great, thank you! Now, you have some options:
+Great, thank you!
 
 1. [Open issue directly][] (green `New Issue` in upper-right, GitHub account required) - you can track the progress, get notifications and help me by answering possibly follow-up questions.
 
