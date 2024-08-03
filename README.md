@@ -1,4 +1,4 @@
-Warhammer 40,000 Ragnarok - An Apocalpyse Overhaul
+Warhammer 40,000 Ragnarok - An Apocalypse Overhaul
 ===========================
 
 #### Contents ####
