@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="20" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -873,7 +873,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="b4df-91ca-d0f1-277e" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Relic Glaive Super-heavy Tank" hidden="false" id="a713-5a47-aa7a-ba17" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
+    <entryLink import="true" name="Relic Glaive Special Weapon Tank" hidden="false" id="a713-5a47-aa7a-ba17" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
       <categoryLinks>
         <categoryLink targetId="6ac9-811a-fe59-5de1" id="89d4-9f87-f607-29e0" primary="false" name="Faction: Dark Angels"/>
       </categoryLinks>
@@ -1898,7 +1898,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
           <entryLinks>
             <entryLink id="2e23-f7b6-ef98-6bb4" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
               </modifiers>
             </entryLink>
             <entryLink id="1968-4d9e-414b-6c97" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
@@ -1911,16 +1911,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
               </modifiers>
             </entryLink>
-            <entryLink id="69ac-14d4-e5cc-1836" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="f64a-1bed-f155-67e4" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="0b5d-0c53-e4bd-6fec" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="13e7-3fe9-3197-065d" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
-              </modifiers>
-            </entryLink>
+            <entryLink id="0b5d-0c53-e4bd-6fec" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="098d-bedf-91b5-c61b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c95b-5e26-222b-e133" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="17a4-ec83-98d2-1b83">
@@ -1976,40 +1967,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="13e7-3fe9-3197-065d" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="e398-8f02-4d72-f9ea" name="Cyclone Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f64a-1bed-f155-67e4" name="Reaper Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0348-fb22-5369-5992" name="Reaper Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>

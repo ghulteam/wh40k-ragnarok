@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -7234,6 +7234,42 @@ Praetor Launcher for this action.</characteristic>
       </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cadian Shock Troops" hidden="false" id="87b4-c59e-39e1-fa86" collective="false">
+      <profiles>
+        <profile name="Cadian Shock Troops (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="45d9-b954-1b3f-9172">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="f04b-c7c1-322c-de4b" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="f0c1-7391-7059-cd6b" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="3d60-99c0-bdd7-c056" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="9dd4-c17c-8880-ccc4" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Infantry Squad" hidden="false" id="c2d9-f9f7-cac1-5ec9" targetId="b6a1-71e3-5fe3-e661" primary="false"/>
+        <categoryLink targetId="b6a1-41e3-0fe3-e661" id="cf10-5d83-e93c-4d53" primary="false" name="Faction: Cadian"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lasguns" hidden="false" id="a356-9ca6-7ee9-f3ef" collective="false" targetId="eaf6-cbc3-56fd-84f0" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdae-e257-0989-a7c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5101-119c-4865-e140" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1bfb-6949-633c-2c61" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="e42a-acc9-6ebe-de96" collective="false" targetId="1221-ff3c-5f9c-ac4f" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

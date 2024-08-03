@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -3614,27 +3614,11 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="2683-ff3f-9fb7-0755" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="8176-0b9e-2f87-45f6" name="Twin Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
                     <entryLink id="4eda-9909-dd60-64b6" name="2x Multiple Rocket Pod" hidden="false" collective="false" import="true" targetId="fbae-c04a-91e9-6707" type="selectionEntry"/>
                     <entryLink id="d30e-2461-6817-6a69" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
+                    <entryLink import="true" name="Twin Autocannon" hidden="false" id="f7c3-db2f-7be4-fd94" type="selectionEntry" targetId="0cfc-41f8-afb2-2f24"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="a714-bbed-5ff1-bd60" name="Outer Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="e67d-01d0-c64d-c656">
@@ -5079,6 +5063,16 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Multi-laser" hidden="false" id="e76c-fc72-3b80-4eee">
+      <infoLinks>
+        <infoLink name="Multi-laser" id="27f2-674c-b49b-9fc5" hidden="false" type="profile" targetId="3922-77c1-e169-4340">
+          <modifiers>
+            <modifier type="set" value="Twin Multi-laser" field="name"/>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8599-3938-8abe-f84d" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5571-7e96-26d7-f64d">
@@ -5175,7 +5169,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd79-6ec3-d640-6225" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="89d7-6750-e62f-d257" name="Plasma Cannon" hidden="false" targetId="9caa-eae9-90f2-8961" type="profile"/>
+            <infoLink id="89d7-6750-e62f-d257" name="Plasma Cannon" hidden="false" targetId="b266-008e-ee14-930b" type="profile"/>
             <infoLink id="8410-007a-fe1b-73ad" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
           </infoLinks>
           <costs>
@@ -5397,7 +5391,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       <characteristics>
         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
@@ -5443,16 +5437,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9caa-eae9-90f2-8961" name="Plasma Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
       </characteristics>
     </profile>
     <profile id="e327-bd95-4063-4659" name="Heavy Stubber" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
