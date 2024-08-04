@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1166,6 +1166,11 @@
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="dbbf-7435-0d6e-8c16" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Cadian Shock Troops" hidden="false" id="b214-97bf-65fd-c34f" type="selectionEntry" targetId="87b4-c59e-39e1-fa86">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="78e6-7f3b-7385-a4db" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f34f-f037-d96b-d46d" name="Officer Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -1278,7 +1283,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d6c8-8837-2cdd-fae5" name="2 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b99-5c19-3015-ce3e">
+        <selectionEntryGroup id="d6c8-8837-2cdd-fae5" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b99-5c19-3015-ce3e">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc8-5d5c-8729-b9eb" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186b-3b3b-d820-83d9" type="max"/>
@@ -1335,7 +1340,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8783-f507-f264-6576" name="8 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1353,7 +1358,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="edea-3a47-f68f-4787" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1371,7 +1376,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2120,7 +2125,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ad2d-4e0b-70fa-63a5" name="3 - 9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="237c-6b54-a749-98f0">
+        <selectionEntryGroup id="ad2d-4e0b-70fa-63a5" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="237c-6b54-a749-98f0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46bb-6f85-ead7-0e60" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de9-f2b7-e024-9d8b" type="max"/>
@@ -2177,7 +2182,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3274,19 +3279,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bd04-8c51-67d7-943a" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="ebe0-5a84-0ba4-16e9" name="Infantry Squad (9/10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="fcfb-3799-3644-94ba" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="8463-113f-da9b-ba6e" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -3300,6 +3292,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcc1-1400-551d-8868" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="bcc1-1400-551d-8868">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="bd04-8c51-67d7-943a" childId="f8bc-a9dc-73cf-0148" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="f278-fd86-17d3-08d0" name="Lasguns" hidden="false" collective="false" import="true" targetId="eaf6-cbc3-56fd-84f0" type="selectionEntry">
           <constraints>
@@ -3311,8 +3310,54 @@
         <entryLink id="800c-bec3-9f29-c644" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="1221-ff3c-5f9c-ac4f" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="434f-2189-b7c2-3ea5" hidden="false" defaultSelectionEntryId="bc44-f8e3-fa77-e61c">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="9/10 models" hidden="false" id="bc44-f8e3-fa77-e61c">
+              <profiles>
+                <profile name="Infantry Squad (9/10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4d87-e685-941a-fa4e">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="18/19/20 models" hidden="false" id="f8bc-a9dc-73cf-0148">
+              <profiles>
+                <profile name="Infantry Squad (18/19/20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3c02-1ed5-1eb8-1c29">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f0e-60ad-bbbd-4e4d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23a2-9d00-98a0-aee8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d562-a690-04a2-7ad7" name="Tech-Priest Enginseer" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3609,7 +3654,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8746-7c95-8259-1454" name="3 - 9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="1523-65f8-adbf-75d0">
+        <selectionEntryGroup id="8746-7c95-8259-1454" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="1523-65f8-adbf-75d0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70cf-b103-5926-df4e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0041-0e09-86ed-0460" type="max"/>
@@ -3630,7 +3675,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="45cb-fd17-b5e7-3b4c" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -3648,7 +3693,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="991f-10e3-2f97-aef0" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -3666,7 +3711,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4187,7 +4232,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e966-6f72-1200-2898" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d82-125d-f456-3de9">
+        <selectionEntryGroup id="e966-6f72-1200-2898" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d82-125d-f456-3de9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2434-59ba-ede4-7c03" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ac-1c8a-7dc3-9357" type="max"/>
@@ -4226,7 +4271,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4303,7 +4348,7 @@
         <categoryLink id="967f-ee9f-0cb2-74f2" name="Conscripts" hidden="false" targetId="b6a1-47e3-5fe3-e661" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1efb-7848-a7a5-199b" name="20 - 30 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f4a-041c-52a1-8279">
+        <selectionEntryGroup id="1efb-7848-a7a5-199b" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f4a-041c-52a1-8279">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ad-9945-7322-3478" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3889-6217-15a8-904e" type="max"/>
@@ -4311,25 +4356,7 @@
           <selectionEntries>
             <selectionEntry id="0f4a-041c-52a1-8279" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="8f59-c0ca-4ae5-56be" name="Conscripts (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5ae7-8a3c-cf48-48c6" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="2dce-732f-7f37-c39f" name="Conscripts (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="8f59-c0ca-4ae5-56be" name="Conscripts (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
@@ -4342,7 +4369,61 @@
                 </profile>
               </profiles>
               <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ae7-8a3c-cf48-48c6" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2dce-732f-7f37-c39f" name="Conscripts (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="40 models" hidden="false" id="4de3-3943-e3ac-426a" collective="false">
+              <profiles>
+                <profile name="Conscripts (40 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="89b2-9c3e-c94f-ffbd">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="50 models" hidden="false" id="8650-7172-e830-e62f" collective="false">
+              <profiles>
+                <profile name="Conscripts (50 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="967b-8a73-cbf5-1859">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">5</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">10</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5710,7 +5791,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7b16-c856-2c23-15ca" name="3 - 9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="3da0-1eb1-a54c-571a">
+        <selectionEntryGroup id="7b16-c856-2c23-15ca" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3da0-1eb1-a54c-571a">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cb4-69a9-53d0-6ed0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd4-04a6-3e7b-cf7c" type="max"/>
@@ -5749,7 +5830,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="29ff-1650-eba2-fd57" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -5767,7 +5848,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6626,7 +6707,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6976,7 +7057,7 @@ Praetor Launcher for this action.</characteristic>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9fe5-7157-63d7-7c52" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="f055-5bd8-e548-4353">
+        <selectionEntryGroup id="9fe5-7157-63d7-7c52" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f055-5bd8-e548-4353">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cba0-872d-6574-a4bf" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c21-df7a-ed1b-6a6e" type="max"/>
@@ -7237,19 +7318,6 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cadian Shock Troops" hidden="false" id="87b4-c59e-39e1-fa86" collective="false">
-      <profiles>
-        <profile name="Cadian Shock Troops (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="45d9-b954-1b3f-9172">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink name="Faction: Imperium" hidden="false" id="f04b-c7c1-322c-de4b" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="f0c1-7391-7059-cd6b" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -7269,8 +7337,83 @@ Praetor Launcher for this action.</characteristic>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" id="e42a-acc9-6ebe-de96" collective="false" targetId="1221-ff3c-5f9c-ac4f" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="a3b8-38fc-c5b0-178a" hidden="false" defaultSelectionEntryId="456b-52a6-6945-030a">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="456b-52a6-6945-030a">
+              <profiles>
+                <profile name="Cadian Shock Troops (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1ef7-f5fe-52ec-d8cc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="7bb8-f8b8-7c05-37c9">
+              <profiles>
+                <profile name="Cadian Shock Troops (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ec40-778f-ee14-df68">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd34-ce6e-4e6d-2e1f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed72-167d-9a9c-c746" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Shock Troop Special Weapons" hidden="false" id="0d50-66ac-d18f-c4aa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb6-95cc-17c0-6233"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ebb6-95cc-17c0-6233">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="87b4-c59e-39e1-fa86" childId="7bb8-f8b8-7c05-37c9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Shock Troop Special Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2700-a454-4c0b-57ab">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

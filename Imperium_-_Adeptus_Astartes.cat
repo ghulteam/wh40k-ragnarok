@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
-    <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
     <categoryEntry id="c49c-baae-0501-e34d" name="Faction: Red Scorpions" hidden="false"/>
     <categoryEntry id="f08f-5cbd-45c7-0ae7" name="Carab Culln" hidden="false"/>
@@ -50,10 +49,7 @@
     <categoryEntry id="7ed8-73a1-9364-515a" name="Shadow Captain Korvydae" hidden="false"/>
     <categoryEntry id="9d66-7203-6f14-7667" name="Faction: Raven Guard" hidden="false"/>
     <categoryEntry id="c083-0a69-2969-9d6b" name="Dreadnought-Brother Halar" hidden="false"/>
-    <categoryEntry id="6044-857b-600f-4eed" name="Centurion Assault Squad" hidden="false"/>
     <categoryEntry id="f1a7-1cab-b790-d9a6" name="Ironclad Dreadnought" hidden="false"/>
-    <categoryEntry id="2d0d-1f14-d50d-2358" name="Centurion Devastator Squad" hidden="false"/>
-    <categoryEntry id="062c-36cb-6c93-e61d" name="Centurion" hidden="false"/>
     <categoryEntry id="0d02-7867-b5d8-e96d" name="Thunderfire Cannon" hidden="false"/>
     <categoryEntry id="e89c-0f9d-7f60-f939" name="Honour Guard" hidden="false"/>
     <categoryEntry id="afac-c197-ae51-1c5a" name="Chapter Champion" hidden="false"/>
@@ -97,6 +93,7 @@
     <categoryEntry id="b86b-8400-a28f-4730" name="Primaris Sword Brethren" hidden="false"/>
     <categoryEntry id="aaaa-96d2-985d-3e1e" name="Sigismund" hidden="false"/>
     <categoryEntry id="bac1-ab3e-e700-0b47" name="Marshal" hidden="false"/>
+    <categoryEntry name="Castellan" id="a586-016b-460c-1706" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -132,6 +129,10 @@
       <categoryLinks>
         <categoryLink id="22c2-8e40-0c7c-0761" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Litanies of Hate" id="8ece-32dd-7fdb-972d" hidden="false" targetId="dbd5-e5c8-73df-07b8" type="profile"/>
+        <infoLink name="Spiritual Leader" id="2cb4-3622-ce96-90b0" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
+      </infoLinks>
     </entryLink>
     <entryLink id="aec0-993a-2bce-9cf5" name="Librarian" hidden="false" collective="false" import="true" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
       <modifiers>
@@ -1247,9 +1248,14 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       </categoryLinks>
     </entryLink>
     <entryLink id="fd53-3133-1ffb-396b" name="Chapter Filter" hidden="false" collective="false" import="true" targetId="fe0b-1a04-92d2-d9fa" type="selectionEntry"/>
-    <entryLink import="true" name="Relic Glaive Super-heavy Tank" hidden="false" id="42ea-2a38-7173-0612" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
+    <entryLink import="true" name="Relic Glaive Special Weapon Tank" hidden="false" id="42ea-2a38-7173-0612" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
       <categoryLinks>
         <categoryLink targetId="fe0e-e179-5b4e-c377" id="0d54-e523-14a6-0e0c" primary="false" name="Faction: [CHAPTER]"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellan" hidden="false" id="1047-c41d-e787-2cc6" type="selectionEntry" targetId="7dc0-1fbb-01c8-f2dc">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="6dd9-aa3f-bf11-1648" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1299,7 +1305,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8ba9-aed1-96f6-c88a" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="0535-5254-1f1e-d589">
+        <selectionEntryGroup id="8ba9-aed1-96f6-c88a" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0535-5254-1f1e-d589">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff08-d20b-90f3-c219" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba6b-be91-8d87-267d" type="max"/>
@@ -1338,7 +1344,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3403,10 +3409,10 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="b3f8-5375-0d68-18be" name="Marshal" hidden="false" targetId="bac1-ab3e-e700-0b47" primary="false"/>
         <categoryLink id="9fbb-5776-3ec5-0e48" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="55a6-b5cc-f975-e6ed" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
-        <categoryLink id="9fd4-2e3f-8287-ebe2" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="5169-074c-2952-315f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="d9f9-9d2a-0d5a-f92d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="c2a2-4ddf-c3f2-45aa" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="9079-ae55-1d6f-3d4f" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="50c9-bc5b-bd6c-2b9c" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -3435,7 +3441,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <entryLink id="cd78-947f-04a0-565d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d375-cc04-a448-5424" name="Chapter Champion" hidden="false" collective="false" import="true" type="unit">
@@ -3797,7 +3803,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="2db4-d136-32a9-9194" name="Crusader Squad" hidden="false" targetId="c766-3827-14ca-a053" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2311-473e-d30a-a6b7" name="5 - 20 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="57e9-c6fa-9f51-0578">
+        <selectionEntryGroup id="2311-473e-d30a-a6b7" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="57e9-c6fa-9f51-0578">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2a-c8a2-ef63-a5d3" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31b0-ee87-3049-9585" type="max"/>
@@ -3836,7 +3842,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4760-9030-4503-5ebb" name="15 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -3854,7 +3860,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6553-e17e-5145-78ee" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -3872,7 +3878,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4004,7 +4010,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6bc5-07b0-3938-0b67" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b6c-c995-d361-88ee">
+        <selectionEntryGroup id="6bc5-07b0-3938-0b67" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b6c-c995-d361-88ee">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f9d-33b1-e009-8beb" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ff-c3f4-87b0-9119" type="max"/>
@@ -4025,7 +4031,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8654-3e11-2ce3-bc7a" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -4043,7 +4049,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5702,7 +5708,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0a10-16a9-cd46-521e" name="5 - 20 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dd9-66bb-1ffe-eb11">
+        <selectionEntryGroup id="0a10-16a9-cd46-521e" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dd9-66bb-1ffe-eb11">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e069-eba9-9c63-fb07" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dcf-24aa-cd4b-1871" type="max"/>
@@ -5741,7 +5747,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d81e-321f-b388-005a" name="15 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -5759,7 +5765,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2936-0f50-8d38-2461" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -5777,7 +5783,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6676,7 +6682,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9a49-79f2-54b1-fb43" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="987e-55d5-ec1b-36ff">
+        <selectionEntryGroup id="9a49-79f2-54b1-fb43" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="987e-55d5-ec1b-36ff">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5f9-cb08-e3a4-c2c9" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99fa-6ac8-1b6d-c3a0" type="max"/>
@@ -6715,7 +6721,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6727,6 +6733,53 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Castellan" hidden="false" id="7dc0-1fbb-01c8-f2dc" collective="false">
+      <profiles>
+        <profile name="Castellan" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9cc6-5ebf-e695-b80e">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crusaders Precision" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4960-c332-7b4a-5542">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="af67-99f0-316f-a2ad" collective="false" targetId="2472-1127-ec05-97d0" type="selectionEntry"/>
+        <entryLink import="true" name="Commander" hidden="false" id="0df3-d9e6-45c9-2a86" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="ab9c-9bdb-be4e-d467" primary="false" name="Infantry"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="4b1a-a08d-d042-553c" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="c0c2-9db4-9692-56c9" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="8e27-9ee8-9514-1e97" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="a586-016b-460c-1706" id="dfae-4fc8-1016-aa3f" primary="false" name="Castellan"/>
+        <categoryLink targetId="f5f2-7b5a-266e-a209" id="15e9-64fa-ca1c-69ef" primary="false" name="Faction: Black Templars"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

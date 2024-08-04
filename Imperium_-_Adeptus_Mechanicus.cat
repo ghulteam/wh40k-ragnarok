@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -1752,7 +1752,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9188-e990-df5e-cdb7" type="equalTo"/>
+                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3790-c08b-f0d6-2168" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7202-51f4-b410-0c38" value="3"/>
@@ -1761,7 +1761,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="537e-c1f0-492b-6409" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7202-51f4-b410-0c38" value="6"/>
@@ -1770,7 +1770,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd8b-e395-d1cd-455d" type="equalTo"/>
+                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f404-044a-91aa-50fd" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7202-51f4-b410-0c38" value="1"/>
@@ -1822,9 +1822,35 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1-6 models" id="fe98-2c98-fae0-cb24" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52a2-9ec9-e616-d8f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d7-98e0-a00b-2bc4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 model" hidden="false" id="f404-044a-91aa-50fd" collective="false">
+              <modifiers>
+                <modifier type="set" value="5" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="3790-c08b-f0d6-2168"/>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="537e-c1f0-492b-6409"/>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f6d2-e369-cf8a-18b8" name="1-6 models" hidden="false" collective="false" import="true" targetId="e386-d74f-eff4-1153" type="selectionEntryGroup"/>
         <entryLink id="0988-267b-36f6-7497" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1923,7 +1949,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd8b-e395-d1cd-455d" type="equalTo"/>
+                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6649-ad66-7f7e-5ff8" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="e348-d63c-d148-726e" value="1"/>
@@ -1975,9 +2001,63 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1-6 models" id="632b-6b61-0fbd-cda7" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5db9-7ed4-beed-332b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec8c-4ac5-60f1-4336" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 Model" hidden="false" id="6649-ad66-7f7e-5ff8" collective="false">
+              <modifiers>
+                <modifier type="set" value="5" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="3 Models" hidden="false" id="0fda-ca11-6b50-486e" collective="false" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="15" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="18" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="6 Models" hidden="false" id="6679-9d43-48fc-a111" collective="false" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="30" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="36" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0824-f198-42b3-80d2" name="1-6 models" hidden="false" collective="false" import="true" targetId="e386-d74f-eff4-1153" type="selectionEntryGroup"/>
         <entryLink id="bafd-63b8-af48-8810" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1985,39 +2065,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0663-388f-384d-2c41" name="Kastelan Robots" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="d1e3-6081-dd7b-0c21" name="Kastelan Robots" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9368-0d95-c183-7434" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="6"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoGroups>
         <infoGroup id="42b3-7331-0d03-8482" name="Battle Protocols" hidden="false">
           <profiles>
@@ -2058,7 +2105,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9368-0d95-c183-7434" type="equalTo"/>
+                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48a7-ef61-71ac-d35d" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="5212-cd50-a46b-f062" value="4"/>
@@ -2067,7 +2114,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be78-5c4d-e5f3-fbc5" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="5212-cd50-a46b-f062" value="6"/>
@@ -2116,7 +2163,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9368-0d95-c183-7434" type="equalTo"/>
+                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48a7-ef61-71ac-d35d" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="b98e-4b84-d735-1f7f" value="4"/>
@@ -2125,7 +2172,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="0663-388f-384d-2c41" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be78-5c4d-e5f3-fbc5" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="67c2-2fe4-6d14-a576" value="6"/>
@@ -2163,9 +2210,70 @@
             <entryLink id="cdb9-6f58-0972-74e9" name="Heavy Phosphor Blaster" hidden="false" collective="false" import="true" targetId="fa06-9e0a-ecd0-56ac" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Size" id="c113-0ea7-6835-4f62" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="4a97-6198-8420-981b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d673-6b8b-2eaf-d013" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3667-a018-c7ca-2499" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2 models" hidden="false" id="d0c8-b0e8-c3c3-d451" collective="false">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+              <profiles>
+                <profile name="Kastelan Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e7ef-f01a-1369-d7c4">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 models" hidden="false" id="48a7-ef61-71ac-d35d" collective="false">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Kastelan Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7562-8ae1-6f6f-ed08">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="be78-5c4d-e5f3-fbc5">
+              <profiles>
+                <profile name="Kastelan Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4fbf-3e5f-a70a-6d39">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="fde9-4053-d837-d011" name="2-6 models" hidden="false" collective="false" import="true" targetId="167a-415c-b3e6-2c0f" type="selectionEntryGroup"/>
         <entryLink id="c970-b322-0e94-08e1" name="Armoured Feet" hidden="false" collective="false" import="true" targetId="9d99-3144-b704-506a" type="selectionEntry"/>
         <entryLink id="2b57-0db9-1f8e-f64d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
@@ -2673,30 +2781,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9602-2f0e-c4af-6535" name="Secutarii Hoplites" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="cd31-452c-f86c-0086" name="Secutarii Hoplites" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="9602-2f0e-c4af-6535" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d4-69f3-cae3-a6f9" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="0e75-647a-ea6e-f912" name="Mag-inverter Shields" hidden="false" targetId="115b-446f-88ae-c8e5" type="profile"/>
       </infoLinks>
@@ -2743,38 +2827,59 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="c1fd-91c0-1098-51ab" name="10-20 models" hidden="false" collective="false" import="true" targetId="659b-6488-d78e-34fa" type="selectionEntryGroup"/>
         <entryLink id="1bae-eecb-d577-ca1e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="9d2a-5f2c-4a78-cb0e" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="7adb-077d-df73-fd05">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e72-9aa3-85a6-0164" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b01-c230-9e17-6cf0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="7adb-077d-df73-fd05">
+              <profiles>
+                <profile name="Secutarii Hoplites (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="019a-cba0-5b95-d162">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="490e-aedd-b1bc-e026">
+              <profiles>
+                <profile name="Secutarii Hoplites (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3d36-ee34-a551-624c">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ff91-9c51-4b2b-52ad" name="Secutarii Peltasts" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="9577-c24d-47fd-76b5" name="Secutarii Peltasts" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="ff91-9c51-4b2b-52ad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d4-69f3-cae3-a6f9" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="318a-a751-c6c6-3ad9" name="Mag-inverter Shields" hidden="false" targetId="115b-446f-88ae-c8e5" type="profile"/>
       </infoLinks>
@@ -2832,12 +2937,57 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="c642-1bfd-bf08-1b25" name="10-20 models" hidden="false" collective="false" import="true" targetId="659b-6488-d78e-34fa" type="selectionEntryGroup"/>
         <entryLink id="85e4-6ee2-d812-c8f5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="a74a-5552-0799-24f9" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="7adb-077d-df73-fd05">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="273b-b1f9-5b6b-e5d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9362-49c6-6f23-a32d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="2a45-27ea-5752-7a3e">
+              <profiles>
+                <profile name="Secutarii Peltasts (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d5bb-5681-782e-869b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="df07-1a95-570a-0c0d">
+              <profiles>
+                <profile name="Secutarii Peltasts (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ea10-00d5-e447-d3a5">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6315-b642-f1c1-2075" name="Pteraxii Skystalkers" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3601,7 +3751,6 @@
       <entryLinks>
         <entryLink id="4b65-d1d7-0b0f-7339" name="5 Models" hidden="false" collective="false" import="true" targetId="b04e-a6a4-1b6e-98b8" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="3"/>
             <modifier type="set" field="1466-da3f-0d27-dace" value="4">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da54-f987-3dbf-abe3" type="instanceOf"/>
@@ -3626,23 +3775,22 @@
         </entryLink>
         <entryLink id="2bff-9feb-93ca-17e4" name="10 Models" hidden="false" collective="false" import="true" targetId="4725-4dee-e275-9c3f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6"/>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="10">
+            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f2-4f9d-9cbf-8cbb" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="12">
+            <modifier type="set" field="1466-da3f-0d27-dace" value="13">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3656-e1b0-2ba1-3f19" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="8">
+            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da54-f987-3dbf-abe3" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="8">
+            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d53c-6d11-8d70-a95a" type="instanceOf"/>
               </conditions>
@@ -3777,100 +3925,6 @@
             </modifier>
           </modifiers>
         </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="e386-d74f-eff4-1153" name="1-6 models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c414-d089-eaba-d281" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1da9-18e3-b053-d4a5" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="cd8b-e395-d1cd-455d" name="1 Model" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="5">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cf9-48ce-04e2-b234" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c12a-4265-1488-308d" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="64d7-478b-6a69-73a6" name="3 Models" hidden="false" collective="false" import="true" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="15">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cf9-48ce-04e2-b234" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="18">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c12a-4265-1488-308d" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="90e6-73ef-a061-b74f" name="6 Models" hidden="false" collective="false" import="true" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="30">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cf9-48ce-04e2-b234" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="36">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c12a-4265-1488-308d" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="167a-415c-b3e6-2c0f" name="2-6 models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a97-6198-8420-981b">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2edb-6bcc-7eff-dc02" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c290-144d-8c4b-35cd" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="4a97-6198-8420-981b" name="2 Models" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9368-0d95-c183-7434" name="4 Models" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="7531-3c2b-2c00-4d4f" name="6 Models" hidden="false" collective="false" import="true" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="21"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="659b-6488-d78e-34fa" name="10-20 models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="fae5-eb0c-65d5-5609">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46cf-0040-029b-921d" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd3-b49e-598f-2484" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="5abb-07d2-44c6-bf47" name="20 Models" hidden="false" collective="false" import="true" targetId="39d4-69f3-cae3-a6f9" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="5"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="fae5-eb0c-65d5-5609" name="10 Models" hidden="false" collective="false" import="true" targetId="4725-4dee-e275-9c3f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="cd49-5340-f60d-2857" name="3-9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="297b-5676-e8f7-c8ba">
