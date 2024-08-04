@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -470,31 +470,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6137-c586-9b9d-0dfe" name="Skitarii Rangers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="29c4-61e3-0e15-2c22" name="Skitarii Rangers (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6137-c586-9b9d-0dfe" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="name" value="Skitarii Rangers"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="e26c-5ec7-419d-192b" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
         <categoryLink id="89f3-6da1-18e2-48ef" name="Faction: [FORGE WORLD]" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
@@ -552,55 +527,59 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3cc0-577d-3e74-b0e3" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
         <entryLink id="9848-b574-8ec9-f629" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="b04e-a6a4-1b6e-98b8" name="5 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e7-3e8e-5cac-97ec" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4725-4dee-e275-9c3f" name="10 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91dd-51d2-09f9-6b1a" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="cdd1-b54f-55f7-b456" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="5447-2a12-ade2-54d7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af3a-5684-0d38-d15d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07ec-fe17-0750-a26a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="5447-2a12-ade2-54d7">
+              <profiles>
+                <profile name="Skitarii Rangers (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f714-38af-a7c9-d793">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="1394-c7c3-7d5f-fbe2">
+              <profiles>
+                <profile name="Skitarii Rangers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9d36-05e3-67b1-af61">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6428-6263-5a16-9fb2" name="Skitarii Vanguard" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="0b9a-6509-e872-4df2" name="Skitarii Vanguard (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6428-6263-5a16-9fb2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="name" value="Skitarii Rangers"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="754c-8fb8-5026-faaa" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
         <categoryLink id="8b1d-555f-af66-1ef9" name="Faction: [FORGE WORLD]" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
@@ -658,59 +637,59 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="80ac-46af-6465-d6c5" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
         <entryLink id="e5eb-992f-5266-cf39" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="c79d-9c6e-d538-33aa" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="9822-b64c-f5d5-6a73">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5264-5eb4-7ed2-093a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9675-4455-83fd-9fcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="9822-b64c-f5d5-6a73">
+              <profiles>
+                <profile name="Skitarii Vanguard (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e58a-4057-77a4-f28f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="f6d8-8d72-f022-50ea">
+              <profiles>
+                <profile name="Skitarii Vanguard (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2f85-1265-63fa-ec90">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ed49-d92e-14f5-7b01" name="Kataphron Breachers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="8a68-681b-a370-bb1a" name="Kataphron Breachers" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="name" value="Kataphron Breachers (6 models)"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="name" value="Kataphron Breachers (9 models)"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ae-db2d-8288-28bc" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="8"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="name" value="Kataphron Breachers (12 models)"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="ee18-a10c-de36-470c" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
         <categoryLink id="b9f6-9ee3-efb2-8516" name="Faction: Cult Mechanicus" hidden="false" targetId="4dc1-30a6-aa31-19a9" primary="false"/>
@@ -748,7 +727,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36ba-c34a-2d00-d974" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="fd45-cfdb-b018-8683" value="6"/>
@@ -757,7 +736,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
+                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="040c-0125-a7a3-42cd" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="fd45-cfdb-b018-8683" value="9"/>
@@ -766,7 +745,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2ae-db2d-8288-28bc" type="equalTo"/>
+                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db0e-dd09-ad7f-b8ba" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="fd45-cfdb-b018-8683" value="12"/>
@@ -815,88 +794,95 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Size" id="0943-aedd-2f47-63a1" hidden="false" collective="false" import="true" defaultSelectionEntryId="02c8-a65f-b5d4-4f22">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6177-4e3d-2402-854a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99c8-ca84-0940-eb43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="99ab-ebbe-f62a-bbd1">
+              <profiles>
+                <profile name="Kataphron Breachers (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="19df-84b5-2f64-f77a">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="36ba-c34a-2d00-d974">
+              <profiles>
+                <profile name="Kataphron Breachers (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3052-d6d4-fb7f-6e6f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="09 models" hidden="false" id="040c-0125-a7a3-42cd">
+              <profiles>
+                <profile name="Kataphron Breachers (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="801c-ee9a-069d-996d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="12 models" hidden="false" id="db0e-dd09-ad7f-b8ba">
+              <profiles>
+                <profile name="Kataphron Breachers (12 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="16e4-c6b9-efa1-14b8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="06db-feb2-6c0e-8eac" name="3-12 models" hidden="false" collective="false" import="true" targetId="2dc4-aa31-7aa0-caa7" type="selectionEntryGroup"/>
         <entryLink id="9838-b91e-9bb6-7ce5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9188-e990-df5e-cdb7" name="3 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="55d8-dc4c-4046-7336" name="6 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a155-e4fa-84c8-9212" name="9 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d2ae-db2d-8288-28bc" name="12 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b357-24a2-1820-6200" name="15 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="39d4-69f3-cae3-a6f9" name="20 Models" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6aa3-adee-8e30-760f" name="Kataphron Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="facd-f7ce-5070-318d" name="Kataphron Destroyers" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ae-db2d-8288-28bc" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="8"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="d7d5-a9e4-c8ec-f574" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
         <categoryLink id="70e1-defc-1d2c-ebbf" name="Faction: Cult Mechanicus" hidden="false" targetId="4dc1-30a6-aa31-19a9" primary="false"/>
@@ -934,7 +920,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e79-09bf-bbca-b9c5" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="5342-89f3-3174-cea6" value="6"/>
@@ -943,7 +929,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb60-1476-8e84-2002" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="f28f-aa77-8258-a0ac" value="9"/>
@@ -952,7 +938,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2ae-db2d-8288-28bc" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="97f2-1149-7d1c-d7b6" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="f28f-aa77-8258-a0ac" value="12"/>
@@ -1008,7 +994,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e79-09bf-bbca-b9c5" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="d6a1-ef82-5040-341b" value="6"/>
@@ -1017,7 +1003,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb60-1476-8e84-2002" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="9d2e-c965-fe59-dc4f" value="9"/>
@@ -1026,7 +1012,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2ae-db2d-8288-28bc" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="97f2-1149-7d1c-d7b6" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="d6a1-ef82-5040-341b" value="12"/>
@@ -1081,9 +1067,88 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Size" id="0f2d-fe6c-a495-c0b8" hidden="false" collective="false" import="true" defaultSelectionEntryId="02c8-a65f-b5d4-4f22">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c943-80c6-a0c6-97c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b7e-07f5-4df9-de2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="02c8-a65f-b5d4-4f22">
+              <profiles>
+                <profile name="Kataphron Destroyers (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="748d-4a10-8248-790b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="6e79-09bf-bbca-b9c5">
+              <profiles>
+                <profile name="Kataphron Destroyers (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c3fc-ad64-a533-ca5c">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="09 models" hidden="false" id="cb60-1476-8e84-2002">
+              <profiles>
+                <profile name="Kataphron Destroyers (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="cfb9-4c74-95d1-c1a8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="23"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="12 models" hidden="false" id="97f2-1149-7d1c-d7b6">
+              <profiles>
+                <profile name="Kataphron Destroyers (12 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="87fb-3c50-c8bb-402d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8dd2-0013-d9c3-3d9d" name="3-12 models" hidden="false" collective="false" import="true" targetId="2dc4-aa31-7aa0-caa7" type="selectionEntryGroup"/>
         <entryLink id="493e-2b82-9ae3-4be5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1238,31 +1303,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e6f2-4f9d-9cbf-8cbb" name="Sicarian Ruststalkers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="3863-a6da-e756-309b" name="Sicarian Ruststalkers" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="e6f2-4f9d-9cbf-8cbb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Sicarian Ruststalkers (10 models)"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="c3ae-4aab-6db3-c371" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
         <categoryLink id="cf43-b87e-7bd7-ceb3" name="Faction: [FORGE WORLD]" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
@@ -1318,39 +1358,59 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="73ba-8aec-db41-267a" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
         <entryLink id="23c3-4812-6d6d-ce84" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="f927-90e3-c545-01cd" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="3cc3-e7bb-ca1b-3b95">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baf8-163d-45f8-0ff7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ead2-2a2c-7805-f353" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="3cc3-e7bb-ca1b-3b95">
+              <profiles>
+                <profile name="Sicarian Ruststalkers (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9c6f-6940-7a62-3572">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="a3e8-9477-9ad7-2600">
+              <profiles>
+                <profile name="Sicarian Ruststalkers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="24da-4767-3cad-b708">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3656-e1b0-2ba1-3f19" name="Sicarian Infiltrators" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="0bf1-3232-56d7-2e46" name="Sicarian Infiltrators" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="3656-e1b0-2ba1-3f19" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Sicarian Infiltrators (10 models)"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="213d-dbd6-9778-12cc" name="Infiltrators" hidden="false"/>
         <rule id="cfb2-d765-b541-2542" name="Terror Troops" hidden="false"/>
@@ -1431,9 +1491,52 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Size" id="ed4b-d55b-f43a-27aa" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="3809-d83a-a963-6951">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa3f-5871-bbbc-c4a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4083-e8e0-4c45-8ec6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="3809-d83a-a963-6951">
+              <profiles>
+                <profile name="Sicarian Infiltrators (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0bf1-3232-56d7-2e46">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="8051-b1fa-f9f1-6ab2">
+              <profiles>
+                <profile name="Sicarian Infiltrators (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bc52-e6f6-09cd-b0f0">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="34f3-064a-17b4-743e" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
         <entryLink id="97cf-eae1-dfd7-e282" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1445,46 +1548,6 @@
         <profile id="8a91-f879-723e-bdc4" name="Siphoned Vigour" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If an enemy unit is destroyed within 1&quot; of this unit, change this unit’s Save characteristic to 6+ for the rest of the battle.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="82b9-aeae-73d1-4d0f" name="Fulgurite Electro-Priests" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="e1c6-9a11-3207-abf3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="e1c6-9a11-3207-abf3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b357-24a2-1820-6200" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="e1c6-9a11-3207-abf3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39d4-69f3-cae3-a6f9" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1525,56 +1588,95 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="5012-fa7f-e83f-05ea" name="5-20 models" hidden="false" collective="false" import="true" targetId="f286-5b28-aa63-b082" type="selectionEntryGroup"/>
         <entryLink id="b698-2f7d-ac5a-760e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="1352-97dc-cc7b-4ce2" hidden="false" defaultSelectionEntryId="d0d1-5954-2284-2f03">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="d0d1-5954-2284-2f03">
+              <profiles>
+                <profile name="Fulgurite Electro-Priests (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="09d7-ec70-23ac-b19b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="1cfb-fab5-0260-46b2">
+              <profiles>
+                <profile name="Fulgurite Electro-Priests (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1144-1401-81e2-c06d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="15 models" hidden="false" id="3c81-7066-346a-9c52">
+              <profiles>
+                <profile name="Fulgurite Electro-Priests (15 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7732-01f2-3850-56a7">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="2153-aac5-538b-6b29">
+              <profiles>
+                <profile name="Fulgurite Electro-Priests (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6ab9-4989-78ea-d0dc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55de-00e4-71eb-f2b3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a25a-a09d-4789-c29d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="5ee3-47a3-0f7c-b751" name="Corpuscarii Electro-Priests" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="e5f2-729e-6b70-a891" name="Corpuscarii Electro-Priests" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="5ee3-47a3-0f7c-b751" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4725-4dee-e275-9c3f" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="5ee3-47a3-0f7c-b751" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b357-24a2-1820-6200" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="5ee3-47a3-0f7c-b751" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39d4-69f3-cae3-a6f9" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="8e3f-d188-65d3-9e58" name="Ignore Damage (5+)" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
       </infoLinks>
@@ -1633,46 +1735,96 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e5b4-7cbf-eb72-b295" name="5-20 models" hidden="false" collective="false" import="true" targetId="f286-5b28-aa63-b082" type="selectionEntryGroup"/>
         <entryLink id="28dd-48e3-2e22-4d2f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="f4cd-4667-ef83-9bc7" hidden="false" defaultSelectionEntryId="febe-4ef7-7743-a30d">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="febe-4ef7-7743-a30d">
+              <profiles>
+                <profile name="Corpuscarii Electro-Priests (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2ab1-adb4-35c5-3ca2">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="471b-1c80-791f-f792">
+              <profiles>
+                <profile name="Corpuscarii Electro-Priests (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bf4c-290c-8baf-8e56">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="15 models" hidden="false" id="ecd1-c1eb-65df-96cf">
+              <profiles>
+                <profile name="Corpuscarii Electro-Priests (15 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="df32-bdc8-b4d1-cb86">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="c19a-350b-46b3-eb54">
+              <profiles>
+                <profile name="Corpuscarii Electro-Priests (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ba5f-ea3a-ab98-b9b0">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed1b-65cf-bd86-3e6e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0f8-5800-8a01-a041" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0d15-7b4b-80a9-7aab" name="Sydonian Dragoons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="8b11-a6eb-9a10-7673" name="Sydonian Dragoons" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9188-e990-df5e-cdb7" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="6"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="64f3-a17a-3c66-ed7b" name="Incense Cloud" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This model is always an obscured target.</characteristic>
@@ -1717,12 +1869,12 @@
           <modifiers>
             <modifier type="set" field="29b3-265e-4604-e1f4" value="3">
               <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9188-e990-df5e-cdb7" type="equalTo"/>
+                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3790-c08b-f0d6-2168" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="29b3-265e-4604-e1f4" value="6">
               <conditions>
-                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="0d15-7b4b-80a9-7aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="537e-c1f0-492b-6409" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1822,31 +1974,66 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1-6 models" id="fe98-2c98-fae0-cb24" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
+        <selectionEntryGroup name="Unit Size" id="fe98-2c98-fae0-cb24" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52a2-9ec9-e616-d8f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d7-98e0-a00b-2bc4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="1 model" hidden="false" id="f404-044a-91aa-50fd" collective="false">
-              <modifiers>
-                <modifier type="set" value="5" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="6" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
               </costs>
+              <profiles>
+                <profile name="Sydonian Dragoons" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bb0a-60e1-0162-5955">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="3790-c08b-f0d6-2168"/>
-            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="537e-c1f0-492b-6409"/>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="3790-c08b-f0d6-2168">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Sydonian Dragoons (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="22e5-4528-5240-56a3">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="537e-c1f0-492b-6409">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+              </costs>
+              <profiles>
+                <profile name="Sydonian Dragoons (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="89d6-4725-18bd-ef07">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1858,39 +2045,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c12a-4265-1488-308d" name="Ironstrider Balistarii" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="a6d7-9e83-21b2-5459" name="Ironstrider Balistarii" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9188-e990-df5e-cdb7" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="6"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="053d-ab26-bf35-4e1b" name="Broad Spectrum Data-Tether" hidden="false" targetId="6b86-dbc6-f30b-240b" type="profile"/>
       </infoLinks>
@@ -1931,7 +2085,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9188-e990-df5e-cdb7" type="equalTo"/>
+                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="673b-38f1-21f7-640e" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="e348-d63c-d148-726e" value="3"/>
@@ -1940,7 +2094,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="c12a-4265-1488-308d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6a0-73eb-f864-5556" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="e348-d63c-d148-726e" value="6"/>
@@ -2001,60 +2155,74 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1-6 models" id="632b-6b61-0fbd-cda7" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
+        <selectionEntryGroup name="Unit Size" id="632b-6b61-0fbd-cda7" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="cd8b-e395-d1cd-455d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5db9-7ed4-beed-332b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec8c-4ac5-60f1-4336" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="1 Model" hidden="false" id="6649-ad66-7f7e-5ff8" collective="false">
+            <selectionEntry type="upgrade" import="true" name="1 model" hidden="false" id="6649-ad66-7f7e-5ff8" collective="false">
               <modifiers>
                 <modifier type="set" value="5" field="1466-da3f-0d27-dace">
                   <conditions>
                     <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="6" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+              <profiles>
+                <profile name="Ironstrider Balistarii" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="501a-e268-02ba-8f85">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="673b-38f1-21f7-640e">
+              <profiles>
+                <profile name="Ironstrider Balistarii (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0c43-f603-e236-e2ef">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="f6a0-73eb-f864-5556">
+              <profiles>
+                <profile name="Ironstrider Balistarii (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="5a3f-7b9d-2d63-4f79">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="38"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="3 Models" hidden="false" id="0fda-ca11-6b50-486e" collective="false" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="15" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="18" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="6 Models" hidden="false" id="6679-9d43-48fc-a111" collective="false" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="30" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7cf9-48ce-04e2-b234" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="36" field="1466-da3f-0d27-dace">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c12a-4265-1488-308d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2210,7 +2378,7 @@
             <entryLink id="cdb9-6f58-0972-74e9" name="Heavy Phosphor Blaster" hidden="false" collective="false" import="true" targetId="fa06-9e0a-ecd0-56ac" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Size" id="c113-0ea7-6835-4f62" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="4a97-6198-8420-981b">
+        <selectionEntryGroup name="Unit Size" id="c113-0ea7-6835-4f62" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="d0c8-b0e8-c3c3-d451">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d673-6b8b-2eaf-d013" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3667-a018-c7ca-2499" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2239,7 +2407,7 @@
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
               </costs>
               <profiles>
-                <profile name="Kastelan Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7562-8ae1-6f6f-ed08">
+                <profile name="Kastelan Robots (4 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7562-8ae1-6f6f-ed08">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -2254,7 +2422,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="be78-5c4d-e5f3-fbc5">
               <profiles>
-                <profile name="Kastelan Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4fbf-3e5f-a70a-6d39">
+                <profile name="Kastelan Robots (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4fbf-3e5f-a70a-6d39">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -2991,29 +3159,6 @@
     </selectionEntry>
     <selectionEntry id="6315-b642-f1c1-2075" name="Pteraxii Skystalkers" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b246-e74d-9efe-9e01" name="Pteraxii Skystalkers (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="6315-b642-f1c1-2075" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bff-9feb-93ca-17e4" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Pteraxii Skystalkers"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="bbe2-b12f-c2c5-9296" name="Soar away" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the beginning of the orders phase, you may remove this unit from the battlefield. Place the unit into Tactical Reserves with their damage markers. The Unit may Deep Strike as normal, but in a turn they used their Soar away ability, they may only be given an Advance Order.</characteristic>
@@ -3062,11 +3207,56 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="513c-cf19-7330-ccf7" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b412-25d7-208e-8c34" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="0cd8-8c9d-0f61-4ed4" hidden="false" collective="false" import="true" defaultSelectionEntryId="a20f-d0b2-afd8-d67b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0953-4cb9-a6ee-fd07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a6e-553d-91bc-4f10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="a20f-d0b2-afd8-d67b">
+              <profiles>
+                <profile name="Pteraxii Skystalkers (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d2d6-6aa5-04f7-5d15">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="3d5b-4906-3e38-2866">
+              <profiles>
+                <profile name="Pteraxii Skystalkers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2920-4a67-e253-8717">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0ddc-6ce9-5bac-6e71" name="Flechette Carbines" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3087,29 +3277,6 @@
     </selectionEntry>
     <selectionEntry id="b783-ec93-03ec-47a0" name="Pteraxii Sterylizors" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="7855-cc9c-1313-5485" name="Pteraxii Sterylizors (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="b783-ec93-03ec-47a0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bff-9feb-93ca-17e4" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Pteraxii Sterylizors"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="a709-7643-fee5-4955" name="Soar away" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the beginning of the orders phase, you may remove this unit from the battlefield. Place the unit into Tactical Reserves with their damage markers. The Unit may Deep Strike as normal, but in a turn they used their Soar away ability, they may only be given an Advance Order.</characteristic>
@@ -3158,11 +3325,56 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b7-7aac-e1de-81bc" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8006-dd1b-ceb4-49d9" name="5-10 models" hidden="false" collective="false" import="true" targetId="dce9-b063-d1df-c84f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="7dfb-69a4-042a-3620" hidden="false" collective="false" import="true" defaultSelectionEntryId="5053-c6fc-fe37-699c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34c3-15c9-ab16-ef54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="330b-5501-3249-d358" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="5053-c6fc-fe37-699c">
+              <profiles>
+                <profile name="Pteraxii Sterylizors (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7855-cc9c-1313-5485">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="79b7-0b5b-b476-7580">
+              <profiles>
+                <profile name="Pteraxii Sterylizors (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e2c7-7fbb-db1c-2e09">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="eedc-cccb-08b9-8dd3" name="Phosphor torches" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3185,41 +3397,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3a1b-94e4-1f6f-2915" name="Serberys Raiders" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="6464-3d89-6607-9bef" name="Serberys Raiders (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="3a1b-94e4-1f6f-2915" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0e9-b037-602b-645c" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Serberys Sulphurhounds"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="3a1b-94e4-1f6f-2915" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe91-4e3b-c001-d5d2" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Serberys Sulphurhounds"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="4a32-9024-fc7e-2050" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
       </infoLinks>
@@ -3285,11 +3462,74 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee3-7208-3416-46bc" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0465-0dfa-ecdc-0f0b" name="3-9 models" hidden="false" collective="false" import="true" targetId="cd49-5340-f60d-2857" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="233d-819c-aca6-6a2c" hidden="false" collective="false" import="true" defaultSelectionEntryId="351f-6e89-54c9-3770">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="269b-18ca-ee14-4c61" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57e4-4019-06d3-c943" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="351f-6e89-54c9-3770">
+              <profiles>
+                <profile name="Serberys Raiders (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="614b-ed37-24cd-c5a4">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="50a9-02c9-9b32-bb12">
+              <profiles>
+                <profile name="Serberys Raiders (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="b9f8-9f4d-99a1-2c61">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="9 models" hidden="false" id="59d0-2b71-e05f-5516">
+              <profiles>
+                <profile name="Serberys Raiders (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0b5b-fb7f-b43c-353d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="739c-56fa-06cd-1c58" name="Clawed Limbs" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3309,41 +3549,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="433a-842b-78b0-add9" name="Serberys Sulphurhounds" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0bde-d14b-97b5-3cf2" name="Serberys Sulphurhounds (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="433a-842b-78b0-add9" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0e9-b037-602b-645c" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Serberys Sulphurhounds"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="433a-842b-78b0-add9" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe91-4e3b-c001-d5d2" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="name" value="Serberys Sulphurhounds"/>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="6ac8-6e7c-f286-96ee" name="Pistoliers" hidden="false">
           <description>This unit may either perform a Shoot Action or a Melee Action after moving when its Detachement carries out an Assault order.</description>
@@ -3429,11 +3634,74 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f38-d049-2f16-443c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="17ff-5cf0-f8ff-ec64" name="3-9 models" hidden="false" collective="false" import="true" targetId="cd49-5340-f60d-2857" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="34c7-ede5-7fa4-1b46" hidden="false" collective="false" import="true" defaultSelectionEntryId="85ba-9197-72e7-3355">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0df0-5578-d2d2-a96a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f90b-0db3-e36e-a6b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="85ba-9197-72e7-3355">
+              <profiles>
+                <profile name="Serberys Sulphurhounds (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0bde-d14b-97b5-3cf2">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="9eee-5ac5-cb20-8462">
+              <profiles>
+                <profile name="Serberys Sulphurhounds (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a690-8d93-3aca-952f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="9 models" hidden="false" id="abe6-a184-d0c2-ff38">
+              <profiles>
+                <profile name="Serberys Sulphurhounds (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="789b-d871-8e47-71c6">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="303a-2ece-3e3f-9292" name="Archaeopter Transvector" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3742,242 +4010,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="dce9-b063-d1df-c84f" name="5-10 models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b65-d1d7-0b0f-7339">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e3-c7cf-59bd-f208" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f732-2348-5479-a2e4" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="4b65-d1d7-0b0f-7339" name="5 Models" hidden="false" collective="false" import="true" targetId="b04e-a6a4-1b6e-98b8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="4">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da54-f987-3dbf-abe3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3656-e1b0-2ba1-3f19" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="4">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f2-4f9d-9cbf-8cbb" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="4">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d53c-6d11-8d70-a95a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="2bff-9feb-93ca-17e4" name="10 Models" hidden="false" collective="false" import="true" targetId="4725-4dee-e275-9c3f" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f2-4f9d-9cbf-8cbb" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="13">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3656-e1b0-2ba1-3f19" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da54-f987-3dbf-abe3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d53c-6d11-8d70-a95a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="2dc4-aa31-7aa0-caa7" name="3-12 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="8904-07a6-e229-a12f">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c6-f823-d36a-4ac5" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d26c-94d8-2bff-38de" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="8904-07a6-e229-a12f" name="3 Models" hidden="false" collective="false" import="true" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c16-d97f-7221-504a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="7">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c1a3-9deb-2b42-7190" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="27c1-e162-50d3-5523" name="6 Models" hidden="false" collective="false" import="true" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="14">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1a3-9deb-2b42-7190" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="12">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c16-d97f-7221-504a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="60d3-ed4d-af0b-3471" name="9 Models" hidden="false" collective="false" import="true" targetId="a155-e4fa-84c8-9212" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="21">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1a3-9deb-2b42-7190" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="18">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c16-d97f-7221-504a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="9c57-8ef4-6bd5-68f2" name="12 Models" hidden="false" collective="false" import="true" targetId="d2ae-db2d-8288-28bc" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="28">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1a3-9deb-2b42-7190" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="24">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c16-d97f-7221-504a" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="f286-5b28-aa63-b082" name="5-20 models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8f6-1217-4b1b-0a7a">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e4-5218-b119-33cf" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e812-a8a5-753e-0325" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="a8f6-1217-4b1b-0a7a" name="5 Models" hidden="false" collective="false" import="true" targetId="b04e-a6a4-1b6e-98b8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="4">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ee3-47a3-0f7c-b751" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="3">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c6-9a11-3207-abf3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="2528-b837-ca0c-2add" name="10 Models" hidden="false" collective="false" import="true" targetId="4725-4dee-e275-9c3f" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c6-9a11-3207-abf3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="8">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ee3-47a3-0f7c-b751" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="4bed-1dff-3b5f-9205" name="15 Models" hidden="false" collective="false" import="true" targetId="b357-24a2-1820-6200" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c6-9a11-3207-abf3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="12">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ee3-47a3-0f7c-b751" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="897c-4231-2f59-5ee4" name="20 Models" hidden="false" collective="false" import="true" targetId="39d4-69f3-cae3-a6f9" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="12">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c6-9a11-3207-abf3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="16">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ee3-47a3-0f7c-b751" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="cd49-5340-f60d-2857" name="3-9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="297b-5676-e8f7-c8ba">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0107-eb01-addd-0da2" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8356-5b20-9be8-4502" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="297b-5676-e8f7-c8ba" name="3 Models" hidden="false" collective="false" import="true" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="2">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dc0-04a3-61cc-6482" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="3">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1434-f292-33f5-a122" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="fe91-4e3b-c001-d5d2" name="6 Models" hidden="false" collective="false" import="true" targetId="55d8-dc4c-4046-7336" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="6">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1434-f292-33f5-a122" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="4">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dc0-04a3-61cc-6482" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="d0e9-b037-602b-645c" name="9 Models" hidden="false" collective="false" import="true" targetId="a155-e4fa-84c8-9212" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="8">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dc0-04a3-61cc-6482" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="9">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1434-f292-33f5-a122" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="62cc-28e8-1d7c-172b" name="Self-Repair Mechanisms" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>

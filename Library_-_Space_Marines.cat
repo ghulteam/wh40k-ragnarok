@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="42" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1210,6 +1210,14 @@
                 <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
               </modifiers>
             </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="b734-ce0c-dd48-e51f" childId="cdf9-175a-b31b-44a1" shared="true"/>
+              </conditions>
+            </modifierGroup>
           </modifierGroups>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
@@ -1250,6 +1258,7 @@
           <entryLinks>
             <entryLink id="8755-a65c-623f-e9d3" name="Gravis Armor" hidden="false" collective="false" import="true" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
             <entryLink id="c36a-2f1b-95f4-5181" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
+            <entryLink import="true" name="Jump Pack" hidden="false" id="2b32-a982-d5a5-25bb" type="selectionEntry" targetId="54ae-a37e-e67e-54e8"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1715,11 +1724,29 @@
           </selectionEntries>
           <entryLinks>
             <entryLink id="65df-3af2-a8a8-95bb" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-            <entryLink id="34de-3d0c-dd86-e3f4" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="50f7-3318-629a-9f08" hidden="false" defaultSelectionEntryId="aa80-48d3-95e2-0c88">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="No wargear" hidden="false" id="aa80-48d3-95e2-0c88"/>
+                <selectionEntry type="upgrade" import="true" name="Reiver Armor and Grav-Chutes" hidden="false" id="34fc-c55d-3650-6978">
+                  <infoLinks>
+                    <infoLink name="Terror Troops" id="0adc-28ab-1f9a-1ae2" hidden="false" type="profile" targetId="e5e7-bd6d-fdb7-b022"/>
+                    <infoLink name="Deep Strike" id="6393-d070-8183-3373" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Phobos Armor" hidden="false" id="34de-3d0c-dd86-e3f4" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
