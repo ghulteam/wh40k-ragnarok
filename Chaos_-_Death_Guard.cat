@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
     <categoryEntry id="dc88-9bb3-da14-d8af" name="Typhus" hidden="false"/>
@@ -246,18 +246,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="8e12-03ad-979c-80fe" name="Chaos Lord" hidden="false" collective="false" import="true" targetId="f8fa-3ec8-92bd-35de" type="selectionEntry">
-      <profiles>
-        <profile id="1409-3bbe-720a-7c0e" name="Lord of Nurgle" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="ad1b-6b05-c0ce-f6ec" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="4168-a566-5d93-0ede" primary="false" name="Faction: Death Guard"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="2f73-2962-8072-73f3" primary="false" name="Faction: Nurgle"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lord of Nurgle" id="bb46-4cf1-76c8-5e5d" hidden="false" type="profile" targetId="b767-00d3-c8eb-f56b"/>
+      </infoLinks>
     </entryLink>
     <entryLink id="a850-8730-bd60-e0c1" name="Daemon Prince of Nurgle" hidden="false" collective="false" import="true" targetId="e830-e821-04db-978a" type="selectionEntry">
       <categoryLinks>
@@ -493,6 +489,12 @@
       <categoryLinks>
         <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="603e-e874-3974-84eb" primary="false" name="Faction: Death Guard"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="189c-5674-2267-cb3e" primary="false" name="Faction: Nurgle"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Lord on Daemonic Mount" hidden="false" id="31c6-23a5-c839-6019" type="selectionEntry" targetId="0b9a-f634-8fab-fcb1">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="8f78-1ac2-e3a8-2c27" primary="true" name="HQ"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="1a88-099b-75dc-6ebf" primary="false" name="Faction: Death Guard"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2120,7 +2122,12 @@
     </profile>
     <profile id="1e3c-3543-742e-3a4f" name="Master of Destruction" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for ranged attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of this unit.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of any units with this ability.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lord of Nurgle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b767-00d3-c8eb-f56b">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

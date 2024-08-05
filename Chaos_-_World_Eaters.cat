@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="11" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="12" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -197,10 +197,15 @@
         <categoryLink id="c4ac-e4bd-561e-34de" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5d21-00b2-5c7e-858a" name="World Eaters Lord on Juggernaut" hidden="false" collective="false" import="true" targetId="e7d0-5ee7-e143-44f2" type="selectionEntry">
+    <entryLink id="5d21-00b2-5c7e-858a" name="Chaos Lord on Daemonic Mount" hidden="false" collective="false" import="true" targetId="0b9a-f634-8fab-fcb1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ac79-02c6-1e59-c3af" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink targetId="0e74-9b80-290b-c2f2" id="1a07-7517-a851-79b3" primary="false" name="Faction: Butcher Astartes"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="c494-cb3d-f934-f15f" primary="false" name="Faction: World Eaters"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lord of Blood" id="622d-ea9c-205c-0882" hidden="false" type="profile" targetId="2f61-aaa1-439a-6118"/>
+      </infoLinks>
     </entryLink>
     <entryLink id="7ee7-1f3f-485b-f246" name="Eightbound" hidden="false" collective="false" import="true" targetId="3186-1046-911d-d8a5" type="selectionEntry">
       <categoryLinks>
@@ -242,7 +247,11 @@
         <categoryLink targetId="a592-cb8b-b074-9875" id="449c-c745-4763-eb0a" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="0e74-9b80-290b-c2f2" id="ca83-d21a-5723-b0e9" primary="false" name="Faction: Butcher Astartes"/>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="e542-caf6-7cb2-7828" primary="true" name="HQ"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="b81c-cd0c-d9ae-b0e4" primary="false" name="Faction: Khorne"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lord of Blood" id="0f17-f62b-a216-352d" hidden="false" type="profile" targetId="2f61-aaa1-439a-6118"/>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -475,43 +484,6 @@
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e7d0-5ee7-e143-44f2" name="World Eaters Lord on Juggernaut" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="35db-4eba-c662-f865" name="Lord of Blood" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly WORLD EATER units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2796-f45b-44fb-191c" name="World Eaters Lord on Juggernaut" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="7107-7bd9-e248-be42" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="74a3-c798-2aa9-8b38" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="ba22-7d83-c502-cdf9" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
-        <categoryLink id="13a9-c39d-419d-7fb0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="20b8-61d6-094c-77ae" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
-        <categoryLink id="7bef-25fd-2216-2bbd" name="Chaos Lord" hidden="false" targetId="2f53-570e-fcef-604b" primary="false"/>
-        <categoryLink targetId="a592-cb8b-b074-9875" id="6c2e-0011-db63-5f19" primary="false" name="Faction: World Eaters"/>
-        <categoryLink targetId="de3f-40e8-687f-1ca8" id="3003-e692-11fb-8cb5" primary="false" name="Faction: Heretic Astartes"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0882-bfd9-ac7e-6bf9" name="Helwrought Weapons" hidden="false" collective="false" import="true" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
-        <entryLink id="9452-e1e1-7ad2-81a0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3186-1046-911d-d8a5" name="Eightbound" hidden="false" collective="false" import="true" type="unit">
@@ -896,9 +868,9 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="43e5-1fc5-8f2d-988b" name="Gorefeast" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+    <profile name="Lord of Blood" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2f61-aaa1-439a-6118">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a blast marker is placed next to an enemy unit as a result of an attack made with a melee weapon by this unit, you can remove one blast marker from this unit. Small blast markers must be removed before large blast markers.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly WORLD EATER units whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
