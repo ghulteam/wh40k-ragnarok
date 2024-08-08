@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -4049,25 +4049,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Empyric Guidance" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2eae-ef04-fc9f-5746">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by friendly THOUSAND SONS units whilst they are within 6&quot; of any units with this ability.</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="f991-f86c-a693-dcd9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </profile>
         <profile name="Putrescent Guidance" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1f5a-003f-1281-88f8">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of any units with this ability.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll failed wound rolls of 2 for attacks made by friendly DEATH GUARD units whilst they are within 6&quot; of any units with this ability.</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -4075,22 +4059,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="e15c-fb59-677b-44e0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Chaotic Guidance" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6b3a-9541-fb68-678b">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by friendly [LEGION] units whilst they are within 6&quot; of any units with this ability.</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="b90a-4197-3cca-014d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4202,7 +4170,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <entryLink id="fc41-924e-ebfa-3648" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb4c-7116-4f16-b27e" name="Force Weapon" hidden="false" collective="false" import="true" type="upgrade">
