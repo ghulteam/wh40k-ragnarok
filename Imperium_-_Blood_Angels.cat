@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1044,6 +1044,16 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
     <entryLink import="true" name="Relic Glaive Special Weapon Tank" hidden="false" id="7781-46b0-2ddf-383b" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
       <categoryLinks>
         <categoryLink targetId="f7a9-266d-efb6-d80f" id="18a9-f8f4-9de6-a250" primary="false" name="Faction: Blood Angels"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Primaris Sanguinary Guard" hidden="false" id="4587-1d64-9d1a-fb6b" type="selectionEntry" targetId="c8c3-7f67-dfe8-8686">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="e41f-06f3-c4f1-32f0" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Death Company Brutalis Dreadnought" hidden="false" id="47a2-eb10-6e63-4828" type="selectionEntry" targetId="a4d4-2cf8-6a46-0e72">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="5fe7-2c91-a81a-74fe" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2768,6 +2778,200 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Death Company Brutalis Dreadnought" hidden="false" id="a4d4-2cf8-6a46-0e72" collective="false">
+      <profiles>
+        <profile name="Death Company Brutalis Dreadnought" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d6a9-6857-fd95-55d4">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="efb7-01a0-af5c-4c5f" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink name="Dreadnought" hidden="false" id="73b1-1a3b-6352-24e7" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="335b-2e5a-5c42-d771" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="11c7-398e-45a5-d12c" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="763b-d530-cec2-5636" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="21e7-ae80-c1b0-d7e8" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Brutalis Dreadnought" hidden="false" id="139f-70cb-27f9-a80f" targetId="8293-b982-b93f-be0c" primary="false"/>
+        <categoryLink targetId="ec97-a1f6-0b97-818a" id="bcf7-c15d-9d6f-cf80" primary="false" name="Faction: Death Company"/>
+        <categoryLink targetId="f7a9-266d-efb6-d80f" id="c667-637a-20e5-2b25" primary="false" name="Faction: Blood Angels"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brutalis Talons" hidden="false" id="bc37-b4e9-12c9-3307" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ca2-f6d0-d27a-8b15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9507-afbf-807a-3d15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Brutalis Talons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="30be-201e-3c04-2f80">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chest Weapon" id="709d-5c8f-a70b-2faa" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c3f-0b65-ca50-9caa">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="904d-5628-169a-55ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28bf-f0bf-7028-425f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="646b-e52b-967f-814e" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Multi-melta" hidden="false" id="f66b-2ab4-50af-324c" collective="false" targetId="8db9-b9be-885f-5a5f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" id="cff3-1589-cbb7-9361" collective="false" targetId="6747-6d07-cdbb-8414" type="selectionEntry"/>
+        <entryLink import="true" name="Commander" hidden="false" id="d65d-0d12-2702-b85e" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="0824-3a3e-c614-a4d8" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Primaris Sanguinary Guard" hidden="false" id="c8c3-7f67-dfe8-8686" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="65ae-2137-1a0f-3cb3" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="79ed-ad6f-e3ef-36db" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="6030-cb08-345a-1b2a" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="5db4-914c-cd4c-3473" id="1490-2f0f-0336-4b74" primary="false" name="Sanguinary Guard"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="e0f2-7c96-2979-6774" primary="false" name="Infantry"/>
+        <categoryLink targetId="cdf9-175a-b31b-44a1" id="1dec-32c0-fd0a-62c6" primary="false" name="Jump Pack"/>
+        <categoryLink targetId="f7a9-266d-efb6-d80f" id="56dc-1d4d-31c1-9f6e" primary="false" name="Faction: Blood Angels"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="31ad-b958-04ea-1a98" primary="false" name="Fly"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Primaris Angelus Boltguns" hidden="false" id="ba6e-a943-9409-7461" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b90-cb99-19a3-28fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7ff-d4ee-7a59-91de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Primaris Angelus Boltguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0a3f-13f4-4a82-7ba5">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Death Masks" hidden="false" id="478d-dc7d-2d76-cfd5" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e6-c9bc-90db-ffc2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Terror Troops" id="0003-ee6a-4006-d826" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Primaris Encarmine Weapons" hidden="false" id="8de0-b86f-64e8-6ee7" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="662c-2268-efb7-d818" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-019d-ce6b-85fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Primaris Encarmine Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7782-6292-14e3-b0c4">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="9972-20b4-7ab3-9552" hidden="false" collective="false" import="true" defaultSelectionEntryId="dada-8864-ac16-6154">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4884-c083-3166-f1ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b38-85f9-5fe9-8ae7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="f076-7b1a-630a-16c5" collective="false">
+              <profiles>
+                <profile name="Primaris Sanguinary Guard (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="53d1-3348-92e8-f0bf">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="c00f-ba62-8167-afe4" collective="false">
+              <profiles>
+                <profile name="Primaris Sanguinary Guard (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a039-26cb-fe31-0c65">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="3dda-074b-1f9d-23bf" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Heirs of Azkaellon" id="246f-57f7-d4fb-e34d" hidden="false" targetId="e8e7-691d-5bec-b7cc" type="profile"/>
+        <infoLink name="Deep Strike" id="cfd8-08e3-a786-9eaa" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
