@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -89,6 +89,7 @@
     <categoryEntry id="5329-f200-d92e-3f16" name="Ursula Creed" hidden="false"/>
     <categoryEntry id="ba94-8dea-0c56-4257" name="Fortress of Arrogance" hidden="false"/>
     <categoryEntry name="Kaskrin" id="cd19-a6bc-d5e5-6074" hidden="false"/>
+    <categoryEntry name="Militarum Tempestus Aquilons" id="dd89-0b3e-e539-75a1" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -1169,6 +1170,11 @@
     <entryLink import="true" name="Cadian Shock Troops" hidden="false" id="b214-97bf-65fd-c34f" type="selectionEntry" targetId="87b4-c59e-39e1-fa86">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="78e6-7f3b-7385-a4db" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militarum Tempestus Aquilons" hidden="false" id="a4a2-de80-8d69-7f8b" type="selectionEntry" targetId="559c-00f3-ad31-1035">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="7f88-1bcd-c313-e6de" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3132,6 +3138,16 @@
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="bc8a-ac78-d74a-8b18" childId="b21a-baa7-215d-a535" shared="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -3160,6 +3176,26 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="17bd-eae2-d1a6-efbd" hidden="false" defaultSelectionEntryId="2545-24c0-cbd5-2446">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="**Nothing**" hidden="false" id="2545-24c0-cbd5-2446"/>
+            <selectionEntry type="upgrade" import="true" name="Aquilon Jump Pack" hidden="false" id="b21a-baa7-215d-a535">
+              <categoryLinks>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="5bc9-185e-f5d9-51e8" primary="false" name="Fly"/>
+                <categoryLink targetId="cdf9-175a-b31b-44a1" id="809d-b998-5e36-c518" primary="false" name="Jump Pack"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="584b-1882-1460-245d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c4e-7f76-45e0-ef15" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="a06f-3fcd-b161-901f" name="Sergeant Harker" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -7414,6 +7450,102 @@ Praetor Launcher for this action.</characteristic>
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Militarum Tempestus Aquilons" hidden="false" id="559c-00f3-ad31-1035" collective="false">
+      <infoLinks>
+        <infoLink name="Deep Strike" id="bbea-77ba-9a74-2216" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="27b8-a676-94fd-6ac1" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="1cc3-bd20-7a19-aaff" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Faction: Militarum Tempestus" hidden="false" id="dd35-21a2-00bc-3669" targetId="b681-41e3-5fe3-e661" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="8d58-e3c9-f158-8322" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="bedc-40bd-0119-a26f" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="168a-93fb-7c80-73a4" primary="false" name="Fly"/>
+        <categoryLink targetId="dd89-0b3e-e539-75a1" id="a636-166a-b566-ba33" primary="false" name="Militarum Tempestus Aquilons"/>
+        <categoryLink targetId="cdf9-175a-b31b-44a1" id="0afb-6b25-4767-8133" primary="false" name="Jump Pack"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="82ea-c833-ea6f-30db" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4131-cded-0bbf-4485" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90f4-98ac-de42-ee22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Close Combat Weapons (Militarum Tempestus)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8084-6785-9a45-3743">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="1ca3-8827-7de5-2bb4" hidden="false" collective="false" import="true" defaultSelectionEntryId="f055-5bd8-e548-4353">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d29-00a9-1613-c897" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cba-dc57-aa0b-461d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="f03f-1dcf-d08d-0049" collective="false">
+              <profiles>
+                <profile name="Militarum Tempestus Aquilons (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7172-aeae-df51-426e">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="233b-68d3-04d0-0384" collective="false">
+              <profiles>
+                <profile name="Militarum Tempestus Aquilons (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="02ef-6d35-c449-f614">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hot-shot Lasguns" hidden="false" id="f142-dc42-aeb2-9e41" collective="false" targetId="afbb-4b97-441a-98f6" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2c6-17be-b1fc-444e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7f4-aadb-6ae6-bbf9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="b9c9-0b28-0ffa-fb80" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
