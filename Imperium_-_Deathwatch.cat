@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -714,6 +714,26 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="d7a8-1553-145a-e466" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Fortis Kill Team" hidden="false" id="6786-a385-2223-71bc" type="selectionEntry" targetId="1f1b-c07c-795b-d63d">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="6c5d-f669-9977-188e" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Indomitor Kill Team" hidden="false" id="1e9e-62db-45a9-b63b" type="selectionEntry" targetId="d4c6-cb68-0062-fbbb">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="d37f-e24e-6e50-ecff" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Proteus Kill Team" hidden="false" id="06b7-037b-0d0e-f7fb" type="selectionEntry" targetId="fa4a-964f-28ea-0841">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="a133-414c-897a-82b4" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Spectrus Kill Team" hidden="false" id="e8a4-5e57-1890-6aa7" type="selectionEntry" targetId="af4e-a4e1-abc2-eec1">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="0e73-5181-cea5-32a3" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa57-bcfe-ad8d-4882" name="Corvus Blackstar" hidden="false" collective="false" import="true" type="unit">
@@ -1394,7 +1414,6 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e4b0-af92-c05e-e2eb" name="New SelectionEntryGroup" hidden="false" collective="false" import="true"/>
         <selectionEntryGroup id="da52-2485-bb64-50f2" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="890b-e073-3c12-eda0">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab0-5d2b-c8ec-b278" type="min"/>
@@ -1432,7 +1451,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f1b-c07c-795b-d63d" name="Fortis Kill Team" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1f1b-c07c-795b-d63d" name="Fortis Kill Team" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="a3d3-4b76-8e92-348e" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="aa46-7fbc-fc16-3082" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -1440,15 +1459,16 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="667f-21ee-f65d-9297" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="0f5e-4140-1e67-7c40" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="2274-358e-cf0c-7f44" name="Fortis Kill Team" hidden="false" targetId="dc83-1958-f1f2-a17b" primary="false"/>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="2fc4-6561-366a-6327" primary="false" name="Faction: Deathwatch"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4118-2a04-13f1-9fce" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4118-2a04-13f1-9fce" name="Fortis Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8197-ae05-ffd2-4a6f" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7e8-c6ab-ea30-c50a" type="min"/>
           </constraints>
           <profiles>
-            <profile id="3f33-38b2-74a0-cc5c" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="3f33-38b2-74a0-cc5c" name="Fortis Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -1457,11 +1477,67 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="6+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="8+" field="4b6c-996a-d317-affb"/>
+                    <modifier type="set" value="x3" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="1f1b-c07c-795b-d63d" childId="a51f-500a-9bdf-142a" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fortis Ranged Weapons" hidden="false" id="46af-6428-d0fd-a8d6" collective="false">
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="73ff-448a-fa4b-5777" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Fortis Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a410-c75c-111a-a351">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="7+" field="4b6c-996a-d317-affb"/>
+                    <modifier type="set" value="Rapid Fire, Supercharge" field="61ff-d2ec-f13b-06fa"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="1f1b-c07c-795b-d63d" childId="dbe0-2f8b-0f85-bbdd" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="1f1b-c07c-795b-d63d" childId="dbe0-2f8b-0f85-bbdd" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e9b-b13a-f536-7686" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b08-119b-021b-3874" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1495,7 +1571,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                   <modifiers>
                     <modifier type="set" field="7c7f-f763-1f39-410c" value="5">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbe0-2f8b-0f85-bbdd" type="equalTo"/>
+                        <condition field="selections" scope="1f1b-c07c-795b-d63d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbe0-2f8b-0f85-bbdd" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1530,23 +1606,18 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e0-f689-d032-f320" type="max"/>
               </constraints>
               <profiles>
-                <profile id="636e-981c-26f7-1021" name="Plasma Incinerators" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                <profile name="Hellblasters" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="77da-d433-363d-aabd">
                   <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire, Supercharge</characteristic>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Fortis Ranged Weapons SAP and SAT by 1
+-Grants this Units Fortis Ranged Weapons the Supercharge Ability</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="3781-a311-910f-23a5" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-                <infoLink id="4599-b35f-d0ff-1f50" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+                <infoLink name="Supercharge" id="5c98-65af-fb1f-1aa0" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
               </infoLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dbe0-2f8b-0f85-bbdd" name="Outriders" hidden="false" collective="false" import="true" type="upgrade">
@@ -1554,37 +1625,31 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dc1-ce45-8bc8-8632" type="max"/>
               </constraints>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <profiles>
+                <profile name="Outriders" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="d239-afc8-69f7-def5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Wounds by 1
+-Increases this Units Fortis Ranged Weapons A to x2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="a51f-500a-9bdf-142a" name="Assault Intercessors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a68-7ba2-7d8c-1a3c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e1e6-8987-27b9-5251" name="Astartes Chain Swords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                <profile name="Assault Intercessors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0ee8-2bab-11bd-cceb">
                   <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="1c56-622a-4aa5-10cb" name="Heavy Bolt Pistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Fortis Melee Weapons Attack to x3
+-Increases this Units Fortis Melee Weapons SAP and SAT by 1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1592,12 +1657,6 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="00c1-d194-3e99-9d0e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="5ec1-6aec-ef70-e2a5" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a2b-e5c3-98e2-1255" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca19-eeba-c670-0483" type="min"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1611,15 +1670,16 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="edf9-ada7-6b79-26f3" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="4cc2-a1f9-ea98-da48" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="7b05-969c-8dfe-b524" name="Indomitor Kill Team" hidden="false" targetId="4891-e68a-73f9-c817" primary="false"/>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="a7ae-c1ac-5a49-1340" primary="false" name="Faction: Deathwatch"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e51e-d728-3c3b-579d" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e51e-d728-3c3b-579d" name="Indomitor Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5719-5e9b-a009-2b29" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff0-726a-2b3d-ae95" type="min"/>
           </constraints>
           <profiles>
-            <profile id="3e7f-6bfb-de1d-2985" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="3e7f-6bfb-de1d-2985" name="Indomitor Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -1628,11 +1688,72 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="6+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="8+" field="4b6c-996a-d317-affb"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d4c6-cb68-0062-fbbb" childId="d185-fe9a-a962-3a28" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Indomitor Ranged Weapons" hidden="false" id="8108-c605-c90e-6f47" collective="false">
+          <profiles>
+            <profile name="Indomitor Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ba6f-29ff-fff1-cc45">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d4c6-cb68-0062-fbbb" childId="2c4f-e2e0-606c-28c4" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="5+" field="4b6c-996a-d317-affb"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d4c6-cb68-0062-fbbb" childId="2fd9-b190-962e-805e" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="4+" field="74b1-f85d-ede5-c758"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d4c6-cb68-0062-fbbb" childId="d185-fe9a-a962-3a28" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="099a-690f-f9a1-e2b0" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea74-ed52-7060-c3b2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71d9-2a5b-5583-8fa0" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1691,30 +1812,59 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <selectionEntries>
             <selectionEntry id="d185-fe9a-a962-3a28" name="Aggressors" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c07-fb80-b4f9-012f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Aggressors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="c023-7bce-9534-4386">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Indomitor Melee Weapons SAP and SAT by 1
+-Increases this Units Indomitor Ranged Weapons SAP by 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="2fd9-b190-962e-805e" name="Eradicators" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb7e-06d0-3a98-14fc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Eradicators" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="279e-86e3-a2f1-bedd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Indomitor Ranged Weapons SAT by 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="2c4f-e2e0-606c-28c4" name="Inceptors" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c96-6a0a-3d14-1194" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Inceptors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9f69-aadc-41b5-069f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Grants this Unit the Fly Keyword
+-Increases this Units Indomitor Raned Weapons A to x2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="6aa3-120c-5a94-a231" primary="false" name="Fly"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="68d8-27f2-145a-7863" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="ee32-eeb8-23c7-b5a3" name="Heavy Bolt Rifles" hidden="false" collective="false" import="true" targetId="daf7-2bf0-bd0f-1b15" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ed-8b15-8abd-b822" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16da-07ec-1149-c144" type="min"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1728,6 +1878,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="1614-a2d9-2b5b-6510" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="386d-14ff-f665-dba7" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="7f41-eb3d-83ea-4e17" name="Proteus Kill Team" hidden="false" targetId="d2d3-0968-6bd1-f87a" primary="false"/>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="1a67-6987-e245-e23a" primary="false" name="Faction: Deathwatch"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6d86-7df5-cdb2-4595" name="Unit Size" hidden="false" collective="false" import="true">
@@ -1766,6 +1917,18 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="7c7f-f763-1f39-410c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="fa4a-964f-28ea-0841" childId="6223-0fa6-0c43-0c55" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="5+" field="a56f-38ae-3917-aadc">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="fa4a-964f-28ea-0841" childId="9e39-6151-e976-9cce" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -1773,12 +1936,6 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
               </costs>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a60c-754c-b1c5-2ea0" name="Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a1-193c-8b0a-0fed" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb63-9f16-cf2a-310b" type="min"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup id="3f0d-44b0-cbd3-e43f" name="Mixed Unit" hidden="false" collective="false" import="true">
           <modifiers>
@@ -1791,18 +1948,57 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <selectionEntries>
             <selectionEntry id="9e39-6151-e976-9cce" name="Deathwatch Terminators" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b7a-90dd-67f5-58bd" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Deathwatch Terminators" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="cf6b-5aee-f452-4e96">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Grants this Unit the Deep Strike Ability
+-Increases this Units SV by 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="ca0b-d591-e4e2-ece7" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="6223-0fa6-0c43-0c55" name="Veteran Bikers" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec8-bc2d-a1f1-cf2d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Veteran Bikers" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9f4a-cbc3-baea-1da8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Wounds by 1
+-Increases this Units Proteus Ranged Weapons A to x2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="c04b-3b1b-9d62-b0c5" name="Vanguard Veterans" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ae-2c0a-c782-9f0e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Vanguard Veterans" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="bb1e-0432-50e5-d1c2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Grants this Unit the Fly Keyword
+-Increases this Units Proteus Melee Weapons A to x2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="8a5d-c665-b304-5020" primary="false" name="Fly"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1813,6 +2009,67 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Proteus Ranged Weapons" hidden="false" id="8a84-3e90-b4be-005b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a73-c963-fbde-e0a9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d193-76fd-9b0f-da80" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Proteus Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6503-98d2-aadc-bce8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="fa4a-964f-28ea-0841" childId="6223-0fa6-0c43-0c55" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="7419-0a1a-f7e5-85bd" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Proteus Melee Weapons" hidden="false" id="8c75-4fa3-c9ce-4bef">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91ad-de0d-4bab-3c0d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2955-f7fa-3d11-598b" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Proteus Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="369c-4201-c624-223d">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="fa4a-964f-28ea-0841" childId="c04b-3b1b-9d62-b0c5" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="af4e-a4e1-abc2-eec1" name="Spectrus Kill Team" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1825,15 +2082,16 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="8a65-3513-bc45-0ced" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="e552-83f6-a84c-830d" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="0a2c-d71b-70e4-a8b1" name="Spectrus Kill Team" hidden="false" targetId="c011-1f01-4017-a25b" primary="false"/>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="578c-e4b4-6c98-ad05" primary="false" name="Faction: Deathwatch"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5089-6515-90e3-0d9f" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5089-6515-90e3-0d9f" name="Spectrus Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cbb-291f-fc2a-f5f8" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7df1-1b2c-9310-1c2e" type="min"/>
           </constraints>
           <profiles>
-            <profile id="0d95-2fac-2ec2-ea2f" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="0d95-2fac-2ec2-ea2f" name="Spectrus Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -1842,15 +2100,77 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="x3" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="af4e-a4e1-abc2-eec1" childId="a000-c2fb-4d80-4e78" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="af4e-a4e1-abc2-eec1" childId="c63f-3645-dd44-0e77" shared="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="6+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="8+" field="4b6c-996a-d317-affb"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spectrus Ranged Weapons" hidden="false" id="69a6-1089-7fd0-30ee" collective="false">
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="b9cc-cdb4-ef64-303f" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Spectrus Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0193-5157-d188-0561">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Rapid Fire, Sniper" field="61ff-d2ec-f13b-06fa"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="af4e-a4e1-abc2-eec1" childId="2ebc-c26e-92db-6880" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="af4e-a4e1-abc2-eec1" childId="c63f-3645-dd44-0e77" shared="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="7+" field="4b6c-996a-d317-affb"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af75-7b8d-dd24-fbdb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d31-4174-d401-e2e7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fd3f-5638-d37b-1fc2" name="5 - 10 models" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fd3f-5638-d37b-1fc2" name="Unit Size" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0db5-9bee-f0ee-8a0d" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="538c-87a8-673a-c6e0" type="min"/>
@@ -1905,34 +2225,75 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
           <selectionEntries>
             <selectionEntry id="c63f-3645-dd44-0e77" name="Incursors" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cffb-4cc5-f0ee-fd57" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incursors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="525b-649f-b907-5382">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units Spectrus Melee Weapons SAP and SAT by 1
+-Increases this Units Spectrus Ranged Weapons SAP and SAT by 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry id="a000-c2fb-4d80-4e78" name="Reivers" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="609f-4a2a-ce84-adbb" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Reivers" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ea40-cc96-a1b2-bfd4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Grants this Unit the Terror Troops Ability
+-Increases this Units Spectrus Melee Weapons A to x3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Terror Troops" id="2be2-ca14-b157-d584" hidden="false" type="profile" targetId="e5e7-bd6d-fdb7-b022"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="2ebc-c26e-92db-6880" name="Eliminators" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bad-a3d4-a1fb-19b6" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Eliminators" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1f45-81cc-1c2e-3c3c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Grants this Units Spectrus Ranged Weapons the Sniper Ability
+-Grants this Unit Unit the Stealth Ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Sniper" id="5a78-2d1c-f91b-1562" hidden="false" type="rule" targetId="d452-1a22-2e0c-7a9e"/>
+                <infoLink name="Stealth" id="85df-c264-bd2a-6a0d" hidden="false" type="profile" targetId="b133-8e04-3e7b-9fd6"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f398-4f96-32b5-cea4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="5f54-e080-9b83-d7ea" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-20e3-d135-3e90" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6776-7969-1226-9296" type="min"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Omni-scramblers" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="056c-5551-47dd-4256">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Enemy units cannot be set up within 12&quot; of this unit during the Set Up Reinforcements step.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="976e-7bb8-595a-160c" name="Deathwatch Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>

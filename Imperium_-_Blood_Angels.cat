@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -2972,6 +2972,95 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <infoLink name="Heirs of Azkaellon" id="246f-57f7-d4fb-e34d" hidden="false" targetId="e8e7-691d-5bec-b7cc" type="profile"/>
         <infoLink name="Deep Strike" id="cfd8-08e3-a786-9eaa" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Librarian Redemptor Dreadnought" hidden="false" id="8e34-cc53-5689-b1c6" collective="false">
+      <profiles>
+        <profile name="Librarian Redemptor Dreadnought" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="54eb-2b63-6662-f630">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="ae71-ebf6-4665-ff31" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="8114-9583-2d6d-7a6a" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Blood Angels" hidden="false" id="82ac-38bb-417b-f604" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="e995-a3dc-67c1-c04f" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="8bdc-dbd6-4b2b-bd99" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="3c5b-0f09-7959-0be4" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="2354-e00e-29b6-0faf" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Dreadnought" hidden="false" id="c34f-596c-7a48-15fa" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink name="Librarian" hidden="false" id="546a-315e-6b22-e1ce" targetId="e934-b1d0-35ff-8cc4" primary="false"/>
+        <categoryLink targetId="f93e-cfb3-8fe6-16b6" id="47ca-9005-2104-6f18" primary="false" name="Redemptor Dreadnought"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Redemptor Force Halberd" hidden="false" id="252c-53c6-4c54-188c" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d38-89f6-deef-1250" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19d8-bf5a-b3b0-6675" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Redemptor Force Halberd" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5725-4e81-a6b6-1622">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Redemptor Fist" hidden="false" id="ea68-a7ae-0387-33b3" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d82-ad25-e40b-c3e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="489f-1f78-4451-0008" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Redemptor Fist" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ac01-6668-8cb0-9ea3">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f463-506c-44a3-f741" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="2b70-dd97-75d0-23b1" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ab8-958a-9454-a68e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f06-adb6-e039-9cb9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2176-13aa-291b-fa51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="1ab8-958a-9454-a68e" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
+            <entryLink import="true" name="Onslaught Gatling Cannon" hidden="false" id="cc73-b537-7fc2-7527" collective="false" targetId="7d65-bc0e-c6d8-a54d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
