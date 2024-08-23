@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="22" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -961,6 +961,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink targetId="58c1-00b9-7a20-4110" id="fd03-840d-22d9-7ff0" primary="false" name="Faction: Space Wolves"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Bjorn the Fell-handed in Redemptor Dreadnought" hidden="false" id="450d-1956-7181-4311" type="selectionEntry" targetId="b3bf-9fa4-daee-2f56"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a123-b4e9-1693-784f" name="The Axe Morkai" hidden="false" collective="false" import="true" type="upgrade">
@@ -1211,6 +1212,13 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="bb2a-6d94-0f93-7c26">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3bf-9fa4-daee-2f56" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b1bf-9a6e-0d88-a2b3" name="Blood Claws" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -3253,32 +3261,6 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="7818-e949-0804-5a84" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
         <categoryLink id="fe6b-8a48-c66a-18de" name="Stormfang Gunship" hidden="false" targetId="ad77-6c4a-74ef-94e6" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b8e1-f26d-0201-1182" name="Helfrost Destructor" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93ce-fc6e-eefe-b3b6" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf75-d875-013c-7c5d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ce56-4b1f-6c6b-7dc2" name="Helfrost Destructor" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a229-2a52-ca9e-3e0c" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7547-104b-e2e9-b9b3" name="Missiles/Lascannons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a79-1aed-4fe0-6f68">
           <constraints>
@@ -3387,6 +3369,12 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <entryLinks>
         <entryLink id="7d51-4d6f-25fc-4495" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink id="692b-ea98-32ce-60ef" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
+        <entryLink import="true" name="Helfrost Destructor" hidden="false" id="465f-fe70-60e8-32a8" type="selectionEntry" targetId="9a32-638e-f9b4-f133">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b86a-0616-092c-0e60" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="291b-b435-eb28-184d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="19"/>
@@ -4963,6 +4951,122 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bjorn the Fell-handed in Redemptor Dreadnought" hidden="false" id="b3bf-9fa4-daee-2f56" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a48a-7764-ada2-9fe5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Bjorn the Fell-handed" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ce07-3917-98b6-be1a">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ancient Tactician" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="c400-f5bb-c8b5-f8d8">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Last of the Company of Russ" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0321-a2fd-a0db-77e7">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly SPACE WOLVES units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignore Damage (5+)" id="d495-aba1-2650-ac14" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="cd03-7462-51ee-5876" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="fdba-9ad7-85d5-b3ae" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Space Wolves" hidden="false" id="bb62-6962-88a3-53b7" targetId="58c1-00b9-7a20-4110" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="82b7-adc7-fce9-21aa" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="ef62-40f3-5ef1-40a6" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="2944-b2f0-325d-d1c9" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Dreadnought" hidden="false" id="a386-a733-a447-a423" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink name="Bjorn the Fell-handed" hidden="false" id="1d01-f2a8-64b8-1fdd" targetId="0e83-a613-4adb-dc90" primary="false"/>
+        <categoryLink targetId="f93e-cfb3-8fe6-16b6" id="0ddb-94b7-b3ba-dd74" primary="false" name="Redemptor Dreadnought"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Trueclaw" hidden="false" id="7348-a907-5c6e-f37b" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f9a-4c46-b3e5-6098" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24e5-cc93-fec0-ac5e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Trueclaw" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1541-0d8e-33dd-e18e">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer" id="ef57-5d95-1954-7d2b" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapon" id="d40d-5cea-2115-b1ad" hidden="false" collective="false" import="true" defaultSelectionEntryId="28d9-057e-1544-6723">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4793-f8f3-50ac-5365" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc6-d148-21a6-8518" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Onslaught Gatling Cannon" hidden="false" id="5595-445b-61e4-3d6c" collective="false" targetId="0c51-98df-45c7-060a" type="selectionEntry"/>
+            <entryLink import="true" name="Macro Plasma Incinerator" hidden="false" id="5691-67f6-e304-ad1d" collective="false" targetId="c155-f8af-a649-6407" type="selectionEntry"/>
+            <entryLink import="true" name="Helfrost Destructor" hidden="false" id="0683-e71e-f0bd-e0b9" type="selectionEntry" targetId="9a32-638e-f9b4-f133"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="46e3-f45b-f36c-a1ab" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Defensive Weapons System" hidden="false" id="0495-8565-6e5f-1ba3" collective="false" targetId="7835-ab08-458d-2e64" type="selectionEntry"/>
+        <entryLink import="true" name="Icarus Rocket Pod" hidden="false" id="fbde-18dd-7546-9b23" collective="false" targetId="084d-262f-bd4b-0403" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="a48a-7764-ada2-9fe5">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a2a0-6f6f-902f-4bba" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Helfrost Destructor" hidden="false" id="9a32-638e-f9b4-f133" collective="false">
+      <profiles>
+        <profile name="Helfrost Destructor" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a21d-723f-0584-7530">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="005d-a5cb-feec-4138" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="b224-fb95-bda9-210a" name="High King of Fenris" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -5033,7 +5137,6 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="4404-0180-5b33-35b4" name="Library - Space Marines" targetId="04e4-e851-ec5e-d9e6" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="cb82-5c8b-3e26-964e" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
     <rule name="And They Shall Know No Fear" id="8643-f35d-04b3-b399" hidden="false">
