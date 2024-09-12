@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -311,7 +311,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="17ff-2d33-e018-df9a" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="17ff-2d33-e018-df9a" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9958-6b71-cabb-cc73">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7cb-6c98-08c6-9df1" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e2d-f5c5-8e1d-0d03" type="max"/>
@@ -489,6 +489,7 @@
     <selectionEntry id="3186-1046-911d-d8a5" name="Eightbound" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="e13b-a723-4b3c-5742" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+        <infoLink name="Deep Strike" id="ca9b-7bcb-2637-68cc" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="80e7-b8dc-046f-64b9" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -517,7 +518,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -525,7 +526,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2d74-e79e-f29f-4364" name="6 Models" hidden="false" collective="false" import="true" type="upgrade">
@@ -538,7 +539,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -546,23 +547,45 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="7e56-7d5b-56ca-7ba5" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" targetId="948d-d4eb-1364-08c4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4d-bd92-7297-6af6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4589-a9dc-e867-21cd" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Eightbound Eviscerators" hidden="false" id="82be-5e59-fa4a-d15e" collective="false">
+          <profiles>
+            <profile name="Eightbound Eviscerators" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8e30-eb19-afd3-1ad6">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cfd-7bff-f635-d524" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="834b-abd7-1c8c-5cc3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Bloodscent" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="d458-7cd1-3aa7-941a">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this units arrives as reinforcements, in addition to the normal Deep Strike restrictions it must be set up wholly within 7&quot; of a battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="cccf-9e4f-bd07-0355" name="Exalted Eightbound" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -604,9 +627,78 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Eightbound Chainfist" hidden="false" id="02e3-5d5c-0e60-6179">
+          <profiles>
+            <profile name="Eightbound Chainfist" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3032-4f13-8276-5bcd">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melle</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ae-a96a-e29a-0e8a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a34-f5b4-499f-5839" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="c7b4-146f-4c3a-2dd9" hidden="false" collective="false" import="true" defaultSelectionEntryId="de50-8128-3073-636b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5040-ee6e-5827-7904" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d607-be79-0553-340e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 Models" hidden="false" id="de50-8128-3073-636b" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41aa-e412-2f22-2289" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Exalted Eightbound (3 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6164-553e-9bb2-f485">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 Models" hidden="false" id="ce44-cbf4-2fbf-630a" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30ab-87ce-b036-63eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Exalted Eightbound (6 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0779-c357-dea0-24b2">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="948d-d4eb-1364-08c4" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -863,7 +955,7 @@
         <entryLink import="true" name="Commander" hidden="false" id="c38b-739f-1fe1-cbe1" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

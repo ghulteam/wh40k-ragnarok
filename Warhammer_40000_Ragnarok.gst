@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="14" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="15" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -155,6 +155,7 @@
             <categoryLink id="8010-5fc9-6315-721b" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
             <categoryLink id="de3a-ab91-9acd-e338" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
             <categoryLink id="1542-b54d-4aa8-6189" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="false"/>
+            <categoryLink name="Lord of War" hidden="false" id="c2af-0bb6-cbb9-b82f" targetId="4ba9-66c8-d53f-061d" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -203,6 +204,11 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="19d1-eeb5-a6a1-8fe4" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Lord of War" hidden="false" id="6f2a-9407-ae25-1fd9" targetId="4ba9-66c8-d53f-061d" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3012-8a1a-44f9-78a3" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="113d-50e8-996e-70c3" name="Spearhead Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -217,6 +223,7 @@
             <categoryLink id="79a6-588a-e45b-0da1" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
             <categoryLink id="8900-8f91-ccc1-4bad" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
             <categoryLink id="be19-b128-67c9-2c78" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+            <categoryLink name="Lord of War" hidden="false" id="e379-3deb-8e93-4526" targetId="4ba9-66c8-d53f-061d" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -265,6 +272,11 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9251-08d4-acc0-6aa6" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Lord of War" hidden="false" id="90d7-9086-2fc2-019c" targetId="4ba9-66c8-d53f-061d" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0d8-36e5-6b6d-1b1a" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="06e1-90a4-1407-f38b" name="Vanguard Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -279,6 +291,7 @@
             <categoryLink id="3350-382b-6cf5-5c32" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
             <categoryLink id="b3ef-03c9-24da-ee19" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
             <categoryLink id="feb9-90ee-b214-2775" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+            <categoryLink name="Lord of War" hidden="false" id="102f-608c-cff0-4795" targetId="4ba9-66c8-d53f-061d" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -325,6 +338,11 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="099d-a55a-aeeb-868f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lord of War" hidden="false" id="3f78-6660-0268-20ba" targetId="4ba9-66c8-d53f-061d" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17a2-cd6a-f1a2-c608" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -474,6 +492,7 @@
             <categoryLink id="b3c4-3c4f-f87c-7f1a" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
             <categoryLink id="6381-719a-9941-56db" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
             <categoryLink id="e2d7-877d-8fc1-7e26" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+            <categoryLink name="Lord of War" hidden="false" id="2d18-aa07-7e19-eb40" targetId="4ba9-66c8-d53f-061d" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -520,6 +539,11 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="02bc-3627-375a-4236" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lord of War" hidden="false" id="2ded-7943-7ffc-f213" targetId="4ba9-66c8-d53f-061d" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97d8-52b8-7d56-010b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -833,9 +857,7 @@
           <profiles>
             <profile id="2838-7f5e-7bac-5104" name="01 - Master Strategist" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="96ed-cabc-a90c-b284" typeName="Warmaster Trait">
               <characteristics>
-                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Increase your Command Asset Array limit for Tactical Assets by 2 whilst this unit is alive. Decide which two additional Assets are added after you generate this Warmaster Trait. This can be either anything from the original Tactical Assets or any other Command Asset you can replace them with. If the model is removed from play, remove these two Assets from your Array.
-
-</characteristic>
+                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Increase your Command Asset Array limit for Tactical Assets by 2 whilst this unit is alive. Decide which two additional Assets are added after you generate this Warmaster Trait. This can be either anything from the original Tactical Assets or any other Command Asset you can replace them with. If the model is removed from play, remove these two Assets from your Array.</characteristic>
               </characteristics>
             </profile>
           </profiles>
