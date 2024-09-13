@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="21a9-75bf-0619-e801" name="Faction: Chaos Knights" hidden="false"/>
     <categoryEntry id="b868-0761-072e-7456" name="Faction: [Questor Traitoris]" hidden="false"/>
@@ -130,11 +130,11 @@
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="395b-0487-1ba7-906c" name="War Dog" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="395b-0487-1ba7-906c" name="War Dog Karnivore" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="3618-540a-06ff-be08" name="War Dog" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="3618-540a-06ff-be08" name="War Dog Karnivore" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
@@ -153,88 +153,30 @@
         <categoryLink id="94a0-f15f-1139-9999" name="War Dog" hidden="false" targetId="0fc9-abe9-7537-40fb" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2997-2e21-47e2-665d" name="Arm Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="29ea-37a4-2985-0398">
+        <selectionEntryGroup id="2997-2e21-47e2-665d" name="Arm Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a0d8-a799-f9ef-4f86">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db0-5484-bdd3-35ee" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d707-0dc5-4140-d519" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="29ea-37a4-2985-0398" name="Two Wardog Autocannons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntries>
-                <selectionEntry id="b127-22c3-c78c-d612" name="War Dog Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5db-3b10-7469-304e" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9952-af3c-1bf6-4012" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="4259-bcf9-6ab8-7edf" name="War Dog Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry id="a0d8-a799-f9ef-4f86" name="Reaper Chaintalon and Slaughterclaw" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="a0d8-a799-f9ef-4f86" name="Thermal Spear and Reaper Chain-cleaver" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntries>
-                <selectionEntry id="141a-1221-18b4-e867" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink import="true" name="Reaper Chaintalon" hidden="false" id="423b-2606-780b-e188" type="selectionEntry" targetId="5c99-00c9-66c2-a03a">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed54-709b-a2c8-6762" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e26-c630-998e-ae41" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afdf-c66e-4463-8798" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3747-0c84-cff8-381a" includeChildSelections="false"/>
                   </constraints>
-                  <profiles>
-                    <profile id="1ec4-f1f4-0991-a94e" name="Thermal Spear" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="cec7-1c0f-fbfc-e9b2" name="Reaper Chain-cleaver" hidden="false" collective="false" import="true" type="upgrade">
+                </entryLink>
+                <entryLink import="true" name="Slaughterclaw" hidden="false" id="891f-283a-c9ea-3d64" type="selectionEntry" targetId="75f8-a527-0390-9a37">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e4f-872b-d39a-e677" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e3a-6095-c368-bbce" type="min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa11-d9ba-bace-1abe" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a72-c54c-01cd-5858" includeChildSelections="false"/>
                   </constraints>
-                  <profiles>
-                    <profile id="28d6-694c-5a52-0cdc" name="Reaper Chain-cleaver" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -611,16 +553,24 @@
         <infoLink id="ae7d-e9fe-9317-3d84" name="Vehicle Squadron" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="5ce5-6095-e977-0ef4" name="War Dog" hidden="false" collective="false" import="true" targetId="395b-0487-1ba7-906c" type="selectionEntry">
+        <entryLink id="5ce5-6095-e977-0ef4" name="War Dog Karnivore" hidden="false" collective="false" import="true" targetId="395b-0487-1ba7-906c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="141e-ec39-5969-fa20" type="min"/>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d2a-e714-73be-67e8" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="War Dog Brigand" hidden="false" id="f6fb-1411-90df-c40f" type="selectionEntry" targetId="4a5e-1ae2-1386-31b2"/>
+        <entryLink import="true" name="War Dog Executioner" hidden="false" id="c75e-97b2-e39a-c78a" type="selectionEntry" targetId="5376-2a95-bf34-9283"/>
+        <entryLink import="true" name="War Dog Huntsman" hidden="false" id="4034-5912-663c-03af" type="selectionEntry" targetId="66f0-33da-6a8f-863b"/>
+        <entryLink import="true" name="War Dog Stalker" hidden="false" id="5179-976b-2630-38bc" type="selectionEntry" targetId="ec70-7e6f-bffa-56f8"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2ee5-6c83-d955-a4a8" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ff5-5046-04f7-c3f5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="15a5-cb84-ffbd-e1d1" name="Renegade Knight Acheron" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1661,6 +1611,383 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="War Dog Brigand" hidden="false" id="4a5e-1ae2-1386-31b2" collective="false">
+      <profiles>
+        <profile name="War Dog Brigand" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="364c-2c9e-2a13-6809">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="46e2-8fae-246a-dab4" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Faction: Chaos Knights" hidden="false" id="7fd4-3131-d9ba-5525" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink name="Faction: [Questor Traitoris]" hidden="false" id="bbe7-77cd-9daf-0ee2" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="a2f7-0f4b-207b-9942" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="ffda-8705-519a-7eb8" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="War Dog" hidden="false" id="1604-2999-5545-e2c1" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Weapons" id="135c-5875-7673-1530" hidden="false" collective="false" import="true" defaultSelectionEntryId="29ea-a501-2053-392e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aae5-d237-634b-697b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c670-1912-d46a-37d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Avenger Chaincannon and Daemonbreath Spear" hidden="false" id="29ea-a501-2053-392e" collective="false">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Avenger Chaincannon" hidden="false" id="13dd-5184-2091-c420" type="selectionEntry" targetId="ee5c-03e1-bd44-4aaa">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dca-89a9-dd9a-d3b8" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec4b-0a1a-3b96-8c0d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Daemonbreath Spear" hidden="false" id="ded1-25b2-1f7b-f928" type="selectionEntry" targetId="4497-f617-941b-683f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64a2-f3e9-74d4-a94a" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6361-ccd0-0724-c1ef" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Carapace Weapon" id="3bd2-59fd-1a0f-2e53" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c73-2752-0f68-0f2e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88c5-8efd-b355-0617" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76c1-fd16-6145-22f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="8c73-2752-0f68-0f2e" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink import="true" name="Meltagun" hidden="false" id="3426-fb29-2728-0cce" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="40d4-aba5-8d26-42b8" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Character (Fallen Courts)" hidden="false" id="7e20-b371-56fd-5d5b" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink import="true" name="Warmaster" hidden="false" id="8f47-b8df-6827-f40d" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink import="true" name="Armoured Feet" hidden="false" id="c91c-04c0-baba-a44f" collective="false" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a12-ce6c-2997-fe62" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="War Dog Stalker" hidden="false" id="ec70-7e6f-bffa-56f8" collective="false">
+      <profiles>
+        <profile name="War Dog Stalker" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3a94-9058-d33e-c003">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="ff3f-0ae7-a4dd-1a1d" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Faction: Chaos Knights" hidden="false" id="1394-cd66-bb85-4df4" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink name="Faction: [Questor Traitoris]" hidden="false" id="f94f-a98a-8b7c-90ce" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="481d-904d-e071-4e89" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="2d78-eab8-96ad-3862" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="War Dog" hidden="false" id="417d-6150-e016-749a" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Weapons" id="65f3-1d8c-35af-4a4a" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbf8-a7d1-526e-1c25">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b2f-5eaa-6faf-c787" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d162-866c-49ca-40ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Avenger Chaincannon and Slaughterclaw" hidden="false" id="dbf8-a7d1-526e-1c25" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Avenger chaincannon" hidden="false" id="a914-8310-0b5f-0211" type="selectionEntry" targetId="ee5c-03e1-bd44-4aaa">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bc-928d-9401-a678" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4409-7a7d-420f-2b6e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Slaughterclaw" hidden="false" id="adf5-2b46-ee03-dbb1" type="selectionEntry" targetId="75f8-a527-0390-9a37">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc9f-54bf-dea0-ade0" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8031-edfc-36e0-900f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Carapace Weapon" id="eccc-da7b-6740-a5fb" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce0a-6fc7-65f2-187c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e438-186f-9139-0c82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7621-66a5-7a5a-390f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="27b6-28c8-dc4a-46f2" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink import="true" name="Meltagun" hidden="false" id="61a1-9aaa-5452-1aa8" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f266-320d-199a-083c" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Character (Fallen Courts)" hidden="false" id="d11a-5320-5db4-7663" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink import="true" name="Warmaster" hidden="false" id="7755-b359-2749-e7fd" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink import="true" name="Armoured Feet" hidden="false" id="b38a-498a-01cf-5f7f" collective="false" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c1b-639e-54e3-cd5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="War Dog Executioner" hidden="false" id="5376-2a95-bf34-9283" collective="false">
+      <profiles>
+        <profile name="War Dog Executioner" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="170d-9477-02e9-1c1b">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="b070-d60a-f37c-c104" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Faction: Chaos Knights" hidden="false" id="406d-d39e-1a1c-e30a" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink name="Faction: [Questor Traitoris]" hidden="false" id="c2af-524e-3b9e-cd3f" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="a5cf-bc43-eb86-ce2e" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="180f-15fe-9b65-0d96" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="War Dog" hidden="false" id="1114-3e93-b8c5-19ed" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Weapons" id="c45c-d794-a627-3e26" hidden="false" collective="false" import="true" defaultSelectionEntryId="0271-2aa5-0b29-1c54">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f041-3641-8d5a-3020" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85f9-9c93-b35c-035c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Wardog Autocannons" hidden="false" id="0271-2aa5-0b29-1c54" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="War Dog Autocannon" hidden="false" id="1afa-da69-029b-763a" collective="false">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7bbf-cadc-4019-662f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0671-acca-b01f-b86c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="War Dog Autocannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f9d2-2b7a-a088-8c12">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Carapace Weapon" id="aca2-1448-3dc7-b5e4" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce0a-6fc7-65f2-187c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5917-c66e-da1e-f166" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef15-5652-4d77-4c07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="5bbc-defe-6cda-45e1" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink import="true" name="Meltagun" hidden="false" id="f2cb-6d00-00eb-b674" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="7554-352f-9ab7-139c" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Character (Fallen Courts)" hidden="false" id="ab83-e883-bbdc-d4ce" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink import="true" name="Warmaster" hidden="false" id="3944-058e-7fe2-d6ac" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink import="true" name="Armoured Feet" hidden="false" id="c3db-b526-6d1f-3fbd" collective="false" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e5a-cb3a-a647-b42b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="War Dog Huntsman" hidden="false" id="66f0-33da-6a8f-863b" collective="false">
+      <profiles>
+        <profile name="War Dog Huntsman" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d14c-5004-f98b-d822">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="1b22-9665-e354-e3b6" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Faction: Chaos Knights" hidden="false" id="849b-42c7-7db4-6cfb" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink name="Faction: [Questor Traitoris]" hidden="false" id="a6b5-9307-67ba-c77f" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="416d-9c20-89e5-dbba" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="af4a-2b39-8902-e674" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="War Dog" hidden="false" id="dfe2-365e-1c49-b7f6" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Weapons" id="b464-1a9c-a1f5-b87b" hidden="false" collective="false" import="true" defaultSelectionEntryId="a785-d60d-d2c3-e327">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d472-ccb2-e028-c73c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6120-e63b-310f-dfbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Daemonbreath Spear and  Reaper Chaintalon" hidden="false" id="a785-d60d-d2c3-e327" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Daemonbreath Spear" hidden="false" id="49f1-5010-0370-71a2" type="selectionEntry" targetId="4497-f617-941b-683f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c1d-7c15-4b0d-a3a4" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a6e-db9a-9f27-6fa5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper Chaintalon" hidden="false" id="0684-c68f-b42f-b409" type="selectionEntry" targetId="5c99-00c9-66c2-a03a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f09c-6189-a871-d370" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62c3-cdb0-f3fd-7ac5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Carapace Weapon" id="84b1-bb29-42e1-3d99" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce0a-6fc7-65f2-187c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f4-2d95-097a-b7e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a04-696f-e248-d588" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="8f93-bdf3-6c6e-084a" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink import="true" name="Meltagun" hidden="false" id="fdd9-5cc7-f608-87fb" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="7f71-f5d5-e376-007f" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Character (Fallen Courts)" hidden="false" id="80c0-9a7f-e0df-5843" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink import="true" name="Warmaster" hidden="false" id="1dff-1def-b0c8-f8b8" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink import="true" name="Armoured Feet" hidden="false" id="b287-4751-3878-49f0" collective="false" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0c8-31c5-7ca5-9351" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Avenger Chaincannon" hidden="false" id="ee5c-03e1-bd44-4aaa" collective="false">
+      <profiles>
+        <profile name="Avenger chaincannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="149e-4b84-9493-2cd6">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Slaughterclaw" hidden="false" id="75f8-a527-0390-9a37" collective="false">
+      <profiles>
+        <profile name="Slaughterclaw" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7caa-69f2-265f-d232">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper Chaintalon" hidden="false" id="5c99-00c9-66c2-a03a" collective="false">
+      <profiles>
+        <profile name="Reaper Chain-cleaver" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="18e0-2086-0b9b-6357">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemonbreath Spear" hidden="false" id="4497-f617-941b-683f" collective="false">
+      <profiles>
+        <profile name="Daemonbreath Spear" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5103-32ce-69ab-98ce">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
