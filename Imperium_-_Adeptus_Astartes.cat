@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="34" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -191,11 +191,35 @@
       <categoryLinks>
         <categoryLink id="94a6-272c-559f-765d" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Land Raider Excelsior" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="2db8-d193-c7c9-dbcf">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Data Augur" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1104-0e8d-ed4f-c16c">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Change this unit’s Ballistic Skill characteristic to 2+ whilst it is within 6&quot; of any friendly [CHAPTER] RHINO PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink id="b768-96a2-3723-ce3d" name="Rhino Primaris" hidden="false" collective="false" import="true" targetId="6fdd-0f7d-c487-6743" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e583-d2d9-a678-4e4a" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Rhino Primaris" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="9f58-7871-92e2-1cf6">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Servo-skull Hub" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0204-b19f-29df-ffca">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can remove one small blast marker from one friendly [CHAPTER] VEHICLE unit within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink id="0937-b575-b813-5ada" name="Primaris Lieutenants" hidden="false" collective="false" import="true" targetId="bbe6-4a4c-8477-4b34" type="selectionEntry">
       <categoryLinks>
@@ -304,7 +328,7 @@
       <profiles>
         <profile id="14b8-4593-e00e-8ee1" name="Land Raider" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models. It cannot transport PRIMARIS units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -316,7 +340,7 @@
       <profiles>
         <profile id="84c0-cf3e-c200-fa07" name="Land Raider Crusader" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 16 friendly [CHAPTER] INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models. It cannot transport PRIMARIS units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 16 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -325,7 +349,7 @@
       <profiles>
         <profile id="763f-6030-2212-ea64" name="Land Raider Redeemer" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models. It cannot transport PRIMARIS units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 14 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -366,7 +390,7 @@
       <profiles>
         <profile id="f8c5-198a-9809-b12c" name="Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. It cannot transport PRIMARIS, TERMINATOR, CENTURION or JUMP PACK units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -378,7 +402,7 @@
       <profiles>
         <profile id="e2c3-5817-24b1-3f21" name="Razorback" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. It cannot transport PRIMARIS, TERMINATOR, CENTURION or JUMP PACK units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -390,7 +414,7 @@
       <profiles>
         <profile id="264c-0331-097d-cd55" name="Drop Pod" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. It cannot transport PRIMARIS, TERMINATOR, CENTURION or JUMP PACK units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -402,7 +426,7 @@
       <profiles>
         <profile id="c9cf-3686-bd28-3985" name="Land Speeder Storm" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY SCOUT models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY SCOUT models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -411,7 +435,7 @@
       <profiles>
         <profile id="af87-b675-f186-874a" name="Repulsor" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] PRIMARIS INFANTRY models. Each MK X GRAVIS model takes up the space of 2 other models. It cannot transport JUMP PACK units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS, or TERMINATOR model takes up the space of 2 other INFANTRY models. Each CENTURION model takes up the space of 3 other INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -428,7 +452,7 @@
       <profiles>
         <profile id="883f-d424-3a37-e58c" name="Stormraven Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models and 1 friendly [CHAPTER] DREADNOUGHT. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models and 1 friendly [CHAPTER] DREADNOUGHT. Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -460,7 +484,7 @@
       <profiles>
         <profile id="7241-d8ab-9ecc-69c9" name="Relic Land Raider Proteus" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -472,7 +496,7 @@
       <profiles>
         <profile id="198d-b722-5c69-a26f" name="Land Raider Helios" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -484,7 +508,7 @@
       <profiles>
         <profile id="7682-e465-1362-1aa9" name="Terrax-pattern Termite Assault Drill" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION, PRIMARIS or WULFEN models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -496,7 +520,7 @@
       <profiles>
         <profile id="9897-ab07-a672-eb95" name="Land Raider Prometheus" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -508,7 +532,7 @@
       <profiles>
         <profile id="89f5-71c7-ed50-8825" name="Land Raider Achilles" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -535,7 +559,7 @@
       <profiles>
         <profile id="dbfc-0850-696f-adb9" name="Relic Spartan Assault Tank" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 25 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 28 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -563,11 +587,10 @@
       <profiles>
         <profile id="b811-df15-b26a-5372" name="Relic Mastodon Super-heavy Siege Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport friendly &lt;CHAPTER&gt; models in one of the following combinations:
-- Up to 40 INFANTRY models.
-- Up to 30 INFANTRY models and 1 DREADNOUGHT model.
-- Up to 20 INFANTRY models and up to 2 DREADNOUGHT models. 
-TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport friendly up to 45 &lt;CHAPTER&gt; INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. 
+
+This model can also transport up to 2 &lt;CHAPTER&gt; DREADNOUGHT models. (These models take up the space of a number of other models equal to 5 times their maximum Wounds characteristic e.g. a DREADNOUGHT with a Wounds characteristic of 2 would take up the space of 10 models).
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -641,7 +664,7 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
       <profiles>
         <profile id="1588-8602-077e-a2ff" name="Storm Eagle Assault Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 20 friendly [CHAPTER] INFANTRY models. TERMINATOR and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. It cannot transport PRIMARIS models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 22 friendly [CHAPTER] INFANTRY models. TERMINATOR, GRAVIS and JUMP PACK models take up the space of 2 other models and each CENTURION model takes up the space of 3 other models. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -672,7 +695,7 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
       <profiles>
         <profile id="efdf-8c42-0794-7d9a" name="Caestus Assault Ram" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, CENTURION or TERMINATOR models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes the space of 2 other INFANTRY models, and each CENTURION model takes the space of 3 other Infantry models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -684,10 +707,7 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
       <profiles>
         <profile id="6fd1-6ac9-95a8-76eb" name="Thunderhawk Assault Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport friendly &lt;CHAPTER&gt; models in one of the following combinations:
-- Up to 30 INFANTRY (excluding PRIMARIS) or BIKER models.
-- Up to 15 PRIMARIS INFANTRY models.
-Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and each CENTURION and BIKER model takes up the space of 3 other models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to friendly 30 [CHAPTER] INFANTRY or BIKER models. Each TERMINATOR, GRAVIS or JUMP PACK model takes up the space of 2 other models and each CENTURION model take the space of 3 other models and each BIKER model takes up the space of 4 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -699,13 +719,11 @@ Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and eac
       <profiles>
         <profile id="beaa-9b82-ca56-9f4a" name="Thunderhawk Transporter" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 15 friendly &lt;CHAPTER&gt; INFANTRY or BIKER models. Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and each CENTURION and BIKER model takes up the space of 3 other models. It cannot transport PRIMARIS models.
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 15 friendly [CHAPTER] INFANTRY or BIKER models. Each TERMINATOR, GRAVIS and JUMP PACK model takes up the space of 2 other models and each CENTURION model take the space of 3 other models and each BIKER model takes up the space of 4 other models.
 
-In addition, this unit can also transport one of the following:
-- 1 LAND RAIDER model or RELIC SPARTAN ASSAULT TANK model.
-- Up to 2 of the following models: RHINO, RAZORBACK, PREDATOR, WHIRLWIND, HUNTER, STALKER, VINDICATOR. 
+In addition, this unit can also transport 2 [CHAPTER] VEHICLE models (excluding AIRCRAFT and TITANIC models).
 
-LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transport models whilst they are embarked aboard this unit.</characteristic>
+Transport vehicle that are themselves transported by this model can transport models whilst they are embarked aboard this unit. These models do not count against the transport capacity of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -717,7 +735,8 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="d295-2631-695d-dcc7" name="Sokar Pattern Stormbird" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 50 friendly [CHAPTER] INFANTRY or BIKER models, or up to 25 friendly [CHAPTER] INFANTRY or BIKER models amd 1 RHINO model. Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and each CENTURION and BIKER model takes up the space of 3 other models. A RHINO can transport models whilst it is embarked aboard this unit.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 55 friendly [CHAPTER] INFANTRY or BIKER models. Each TERMINATOR, GRAVIS or JUMP PACK model takes up the space of 2 other models and each CENTURION model take the space of 3 other models and each BIKER model takes up the space of 4 other models.
+This model can also Transport up to 1 RHINO model (this model – and any models embarked within it – take up the space of 25 models).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -729,7 +748,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="655c-11d9-92cd-6670" name="Damocles Command Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 1 friendly [CHAPTER] INFANTRY CHARACTER model. It cannot transport PRIMARIS, CENTURION or TERMINATOR model</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 1 friendly [CHAPTER] INFANTRY CHARACTER model. It cannot transport GRAVIS, CENTURION or TERMINATOR model</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -783,7 +802,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="fcf3-73e0-3be0-937f" name="Bunker Annex" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly [CHAPTER] INFANTRY models. Each TERMINATOR, GRAVIS and JUMP PACK model takes up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -798,7 +817,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="7ab7-958f-1937-bdec" name="Tacticus Bunker" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 30 friendly [CHAPTER] INFANTRY models. Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 30 friendly [CHAPTER] INFANTRY models. Each TERMINATOR, GRAVIS and JUMP PACK model takes up the space of 2 other models and each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -833,7 +852,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="f38f-ad2d-2f4e-18c4" name="Repulsor Executioner" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] PRIMARIS INFANTRY models. Each MK X GRAVIS model takes up the space of 2 other models. It cannot transport JUMP PACK units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes up the space of 2 other models. Each CENTURION model takes up the space of 3 other models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -855,7 +874,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       <profiles>
         <profile id="8988-29d6-1b4e-a863" name="Impulsor" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] PRIMARIS INFANTRY models. It cannot transport JUMP PACK or MK X GRAVIS units.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly [CHAPTER] INFANTRY models. It cannot transport JUMP PACK, TERMINATOR, CENTURION or GRAVIS units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
