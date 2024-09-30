@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36bc-7e22-fe8f-d61c" name="Unaligned" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="36bc-7e22-fe8f-d61c" name="Unaligned" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a5a-e86c-95b1-af1a" name="Faction: Unaligned" hidden="false"/>
     <categoryEntry id="f43f-4d40-bdd9-9dc3" name="Aegis Defence Line" hidden="false"/>
@@ -22,6 +22,9 @@
     <categoryEntry id="7256-ef3d-ecb0-07e5" name="Imperial Fortress Wall" hidden="false"/>
     <categoryEntry id="3e81-642b-650c-10b9" name="Primaris Redoubt" hidden="false"/>
     <categoryEntry id="c71d-5931-7128-dcd4" name="Ambull" hidden="false"/>
+    <categoryEntry name="Heavy Turret" id="ddb4-77c8-349a-e480" hidden="false"/>
+    <categoryEntry name="Imperial Defence Wall" id="4020-e17d-5691-cbf5" hidden="false"/>
+    <categoryEntry name="Fortress Bunker" id="b38a-cd6d-7569-1588" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="31ac-c715-3ad2-82a7" name="Aegis Defense Line" hidden="false" collective="false" import="true" targetId="136d-e4ca-9f9b-afe6" type="selectionEntry">
@@ -107,6 +110,16 @@
     <entryLink id="cc61-0fd1-eeca-8ac1" name="Vortex Missile Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="4f46-0972-acc2-4965" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="29bf-2f35-4a77-010d" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Imperial Defence Wall" hidden="false" id="a065-3bd1-99ea-c062" type="selectionEntry" targetId="dea6-e49e-d74e-3a6a">
+      <categoryLinks>
+        <categoryLink targetId="e2ad-0813-395c-442a" id="793a-0f88-3ed5-a8a9" primary="false" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fortress Bunker" hidden="false" id="3a2c-b64d-51a0-0bc7" type="selectionEntry" targetId="3965-cc45-4847-b435">
+      <categoryLinks>
+        <categoryLink targetId="e2ad-0813-395c-442a" id="249d-02eb-14cb-9452" primary="false" name="Fortification"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1215,6 +1228,324 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Turret" hidden="false" id="2af0-f3ee-29cf-3843" collective="false">
+      <profiles>
+        <profile name="Heavy Battle Cannon" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="73d4-1c48-35e0-b3bd">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 20 INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Battle Cannon" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0273-fd84-8312-386c">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">10</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fire Points" id="f67d-9079-4f31-1d7b" hidden="false" targetId="6924-3906-21b5-611b" type="profile"/>
+        <infoLink name="Open-topped" id="fe83-1269-88ed-41da" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
+        <infoLink name="Automated Weapons" id="d42c-6357-dbc9-30f4" hidden="false" targetId="1a81-00d5-81df-fd19" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="112d-ca1a-502c-2734" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Building" hidden="false" id="0b7e-1865-f9ba-e11f" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="b07a-82b1-f6f8-77fc" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="60b0-0150-45f8-736f" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink targetId="ddb4-77c8-349a-e480" id="40a5-3616-7584-d40c" primary="false" name="Heavy Turret"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="3671-27f8-40c7-c15c" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Battle Cannon" hidden="false" id="8498-af00-a8e2-a587" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4cf-cded-3bf4-cc72" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b602-e564-ecaa-c1c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Battle Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6bc2-67ba-287d-4532">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Imperial Defence Wall (2 segments)" hidden="false" id="0c50-edfd-d9af-6069" collective="false">
+      <profiles>
+        <profile name="Imperial Defence Wall (2 segments)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="26a8-1e48-0ded-d7be">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">10</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="7db8-37d3-6a82-6ad2" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="ff3b-d18c-233e-0ec6" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Building" hidden="false" id="08de-1692-a303-ebc4" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="f9ab-b337-6b1b-5156" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink targetId="4020-e17d-5691-cbf5" id="19b4-363a-5d6e-6f8c" primary="false" name="Imperial Defence Wall"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="fb38-053b-66af-2cbe">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d8cf-803c-22f5-6555" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="474b-c81f-086c-a059" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="9cf2-fdd0-2718-bf8a" hidden="false" type="profile" targetId="3ba6-c9eb-0113-b222"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fully Automated Weapons" id="51b4-af57-da29-aaa5" hidden="false" type="profile" targetId="9172-4330-0da9-6452"/>
+        <infoLink name="Supreme Bulwark" id="319d-3e3f-6d6d-d518" hidden="false" type="profile" targetId="d737-949c-5e76-a89c"/>
+        <infoLink name="Walled" id="0467-f607-c8f8-6a24" hidden="false" type="profile" targetId="5d0c-b63f-a12c-1790"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Imperial Defence Wall (gate)" hidden="false" id="074c-e84b-85ff-c69f" collective="false">
+      <profiles>
+        <profile name="Imperial Defence Wall (gate)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="dcda-2fe3-db34-0ea2">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">10</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Solid Gatehouse" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b00d-e6ef-e653-a576">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is destroyed, mark the Gate as destroyed, but keep the model for the Gatehouse on the battlefield.
+This unit may still use its Weapons with its Fully Automated Weapons ability and Units ontop of this Model are still affected by its Supreme Bulwark ability, but Units may now pass the Gate.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="0eaa-4b66-4355-16b0" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="b9d7-0792-14b1-b1e3" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Building" hidden="false" id="d6e9-b21f-e85e-307a" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="acde-0914-aa41-0cd8" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink targetId="4020-e17d-5691-cbf5" id="05b1-1836-8148-0d0e" primary="false" name="Imperial Defence Wall"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="1ec0-85c1-4db4-adfc">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0638-3d15-004b-70bf" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f218-3246-7e7f-8a69" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="619c-63a9-de04-0f62" hidden="false" type="profile" targetId="3ba6-c9eb-0113-b222"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fully Automated Weapons" id="0b48-b52c-59a1-272a" hidden="false" type="profile" targetId="9172-4330-0da9-6452"/>
+        <infoLink name="Supreme Bulwark" id="e230-49c7-2537-500c" hidden="false" type="profile" targetId="d737-949c-5e76-a89c"/>
+        <infoLink name="Walled" id="832f-7a22-fd25-58cf" hidden="false" type="profile" targetId="5d0c-b63f-a12c-1790"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fortress Bunker" hidden="false" id="3965-cc45-4847-b435" collective="false">
+      <profiles>
+        <profile name="Fortress Bunker" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="23ce-79e0-598b-b939">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 30 INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fortress Bunker" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4dcd-426d-0416-214f">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">10</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Open-topped" id="9fa8-8514-bb16-54bc" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
+        <infoLink name="Extensive Firepoints" id="652c-c82e-f1a2-2a8a" hidden="false" targetId="506b-60f1-e520-63c9" type="profile"/>
+        <infoLink name="Automated Weapons" id="6ff6-fd06-8ccf-8cfb" hidden="false" targetId="1a81-00d5-81df-fd19" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="8feb-1e96-0bb5-0c27" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Super-heavy" hidden="false" id="5519-8d45-7fe3-a3f0" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink name="Building" hidden="false" id="18ab-ff4f-6a4e-7c77" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="8fd7-e490-b791-6280" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="acc2-3b0d-831c-9d91" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink targetId="b38a-cd6d-7569-1588" id="b915-d0ef-60b8-3b9d" primary="false" name="Fortress Bunker"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Quad Icarus Autocannon" hidden="false" id="730b-ed82-3860-bd43">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1fe-0a19-5a7f-f049" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a066-d685-add3-4950" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Anti-air" id="c53f-c2a6-7437-f4d5" hidden="false" type="rule" targetId="48b8-058a-9085-0e80"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Quad Icarus Autocannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6d2a-5e8e-cdaf-2557">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Point Defence Array" hidden="false" id="88b2-1dcc-e1e3-cae4">
+          <profiles>
+            <profile name="Point Defence Array" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3f1d-2cb2-9055-8347">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="92d5-b85c-6dfc-e720" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="92f8-351f-1da9-7d65" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="20ff-8a37-40f9-cf94" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="8957-e31c-3f01-5361" type="selectionEntry" targetId="6296-86a5-9a2b-3303">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9b5-1d0e-a428-1b24" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2912-e74a-65ca-adff" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Imperial Defence Wall" hidden="false" id="dea6-e49e-d74e-3a6a" collective="false">
+      <profiles>
+        <profile name="Imperial Defence Wall" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="de90-cec4-30fa-02e7">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">An Imperial Defence Wall is a unit that contains 1 Gate and multiple 2 segment and 3 segment models. After this unit is set up, each model in this unit is treated as its own unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Static Defence Network" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6490-d391-8fc2-faec">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit is set up, each model must be placed so that it is in end-to-end contact with at least one other model from this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="c3d8-55af-5227-917c" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="4191-cb4e-a688-2fd3" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink targetId="4020-e17d-5691-cbf5" id="467b-343c-0fac-ca1c" primary="false" name="Imperial Defence Wall"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Imperial Defence Wall" id="14f7-eee5-7647-f749" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Imperial Defence Wall (gate)" hidden="false" id="1426-d2b8-9e37-0e4c" type="selectionEntry" targetId="074c-e84b-85ff-c69f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5196-ed91-4267-ce3c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55b1-0db5-7be3-cc85" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Imperial Defence Wall (2 segments)" hidden="false" id="38be-5ec5-9366-a1b9" type="selectionEntry" targetId="0c50-edfd-d9af-6069"/>
+            <entryLink import="true" name="Imperial Defence Wall (3 segments)" hidden="false" id="1f85-918c-49ab-c275" type="selectionEntry" targetId="f5e0-d103-5e8a-0740"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cf1a-5085-113d-e2c5"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Imperial Defence Wall (3 segments)" hidden="false" id="f5e0-d103-5e8a-0740" collective="false">
+      <profiles>
+        <profile name="Imperial Defence Wall (3 segments)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bf64-785c-e6b8-4b8d">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">12</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">10</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Unaligned" hidden="false" id="fb8d-3269-7d1a-3ecb" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="524b-0ec8-d202-6627" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Building" hidden="false" id="3c57-06b0-d09e-07a6" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="de33-8c36-90f1-bc5e" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink targetId="4020-e17d-5691-cbf5" id="bfb8-3588-5291-3066" primary="false" name="Imperial Defence Wall"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="753d-c83b-9bc7-30e9">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a1cb-8d8d-d44b-b04a" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="24f6-8ac4-db23-7519" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="f543-5f65-6e94-4afc" hidden="false" type="profile" targetId="3ba6-c9eb-0113-b222"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fully Automated Weapons" id="533b-9883-30f0-e934" hidden="false" type="profile" targetId="9172-4330-0da9-6452"/>
+        <infoLink name="Supreme Bulwark" id="a1df-2ede-58c2-199d" hidden="false" type="profile" targetId="d737-949c-5e76-a89c"/>
+        <infoLink name="Walled" id="07a6-868e-c020-6f1e" hidden="false" type="profile" targetId="5d0c-b63f-a12c-1790"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="c83a-5090-6640-dcbc" name="Weapon" hidden="false" collective="false" import="true">
@@ -1295,8 +1626,28 @@
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">No more than two units can make use of this unit’s Open-topped ability each turn – those units combined can contain no more than 15 models.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Walled" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="5d0c-b63f-a12c-1790">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">A Imperial Defence Wall has a front and a back. After setting up the Defence Well decide which direction the Front is. The Front counts as impassable Terrain while the Units is still on the Battlefield.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Supreme Bulwark" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="d737-949c-5e76-a89c">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units can enter the Imperial Defence Wall as if it open terrain. While a Unit is ontop of a Imperial Defence Wall increase its Sv characteristic to 6+, if its Sv characteristic is not already better. A Sv characeristic increased this way cannot be increased any other way.
+If this unit gets destroyed place a Large Blast marker next to every unit on top of this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fully Automated Weapons" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9172-4330-0da9-6452">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action it must target the closest enemy unit. Weapons with the Anti-air ability this unit is equipped with can instead target the closest enemy unit that can FLY. If more than one such unit is equally close, select one of those units to target.
+If this Unit is not part of an Detachement, resolve these shots at the end of the Activation Phase.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="03b0-bd27-6796-a386" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <infoLinks>
+    <infoLink name="Walled" id="f409-cd91-2e7e-6c94" hidden="false" type="profile" targetId="5d0c-b63f-a12c-1790"/>
+  </infoLinks>
 </catalogue>
