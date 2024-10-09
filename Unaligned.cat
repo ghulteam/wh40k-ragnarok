@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36bc-7e22-fe8f-d61c" name="Unaligned" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="36bc-7e22-fe8f-d61c" name="Unaligned" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a5a-e86c-95b1-af1a" name="Faction: Unaligned" hidden="false"/>
     <categoryEntry id="f43f-4d40-bdd9-9dc3" name="Aegis Defence Line" hidden="false"/>
@@ -114,12 +114,17 @@
     </entryLink>
     <entryLink import="true" name="Imperial Defence Wall" hidden="false" id="a065-3bd1-99ea-c062" type="selectionEntry" targetId="dea6-e49e-d74e-3a6a">
       <categoryLinks>
-        <categoryLink targetId="e2ad-0813-395c-442a" id="793a-0f88-3ed5-a8a9" primary="false" name="Fortification"/>
+        <categoryLink targetId="e2ad-0813-395c-442a" id="793a-0f88-3ed5-a8a9" primary="true" name="Fortification"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Fortress Bunker" hidden="false" id="3a2c-b64d-51a0-0bc7" type="selectionEntry" targetId="3965-cc45-4847-b435">
       <categoryLinks>
-        <categoryLink targetId="e2ad-0813-395c-442a" id="249d-02eb-14cb-9452" primary="false" name="Fortification"/>
+        <categoryLink targetId="e2ad-0813-395c-442a" id="249d-02eb-14cb-9452" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Heavy Turret" hidden="false" id="f920-a8d5-e0ba-ebbb" type="selectionEntry" targetId="2af0-f3ee-29cf-3843">
+      <categoryLinks>
+        <categoryLink targetId="e2ad-0813-395c-442a" id="8c00-c8e9-1bd8-eaad" primary="true" name="Fortification"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1499,9 +1504,6 @@ This unit may still use its Weapons with its Fully Automated Weapons ability and
             <entryLink import="true" name="Imperial Defence Wall (2 segments)" hidden="false" id="38be-5ec5-9366-a1b9" type="selectionEntry" targetId="0c50-edfd-d9af-6069"/>
             <entryLink import="true" name="Imperial Defence Wall (3 segments)" hidden="false" id="1f85-918c-49ab-c275" type="selectionEntry" targetId="f5e0-d103-5e8a-0740"/>
           </entryLinks>
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cf1a-5085-113d-e2c5"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
