@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="21a9-75bf-0619-e801" name="Faction: Chaos Knights" hidden="false"/>
     <categoryEntry id="b868-0761-072e-7456" name="Faction: [Questor Traitoris]" hidden="false"/>
@@ -95,6 +95,26 @@
     <entryLink id="cc26-8691-5eb9-39c6" name="War Dog Moirax Squadron" hidden="false" collective="false" import="true" targetId="042b-f2b5-66b0-5f04" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="49ec-ee17-f11b-fea8" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="War Dog Executioner Squadron" hidden="false" id="9456-5e9e-4030-47ff" type="selectionEntry" targetId="7b46-8fb7-7eb3-f117">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="6df4-b145-ee06-3f25" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="War Dog Huntsman Squadron" hidden="false" id="0ca6-9e5f-009e-ae88" type="selectionEntry" targetId="4544-c8d5-c691-e1dc">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="c20d-5ee4-d66c-fc3c" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="War Dog Karnivore Squadron" hidden="false" id="39f0-34c3-e0fb-9886" type="selectionEntry" targetId="6871-f09d-fad0-4b92">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="4009-1a53-8389-c0fe" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="War Dog Stalker Squadron" hidden="false" id="0d36-b269-32c7-1f86" type="selectionEntry" targetId="63de-d4fe-015a-15fe">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="c779-73ea-d815-ec8b" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -548,24 +568,21 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8887-d3ef-4835-7bb5" name="War Dog Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8887-d3ef-4835-7bb5" name="War Dog Brigand Squadron" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ae7d-e9fe-9317-3d84" name="Vehicle Squadron" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="5ce5-6095-e977-0ef4" name="War Dog Karnivore" hidden="false" collective="false" import="true" targetId="395b-0487-1ba7-906c" type="selectionEntry"/>
-        <entryLink import="true" name="War Dog Brigand" hidden="false" id="f6fb-1411-90df-c40f" type="selectionEntry" targetId="4a5e-1ae2-1386-31b2"/>
-        <entryLink import="true" name="War Dog Executioner" hidden="false" id="c75e-97b2-e39a-c78a" type="selectionEntry" targetId="5376-2a95-bf34-9283"/>
-        <entryLink import="true" name="War Dog Huntsman" hidden="false" id="4034-5912-663c-03af" type="selectionEntry" targetId="66f0-33da-6a8f-863b"/>
-        <entryLink import="true" name="War Dog Stalker" hidden="false" id="5179-976b-2630-38bc" type="selectionEntry" targetId="ec70-7e6f-bffa-56f8"/>
+        <entryLink import="true" name="War Dog Brigand" hidden="false" id="f6fb-1411-90df-c40f" type="selectionEntry" targetId="4a5e-1ae2-1386-31b2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8016-597f-2981-5cd3"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4b9-2b04-df18-e355"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="2ee5-6c83-d955-a4a8" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="6ff5-5046-04f7-c3f5" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry id="15a5-cb84-ffbd-e1d1" name="Renegade Knight Acheron" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1984,6 +2001,70 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dog Executioner Squadron" hidden="false" id="7b46-8fb7-7eb3-f117" collective="false">
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="b407-1cb1-e3a6-b098" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="War Dog Executioner" hidden="false" id="6706-fde7-1acd-aea9" type="selectionEntry" targetId="5376-2a95-bf34-9283">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="46f6-9daa-68b1-54d3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="396a-59f7-d445-5ec9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dog Huntsman Squadron" hidden="false" id="4544-c8d5-c691-e1dc" collective="false">
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="0015-0354-0dbc-892d" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="War Dog Huntsman" hidden="false" id="4761-b201-fa26-f82a" type="selectionEntry" targetId="66f0-33da-6a8f-863b">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7c1f-ef87-84e4-b77a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d07-8a7f-25d6-d09a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dog Karnivore Squadron" hidden="false" id="6871-f09d-fad0-4b92" collective="false">
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="ed7a-c0cd-fbf1-715a" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="War Dog Karnivore" hidden="false" id="abb6-beb2-1be5-9f92" collective="false" targetId="395b-0487-1ba7-906c" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fa80-9453-9356-b3f9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3d8-a974-1dcc-d136" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dog Stalker Squadron" hidden="false" id="63de-d4fe-015a-15fe" collective="false">
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="d303-b859-4617-4f0a" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="War Dog Stalker" hidden="false" id="2f22-a6ac-a142-3660" type="selectionEntry" targetId="ec70-7e6f-bffa-56f8">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0e47-3e42-efa7-09a6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be63-7ce3-d15f-0b8d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
