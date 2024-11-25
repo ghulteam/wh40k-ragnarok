@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5eb-4684-4b14-aeca" name="Chaos - Renegades and Heretics" revision="11" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d5eb-4684-4b14-aeca" name="Chaos - Renegades and Heretics" revision="12" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="cdd6-b04b-690c-bca3" name="Mutated Beyond Reason - D3 Roll">
       <characteristicTypes>
@@ -2794,31 +2794,6 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="dbb1-7736-03e9-05ff" name="Heavy Weapon" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry id="5130-20da-1c32-2b1e" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5c-31e8-5b74-f00f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="935f-7576-b14b-667e" name="Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a890-b2a4-01f2-d2a7" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="8ea7-747b-5583-146d" name="Autocannon" hidden="false" collective="false" import="true" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
           <constraints>
@@ -2843,6 +2818,11 @@
         <entryLink id="b97c-3192-7f84-43e5" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e96-6b19-cbb4-c7c2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mortar" hidden="false" id="7bb5-6339-1b4b-cdd9" type="selectionEntry" targetId="c8c3-6531-3c08-c871">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f578-41d1-5a6e-7430" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>

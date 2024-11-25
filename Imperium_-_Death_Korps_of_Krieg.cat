@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5be3-8726-078b-1a23" name="Faction: Officio Prefectus" hidden="false"/>
     <categoryEntry id="7e0f-9b5b-7250-2db7" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false"/>
@@ -647,17 +647,6 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bde-4766-5b41-7a4a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ffd4-6637-0f95-f33b" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aec2-ff42-5ae3-f496" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="8cad-a25c-a70f-a1f7" name="Mortar" hidden="false" targetId="c2e2-a2fc-d2e8-d04a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="7097-c994-0de0-a5dc" name="Twin Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629a-1317-8752-6ccb" type="max"/>
@@ -703,6 +692,11 @@
             <entryLink import="true" name="Missile Launcher" hidden="false" id="a13d-e255-5e17-b700" type="selectionEntry" targetId="a524-9ae0-16b9-cd61">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa07-1183-18f4-b61b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mortar" hidden="false" id="fd21-3cc4-8a45-abf3" type="selectionEntry" targetId="c8c3-6531-3c08-c871">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5dc-0228-773f-4de2" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1839,16 +1833,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c2e2-a2fc-d2e8-d04a" name="Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
       </characteristics>
     </profile>
     <profile id="caef-f710-d0de-c438" name="Officer Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">

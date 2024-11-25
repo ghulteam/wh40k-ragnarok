@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c20-063f-968c-8547" name="Library - Weapons" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4c20-063f-968c-8547" name="Library - Weapons" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4b2d-6f39-3754-8981" name="Cypher" hidden="false"/>
     <categoryEntry id="fbe6-07fa-0346-50fa" name="Faction: Fallen" hidden="false"/>
@@ -2125,6 +2125,47 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="6e15-ceef-3fb3-af00" collective="false">
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Multi-laser" id="502d-c16b-674e-5499" hidden="false" type="profile" targetId="e739-2288-f22f-e92e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mortar" hidden="false" id="c8c3-6531-3c08-c871" collective="false">
+      <profiles>
+        <profile name="Mortar" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0950-fa7f-d2f6-b292">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="a5ce-a664-14ff-73ac" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Multi-laser" hidden="false" id="5825-8f3f-27d7-1d89" collective="false">
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Multi-laser" id="5db0-79dd-b22d-f269" hidden="false" type="profile" targetId="e739-2288-f22f-e92e">
+          <modifiers>
+            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+            <modifier type="set" value="Twin Multi-laser" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="59d9-521f-7559-6fa6" name="Heavy Flamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -2215,6 +2256,16 @@
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Multi-laser" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e739-2288-f22f-e92e">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
