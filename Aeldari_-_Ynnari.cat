@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bc18-dce9-603f-55f1" name="Aeldari - Ynnari" revision="6" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bc18-dce9-603f-55f1" name="Aeldari - Ynnari" revision="7" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b8eb-af0c-4700-6863" name="Faction: Ynnari" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="1e85-4238-c259-0ea8" name="Yvraine" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -9,24 +9,24 @@
   <entryLinks>
     <entryLink id="8f7b-63ad-22e1-e896" name="The Visarch" hidden="false" collective="false" import="true" targetId="7a5a-a144-d8bf-314f" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ca9a-ec2a-7ab9-1696" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="ca9a-ec2a-7ab9-1696" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1716-8d01-b28d-a222" name="The Yncarne" hidden="false" collective="false" import="true" targetId="fa64-5ec0-197e-c36e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ae98-f27e-c6a5-6114" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="ae98-f27e-c6a5-6114" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="da48-8c7e-b09f-a82c" name="Yvraine" hidden="false" collective="false" import="true" targetId="3b6b-b0f9-6361-03b4" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8af2-cb1b-8bf1-c021" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="8af2-cb1b-8bf1-c021" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3b6b-b0f9-6361-03b4" name="Yvraine" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0da-feac-a4bb-081f" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0da-feac-a4bb-081f" type="max"/>
       </constraints>
       <profiles>
         <profile id="c173-e24a-3a85-167b" name="Yvraine" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -58,8 +58,8 @@
       <selectionEntries>
         <selectionEntry id="4f41-7679-d566-f721" name="Kha-vir, the Sword of Sorrows" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f37f-9dd3-c0e8-51e2" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9a-684e-52d7-67c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f37f-9dd3-c0e8-51e2" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9a-684e-52d7-67c0" type="min"/>
           </constraints>
           <profiles>
             <profile id="d752-4c53-65d7-3f6b" name="Kha-vir, the Sword of Sorrows" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -74,7 +74,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -82,12 +82,12 @@
         <entryLink id="9f69-8750-7d4f-b317" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7a5a-a144-d8bf-314f" name="The Visarch" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f243-0bb5-5a60-1e70" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f243-0bb5-5a60-1e70" type="max"/>
       </constraints>
       <profiles>
         <profile id="be4c-9e1f-0e7e-2886" name="The Visarch" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -118,8 +118,8 @@
       <selectionEntries>
         <selectionEntry id="2aca-dddb-2084-168b" name="Asu-var, the Sword of Silent Screams" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3b-161f-2988-9ead" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb9-da04-201c-7f6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3b-161f-2988-9ead" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb9-da04-201c-7f6d" type="min"/>
           </constraints>
           <profiles>
             <profile id="3e5a-b081-ed09-7ce6" name="Asu-var, the Sword of Silent Screams" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -134,7 +134,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -142,12 +142,12 @@
         <entryLink id="a57d-ed70-cab2-eebb" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa64-5ec0-197e-c36e" name="The Yncarne" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f98-ffa9-cdad-7913" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f98-ffa9-cdad-7913" type="max"/>
       </constraints>
       <profiles>
         <profile id="1939-5f30-45ce-e473" name="The Yncarne" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -190,8 +190,8 @@
       <selectionEntries>
         <selectionEntry id="b9b2-1274-6544-b8a8" name="Vilith-zhar, the Sword of Souls" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c921-58e9-601f-93c1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e79-ec39-eace-51e0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c921-58e9-601f-93c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e79-ec39-eace-51e0" type="min"/>
           </constraints>
           <profiles>
             <profile id="f152-5bc2-c567-8e06" name="Vilith-zhar, the Sword of Souls" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -206,7 +206,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -214,7 +214,7 @@
         <entryLink id="9f2d-7578-6a35-564f" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="28"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
