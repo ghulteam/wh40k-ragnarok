@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1048,9 +1048,10 @@
         <categoryLink id="6a78-d189-567a-cc44" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1231-e7c9-ca84-389f" name="Earthshaker Carriage Battery" hidden="false" collective="false" import="true" targetId="9582-2a79-7cda-e385" type="selectionEntry">
+    <entryLink id="1231-e7c9-ca84-389f" name="Earthshaker Platform Battery" hidden="false" collective="false" import="true" targetId="c9b6-9d3e-c2cc-39f3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="086c-98d3-7493-89a7" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink targetId="3f9d-8310-412e-1741" id="857f-bd1e-e56a-908c" primary="false" name="Faction: [REGIMENT]"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="06b7-9136-347c-b71e" name="Gryphonne Pattern Chimera" hidden="false" collective="false" import="true" targetId="14ca-f3b4-1137-d04e" type="selectionEntry">
@@ -5293,9 +5294,9 @@
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer, Turret Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5349,8 +5350,12 @@
         <entryLink id="bdc1-4fad-f023-394b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Turret Weapon" id="0c80-1a93-0087-e43c" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+        <infoLink name="Destroyer" id="e779-7024-8945-9470" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="8b37-c03c-ec2d-788a" name="Servitors" hidden="false" collective="false" import="true" type="unit">
       <profiles>
