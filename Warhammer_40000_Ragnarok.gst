@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="18" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="19" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -139,11 +139,6 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="102b-272b-0d3c-2da0" name="Battalion Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <rules>
-        <rule id="7201-a6db-150c-b8d2" name="Objective Secured (Troops)" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
-        </rule>
-      </rules>
       <forceEntries>
         <forceEntry id="9e48-1ad5-a91c-a269" name="Battalion Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
           <categoryLinks>
@@ -210,6 +205,9 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Objective Secured (Troops)" id="39fe-403f-58ab-ddd7" hidden="false" type="rule" targetId="eb8b-6c03-d1df-e9b4"/>
+      </infoLinks>
     </forceEntry>
     <forceEntry id="113d-50e8-996e-70c3" name="Spearhead Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <forceEntries>
@@ -278,6 +276,11 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <rules>
+        <rule name="Objective Secured (Troops)" id="2506-f58e-83f9-4337" hidden="false" publicationId="8df9-0b3e-abea-3c15">
+          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+        </rule>
+      </rules>
     </forceEntry>
     <forceEntry id="06e1-90a4-1407-f38b" name="Vanguard Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <forceEntries>
@@ -346,6 +349,11 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <rules>
+        <rule name="Objective Secured (Troops)" id="08fa-428e-2c5c-52a3" hidden="false" publicationId="8df9-0b3e-abea-3c15">
+          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+        </rule>
+      </rules>
     </forceEntry>
     <forceEntry id="fb01-8e54-8822-7de4" name="Supreme Command Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <modifiers>
@@ -547,6 +555,11 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <rules>
+        <rule name="Objective Secured (Troops)" id="7201-a6db-150c-b8d2" hidden="false" publicationId="8df9-0b3e-abea-3c15">
+          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+        </rule>
+      </rules>
     </forceEntry>
     <forceEntry id="8f70-4411-2a13-96bf" name="Patrol Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <modifiers>
@@ -1095,6 +1108,9 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
     </rule>
     <rule id="5c6e-8e31-0425-1422" name="Turret Weapon" hidden="false">
       <description>Each time this model makes an attack with this weapon, add 1 to that attack&apos;s hit roll. If this model is not a SUPER-HEAVY and is in base contact with any enemy units, it can still target and resolve attacks against enemy units that are not within base contact with it or any allied units with weapons with this ability. While performing such attacks substract 1 from hit rolls.</description>
+    </rule>
+    <rule name="Objective Secured (Troops)" id="eb8b-6c03-d1df-e9b4" hidden="false" publicationId="8df9-0b3e-abea-3c15">
+      <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
