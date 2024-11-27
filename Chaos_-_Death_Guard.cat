@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="22" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
     <categoryEntry id="dc88-9bb3-da14-d8af" name="Typhus" hidden="false"/>
@@ -571,9 +571,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="c9fb-a83f-608c-8a29" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Plague Wind" hidden="false" id="6c3a-508d-8b4b-e0ef" type="selectionEntry" targetId="3cee-519e-c689-6835"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e830-e821-04db-978a" name="Daemon Prince of Nurgle" hidden="false" collective="false" import="true" type="unit">
@@ -661,9 +662,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </constraints>
         </entryLink>
         <entryLink id="b963-23e3-f642-3959" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Plague Wind" hidden="false" id="dae3-d54d-49d6-9b2b" type="selectionEntry" targetId="3cee-519e-c689-6835"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32de-ce1a-25c3-af45" name="Typhus" hidden="false" collective="false" import="true" type="unit">
@@ -875,9 +877,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="3f7d-2661-ad9d-8daf" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Plague Wind" hidden="false" id="1704-0275-12b9-655d" type="selectionEntry" targetId="3cee-519e-c689-6835"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cde4-c2c1-7c7a-48b9" name="Poxwalkers" hidden="false" collective="false" import="true" type="unit">
@@ -2121,6 +2124,28 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plague Wind" hidden="false" id="3cee-519e-c689-6835">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d58e-4dca-0234-e256" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04e0-4ceb-ab30-9541" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Plague Wind" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8bdb-bd81-3507-565e">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno, Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="9fef-2c5b-332f-34b6" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+        <infoLink name="Inferno" id="d9af-c4d3-deae-7749" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

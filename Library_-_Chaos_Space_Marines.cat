@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -4145,9 +4145,10 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
       <entryLinks>
         <entryLink id="e8ee-b8a7-8060-2c64" name="Force Weapon" hidden="false" collective="false" import="true" targetId="fb4c-7116-4f16-b27e" type="selectionEntry"/>
         <entryLink id="fc41-924e-ebfa-3648" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Infernal Gaze" hidden="false" id="743c-f68e-3f87-7683" type="selectionEntry" targetId="219b-acc0-8a43-c608"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb4c-7116-4f16-b27e" name="Force Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -8159,6 +8160,27 @@ After this is resolved, count the number of wounds that were scored by the attac
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal Gaze" hidden="false" id="219b-acc0-8a43-c608">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acd2-6fea-c497-9085" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b3d-d212-1011-6ecf" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Infernal Gaze" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f738-fbbf-dcdd-21bc">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="a04a-bf2c-75b9-0804" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

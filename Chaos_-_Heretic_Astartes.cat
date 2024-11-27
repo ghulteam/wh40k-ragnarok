@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -2054,9 +2054,10 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       </selectionEntries>
       <entryLinks>
         <entryLink id="4770-d9b3-94ba-fe02" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Psychic Strike" hidden="false" id="e203-7883-6eb7-5a30" type="selectionEntry" targetId="0b58-72f4-782d-8722"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd17-86e4-1609-fe64" name="Negavolt Cultists" hidden="false" collective="false" import="true" type="unit">
@@ -2498,6 +2499,15 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="085d-7648-8ae2-7257" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Psychic Strike" hidden="false" id="addf-1360-19d3-3ae4" type="selectionEntry" targetId="0b58-72f4-782d-8722">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="6e31-1ab9-ac7f-2006" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
@@ -2618,7 +2628,7 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
         <entryLink id="723b-251b-c513-0606" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="94dd-dbf3-528a-d11f" name="Accursed Cultists" hidden="false" collective="false" import="true" type="unit">
@@ -2774,9 +2784,10 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
           </constraints>
         </entryLink>
         <entryLink id="a95b-e1e5-89a6-ecb3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Warp Curse" hidden="false" id="ca54-304b-3213-ceb8" type="selectionEntry" targetId="4dc5-cbe3-e7b6-69b2"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f5b-7e28-b03e-18b1" name="Vashtorr the Arkifane" hidden="false" collective="false" import="true" type="unit">
@@ -2870,6 +2881,48 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psychic Strike" hidden="false" id="0b58-72f4-782d-8722">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81d8-bdc1-34e4-31ea" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="140d-1aa4-e04c-1a9d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Psychic Strike" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="242d-5c7c-3f54-7c46">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="da58-bf35-8d49-69d7" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Curse" hidden="false" id="4dc5-cbe3-e7b6-69b2">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bda6-4397-9a31-0201" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cb4-6488-19ad-2557" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Warp Curse" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="680a-5ec8-b67b-8c3f">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="f9b5-139d-6371-032a" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
