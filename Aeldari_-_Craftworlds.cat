@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
   </publications>
@@ -661,9 +661,10 @@
       <entryLinks>
         <entryLink id="5995-3711-57e0-3f09" name="Witchblade" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="a8b2-e2ec-b3f7-83ee" type="selectionEntry"/>
         <entryLink id="44a7-7678-0067-3b91" name="Commander" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Eldritch Storm" hidden="false" id="bae8-76a6-e59f-557d" type="selectionEntry" targetId="3ac7-7dc8-4cb5-58fa"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="efe5-d944-de03-32d6" name="Farseer Skyrunner" publicationId="280a-43bb-426c-aa7c" page="2" hidden="false" collective="false" import="true" type="model">
@@ -698,9 +699,10 @@
       <entryLinks>
         <entryLink id="0b11-89d5-a717-45c9" name="Witchblade" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="a8b2-e2ec-b3f7-83ee" type="selectionEntry"/>
         <entryLink id="56d3-3866-afe1-5d63" name="Commander" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Eldritch Storm" hidden="false" id="69f4-ea7a-2713-9601" type="selectionEntry" targetId="3ac7-7dc8-4cb5-58fa"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="37c4-8933-9b90-4f89" name="Warlock Conclave" publicationId="280a-43bb-426c-aa7c" page="3" hidden="false" collective="false" import="true" type="unit">
@@ -1690,7 +1692,7 @@ target Necrons units.</characteristic>
         <entryLink id="fb9f-ba80-1032-6fd7" name="Commander" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3673-2d76-83e7-62a5" name="Maugan Ra" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" type="unit">
@@ -5369,8 +5371,11 @@ weapons by this unit.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Terror Troops" id="1712-b44b-78b1-25f5" hidden="false" type="profile" targetId="e5e7-bd6d-fdb7-b022"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="844f-aee0-9460-9665" name="Hornets" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -7489,6 +7494,27 @@ weapons by this unit.</characteristic>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eldritch Storm" hidden="false" id="3ac7-7dc8-4cb5-58fa">
+      <profiles>
+        <profile name="Eldritch Storm" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f87d-74e1-2cc9-963c">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="c336-7234-7888-9e57" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a99-48ec-fd4c-2b32" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6174-160f-0b9a-ff10" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
