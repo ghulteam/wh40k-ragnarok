@@ -5648,6 +5648,7 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef9-11aa-2bce-fdce" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warpsmite" hidden="false" id="7ef8-c171-ac46-6e75" type="selectionEntry" targetId="7a94-d923-8da2-a335"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -8180,6 +8181,27 @@ After this is resolved, count the number of wounds that were scored by the attac
       </profiles>
       <infoLinks>
         <infoLink name="Witchfire" id="a04a-bf2c-75b9-0804" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warpsmite" hidden="false" id="7a94-d923-8da2-a335">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9df-a72e-3344-a0e7" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d923-3d6d-af97-c482" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Warpsmite" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5fd7-df22-e3dc-0d90">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="7464-93f8-f54c-3dcf" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
