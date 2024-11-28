@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="50" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="51" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -992,9 +992,10 @@
           </constraints>
         </entryLink>
         <entryLink id="6375-0374-0852-fc6a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="2e76-ed3b-f19f-0ac7" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a00-30e2-127d-385a" name="Force Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1063,9 +1064,10 @@
         </entryLink>
         <entryLink id="a984-ce82-1be0-1ebf" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
         <entryLink id="b3bc-ffa2-d741-e3d5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="2d41-26e3-0faa-f1b6" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d44c-e9c9-d9b3-05f5" name="Phobos Armor" hidden="false" collective="false" import="true" type="upgrade">
@@ -13813,6 +13815,27 @@ After this is resolved, count the number of wounds that were scored by the attac
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="72"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Smite" hidden="false" id="4d07-eb63-801f-fb4c">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61de-67da-e74e-cc66" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18f9-695e-9178-7a8a" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Smite" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="16a5-b76d-fdce-c61d">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="98b5-c5bf-b252-a34d" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -1663,9 +1663,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="2a11-473a-212a-9e8c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="11e0-cc3f-25b2-7955" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3bed-cdaf-fb34-6fc3" name="Arch-Centurion Carnac Commodus" hidden="false" collective="false" import="true" type="unit">
@@ -3198,12 +3199,33 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Storm of the Emperor’s Wrath" hidden="false" id="3aab-0145-f084-ebb3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18e4-691c-093f-e0f3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6713-93ce-afbc-0c88" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Storm of the Emperor’s Wrath" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4829-f4ca-8df8-0611">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Witchfire" id="dda2-8c66-3055-80d0" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="602d-90ec-bb35-5808" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="523a-c1db-0b76-025c" name="Chaplain Dreadnought Titus" hidden="false" collective="false" import="true" type="unit">
@@ -5480,9 +5502,10 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       </selectionEntries>
       <entryLinks>
         <entryLink id="d036-198a-9f0a-5d4b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="8af8-c3eb-3f41-55fe" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3caa-8c45-42c4-b0c5" name="Malakim Phoros" hidden="false" collective="false" import="true" type="unit">

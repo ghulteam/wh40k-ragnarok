@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -7813,9 +7813,10 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
       <entryLinks>
         <entryLink id="b5e8-8819-d167-8e69" name="Force Weapon" hidden="false" collective="false" import="true" targetId="fb4c-7116-4f16-b27e" type="selectionEntry"/>
         <entryLink id="72c3-039e-4f9c-3acd" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Rite of Possession" hidden="false" id="eccf-662a-f592-8b4d" type="selectionEntry" targetId="0d01-e661-372f-53f6"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0bf2-3b88-063d-39bb" name="Reaper Chaincannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -8202,6 +8203,27 @@ After this is resolved, count the number of wounds that were scored by the attac
       </profiles>
       <infoLinks>
         <infoLink name="Witchfire" id="7464-93f8-f54c-3dcf" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of Possession" hidden="false" id="0d01-e661-372f-53f6">
+      <profiles>
+        <profile name="Rite of Possession" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0d70-c59a-e2d6-821f">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b7-efad-5e4c-76bf" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f73-cbda-9549-4308" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Witchfire" id="51ab-d497-80da-4047" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
