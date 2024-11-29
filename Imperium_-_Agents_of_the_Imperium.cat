@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5bb-d6ce-d555-8b4a" name="Imperium - Agents of the Imperium" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d5bb-d6ce-d555-8b4a" name="Imperium - Agents of the Imperium" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="89bc-3cf7-adff-c6eb" name="D3 Roll">
       <characteristicTypes>
@@ -1774,8 +1774,11 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Mind Assault" hidden="false" id="75d0-0d78-4d20-7a37" type="selectionEntry" targetId="2120-00e9-f2f0-a359"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="5dca-5bab-e060-57df" name="Murad’s Blackstone Fortress Explorers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2061,8 +2064,11 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Mind Assault" hidden="false" id="fa16-559c-6f24-671f" type="selectionEntry" targetId="2120-00e9-f2f0-a359"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="40a9-6da2-b333-a4c7" name="Inquisitor Greyfax" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2106,9 +2112,10 @@
       <entryLinks>
         <entryLink id="7640-be44-4e06-1755" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="26dc-832a-19a6-373f" type="selectionEntry"/>
         <entryLink id="f9b9-074a-9a68-6020" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Mind Assault" hidden="false" id="1a0a-f431-61da-eaaf" type="selectionEntry" targetId="2120-00e9-f2f0-a359"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc97-3a89-7800-1d21" name="Inquisitor Karamazov" hidden="false" collective="false" import="true" type="unit">
@@ -2258,8 +2265,11 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Mind Assault" hidden="false" id="5ff1-d7f1-ad73-307a" type="selectionEntry" targetId="2120-00e9-f2f0-a359"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="b53b-5970-52f2-362b" name="Inquisitor-Lord Solomon Lok" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2787,6 +2797,9 @@
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Mind Assault" hidden="false" id="5d9e-948a-5f99-2cc7" type="selectionEntry" targetId="2120-00e9-f2f0-a359"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="eabc-403e-eaca-6089" name="Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -2817,6 +2830,27 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mind Assault" hidden="false" id="2120-00e9-f2f0-a359">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7246-81a1-068e-b01b" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="460d-9ee4-1a76-4106" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Mind Assault" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1399-055a-874f-2d63">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="65f5-3d55-46e6-0bf2" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
