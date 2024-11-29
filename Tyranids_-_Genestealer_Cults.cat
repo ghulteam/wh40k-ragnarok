@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="9055-71bd-c713-3f2a" name="Genestealer Cults"/>
   </publications>
@@ -499,12 +499,33 @@
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mind Control" hidden="false" id="9aa2-567b-a78d-8396">
+          <profiles>
+            <profile name="Mind Control" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2ccc-926c-e986-ecd8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb50-4131-c34a-c447" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="529c-199b-d363-a82a" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Witchfire" id="ab40-1951-cdb0-2adf" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e116-3770-d1c4-7d91" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="159b-541a-4fcd-6f26" name="Primus" hidden="false" collective="false" import="true" type="unit">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="a37b-2844-afcc-f4eb" name="Tyranid Hive Fleets"/>
     <publication id="5101-ac41-4666-a01a" name="Forge World Tyranids"/>
@@ -960,9 +960,10 @@
           </constraints>
         </entryLink>
         <entryLink id="9186-b79a-5e9e-bbb1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Onslaught" hidden="false" id="1b20-a6fd-0676-617e" type="selectionEntry" targetId="5d46-8d93-fe0f-cd14"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="20ca-5037-4906-b8b6" name="Monstrous Scything Talons" hidden="false" collective="false" import="true" type="upgrade">
@@ -1138,6 +1139,28 @@
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Synaptic Pulse" hidden="false" id="5218-3229-135b-f78f">
+          <profiles>
+            <profile name="Synaptic Pulse" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c77d-f6e2-e5eb-795a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno, Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a985-46dc-d360-958a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f88e-ce71-2bfd-a614" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Witchfire" id="71f6-fb9a-3415-a813" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+            <infoLink name="Inferno" id="21cf-f720-6685-b2cb" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e02b-631e-648f-634f" name="Prehencile Pincer Tail" hidden="false" collective="false" import="true" targetId="800d-30a6-ef75-f84c" type="selectionEntry">
@@ -1149,7 +1172,7 @@
         <entryLink id="d3f5-841d-9d26-dbc9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="27"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2eab-6d96-5b70-6388" name="Tyranid Prime" hidden="false" collective="false" import="true" type="unit">
@@ -6464,6 +6487,27 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Onslaught" hidden="false" id="5d46-8d93-fe0f-cd14">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fab1-b08d-2c28-17dd" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66db-146e-6585-05fc" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Onslaught" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b7a0-633f-6d14-4729">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Witchfire" id="4e97-9b47-8815-b5c4" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
