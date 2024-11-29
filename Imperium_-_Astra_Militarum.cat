@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -2141,7 +2141,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a2cb-1cc5-de1a-6baf" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -2159,7 +2159,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="afc3-8563-2a40-47b4" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -2177,7 +2177,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2185,6 +2185,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1ba9-fa31-bba4-afd7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Psychic Maelstrom" hidden="false" id="b341-4495-102d-16f7" type="selectionEntry" targetId="d306-996b-211c-27c5"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -3110,9 +3111,10 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="0c15-a1c9-f575-4795" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Psychic Maelstrom" hidden="false" id="c4f8-dff1-cb40-3315" type="selectionEntry" targetId="d306-996b-211c-27c5"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc8a-ac78-d74a-8b18" name="Tempestor Prime" hidden="false" collective="false" import="true" type="unit">
@@ -7536,6 +7538,27 @@ Praetor Launcher for this action.</characteristic>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psychic Maelstrom" hidden="false" id="d306-996b-211c-27c5">
+      <profiles>
+        <profile name="Psychic Maelstrom" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="d4ed-0b75-8452-77e5">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b22f-ca28-60d8-7aa5" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67e1-821e-c7da-b64e" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Witchfire" id="a66d-bb86-b801-095b" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

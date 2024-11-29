@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="20" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1411,9 +1411,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="b3e4-f7a3-df33-c7f1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Fury of the Ancients" hidden="false" id="a8b0-9fa6-b66b-1041" type="selectionEntry" targetId="5933-664b-d23f-bd4f"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eef0-501b-2ee3-97af" name="Commander Dante" hidden="false" collective="false" import="true" type="unit">
@@ -2647,6 +2648,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="eda2-9bca-ec8b-87a3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="9ae4-b26e-f079-d217" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -3041,6 +3043,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="f463-506c-44a3-f741" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Smite" hidden="false" id="bdfc-1914-a5f7-a20a" type="selectionEntry" targetId="4d07-eb63-801f-fb4c"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
@@ -3228,6 +3231,27 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fury of the Ancients" hidden="false" id="5933-664b-d23f-bd4f">
+      <profiles>
+        <profile name="Fury of the Ancients" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1964-32d9-dea7-8546">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0162-9c89-c609-0b0d" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5bd-707f-800d-312f" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Witchfire" id="a2a8-32e9-cc8d-1a89" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

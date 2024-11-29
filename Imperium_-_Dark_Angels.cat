@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1536,12 +1536,34 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mind Wipe" hidden="false" id="5712-a396-e3c1-881e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b7c-2de0-2f23-5d33" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e75-73ab-5864-2b2d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mind Wipe" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0fc5-47c6-955f-add6">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper, Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Witchfire" id="6615-2673-c4db-166a" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+            <infoLink name="Sniper" id="721b-c725-20c6-0cee" hidden="false" type="rule" targetId="d452-1a22-2e0c-7a9e"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="bee1-2fa3-0ab2-f580" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bfd6-618e-d7ee-41e3" name="Master" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -2129,6 +2129,27 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Living Lightning" hidden="false" id="211a-8b5b-d70c-cef2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d6d-92f0-4b45-adb1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="719f-489d-1971-9e05" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Living Lightning" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7adb-60b4-4de4-96dc">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Witchfire" id="3514-17cb-7799-acdd" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e6ac-c7ee-776f-0550" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry">
@@ -2138,7 +2159,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="08c5-52b7-4db8-584a" name="Ulrik the Slayer" hidden="false" collective="false" import="true" type="unit">
@@ -3042,9 +3063,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9b-5748-2633-c315" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Lightning Bolt" hidden="false" id="6e1c-bd88-016d-dc1a" type="selectionEntry" targetId="d07a-3556-ccc4-21a5"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc5d-ae4d-f2c8-c54d" name="Primaris Wolf Lord" hidden="false" collective="false" import="true" type="unit">
@@ -3241,9 +3263,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dca-994d-c37f-4983" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Lightning Bolt" hidden="false" id="e4df-f014-2ea9-2cf2" type="selectionEntry" targetId="d07a-3556-ccc4-21a5"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0305-d8ed-99e5-3c3c" name="Stormfang Gunship" hidden="false" collective="false" import="true" type="unit">
@@ -5085,6 +5108,27 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning Bolt" hidden="false" id="d07a-3556-ccc4-21a5">
+      <infoLinks>
+        <infoLink name="Witchfire" id="0979-f2e9-0a21-cbad" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64e3-9f65-e2b1-1c9f" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6830-c531-6526-f14c" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Lightning Bolt" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5dd9-2e9d-4f63-1cdb">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
