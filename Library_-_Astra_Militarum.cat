@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -4820,17 +4820,12 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           <modifiers>
             <modifier type="set" value="Twin Battle Cannon" field="name"/>
             <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
-          </modifiers>
-          <modifierGroups>
-            <modifierGroup type="and">
+            <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="caa7-4410-22f2-1432" shared="true" includeChildForces="false" includeChildSelections="true"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
     </selectionEntry>
