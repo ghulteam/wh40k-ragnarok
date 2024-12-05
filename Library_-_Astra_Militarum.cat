@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -4699,14 +4699,18 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Twin Battle Cannon" hidden="false" id="fd61-b62c-f2d3-db64" type="selectionEntry" targetId="809e-f2de-d29c-239b">
+            <selectionEntry type="upgrade" import="true" name="Twin Battle Cannon" hidden="false" id="840d-c42d-aa61-f9dc">
               <infoLinks>
-                <infoLink name="Turret Weapon" id="6695-a6bb-a405-cfd8" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+                <infoLink name="Battle Cannon" id="c2b6-ed16-16e4-f3ff" hidden="false" type="profile" targetId="1b34-b1b6-f47e-c6d2">
+                  <modifiers>
+                    <modifier type="set" value="Twin Battle Cannon" field="name"/>
+                    <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+                    <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="de0c-2e50-6deb-7454" name="Sponsons" hidden="false" collective="false" import="true">
           <constraints>
@@ -4810,24 +4814,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="809e-f2de-d29c-239b" name="Twin Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Battle Cannon" id="f345-72dc-d629-b7d4" hidden="false" type="profile" targetId="1b34-b1b6-f47e-c6d2">
-          <modifiers>
-            <modifier type="set" value="Twin Battle Cannon" field="name"/>
-            <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
-            <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="caa7-4410-22f2-1432" shared="true" includeChildForces="false" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5775-0c68-90a8-29c8" name="Pulveriser Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
