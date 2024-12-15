@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="20" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -8,6 +8,7 @@
     <categoryEntry id="cb0b-8313-b267-bba9" name="Exalted Eightbound" hidden="false"/>
     <categoryEntry id="0e74-9b80-290b-c2f2" name="Faction: Butcher Astartes" hidden="false"/>
     <categoryEntry id="5314-8dcc-7828-3385" name="Faction: Legiones Daemonica" hidden="false"/>
+    <categoryEntry name="Slaughterbrute" id="d22d-3b83-b28f-fe80" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="86ab-5eac-5402-be03" name="Angron" hidden="false" collective="false" import="true" targetId="9b8e-914b-6e41-3c04" type="selectionEntry">
@@ -267,6 +268,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </characteristics>
         </profile>
       </profiles>
+    </entryLink>
+    <entryLink import="true" name="Slaughterbrute" hidden="false" id="ba0f-b0a9-40a5-d57c" type="selectionEntry" targetId="bf86-fcb8-e6b2-6eda">
+      <categoryLinks>
+        <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="ea04-ccc4-5b16-1b98" primary="true" name="Heavy Support"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -957,6 +963,85 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="c38b-739f-1fe1-cbe1" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Slaughterbrute" hidden="false" id="bf86-fcb8-e6b2-6eda" collective="false">
+      <profiles>
+        <profile name="Slaughterbrute" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4387-1c8c-8adf-2853">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sigils of Enslavement" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="aa21-e957-f9f9-481c">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not suffer the penalty for being critically damaged.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="6b49-74e9-c39a-c29f" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="6fa9-0279-890d-bd76" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="c457-bac0-b87f-b1f5" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="5a2e-0530-733d-eebd" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="163c-727d-48b2-17e4" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="e4dc-d6a6-b77e-39db" primary="false" name="Faction: Khorne"/>
+        <categoryLink targetId="d22d-3b83-b28f-fe80" id="b1bc-5fa5-4754-0fbf" primary="false" name="Slaughterbrute"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mighty Jaws" hidden="false" id="6379-a91e-65b6-9e35" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="590c-dce4-010a-2f66" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="974d-28ac-0de9-21b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mighty Jaws" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7c0a-293e-073d-1e0a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Razor-tipped Claws" hidden="false" id="d239-cadf-9f06-8249" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d1b-db52-9428-e86f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c9c-48e9-7c09-d34b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Razor-tipped Claws" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1aee-81e4-244d-7a6a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="4c03-87f3-6260-ff24" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
