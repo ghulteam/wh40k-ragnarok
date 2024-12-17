@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -358,8 +358,8 @@
         <categoryLink id="dbcc-efe5-75bd-8243" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink id="a7db-1265-18af-ba99" name="Faction: [REGIMENT]" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
         <categoryLink id="4405-e8ca-683d-6044" name="Earthshaker Carriage Battery" hidden="false" targetId="1054-b0c0-61ea-a87b" primary="false"/>
-        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="7d48-f42b-daa1-9053" primary="false" name="Light"/>
-        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="534c-9df5-e8b4-4bf7" primary="false" name="Infantry"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="23a8-e563-4d60-3e27" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="4143-55ad-5b41-c9d3" primary="false" name="Vehicle"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6329-e6db-27d8-a15a" name="Griffon Mortar Carrier Battery" hidden="false" collective="false" import="true" targetId="4e57-2e51-0e17-dac5" type="selectionEntry">
@@ -6049,9 +6049,9 @@
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6310,9 +6310,9 @@
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6381,7 +6381,7 @@
             <entryLink id="fdf2-b997-d04f-d754" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6404,6 +6404,7 @@
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b192-28ea-e05e-ed7a" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f99-fc02-5d67-b3c4" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79fa-d69d-7fb9-8f75" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile id="b1f6-34c5-f63f-494f" name="Sabre Gun Platform" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">

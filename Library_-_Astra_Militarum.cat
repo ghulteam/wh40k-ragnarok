@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -1286,32 +1286,6 @@
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="40ca-d631-20f5-8afc" name="Medusa Siege Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bbb-6b3c-6ea4-54cc" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0333-272a-e09e-fec9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="35c1-b760-b2a5-4eaf" name="Medusa Siege Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f117-d96c-b5cb-fae5" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="395c-a61e-bd27-e562" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
               <constraints>
@@ -1331,6 +1305,7 @@
               </constraints>
             </entryLink>
             <entryLink id="b064-6591-9df3-d63d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Medusa Siege Gun" hidden="false" id="1daf-4751-1164-ce52" type="selectionEntry" targetId="bb5d-0786-ca58-7f52"/>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -1524,9 +1499,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1577,7 +1552,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink id="bba1-642b-77ad-6ef5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1623,8 +1598,8 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                   <characteristics>
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
                   </characteristics>
@@ -1681,7 +1656,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                 <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
               </characteristics>
@@ -1752,15 +1727,15 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink id="1d70-7919-915c-e6b7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="4925-5789-e289-f954" primary="false" name="Light"/>
         <categoryLink targetId="5284-ec39-c59f-0c7a" id="932d-df03-8711-bfc7" primary="false" name="Heavy Mortar"/>
         <categoryLink targetId="c2cd-6e10-a4dd-093c" id="20d5-c81b-4277-c690" primary="false" name="Artillery"/>
         <categoryLink targetId="5aeb-0fa6-9427-2144" id="61a3-fd2f-7b46-fb89" primary="false" name="Vehicle"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="8022-55fb-84e3-7e17" primary="false" name="Heavy"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b363-189e-f062-b976" name="Heavy Quad Launcher Battery" hidden="false" collective="false" import="true" type="unit">
@@ -1777,7 +1752,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                 <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
               </characteristics>
@@ -1802,9 +1777,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                   <characteristics>
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
                   </characteristics>
                 </profile>
@@ -1848,7 +1823,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink id="4b19-9772-d50d-4d9a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1856,10 +1831,10 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="7cbd-8f56-61c7-316e" primary="false" name="Light"/>
         <categoryLink targetId="c2cd-6e10-a4dd-093c" id="49b7-ba50-cc24-aa68" primary="false" name="Artillery"/>
         <categoryLink targetId="439e-099b-cb27-edd2" id="f23a-5958-9188-81b0" primary="false" name="Heavy Quad Launcher"/>
         <categoryLink targetId="5aeb-0fa6-9427-2144" id="0c8a-21bd-a690-8a9a" primary="false" name="Vehicle"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="c46c-36aa-f00e-dc78" primary="false" name="Heavy"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="cf75-1018-c977-a146" name="Malcador Annihilator" hidden="false" collective="false" import="true" type="unit">
@@ -2189,9 +2164,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                 <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2225,30 +2200,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="10b7-4165-38c6-c798" name="Medusa Siege Gun" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ed-5948-b195-8e84" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48b3-202e-ddf1-67e0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="74eb-795e-48b9-830b" name="Medusa Siege Gun" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="c78f-132d-2d8a-5584" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="9141-17ae-eca8-eb48" name="Crew Lasguns" hidden="false" collective="false" import="true" targetId="2c14-8e96-4741-f169" type="selectionEntry">
@@ -2258,9 +2209,10 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
             </entryLink>
             <entryLink id="bc3b-113e-2183-894b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Medusa Siege Gun" hidden="false" id="5e80-0f36-73ff-7bd4" type="selectionEntry" targetId="bb5d-0786-ca58-7f52"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2268,10 +2220,10 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="0745-d8c9-4cfb-3b68" primary="false" name="Light"/>
         <categoryLink targetId="74ac-5972-87bd-0a48" id="48a0-bac3-58ca-b28d" primary="false" name="Medusa Carriage"/>
         <categoryLink targetId="c2cd-6e10-a4dd-093c" id="4b78-0f2b-d27d-03b2" primary="false" name="Artillery"/>
         <categoryLink targetId="5aeb-0fa6-9427-2144" id="31a3-c228-2bcd-eb20" primary="false" name="Vehicle"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="1eeb-00c8-f6b9-bc6e" primary="false" name="Heavy"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="da58-29ef-714c-eb47" name="Rapier Laser Destroyer" hidden="false" collective="false" import="true" type="unit">
@@ -3934,8 +3886,8 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
                   </characteristics>
                 </profile>
@@ -3969,7 +3921,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink id="5180-426f-fb3f-f44b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4635,9 +4587,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4654,7 +4606,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <entryLink id="9f79-7e97-a87c-dd76" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="caa7-4410-22f2-1432" name="Rogal Dorn Battle Tank" hidden="false" collective="false" import="true" type="unit">
@@ -4927,7 +4879,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
                     <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
                   </characteristics>
                 </profile>
@@ -5068,6 +5020,30 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </modifiers>
         </infoLink>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medusa Siege Cannon" hidden="false" id="bb5d-0786-ca58-7f52" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be4e-544e-a9cf-cbeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361a-e01c-d8b7-02dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Medusa Siege Gun" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5cd6-7d00-e741-13be">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="877f-5740-2de0-93c2" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
