@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="571e-a83e-e771-780a" name="Faction: Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="21f5-1b47-2570-42d1" name="Faction: Adepta Sororitas" hidden="false"/>
@@ -89,7 +89,7 @@
         <categoryLink id="66e5-2142-0abd-a771" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="961f-02ff-89af-6b83" name="Unit Size" hidden="false" collective="false" import="true" targetId="0e13-ead1-f97f-e444" type="selectionEntry">
+    <entryLink id="961f-02ff-89af-6b83" name="Crusaders" hidden="false" collective="false" import="true" targetId="0e13-ead1-f97f-e444" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -101,7 +101,7 @@
         <categoryLink id="a664-013f-c308-fe4e" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="78b4-5409-169c-bcae" name="Unit Size" hidden="false" collective="false" import="true" targetId="0e13-ead1-f97f-e444" type="selectionEntry">
+    <entryLink id="78b4-5409-169c-bcae" name="Crusaders" hidden="false" collective="false" import="true" targetId="0e13-ead1-f97f-e444" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -152,7 +152,7 @@
         <categoryLink id="e11a-84b3-e723-5a8d" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0c50-c9ee-37ca-5bb3" name="Unit Size" hidden="false" collective="false" import="true" targetId="955c-f07e-673c-377f" type="selectionEntry">
+    <entryLink id="0c50-c9ee-37ca-5bb3" name="Zephyrim" hidden="false" collective="false" import="true" targetId="955c-f07e-673c-377f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="822e-f9bf-204a-8280" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
@@ -3405,12 +3405,19 @@
           <entryLinks>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="c084-4917-30a2-fa72" type="selectionEntry" targetId="5049-c0b5-625c-a7af">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5d7e-a3ff-dbe6-d7a2"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ed3e-f595-c1d9-3ef7"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3d4f-82f1-1b20-228a" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Multi-melta" hidden="false" id="1e27-a5a7-8002-2919" type="selectionEntry" targetId="1a13-f0be-ca42-c44b"/>
-            <entryLink import="true" name="Heavy Flamer" hidden="false" id="feec-9c15-20d7-1d5c" type="selectionEntry" targetId="46e7-d278-1268-caaf"/>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="1e27-a5a7-8002-2919" type="selectionEntry" targetId="1a13-f0be-ca42-c44b">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b3e1-1131-797e-4dab" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="feec-9c15-20d7-1d5c" type="selectionEntry" targetId="46e7-d278-1268-caaf">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8232-3c96-d850-5cfd" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2102-48b3-e67a-3c33"/>
