@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1052,7 +1052,7 @@
         <categoryLink id="8d5b-554c-0636-bd7b" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0748-a44c-9e90-c848" name="Manticore" hidden="false" collective="false" import="true" targetId="07a0-e79f-609e-f95e" type="selectionEntry">
+    <entryLink id="0748-a44c-9e90-c848" name="Manticore Squadron" hidden="false" collective="false" import="true" targetId="759a-a330-8c43-45c7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a030-a82f-379b-5ffb" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
@@ -7572,6 +7572,19 @@ Praetor Launcher for this action.</characteristic>
       <infoLinks>
         <infoLink name="Witchfire" id="a66d-bb86-b801-095b" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Manticore Squadron" hidden="false" id="759a-a330-8c43-45c7">
+      <entryLinks>
+        <entryLink import="true" name="Manticore" hidden="false" id="69d8-1bb8-35d0-66cd" type="selectionEntry" targetId="07a0-e79f-609e-f95e">
+          <infoLinks>
+            <infoLink name="Tank Squadron" id="d4a0-1c6e-0613-f08c" hidden="false" type="profile" targetId="a437-a863-2fd2-bad0"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1445-e8db-6a32-4052" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b24d-6349-a13d-e058" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
