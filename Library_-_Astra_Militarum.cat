@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -66,11 +66,12 @@
     <categoryEntry id="3f94-dff2-8eaa-b9c2" name="Field Ordnance Battery" hidden="false"/>
     <categoryEntry id="b238-8f9b-ddc1-6d49" name="Lord Solar Leontus" hidden="false"/>
     <categoryEntry name="Earthshaker Platform" id="c07e-682e-c324-b687" hidden="false"/>
+    <categoryEntry name="Rogal Dorn" id="3f36-6802-20a8-5b7d" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="882f-8841-6c41-a147" name="Tank Commander" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="882f-8841-6c41-a147" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="e609-f455-8719-51df" name="Tank Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="e609-f455-8719-51df" name="Leman Russ Tank Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
@@ -81,15 +82,12 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1d11-ec12-cc65-ed69" name="Tank Commander" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+        <profile id="1d11-ec12-cc65-ed69" name="Leman Russ Tank Commander" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [REGIMENT] LEMAN RUSS unit starts a Move action within 6&quot; of this unit, that unit can be ordered to go full throttle; add 2&quot; to that unit’s Move characteristic whilst making that Move action. A unit can only go full throttle once per turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="ce02-5938-cfef-7142" name="Grinding Advance" hidden="false" targetId="7b3f-ddab-6d2b-674a" type="profile"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7d23-ca61-2359-86c7" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2bff-12e3-a142-dccc">
           <constraints>
@@ -5065,6 +5063,161 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3e1-4091-cf76-902c" name="Rogal Dorn Tank Commander" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d218-0fec-c73d-0d61" name="Rogal Dorn Tank Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rogal Dorn Tank Commander" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0e4e-284e-2247-cafb">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [REGIMENT] ROGAL DORN unit starts a Move action within 6&quot; of this unit, that unit can be ordered to go full throttle; add 2&quot; to that unit’s Move characteristic whilst making that Move action. A unit can only go full throttle once per turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="24e7-1b0e-146a-bfb7" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab48-780d-23a4-6927">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a63-37fe-c32c-6156" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d5d-cb33-3344-40ba" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ab48-780d-23a4-6927" name="Oppressor Cannon and Co-axial Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f3ca-81ba-9f19-3806" name="Oppressor Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">90&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9535-658c-98b4-5149" name="Co-axial Autocannon" hidden="false" targetId="9b10-c710-4376-6953" type="profile"/>
+                <infoLink id="1d1c-7d38-0c92-3a00" name="Turret Weapon" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Battle Cannon" hidden="false" id="938f-c270-4441-654c">
+              <infoLinks>
+                <infoLink name="Battle Cannon" id="4b46-b01f-16aa-b6a1" hidden="false" type="profile" targetId="1b34-b1b6-f47e-c6d2">
+                  <modifiers>
+                    <modifier type="set" value="Twin Battle Cannon" field="name"/>
+                    <modifier type="set" value="2" field="2883-af07-d4e8-d8d0"/>
+                    <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9df7-1a2e-1f49-264a" name="Sponsons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="858e-281b-7767-e36a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3022-a4c5-5140-aa12" name="2x Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d58-bbc8-7cd5-3b33" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1ccc-cd21-b474-135a" name="Heavy Bolter" hidden="false" targetId="3ba6-c9eb-0113-b222" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a5b0-466c-555d-d9a2" name="2x Multi-melta" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37c-ade8-9235-4118" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4a92-4062-d576-ab05" name="Multi-melta" hidden="false" targetId="e226-b04c-9fce-14d0" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0897-345a-a53e-163e" name="Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8124-0a5e-956c-0fb7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6de-62e5-8a66-0f61" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aab-11a8-0c97-ee2e" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8124-0a5e-956c-0fb7" name="Castigator Gatling Cannon" hidden="false" collective="false" import="true" targetId="3053-06ea-dcb5-56a1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db3-c8e8-8822-4457" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ee79-14a5-ce39-5814" name="Pulveriser Cannon" hidden="false" collective="false" import="true" targetId="5775-0c68-90a8-29c8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24d7-e14f-996c-9047" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bdd8-1405-a6d1-682a" name="Front Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffba-e04a-7d40-a712" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="aea3-c393-4b22-7fdc" name="2x Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3291-d260-b6a9-0605" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7b92-09be-b8d6-1a9f" name="Meltagun" hidden="false" targetId="f167-5ca5-16c9-7f21" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f6a-3837-a3c8-78ca" name="2x Heavy Stubbers" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b59-785f-8537-5a99" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0d4a-3dcd-8531-6fd7" name="Heavy Stubber" hidden="false" targetId="e327-bd95-4063-4659" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a30e-4917-ed0b-0217" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c9ef-350c-dc06-9f6d" name="Grinding Tracks" hidden="false" collective="false" import="true" targetId="bd97-52de-276d-96b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba96-d397-85b6-8b48" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bbc-b9fa-e089-4e4f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="29f9-3b24-d799-990b" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c583-9099-9e36-ce6e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

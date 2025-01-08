@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1da7-af26-6602-d159" name="Chaos - Emperors Children" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="19" revision="1" battleScribeVersion="2.03" hidden="true" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Library - Chaos Space Marines" id="e7a5-da01-91b5-274e" targetId="df5c-f15d-f672-a301"/>
+    <catalogueLink type="catalogue" name="Library - Chaos Primarchs" id="a93a-576a-4b2b-626d" targetId="6638-9778-3d62-e10b"/>
+    <catalogueLink type="catalogue" name="Library - Daemons" id="83ad-09db-b017-a707" targetId="90ed-6ae6-a8a8-ddaf"/>
+    <catalogueLink type="catalogue" name="Library - Weapons" id="ea5a-6a29-e7af-575e" targetId="4c20-063f-968c-8547"/>
+  </catalogueLinks>
+  <rules>
+    <rule name="Let The Galaxy Burn" id="5c83-6862-e535-709a" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="8ba0-7df9-3f27-d4b1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="0d22-806b-bfc5-db54" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="c2bc-37e7-468c-5e76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="5642-ce25-4f9d-5cb3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.</description>
+    </rule>
+  </rules>
+  <entryLinks>
+    <entryLink import="true" name="Noise Marines" hidden="false" id="67c7-ce1f-7600-9ac7" type="selectionEntry" targetId="c66e-7f4f-9d59-fe17">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="e87d-70b1-f520-c142" primary="true" name="Troops"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="2bb1-413f-7c11-562f" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucius the Eternal" hidden="false" id="ca80-645f-c342-7b09" type="selectionEntry" targetId="953c-feb1-c9a0-5cba">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="ff26-0ed3-4e09-5057" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Daemonettes" hidden="false" id="5fd5-c64e-103a-dda5" type="selectionEntry" targetId="ed0b-96ff-eed2-8a13">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="a163-7879-18a8-492a" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fiends of Slaanesh" hidden="false" id="de82-f729-6c1a-7db3" type="selectionEntry" targetId="fba5-d50b-5a35-bc0d">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="205d-d699-8dc8-1d8f" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Seekers" hidden="false" id="cfb1-f34c-1d32-650d" type="selectionEntry" targetId="41b8-8210-e7bc-0886">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="ef08-89bc-68f0-44be" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sorcerer on Daemonic Mount" hidden="false" id="f46e-eb25-8140-0a13" type="selectionEntry" targetId="19d8-536d-e337-2804">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="924e-3670-36c1-bd5f" primary="true" name="HQ"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="1828-fa29-0043-04c9" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Lord on Daemonic Mount" hidden="false" id="4ead-ae46-3184-1bff" type="selectionEntry" targetId="0b9a-f634-8fab-fcb1">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="a230-9c4d-282a-0172" primary="true" name="HQ"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="e647-8a63-4732-cc15" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Lord" hidden="false" id="ecf4-709b-696f-e109" type="selectionEntry" targetId="f8fa-3ec8-92bd-35de">
+      <categoryLinks>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="3310-8fc6-287d-f49d" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="a5ef-31f5-e040-4530" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sorcerer" hidden="false" id="9162-ceb3-a532-1536" type="selectionEntry" targetId="1dab-bb81-d853-d9ed">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="ad46-9ac9-e0c0-9fe7" primary="true" name="HQ"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="b9f7-b6c9-128d-7818" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Rhino" hidden="false" id="594f-d3cf-de29-34b7" type="selectionEntry" targetId="274e-d2a4-8f7b-e69d">
+      <categoryLinks>
+        <categoryLink targetId="2a11-9193-1a80-f0c6" id="479b-754d-154b-5540" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="3ae9-b0f8-f352-18e8" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Land Raider" hidden="false" id="b607-6b03-20f6-90a5" type="selectionEntry" targetId="a0a7-ca99-f182-aa7c">
+      <categoryLinks>
+        <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="dffb-2671-6466-7b73" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="6f18-a45e-43de-b8b8" id="65b8-cbbd-ff23-c2da" primary="false" name="Transport"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="ad5f-9095-fdbf-ba20" primary="false" name="Faction: Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

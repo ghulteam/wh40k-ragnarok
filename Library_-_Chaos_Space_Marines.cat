@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="42" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -90,6 +90,7 @@
     <categoryEntry id="8c57-b95e-078f-b5c4" name="Bikers" hidden="false"/>
     <categoryEntry id="b897-e27e-4ff6-6e5c" name="Cult of Destruction" hidden="false"/>
     <categoryEntry name="Hellforged Glaive" id="2143-8765-d313-7d8a" hidden="false"/>
+    <categoryEntry name="Fabius Bile" id="ffcd-6da4-1693-aa2e" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e7d3-3095-e373-d4b3" name="Blood Slaughterer of Khorne" hidden="false" collective="false" import="true" type="unit">
@@ -2949,7 +2950,7 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
         </profile>
         <profile id="0117-40fd-06a2-b0c6" name="Chaos Storm Eagle Assault Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 20 friendly LEGION INFANTRY models. Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models and each CULT OF DESTRUCTION model takes the space of 3 other INFANTRY models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 20 friendly [LEGION] INFANTRY models. Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models and each CULT OF DESTRUCTION model takes the space of 3 other INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5085,6 +5086,18 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Chaos Rhino" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="f247-8795-b417-b3ff">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly EMPERORS CHILDREN INFANTRY models. It cannot transport TERMINATORS or JUMP PACK units.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="1da7-af26-6602-d159" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="d156-e962-cc30-7882" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
@@ -5171,6 +5184,18 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="e0f7-8880-627e-e2eb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Chaos Land Raider" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="0cb6-a0ec-9080-3ea3">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly EMPERORS CHILDREN INFANTRY models. Each TERMINATOR and JUMP PACK model takes up the space of two other models.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="1da7-af26-6602-d159" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8071,6 +8096,11 @@ After this is resolved, count the number of wounds that were scored by the attac
                         <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="b90a-4197-3cca-014d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="1da7-af26-6602-d159" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
@@ -8225,6 +8255,233 @@ After this is resolved, count the number of wounds that were scored by the attac
       <infoLinks>
         <infoLink name="Witchfire" id="51ab-d497-80da-4047" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sorcerer on Daemonic Mount" hidden="false" id="19d8-536d-e337-2804" collective="false">
+      <modifiers>
+        <modifier type="set" value="Sorcerer on Disc of Tzeentch" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="19d8-536d-e337-2804" childId="9f45-1f20-d5aa-82df" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Sorcerer on Steed of Slaanesh" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="19d8-536d-e337-2804" childId="e3db-3189-8773-af9f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Sorcerer on Palanquin of Nurgle" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="19d8-536d-e337-2804" childId="f1c7-bf82-cff0-d58e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="1a0a-e940-a02f-c4be" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="738b-b093-7ec0-5a60" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Cavalry" hidden="false" id="fb5a-32a2-a4f5-d1d0" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="d638-e7fc-083b-6970" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Daemon" hidden="false" id="467e-7e92-2bb2-23f4" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="2644-71f8-d914-07d6" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink name="Sorcerer" hidden="false" id="db35-12aa-9f98-6d22" targetId="5c54-8b43-52eb-6259" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="9260-7e04-f27d-0dc2" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mount" id="98fb-a75e-11b3-630d" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd64-d385-5144-c4b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d86a-c7fe-5d6f-8281" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Disc of Tzeentch" hidden="false" id="9f45-1f20-d5aa-82df" collective="false">
+              <profiles>
+                <profile name="Sorcerer on Disc of Tzeentch" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3509-1d1c-ec5e-098b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Fly" hidden="false" id="4963-40ca-88d5-3dd1" targetId="b408-d848-fa84-cfb9" primary="false"/>
+                <categoryLink name="Faction: Tzeentch" hidden="false" id="fc95-abd9-04c1-078d" targetId="a1e7-ad03-b978-ec8a" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="b90a-4197-3cca-014d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="f991-f86c-a693-dcd9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Steed of Slaanesh" hidden="false" id="e3db-3189-8773-af9f" collective="false">
+              <profiles>
+                <profile name="Sorcerer on Steed of Slaanesh" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d0bc-a5a3-9ddd-4747">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Steed of Slaanesh" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9a9d-a197-3e0a-b257">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by a unit with a Steed of Slaanesh.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Faction: Slaanesh" hidden="false" id="d245-c281-3efd-f683" targetId="b755-64fa-1e78-03b9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="b90a-4197-3cca-014d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="1da7-af26-6602-d159" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Palanquin of Nurgle" hidden="false" id="f1c7-bf82-cff0-d58e" collective="false">
+              <profiles>
+                <profile name="Sorcerer on Palanquin of Nurgle" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2d57-f838-a0c6-16fb">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Malefic Appendages" id="6f20-6783-0b2d-33f2" hidden="false" targetId="147a-c73b-bbb6-9508" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Faction: Nurgle" hidden="false" id="2075-a198-598e-a2f6" targetId="bb55-331f-06ab-80e9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="b90a-4197-3cca-014d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="e15c-fb59-677b-44e0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Helwrought Weapons" hidden="false" id="2bc3-bd4b-c9eb-a09c" collective="false" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+        <entryLink import="true" name="Commander" hidden="false" id="bad7-c6d8-4a09-7e9c" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fabius Bile" hidden="false" id="dcfe-008e-b618-f7f1" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4dc8-4df4-1060-7442" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Fabius Bile" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1fc2-2550-bbf8-73b8">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Enhanced Warriors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="98be-41e1-3669-e0a8">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can choose one friendly HERETIC ASTARTES INFANTRY (but not CHARACTER) unit within 1&quot; of this unit. Improve that unit’s Attacks
+characteristic by 1 for the rest of the game. A unit can only be enhanced once per battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="c5a2-38ef-a791-d149" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="3ca8-92e0-3bec-7579" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="3d67-fc4a-4f4a-fefc" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="cc0b-756c-4f61-1d81" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="1a5a-86a1-98cb-315a" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="ffcd-6da4-1693-aa2e" id="c3aa-5098-9517-8da4" primary="false" name="Fabius Bile"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Rod of Torment" hidden="false" id="5515-dd5c-9dc9-81ba" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="869e-797c-2a25-f1ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f8c-448f-a44a-f27a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="The Rod of Torment" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8374-be48-032d-f9ce">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="d3bb-1fa1-72da-905f" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
