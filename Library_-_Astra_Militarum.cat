@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="42" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -1304,7 +1304,11 @@
               </constraints>
             </entryLink>
             <entryLink id="b064-6591-9df3-d63d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-            <entryLink import="true" name="Medusa Siege Cannon" hidden="false" id="1daf-4751-1164-ce52" type="selectionEntry" targetId="bb5d-0786-ca58-7f52"/>
+            <entryLink import="true" name="Medusa Siege Cannon" hidden="false" id="1daf-4751-1164-ce52" type="selectionEntry" targetId="bb5d-0786-ca58-7f52">
+              <modifiers>
+                <modifier type="set" value="Medusa Siege Cannon" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -1586,32 +1590,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="a93a-1ce7-1fca-186e" name="Griffon Heavy Mortar" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f0-fdad-1c30-d658" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b9e-2712-0ec7-1c41" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ac68-cc08-3891-ace5" name="Griffon Heavy Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="30a2-25d5-2149-9da0" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="0c0a-e22d-70f9-6b7d" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
               <constraints>
@@ -1631,6 +1609,15 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
             </entryLink>
             <entryLink id="9d9e-b962-5942-6d5c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Mortar" hidden="false" id="5ed9-aac7-8be5-7221" type="selectionEntry" targetId="4c43-c1e6-81f1-141a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d521-16b9-3af0-b69b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2506-b9c5-e92c-274d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Griffon Heavy Mortar" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
@@ -1670,30 +1657,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <infoLink id="f8d1-83da-486e-8df0" name="Immobile" hidden="false" targetId="58f6-67e8-632d-1f0a" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="c120-645c-45cf-ef93" name="Heavy Mortar" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b50-91d7-5157-83ce" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c55-c7d5-9ea0-4b3f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ad26-0a4d-3fef-fbc5" name="Heavy Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="ef4b-7390-6285-cc02" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="aefd-c478-913b-a0ef" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f52-d748-f1f0-3be9" type="min"/>
@@ -1724,6 +1687,12 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
             </entryLink>
             <entryLink id="1d70-7919-915c-e6b7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Mortar" hidden="false" id="03d8-29a4-3266-2581" type="selectionEntry" targetId="4c43-c1e6-81f1-141a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c31e-92f3-12f8-19d2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7b1-db43-2465-84d6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -1766,30 +1735,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="a09f-5ec7-44f3-e41c" name="Heavy Quad Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e36-3cfd-f988-540c" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c863-bd98-a33b-c8e8" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7c18-cf2a-d5b2-bd66" name="Heavy Quad Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="4e12-01fb-23c0-c8f4" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="0f1a-e0e4-298d-fdc7" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fcb-e94f-6345-a86a" type="min"/>
@@ -1820,6 +1765,12 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
             </entryLink>
             <entryLink id="4b19-9772-d50d-4d9a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Heavy Quad Launcher" hidden="false" id="7421-1558-90f3-9fa4" type="selectionEntry" targetId="6f81-808b-7ac3-ef0c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc5a-2c62-a4eb-43c0" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fa9-54f7-4c27-372f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -2208,7 +2159,11 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
             </entryLink>
             <entryLink id="bc3b-113e-2183-894b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-            <entryLink import="true" name="Medusa Siege Cannon" hidden="false" id="5e80-0f36-73ff-7bd4" type="selectionEntry" targetId="bb5d-0786-ca58-7f52"/>
+            <entryLink import="true" name="Medusa Siege Cannon" hidden="false" id="5e80-0f36-73ff-7bd4" type="selectionEntry" targetId="bb5d-0786-ca58-7f52">
+              <modifiers>
+                <modifier type="set" value="Medusa Siege Cannon" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -4804,7 +4759,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       <profiles>
         <profile id="2a1c-279b-9ae5-6485" name="Field Ordnance Battery" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">3&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
@@ -4907,7 +4862,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5020,21 +4975,33 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Medusa Siege Cannon" hidden="false" id="bb5d-0786-ca58-7f52" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Siege Cannon" hidden="false" id="bb5d-0786-ca58-7f52" collective="false">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be4e-544e-a9cf-cbeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361a-e01c-d8b7-02dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <profiles>
-        <profile name="Medusa Siege Gun" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5cd6-7d00-e741-13be">
+        <profile name="Siege Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5cd6-7d00-e741-13be">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Medusa Siege Cannon" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5fb7-9f27-bb22-28ee" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f3b7-bd4c-3da3-fc50" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5218,6 +5185,165 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Artillery Team" hidden="false" id="cc6a-af69-97fa-0fe4" collective="false">
+      <profiles>
+        <profile name="Artillery Team" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ee2f-7330-acb9-4f06">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="db2e-37a6-29e2-a7cf" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2616-f2d8-ff6f-b273" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8194-4ede-bce7-24da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Close Combat Weapons (Field Ordnance Battery)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e554-ba31-9ea2-e476">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Selection" id="1ac5-3bbe-fe05-e00e" hidden="false" collective="false" import="true" defaultSelectionEntryId="e293-5f6a-9fdc-aed0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9569-eb27-c25e-44b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c57a-f388-b103-3e91" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multiple Rocket Launcher" hidden="false" id="bc6e-a2d3-ad61-e2c4" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45c-40a8-6dde-26f7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Multiple Rocket Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="83a5-ceef-0087-b303">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Barrage" id="4e03-1f29-154d-d376" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Siege Cannon" hidden="false" id="e293-5f6a-9fdc-aed0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efe3-74c0-cd5d-262b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Siege Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a602-a1f3-1d29-bce7">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Barrage" id="0694-6a2a-6395-51ab" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Mortar" hidden="false" id="0274-d008-c763-6b70" type="selectionEntry" targetId="4c43-c1e6-81f1-141a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f1c-77fd-446d-7971" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Quad Launcher" hidden="false" id="489c-f4c6-0cde-3a9e" type="selectionEntry" targetId="6f81-808b-7ac3-ef0c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed06-e5eb-6348-9d1d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crew Lasguns" hidden="false" id="6cca-164e-8b2e-b1bd" collective="false" targetId="2c14-8e96-4741-f169" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e319-0d9e-f407-e880" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5bf-f5b1-1dc3-c8c6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1727-5297-470c-3eb1" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Mortar" hidden="false" id="4c43-c1e6-81f1-141a" collective="false">
+      <profiles>
+        <profile name="Heavy Mortar" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b2c0-0c33-4a94-93e4">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Griffon Heavy Mortar" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="26d1-8c10-974b-c49b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="3879-ee23-ad8f-c63f" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Quad Launcher" hidden="false" id="6f81-808b-7ac3-ef0c" collective="false">
+      <profiles>
+        <profile name="Heavy Quad Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a6df-222c-541c-cca4">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="024d-50f4-51b5-24be" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

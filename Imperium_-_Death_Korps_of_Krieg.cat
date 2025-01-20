@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="20" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5be3-8726-078b-1a23" name="Faction: Officio Prefectus" hidden="false"/>
     <categoryEntry id="7e0f-9b5b-7250-2db7" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false"/>
@@ -23,9 +23,10 @@
     <categoryEntry id="877d-e562-da04-7cae" name="Death Korps Centaur Light Assault Carrier" hidden="false"/>
     <categoryEntry id="e674-4535-7273-c1eb" name="Death Riders" hidden="false"/>
     <categoryEntry id="8655-3c1a-dacc-82ed" name="Commissar" hidden="false"/>
+    <categoryEntry name="Death Korps Lord Marshal Varnan Dreir" id="7d33-61be-a6c8-bdbc" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="2f81-1335-828f-6153" name="Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
+    <entryLink id="2f81-1335-828f-6153" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3a3e-e33e-1cb9-bb59" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="3d7f-56bf-03f2-a3e0" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -618,6 +619,11 @@
     <entryLink id="6c8a-fd6f-ac39-5463" name="Death Korps Infantry Squad" hidden="false" collective="false" import="true" targetId="d93d-f5d5-c3ba-a03f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9306-7e4d-812c-75d1" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Death Korps Lord Marshal Varnan Dreir" hidden="false" id="03c1-9cd2-eaf7-bae3" type="selectionEntry" targetId="383d-f039-b3ae-aa64">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="9bd7-36c9-79dc-fbfd" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1724,6 +1730,48 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Korps Lord Marshal Varnan Dreir" hidden="false" id="383d-f039-b3ae-aa64">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e198-08ed-c825-7948" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Death Korps Lord Marshal Varnan Dreir" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4845-e6a9-42e0-917a">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tough to Kill" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="f488-8816-96e9-738d">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="709b-af08-2ceb-bd9c" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Officer" id="e97d-4fd7-2754-c83d" hidden="false" targetId="29b8-aa23-5c9f-5917" type="profile"/>
+        <infoLink name="Momento Mori" id="6c2f-8534-b83d-65a8" hidden="false" targetId="e521-45e6-bdbd-549d" type="profile"/>
+        <infoLink name="Officer Weapons" id="ca8d-624e-0a79-de86" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="8c58-55a0-cffa-8a08" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="9508-e731-62eb-4224" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="aade-f1fc-e08d-9284" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="351c-b6fa-4d4f-70f3" id="ddca-44b3-48a2-11d3" primary="false" name="Cavalry"/>
+        <categoryLink targetId="93ec-5bb0-7861-be16" id="92cc-e37b-a663-46ac" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="dfd5-d840-d4ca-64a3" id="5e07-bd7f-869c-278f" primary="false" name="Faction: Death Korps of Krieg"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
