@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="42" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -92,7 +92,7 @@
     <categoryEntry name="Militarum Tempestus Aquilons" id="dd89-0b3e-e539-75a1" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="3831-283a-3a5d-d7b3" name="Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
+    <entryLink id="3831-283a-3a5d-d7b3" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="057b-5387-81ad-98c1" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="7b46-2b3d-3bcc-8702" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -1178,6 +1178,18 @@
         <categoryLink targetId="6fb8-97f4-5bda-4e43" id="d178-16c0-c096-9b10" primary="false" name="Officer"/>
         <categoryLink targetId="166c-8c93-3ee0-8ad1" id="957c-c14b-6be9-838f" primary="false" name="Tank Commander"/>
         <categoryLink targetId="3f36-6802-20a8-5b7d" id="3d09-6c91-a117-a9d6" primary="false" name="Rogal Dorn"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Artillery Team" hidden="false" id="9bb9-8af4-4e0c-266c" collective="false" targetId="cc6a-af69-97fa-0fe4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="b246-de29-aef0-4ad8" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink name="Vehicle" hidden="false" id="fe23-82d3-671e-ca02" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="0050-f691-9ecd-c59f" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="99a3-067f-35d9-39f7" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="762b-b24b-feaf-bc89" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Faction: [REGIMENT]" hidden="false" id="c079-5280-c516-410c" targetId="3f9d-8310-412e-1741" primary="false"/>
+        <categoryLink targetId="c2cd-6e10-a4dd-093c" id="23c3-fcc7-4fae-2a9f" primary="false" name="Artillery"/>
+        <categoryLink targetId="3a9f-824e-55e5-7763" id="f0c7-120c-b27d-aa46" primary="false" name="Artillery Team"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5863,7 +5875,7 @@
                 <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
                 <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5879,6 +5891,26 @@
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Powerlifters" hidden="false" id="74d9-db79-48f6-bc30">
+              <profiles>
+                <profile name="Powerlifters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b350-4691-e3b7-efb0">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2e6-b6f4-432e-748f" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2327-fe85-c5d5-f970" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>

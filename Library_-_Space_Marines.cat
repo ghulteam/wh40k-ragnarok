@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -532,13 +532,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="29cb-36f3-3f72-ac2d" name="Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="name" value="Deathwatch Bolt Rifles">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ab6-cc3e-7adb-2ea2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="9cf6-a2b4-c85a-fb81" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
         <infoLink name="Bolt Rifles" id="fc83-1fff-2d62-0716" hidden="false" type="profile" targetId="1b56-4ef3-83d4-368a">
@@ -11961,29 +11954,6 @@ otherwise, place one blast marker next to it.</characteristic>
         <categoryLink id="31d2-4873-a298-c553" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink id="142f-c649-a6cf-eed9" name="Brutalis Dreadnought" hidden="false" targetId="8293-b982-b93f-be0c" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="fb3d-a0a2-e0b1-be48" name="Brutalis Talons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a7-3419-589d-573e" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f1-fc57-7181-ea88" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="74ef-6361-d4a8-e3a2" name="Brutalis Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="cfb4-eff9-7fba-4cfe" name="Chest Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c3f-0b65-ca50-9caa">
           <constraints>
@@ -11994,6 +11964,58 @@ otherwise, place one blast marker next to it.</characteristic>
             <entryLink id="2c3f-0b65-ca50-9caa" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
             <entryLink id="687e-db56-2b5f-bb56" name="Twin Multi-melta" hidden="false" collective="false" import="true" targetId="8db9-b9be-885f-5a5f" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Brutalis Melee Weapons" id="4a38-7ca1-24b9-cfd2" hidden="false" defaultSelectionEntryId="90dd-c37f-43c2-2fa0">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brutalis Talons" hidden="false" id="ced5-96be-974b-ec0b" collective="false">
+              <profiles>
+                <profile name="Brutalis Talons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9af5-ffb0-262b-9392">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Brutalis Fists &amp; Twin Bolt Rifles" hidden="false" id="90dd-c37f-43c2-2fa0">
+              <profiles>
+                <profile name="Brutalis Fists" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ffc3-8467-d25f-a39f">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Twin Bolt Rifles" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ec7f-2b26-0e42-079d">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Fire" id="b976-c09a-2448-9f64" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39eb-7248-f633-f718" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="437b-e08b-a21e-2411" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
