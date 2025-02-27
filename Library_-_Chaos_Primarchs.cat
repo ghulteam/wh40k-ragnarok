@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6638-9778-3d62-e10b" name="Library - Chaos Primarchs" revision="8" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6638-9778-3d62-e10b" name="Library - Chaos Primarchs" revision="9" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c94c-a102-a50c-a357" name="Angron" hidden="false"/>
     <categoryEntry id="0270-f8eb-8d51-e8f7" name="Magnus the Red" hidden="false"/>
     <categoryEntry id="6892-4c3f-2516-3431" name="Mortarion" hidden="false"/>
+    <categoryEntry name="Fulgrim" id="f1aa-65b4-effe-cb1b" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="9b8e-914b-6e41-3c04" name="Angron" hidden="false" collective="false" import="true" type="unit">
@@ -294,6 +295,124 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="b22d-8327-1b0d-7dc7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fulgrim" hidden="false" id="fcf4-154b-1083-369c" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6796-80d0-446d-b551" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Primarch of the Emperors Children" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="be03-8526-ce5f-0347">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made by friendly EMPEROR CHILDREN units whilst they are within 7&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fulgrim" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="da65-f05b-80c9-3c4f">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Daemonic Poisons" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0393-dff7-452a-356d">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed and is instead placed in tactical reserves. When this unit arrives as reinforcement as part of this rule, set it up anywhere on the battlefield that is more than 9&quot; from any enemy units. Afterwards, place 2 Wound Markers next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Beguiling Form" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6086-0a9b-6a83-710f">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="07b7-258b-c8ed-6150" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Super-heavy" hidden="false" id="2981-1697-0ca4-983e" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink name="Titanic" hidden="false" id="746e-49fd-b03b-ddae" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="60e5-4f65-e0f4-80fe" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="c6c9-a68e-ee4c-b7db" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink name="Primarch" hidden="false" id="18d3-666a-a6ff-df00" targetId="9376-59f2-9b7f-cce3" primary="false"/>
+        <categoryLink name="Fly" hidden="false" id="ed66-4c96-b01e-e65d" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink name="Daemon" hidden="false" id="f1e2-818e-0670-026f" targetId="dfc6-5d64-127f-97a1" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="5243-5123-894c-c25d" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="f1aa-65b4-effe-cb1b" id="7648-9ce1-e22f-e1ee" primary="false" name="Fulgrim"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="857a-0961-d851-26c6" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="b755-64fa-1e78-03b9" id="f1a1-fbfa-ade8-cff1" primary="false" name="Faction: Slaanesh"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Daemonic blades" hidden="false" id="7f63-11f3-0d23-90f4" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a67-1206-8de6-1e9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f668-ae3e-099b-1100" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Daemonic blades" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b65c-b2d6-8cc7-0fd5">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Serpentine tail" hidden="false" id="a935-83e7-a62f-7a99" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4e2-b995-a9b9-7a6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b34-ccdd-d719-bd7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Serpentine tail" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0c5c-64d8-5356-dd3e">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malefic lash" hidden="false" id="4247-b59f-28d6-4eab">
+          <profiles>
+            <profile name="Malefic lash" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c74f-8147-fa06-0d1d">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04db-9920-60b0-9c3b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9acc-af29-3e0e-e529" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Witchfire" id="934f-1557-f362-e903" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="552d-630d-6a8b-baa5" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
