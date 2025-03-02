@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="19" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="20" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -1070,7 +1070,7 @@
       <description>Attacks made with this weapon automatically score a hit (no hit roll is made).
 
 
-You may perform a shoot action with this weapon in addition to a fight action, as if the user of this weapon is a SUPER-HEAVY. If this weapon is shot this way, you may only target any enemy unit that is in base contact with its user.</description>
+You may perform a shoot action with this weapon in addition to a fight action, as if the user of this weapon is SUPER-HEAVY. If this weapon is shot this way, you may only target any enemy unit that is in base contact with its user.</description>
     </rule>
     <rule id="48b8-058a-9085-0e80" name="Anti-air" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>Add 2 to hit rolls for attacks made with this weapon that target AIRCRAFT units.</description>
