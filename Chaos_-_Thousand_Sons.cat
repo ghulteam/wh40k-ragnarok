@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f991-f86c-a693-dcd9" name="Chaos - Thousand Sons" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f991-f86c-a693-dcd9" name="Chaos - Thousand Sons" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="042b-9cd7-f7fa-78e0" name="Warp Vortex - D3 Roll">
       <characteristicTypes>
@@ -229,12 +229,14 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="2fc0-14f4-85cd-6fb1" name="Horrors" hidden="false" collective="false" import="true" targetId="d641-7d7c-f838-062e" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="967d-24bb-383e-4140" primary="true" name="Troops"/>
+        <categoryLink targetId="d0ec-2044-09f4-f7ff" id="06fd-876c-cdb9-bcfd" primary="false" name="Faction: Thousand Sons"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8c10-ace4-77c9-d004" name="Tzaangor Shaman" hidden="false" collective="false" import="true" targetId="e4a8-c09a-e6bf-24ae" type="selectionEntry"/>
     <entryLink id="f061-77b4-f067-cdb9" name="Flamers" hidden="false" collective="false" import="true" targetId="18de-d77c-83c9-df90" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="7ef2-4a29-380e-aebe" primary="true" name="Elites"/>
+        <categoryLink targetId="d0ec-2044-09f4-f7ff" id="ce93-f08d-9b4d-9375" primary="false" name="Faction: Thousand Sons"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ee78-534a-8dc4-5713" name="Scarab Occult Terminators" hidden="false" collective="false" import="true" targetId="4d0f-9457-79cd-0e10" type="selectionEntry"/>
@@ -248,6 +250,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="cc77-fcd2-e6c2-8132" name="Screamers" hidden="false" collective="false" import="true" targetId="378b-8948-e2c9-9761" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="f8ea-ff23-c466-7ec3" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="d0ec-2044-09f4-f7ff" id="5534-d6c7-188e-2764" primary="false" name="Faction: Thousand Sons"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bfe1-68f2-b3e8-eb73" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="ed66-68de-c8bb-af54" type="selectionEntry">
@@ -1376,7 +1379,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <catalogueLink type="catalogue" name="Library - Daemons" id="2730-8db3-3dca-617e" targetId="90ed-6ae6-a8a8-ddaf"/>
   </catalogueLinks>
   <rules>
-    <rule name="Let The Galaxy Burn" id="94c2-b3e2-cd49-20a7" hidden="false">
+    <rule name="Legion of Sorcery" id="94c2-b3e2-cd49-20a7" hidden="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1404,7 +1407,10 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.</description>
+      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.
+
+
+Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you can roll one D12 for one of that unit&apos;s saving throws instead of one D6.</description>
     </rule>
   </rules>
 </catalogue>

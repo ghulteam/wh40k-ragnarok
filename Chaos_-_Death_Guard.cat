@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
     <categoryEntry id="dc88-9bb3-da14-d8af" name="Typhus" hidden="false"/>
@@ -325,6 +325,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="e2f8-8f56-be85-186f" name="Nurglings" hidden="false" collective="false" import="true" targetId="c902-44db-d3bb-43fc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="51d0-e817-3d75-ea8f" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="69d1-74ad-11a0-9fcd" primary="false" name="Faction: Death Guard"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9f0d-07ca-a09b-f316" name="Noxious Blightbringer" hidden="false" collective="false" import="true" targetId="6af6-3215-797b-12e2" type="selectionEntry">
@@ -365,6 +366,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="69a6-0ada-65ff-7eb4" name="Beasts of Nurgle" hidden="false" collective="false" import="true" targetId="f735-d7ee-46e7-4474" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="eae7-d955-b157-fe2d" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="4281-a304-00e8-9a9b" primary="false" name="Faction: Death Guard"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ffb8-afdd-f553-908e" name="Possessed" hidden="false" collective="false" import="true" targetId="5115-64ae-c958-a99f" type="selectionEntry">
@@ -394,6 +396,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="0880-6daf-6d4e-2388" name="Plague Drones" hidden="false" collective="false" import="true" targetId="5ee2-8dbd-8a03-baff" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="309d-cf2f-3ea7-684f" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="9ee5-538e-40d1-2ad6" primary="false" name="Faction: Death Guard"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6df8-2bfd-24a2-0f53" name="Chaos Land Raider" hidden="false" collective="false" import="true" targetId="a0a7-ca99-f182-aa7c" type="selectionEntry">
@@ -2177,7 +2180,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <catalogueLink type="catalogue" name="Library - Daemons" id="0070-f763-460c-a44d" targetId="90ed-6ae6-a8a8-ddaf" importRootEntries="true"/>
   </catalogueLinks>
   <rules>
-    <rule name="Let The Galaxy Burn" id="8391-3c81-c488-8947" hidden="false">
+    <rule name="Legion of Plagues" id="8391-3c81-c488-8947" hidden="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -2205,7 +2208,9 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.</description>
+      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.
+
+Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you can roll one D12 for one of that unit&apos;s saving throws instead of one D6.</description>
     </rule>
   </rules>
 </catalogue>
