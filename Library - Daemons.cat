@@ -18,6 +18,7 @@
     <categoryEntry name="Bloodthirster" id="7ec1-ce53-5b0b-817f" hidden="false" page=""/>
     <categoryEntry name="Great Unclean One" id="5a06-7132-02b2-faf8" hidden="false"/>
     <categoryEntry name="Keeper of Secrets" id="2178-891e-43b1-c2b0" hidden="false"/>
+    <categoryEntry name="Lord of Change" id="b9ae-2fad-e40e-b96e" hidden="false"/>
   </categoryEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Chaos" id="0d89-6826-2e1b-3181" targetId="e1a8-50a4-821a-eda1" importRootEntries="true"/>
@@ -1801,111 +1802,83 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="cbf5-d29e-9791-965e" hidden="false" defaultSelectionEntryId="fd3f-5b36-6ce4-b859">
+        <selectionEntryGroup name="Weapons" id="cbf5-d29e-9791-965e" hidden="false" defaultSelectionEntryId="f2d8-f752-85b5-f2ae">
+          <entryLinks>
+            <entryLink import="true" name="Axe of Khorne" hidden="false" id="e7e8-e8b4-7609-d289" type="selectionEntry" targetId="434b-0632-4b77-2ba6">
+              <profiles>
+                <profile name="Bloodflail (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="22de-638d-ea74-6b9a">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bloodflail (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5456-1673-dcb1-3308">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="Axe of Khorne and Bloodflail" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Axe of Khorne" hidden="false" id="f2d8-f752-85b5-f2ae" type="selectionEntry" targetId="434b-0632-4b77-2ba6">
+              <profiles>
+                <profile name="Lash of Khorne (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4b75-7a96-e1ed-ce84">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Lash of Khorne (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="d71d-5dff-b2a8-17b1">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="Axe of Khrone and Lash of Khorne" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Axe and Lash" hidden="false" id="fd3f-5b36-6ce4-b859">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Lash of Khorne" hidden="false" id="b2ef-ce6a-2131-0c4b" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f27a-865f-4415-33bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea6d-9e21-7321-fec9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Lash of Khorne (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e8e7-2161-9c11-0f7a">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Lash of Khorne (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0cbf-26ae-072d-b143">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Axe of Khorne" hidden="false" id="9c81-24a5-3316-9f5a" type="selectionEntry" targetId="434b-0632-4b77-2ba6"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Axe and Flail" hidden="false" id="f7e4-689e-c20a-be85">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bloodflail" hidden="false" id="2629-b13b-02df-473b" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f468-cc82-861a-33e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b49-b6c9-ae49-a8ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Bloodflail (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="15f6-0727-c5a4-b415">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Bloodflail (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7385-c60b-a812-2115">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Axe of Khorne" hidden="false" id="5802-6216-1d52-1b9c" type="selectionEntry" targetId="434b-0632-4b77-2ba6"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Great Axe" hidden="false" id="df76-92a9-c355-d30e">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Great Axe of Khorne" hidden="false" id="0fac-c1d6-e468-f6d8" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3118-6d91-d100-115b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca5-0d17-6e8c-b400" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Great Axe of Khorne" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5c76-aca2-c369-b487">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Destroyer" id="ce0d-608a-3236-f883" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Great Axe of Khorne" hidden="false" id="907d-0c3e-5753-bd55" collective="false">
+              <profiles>
+                <profile name="Great Axe of Khorne" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2456-9c6b-9d94-068a">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Destroyer" id="2df8-4bf7-6c4e-2dac" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2310,6 +2283,157 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord of Change" hidden="false" id="bf8c-db70-2af7-1b1e" collective="false">
+      <profiles>
+        <profile name="Lord of Change" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="34f2-5268-42d5-fc62">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Greater Daemon of Tzeentch" id="9a24-8154-d8c6-9446" hidden="false" targetId="2360-255d-d03a-6f2e" type="profile"/>
+        <infoLink name="Deep Strike" id="c015-0d20-c05e-65a5" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="27e8-52bf-56b1-b978" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="da69-a8a1-c7f8-76af" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="6950-b398-2fb8-f5ad" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink name="Fly" hidden="false" id="5308-de0f-89d6-119e" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="68b3-dfed-459e-bc14" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="62f2-974b-66ca-739b" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Tzeentch" hidden="false" id="d0e7-b3aa-55e3-d465" targetId="a1e7-ad03-b978-ec8a" primary="false"/>
+        <categoryLink name="Faction: Daemon" hidden="false" id="63fb-0d2b-c861-f4f6" targetId="86a8-bb20-bf42-76ee" primary="false"/>
+        <categoryLink name="Faction: Legiones Daemonica" hidden="false" id="749d-7816-3333-8155" targetId="644c-28aa-39ed-438f" primary="false"/>
+        <categoryLink targetId="b9ae-2fad-e40e-b96e" id="15e9-7655-8c4f-33be" primary="false" name="Lord of Change"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Orange Fires of Tzeentch" hidden="false" id="21a1-f249-7d59-3999" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09b2-7f00-07cc-41f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f643-51e4-0b22-b08b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Orange Fires of Tzeentch" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0b32-c2f6-b7cd-424b">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="30&quot;" field="bea7-7040-8485-6f0f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="bf8c-db70-2af7-1b1e" childId="5a46-95d2-75ea-72be" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Witchfire" id="7e73-5b74-7d20-9874" hidden="false" targetId="8ce8-6dd3-c0a8-35ad" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Staff of Tzeentch" hidden="false" id="6f73-5374-526b-52ed" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd9e-7b8e-af78-2d0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aafe-2ecf-40cc-e096" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Staff of Tzeentch" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c446-96f7-7a7a-0a60">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="6f75-aa07-7f8d-07a1" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46f5-03c4-d59a-2223" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Baleful Sword" hidden="false" id="1c8f-afd7-bf0a-4dd5" collective="false">
+              <profiles>
+                <profile name="Baleful Sword" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="fe39-14d0-941e-51f4">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rod of Sorcery" hidden="false" id="5a46-95d2-75ea-72be" collective="false">
+              <profiles>
+                <profile name="Rod of Sorcery" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="a473-5064-ba1c-b422">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Rod of Sorcery, add 6&quot; to the Range of this unit’s Orange Fires of Tzeentch.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="0301-3728-8431-3823" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="ed33-9f77-49d8-2e75" type="selectionEntry" targetId="104d-a535-a50d-9f9b"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt of Tzeentch" hidden="false" id="104d-a535-a50d-9f9b">
+      <profiles>
+        <profile name="Bolt of Tzeentch" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ba36-bb07-bbe2-4ed6">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6f-e424-f318-d245" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af46-1e51-33f0-3b79" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Witchfire" id="098b-09ce-abf3-376d" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Psychic Backlash" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="32f9-fc1b-22ea-5c6a">
@@ -2345,6 +2469,11 @@
     <profile name="Mesmerising Aura" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="e931-787f-3244-16c3">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Greater Daemon of Tzeentch" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2360-255d-d03a-6f2e">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly TZEENTCH DAEMON units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

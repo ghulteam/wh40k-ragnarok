@@ -18,7 +18,6 @@
     <categoryEntry id="d1cc-b544-5481-7b63" name="Blood Throne" hidden="false"/>
     <categoryEntry id="6cd7-4071-9eaa-6159" name="Flesh Hound" hidden="false"/>
     <categoryEntry id="9ca5-313a-85cc-80c2" name="Karanak" hidden="false"/>
-    <categoryEntry id="13e2-4f5e-9729-5fe5" name="Lord of Change" hidden="false"/>
     <categoryEntry id="d05a-9d67-3ee6-2bf8" name="Kairos Fateweaver" hidden="false"/>
     <categoryEntry id="ad10-11c9-c21a-d2c1" name="Horror" hidden="false"/>
     <categoryEntry id="5bb1-eca3-2372-dbc9" name="The Blue Scribes" hidden="false"/>
@@ -28,7 +27,6 @@
     <categoryEntry id="439a-077a-092b-6612" name="Changecaster" hidden="false"/>
     <categoryEntry id="04e6-0878-3ee5-3e5c" name="Fateskimmer" hidden="false"/>
     <categoryEntry id="262d-66b5-41c6-ce54" name="Fluxmaster" hidden="false"/>
-    <categoryEntry id="848a-e9e2-95f6-f15d" name="Great Unclean One" hidden="false"/>
     <categoryEntry id="94a9-61a5-bd7c-f553" name="Rotigus" hidden="false"/>
     <categoryEntry id="b16c-ec5a-b4a6-af3e" name="Plaguebearer" hidden="false"/>
     <categoryEntry id="aff1-936f-b004-8ee1" name="Epidemius" hidden="false"/>
@@ -39,7 +37,6 @@
     <categoryEntry id="6b0d-0721-2b56-887e" name="Daemon Prince" hidden="false"/>
     <categoryEntry id="61ef-f47c-b083-ce82" name="Be&apos;lakor" hidden="false"/>
     <categoryEntry id="f9f3-1f0e-3656-854e" name="Daemon Prince of Chaos" hidden="false"/>
-    <categoryEntry id="03d7-9fc9-b780-4f62" name="Keeper of Secrets" hidden="false"/>
     <categoryEntry id="da4f-3175-e907-d9a5" name="The Masque of Slaanesh" hidden="false"/>
     <categoryEntry id="a297-fc88-ed8b-b247" name="Daemonette" hidden="false"/>
     <categoryEntry id="a279-1019-b44f-fb19" name="Exalted Flamer" hidden="false"/>
@@ -92,9 +89,9 @@
         <forceEntry id="c91d-11c7-56ec-4919" name="Tetragon of Darkness" hidden="false">
           <categoryLinks>
             <categoryLink id="6bed-fbfe-e520-fd2b" name="Bloodthirster" hidden="false" targetId="7ec1-ce53-5b0b-817f" primary="false" type="categoryEntry"/>
-            <categoryLink id="73a6-ab2c-9795-8823" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
-            <categoryLink id="4735-d1f6-cb4d-1acd" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false"/>
-            <categoryLink id="4ed7-4994-67d2-7ac9" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false"/>
+            <categoryLink id="73a6-ab2c-9795-8823" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false" type="categoryEntry"/>
+            <categoryLink id="4735-d1f6-cb4d-1acd" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false" type="categoryEntry"/>
+            <categoryLink id="4ed7-4994-67d2-7ac9" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false" type="categoryEntry"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -104,17 +101,17 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563b-2ed1-ecae-160a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e853-928f-4ad4-8a75" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false">
+        <categoryLink id="e853-928f-4ad4-8a75" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false" type="categoryEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd97-4bc1-894f-07f5" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b3ee-db0d-ec17-ba00" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false">
+        <categoryLink id="b3ee-db0d-ec17-ba00" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false" type="categoryEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a2-ab72-16f3-0c87" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4073-461f-3122-bfb6" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false">
+        <categoryLink id="4073-461f-3122-bfb6" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false" type="categoryEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd9-3ca8-9233-7715" type="max"/>
           </constraints>
@@ -468,10 +465,22 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="19db-af05-644b-aacc" name="Lord of Change" hidden="false" collective="false" import="true" targetId="a0d8-eda5-0321-ed5b" type="selectionEntry">
+    <entryLink id="19db-af05-644b-aacc" name="Lord of Change" hidden="false" collective="false" import="true" targetId="bf8c-db70-2af7-1b1e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a2f3-ee80-dc60-4ca8" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="777b-470f-f311-0fad" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="a39b-8c2d-5cb1-472d" name="Mamon Transfigured" hidden="false" collective="false" import="true" targetId="9f4b-a721-8e57-0776" type="selectionEntry">
       <categoryLinks>
@@ -762,7 +771,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you can roll one D12 for one of that unit&apos;s saving throws instead of one D6.</description>
+      <description>[Legiones Daemonica]
+
+Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you can roll one D12 for one of that unit&apos;s saving throws instead of one D6.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -1019,33 +1030,6 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b8d-316d-3c66-95e6" name="Living Whip" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="59e0-6333-fc28-0ee4" name="Living Whip (Ranged)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">6&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="cf6a-52bc-0581-1c1d" name="Living Whip (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d83a-e7f9-d9a6-58ce" name="Grasping Tongues" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf14-335c-2f74-0d69" type="min"/>
@@ -1267,10 +1251,10 @@
         <categoryLink id="0526-d129-0fe9-5541" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="31c0-b321-c2c1-5187" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
         <categoryLink id="8ac2-11db-041e-edfd" name="Aetaos’rau’keres" hidden="false" targetId="1632-88b8-dc52-fb06" primary="false"/>
-        <categoryLink id="5eb7-ed15-3aa4-5006" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false"/>
         <categoryLink targetId="a1e7-ad03-b978-ec8a" id="f2ad-e251-29b0-4c98" primary="false" name="Faction: Tzeentch"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="f286-c9fc-ddfe-c8eb" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="4c07-49d7-e2b2-cc1d" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="b9ae-2fad-e40e-b96e" id="b625-f3f7-024e-b564" primary="false" name="Lord of Change"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="88e9-691e-93d4-ab2e" name="Staff of Cataclysm" hidden="false" collective="false" import="true" type="upgrade">
@@ -1332,7 +1316,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="8941-1ef0-3080-9797" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="d7af-d984-8dc2-8f6e" type="selectionEntry" targetId="a2a4-3d10-3830-de50"/>
+        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="d7af-d984-8dc2-8f6e" type="selectionEntry" targetId="104d-a535-a50d-9f9b"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="70"/>
@@ -1925,11 +1909,11 @@
         <categoryLink id="1613-d85a-5176-5a93" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="987d-3040-6340-3c37" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="6ae3-6dd1-e193-fc9c" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
-        <categoryLink id="c630-e5fe-28a7-698d" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false"/>
         <categoryLink id="a00b-28d3-eaa6-3e11" name="Zarakynel" hidden="false" targetId="d561-4eb2-d476-6731" primary="false"/>
         <categoryLink targetId="b755-64fa-1e78-03b9" id="83de-c146-0958-2664" primary="false" name="Faction: Slaanesh"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="ebe4-4fee-8bac-6356" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="e78f-50c2-10f9-26d3" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="2178-891e-43b1-c2b0" id="edbd-07f0-945c-8d2c" primary="false" name="Keeper of Secrets"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1fd3-43b1-e514-e642" name="Souleater Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -4113,7 +4097,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2769-780d-2d2e-d97f" name="Greater Daemon of Tzeentch" hidden="false" targetId="ff09-f770-de6f-2848" type="profile"/>
+        <infoLink id="2769-780d-2d2e-d97f" name="Greater Daemon of Tzeentch" hidden="false" targetId="2360-255d-d03a-6f2e" type="profile"/>
         <infoLink name="Deep Strike" id="c5fc-753f-eb81-e536" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
       <categoryLinks>
@@ -4123,11 +4107,11 @@
         <categoryLink id="26a5-568e-b78e-7202" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="d68f-6f15-1357-4bfe" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="d0d7-ac5e-ce4b-afa9" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="2732-6eef-e613-4e95" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false"/>
         <categoryLink id="045c-b8e8-70b3-b45b" name="Kairos Fateweaver" hidden="false" targetId="d05a-9d67-3ee6-2bf8" primary="false"/>
         <categoryLink targetId="a1e7-ad03-b978-ec8a" id="e3b3-2b93-baef-b3d3" primary="false" name="Faction: Tzeentch"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="1b65-693b-1b9d-30b9" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="e8de-00e2-3b8f-1a23" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="b9ae-2fad-e40e-b96e" id="4799-6d4c-2712-60cf" primary="false" name="Lord of Change"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3bbc-d1a4-2165-8fa9" name="Purple Fires of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
@@ -4178,7 +4162,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="20ae-29d4-f981-d433" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="53f1-58e1-3e4d-705d" type="selectionEntry" targetId="a2a4-3d10-3830-de50"/>
+        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="53f1-58e1-3e4d-705d" type="selectionEntry" targetId="104d-a535-a50d-9f9b"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
@@ -4266,148 +4250,6 @@
       <infoLinks>
         <infoLink name="Deep Strike" id="37a4-49f5-b7bc-edb4" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry id="a0d8-eda5-0321-ed5b" name="Lord of Change" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777b-470f-f311-0fad" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="ef6b-2a8c-b098-18cd" name="Lord of Change" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="4a8f-8780-8ed2-8f65" name="Greater Daemon of Tzeentch" hidden="false" targetId="ff09-f770-de6f-2848" type="profile"/>
-        <infoLink name="Deep Strike" id="dd18-840e-0a4f-714f" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="175c-18be-4d80-af7f" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="9874-b21a-9e93-b876" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-        <categoryLink id="e446-7bbd-4b0c-77a4" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
-        <categoryLink id="902c-2489-e204-05ae" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
-        <categoryLink id="de6a-2d4a-e55a-7fde" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
-        <categoryLink id="112d-352e-33fd-bc21" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="f1f4-b110-404d-6119" name="Lord of Change" hidden="false" targetId="13e2-4f5e-9729-5fe5" primary="false"/>
-        <categoryLink targetId="a1e7-ad03-b978-ec8a" id="7256-dc16-20fd-75ad" primary="false" name="Faction: Tzeentch"/>
-        <categoryLink targetId="86a8-bb20-bf42-76ee" id="ff1b-02bc-b539-a56e" primary="false" name="Faction: Daemon"/>
-        <categoryLink targetId="644c-28aa-39ed-438f" id="479f-f5c8-77d2-c74b" primary="false" name="Faction: Legiones Daemonica"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2a84-5423-3376-989b" name="Orange Fires of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93b3-1cd3-fcb3-cfa2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd6-08fd-a248-3a4a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ffd8-ec40-2e11-f3fd" name="Orange Fires of Tzeentch" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <modifiers>
-                <modifier type="set" field="bea7-7040-8485-6f0f" value="30&quot;">
-                  <conditions>
-                    <condition field="selections" scope="a0d8-eda5-0321-ed5b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ac3-e3eb-b5d3-9f7d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="4011-ec64-5136-feae" name="Witchfire" hidden="false" targetId="8ce8-6dd3-c0a8-35ad" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1f39-3ee8-2de5-f72e" name="Staff of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125b-f9d8-7370-a390" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="830d-05a3-3cbf-125d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="a53b-7779-8b5c-9176" name="Staff of Tzeentch" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1a34-20e2-2e20-80ea" name="Wargear" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c46-d2e8-cabc-d448" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c58a-66a0-4858-cb2e" name="Baleful Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="56cf-dba9-307e-12f4" name="Baleful Sword" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7ac3-e3eb-b5d3-9f7d" name="Rod of Sorcery" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="cc5c-b48b-e6d3-4a58" name="Rod of Sorcery" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Rod of Sorcery, add 6&quot; to the Range of this unit’s Orange Fires of Tzeentch.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="37d5-734d-6183-d62c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Bolt of Tzeentch" hidden="false" id="4263-a904-a3f8-f60e" type="selectionEntry" targetId="a2a4-3d10-3830-de50"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="9a93-ccd2-81a0-5ccf" name="Plague Toads of Nurgle" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4734,11 +4576,11 @@
         <categoryLink id="b224-bb05-c31e-25de" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
         <categoryLink id="5ed6-1b42-8a98-1395" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="6cdc-ed3a-f645-b3ba" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="6c2b-b468-7eae-e84a" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
         <categoryLink id="46be-8353-215f-9f5c" name="Rotigus" hidden="false" targetId="94a9-61a5-bd7c-f553" primary="false"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="ed2d-df53-8e0a-144a" primary="false" name="Faction: Nurgle"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="07e0-155f-5cdc-33f6" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="0e50-6424-70eb-1f5e" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="5a06-7132-02b2-faf8" id="b892-f0e1-39e8-25f7" primary="false" name="Great Unclean One"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8967-8cf8-1675-9be4" name="Streams of Brackish Filth" hidden="false" collective="false" import="true" type="upgrade">
@@ -4867,11 +4709,11 @@
         <categoryLink id="a808-6334-549b-158b" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="45ea-695e-3ee6-2d25" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="631a-ae2b-a5f1-de4b" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
-        <categoryLink id="30c7-59ac-1d8e-9936" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
         <categoryLink id="6cfd-bd59-6003-088c" name="Scabeiathrax the Bloated" hidden="false" targetId="68e0-d8a3-a5c1-74cd" primary="false"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="1afc-0f59-039d-18b7" primary="false" name="Faction: Nurgle"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="38b5-bd96-b876-1557" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="a462-914b-3f5f-8277" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="5a06-7132-02b2-faf8" id="0e6b-c1b5-f866-50fa" primary="false" name="Great Unclean One"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="773e-391d-2b22-c777" name="Swarm of Nurglings" hidden="false" collective="false" import="true" type="upgrade">
@@ -5045,11 +4887,11 @@
         <categoryLink id="1cdd-c0cd-037a-9b40" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
         <categoryLink id="02e1-723b-a16c-37aa" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="8310-dec6-0774-2345" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="964c-5791-c1d9-4083" name="Keeper of Secrets" hidden="false" targetId="03d7-9fc9-b780-4f62" primary="false"/>
         <categoryLink id="ce14-213e-037d-a720" name="Shalaxi Helbane" hidden="false" targetId="a8f1-680a-4df3-2470" primary="false"/>
         <categoryLink targetId="b755-64fa-1e78-03b9" id="f305-5d4e-d2b8-977e" primary="false" name="Faction: Slaanesh"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="cc47-e913-18f1-80eb" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="b32b-d77d-7882-51c4" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="2178-891e-43b1-c2b0" id="fdfb-f450-039c-2cfd" primary="false" name="Keeper of Secrets"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0da5-339a-075e-b29a" name="Soulpiercer" hidden="false" collective="false" import="true" type="upgrade">
@@ -6611,11 +6453,11 @@
         <categoryLink id="fc6a-fd51-6ce8-f287" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
         <categoryLink id="c24b-2b9d-d776-58aa" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="28b0-273c-ece5-b64f" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="2d97-9b41-7386-3259" name="Great Unclean One" hidden="false" targetId="848a-e9e2-95f6-f15d" primary="false"/>
         <categoryLink id="61ce-c5e7-387c-85f0" name="Ku&apos;gath the Plaguefather" hidden="false" targetId="9d56-3e41-332a-ba5b" primary="false"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="da44-3aa2-04a7-c783" primary="false" name="Faction: Nurgle"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="6a84-f5d6-5dc6-954d" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="ff1c-d84c-169a-08d9" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="5a06-7132-02b2-faf8" id="7a2a-aa95-2bf5-6954" primary="false" name="Great Unclean One"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="23f2-fcdc-e106-d24a" name="Bilesword" hidden="false" collective="false" import="true" type="upgrade">
@@ -6867,11 +6709,6 @@
     <profile id="c36a-af2e-bd34-8442" name="Locus of Khorne" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by friendly KHORNE DAEMON units whilst they are within 6&quot; of any units with this ability.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ff09-f770-de6f-2848" name="Greater Daemon of Tzeentch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-      <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly TZEENTCH DAEMON units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="f46d-526b-bd55-8499" name="Locus of Tzeentch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
