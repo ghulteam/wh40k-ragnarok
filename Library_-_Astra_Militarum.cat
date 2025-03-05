@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="43" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="44" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -1312,7 +1312,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1696,7 +1696,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2167,7 +2167,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5007,9 +5007,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage, Destroyer</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="Medusa Siege Cannon" field="name">
@@ -5027,6 +5027,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       </profiles>
       <infoLinks>
         <infoLink name="Barrage" id="877f-5740-2de0-93c2" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+        <infoLink name="Destroyer" id="416c-bf9e-cb6d-93e0" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -5248,7 +5249,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Selection" id="5c14-7a03-7464-bf31" hidden="false" collective="false" import="true" defaultSelectionEntryId="9570-8f86-e937-71cf">
+            <selectionEntryGroup name="Weapon Selection" id="5c14-7a03-7464-bf31" hidden="false" collective="false" import="true" defaultSelectionEntryId="91d8-d79f-0ba2-0469">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0505-4068-4e15-1d04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9820-c385-ea3a-908e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -5273,6 +5274,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                   <infoLinks>
                     <infoLink name="Barrage" id="3897-dd83-d88a-8bd4" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -5285,8 +5289,15 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd00-4882-77f1-c3d5" includeChildSelections="false"/>
                   </constraints>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Siege Cannon" hidden="false" id="5259-bbe3-adff-eeb4" type="selectionEntry" targetId="bb5d-0786-ca58-7f52"/>
+                <entryLink import="true" name="Siege Cannon" hidden="false" id="5259-bbe3-adff-eeb4" type="selectionEntry" targetId="bb5d-0786-ca58-7f52">
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5300,7 +5311,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink import="true" name="Commander" hidden="false" id="abdf-7fe5-eeb2-ef44" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
           </costs>
           <infoLinks>
             <infoLink name="Immobile" id="8128-3e29-fad2-d047" hidden="false" targetId="58f6-67e8-632d-1f0a" type="profile"/>
