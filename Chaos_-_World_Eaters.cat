@@ -314,6 +314,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="0e74-9b80-290b-c2f2" id="5117-ad54-f613-6e08" primary="false" name="Faction: Butcher Astartes"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Daemon Prince of Khorne" hidden="false" id="1e24-ef34-72fc-3490" type="selectionEntry" targetId="998e-ef86-a775-7811"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4d14-2f5a-e38e-07a1" name="Jakhals" hidden="false" collective="false" import="true" type="unit">
@@ -1089,6 +1090,86 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Daemon Prince of Khorne" hidden="false" id="998e-ef86-a775-7811" collective="false">
+      <profiles>
+        <profile name="Daemon Prince of Khorne" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c7a7-8fff-fe09-002c">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="998e-ef86-a775-7811" childId="4ab9-1a24-d1a7-654d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Daemon Prince of Khorne" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ce1c-172a-3773-9679">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly BUTCHER ASTARTES and KHORNE DAEMON units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="77b3-c831-23a4-1dde" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink name="Faction: Chaos" hidden="false" id="13ec-0fc9-ef3e-60b8" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Heavy" hidden="false" id="30c1-f367-f87e-decd" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink name="Monster" hidden="false" id="2bb3-3328-6331-8476" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="27c8-3900-b498-4ecb" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Daemon" hidden="false" id="3635-7403-6646-e4a8" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink name="Daemon Prince" hidden="false" id="5369-3933-1263-6356" targetId="b457-340c-c8e2-d60b" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="9659-d66c-ad38-3a8a" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="9e3f-ff07-e9f1-966f" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="0e74-9b80-290b-c2f2" id="ef25-8497-616f-8e41" primary="false" name="Faction: Butcher Astartes"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="3b72-ed6a-79da-b270" primary="false" name="Faction: Khorne"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="4ab9-1a24-d1a7-654d" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f21-36f5-03eb-c35a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Fly" hidden="false" id="adb6-7a75-45c1-6eed" targetId="b408-d848-fa84-cfb9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daemonic Weapons" hidden="false" id="3eea-55a8-37b8-d668" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c75-33f4-4ffe-df19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17d1-1c67-5692-0c7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Daemonic Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b59f-60b7-38c1-4f5a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="1043-9620-6a3a-88f6" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Lord of Blood" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2f61-aaa1-439a-6118">
@@ -1132,7 +1213,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>[Butcher Astartes]
+      <description>[World Eater]
 
 Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.
 
