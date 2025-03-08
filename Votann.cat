@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -18,6 +18,7 @@
     <categoryEntry id="9f04-2063-a5df-7341" name="Exo-Armour" hidden="false"/>
     <categoryEntry id="b645-cb83-8bc5-81c3" name="Exo-Frame" hidden="false"/>
     <categoryEntry id="3019-02e0-6e96-eed6" name="Hernkyn Yaegirs" hidden="false"/>
+    <categoryEntry name="Cthonian Beserks Champion" id="248e-dda1-c969-6d9d" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="c4f1-12a9-8941-26c7" name="Hearthkyn Warriors" hidden="false" collective="false" import="true" targetId="a795-276f-7f60-479e" type="selectionEntry">
@@ -97,6 +98,12 @@
         <categoryLink id="4248-eefd-1e15-26ed" name="Fast Attack, Transport" hidden="false" targetId="4c58-0435-44f4-4154" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Einhyr Champion" hidden="false" id="bc03-7e1e-1e64-68aa" collective="false" targetId="b9ea-3049-93ae-8336" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="121a-b42c-5d29-7b30" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chtonian Beserks Champion" hidden="false" id="2566-f748-87bd-fbd5" type="selectionEntry" targetId="4f71-797a-fec1-61ec"/>
   </entryLinks>
   <rules>
     <rule id="e8d0-39d5-902a-4fab" name="Eye of the Ancestors" hidden="false">
@@ -383,7 +390,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         </profile>
         <profile id="7cad-17b3-bf04-13b3" name="Kindred Hero" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While a friendly [LEAGUE] unit is within 6&quot; of this model. each time an attack is made re-roll hit rolls of 1.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly [LEGION] units whilst they are within 6&quot; of a unit with this ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -527,7 +534,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         </profile>
         <profile id="678c-51bd-abbb-03a3" name="Exemplar of the Einhyr" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While a friendly Hearthguard unit is within 6&quot; of this model. each time an attack is made re-roll wound rolls of 1.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls for attacks made by friendly [LEGION] HEARTHGUARD units whilst they are within 6&quot; of a unit with this ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="1daa-7a1d-a8a6-5f0f" name="RAM shield" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -656,7 +663,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
     </selectionEntry>
     <selectionEntry id="aae7-f72d-6367-1ccf" name="Cthonian Beserks" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="94fd-dbcf-7a4f-82b1" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+        <infoLink id="94fd-dbcf-7a4f-82b1" name="Ignore Damage (5+)" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="35eb-3e17-76a4-1ae3" name="Cthonian Beserks" hidden="false" targetId="24e4-f4e1-9028-1eb5" primary="false"/>
@@ -1665,7 +1672,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a212-80d2-dc75-3f6b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1ae8-0f1e-125c-2273" name="Kâhl" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="1ae8-0f1e-125c-2273" name="Ûthar the Destined" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -1679,6 +1686,11 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <profile id="f7b5-d105-421a-ac08" name="The Destined" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Roll D12s when making saving throws for this unit, irrespective of the size of the blast markers next to it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kindred Hero" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="7171-091b-61c4-e445">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly [LEGION] units whilst they are within 6&quot; of a unit with this ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1937,6 +1949,66 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chtonian Beserks Champion" hidden="false" id="4f71-797a-fec1-61ec" collective="false">
+      <profiles>
+        <profile name="Chtonian Beserks Champion" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9a58-7515-27e9-c9b5">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyberstimms" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b977-6a77-86f8-0c08">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [LEAGUE] CTHONIAN BESERK unit starts a Move action within 7&quot; of any friendly units with this ability, add 2&quot; to that unit’s Move characteristic for that action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Light" hidden="false" id="3f73-1cc5-7dc4-55fb" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="19fa-bc92-f124-ec85" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Faction: [LEAGUE]" hidden="false" id="edab-a29e-e3ef-334a" targetId="2e93-f104-3473-9b4a" primary="false"/>
+        <categoryLink name="Faction: Votann" hidden="false" id="9905-996b-8a9a-4c8f" targetId="c004-b9ae-7fc1-1792" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="3436-aa0c-e703-0b13" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink targetId="24e4-f4e1-9028-1eb5" id="289d-b9a7-b1c4-8614" primary="false" name="Cthonian Beserks"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Masterful Beserks Weapons" hidden="false" id="27d6-7a45-9366-08bd" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f9-45b2-230c-4890" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="307c-3adf-fdad-d40f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Masterful Beserks Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5184-b2fd-e94b-16a8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="d979-e0d9-76c7-5956" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ignore Damage (5+)" id="a1eb-63b4-b33e-da42" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
