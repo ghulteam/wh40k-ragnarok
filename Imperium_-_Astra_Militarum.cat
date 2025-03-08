@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="44" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="46" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -6842,7 +6842,7 @@
         </profile>
         <profile id="d5d1-fed7-36a5-4ec1" name="Hellstorm Bombs" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit finishes making a Move action, select one enemy unit it moved over whilst making that Move action. Roll nine D6, subtracting 1 from each result if that unit is a Character and adding 1 to each result if that unit is garrisoning a Defensible Terrain feature; for each result of 4+ place one blast marker next to that unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit finishes making a Move action, select up to two enemy units it moved over whilst making that Move action. Roll six D6, subtracting 1 from each result if that unit is a Character and adding 1 to each result if that unit is garrisoning a Defensible Terrain feature; for each result of 4+ place one blast marker next to that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6878,7 +6878,7 @@
         <entryLink id="e440-8246-432a-ab88" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="44"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb3d-7d3e-6625-0f21" name="Marauder Destroyer" hidden="false" collective="false" import="true" type="upgrade">
@@ -7956,6 +7956,12 @@ Praetor Launcher for this action.</characteristic>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8742-00f9-ef5f-108f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>

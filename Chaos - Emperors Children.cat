@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1da7-af26-6602-d159" name="Chaos - Emperors Children" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="19" revision="6" battleScribeVersion="2.03" hidden="false" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1da7-af26-6602-d159" name="Chaos - Emperors Children" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="19" revision="7" battleScribeVersion="2.03" hidden="false" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Chaos Space Marines" id="e7a5-da01-91b5-274e" targetId="df5c-f15d-f672-a301"/>
     <catalogueLink type="catalogue" name="Library - Chaos Primarchs" id="a93a-576a-4b2b-626d" targetId="6638-9778-3d62-e10b"/>
@@ -30,12 +30,18 @@
                     <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8742-00f9-ef5f-108f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>[Emperors Children]
+      <description>[Slaanesh Daemonkin]
 
 Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.
 
@@ -59,19 +65,19 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
     <entryLink import="true" name="Daemonettes" hidden="false" id="5fd5-c64e-103a-dda5" type="selectionEntry" targetId="ed0b-96ff-eed2-8a13">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="a163-7879-18a8-492a" primary="true" name="Troops"/>
-        <categoryLink targetId="9713-8381-90eb-9a1f" id="9a00-7a0e-2bf2-0427" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="343f-f611-9756-2f25" id="493e-8c1e-7587-25e3" primary="false" name="Faction: Slaanesh Daemonkin"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Fiends of Slaanesh" hidden="false" id="de82-f729-6c1a-7db3" type="selectionEntry" targetId="fba5-d50b-5a35-bc0d">
       <categoryLinks>
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="205d-d699-8dc8-1d8f" primary="true" name="Elites"/>
-        <categoryLink targetId="9713-8381-90eb-9a1f" id="0ddf-eac9-5fdd-c167" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="343f-f611-9756-2f25" id="985c-9c02-1dc0-8b5e" primary="false" name="Faction: Slaanesh Daemonkin"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Seekers" hidden="false" id="cfb1-f34c-1d32-650d" type="selectionEntry" targetId="41b8-8210-e7bc-0886">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="ef08-89bc-68f0-44be" primary="true" name="Fast Attack"/>
-        <categoryLink targetId="9713-8381-90eb-9a1f" id="fe57-1fcf-f2da-b214" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="343f-f611-9756-2f25" id="b009-a1e3-2085-d16e" primary="false" name="Faction: Slaanesh Daemonkin"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sorcerer on Daemonic Mount" hidden="false" id="f46e-eb25-8140-0a13" type="selectionEntry" targetId="19d8-536d-e337-2804">
@@ -202,7 +208,55 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
     <entryLink import="true" name="Keeper of Secrets" hidden="false" id="50a6-9d7d-be72-a665" type="selectionEntry" targetId="1f55-22cf-214d-045e">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="3f5b-a92d-72fe-d467" primary="true" name="HQ"/>
-        <categoryLink targetId="9713-8381-90eb-9a1f" id="f867-f3e5-4523-79d1" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="343f-f611-9756-2f25" id="0ecc-7f9b-05cf-51b0" primary="false" name="Faction: Slaanesh Daemonkin"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warp Talons" hidden="false" id="a46c-7f9c-107f-8a23" type="selectionEntry" targetId="b492-c2b8-a49e-57b1">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="71ec-03d1-94d7-972d" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="b755-64fa-1e78-03b9" id="a945-453e-9721-b7f1" primary="false" name="Faction: Slaanesh"/>
+        <categoryLink targetId="9713-8381-90eb-9a1f" id="2daf-b2b2-9cee-0534" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="343f-f611-9756-2f25" id="4629-6458-9231-7889" primary="false" name="Faction: Slaanesh Daemonkin"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Predator" hidden="false" id="7775-494a-b1b7-4b50" type="selectionEntry" targetId="8dbc-6837-ede6-1e74">
+      <categoryLinks>
+        <categoryLink name="Faction: Slaanesh" hidden="false" id="3253-8ae8-503e-1281" targetId="b755-64fa-1e78-03b9" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="b6a6-4920-add2-f419" targetId="9713-8381-90eb-9a1f" primary="false"/>
+        <categoryLink name="Faction: Slaanesh Daemonkin" hidden="false" id="d3fa-49f1-06a0-0963" targetId="343f-f611-9756-2f25" primary="false"/>
+        <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="10fa-edff-ca71-d3a8" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Forgefiend" hidden="false" id="f406-5883-6aff-0929" type="selectionEntry" targetId="c977-6ee2-730c-59f6">
+      <categoryLinks>
+        <categoryLink name="Faction: Slaanesh" hidden="false" id="9458-7109-e6d8-23ee" targetId="b755-64fa-1e78-03b9" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="3146-0e10-9029-a0c5" targetId="9713-8381-90eb-9a1f" primary="false"/>
+        <categoryLink name="Faction: Slaanesh Daemonkin" hidden="false" id="7522-b44c-086f-5f4b" targetId="343f-f611-9756-2f25" primary="false"/>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="2cb5-2e65-9fcf-5c83" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaos Bikers" hidden="false" id="3e71-1f98-d2f0-acde" type="selectionEntry" targetId="d0b2-1ba0-815e-98c7">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="bcb0-92ab-07b1-468f" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink name="Faction: Slaanesh" hidden="false" id="6692-24f2-1952-85ea" targetId="b755-64fa-1e78-03b9" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="6619-5fb0-941c-38ec" targetId="9713-8381-90eb-9a1f" primary="false"/>
+        <categoryLink name="Faction: Slaanesh Daemonkin" hidden="false" id="a6fe-6938-a482-7e67" targetId="343f-f611-9756-2f25" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Raptors" hidden="false" id="3417-c24a-2837-18e7" type="selectionEntry" targetId="b77c-256c-2798-0c70">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="622c-676b-fb13-8eea" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink name="Faction: Slaanesh" hidden="false" id="a3fd-d3e6-333f-546c" targetId="b755-64fa-1e78-03b9" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="1214-60ba-e4aa-463f" targetId="9713-8381-90eb-9a1f" primary="false"/>
+        <categoryLink name="Faction: Slaanesh Daemonkin" hidden="false" id="94e1-710c-61b6-d81b" targetId="343f-f611-9756-2f25" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sonic Dreadnought" hidden="false" id="abd7-f6b8-7ecd-08bd" type="selectionEntry" targetId="0bb5-c411-fce8-4b76">
+      <categoryLinks>
+        <categoryLink name="Faction: Slaanesh" hidden="false" id="afd8-e5c2-02bc-389a" targetId="b755-64fa-1e78-03b9" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="dbab-d838-3db7-26c8" targetId="9713-8381-90eb-9a1f" primary="false"/>
+        <categoryLink name="Faction: Slaanesh Daemonkin" hidden="false" id="4c32-a7c3-76f3-6f88" targetId="343f-f611-9756-2f25" primary="false"/>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="3d9d-234e-39ba-b47f" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -222,7 +276,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </profile>
         <profile name="Perfectionists" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0b90-5eb9-fda8-fbe9">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made by FLAWLESS ASTARTES units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by FLAWLESS ASTARTES units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -261,7 +315,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </profile>
         <profile name="Obsessive Annunciation" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="072a-8727-6ef1-7ea2">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made by friendly FLAWLESS ASTARTES units whilst they are within 6&quot; of any units with this ability.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with ranged weapons by friendly EMPERORS CHILDREN units whilst they are within 6&quot; of any units with this ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -762,7 +816,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </profile>
         <profile name="Daemon Prince of Slaanesh" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1696-27a1-3b27-f506">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly THOUSAND SONS and TZEENTCH DAEMON units whilst they are within 6&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly EMPERORS CHILDREN and SLAANESH DAEMON units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -850,12 +904,12 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
     <categoryEntry name="Flawless Blades" id="5e27-dcbf-609c-5fda" hidden="false"/>
     <categoryEntry name="Infractors" id="fb2d-9131-d273-a5bc" hidden="false"/>
     <categoryEntry name="Tormentors" id="c5d2-83ec-eaf3-29d8" hidden="false"/>
-    <categoryEntry name="Faction: Peerless Astartes" id="343f-f611-9756-2f25" hidden="false"/>
+    <categoryEntry name="Faction: Slaanesh Daemonkin" id="343f-f611-9756-2f25" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Lord of Excess" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="23e3-a01f-d6e5-d973">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly FLAWLESS ASTARTES units whilst they are within 6&quot; of this unit.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly EMPERORS CHILDREN units whilst they are within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

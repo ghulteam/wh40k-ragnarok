@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="22" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5be3-8726-078b-1a23" name="Faction: Officio Prefectus" hidden="false"/>
     <categoryEntry id="7e0f-9b5b-7250-2db7" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false"/>
@@ -1991,6 +1991,12 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="0" field="selections" scope="force" childId="8f70-4411-2a13-96bf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8742-00f9-ef5f-108f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>

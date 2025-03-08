@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -88,30 +88,30 @@
       <forceEntries>
         <forceEntry id="c91d-11c7-56ec-4919" name="Tetragon of Darkness" hidden="false">
           <categoryLinks>
-            <categoryLink id="6bed-fbfe-e520-fd2b" name="Bloodthirster" hidden="false" targetId="7ec1-ce53-5b0b-817f" primary="false" type="categoryEntry"/>
-            <categoryLink id="73a6-ab2c-9795-8823" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false" type="categoryEntry"/>
-            <categoryLink id="4735-d1f6-cb4d-1acd" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false" type="categoryEntry"/>
-            <categoryLink id="4ed7-4994-67d2-7ac9" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false" type="categoryEntry"/>
+            <categoryLink id="6bed-fbfe-e520-fd2b" name="Bloodthirster" hidden="false" targetId="7ec1-ce53-5b0b-817f" primary="false"/>
+            <categoryLink id="73a6-ab2c-9795-8823" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false"/>
+            <categoryLink id="4735-d1f6-cb4d-1acd" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false"/>
+            <categoryLink id="4ed7-4994-67d2-7ac9" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
       <categoryLinks>
-        <categoryLink id="f911-4444-3599-6c94" name="Bloodthirster" hidden="false" targetId="7ec1-ce53-5b0b-817f" primary="false" type="categoryEntry">
+        <categoryLink id="f911-4444-3599-6c94" name="Bloodthirster" hidden="false" targetId="7ec1-ce53-5b0b-817f" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563b-2ed1-ecae-160a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e853-928f-4ad4-8a75" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false" type="categoryEntry">
+        <categoryLink id="e853-928f-4ad4-8a75" name="Lord of Change" hidden="false" targetId="b9ae-2fad-e40e-b96e" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd97-4bc1-894f-07f5" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b3ee-db0d-ec17-ba00" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false" type="categoryEntry">
+        <categoryLink id="b3ee-db0d-ec17-ba00" name="Keeper of Secrets" hidden="false" targetId="2178-891e-43b1-c2b0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a2-ab72-16f3-0c87" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4073-461f-3122-bfb6" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false" type="categoryEntry">
+        <categoryLink id="4073-461f-3122-bfb6" name="Great Unclean One" hidden="false" targetId="5a06-7132-02b2-faf8" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd9-3ca8-9233-7715" type="max"/>
           </constraints>
@@ -764,6 +764,12 @@
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
                     <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="8742-00f9-ef5f-108f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="3" field="selections" scope="force" childId="unit" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
