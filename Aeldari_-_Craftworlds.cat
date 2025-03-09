@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3d38-60cf-0016-2bd5" name="Aeldari - Asuryani" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
   </publications>
@@ -85,6 +85,7 @@
     <categoryEntry id="fe5f-ae76-6a2f-7d22" name="Corsair Venom" publicationId="280a-43bb-426c-aa7c" hidden="false"/>
     <categoryEntry id="c31f-3ff2-43cf-51d3" name="Faction: [Conclave]" publicationId="280a-43bb-426c-aa7c" hidden="false"/>
     <categoryEntry id="b570-dcb6-f885-f99e" name="Phoenixcourt of Khaine" hidden="false"/>
+    <categoryEntry name="Lhykhis" id="b034-0f02-5f03-422f" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="9d75-1364-4824-6e6f" name="Phoenixcourt of Khaine" hidden="true">
@@ -543,6 +544,11 @@
       <categoryLinks>
         <categoryLink id="12a6-b50f-d4e4-4dc7" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
         <categoryLink id="bede-2fe1-3827-ed49" name="Phoenixcourt of Khaine" hidden="false" targetId="b570-dcb6-f885-f99e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lhykhis" hidden="false" id="bcef-af8a-cea0-34e0" type="selectionEntry" targetId="67e9-44d1-5d73-ea47">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="0b94-02e0-b8ef-a279" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7519,6 +7525,102 @@ weapons by this unit.</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a99-48ec-fd4c-2b32" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6174-160f-0b9a-ff10" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lhykhis" hidden="false" id="67e9-44d1-5d73-ea47" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3594-be2e-74f5-8a88" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Lhykhis" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3dc5-0adf-1be2-6b14" publicationId="280a-43bb-426c-aa7c">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whispering Web" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="fa9d-2e61-db90-4be4">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly WARP SPIDER units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Empyric Ambush" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="761f-38cf-a299-857f">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly units that use their Warp Jump Generator Ability whilst they are within 6&quot; of this unit may be set it up anywhere on the battlefield that is more than 3&quot; away from any enemy units instead of 9&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="a4a2-5bff-d04d-3e13" hidden="false" publicationId="280a-43bb-426c-aa7c" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink name="Warp Jump Generator" id="a617-ac06-1956-8454" hidden="false" type="profile" targetId="ff0c-9ce2-72ca-fbca"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="5d47-8a2a-3b81-f1f6" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="95be-93ff-8a01-2547" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink name="Faction: Aspect Warrior" hidden="false" id="fc70-774c-6d2a-d9d4" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink name="Faction: Asuryani" hidden="false" id="8b2e-fe47-4f15-a7e0" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="2193-df85-67a4-c869" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Jump Pack" hidden="false" id="caad-8f6c-6f44-7bc6" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="7aad-b467-ea19-8c80" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Phoenix Lord" hidden="false" id="8da8-8af0-ffe4-c319" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+        <categoryLink targetId="b034-0f02-5f03-422f" id="daac-4daa-de4d-66ee" primary="false" name="Lhykhis"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brood Twain" hidden="false" id="0ec8-4603-c621-7ddc" publicationId="280a-43bb-426c-aa7c" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f80-6ea3-ead8-4356" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ae-b56a-c7b8-cfe3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Brood Twain" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b228-19ec-9dfa-d62d" publicationId="280a-43bb-426c-aa7c">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Inferno" id="5fd5-da58-d90c-005a" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weaverender" hidden="false" id="b94b-6058-b3eb-fb7c" publicationId="280a-43bb-426c-aa7c" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90c8-3a35-b1af-2cbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cf3-89d8-1125-b307" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Weaverender" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c485-5562-7b49-cd0b" publicationId="280a-43bb-426c-aa7c">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="2a14-8998-9898-fd94" publicationId="280a-43bb-426c-aa7c" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="19"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
