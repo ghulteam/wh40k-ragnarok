@@ -19,6 +19,7 @@
     <categoryEntry id="4891-e68a-73f9-c817" name="Indomitor Kill Team" hidden="false"/>
     <categoryEntry id="c011-1f01-4017-a25b" name="Spectrus Kill Team" hidden="false"/>
     <categoryEntry id="d2d3-0968-6bd1-f87a" name="Proteus Kill Team" hidden="false"/>
+    <categoryEntry name="Talonstrike Kill Team" id="32d6-cc17-066d-6019" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="190e-18f3-e788-0201" name="Librarian" hidden="false" collective="false" import="true" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
@@ -732,6 +733,12 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="0e73-5181-cea5-32a3" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Assault Intercessor with Jump Pack Squad" hidden="false" id="f23e-8c33-26f3-059c" type="selectionEntry" targetId="8d3d-8997-c76b-e1b5">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="6d76-1458-ddcb-d9d6" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Talonstrike Kill Team" hidden="false" id="5bce-29d4-638a-4988" type="selectionEntry" targetId="5c3e-7d90-ca4c-5421"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa57-bcfe-ad8d-4882" name="Corvus Blackstar" hidden="false" collective="false" import="true" type="unit">
@@ -2456,6 +2463,174 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Talonstrike Kill Team" hidden="false" id="5c3e-7d90-ca4c-5421" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="1219-5221-59a0-2557" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="725e-d5d2-847c-db7a" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="0044-ae89-0c8d-4856" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="020e-8c05-de61-4e0e" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Faction: Deathwatch" hidden="false" id="ae3d-5388-b7f5-dc6c" targetId="1ca7-5aae-d958-5973" primary="false"/>
+        <categoryLink targetId="32d6-cc17-066d-6019" id="9c7f-f9be-2bc5-eb8a" primary="false" name="Talonstrike Kill Team"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="40eb-722f-4a02-1773" primary="false" name="Fly"/>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="0224-e2a3-3bbe-5654" primary="true" name="Troops"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Talonstrike Melee Weapons" hidden="false" id="6043-0d92-58ae-ac37" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="634b-0c10-f249-72bb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="479f-0c1d-91ba-96c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Talonstrike Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="39aa-488d-920a-0a7d">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Talonstrike Ranged Weapons" hidden="false" id="54b4-7061-a4c0-62d7" collective="false">
+          <infoLinks>
+            <infoLink name="Supercharge" id="051b-3b94-2d53-d9f6" hidden="true" type="rule" targetId="9988-c2ea-2f30-09c1">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="5c3e-7d90-ca4c-5421" childId="81d9-035c-f00c-9575" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Talonstrike Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ffe6-7df1-d72f-be13">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="bea7-7040-8485-6f0f"/>
+                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="5c3e-7d90-ca4c-5421" childId="81d9-035c-f00c-9575" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53c6-d66c-c1b9-4ffa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32aa-bee8-322f-cef3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="cd7f-1770-6bc2-089e" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f580-b16e-c518-4313" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ede-5ce6-2665-5e16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="27cb-8593-5c2a-4c81" collective="false">
+              <profiles>
+                <profile name="Talonstrike Kill Team (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9361-e12b-40a0-fd8d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="03c2-8ca1-cc5c-e775" collective="false">
+              <profiles>
+                <profile name="Talonstrike Kill Team (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="b9aa-a2cf-c6af-cf2d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="7c7f-f763-1f39-410c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="5c3e-7d90-ca4c-5421" childId="81d9-035c-f00c-9575" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mixed Unit" id="feae-9f18-1526-652a" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="5c3e-7d90-ca4c-5421" childId="03c2-8ca1-cc5c-e775" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Inceptors" hidden="false" id="81d9-035c-f00c-9575" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="517a-7ca7-1f32-8f40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Inceptors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="adb3-cb56-0e00-e3de">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">-Increases this Units W by 1
+-Increases this Units Talonstrike Ranged Weapons A to x2
+-Increases this Units Talonstrike Ranged Weapons Range to 18&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="84e9-d1dc-cc70-83d4" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="7f64-762b-597c-439e" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
