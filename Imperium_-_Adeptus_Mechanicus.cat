@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -51,6 +51,7 @@
     <categoryEntry name="Macrocarid Explorator" id="fb8e-daa8-7ee7-45f6" hidden="false"/>
     <categoryEntry name="Ordinatus Ulator" id="a5b7-7957-3e90-ed2f" hidden="false"/>
     <categoryEntry name="Ursarax Cohort" id="297a-49cf-e985-0d7d" hidden="false"/>
+    <categoryEntry name="Domitar Battle-Automata Maniple" id="9f03-eaf2-e06e-f1bc" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -257,6 +258,11 @@
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="0c28-1013-f9ca-5e58" type="selectionEntry" targetId="11b5-736b-1ab3-2f2b">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="2e87-9e34-2803-2c2f" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4871-0e55-15f4-9649" type="selectionEntry" targetId="1100-829e-af2c-af1f">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="20dd-4fc7-e308-60a5" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5252,6 +5258,201 @@
         <categoryLink targetId="4dc1-30a6-aa31-19a9" id="7d8a-6067-2bb0-12a4" primary="false" name="Faction: Cult Mechanicus"/>
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="48b8-6721-300d-44f2" primary="false" name="Faction: [FORGE WORLD]"/>
         <categoryLink targetId="297a-49cf-e985-0d7d" id="69a6-2e39-eb9f-9366" primary="false" name="Ursarax Cohort"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="1100-829e-af2c-af1f">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="e0d0-7ef9-b272-1f3a" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Missile Launcher" hidden="false" id="1a3b-0866-35c6-ca0f" type="selectionEntry" targetId="a524-9ae0-16b9-cd61">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be5-9bc4-4dd6-4e7c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a2d-cbf7-e8ca-3922" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="6be5-9bc4-4dd6-4e7c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="f76a-875e-ebf7-fa14" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="6be5-9bc4-4dd6-4e7c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7453-e92e-27f4-8e48" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="6be5-9bc4-4dd6-4e7c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="dd6e-dc32-91ac-28fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="6be5-9bc4-4dd6-4e7c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="eda8-00ee-b5b9-94b6" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="5a2d-cbf7-e8ca-3922">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="f76a-875e-ebf7-fa14" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="5a2d-cbf7-e8ca-3922">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7453-e92e-27f4-8e48" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="5a2d-cbf7-e8ca-3922">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="dd6e-dc32-91ac-28fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="5a2d-cbf7-e8ca-3922">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="eda8-00ee-b5b9-94b6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Graviton Hammer" hidden="false" id="adde-5aab-5333-46a0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6976-195d-9831-cb8d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a30-edad-b319-9150" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Graviton Hammers (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ec82-299e-dd65-6fd1">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Graviton Hammers (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3906-db98-edfa-f657">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Inferno" id="584e-700e-0359-aff7" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="edc0-5849-f7ca-b4ef" hidden="false" defaultSelectionEntryId="b709-4150-c31a-a587">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="b709-4150-c31a-a587">
+              <profiles>
+                <profile name="Domitar (01 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c5aa-006c-e5de-bb3d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="f76a-875e-ebf7-fa14">
+              <profiles>
+                <profile name="Domitar (02 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3bb3-ebd5-4afe-c535">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="eda8-00ee-b5b9-94b6">
+              <profiles>
+                <profile name="Domitar (05 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3499-05a3-ccb4-8549">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">5</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="62"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="04 models" hidden="false" id="dd6e-dc32-91ac-28fc">
+              <profiles>
+                <profile name="Domitar (04 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="15e4-a875-b4e4-86e0">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="7453-e92e-27f4-8e48">
+              <profiles>
+                <profile name="Domitar (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2e1c-0e91-be4d-dee8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-65b9-5c7b-64fa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dde3-a603-a572-7a6d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="3184-db5d-c28c-c638" primary="false" name="Light"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="3700-8032-a343-a79d" primary="false" name="Infantry"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="645d-6a31-52a7-dcea" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="4dc1-30a6-aa31-19a9" id="a504-0152-3a4a-d47a" primary="false" name="Faction: Cult Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="6e94-ffda-46b1-8bea" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="7498-2ed4-e042-956a" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9f03-eaf2-e06e-f1bc" id="652e-bd7c-8e4e-34f4" primary="false" name="Domitar Battle-Automata Maniple"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
