@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="12" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a6fe-fc09-5627-ff05" name="Faction: Imperial Knights" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="d37d-c3f9-f400-4093" name="Faction: [QUESTOR ALLEGIANCE]" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -2524,6 +2524,11 @@ One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c95-32d5-70b3-3d04" type="min"/>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f99-b5a8-fbe8-c03b" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="d37d-c3f9-f400-4093" id="bdeb-d721-87ab-7e7d" primary="false" name="Faction: [QUESTOR ALLEGIANCE]"/>
+            <categoryLink targetId="a6fe-fc09-5627-ff05" id="9816-401d-a401-0d76" primary="false" name="Faction: Imperial Knights"/>
+            <categoryLink targetId="296b-2a4e-2b42-19b3" id="0062-8e5d-dc27-8696" primary="false" name="Faction: [HOUSEHOLD]"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -2723,30 +2728,15 @@ One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a 
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c3b9-d160-582b-fd5f" name="Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80be-c140-dad9-c029" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e050-19ce-3049-0683" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f072-d46e-e6ec-8a02" name="Volkite Culverin" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">45&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="fff8-604c-4676-52ac" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="2a47-7dba-222a-c79c" type="selectionEntry"/>
+        <entryLink import="true" name="Volkite Culverin" hidden="false" id="f048-019b-d0bb-3829" type="selectionEntry" targetId="20f6-1b7e-b9fa-2699">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1c6-8557-166a-2515" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b51c-dc07-c6fe-e5ff" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="78"/>
@@ -2776,9 +2766,6 @@ One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a 
             <infoLink id="9539-5696-6508-cdca" name="Vehicle Squadron" hidden="false" targetId="8f4c-7bc3-d6f3-63d3" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="1682-074c-08f0-8ea2" name="Faction: Imperial Knights" hidden="false" targetId="a6fe-fc09-5627-ff05" primary="false"/>
-            <categoryLink id="96fb-9957-0b2c-8f5d" name="Faction: [QUESTOR ALLEGIANCE]" hidden="false" targetId="d37d-c3f9-f400-4093" primary="false"/>
-            <categoryLink id="1087-4a7f-d676-3ff2" name="Faction: [HOUSEHOLD]" hidden="false" targetId="296b-2a4e-2b42-19b3" primary="false"/>
             <categoryLink id="d9f2-1b93-b8c1-3057" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
             <categoryLink id="9e8d-417b-6dca-15da" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
             <categoryLink id="9519-8d87-78e7-8fde" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
