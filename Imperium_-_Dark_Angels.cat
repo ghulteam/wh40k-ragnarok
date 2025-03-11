@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1635,14 +1635,18 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="4ff8-c467-a774-610b" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="d33d-ef3b-0256-7036" hidden="false" defaultSelectionEntryId="00cd-982b-3a62-d0da">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="00cd-982b-3a62-d0da" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="9af5-2ec7-eb71-3b6a" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c44e-659e-1d96-2993" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6590-50e8-6b27-a591" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4749-9ec8-3cec-d1c8" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9063-572b-42d6-77d2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab19-fd38-7567-e597" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="c68e-a609-e8d1-2c3e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1707,14 +1711,18 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="b8ab-0b71-3fc0-e3ed" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="c7b4-57d1-44ff-f502" hidden="false" defaultSelectionEntryId="2b71-b1a6-3fe3-335b">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="2b71-b1a6-3fe3-335b" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="c7dd-d453-a2b8-b02e" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d04-d338-ce38-f710" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35c1-764f-971a-6099" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="aa6e-e326-b3b7-fe5d" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee60-9c89-b977-5a40" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8d5-eb10-d6c8-cd4e" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="8ca4-58e1-a1b7-725b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>

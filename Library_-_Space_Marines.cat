@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="54" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1154,14 +1154,18 @@
             <entryLink id="ec21-685c-ce43-3277" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="f82f-84d3-74aa-9061" hidden="false" defaultSelectionEntryId="6dec-dd3b-eb1d-f239">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="6dec-dd3b-eb1d-f239" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="6e41-5d98-843a-c4b8" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c694-1412-c0ba-004b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eff-9a2d-076e-ebab" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8c0b-732e-e989-b2fa" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6078-69bf-bc24-47e7" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d000-d3c2-bdc3-e5d4" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="0440-8595-62cc-3eb8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1169,10 +1173,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1a85-1077-c8ae-f16b" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be4f-c8f3-dace-a4ac" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f5a-376b-35cd-0eab" type="max"/>
-      </constraints>
       <profiles>
         <profile id="5221-7b84-19eb-54e0" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -1253,9 +1253,18 @@
             <entryLink import="true" name="Jump Pack" hidden="false" id="2b32-a982-d5a5-25bb" type="selectionEntry" targetId="54ae-a37e-e67e-54e8"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="bf9c-0329-fe50-2fd6" hidden="false" defaultSelectionEntryId="73c2-1b04-575b-c9a9">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="73c2-1b04-575b-c9a9" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="8302-5761-e862-ca2a" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e9e-f135-c04c-649a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2c7-9535-5f06-0dcc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7bb1-741c-54a1-f500" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
         <entryLink id="3f3b-4fb3-02e8-326e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -13858,6 +13867,30 @@ After this is resolved, count the number of wounds that were scored by the attac
       <infoLinks>
         <infoLink name="Witchfire" id="98b5-c5bf-b252-a34d" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="3615-5b7b-104a-0187">
+      <profiles>
+        <profile name="Master-crafted Bolter" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0a1d-93d1-9245-fe9a">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="890c-5787-dc08-dbfe">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -1210,9 +1210,18 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="353a-37ff-0e8e-ffbc" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="280e-8892-68f6-380c" hidden="false" defaultSelectionEntryId="6678-d093-b613-6ac2">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="6678-d093-b613-6ac2" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="a8c7-142f-dafc-1b08" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e35-cad7-7d0c-dd6a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8534-ff40-6ce7-7383" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9014-a116-82e0-6eea" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
         <entryLink id="2829-6b36-71f5-e72f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>

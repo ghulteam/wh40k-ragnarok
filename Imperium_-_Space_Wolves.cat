@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1466,7 +1466,12 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </selectionEntries>
       <entryLinks>
         <entryLink id="3295-c80d-9104-c899" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="30ef-7a41-bb19-8c8c" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+        <entryLink id="30ef-7a41-bb19-8c8c" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13a4-b773-2605-a3ee" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a5b-0e8e-1d93-6d52" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -2044,8 +2049,8 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -2060,7 +2065,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <entryLink id="d22f-c054-ae6c-c68c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f47-b55d-7c95-aa34" name="Njal Stormcaller" hidden="false" collective="false" import="true" type="unit">
@@ -3107,29 +3112,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="8c5f-77df-2096-7175" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
         <categoryLink id="6147-39cc-f03b-e70c" name="Wolf Lord" hidden="false" targetId="949a-c2a1-40fa-aa09" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9c37-4ec1-186c-a019" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc47-d2d4-4cf4-cf83" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ec-7b2f-6174-ec45" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="142b-5a90-e083-0d75" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="cf56-66e6-70b2-9fff" name="Wargear" hidden="false" collective="false" import="true">
           <constraints>
@@ -3139,6 +3121,16 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="ae42-22d5-8e3e-f8e8" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
             <entryLink id="e10a-81c1-475d-9f57" name="Gravis Armor" hidden="false" collective="false" import="true" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="a539-6593-4a03-6b22" hidden="false" defaultSelectionEntryId="af4c-0287-cce7-b36b">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="af4c-0287-cce7-b36b" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="4e4e-3695-257f-27ba" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abda-c4a6-9996-8a69" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aac1-edc8-7b8e-0437" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3737,14 +3729,18 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="76b5-4ad8-4e32-6f9b" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="5774-e1a9-2157-4d32" hidden="false" defaultSelectionEntryId="9cb8-dfe7-c81b-f72d">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="9cb8-dfe7-c81b-f72d" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="80eb-1d24-0cf6-1ec0" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a28f-8c87-1297-0a94" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b2f-0e19-bcca-f71b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="232f-ce95-13f1-1bf4" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cd1-fce1-7636-fad2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f0-b61d-63fc-60e7" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="38af-91ca-8008-d162" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
