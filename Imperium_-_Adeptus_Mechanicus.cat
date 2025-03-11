@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -52,6 +52,7 @@
     <categoryEntry name="Ordinatus Ulator" id="a5b7-7957-3e90-ed2f" hidden="false"/>
     <categoryEntry name="Ursarax Cohort" id="297a-49cf-e985-0d7d" hidden="false"/>
     <categoryEntry name="Domitar Battle-Automata Maniple" id="9f03-eaf2-e06e-f1bc" hidden="false"/>
+    <categoryEntry name="Thallax Cohort" id="c5e5-8c29-1e8a-f376" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -263,6 +264,11 @@
     <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4871-0e55-15f4-9649" type="selectionEntry" targetId="1100-829e-af2c-af1f">
       <categoryLinks>
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="20dd-4fc7-e308-60a5" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="0b93-6a16-890b-3f3e" type="selectionEntry" targetId="c2e5-52b5-69db-3a08">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="1282-3cc2-036d-de25" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5156,7 +5162,7 @@
               <profiles>
                 <profile name="Ursarax Cohort (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fc53-64fc-8d0a-e0e1">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
@@ -5167,14 +5173,14 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="2855-f799-bea9-4591">
               <profiles>
                 <profile name="Ursarax Cohort (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1b4c-2211-cfed-bc26">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
@@ -5185,14 +5191,14 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="19"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="09 models" hidden="false" id="6813-c4ef-6f39-ed83">
               <profiles>
                 <profile name="Ursarax Cohort (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d7bd-f79a-a8f1-a9d3">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
@@ -5203,7 +5209,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="31"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="33"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5215,6 +5221,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Ignore Damage (6+)" id="5715-02ea-89e1-f15e" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+        <infoLink name="Deep Strike" id="3b28-3c8a-959e-a2ac" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Two Power Fists" hidden="false" id="eba8-a3b3-63a9-1cf2">
@@ -5258,6 +5265,7 @@
         <categoryLink targetId="4dc1-30a6-aa31-19a9" id="7d8a-6067-2bb0-12a4" primary="false" name="Faction: Cult Mechanicus"/>
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="48b8-6721-300d-44f2" primary="false" name="Faction: [FORGE WORLD]"/>
         <categoryLink targetId="297a-49cf-e985-0d7d" id="69a6-2e39-eb9f-9366" primary="false" name="Ursarax Cohort"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="76ee-a6d0-c15e-0b71" primary="false" name="Fly"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="1100-829e-af2c-af1f">
@@ -5454,6 +5462,188 @@
         <categoryLink targetId="e30a-8f35-5fe6-534d" id="7498-2ed4-e042-956a" primary="false" name="Faction: Imperium"/>
         <categoryLink targetId="9f03-eaf2-e06e-f1bc" id="652e-bd7c-8e4e-34f4" primary="false" name="Domitar Battle-Automata Maniple"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thallax Cohort" hidden="false" id="c2e5-52b5-69db-3a08">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="c787-a8c5-b2fc-0a5d" hidden="false" defaultSelectionEntryId="2c83-a4ca-68fe-9b08">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 Models" hidden="false" id="2c83-a4ca-68fe-9b08">
+              <profiles>
+                <profile name="Thallax (03 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4af1-665f-bce0-0ec7">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 Models" hidden="false" id="d0ad-f337-f2d2-21a5">
+              <profiles>
+                <profile name="Thallax (06 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2e76-4c18-fca8-56b4">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="09 Models" hidden="false" id="3a42-6dfe-ad4d-e369">
+              <profiles>
+                <profile name="Thallax (09 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9b09-0124-ec62-cf53">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8387-d720-af55-dd10" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2e9-8500-1d03-2672" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heavy Weapons" id="b6b8-e1b4-b674-bc4c" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0640-b103-3ee8-75d0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="0640-b103-3ee8-75d0">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d0ad-f337-f2d2-21a5" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="0640-b103-3ee8-75d0">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="3a42-6dfe-ad4d-e369" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Irad-Cleanser" hidden="false" id="c60d-79c4-e3b8-b7ea" type="selectionEntry" targetId="97b5-aecb-3e4a-f467">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-laser" hidden="false" id="1aa5-ecc1-965f-dd63" type="selectionEntry" targetId="6e15-ceef-3fb3-af00">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="b5bd-7e42-cb42-848a" type="selectionEntry" targetId="1a13-f0be-ca42-c44b">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Phased plasma-fusil" hidden="false" id="1214-a9e6-d84b-8576" type="selectionEntry" targetId="cce1-57d2-3f9b-4bad">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Photon Thruster" hidden="false" id="8fb9-1605-8f6f-1f4e" type="selectionEntry" targetId="54cf-0c74-a744-47db">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5bc7-9d8e-66ca-2dc7" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="2a84-7233-7804-40a7" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+        <infoLink name="Deep Strike" id="6b4a-7d0a-89dd-2b0c" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="7c44-23b8-0479-cb97" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="08af-1ec6-6649-33aa" primary="false" name="Light"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="b136-006d-ac31-913a" primary="false" name="Fly"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="3304-3429-898d-b9ff" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="3889-09b3-57db-c7eb" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="4dc1-30a6-aa31-19a9" id="3c9e-2278-391d-1686" primary="false" name="Faction: Cult Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="ea02-00f5-6c53-3e69" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="c5e5-8c29-1e8a-f376" id="8d30-7b45-06bb-8f29" primary="false" name="Thallax Cohort"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lightning Guns" hidden="false" id="aa4f-a082-cd35-daf4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e25-257e-a67c-c91a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbda-95e2-681e-9219" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Lightning Guns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f35d-846a-1635-1866">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chain Bayonets" hidden="false" id="9798-aa41-2de8-2e55">
+          <profiles>
+            <profile name="Chain Bayonets" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ab8f-bc70-be7a-c278">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8257-7529-34a2-611d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="949f-9e8b-7b86-b88c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Photon Thruster" hidden="false" id="54cf-0c74-a744-47db">
+      <profiles>
+        <profile name="Photon Thruster" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="09db-ae9b-9cef-e5b3">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Supercharge" id="fb0e-6383-4b7c-95b2" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
