@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -887,27 +887,6 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="29f7-afa3-18fe-0e3c" name="Nurgling Claws &amp; Teeth" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6caf-cb2b-c185-af5b" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba47-b59e-0ae9-7561" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="d46d-8a6a-6ed4-9209" name="Nurgling Claws &amp; Teeth" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="ee48-79b0-0c91-443b" name="Balesword" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9386-d2b1-5917-26be" type="min"/>
@@ -1416,7 +1395,12 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="edbd-6be7-6abc-5de0" name="Axe of Khorne" hidden="false" collective="false" import="true" targetId="434b-0632-4b77-2ba6" type="selectionEntry"/>
+        <entryLink id="edbd-6be7-6abc-5de0" name="Axe of Khorne" hidden="false" collective="false" import="true" targetId="434b-0632-4b77-2ba6" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1448-d9d7-fa7c-d39b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeb6-6a31-aac6-6c7a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink id="eb62-fad4-557c-baad" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -2603,7 +2587,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </categoryLinks>
       <entryLinks>
         <entryLink id="5cca-fee2-e8e5-c61b" name="Balesword" hidden="false" collective="false" import="true" targetId="ee48-79b0-0c91-443b" type="selectionEntry"/>
-        <entryLink id="dccf-087b-bcb3-e17d" name="Nurgling Claws &amp; Teeth" hidden="false" collective="false" import="true" targetId="29f7-afa3-18fe-0e3c" type="selectionEntry"/>
+        <entryLink id="dccf-087b-bcb3-e17d" name="Nurgling Claws &amp; Teeth" hidden="false" collective="false" import="true" targetId="a551-8bfb-8fe2-b994" type="selectionEntry"/>
         <entryLink id="dd49-6fdf-91aa-61e7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -4657,7 +4641,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9269-652b-a751-8628" name="Nurgling Claws &amp; Teeth" hidden="false" collective="false" import="true" targetId="29f7-afa3-18fe-0e3c" type="selectionEntry"/>
+        <entryLink id="9269-652b-a751-8628" name="Nurgling Claws &amp; Teeth" hidden="false" collective="false" import="true" targetId="a551-8bfb-8fe2-b994" type="selectionEntry"/>
         <entryLink id="1cc3-88c5-8e42-6d25" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -6532,32 +6516,11 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </selectionEntries>
       <entryLinks>
         <entryLink id="0836-7a8c-dac6-1e31" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Putrid vomit" hidden="false" id="b2de-2eeb-a1da-231c" type="selectionEntry" targetId="5d4e-f4d0-049e-82c1"/>
+        <entryLink import="true" name="Putrid vomit" hidden="false" id="b2de-2eeb-a1da-231c" type="selectionEntry" targetId="593e-acc3-2fae-bb67"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="37"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bolt of Tzeentch" hidden="false" id="a2a4-3d10-3830-de50">
-      <profiles>
-        <profile name="Bolt of Tzeentch" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4a2d-3bfe-5761-b527">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb4-a576-d394-4b2c" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="782b-a16d-e7f0-93d8" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Witchfire" id="32b8-a93b-1151-22a5" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Betraying Shades" hidden="false" id="9d26-87ec-5292-e08d">
       <constraints>
@@ -6637,28 +6600,6 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </profiles>
       <infoLinks>
         <infoLink name="Witchfire" id="e016-23a3-ff28-7b2b" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Putrid vomit" hidden="false" id="5d4e-f4d0-049e-82c1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a672-0392-0180-38d9" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bc3-afa7-afbb-bbf9" includeChildSelections="false"/>
-      </constraints>
-      <profiles>
-        <profile name="Putrid vomit" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b905-25c1-2dfc-603d">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Witchfire" id="9296-c23c-b7fc-4de8" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
-        <infoLink name="Inferno" id="40ad-0ad3-8cb0-d11a" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -53,6 +53,7 @@
     <categoryEntry name="Ursarax Cohort" id="297a-49cf-e985-0d7d" hidden="false"/>
     <categoryEntry name="Domitar Battle-Automata Maniple" id="9f03-eaf2-e06e-f1bc" hidden="false"/>
     <categoryEntry name="Thallax Cohort" id="c5e5-8c29-1e8a-f376" hidden="false"/>
+    <categoryEntry name="Castellax Battle-Automata Maniple" id="f541-e094-c12b-2cbe" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -269,6 +270,11 @@
     <entryLink import="true" name="Thallax Cohort" hidden="false" id="0b93-6a16-890b-3f3e" type="selectionEntry" targetId="c2e5-52b5-69db-3a08">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="1282-3cc2-036d-de25" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="b2be-afd9-6f60-821a" type="selectionEntry" targetId="c6a8-368a-3b0a-0582">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="50ac-b60d-9ff3-b1cd" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5371,7 +5377,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="f76a-875e-ebf7-fa14">
@@ -5389,7 +5395,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="eda8-00ee-b5b9-94b6">
@@ -5407,7 +5413,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="62"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="53"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="04 models" hidden="false" id="dd6e-dc32-91ac-28fc">
@@ -5425,7 +5431,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="7453-e92e-27f4-8e48">
@@ -5443,7 +5449,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="29"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5644,6 +5650,317 @@
       <infoLinks>
         <infoLink name="Supercharge" id="fb0e-6383-4b7c-95b2" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="c6a8-368a-3b0a-0582">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="1c1d-deff-e86b-7409" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="9c33-a128-4f0f-a37c" hidden="false" defaultSelectionEntryId="276d-6c1d-ccbd-4543">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="276d-6c1d-ccbd-4543">
+              <profiles>
+                <profile name="Castellax (01 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="eac4-6218-fb64-cbc5">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 model" hidden="false" id="33e6-89e4-8e10-5198">
+              <profiles>
+                <profile name="Castellax (02 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2120-8a5a-0c56-5c59">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 model" hidden="false" id="2843-07c8-27f9-6bac">
+              <profiles>
+                <profile name="Castellax (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fa67-7138-7cfa-8637">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="05 model" hidden="false" id="5206-d50a-244a-7777">
+              <profiles>
+                <profile name="Castellax (05 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f3f0-5215-5030-55fc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">5</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="04 model" hidden="false" id="297e-ea51-12b7-3bb7">
+              <profiles>
+                <profile name="Castellax (04 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="083a-a812-d5dd-222b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="101a-32ba-324b-8187" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f88-6daf-6185-61b1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Main Weapon" id="94d8-6b82-37a7-76b8" hidden="false" defaultSelectionEntryId="97bc-3f8d-6965-c61c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4995-1ade-43af-6d22" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1a3-44f9-1a5f-f6df" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" id="97bc-3f8d-6965-c61c" type="selectionEntry" targetId="4e34-99f5-78e8-c9dc"/>
+            <entryLink import="true" name="Darkfire Cannon" hidden="false" id="d4a1-ccba-9694-d8c4" type="selectionEntry" targetId="c3bc-9d15-a1be-5acc">
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="54f0-82bc-ede2-4712" type="selectionEntry" targetId="1a13-f0be-ca42-c44b"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="2" field="4995-1ade-43af-6d22">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="33e6-89e4-8e10-5198" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="4995-1ade-43af-6d22">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="2843-07c8-27f9-6bac" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="4995-1ade-43af-6d22">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="297e-ea51-12b7-3bb7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="4995-1ade-43af-6d22">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5206-d50a-244a-7777" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="f1a3-44f9-1a5f-f6df">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="33e6-89e4-8e10-5198" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="f1a3-44f9-1a5f-f6df">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="2843-07c8-27f9-6bac" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="f1a3-44f9-1a5f-f6df">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="297e-ea51-12b7-3bb7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f1a3-44f9-1a5f-f6df">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5206-d50a-244a-7777" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Built-In Weapons" id="61f9-ddf7-3297-1249" hidden="false" defaultSelectionEntryId="a8be-994d-c5db-7235">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86df-2a28-0bd2-9350" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ab1-e6fc-879a-404c" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Maxima Bolters" hidden="false" id="756c-f9d5-8eb3-3cd9">
+              <profiles>
+                <profile name="Maxima Bolter" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3916-1f9d-4c37-2626">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="db30-0782-3202-63b1">
+              <profiles>
+                <profile name="Flamers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="75fa-dc3b-d01f-e92d">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Inferno" id="b515-eced-cfb3-ecc4" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolters" hidden="false" id="a8be-994d-c5db-7235">
+              <profiles>
+                <profile name="Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a875-6dd1-833a-9bbb">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Fire" id="7165-7eb9-164e-2288" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="2" field="86df-2a28-0bd2-9350">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="33e6-89e4-8e10-5198" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="86df-2a28-0bd2-9350">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="2843-07c8-27f9-6bac" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="86df-2a28-0bd2-9350">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="297e-ea51-12b7-3bb7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="86df-2a28-0bd2-9350">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5206-d50a-244a-7777" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="5ab1-e6fc-879a-404c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="33e6-89e4-8e10-5198" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="5ab1-e6fc-879a-404c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="2843-07c8-27f9-6bac" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="5ab1-e6fc-879a-404c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="297e-ea51-12b7-3bb7" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="5ab1-e6fc-879a-404c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5206-d50a-244a-7777" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapons" id="f99b-429b-e32b-97d4" hidden="false" defaultSelectionEntryId="6f6c-b61d-a69c-1f53">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a8b-ccc0-f928-f342" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a542-140b-501d-92d9" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="a609-50ba-a44e-dfdf">
+              <profiles>
+                <profile name="Power Blade Array" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8cb7-1fd6-7baa-1fa5">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Siege Wrecker &amp; Shock Charger" hidden="false" id="8014-d1e4-b193-93d0">
+              <profiles>
+                <profile name="Siege Wrecker &amp; Shock Charger" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9fa3-380f-a4a7-cf2a">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shock Chargers" hidden="false" id="6f6c-b61d-a69c-1f53" type="selectionEntry" targetId="3eeb-8f67-a69c-9790"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="f541-e094-c12b-2cbe" id="8c49-4141-33af-331b" primary="false" name="Castellax Battle-Automata Maniple"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="75fa-108f-0d82-bd4b" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="023f-038f-4720-7342" primary="false" name="Light"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="c50e-3c98-f8d2-e81f" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="7650-5dab-b115-5151" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="4dc1-30a6-aa31-19a9" id="989e-0c80-b64d-bea3" primary="false" name="Faction: Cult Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="8aa4-66f6-f8fc-f773" primary="false" name="Faction: [FORGE WORLD]"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
