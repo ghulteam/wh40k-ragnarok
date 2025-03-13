@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="22" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="23" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -137,6 +137,13 @@
         <categoryLink id="7cf6-82f2-2c8c-0076" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
         <categoryLink id="3413-84f1-405d-3a74" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="102b-272b-0d3c-2da0" name="Battalion Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <forceEntries>
@@ -208,6 +215,13 @@
       <infoLinks>
         <infoLink name="Objective Secured (Troops)" id="39fe-403f-58ab-ddd7" hidden="false" type="rule" targetId="eb8b-6c03-d1df-e9b4"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="113d-50e8-996e-70c3" name="Spearhead Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <forceEntries>
@@ -281,6 +295,13 @@
           <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="06e1-90a4-1407-f38b" name="Vanguard Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <forceEntries>
@@ -354,6 +375,13 @@
           <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="fb01-8e54-8822-7de4" name="Supreme Command Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <modifiers>
@@ -369,6 +397,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -443,6 +476,13 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="5642-ce25-4f9d-5cb3" name="Air Wing Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <modifiers>
@@ -463,6 +503,11 @@
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -560,6 +605,13 @@
           <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="8f70-4411-2a13-96bf" name="Patrol Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <modifiers>
@@ -579,6 +631,11 @@
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -668,6 +725,11 @@
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="forces" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad65-e0a9-93c2-42f7" type="max"/>
@@ -701,6 +763,11 @@
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a669-56e8-0aee-ba8d" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -748,6 +815,11 @@
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -821,26 +893,31 @@
         <categoryLink name="Fast Attack" hidden="false" id="3e64-718f-c595-4913" targetId="3945-9603-5902-58c0" primary="false"/>
         <categoryLink name="Heavy Support" hidden="false" id="1c9c-96ae-6230-dd10" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
         <categoryLink name="Lord of War" hidden="false" id="3c8a-e875-f781-1a35" targetId="4ba9-66c8-d53f-061d" primary="false"/>
-        <categoryLink name="Dedicated Transport" hidden="false" id="2d41-0e27-a219-02af" targetId="2a11-9193-1a80-f0c6" primary="false">
-          <modifiers>
-            <modifier type="increment" value="1" field="c192-2ddd-8e35-4d52">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="9b66-7ce1-9e7e-58ed" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="08d9-07e5-2b35-57b0" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="3945-9603-5902-58c0" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="4182-4f4b-94dc-40d9" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="8f90-47d8-c075-cbb2" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c192-2ddd-8e35-4d52" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="2d41-0e27-a219-02af" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+        <categoryLink name="Flyer" hidden="false" id="2424-84dc-39a3-cc1b" targetId="551a-ed52-fd35-9078" primary="false"/>
+        <categoryLink name="Fortification" hidden="false" id="d9da-e045-ee42-88e2" targetId="e2ad-0813-395c-442a" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Objective Secured (Troops)" id="77d8-3561-37a7-8e44" hidden="false" type="rule" targetId="eb8b-6c03-d1df-e9b4"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8ba0-7df9-3f27-d4b1" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5642-ce25-4f9d-5cb3" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="102b-272b-0d3c-2da0" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c2bc-37e7-468c-5e76" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9991-47ca-82d2-1371" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8f70-4411-2a13-96bf" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="113d-50e8-996e-70c3" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="0d22-806b-bfc5-db54" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7657-ae85-fd30-3993" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb01-8e54-8822-7de4" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a669-56e8-0aee-ba8d" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="06e1-90a4-1407-f38b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
