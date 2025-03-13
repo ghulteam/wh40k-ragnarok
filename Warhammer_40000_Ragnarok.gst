@@ -902,20 +902,24 @@
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8ba0-7df9-3f27-d4b1" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5642-ce25-4f9d-5cb3" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="102b-272b-0d3c-2da0" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c2bc-37e7-468c-5e76" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9991-47ca-82d2-1371" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8f70-4411-2a13-96bf" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="113d-50e8-996e-70c3" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="0d22-806b-bfc5-db54" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7657-ae85-fd30-3993" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb01-8e54-8822-7de4" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a669-56e8-0aee-ba8d" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="06e1-90a4-1407-f38b" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8ba0-7df9-3f27-d4b1" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5642-ce25-4f9d-5cb3" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="102b-272b-0d3c-2da0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c2bc-37e7-468c-5e76" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9991-47ca-82d2-1371" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8f70-4411-2a13-96bf" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="113d-50e8-996e-70c3" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a669-56e8-0aee-ba8d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="06e1-90a4-1407-f38b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7657-ae85-fd30-3993" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb01-8e54-8822-7de4" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0d22-806b-bfc5-db54" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </forceEntry>
