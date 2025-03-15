@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -739,6 +739,11 @@
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="8141-9fda-32d2-3c48" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinstorm Daemon Brutes" hidden="false" id="94ec-1295-5b54-7ec7" type="selectionEntry" targetId="a0f3-60c2-1135-a9d3">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="976d-8170-8ba2-00aa" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4913,7 +4918,11 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c549-6093-f0d5-86a1" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="140a-ab62-3547-9f77" name="Living Whip" hidden="false" collective="false" import="true" targetId="dfbf-31b2-3f0f-7327" type="selectionEntry"/>
+            <entryLink id="140a-ab62-3547-9f77" name="Living Whip" hidden="false" collective="false" import="true" targetId="dfbf-31b2-3f0f-7327" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
             <entryLink id="9944-f29d-8ef9-13ee" name="Shining Aegis" hidden="false" collective="false" import="true" targetId="095e-6926-2983-0a0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -6601,6 +6610,517 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       <infoLinks>
         <infoLink name="Witchfire" id="e016-23a3-ff28-7b2b" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes" hidden="false" id="a0f3-60c2-1135-a9d3">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="2b16-9e4a-fafc-3bd0" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Infernal Armaments" hidden="false" id="4acd-726a-34e7-29fa" type="selectionEntry" targetId="efd4-8e27-5b94-3609">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5582-10bb-0707-51b2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2967-53c9-ed80-4105" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="94c5-20d4-3e23-cff2" hidden="false" defaultSelectionEntryId="1f60-7695-6aa6-00da">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="1f60-7695-6aa6-00da">
+              <profiles>
+                <profile name="Daemon Brutes (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1f94-0629-5760-db27">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="a262-3e3c-2729-0ec3">
+              <profiles>
+                <profile name="Daemon Brutes (06 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="47fa-fb61-3fc5-06de">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="09 models" hidden="false" id="bb2e-a6c5-841d-4bb8">
+              <profiles>
+                <profile name="Daemon Brutes (09 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="628f-c74d-9a5b-bbe8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="39"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8594-12bf-af16-97ca" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4081-378f-638f-b44c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="10ec-0076-f9e2-3011" primary="false" name="Light"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="85d1-ad90-6d3f-f472" primary="false" name="Infantry"/>
+        <categoryLink targetId="841f-fc30-da92-90cf" id="5b9d-be5b-c3e3-e072" primary="false" name="Faction: Chaos"/>
+        <categoryLink targetId="644c-28aa-39ed-438f" id="1972-2a0f-4125-3bfc" primary="false" name="Faction: Legiones Daemonica"/>
+        <categoryLink targetId="86a8-bb20-bf42-76ee" id="6bfa-a6e8-c16e-e0cb" primary="false" name="Faction: Daemon"/>
+        <categoryLink targetId="a064-4a6f-b752-6795" id="de31-e3e2-dfa3-eb05" primary="false" name="Faction: Ruinstorm Daemons"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="7dad-3653-4a8c-59ae" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Lesser Daemons" hidden="false" id="9974-1ff3-952a-8710">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="88a0-738a-f0f5-5b7c" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="469c-0254-1832-da17" hidden="false"/>
+        <selectionEntryGroup name="Weapons" id="3308-0549-7667-bd6a" hidden="false" defaultSelectionEntryId="260e-baad-954e-973b">
+          <entryLinks>
+            <entryLink import="true" name="Daemon Armaments" hidden="false" id="599d-c8b7-9321-e06f" type="selectionEntry" targetId="a7fb-dfd2-5934-ac42"/>
+            <entryLink import="true" name="Immaterial Projectiles" hidden="false" id="ee8a-e594-9d1d-4de4" type="selectionEntry" targetId="4933-b6b1-5f77-2182"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcda-8f60-3801-a740" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc7a-154b-26ff-dc52" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="7fa6-17ba-e0e7-de8b" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms" hidden="false" id="f031-6d3c-a79f-cec7">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="b9ec-09d8-1abd-5a5f" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="e521-eb5d-dd18-66e4"/>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="c525-e819-f495-939a" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Cavalry" hidden="false" id="5d02-b2e9-bf5c-44eb">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="a902-f805-f745-64ab" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="4e42-5e8c-5bb5-cb1f" hidden="false" defaultSelectionEntryId="260e-baad-954e-973b">
+          <entryLinks>
+            <entryLink import="true" name="Daemon Armaments" hidden="false" id="3e34-6fe0-2c29-2103" type="selectionEntry" targetId="a7fb-dfd2-5934-ac42"/>
+            <entryLink import="true" name="Immaterial Projectiles" hidden="false" id="b600-b507-e146-9265" type="selectionEntry" targetId="4933-b6b1-5f77-2182"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b557-cf2f-3beb-3aee" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f5d-f37a-2c40-5d43" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="6ff8-76b2-c4ac-6e5f" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harriers" hidden="false" id="bb71-d8f6-e352-01c4">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="2d69-2eb7-4d10-95da" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="62b9-6130-6229-3c03" hidden="false" defaultSelectionEntryId="260e-baad-954e-973b">
+          <entryLinks>
+            <entryLink import="true" name="Daemon Armaments" hidden="false" id="3747-906b-5755-606b" type="selectionEntry" targetId="a7fb-dfd2-5934-ac42"/>
+            <entryLink import="true" name="Immaterial Projectiles" hidden="false" id="4ee4-f7d9-e262-027f" type="selectionEntry" targetId="4933-b6b1-5f77-2182"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f1-a501-8b15-69b4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="963b-b260-c0b3-5605" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="fe78-8ef9-7784-e7e1" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts" hidden="false" id="5ebf-412b-22db-918c">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5529-b95c-40ff-6085" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name=" Ætheric Flight " hidden="false" id="5e67-2fe4-e98f-c0c6">
+          <categoryLinks>
+            <categoryLink targetId="b408-d848-fa84-cfb9" id="b839-e83b-6603-6f60" primary="false" name="Fly"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="3a52-a2d7-abac-56d8" hidden="false"/>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="2f1c-d9ae-538f-60d1" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Behemoth" hidden="false" id="de0e-ef3b-52b1-da1e">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="03ac-c8ad-10c5-f27e" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="e07c-581a-b1b6-3c46" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Infernal Armaments" hidden="false" id="4848-c1ac-ad38-31c9" type="selectionEntry" targetId="efd4-8e27-5b94-3609"/>
+            <entryLink import="true" name="Behemoth Blade" hidden="false" id="e8df-0ce8-9665-ae8f" type="selectionEntry" targetId="1f11-4f96-09fd-7e1f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2712-e3ca-45cc-5d00" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9da3-87b8-502e-adb9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="e0d7-d56f-8c6c-878d" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger" hidden="false" id="9d93-46bd-1903-c72d">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="19d3-5a37-244f-00b6" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="b5d1-e4ab-6817-fed6" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Harbinger Blade" hidden="false" id="7edf-3e89-f40e-d1d8">
+          <profiles>
+            <profile name="Harbinger Blade" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8142-1568-f631-63c7">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3305-232f-2165-e2d2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fde8-c302-a42e-b7ec" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Hierarch" hidden="false" id="3db2-5ba9-62b0-c4e6">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f00d-eb58-38cc-0c99" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Infernal Armaments" hidden="false" id="3341-20a7-3541-d444" type="selectionEntry" targetId="efd4-8e27-5b94-3609">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47c6-fb87-648f-8547" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6289-dbcd-0b14-648a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="a61b-bc2c-568b-723f" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="0b2c-8de8-1c86-5a60">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="051f-c1bc-925f-60d5" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="9e93-756b-8f8b-f90e" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name=" Sovereign Armaments" hidden="false" id="2f75-78c1-69d8-6b59">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9354-3876-a4ea-a43b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77e9-960f-ee98-dfa7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name=" Sovereign Armaments" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7651-0a75-4c7c-fa4a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Arch-Daemon" hidden="false" id="4d0c-dde1-85bb-7f8d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ruinstorm Powers" id="5db2-f19d-c0f4-9e4d" hidden="false"/>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="016b-0c69-d914-8ec6" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Behemoth Blade" hidden="false" id="eaa2-4394-8a41-d639" type="selectionEntry" targetId="1f11-4f96-09fd-7e1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbc3-8c95-995e-15d1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed5c-bce5-5d69-6fa7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="5028-1231-e0ee-fc3f" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal Armaments" hidden="false" id="efd4-8e27-5b94-3609">
+      <profiles>
+        <profile name="Infernal Armaments" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f27c-7592-b398-d608">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemon Armaments" hidden="false" id="a7fb-dfd2-5934-ac42">
+      <profiles>
+        <profile name="Daemon Armaments" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ac39-7c1f-2d52-abac">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Immaterial Projectiles" hidden="false" id="4933-b6b1-5f77-2182">
+      <profiles>
+        <profile name="Immaterial Projectiles" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5633-a663-0ec5-914b">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+        <profile name="Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f625-b5c9-e66d-ee8a">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Greater Daemon Beast" hidden="false" id="21b9-89a0-c38e-158b">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="9043-7f91-58d7-9b41" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Infernal Armaments" hidden="false" id="f485-f4c4-9c55-cc2d" type="selectionEntry" targetId="efd4-8e27-5b94-3609">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0cd-3077-2923-7def" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44c9-d658-8821-dab5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Ruinstorm Greater Daemon Beast" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8c40-d9f2-4780-29bb">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce"/>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"/>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77"/>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c"/>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c"/>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290"/>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="656b-465f-0ced-3320" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Behemoth Blade" hidden="false" id="1f11-4f96-09fd-7e1f">
+      <profiles>
+        <profile name="Behemoth Blade" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8599-247b-085e-b356">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
