@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -794,6 +794,11 @@
     <entryLink import="true" name="Ruinstorm Greater Daemon Beasts" hidden="false" id="2268-9e91-4dd7-21d5" type="selectionEntry" targetId="21b9-89a0-c38e-158b">
       <categoryLinks>
         <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="cc16-a74d-cf23-bde2" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinstorm Lesser Daemons" hidden="false" id="750e-f67f-c46b-215f" type="selectionEntry" targetId="9974-1ff3-952a-8710">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="8dd9-af78-c510-ee64" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1818,6 +1823,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d3b-e535-814d-65f5" type="equalTo"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1903,7 +1909,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <entryLink id="27ab-d197-497c-4db7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="58"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="60"/>
       </costs>
       <infoLinks>
         <infoLink name="Deep Strike" id="6e83-d9c1-25a0-e0f8" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
@@ -2021,6 +2027,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d3b-e535-814d-65f5" type="equalTo"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2292,6 +2299,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13dd-e8b8-5428-f7c9" type="equalTo"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2737,6 +2745,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ruinstorm" hidden="false" id="4e1c-11b8-c9cb-2fe2"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4739,7 +4748,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
@@ -6754,7 +6763,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6829,7 +6838,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6876,7 +6885,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7005,7 +7014,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7088,7 +7097,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7108,7 +7117,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <entryLink import="true" name="Commander" hidden="false" id="5529-b95c-40ff-6085" type="selectionEntry" targetId="7347-5716-355f-9165"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name=" Ætheric Flight " hidden="false" id="5e67-2fe4-e98f-c0c6">
+        <selectionEntry type="upgrade" import="true" name="Ætheric Flight " hidden="false" id="5e67-2fe4-e98f-c0c6">
           <categoryLinks>
             <categoryLink targetId="b408-d848-fa84-cfb9" id="b839-e83b-6603-6f60" primary="false" name="Fly"/>
           </categoryLinks>
@@ -7122,6 +7131,9 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe2-fcfe-ea68-bd81" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7182,6 +7194,10 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5785-8f01-957f-227d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67e9-f997-302c-d92a" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapons" id="653c-ebb9-00bf-ebb7" hidden="false" defaultSelectionEntryId="db91-3fc5-dbed-0ab1">
           <entryLinks>
@@ -7230,7 +7246,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7278,7 +7294,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7295,6 +7311,18 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="ddfe-6a9e-32c1-a51c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -7342,7 +7370,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7359,6 +7387,18 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="6+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Locus of the Ruinstorm" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="30aa-3bb6-6fe8-2e52">
           <characteristics>
@@ -7402,7 +7442,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7419,6 +7459,23 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="ddfe-6a9e-32c1-a51c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Hierarch of the Ruinstorm" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="eb89-773d-5824-0a3e">
           <characteristics>
@@ -7431,9 +7488,9 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <categoryLink targetId="a064-4a6f-b752-6795" id="d214-8154-86f5-7dbb" primary="false" name="Faction: Ruinstorm Daemons"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="afad-4377-3a92-3b03" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="ca9e-99c3-913a-2204" primary="false" name="Faction: Legiones Daemonica"/>
-        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="9d89-8bc6-6b65-434b" primary="false" name="Infantry"/>
-        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="d874-6d0e-6323-43a8" primary="false" name="Light"/>
         <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="72e1-62c9-910b-7878" primary="false" name="Character"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="15ec-1a0f-df8e-1e29" primary="false" name="Heavy"/>
+        <categoryLink targetId="3bbd-6bb7-b214-6dca" id="c543-f7b3-fbae-1048" primary="false" name="Monster"/>
       </categoryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -7458,13 +7515,13 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77e9-960f-ee98-dfa7" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name=" Sovereign Armaments" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7651-0a75-4c7c-fa4a">
+            <profile name="Sovereign Armaments" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7651-0a75-4c7c-fa4a">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -7476,7 +7533,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7493,6 +7550,23 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="ddfe-6a9e-32c1-a51c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Emissary of the Ruinstorm" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6320-b979-ab8a-306d">
           <characteristics>
@@ -7536,7 +7610,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7553,6 +7627,23 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="ddfe-6a9e-32c1-a51c">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Emissary of the Ruinstorm" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="e8c8-3281-b094-c572">
           <characteristics>
@@ -7644,7 +7735,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4e1c-11b8-c9cb-2fe2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7888,7 +7979,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name=" Immaterial Wings" hidden="false" id="7ad0-c881-2b9c-0053">
+        <selectionEntry type="upgrade" import="true" name="Immaterial Wings" hidden="false" id="7ad0-c881-2b9c-0053">
           <profiles>
             <profile name=" Immaterial Wings" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b16e-7fe9-4221-c2c3">
               <characteristics>
@@ -7913,7 +8004,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name=" Miasma of Rage" hidden="false" id="5aec-5fe4-f263-1373">
+        <selectionEntry type="upgrade" import="true" name="Miasma of Rage" hidden="false" id="5aec-5fe4-f263-1373">
           <profiles>
             <profile name=" Miasma of Rage" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9dce-bd6c-2c7a-6cd7">
               <characteristics>
@@ -7965,7 +8056,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name=" Warp-forged Flesh" hidden="false" id="55fa-ac02-1076-9c21">
+        <selectionEntry type="upgrade" import="true" name="Warp-forged Flesh" hidden="false" id="55fa-ac02-1076-9c21">
           <profiles>
             <profile name=" Warp-forged Flesh" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4e51-2d58-4550-7607">
               <characteristics>
