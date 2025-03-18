@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="9055-71bd-c713-3f2a" name="Genestealer Cults"/>
   </publications>
@@ -2171,11 +2171,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="6ed8-3c7e-a4ba-8424" name="Grinding Advance" publicationId="9055-71bd-c713-3f2a" page="24" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, if it has remained stationary or moved a distance less than half its Move characteristic this turn, double the Attacks characteristic of its Battle Cannon, Eradicator Nova Cannon, Exterminator Autocannon and Vanquisher Battle Cannon for that action.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry id="ba63-2e31-8383-0d12" name="Grinding Tracks" hidden="false" collective="false" import="true" type="upgrade">
@@ -2201,82 +2196,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f77e-9a6d-5396-106a" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6253-7a46-7544-efb3">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f7-b1a0-fed7-8095" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c544-bd28-cb18-0ef0" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="6253-7a46-7544-efb3" name="Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9e2f-6912-07c9-99be" name="Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7fb1-f63d-ddba-981d" name="Eradicator Nova Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9df4-1a2e-8cba-0188" name="Eradicator Nova Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c30c-8d1c-cc6b-6101" name="Exterminator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="4508-dc0d-8dd9-59da" name="Exterminator Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7d6a-aa12-f103-1770" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f916-c8ab-7d53-be35" name="Vanquisher Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="357c-a89a-c2aa-2b99" name="Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="20cc-1668-c1cb-795e">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d8-4f31-9006-6f70" type="min"/>
@@ -2339,9 +2258,10 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c3d3-0ca1-c546-c005" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Turret Weapon" hidden="false" id="c356-451e-4b78-28c7" type="selectionEntryGroup" targetId="8599-3938-8abe-f84d"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ef0-70a9-6579-0128" name="Brood Brothers Heavy Weapons Squad" hidden="false" collective="false" import="true" type="unit">
@@ -3129,5 +3049,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Weapons" id="5314-6553-bd70-14e6" targetId="4c20-063f-968c-8547"/>
+    <catalogueLink type="catalogue" name="Library - Astra Militarum" id="6601-3099-44c9-acff" targetId="53e0-c079-fb36-cf26"/>
   </catalogueLinks>
 </catalogue>

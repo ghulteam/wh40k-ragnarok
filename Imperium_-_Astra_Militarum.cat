@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="46" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="47" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1451,26 +1451,6 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="66d0-aaf4-1c5c-31d6" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="3325-a1ec-4b86-3cc0" name="Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e34e-7f5b-a666-0402" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="161d-882c-8050-ac48" name="Weapons Team" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
         <selectionEntryGroup id="a10c-d376-4f85-99bc" name="Heavy Weapon" hidden="false" collective="false" import="true">
@@ -1483,7 +1463,7 @@
             <entryLink id="8f1d-8f88-84c6-9ef8" name="Autocannon" hidden="false" collective="false" import="true" targetId="02f7-7194-f8cf-2299" type="selectionEntry"/>
             <entryLink id="4767-ddb3-f6cd-2806" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
             <entryLink id="71bb-473b-c0d8-816f" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry"/>
-            <entryLink id="367d-0027-fba3-12ce" name="Mortar" hidden="false" collective="false" import="true" targetId="66d0-aaf4-1c5c-31d6" type="selectionEntry"/>
+            <entryLink id="367d-0027-fba3-12ce" name="Mortar" hidden="false" collective="false" import="true" targetId="c8c3-6531-3c08-c871" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4919,7 +4899,7 @@
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a820-85e1-754c-daa4" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="7d16-19c0-d93b-535a" name="Mortar" hidden="false" collective="false" import="true" targetId="66d0-aaf4-1c5c-31d6" type="selectionEntry">
+            <entryLink id="7d16-19c0-d93b-535a" name="Mortar" hidden="false" collective="false" import="true" targetId="c8c3-6531-3c08-c871" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a2b-b394-a399-7ce6" type="max"/>
               </constraints>
@@ -5072,9 +5052,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="1ae4-fd6f-d057-1064" name="Grinding Advance" hidden="false" targetId="7b3f-ddab-6d2b-674a" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="5dde-624a-3026-51cf" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="6770-c492-453d-d043" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -5113,177 +5090,13 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47c2-b03f-7d5a-d9ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Turret Weapon" id="2874-bf9f-77ec-2a4e" hidden="false" collective="false" import="true" defaultSelectionEntryId="96c4-ab73-e520-985b">
+                <entryLink import="true" name="Turret Weapon" hidden="false" id="e829-79f8-ffa9-3b7d" type="selectionEntryGroup" targetId="8599-3938-8abe-f84d">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dae8-3eed-f34e-573f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2ea-d9fa-6545-2d94" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b5-3c4d-b62c-74e5" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a96-fbde-1da5-243c" includeChildSelections="false"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Battle Cannon" hidden="false" id="96c4-ab73-e520-985b" collective="false">
-                      <profiles>
-                        <profile name="Battle Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9d69-55b3-2dac-4f65">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Turret Weapon" id="0486-20a1-9d57-49f0" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Demolisher Cannon" hidden="false" id="86f4-b4b6-b8b5-9200" collective="false">
-                      <modifiers>
-                        <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-                      </modifiers>
-                      <profiles>
-                        <profile name="Demolisher Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2e5b-6e6c-17a3-31f2">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer, Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Destroyer" id="d7e6-586b-2eb4-4fc4" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-                        <infoLink name="Turret Weapon" id="cf07-9b4d-fbd5-a00b" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Eradicator Nova Cannon" hidden="false" id="c918-36f2-19d2-398f" collective="false">
-                      <profiles>
-                        <profile name="Eradicator Nova Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="636c-46e0-aa8e-e545">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Turret Weapon" id="ef7a-3297-e80d-70d1" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Executioner Plasma Cannon" hidden="false" id="842c-5442-445b-74a4" collective="false">
-                      <profiles>
-                        <profile name="Executioner Plasma Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="fe40-bdb2-1a27-d432">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge, Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Supercharge" id="88ad-99b4-6d84-695d" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
-                        <infoLink name="Turret Weapon" id="d847-b765-cdc1-5ea0" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Exterminator Autocannon" hidden="false" id="2952-4f0d-cb95-946d" collective="false">
-                      <profiles>
-                        <profile name="Exterminator Autocannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3f31-1ecd-76f6-ecd3">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Turret Weapon" id="9c5b-1ade-9ded-a339" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Punisher Gatling Cannon" hidden="false" id="f690-f392-3475-07e6" collective="false">
-                      <modifiers>
-                        <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-                      </modifiers>
-                      <profiles>
-                        <profile name="Punisher Gatling Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3dfe-e79a-92b3-3698">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">6</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Turret Weapon" id="ba5c-f700-345d-d2c6" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Vanquisher Battle Cannon" hidden="false" id="4557-1d3a-d300-5ce5" collective="false">
-                      <profiles>
-                        <profile name="Vanquisher Battle Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="58af-2b47-b7b1-a77d">
-                          <characteristics>
-                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-                          </characteristics>
-                          <modifiers>
-                            <modifier type="set" value="1" field="2883-af07-d4e8-d8d0">
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c68c-be57-318c-8802" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="fbd9-1863-d624-9a64" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </modifier>
-                          </modifiers>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Turret Weapon" id="b996-7a55-654b-e88e" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                </entryLink>
+              </entryLinks>
               <profiles>
                 <profile name="Knight Commander Pask (Leman Russ)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8949-5be5-3c22-cc3e">
                   <characteristics>
@@ -6441,7 +6254,7 @@
             <entryLink id="533a-e0d6-8d0b-4d99" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6591,7 +6404,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7125,7 +6938,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
