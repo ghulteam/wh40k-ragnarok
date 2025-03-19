@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -192,7 +192,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="034e-7003-5455-9612" name="Bloodmaster" hidden="false" collective="false" import="true" targetId="2379-49f2-b193-3073" type="selectionEntry">
+    <entryLink id="034e-7003-5455-9612" name="Herald of Khorne" hidden="false" collective="false" import="true" targetId="2379-49f2-b193-3073" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9364-0858-2e59-6ca4" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
@@ -269,11 +269,6 @@
         <categoryLink id="7a15-8485-f28b-30fe" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1861-3f06-3440-76cf" name="Fateskimmer" hidden="false" collective="false" import="true" targetId="6b1b-0e03-deae-dd94" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="85bb-667c-0704-517c" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="26af-2ff9-c213-61ed" name="Feculent Gnarlmaw" hidden="false" collective="false" import="true" targetId="8a44-70ad-d886-2b2b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d3f6-6c60-1af4-e206" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="true"/>
@@ -329,11 +324,6 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink id="baec-ebb5-e015-a10d" name="Fluxmaster" hidden="false" collective="false" import="true" targetId="681a-9bfc-6b04-dedf" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="5f6f-cd5e-688a-5cf6" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
     </entryLink>
     <entryLink id="8e01-2d1a-06db-9334" name="Great Unclean One" hidden="false" collective="false" import="true" targetId="62b1-191d-dea9-15f1" type="selectionEntry">
       <categoryLinks>
@@ -1706,48 +1696,37 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Bloodmaster" field="name">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Bloodmaster" field="name"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7281-f0d9-6ec3-740b" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="034e-7003-5455-9612" childId="7281-f0d9-6ec3-740b" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="8&quot;" field="606d-344a-bc3d-9dce">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="8&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="Skullmaster" field="name"/>
+                <modifier type="set" value="7+" field="a56f-38ae-3917-aadc"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d2d6-48f2-8bed-b3b8" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="2379-49f2-b193-3073" childId="d2d6-48f2-8bed-b3b8" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="7+" field="a56f-38ae-3917-aadc">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Blood Throne" field="name"/>
+                <modifier type="set" value="5+" field="a56f-38ae-3917-aadc"/>
+                <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c"/>
+                <modifier type="set" value="2" field="7c7f-f763-1f39-410c"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d2d6-48f2-8bed-b3b8" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="2379-49f2-b193-3073" childId="d4b8-62d6-1075-230f" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Skullmaster" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d2d6-48f2-8bed-b3b8" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Blood Throne" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d4b8-62d6-1075-230f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5+" field="a56f-38ae-3917-aadc">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d4b8-62d6-1075-230f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d4b8-62d6-1075-230f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="7c7f-f763-1f39-410c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="d4b8-62d6-1075-230f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -1756,12 +1735,9 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </infoLinks>
       <categoryLinks>
         <categoryLink id="16c6-493d-daaa-1076" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="884d-a0d3-9766-519f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="6dc4-829b-6f66-5649" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="8052-b4ab-b03d-bf49" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="9961-b809-e93c-c651" name="Bloodletter" hidden="false" targetId="dd59-3486-99b4-2a0d" primary="false"/>
         <categoryLink id="7d15-4e5c-6b67-3a3b" name="Herald of Khorne" hidden="false" targetId="a786-d920-79cf-f79d" primary="false"/>
-        <categoryLink id="1787-7a3d-1f19-4c5d" name="Bloodmaster" hidden="false" targetId="57d1-31d3-410f-1cfd" primary="false"/>
         <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="bcca-e7ed-f1a8-b1dc" primary="false" name="Faction: Khorne"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="7ab1-40dc-4a90-9c64" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="70a0-0736-2b0a-c642" primary="false" name="Faction: Legiones Daemonica"/>
@@ -1774,7 +1750,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Mount" id="8860-41a6-c114-6daa" hidden="false" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Mount" id="8860-41a6-c114-6daa" hidden="false" defaultSelectionEntryId="7281-f0d9-6ec3-740b">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="7281-f0d9-6ec3-740b">
               <categoryLinks>
@@ -1853,6 +1829,10 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65fe-451e-cb1f-bcb4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fe4-8e5c-bbf9-22d9" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -2279,7 +2259,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <infoLink name="Deep Strike" id="86c5-1c26-ceea-18eb" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="1338-cd01-7845-3d55" name="Changecaster" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1338-cd01-7845-3d55" name="Herald of Tzeentch" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -2293,7 +2273,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="a77e-8c68-c846-3c80" name="Changecaster" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="a77e-8c68-c846-3c80" name="Herald of Tzeentch" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -2303,6 +2283,35 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="1338-cd01-7845-3d55" childId="b7cb-3712-4383-e72a" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Changecaster" field="name"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="1338-cd01-7845-3d55" childId="5006-182a-7f62-985a" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Fluxmaster" field="name"/>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="1338-cd01-7845-3d55" childId="c750-b4d0-82bc-f8d7" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Fateskimmer" field="name"/>
+                <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="2" field="7c7f-f763-1f39-410c"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -2311,13 +2320,10 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f2a3-769a-d5b5-c687" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="4d6f-0890-0b91-0433" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="3461-1811-f9c6-7f19" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="8c85-3082-7652-5c9d" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="fd9f-29ff-d6dc-5789" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="47a8-2b91-9843-f327" name="Horror" hidden="false" targetId="ad10-11c9-c21a-d2c1" primary="false"/>
         <categoryLink id="41a3-3de4-367b-a6ec" name="Herald of Tzeentch" hidden="false" targetId="1ef7-ecf3-069e-ce5b" primary="false"/>
-        <categoryLink id="2a78-5b65-1650-2285" name="Changecaster" hidden="false" targetId="439a-077a-092b-6612" primary="false"/>
         <categoryLink targetId="a1e7-ad03-b978-ec8a" id="805c-49d0-eda6-7011" primary="false" name="Faction: Tzeentch"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="cb59-9e6a-7c42-0d46" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="77f4-e339-bfc1-fe6d" primary="false" name="Faction: Legiones Daemonica"/>
@@ -2331,6 +2337,51 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mount" id="9253-ba4b-e8e7-ef20" hidden="false" defaultSelectionEntryId="b7cb-3712-4383-e72a">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="b7cb-3712-4383-e72a">
+              <categoryLinks>
+                <categoryLink targetId="2d6e-c03a-7a58-74ce" id="1697-2c52-b012-841c" primary="false" name="Infantry"/>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="2646-3dc0-c0b3-ecb4" primary="false" name="Light"/>
+                <categoryLink targetId="439a-077a-092b-6612" id="8b6e-76d8-b045-110f" primary="false" name="Changecaster"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Disk" hidden="false" id="5006-182a-7f62-985a">
+              <categoryLinks>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="3df0-f105-cff8-491c" primary="false" name="Fly"/>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="090d-f1c2-004b-3790" primary="false" name="Light"/>
+                <categoryLink targetId="351c-b6fa-4d4f-70f3" id="61b4-9ed1-eb34-e999" primary="false" name="Cavalry"/>
+                <categoryLink targetId="262d-66b5-41c6-ce54" id="dae7-aebd-9714-9718" primary="false" name="Fluxmaster"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Disc Blades" hidden="false" id="6137-f5a3-53a1-07e3" collective="false" targetId="e35c-2751-a2c3-8c53" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chariot" hidden="false" id="c750-b4d0-82bc-f8d7">
+              <entryLinks>
+                <entryLink import="true" name="Lamprey Bites" hidden="false" id="884f-f2fb-b2a7-910b" collective="false" targetId="72a7-cd7c-c02e-8d08" type="selectionEntry"/>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="04d3-600e-1bb4-e4d0" primary="false" name="Fly"/>
+                <categoryLink targetId="25c7-3353-2028-72b2" id="f6e8-012e-7733-8b8a" primary="false" name="Heavy"/>
+                <categoryLink targetId="54ee-1b7e-6151-20ce" id="20e1-f249-412a-c93b" primary="false" name="Chariot"/>
+                <categoryLink targetId="04e6-0878-3ee5-3e5c" id="3e63-4799-3a62-4c80" primary="false" name="Fateskimmer"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c15c-873a-fe0f-c71d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c0c-03fc-104a-2efc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0bd6-5027-a93a-fa97" name="Cor&apos;bax Utterblight" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2843,61 +2894,6 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <infoLink name="Deep Strike" id="3402-16c8-7b5d-2e73" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="6b1b-0e03-deae-dd94" name="Fateskimmer" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777b-470f-f311-0fad" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="a546-62ba-061b-24bb" name="Fateskimmer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e580-db86-b2e7-6c41" name="Locus of Tzeentch" hidden="false" targetId="f46d-526b-bd55-8499" type="profile"/>
-        <infoLink name="Deep Strike" id="21b8-3e1a-e593-cb41" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9043-9410-00eb-54be" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="7bb7-c1ac-ab87-3a63" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-        <categoryLink id="8a2c-c8ab-b527-cad9" name="Chariot" hidden="false" targetId="54ee-1b7e-6151-20ce" primary="false"/>
-        <categoryLink id="6d69-b278-280e-1072" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
-        <categoryLink id="9d26-3567-a415-0392" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
-        <categoryLink id="32d5-5475-3987-d635" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="6195-d889-9146-275a" name="Horror" hidden="false" targetId="ad10-11c9-c21a-d2c1" primary="false"/>
-        <categoryLink id="c224-169a-248a-a5c4" name="Herald of Tzeentch" hidden="false" targetId="1ef7-ecf3-069e-ce5b" primary="false"/>
-        <categoryLink id="1d8c-2a6d-0f34-a1e7" name="Fateskimmer" hidden="false" targetId="04e6-0878-3ee5-3e5c" primary="false"/>
-        <categoryLink targetId="a1e7-ad03-b978-ec8a" id="eac3-2cf1-9b33-dd2e" primary="false" name="Faction: Tzeentch"/>
-        <categoryLink targetId="86a8-bb20-bf42-76ee" id="f6d2-9c0e-22e3-ebe6" primary="false" name="Faction: Daemon"/>
-        <categoryLink targetId="644c-28aa-39ed-438f" id="9cea-e3be-e48f-aad6" primary="false" name="Faction: Legiones Daemonica"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="a324-1fa8-abd1-4f47" name="Ritual Dagger" hidden="false" collective="false" import="true" targetId="d120-0046-4b72-5158" type="selectionEntry"/>
-        <entryLink id="a838-9eb4-65e5-7960" name="Staff of Change" hidden="false" collective="false" import="true" targetId="3687-e720-b512-624d" type="selectionEntry"/>
-        <entryLink id="adc3-ffa6-7cbf-0fbb" name="Lamprey Bites" hidden="false" collective="false" import="true" targetId="72a7-cd7c-c02e-8d08" type="selectionEntry"/>
-        <entryLink id="732f-be53-68a3-55c8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Arcane Fireball" hidden="false" id="2e19-29d6-7ee6-7b2c" type="selectionEntry" targetId="85e0-88e9-aecd-bdb7"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="8a44-70ad-d886-2b2b" name="Feculent Gnarlmaw" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -2941,61 +2937,6 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       <infoLinks>
         <infoLink name="Deep Strike" id="e858-c125-b15a-8225" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry id="681a-9bfc-6b04-dedf" name="Fluxmaster" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777b-470f-f311-0fad" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="03cf-e16d-fbc3-23c7" name="Fluxmaster" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="332f-6a2f-e2ca-f4e9" name="Locus of Tzeentch" hidden="false" targetId="f46d-526b-bd55-8499" type="profile"/>
-        <infoLink name="Deep Strike" id="1d59-9b30-100a-f199" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="8178-14b7-88ab-216e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="de52-489c-b812-91ad" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="7c00-90f5-bc5d-7d49" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
-        <categoryLink id="7be4-6a4b-f5e7-76d5" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
-        <categoryLink id="1d38-ec75-2afe-cf6d" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
-        <categoryLink id="9837-a67a-828f-42d3" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="953b-9a0a-5591-029e" name="Horror" hidden="false" targetId="ad10-11c9-c21a-d2c1" primary="false"/>
-        <categoryLink id="00de-dd7e-0b9c-4899" name="Herald of Tzeentch" hidden="false" targetId="1ef7-ecf3-069e-ce5b" primary="false"/>
-        <categoryLink id="b19d-8626-13de-4485" name="Fluxmaster" hidden="false" targetId="262d-66b5-41c6-ce54" primary="false"/>
-        <categoryLink targetId="a1e7-ad03-b978-ec8a" id="9155-f9fd-cb91-1506" primary="false" name="Faction: Tzeentch"/>
-        <categoryLink targetId="86a8-bb20-bf42-76ee" id="3915-7c8d-fc73-ac8e" primary="false" name="Faction: Daemon"/>
-        <categoryLink targetId="644c-28aa-39ed-438f" id="fe93-c29f-6e52-5dd5" primary="false" name="Faction: Legiones Daemonica"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="f316-38f0-d2df-64c4" name="Ritual Dagger" hidden="false" collective="false" import="true" targetId="d120-0046-4b72-5158" type="selectionEntry"/>
-        <entryLink id="490e-2d58-ebc6-7564" name="Staff of Change" hidden="false" collective="false" import="true" targetId="3687-e720-b512-624d" type="selectionEntry"/>
-        <entryLink id="41ad-b0cd-2217-d2e9" name="Disc Blades" hidden="false" collective="false" import="true" targetId="e35c-2751-a2c3-8c53" type="selectionEntry"/>
-        <entryLink id="e6e6-6757-9687-feca" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Arcane Fireball" hidden="false" id="a863-aeca-7aad-6227" type="selectionEntry" targetId="85e0-88e9-aecd-bdb7"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="b808-224f-cd92-21f7" name="Hellflayer" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3093,74 +3034,57 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="15&quot;" field="606d-344a-bc3d-9dce">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Tranceweaver" field="name"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a0f-1544-880a-4a87" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="a1d7-1a61-2522-20b7" childId="01b9-e980-2cad-e16c" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Tormentbringer on Hellflayer" field="name"/>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="7+" field="a56f-38ae-3917-aadc"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="a74b-d979-342e-ea72" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="a1d7-1a61-2522-20b7" childId="a74b-d979-342e-ea72" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="7+" field="a56f-38ae-3917-aadc">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="a74b-d979-342e-ea72" shared="true" includeChildSelections="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="7631-8269-3a69-91eb" shared="true" includeChildSelections="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="13&quot;" field="606d-344a-bc3d-9dce">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="7631-8269-3a69-91eb" shared="true" includeChildSelections="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="2" field="7c7f-f763-1f39-410c">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Tormentbringer on Seeker Chariot" field="name"/>
+                <modifier type="set" value="7+" field="a56f-38ae-3917-aadc"/>
+                <modifier type="set" value="13&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="a1d7-1a61-2522-20b7" childId="7631-8269-3a69-91eb" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Tormentbringer on Exalted Seeker Chariot" field="name"/>
+                <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c"/>
+                <modifier type="set" value="2" field="7c7f-f763-1f39-410c"/>
+                <modifier type="set" value="7+" field="a56f-38ae-3917-aadc"/>
+                <modifier type="set" value="13&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="a1d7-1a61-2522-20b7" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Tranceweaver" field="name">
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Tranceweaver on Steed" field="name"/>
+                <modifier type="set" value="15&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="01b9-e980-2cad-e16c" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="a1d7-1a61-2522-20b7" childId="1a0f-1544-880a-4a87" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="set" value="Tormentbringer on Hellflayer" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="a74b-d979-342e-ea72" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Tormentbringer on Seeker Chariot" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7631-8269-3a69-91eb" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Tormentbringer on Exalted Seeker Chariot" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="094c-4112-fd58-c895" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Tranceweaver on Steed" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a0f-1544-880a-4a87" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -3182,7 +3106,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <entryLink id="c00a-a157-5e6a-cb59" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Lash of Slaanesh" hidden="false" id="4e81-4f33-d6c6-cca7">
@@ -3269,7 +3193,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 <categoryLink targetId="1ca0-16bc-c8ae-b9f0" id="7593-8ae3-ffc2-52d0" primary="false" name="Hellflayer"/>
               </categoryLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Seeker Chariot" hidden="false" id="7631-8269-3a69-91eb">
@@ -3311,7 +3235,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 <categoryLink targetId="7e83-24cf-d32c-b726" id="acf3-eb5a-3512-c519" primary="false" name="Seeker Chariot"/>
               </categoryLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Seeker" hidden="false" id="1a0f-1544-880a-4a87">
@@ -3333,7 +3257,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 <categoryLink targetId="1830-58a7-5178-1158" id="1214-2c31-2806-2093" primary="false" name="Seeker"/>
               </categoryLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exalted Seeker Chariot" hidden="false" id="094c-4112-fd58-c895">
@@ -3385,7 +3309,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 <categoryLink targetId="027b-e99d-8502-4e48" id="f454-72d2-c7f6-3c0e" primary="false" name="Exalted Seeker Chariot"/>
               </categoryLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4587,7 +4511,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff45-0b20-28a8-07e8" name="Poxbringer" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ff45-0b20-28a8-07e8" name="Herald of Nurgle" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -4601,7 +4525,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="90f5-27b5-b0a0-d3f8" name="Poxbringer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="90f5-27b5-b0a0-d3f8" name="Herald of Nurgle" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -4611,6 +4535,43 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="Poxbringer" field="name"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ff45-0b20-28a8-07e8" childId="db11-6484-5bf7-3201" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ff45-0b20-28a8-07e8" childId="8aa4-8d2a-3a1e-92c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Poxbringer on Palanquin" field="name"/>
+                <modifier type="set" value="2" field="7c7f-f763-1f39-410c"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ff45-0b20-28a8-07e8" childId="26c3-c373-bcf8-64e3" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Poxbringer on Plague Toad" field="name"/>
+                <modifier type="set" value="7&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ff45-0b20-28a8-07e8" childId="da46-37d3-92e5-c5c0" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Poxbringer on Rot Fly" field="name"/>
+                <modifier type="set" value="10&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -4620,13 +4581,10 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a932-f07f-40c4-9927" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="ea2f-49cc-672e-9926" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="23cb-02bd-38ca-2868" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="5287-c027-7617-6c3c" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="87b6-a832-5f4a-8f7f" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="af31-595a-8668-3798" name="Herald of Nurgle" hidden="false" targetId="ce0f-ef81-400c-45f9" primary="false"/>
         <categoryLink id="d340-65b7-569f-a2c2" name="Plaguebearer" hidden="false" targetId="b16c-ec5a-b4a6-af3e" primary="false"/>
-        <categoryLink id="cdbc-57d2-2492-50f5" name="Poxbringer" hidden="false" targetId="d9a3-d66b-386e-83b0" primary="false"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="615b-1298-0ebf-b4ae" primary="false" name="Faction: Nurgle"/>
         <categoryLink targetId="86a8-bb20-bf42-76ee" id="b1c9-db31-03c3-9032" primary="false" name="Faction: Daemon"/>
         <categoryLink targetId="644c-28aa-39ed-438f" id="0c85-cf0d-b9d8-1723" primary="false" name="Faction: Legiones Daemonica"/>
@@ -4636,7 +4594,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
         <entryLink id="41fa-e649-7781-f952" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Feculent Despair" hidden="false" id="8a1a-23a6-b589-833a">
@@ -4661,6 +4619,124 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mount" id="8086-ef2f-fbf9-3adf" hidden="false" defaultSelectionEntryId="db11-6484-5bf7-3201">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="db11-6484-5bf7-3201">
+              <categoryLinks>
+                <categoryLink targetId="2d6e-c03a-7a58-74ce" id="8d53-ac7d-7e14-4d55" primary="false" name="Infantry"/>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="2be8-d2a1-020b-18a3" primary="false" name="Light"/>
+                <categoryLink targetId="d9a3-d66b-386e-83b0" id="7f2d-2032-b91e-84ab" primary="false" name="Poxbringer"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plague Toad" hidden="false" id="26c3-c373-bcf8-64e3">
+              <categoryLinks>
+                <categoryLink targetId="351c-b6fa-4d4f-70f3" id="f9a0-dec9-c418-33fb" primary="false" name="Cavalry"/>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="933f-114c-2dc1-5d9e" primary="false" name="Light"/>
+                <categoryLink targetId="d9a3-d66b-386e-83b0" id="a312-866a-1d17-1eb5" primary="false" name="Poxbringer"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Grasping Tongues" hidden="false" id="87cb-ae56-167d-c12f" collective="false" targetId="d83a-e7f9-d9a6-58ce" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Yawning Maw" hidden="false" id="eff6-2b93-1e9a-4e84">
+                  <profiles>
+                    <profile name="Yawning Maws" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9eb2-5982-36db-2708">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cec0-2e73-5cf1-e525" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f488-d4ec-f604-6ad2" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rot Fly" hidden="false" id="da46-37d3-92e5-c5c0">
+              <categoryLinks>
+                <categoryLink targetId="d9a3-d66b-386e-83b0" id="e278-60bf-f7c3-4452" primary="false" name="Poxbringer"/>
+                <categoryLink targetId="b408-d848-fa84-cfb9" id="02cb-7c3f-63f3-8a7b" primary="false" name="Fly"/>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="8093-30e0-5511-76dc" primary="false" name="Light"/>
+                <categoryLink targetId="351c-b6fa-4d4f-70f3" id="f377-6742-354f-3acb" primary="false" name="Cavalry"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Death&apos;s Heads" hidden="false" id="6b52-c37f-ecc9-7ec2" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9911-4676-6eb9-5f12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40ea-f605-f9b4-ee36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Death&apos;s Heads" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="d8ae-f80a-8da9-39d4">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Prehensile Proboscises" hidden="false" id="0617-418a-b2ec-1d4c" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d77f-bbb3-0cad-43ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e816-9642-b34b-cc55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Prehensile Proboscises" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e12d-6788-2f72-5655">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Palanquin" hidden="false" id="8aa4-8d2a-3a1e-92c9">
+              <categoryLinks>
+                <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="d59a-4bf7-d9f4-4817" primary="false" name="Light"/>
+                <categoryLink targetId="351c-b6fa-4d4f-70f3" id="6c06-4563-5eff-da34" primary="false" name="Cavalry"/>
+                <categoryLink targetId="d9a3-d66b-386e-83b0" id="b0b0-2c7b-88f6-2a56" primary="false" name="Poxbringer"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Nurgling Claws &amp; Teeth" hidden="false" id="21f1-c7e5-6407-6000" collective="false" targetId="a551-8bfb-8fe2-b994" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7db8-c73c-284a-3b78" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7825-8607-b72b-9ca1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e6e4-2b03-a4fd-9349" name="Rotigus" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
