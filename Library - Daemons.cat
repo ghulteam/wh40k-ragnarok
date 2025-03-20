@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="90ed-6ae6-a8a8-ddaf" name="Library - Daemons" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" revision="9" authorName="ghulteam" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="90ed-6ae6-a8a8-ddaf" name="Library - Daemons" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" revision="10" authorName="ghulteam" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Bloodcrushers" id="ad77-4bf6-34f2-c0ae" hidden="false"/>
     <categoryEntry name="Beasts of Nurgle" id="2e26-a72a-4405-067f" hidden="false"/>
@@ -319,7 +319,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">9</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
@@ -327,7 +327,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -449,7 +449,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="27"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -563,7 +563,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="dd6d-2f74-94f3-89cd" collective="false">
@@ -581,7 +581,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -619,11 +619,18 @@
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="x3" field="2883-af07-d4e8-d8d0">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="d641-7d7c-f838-062e" childId="e3b3-0eab-7e09-f4b3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -702,7 +709,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">7</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
@@ -710,7 +717,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -725,6 +732,13 @@
       <infoLinks>
         <infoLink name="Deep Strike" id="34dd-40cb-00a2-1b1a" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
+      <profiles>
+        <profile name="Magical Horde" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="da97-23b0-00bb-74ed">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 30 models, its Coruscating Flames weapon has x3 Attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nurglings" hidden="false" id="c902-44db-d3bb-43fc" collective="false">
       <infoLinks>
@@ -916,7 +930,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="fff0-92e6-0da9-d4c4" collective="false">
@@ -1043,7 +1057,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1266,7 +1280,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="8e43-1ec3-2db3-6cad" collective="false">
@@ -1284,7 +1298,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="15 models" hidden="false" id="8591-11a8-48f2-9c3f" collective="false">
@@ -1302,7 +1316,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="27"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="c409-1c58-2237-319e" collective="false">
@@ -1320,7 +1334,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="58"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="38"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1398,7 +1412,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
@@ -1406,7 +1420,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1522,7 +1536,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="9 models" hidden="false" id="a3d3-69b9-073a-657b" collective="false">
@@ -1540,7 +1554,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="1 model" hidden="false" id="0972-0cfd-3e09-55b3" collective="false">
