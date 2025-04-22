@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -11,6 +11,7 @@
     <categoryEntry name="Faction: Khorne Daemonkin" id="e3ee-2102-3f3f-0e12" hidden="false"/>
     <categoryEntry name="Goremongers" id="3f7b-1bb8-1b6c-48b8" hidden="false"/>
     <categoryEntry name="Teeth of Khorne" id="3c32-052b-6cae-f2f1" hidden="false"/>
+    <categoryEntry name="Slaughterbound" id="6858-3ba3-2b58-79ac" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="86ab-5eac-5402-be03" name="Angron" hidden="false" collective="false" import="true" targetId="9b8e-914b-6e41-3c04" type="selectionEntry">
@@ -366,6 +367,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="04fe-ca43-594c-315c" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Slaughterbound" hidden="false" id="8199-288f-b85d-f57e" type="selectionEntry" targetId="de38-2453-2d48-8ea9">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="1b12-3ac6-33c7-9907" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4d14-2f5a-e38e-07a1" name="Jakhals" hidden="false" collective="false" import="true" type="unit">
@@ -615,6 +621,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="ab23-2ac7-15bd-3c30" primary="false" name="Faction: Khorne"/>
         <categoryLink targetId="de3f-40e8-687f-1ca8" id="c539-b7d0-80d2-4f09" primary="false" name="Faction: Heretic Astartes"/>
         <categoryLink targetId="e3ee-2102-3f3f-0e12" id="9ef1-5b78-1304-39c2" primary="false" name="Faction: Khorne Daemonkin"/>
+        <categoryLink targetId="dfc6-5d64-127f-97a1" id="ed3c-8aa8-ad81-5865" primary="false" name="Daemon"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="90e6-cd51-5c2a-bf0b" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f727-3625-3e37-d47e">
@@ -722,6 +729,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="347f-b824-ab19-22a0" primary="false" name="Faction: Khorne"/>
         <categoryLink targetId="de3f-40e8-687f-1ca8" id="8c04-34ef-b1ad-690c" primary="false" name="Faction: Heretic Astartes"/>
         <categoryLink targetId="e3ee-2102-3f3f-0e12" id="35ec-3d55-5f28-eb8a" primary="false" name="Faction: Khorne Daemonkin"/>
+        <categoryLink targetId="dfc6-5d64-127f-97a1" id="7a3a-705d-354f-612c" primary="false" name="Daemon"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb97-25db-66bf-5586" name="Eightbound Eviscerator" hidden="false" collective="false" import="true" targetId="948d-d4eb-1364-08c4" type="selectionEntry">
@@ -1416,6 +1424,68 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Slaughterbound" hidden="false" id="de38-2453-2d48-8ea9" collective="false">
+      <profiles>
+        <profile name="Slaughterbound" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="71e8-7d01-f1fe-1cea">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Slaughterbound" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="eb67-ae86-36b5-4edc">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Damage phase, roll one D6 for each friendly WORLD EATER DAEMON unit within 6&quot; of this unit. On a 6, remove one damage marker from that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="e1f0-38ef-15b3-088d" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink name="Faction: Chaos" hidden="false" id="0b76-54a4-608f-3dd5" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="f691-d7f6-3c1c-ee89" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="c33b-5454-352a-bf9f" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="db80-1e36-0777-6faa" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="329c-e6e9-7722-6a16" primary="false" name="Faction: Khorne"/>
+        <categoryLink targetId="e3ee-2102-3f3f-0e12" id="cf59-ae66-8feb-e1c7" primary="false" name="Faction: Khorne Daemonkin"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="db78-be11-70ee-58b3" primary="false" name="Light"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="3462-f023-e51a-9867" primary="false" name="Infantry"/>
+        <categoryLink targetId="6858-3ba3-2b58-79ac" id="7dfb-ac83-16b8-5af5" primary="false" name="Slaughterbound"/>
+        <categoryLink targetId="dfc6-5d64-127f-97a1" id="4401-670f-db8e-1328" primary="false" name="Daemon"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Daemonic Weapons" hidden="false" id="8b48-07ed-c4c8-d12e" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="996b-4b18-b0d0-808c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23c4-d719-f7bf-b05f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Daemonic Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="97c0-d39d-04be-39a5">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="b49f-01f9-ba92-2783" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
