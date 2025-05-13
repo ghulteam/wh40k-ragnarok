@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="13" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a6fe-fc09-5627-ff05" name="Faction: Imperial Knights" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="d37d-c3f9-f400-4093" name="Faction: [QUESTOR ALLEGIANCE]" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -33,6 +33,7 @@
     <categoryEntry id="37dc-8b76-4f93-f016" name="Faction: Questor Imperialis" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="25ea-afc0-1d5c-08dc" name="Knight Asterius" hidden="false"/>
     <categoryEntry id="6247-1fda-bdc0-0d1e" name="Armiger Moirax" hidden="false"/>
+    <categoryEntry name="Knight Defender" id="fd10-c9f8-5a11-fffa" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="848c-516f-46b0-a227" name="Sacristan Forgeshrine" hidden="false" collective="false" import="true" targetId="5853-cb10-ede1-3e7d" type="selectionEntry">
@@ -138,6 +139,11 @@
     <entryLink id="1327-ca75-5ce8-6bdc" name="Armiger Moirax Squadron" hidden="false" collective="false" import="true" targetId="d34c-5784-ff3d-5048" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="749a-8ba9-8625-4bb3" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Knight Defender" hidden="false" id="0a95-9e43-2f05-28a9" type="selectionEntry" targetId="ae74-51ee-e1e6-9e5f">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="aa6a-2d64-cf10-9002" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2944,6 +2950,113 @@ One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a 
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ae74-51ee-e1e6-9e5f" name="Knight Defender" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="57d7-56db-fca6-6be7" name="Knight Defender" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Void Shield Generator" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4f5e-c302-1210-9afa" publicationId="8df9-0b3e-abea-3c15">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Small blast markers must be removed before large blast markers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6bc2-ef3c-84c1-a9b7" name="Destroyed" hidden="false" targetId="abd1-8c2e-fb0f-e980" type="rule"/>
+        <infoLink id="205d-12da-728a-f285" name="Engines of War" hidden="false" targetId="976e-f8cb-6d17-de4e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ec3b-9c7c-af42-9581" name="Faction: Imperial Knights" hidden="false" targetId="a6fe-fc09-5627-ff05" primary="false"/>
+        <categoryLink id="193a-a210-7057-578b" name="Faction: [QUESTOR ALLEGIANCE]" hidden="false" targetId="d37d-c3f9-f400-4093" primary="false"/>
+        <categoryLink id="aed4-5525-826b-17cb" name="Faction: [HOUSEHOLD]" hidden="false" targetId="296b-2a4e-2b42-19b3" primary="false"/>
+        <categoryLink id="0c0e-5232-5bda-5e28" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1e10-1fef-f940-c06b" name="Questoris Class" hidden="false" targetId="b912-efd9-2d5c-5fd5" primary="false"/>
+        <categoryLink id="5ddf-69ad-4541-ce2f" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="c98c-06bd-ead8-b788" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="1ccd-e9ad-2daf-5672" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink targetId="fd10-c9f8-5a11-fffa" id="7246-31a6-357c-d447" primary="false" name="Knight Defender"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="65e7-cb18-892f-4e5c" name="Shoulder Weapon Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ef0-440c-f71e-d0cd">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7fa-289f-219b-8a3a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb89-2fd5-c35a-f039" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4083-8cf0-3641-6242" name="Meltagun" hidden="false" collective="false" import="true" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c4-b150-c37e-3435" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="da06-ea3b-8476-7639" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33f0-ee3b-9240-0103" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="33e2-ca04-0f12-63d3" name="Character (Knight Lances)" hidden="false" collective="false" import="true" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
+        <entryLink id="85cc-5355-bc96-cc0d" name="Warmaster" hidden="false" collective="false" import="true" targetId="1509-e8a6-2816-95d2" type="selectionEntry"/>
+        <entryLink id="2d8f-0e47-6362-e8c8" name="Commander" hidden="false" collective="false" import="true" targetId="8b69-e9c3-4cfe-7fa3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="52"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Plasma Executor" hidden="false" id="e83c-9299-6bd9-763a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70c2-dac3-acb0-ae7b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8833-7f7a-4ec2-1c02" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Plasma Executor" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="46af-a520-c35d-78fe">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Supercharge" id="d9ff-3650-d528-b5b4" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Conversion Beam Obliterator" hidden="false" id="feaa-de8e-3e41-b34c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e81a-7562-6f40-2efe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="497a-936e-6525-6744" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Conversion Beam Obliterator" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="42a0-1050-8f1c-02ba">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer" id="7879-52b4-7dee-461c" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
