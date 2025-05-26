@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -803,16 +803,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="b3e2-adfd-d264-3ff6" name="Primaris Battle Leader" hidden="false" collective="false" import="true" targetId="b5b6-9d6f-bc59-5c43" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8e81-59ba-fe7e-1625" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b494-86d3-b6fb-bd55" name="Primaris Rune Priest" hidden="false" collective="false" import="true" targetId="6897-f771-3efb-4ef5" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ab24-2133-885f-2ead" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b984-c221-2baa-5eac" name="Primaris Wolf Lord" hidden="false" collective="false" import="true" targetId="bc5d-ae4d-f2c8-c54d" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="66a6-df3f-e7fe-7481" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e35c-6fc1-86d8-9e69" name="Primaris Wolf Priest" hidden="false" collective="false" import="true" targetId="1e99-1941-4a6d-de2c" type="selectionEntry">
@@ -2325,7 +2315,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -2982,7 +2972,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b5b6-9d6f-bc59-5c43" name="Primaris Battle Leader" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b5b6-9d6f-bc59-5c43" name="Battle Leader" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="fe01-e196-57d0-4e65" name="Huskarl to the Jarl" hidden="false" targetId="03ad-e4bf-e1bb-8b67" type="profile"/>
       </infoLinks>
@@ -2991,9 +2981,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="a78a-d319-303e-0158" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="0cf1-0f27-7bb2-cc37" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
         <categoryLink id="cc04-04e2-d9ac-1e24" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="3021-9a0e-bac6-0070" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="ff46-440f-2f84-ebeb" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="854e-92fe-00e0-45d5" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
         <categoryLink id="3d5e-9722-a722-6d7a" name="Battle Leader" hidden="false" targetId="6f3e-d6a7-4bc7-9c3e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -3030,112 +3018,57 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="6897-f771-3efb-4ef5" name="Primaris Rune Priest" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="33ad-8d9c-7e78-dfd0" hidden="false" defaultSelectionEntryId="145c-ae0a-a2ca-bfc2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="145c-ae0a-a2ca-bfc2">
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="0c6b-92cb-b07e-7dee" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reiver Armor and Grav-Chutes" hidden="false" id="b70a-e53c-7d14-fe32">
+              <infoLinks>
+                <infoLink name="Terror Troops" id="3dbe-0210-7f57-178d" hidden="false" type="profile" targetId="e5e7-bd6d-fdb7-b022"/>
+                <infoLink name="Deep Strike" id="e898-b4f1-be14-01a2" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Phobos Armor" hidden="false" id="a2f9-3d50-74f5-c320" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
+            <entryLink import="true" name="Jump Pack" hidden="false" id="ba1c-b58f-aefd-8e02" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8f8-5b83-c844-b29c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <profiles>
-        <profile id="081f-5a3a-588f-f59e" name="Primaris Rune Priest" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile name="Battle Leader" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="adba-cae1-6008-87ee">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="75fb-627d-6a78-2492" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="7432-2db5-b3a2-6c23" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="0370-da40-3f41-3d6e" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
-        <categoryLink id="4546-a69e-fd47-ac9b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="0980-4069-11bb-2d86" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="fb25-ec95-87de-532e" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
-        <categoryLink id="f966-d2e6-fff9-c63a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="6d50-a8f4-eb74-441c" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="2497-871b-b3d7-ae5d" name="Rune Priest" hidden="false" targetId="b4be-ddb4-0a57-3c85" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="8c34-d863-af5b-11c9" name="Force Weapon" hidden="false" collective="false" import="true" targetId="8a00-30e2-127d-385a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f5b-6d17-ae37-6033" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="708b-4993-01e3-fafd" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="2f77-d734-5091-519d" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9b-5748-2633-c315" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Lightning Bolt" hidden="false" id="6e1c-bd88-016d-dc1a" type="selectionEntry" targetId="d07a-3556-ccc4-21a5"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bc5d-ae4d-f2c8-c54d" name="Primaris Wolf Lord" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="dc13-ca2c-8a23-046e" name="Primaris Wolf Lord" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <modifierGroups>
-            <modifierGroup>
+            <modifierGroup type="and">
               <conditions>
-                <condition field="selections" scope="bc5d-ae4d-f2c8-c54d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e10a-81c1-475d-9f57" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="b5b6-9d6f-bc59-5c43" childId="cdf9-175a-b31b-44a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="606d-344a-bc3d-9dce" value="5&quot;"/>
-                <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="c079-cf60-3c61-cf8b" name="Jarl of Fenris" hidden="false" targetId="bdcc-f69f-afe1-a2a5" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="60e4-5c9d-40ff-1021" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="a40c-1291-afa7-8257" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="894a-8bab-c75c-2c1c" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
-        <categoryLink id="dbec-98d1-d2d7-f3ee" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="d45e-f559-848d-c274" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="f436-8a68-f3fa-ca70" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="8c5f-77df-2096-7175" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="6147-39cc-f03b-e70c" name="Wolf Lord" hidden="false" targetId="949a-c2a1-40fa-aa09" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="cf56-66e6-70b2-9fff" name="Wargear" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b08-1ee3-57d9-ccaa" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ae42-22d5-8e3e-f8e8" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
-            <entryLink id="e10a-81c1-475d-9f57" name="Gravis Armor" hidden="false" collective="false" import="true" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapon Choice" id="a539-6593-4a03-6b22" hidden="false" defaultSelectionEntryId="af4c-0287-cce7-b36b">
-          <entryLinks>
-            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="af4c-0287-cce7-b36b" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
-            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="4e4e-3695-257f-27ba" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abda-c4a6-9996-8a69" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aac1-edc8-7b8e-0437" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="1e99-1941-4a6d-de2c" name="Primaris Wolf Priest" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3245,6 +3178,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="a0aa-fcbb-c280-3e52" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
             <entryLink id="3ed2-6ad0-a70b-53c7" name="Jump Pack" hidden="false" collective="false" import="true" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
             <entryLink id="707e-528e-f67f-4acf" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
+            <entryLink import="true" name="Phobos Armor" hidden="false" id="d664-ddd9-f25a-c5b3" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f59b-9f77-8e61-abab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3649,28 +3587,37 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           <modifiers>
             <modifier type="set" field="606d-344a-bc3d-9dce" value="14&quot;">
               <conditions>
-                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3e6-8a0e-effc-2324" type="equalTo"/>
+                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b5-9ad5-d8df-45f2" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
               <conditions>
-                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="78a8-371c-384d-6800" type="equalTo"/>
+                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cdf9-175a-b31b-44a1" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="606d-344a-bc3d-9dce" value="10&quot;">
               <conditions>
-                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f995-e5a2-227a-c75c" type="equalTo"/>
+                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="685e-2e3e-a951-b90c" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76b5-4ad8-4e32-6f9b" type="equalTo"/>
+                <condition field="selections" scope="d889-ede2-4bcc-d2d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3726-f1d3-1b96-0eb0" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="606d-344a-bc3d-9dce" value="5&quot;"/>
                 <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="d889-ede2-4bcc-d2d1" childId="8438-9607-67d0-a3e3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="5&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="4+" field="a56f-38ae-3917-aadc"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -3717,6 +3664,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="739a-51ca-f9c0-9c47" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+                <categoryLink targetId="685e-2e3e-a951-b90c" id="00f1-0f4d-3d7a-af3e" primary="false" name="Thunderwolf"/>
               </categoryLinks>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
@@ -3727,6 +3675,8 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="e3e6-8a0e-effc-2324" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
             <entryLink id="78a8-371c-384d-6800" name="Jump Pack" hidden="false" collective="false" import="true" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
             <entryLink id="76b5-4ad8-4e32-6f9b" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
+            <entryLink import="true" name="Gravis Armor" hidden="false" id="f7a1-bc14-3a19-ae12" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
+            <entryLink import="true" name="Phobos Armor" hidden="false" id="cb10-4c51-c31f-581a" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapon Choice" id="5774-e1a9-2157-4d32" hidden="false" defaultSelectionEntryId="9cb8-dfe7-c81b-f72d">

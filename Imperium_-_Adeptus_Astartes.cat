@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -90,7 +90,7 @@
     <categoryEntry id="448f-c948-d2aa-ee3c" name="Faction: Blood Ravens" hidden="false"/>
     <categoryEntry id="5f4e-4759-7b6c-2c54" name="Carab Culln the Risen" hidden="false"/>
     <categoryEntry id="e8c6-0bfd-449b-b3ad" name="Primaris Crusader Squad" hidden="false"/>
-    <categoryEntry id="b86b-8400-a28f-4730" name="Primaris Sword Brethren" hidden="false"/>
+    <categoryEntry id="b86b-8400-a28f-4730" name="Sword Brethren" hidden="false"/>
     <categoryEntry id="aaaa-96d2-985d-3e1e" name="Sigismund" hidden="false"/>
     <categoryEntry id="bac1-ab3e-e700-0b47" name="Marshal" hidden="false"/>
     <categoryEntry name="Castellan" id="a586-016b-460c-1706" hidden="false"/>
@@ -125,15 +125,6 @@
         <categoryLink id="d8cd-a798-9120-3c9a" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a16b-6dc4-0c08-31a7" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="7813-d97a-0510-14e6" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="22c2-8e40-0c7c-0761" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Litanies of Hate" id="8ece-32dd-7fdb-972d" hidden="false" targetId="dbd5-e5c8-73df-07b8" type="profile"/>
-        <infoLink name="Spiritual Leader" id="2cb4-3622-ce96-90b0" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
-      </infoLinks>
-    </entryLink>
     <entryLink id="aec0-993a-2bce-9cf5" name="Librarian" hidden="false" collective="false" import="true" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -146,18 +137,6 @@
         <categoryLink id="68b7-30ee-9c3f-79d5" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3b11-222b-8636-7b88" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="8896-4617-12f7-2495" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4744-bcbf-e345-6024" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="a128-265c-d550-3e69" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="9027-d824-3d76-25db" name="Captain" hidden="false" collective="false" import="true" targetId="3ce2-d370-361d-3409" type="selectionEntry">
       <infoLinks>
         <infoLink id="2516-aa41-919e-64cd" name="Rites of Battle" hidden="false" targetId="34b8-4aae-34bb-40e0" type="profile"/>
@@ -165,14 +144,17 @@
       <categoryLinks>
         <categoryLink id="3fcb-1c62-db03-8f5d" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
-    </entryLink>
-    <entryLink id="c689-2710-199f-09f3" name="Primaris Captain" hidden="false" collective="false" import="true" targetId="b734-ce0c-dd48-e51f" type="selectionEntry">
-      <infoLinks>
-        <infoLink id="1fa6-03a8-e642-46f8" name="Rites of Battle" hidden="false" targetId="34b8-4aae-34bb-40e0" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="eef5-0fe2-8deb-14d6" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="1393-3d07-7661-59b6" name="Techmarine" hidden="false" collective="false" import="true" targetId="6690-dae8-1ba2-9454" type="selectionEntry">
       <infoLinks>
@@ -186,6 +168,13 @@
       <categoryLinks>
         <categoryLink id="5015-460c-a16b-9c1b" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="6c75-9fba-7d92-b938" name="Land Raider Excelsior" hidden="false" collective="false" import="true" targetId="f1d3-df65-80bc-5292" type="selectionEntry">
       <categoryLinks>
@@ -221,11 +210,6 @@
           </characteristics>
         </profile>
       </profiles>
-    </entryLink>
-    <entryLink id="0937-b575-b813-5ada" name="Primaris Lieutenants" hidden="false" collective="false" import="true" targetId="bbe6-4a4c-8477-4b34" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="c869-e585-e959-c274" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
     </entryLink>
     <entryLink id="e5b1-8646-b9eb-c1ca" name="Servitors" hidden="false" collective="false" import="true" targetId="1407-a5e2-efbe-7a7c" type="selectionEntry">
       <categoryLinks>
@@ -275,11 +259,6 @@
     <entryLink id="fdbd-980c-4a6b-9289" name="Redemptor Dreadnought" hidden="false" collective="false" import="true" targetId="d377-d88e-e86a-4c9d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0741-be34-6fef-5cba" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apothecary" hidden="false" collective="false" import="true" targetId="daaf-718e-c540-13fa" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="580c-bb03-3175-a26e" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dc4f-2ec3-0674-82dc" name="Reiver Squad" hidden="false" collective="false" import="true" targetId="30bf-60b7-7f9f-7a2c" type="selectionEntry">
@@ -1386,7 +1365,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="27b6-232c-68c6-567a" name="Primaris Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="27b6-232c-68c6-567a" name="Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1439,7 +1418,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           <selectionEntries>
             <selectionEntry id="0535-5254-1f1e-d589" name="05 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="3353-be0d-7bda-f87f" name="Primaris Sword Brethren Squad(5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="3353-be0d-7bda-f87f" name="Sword Brethren Squad(5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -1457,7 +1436,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             </selectionEntry>
             <selectionEntry id="b0b7-7493-7947-a9d8" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="a062-7462-7b7a-0462" name="Primaris Sword Brethren Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="a062-7462-7b7a-0462" name="Sword Brethren Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -3541,11 +3520,6 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="a2fd-b731-14f3-5629" name="Crusade of Wrath" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the wound rolls for attacks made with melee weapons by friendly BLACK TEMPLARS units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="f175-f41b-e7f6-5369" name="Marshal" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
@@ -3555,6 +3529,11 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9ba8-5112-1c2f-03f3">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3567,34 +3546,17 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="c2a2-4ddf-c3f2-45aa" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink targetId="6268-f517-c933-bf19" id="9079-ae55-1d6f-3d4f" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="50c9-bc5b-bd6c-2b9c" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bec0-7f22-166a-79fd" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c1-5e94-5117-ad03" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="882b-b79f-8b4d-6a85" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="cd78-947f-04a0-565d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="4152-0458-f9cf-bb6f" type="selectionEntry" targetId="1a85-1077-c8ae-f16b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfb7-000b-bad9-3375" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc98-67d6-707c-8de7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d375-cc04-a448-5424" name="Chapter Champion" hidden="false" collective="false" import="true" type="unit">
@@ -6906,9 +6868,9 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Crusaders Precision" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4960-c332-7b4a-5542">
+        <profile name="Tactical Precision" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4960-c332-7b4a-5542">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6917,7 +6879,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <entryLink import="true" name="Commander" hidden="false" id="0df3-d9e6-45c9-2a86" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="2d6e-c03a-7a58-74ce" id="ab9c-9bdb-be4e-d467" primary="false" name="Infantry"/>

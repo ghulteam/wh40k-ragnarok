@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -27,11 +27,6 @@
         <categoryLink id="c7cf-47a3-045d-12d4" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9c42-ee65-1d47-cb6d" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="8896-4617-12f7-2495" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="d740-7970-5feb-c865" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="f080-a10f-95d1-bbcf" name="Chaplain" hidden="false" collective="false" import="true" targetId="b371-3bcc-b91b-03e6" type="selectionEntry">
       <infoLinks>
         <infoLink id="4e1d-e3dd-97cd-7258" name="Litanies of Hate" hidden="false" targetId="0b0d-e29f-3c40-67f7" type="profile"/>
@@ -39,27 +34,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0b24-b311-b7d9-9886" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="3df7-4f4f-2c6a-c600" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="7813-d97a-0510-14e6" type="selectionEntry">
-      <infoLinks>
-        <infoLink id="218c-00b3-de33-706d" name="Litanies of Hate" hidden="false" targetId="0b0d-e29f-3c40-67f7" type="profile"/>
-        <infoLink id="b429-7943-f93a-1c01" name="Spiritual Leader" hidden="false" targetId="6b7b-e54c-78fc-50b6" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="9231-cfe4-1a2a-3cdb" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="932e-844e-6c44-b251" name="Primaris Apothecary" hidden="false" collective="false" import="true" targetId="daaf-718e-c540-13fa" type="selectionEntry">
-      <profiles>
-        <profile id="6d1b-9b0e-56c7-5a14" name="Narthecium" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly DEATHWATCH LIGHT unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that LIGHT unit. Only one attempt to heal each unit can be made each turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="76d2-4c82-eb37-cb1f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="968b-b283-f2c2-f755" name="Venerable Dreadnought" hidden="false" collective="false" import="true" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry">
@@ -736,9 +710,15 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink import="true" name="Assault Intercessor with Jump Pack Squad" hidden="false" id="f23e-8c33-26f3-059c" type="selectionEntry" targetId="8d3d-8997-c76b-e1b5">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="6d76-1458-ddcb-d9d6" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="aa0d-c19f-694e-1de9" primary="false" name="Faction: Deathwatch"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Talonstrike Kill Team" hidden="false" id="5bce-29d4-638a-4988" type="selectionEntry" targetId="5c3e-7d90-ca4c-5421"/>
+    <entryLink import="true" name="Apothecary" hidden="false" id="a47b-e4c2-7d56-e4bd" type="selectionEntry" targetId="47e5-110b-315c-0cb3">
+      <categoryLinks>
+        <categoryLink targetId="1ca7-5aae-d958-5973" id="be58-3d25-9cef-5ecb" primary="false" name="Faction: Deathwatch"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa57-bcfe-ad8d-4882" name="Corvus Blackstar" hidden="false" collective="false" import="true" type="unit">
