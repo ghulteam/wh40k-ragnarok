@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1286,6 +1286,31 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               </profiles>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="4b1d-7839-ca66-5577" collective="false">
+              <profiles>
+                <profile name="Blood Claws (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4425-7d68-99a8-47fb">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="b1bf-9a6e-0d88-a2b3" childId="74b9-52a3-fd0e-511f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
