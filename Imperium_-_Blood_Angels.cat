@@ -145,14 +145,6 @@
         <categoryLink id="c777-515c-fea5-2f92" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4dc6-574e-30a2-923f" name="Primaris Ancient" hidden="false" collective="false" import="true" targetId="ca50-b2c7-56ad-f6a3" type="selectionEntry">
-      <infoLinks>
-        <infoLink id="7029-8260-7a0f-6db0" name="Astartes Banner" hidden="false" targetId="5742-3523-f180-9b29" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="4de9-dfe1-69ec-2d46" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" import="true" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f275-a356-5112-ae25" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
@@ -1008,11 +1000,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink import="true" name="Relic Glaive Special Weapon Tank" hidden="false" id="7781-46b0-2ddf-383b" type="selectionEntry" targetId="3e7f-8266-25fe-32bd">
       <categoryLinks>
         <categoryLink targetId="f7a9-266d-efb6-d80f" id="18a9-f8f4-9de6-a250" primary="false" name="Faction: Blood Angels"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Primaris Sanguinary Guard" hidden="false" id="4587-1d64-9d1a-fb6b" type="selectionEntry" targetId="c8c3-7f67-dfe8-8686">
-      <categoryLinks>
-        <categoryLink targetId="8f90-47d8-c075-cbb2" id="e41f-06f3-c4f1-32f0" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Death Company Brutalis Dreadnought" hidden="false" id="47a2-eb10-6e63-4828" type="selectionEntry" targetId="a4d4-2cf8-6a46-0e72">
@@ -2103,7 +2090,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           <selectionEntries>
             <selectionEntry id="52fb-1197-25c6-f3b8" name="4 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="bd16-36ec-8f62-5e6a" name="Sanguinary Guard (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="bd16-36ec-8f62-5e6a" name="Sanguinary Guard (3/4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -2135,6 +2122,24 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               </profiles>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="825a-28e0-bcd6-1c33" collective="false">
+              <profiles>
+                <profile name="Sanguinary Guard (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c99c-2035-c150-a1d3">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="31"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2813,129 +2818,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </costs>
       <infoLinks>
         <infoLink name="Ignore Damage (6+)" id="0824-3a3e-c614-a4d8" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Primaris Sanguinary Guard" hidden="false" id="c8c3-7f67-dfe8-8686" collective="false">
-      <categoryLinks>
-        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="65ae-2137-1a0f-3cb3" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink name="Faction: Imperium" hidden="false" id="79ed-ad6f-e3ef-36db" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink name="Light" hidden="false" id="6030-cb08-345a-1b2a" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink targetId="5db4-914c-cd4c-3473" id="1490-2f0f-0336-4b74" primary="false" name="Sanguinary Guard"/>
-        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="e0f2-7c96-2979-6774" primary="false" name="Infantry"/>
-        <categoryLink targetId="cdf9-175a-b31b-44a1" id="1dec-32c0-fd0a-62c6" primary="false" name="Jump Pack"/>
-        <categoryLink targetId="f7a9-266d-efb6-d80f" id="56dc-1d4d-31c1-9f6e" primary="false" name="Faction: Blood Angels"/>
-        <categoryLink targetId="b408-d848-fa84-cfb9" id="31ad-b958-04ea-1a98" primary="false" name="Fly"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Primaris Angelus Boltguns" hidden="false" id="ba6e-a943-9409-7461" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b90-cb99-19a3-28fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7ff-d4ee-7a59-91de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Primaris Angelus Boltguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0a3f-13f4-4a82-7ba5">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Death Masks" hidden="false" id="478d-dc7d-2d76-cfd5" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e6-c9bc-90db-ffc2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Terror Troops" id="0003-ee6a-4006-d826" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Primaris Encarmine Weapons" hidden="false" id="8de0-b86f-64e8-6ee7" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="662c-2268-efb7-d818" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-019d-ce6b-85fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Primaris Encarmine Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7782-6292-14e3-b0c4">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Size" id="9972-20b4-7ab3-9552" hidden="false" collective="false" import="true" defaultSelectionEntryId="dada-8864-ac16-6154">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4884-c083-3166-f1ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b38-85f9-5fe9-8ae7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="f076-7b1a-630a-16c5" collective="false">
-              <profiles>
-                <profile name="Primaris Sanguinary Guard (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="53d1-3348-92e8-f0bf">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="c00f-ba62-8167-afe4" collective="false">
-              <profiles>
-                <profile name="Primaris Sanguinary Guard (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a039-26cb-fe31-0c65">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="3dda-074b-1f9d-23bf" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Heirs of Azkaellon" id="246f-57f7-d4fb-e34d" hidden="false" targetId="e8e7-691d-5bec-b7cc" type="profile"/>
-        <infoLink name="Deep Strike" id="cfd8-08e3-a786-9eaa" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Librarian Redemptor Dreadnought" hidden="false" id="8e34-cc53-5689-b1c6" collective="false">

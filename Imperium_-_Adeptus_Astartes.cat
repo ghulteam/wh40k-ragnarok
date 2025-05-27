@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="42" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -224,11 +224,6 @@
     <entryLink id="a839-ec31-04b8-dc47" name="Company Ancient" hidden="false" collective="false" import="true" targetId="4991-016c-9c24-34d3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b0ea-7c78-fde0-db6c" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4dc6-574e-30a2-923f" name="Primaris Ancient" hidden="false" collective="false" import="true" targetId="ca50-b2c7-56ad-f6a3" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="afb7-e4f4-b204-c305" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" import="true" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
@@ -904,7 +899,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="b6cc-e179-aa8a-953d" name="Brutalis Dreadnought" hidden="false" collective="false" import="true" targetId="dfa4-bb93-c2fd-0e83" type="selectionEntry"/>
     <entryLink id="1e30-355c-cc6a-7b45" name="Bladeguard Veteran Squad" hidden="false" collective="false" import="true" targetId="5f0e-8649-1eff-2f56" type="selectionEntry"/>
     <entryLink id="83f5-52d2-ed69-b25a" name="Outrider Squad" hidden="false" collective="false" import="true" targetId="24cc-a5c2-fec0-81b3" type="selectionEntry"/>
-    <entryLink id="181b-f8b9-1ffe-4fb9" name="Primaris Sword Brethren Squad" hidden="false" collective="false" import="true" targetId="27b6-232c-68c6-567a" type="selectionEntry">
+    <entryLink id="181b-f8b9-1ffe-4fb9" name="Sword Brethren Squad" hidden="false" collective="false" import="true" targetId="27b6-232c-68c6-567a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="72f1-e747-8407-e0d3" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
@@ -1383,7 +1378,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="b75b-34e6-a761-d22e" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="c63f-3cde-ca37-a263" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="3cf3-903a-20a6-7c5b" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="a0f0-c78d-1952-f828" name="Primaris Sword Brethren" hidden="false" targetId="b86b-8400-a28f-4730" primary="false"/>
+        <categoryLink id="a0f0-c78d-1952-f828" name="Sword Brethren" hidden="false" targetId="b86b-8400-a28f-4730" primary="false"/>
         <categoryLink id="4904-dfc4-f9e2-06ca" name="Faction: Black Templars" hidden="false" targetId="f5f2-7b5a-266e-a209" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -5910,10 +5905,15 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bf-daf1-7d62-a773" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Astartes Chainswords and Heavy Bolt Pistols" hidden="false" id="70f3-1769-ddcc-5110">
+            <selectionEntry type="upgrade" import="true" name="Astartes Chainswords and Bolt Pistols" hidden="false" id="70f3-1769-ddcc-5110">
               <entryLinks>
-                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="3821-abb2-3046-78b2" type="selectionEntry" targetId="4d3b-aae8-2134-3b93"/>
-                <entryLink import="true" name="Heavy Bolt Pistols" hidden="false" id="d01d-77d6-a47f-3d5f" type="selectionEntry" targetId="35bb-c4c0-0e46-cd22"/>
+                <entryLink import="true" name="Astartes Chainswords" hidden="false" id="3821-abb2-3046-78b2" type="selectionEntry" targetId="4d3b-aae8-2134-3b93"/>
+                <entryLink import="true" name="Bolt Pistols" hidden="false" id="d01d-77d6-a47f-3d5f" type="selectionEntry" targetId="470f-196a-65be-f649">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8176-2c56-277f-7069" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f25-0cc7-e53e-9170" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolt Rifles and Primaris Close Combat Weapons" hidden="false" id="f383-86c2-ae14-f2e6">

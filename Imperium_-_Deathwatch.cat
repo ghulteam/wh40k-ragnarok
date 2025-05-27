@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -510,11 +510,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="86b6-3a8a-3c68-919d" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="91d2-d52d-54f6-60a0" name="Primaris Watch Captain" hidden="false" collective="false" import="true" targetId="7390-4606-3228-dabc" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="0f90-3bcb-b135-ed73" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="d916-fa58-2fbf-8609" name="Reiver Squad" hidden="false" collective="false" import="true" targetId="30bf-60b7-7f9f-7a2c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="65d8-450a-87d0-fa10" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
@@ -853,63 +848,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7390-4606-3228-dabc" name="Primaris Watch Captain" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="6bb2-57c9-c77d-cf68" name="Primaris Watch Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="203a-f23f-8ef3-fbe7" name="Rites of Battle" hidden="false" targetId="5974-c49a-6e51-bedf" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c590-4fcb-7b5f-3597" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="e9c6-7896-d36e-5b39" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="0605-a195-2f94-8b9d" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
-        <categoryLink id="0772-eb55-4931-2e73" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="ed1c-6b7e-f69d-917c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="30ac-1f9e-5041-b5c5" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="6637-3574-dcbd-5db3" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="9c9d-60ba-8e04-4e3d" name="Watch Captain" hidden="false" targetId="69c3-b0be-fdac-e4a3" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b2ce-326b-d256-7370" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ca-968a-f8bc-564a" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ce-9e8c-8393-7d3a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="29db-df1a-fb04-ea60" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="ba42-eb60-4739-c848" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dfc-4260-ee9c-9932" name="Deathwatch Veterans" hidden="false" collective="false" import="true" type="unit">
@@ -1311,7 +1249,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <entryLink id="10e3-b430-6b7e-5730" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5a53-1b22-354e-967d" name="Veteran Bike Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
