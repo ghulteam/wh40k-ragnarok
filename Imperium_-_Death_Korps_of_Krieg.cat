@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="faea-091e-66c7-f531" name="Imperium - Death Korps of Krieg" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5be3-8726-078b-1a23" name="Faction: Officio Prefectus" hidden="false"/>
     <categoryEntry id="7e0f-9b5b-7250-2db7" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false"/>
@@ -646,9 +646,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="4e11-4792-c013-8f74" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="36fe-cdc1-5e62-778d" name="Heavy Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2221-c4f6-761f-5bd6">
           <constraints>
@@ -714,6 +711,14 @@
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="6e7e-80e7-4539-570c" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4962-a6cc-ad6d-7185" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="590a-f77f-b723-791f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="4293-2618-aa1c-8082" name="Platoon Standard" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -722,12 +727,12 @@
       <profiles>
         <profile id="e813-4b34-3646-1270" name="Platoon Standard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of Death Korps of Krieg units whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Platoon Standard.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of DEATH KORPS OF KRIEG units whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Platoon Standard.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8bb5-a2ef-7fce-82ce" name="Death Korps Centaur Light Assault Carrier" hidden="false" collective="false" import="true" type="upgrade">
@@ -834,9 +839,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="9d52-64fe-b0dd-410a" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="0118-27d7-0e49-b7b5" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink id="1b3c-148b-17b5-9242" name="Faction: Death Korps of Krieg" hidden="false" targetId="dfd5-d840-d4ca-64a3" primary="false"/>
@@ -902,6 +904,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </selectionEntries>
       <entryLinks>
         <entryLink id="272c-b9dc-8c2c-5537" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="ed43-809c-7909-ea73" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e99a-97e4-45a3-96ab" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf39-db13-31d8-5b7c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -923,7 +931,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </profiles>
       <infoLinks>
         <infoLink id="8eb1-ee65-240c-6064" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink id="506e-3365-97fc-ee93" name="Commissar Weapons" hidden="false" targetId="4c1f-561a-c303-95cb" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fc3f-c3d2-b6cb-3ffe" name="Death Korps Commissar" hidden="false" targetId="af87-f2ae-9b47-0b65" primary="false"/>
@@ -938,6 +945,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </categoryLinks>
       <entryLinks>
         <entryLink id="c016-3d18-690d-52cb" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Commissar Weapons" hidden="false" id="2614-4c7e-2c47-fd14" type="selectionEntry" targetId="c2d4-12ff-9f2b-8abd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb07-9e66-a693-0268" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff50-ca0b-a6f0-9a06" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -958,7 +971,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="80cc-0605-16ad-c4f4" name="Officer Weapons" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
         <infoLink id="e6e1-2d8e-7747-6d03" name="Officer" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -986,6 +998,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </selectionEntries>
       <entryLinks>
         <entryLink id="61cc-aa49-8c97-f367" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="7fdf-4a72-46ad-1504" type="selectionEntry" targetId="24c6-0611-6c6f-91dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3bd-a8a3-2621-14cf" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0435-0a73-3e49-cc76" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -1050,7 +1068,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5556-0798-34c4-8a10" name="Commissar Weapons" hidden="false" targetId="4c1f-561a-c303-95cb" type="profile"/>
         <infoLink id="0d68-2869-2c11-2a29" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
         <infoLink id="61b2-3043-8646-507d" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
       </infoLinks>
@@ -1069,6 +1086,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </categoryLinks>
       <entryLinks>
         <entryLink id="c42e-e808-4b62-d6c2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Commissar Weapons" hidden="false" id="8184-891c-c1fb-edef" type="selectionEntry" targetId="c2d4-12ff-9f2b-8abd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e92c-b785-3d70-91ad" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8248-fef4-cf4b-4fb4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -1095,9 +1118,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </profiles>
       <infoLinks>
         <infoLink id="45c7-64fe-151f-ee33" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
-        <infoLink id="26a2-b6c6-909f-3464" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
         <infoLink id="6fff-9a3b-0ab7-9201" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink id="b621-a3f3-cab8-e7ab" name="Laspistols" hidden="false" targetId="64e5-c6e5-9739-fcaf" type="profile"/>
         <infoLink id="d781-a67c-fc13-7468" name="Death Korps Hunting Lances" hidden="false" targetId="2d8c-ae7e-c774-211a" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -1111,6 +1132,18 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </categoryLinks>
       <entryLinks>
         <entryLink id="0398-5cc0-d9c4-09ed" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="0c45-cc69-240c-c3b4" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaaa-2288-aca8-3f00" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16c6-12c5-f218-b814" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Laspistols" hidden="false" id="3deb-2ba5-2ff2-0653" type="selectionEntry" targetId="247f-292f-5de5-164b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1883-2bcb-6472-3024" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd23-be2b-f9b6-9017" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
@@ -1148,9 +1181,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3bf3-c293-544e-146c" name="Laspistols" hidden="false" targetId="64e5-c6e5-9739-fcaf" type="profile"/>
         <infoLink id="4cfd-3998-388d-aaf0" name="Death Korps Hunting Lances" hidden="false" targetId="2d8c-ae7e-c774-211a" type="profile"/>
-        <infoLink id="d378-190b-d066-ab41" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
         <infoLink id="7443-1929-9b06-3cb2" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -1171,6 +1202,18 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </selectionEntries>
       <entryLinks>
         <entryLink id="54b0-a1c7-ec11-b6c9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="d7fa-3310-941c-2743" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ea8-aee2-eed1-b168" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2613-de07-9016-89f1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Laspistols" hidden="false" id="c6ce-628f-a103-d54c" type="selectionEntry" targetId="247f-292f-5de5-164b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d97-8a0e-df6b-f20a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc0f-b73a-ed2b-cefd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
@@ -1382,10 +1425,6 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="6e0e-f1f9-eb7d-971f" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
-        <infoLink id="12b5-e0dd-6cca-296d" name="Hot-shot Lasguns" hidden="false" targetId="0a3c-1509-a7d1-188e" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="49a2-03c2-74fc-5614" name="Death Korps Grenadier Storm Squad" hidden="false" targetId="011c-f635-f33a-27ca" primary="false"/>
         <categoryLink id="85a2-72b5-55d2-8652" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -1417,6 +1456,18 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
       </selectionEntries>
       <entryLinks>
         <entryLink id="b8b4-cbf6-a906-1c50" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="372b-d304-ac5b-99b9" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd94-dbb5-e528-3a73" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb86-3828-9666-62d7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hot-shot Lasguns" hidden="false" id="628e-7b12-d35e-6da5" type="selectionEntry" targetId="08c7-f4c2-9767-3131">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3096-23e6-ca0d-0ee0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d20-ce2c-43b8-2240" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -1540,10 +1591,6 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="f316-3f92-a7ad-2ba6" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
-        <infoLink id="772c-14d1-08b0-09b3" name="Lasguns" hidden="false" targetId="768f-8e47-43bb-f441" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="2e45-1f3c-9c87-3487" name="Death Korps of Krieg Command Squad" hidden="false" targetId="32ee-39ff-66e6-a9d5" primary="false"/>
         <categoryLink id="3f47-f691-15f9-e274" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
@@ -1565,8 +1612,8 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
               <profiles>
                 <profile id="d18e-58b9-245c-aa1c" name="Regimental Standard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of Death Korps of Krieg units
-whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Regimental Standard.</characteristic>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of DEATH KORPS OF KRIEG units whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Regimental Standard.
+In Addition, whilst a friendly LIGHT DEATH KORPS OF KRIEG Units is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1582,6 +1629,18 @@ whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ccdb-f59f-a050-af47" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasguns" hidden="false" id="f987-4437-ce5c-dccd" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d2e-1bcd-9bdc-51a4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfd5-44e1-407f-24e1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="7e32-c776-4a60-1687" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c57-2cd3-1fb2-baf2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4867-6b56-b6a8-0410" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -1610,7 +1669,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
       <infoLinks>
         <infoLink id="b9e5-0781-fab9-c45d" name="Momento Mori" hidden="false" targetId="e521-45e6-bdbd-549d" type="profile"/>
         <infoLink id="5608-23af-60be-01f7" name="Officer" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
-        <infoLink id="cd11-ea85-9d82-52b4" name="Officer Weapons" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9399-c9f7-27d6-25d3" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -1624,6 +1682,12 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
       </categoryLinks>
       <entryLinks>
         <entryLink id="65fe-3b35-2287-3cb0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="f162-d17c-f2fc-4d35" type="selectionEntry" targetId="24c6-0611-6c6f-91dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e42-c833-afb0-0a57" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e62c-ca15-a7d0-e94a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -1763,10 +1827,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="cc4a-3c73-5a71-a472" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
-        <infoLink id="da8d-a963-1e8a-b1e9" name="Lasguns" hidden="false" targetId="768f-8e47-43bb-f441" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="a491-dc2a-8501-6875" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink id="d084-a36a-73d9-f91d" name="Faction: Death Korps of Krieg" hidden="false" targetId="dfd5-d840-d4ca-64a3" primary="false"/>
@@ -1778,6 +1838,18 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
       <entryLinks>
         <entryLink id="9401-169f-46fe-b9c0" name="Platoon Standard" hidden="false" collective="false" import="true" targetId="4293-2618-aa1c-8082" type="selectionEntry"/>
         <entryLink id="9483-e055-cfed-6725" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasguns" hidden="false" id="5483-b5ed-fb42-a4de" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="504c-5cc3-f024-f190" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bdc-50a9-5cfc-dcd0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="dd2b-9235-df8b-74e6" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52c7-7bc0-6341-2e09" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b260-28a3-8f7b-523a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -1807,11 +1879,16 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="709b-af08-2ceb-bd9c" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="377d-0029-41da-b6e8" type="selectionEntry" targetId="24c6-0611-6c6f-91dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5409-1ae9-6729-0204" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea55-9d27-7204-38fb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Officer" id="e97d-4fd7-2754-c83d" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
         <infoLink name="Momento Mori" id="6c2f-8534-b83d-65a8" hidden="false" targetId="e521-45e6-bdbd-549d" type="profile"/>
-        <infoLink name="Officer Weapons" id="ca8d-624e-0a79-de86" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
@@ -1827,36 +1904,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="619d-027a-996d-47d3" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="768f-8e47-43bb-f441" name="Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="caef-f710-d0de-c438" name="Officer Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="e521-45e6-bdbd-549d" name="Momento Mori" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When multiple blast markers would be placed next to this unit, half that number are placed (rounding up).</characteristic>
@@ -1877,16 +1924,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">One Use Only</characteristic>
       </characteristics>
     </profile>
-    <profile id="0a3c-1509-a7d1-188e" name="Hot-shot Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-      </characteristics>
-    </profile>
     <profile id="84c7-3c1c-e2f5-588b" name="Armoured Hull" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
       <characteristics>
         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
@@ -1894,26 +1931,6 @@ characteristic instead of their own whilst they are within 12&quot; of this unit
         <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4c1f-561a-c303-95cb" name="Commissar Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="64e5-c6e5-9739-fcaf" name="Laspistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>

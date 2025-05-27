@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1253,7 +1253,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="f086-4b65-d785-685b" name="Power Fist" hidden="false" collective="false" import="true" targetId="b0cf-1697-989d-fe3f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d5e6-75fb-b12d-fb6a" name="Wargear" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d5e6-75fb-b12d-fb6a" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d7c-6d53-1174-54f2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5568-dd48-45b0-f781" type="max"/>
           </constraints>
@@ -1261,6 +1261,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="9fc3-a8c6-eab3-94ae" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
             <entryLink id="a109-7462-6bea-3f91" name="Jump Pack" hidden="false" collective="false" import="true" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="4d7c-6d53-1174-54f2">
+              <categoryLinks>
+                <categoryLink targetId="2d6e-c03a-7a58-74ce" id="d570-2f5e-eeb2-aa11" primary="false" name="Infantry"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1585,7 +1592,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cac6-64c1-b164-20a4" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4d36-8365-faa4-ac34" name="No wargear" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4d36-8365-faa4-ac34" name="*No Wargear*" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="96f0-5505-5d71-b8fd" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
               </categoryLinks>

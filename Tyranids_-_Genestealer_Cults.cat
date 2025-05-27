@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c68c-be57-318c-8802" name="Tyranids - Genestealer Cults" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="9055-71bd-c713-3f2a" name="Genestealer Cults"/>
   </publications>
@@ -2172,29 +2172,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry id="ba63-2e31-8383-0d12" name="Grinding Tracks" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6c4-66a5-5a58-999f" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3a-3232-0f0e-4ba8" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1178-ef89-38bb-5d37" name="Grinding Tracks" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="357c-a89a-c2aa-2b99" name="Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="20cc-1668-c1cb-795e">
           <constraints>
@@ -2259,6 +2236,12 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       <entryLinks>
         <entryLink id="c3d3-0ca1-c546-c005" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink import="true" name="Turret Weapon" hidden="false" id="c356-451e-4b78-28c7" type="selectionEntryGroup" targetId="8599-3938-8abe-f84d"/>
+        <entryLink import="true" name="Grinding Tracks" hidden="false" id="9592-56d7-7480-04da" type="selectionEntry" targetId="bd97-52de-276d-96b1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86e1-bdb2-827e-efd8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c275-c8e0-0df8-860e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
@@ -2283,29 +2266,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry id="6d9f-dddc-6cab-ae54" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c00-fcfc-95c8-8e52" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e641-5915-d344-b9c2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="aad6-3b3c-2714-0667" name="Close Combat Weapons (Brood Brothers)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="40eb-0227-8b1c-911c" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
@@ -2323,6 +2283,12 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="803b-7db4-9044-efd2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="f693-d9f8-d0e6-1d54" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49af-bd71-a56d-0b87" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12b4-2886-10f3-2145" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -2520,53 +2486,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry id="4c6e-c9c9-9127-f09f" name="Lasgun Array" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="820b-c026-1ac2-9850" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e5-ebc2-7e81-295a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6255-b74a-c592-b9df" name="Lasgun Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1954-023d-3641-e8db" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="798f-4ed2-aab0-9287" name="Armoured Tracks" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb1-cf09-d017-d967" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86df-7b2c-08cb-9374" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="77ad-7ba9-4fc2-2176" name="Armoured Tracks" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a7d5-3ce9-c46a-8712" name="Main Weapons" hidden="false" collective="false" import="true">
           <constraints>
@@ -2619,6 +2538,13 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="082d-1842-bef2-c3a0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasgun Array" hidden="false" id="d13b-091e-231b-23b6" type="selectionEntry" targetId="22fd-8109-96b9-1f9b"/>
+        <entryLink import="true" name="Armoured Tracks" hidden="false" id="697a-0b55-fc76-f62e" type="selectionEntry" targetId="68a6-6504-1262-9516">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a408-2777-4308-26bc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9c8-7cd3-2b60-614a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
@@ -2863,53 +2789,6 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       </costs>
     </selectionEntry>
     <selectionEntry id="e300-ed60-6386-d343" name="Brood Brothers Infantry Squad" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="3fb7-0416-4537-de41" name="Lasguns" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b86-17f9-c4e7-4d85" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1e-e3ee-da1c-60e4" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="dab7-832a-8a6d-5cca" name="Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="7708-6af0-f3ed-9262" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="73d5-2c5f-98fc-8932" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d31-0dfe-8272-b528" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc51-a79f-62b1-3589" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f922-ad95-2b69-1cf7" name="Close Combat Weapons (Brood Brothers)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="944b-f26c-856b-2a96" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="1281-06a7-78d8-6090">
           <constraints>
@@ -2990,6 +2869,18 @@ LIGHT GENESTEALER CULTS units in this Detachment have the Deep Strike ability (p
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4496-7e82-6b07-5dd0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasguns" hidden="false" id="771a-14be-0f81-9af8" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="460d-04d7-092d-36cb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a54-62a9-080f-d181" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="41e8-9ded-0f96-c3e7" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce09-b9a5-ae0f-d739" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d010-0379-5493-b84d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>

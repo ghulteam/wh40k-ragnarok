@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ce2-02b7-b282-8f9b" name="Imperium - Elysian Drop Troops" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5ce2-02b7-b282-8f9b" name="Imperium - Elysian Drop Troops" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5471-10e9-a8c3-64a9" name="Commissar" hidden="false"/>
     <categoryEntry id="055b-116c-2c64-c172" name="Elysian Command Squad" hidden="false"/>
@@ -261,9 +261,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f6eb-ffa8-bd14-ace1" name="Lasguns" hidden="false" targetId="8d62-1fde-a110-53e7" type="profile"/>
         <infoLink id="0db2-aea5-f116-a251" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink id="8a24-671d-1a1b-09cd" name="Close Combat Weapons" hidden="false" targetId="41a0-acce-e5f3-b548" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ea12-7258-83cd-4b32" name="Elysian Command Squad" hidden="false" targetId="055b-116c-2c64-c172" primary="false"/>
@@ -321,25 +319,42 @@
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e2ae-1713-d54d-fbf8" name="Regimental Standard" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Regimental Standard" hidden="false" id="70a4-8398-3e85-2b67" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d113-c320-cd60-9e91" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8198-5fe5-2fd6-3d89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile id="07b7-8347-7242-9e71" name="Regimental Standard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+            <profile name="Regimental Standard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2663-5da5-1ee3-aaa1">
               <characteristics>
-                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of Elysian Drop Troops units
-whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a Regimental Standard.</characteristic>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of ELYSIAN DROP TROOPS units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
+In Addition, whilst a friendly LIGHT ELYSIAN DROP TROOPS Units is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
+          <rules>
+            <rule name="Objective Secured (Standard)" id="112d-80ae-3a9f-371b" hidden="false">
+              <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="3f5e-b7fe-db3d-db69" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasguns" hidden="false" id="1f25-634e-ad64-3c01" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="307c-d046-68ea-cc3d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3880-7f33-101e-8a6d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="b42a-2205-ffc8-70f2" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb8a-2927-2dd6-666e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dde2-5a22-31d4-86ba" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -363,7 +378,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
         <infoLink id="bd0f-68f4-5ca7-4fd8" name="Officer" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
         <infoLink id="1843-9ad7-9b5e-757e" name="Iron Disipline" hidden="false" targetId="8985-5be1-30c3-08be" type="profile"/>
         <infoLink id="da1e-97ca-b528-997e" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink id="754b-49a0-0680-0626" name="Officer Weapons" hidden="false" targetId="7f88-d94e-5bc2-5a1d" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ef0-20df-03db-eed7" name="Elysian Company Commander" hidden="false" targetId="06a4-11a4-a8f9-34ac" primary="false"/>
@@ -377,6 +391,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </categoryLinks>
       <entryLinks>
         <entryLink id="5544-6569-feb6-fbe0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="881f-8080-bb5d-99a2" type="selectionEntry" targetId="24c6-0611-6c6f-91dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1243-ae40-2650-9bc4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="798f-72f6-b6f8-e960" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -498,16 +518,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
           </characteristics>
         </profile>
-        <profile id="b883-9f86-9dac-a088" name="Commissar Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="6a7e-d0e4-e923-54ca" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
@@ -527,6 +537,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </categoryLinks>
       <entryLinks>
         <entryLink id="a228-7295-462a-867f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Commissar Weapons" hidden="false" id="ab37-091e-4302-5314" type="selectionEntry" targetId="c2d4-12ff-9f2b-8abd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb83-303e-c9ba-023d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f4f-4d15-0180-3b25" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
@@ -609,7 +625,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="30bb-0741-01d3-8e32" name="Close Combat Weapons" hidden="false" targetId="41a0-acce-e5f3-b548" type="profile"/>
         <infoLink id="1407-08a5-7fca-3408" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -682,6 +697,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </selectionEntries>
       <entryLinks>
         <entryLink id="fc70-2d91-76a4-bb38" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="0193-3216-2cae-3d1f" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4191-027e-6c83-e525" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87f0-8430-5c7b-af37" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
@@ -710,7 +731,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="bf35-0741-8208-01fb" name="Close Combat Weapons" hidden="false" targetId="41a0-acce-e5f3-b548" type="profile"/>
             <infoLink id="6787-65dc-2e84-83a6" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
@@ -754,6 +774,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="0ac4-a1e0-d8e1-ddec" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink import="true" name="Close Combat Weapons" hidden="false" id="b83e-602c-c398-0178" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="694e-9f07-5105-944e" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff8f-c377-dba3-ba77" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -769,16 +795,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
         <profile id="2fea-3865-3094-a8bc" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
             <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 1 friendly Elysian Drop Troops Tauros model or up to 2 Elysian Drop Sentinel models.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="36dd-2659-8173-85c2" name="Armoured Hull" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
         <profile id="771e-d699-e13f-7f5d" name="Valkyrie Sky Talon" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -823,6 +839,7 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="62d6-2f06-6492-78c9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Armoured Hull" hidden="false" id="a2b8-9cac-afa9-25da" type="selectionEntry" targetId="8527-132b-ede1-be54"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
@@ -851,16 +868,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
-        <profile id="3786-c263-15b4-9520" name="Special Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="aa0b-71a7-6555-bc51" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
@@ -875,6 +882,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </categoryLinks>
       <entryLinks>
         <entryLink id="5296-378d-3884-c6e2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Special Weapons" hidden="false" id="59fd-0068-5574-7901" type="selectionEntry" targetId="e8eb-9521-791d-5f9d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9655-9e9f-91ba-bd37" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfce-6008-f777-ebee" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -898,7 +911,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
         <infoLink id="3265-7131-aeff-4901" name="Officer" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
         <infoLink id="86d4-48b7-d2ce-a215" name="Iron Disipline" hidden="false" targetId="8985-5be1-30c3-08be" type="profile"/>
         <infoLink id="797b-bfbd-3a21-1b16" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink id="16e6-2b90-08df-5431" name="Officer Weapons" hidden="false" targetId="7f88-d94e-5bc2-5a1d" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6e40-2ca1-7699-9db1" name="Elysian Platoon Commander" hidden="false" targetId="c11c-b745-0f50-b4aa" primary="false"/>
@@ -912,6 +924,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </categoryLinks>
       <entryLinks>
         <entryLink id="2775-eef9-110c-66bf" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="affd-b129-e816-7301" type="selectionEntry" targetId="24c6-0611-6c6f-91dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="350e-dec2-f1e8-fdd7" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8835-2095-ce38-45e5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -933,8 +951,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </profiles>
       <infoLinks>
         <infoLink id="3a83-cc39-dedd-1f55" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink id="d5db-3c0c-44e0-24ca" name="Close Combat Weapons" hidden="false" targetId="41a0-acce-e5f3-b548" type="profile"/>
-        <infoLink id="6590-0dc0-a249-271a" name="Lasguns" hidden="false" targetId="8d62-1fde-a110-53e7" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aa8e-e377-b04e-577f" name="Elysian Drop Trooper Squad" hidden="false" targetId="7e5b-6196-1336-6c79" primary="false"/>
@@ -946,6 +962,18 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </categoryLinks>
       <entryLinks>
         <entryLink id="5aa6-ad14-a411-4da1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Lasguns" hidden="false" id="e58e-dd36-968f-4f87" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d97c-2d1e-0b1f-15d8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9886-79d6-2ce1-d0ad" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="57b1-977f-392e-b820" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fdc-1067-49f3-fae5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43a8-9d75-ed2b-1078" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
@@ -957,36 +985,6 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll Morale tests taken for friendly Elysian Drop Troops units whilst
 they are within 6&quot; of this unit.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="7f88-d94e-5bc2-5a1d" name="Officer Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8d62-1fde-a110-53e7" name="Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="41a0-acce-e5f3-b548" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-      <characteristics>
-        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
