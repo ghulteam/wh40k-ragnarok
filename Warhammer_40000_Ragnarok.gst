@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="25" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="26" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -1194,6 +1194,24 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Bodyguard Unit" id="5000-2279-81fa-7c79" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb49-3432-dc00-feea" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="da2a-70c0-9822-60cb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Bodyguard" hidden="false" id="5154-b762-5ddb-b26d" targetId="1db6-59cb-28cd-51be" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bodyguard" id="5078-17cf-6385-082f" hidden="false" type="profile" targetId="ed86-d4f3-a9f5-1923"/>
+      </infoLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="7296-134e-970b-4790" name="Barrage" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -1307,8 +1325,7 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
 -CHARACTER and BODYGUARD Unit may only Deep Strike if both have Deep Strike
 -CHARACTER and BODYGUARD may only Infiltrate if both have Infiltrate
 -CHARACTER Abilities are only active and weapons may only be used as long as CHARACTER is still alive. 
--BODYGUARD Abilities are only active and weapons may only be used as long as BODYGUARD is still alive. 
-</characteristic>
+-BODYGUARD Abilities are only active and weapons may only be used as long as BODYGUARD is still alive.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

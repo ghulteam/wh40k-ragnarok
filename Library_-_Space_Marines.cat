@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="57" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="58" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1482,96 +1482,6 @@
         <infoLink id="bae7-bdb1-c703-deee" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
         <infoLink id="8a08-9071-658e-f673" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bbe6-4a4c-8477-4b34" name="Primaris Lieutenants" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="ff8a-6ba7-0cfa-8de0" name="Company Heroes" hidden="false" targetId="75dc-f1de-d38b-f768" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f975-f856-5819-8fd6" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="d243-1c73-735f-2194" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="b0a4-b84a-4c21-2380" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="055c-af07-80bb-479a" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="40a5-bdb6-7aa4-17cb" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="9cf6-dc35-d01f-89f4" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="ed72-647b-f6c6-31bb" name="Lieutenant" hidden="false" targetId="c1bc-cc91-15db-65fc" primary="false"/>
-        <categoryLink id="f2a5-6f02-c3e0-38f6" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1d91-11a4-2fdb-741f" name="Primaris Lieutenant" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b9e-18a3-17d0-be73" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4e-5bf8-726d-4372" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="91ae-ddb3-8a60-58c0" name="Primaris Lieutenant" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-              <characteristics>
-                <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5f1e-7c14-dab8-1808" name="Tactical Precision" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="8c10-06ad-80b3-e11e" type="profile"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="6361-57db-3350-a07e" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93e3-86d5-b8ca-b742" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aa2-38fa-3a1c-91f1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c9e8-d622-affe-5ff5" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="65df-3af2-a8a8-95bb" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-          </entryLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="50f7-3318-629a-9f08" hidden="false" defaultSelectionEntryId="aa80-48d3-95e2-0c88">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="aa80-48d3-95e2-0c88"/>
-                <selectionEntry type="upgrade" import="true" name="Reiver Armor and Grav-Chutes" hidden="false" id="34fc-c55d-3650-6978">
-                  <infoLinks>
-                    <infoLink name="Terror Troops" id="0adc-28ab-1f9a-1ae2" hidden="false" type="profile" targetId="e5e7-bd6d-fdb7-b022"/>
-                    <infoLink name="Deep Strike" id="6393-d070-8183-3373" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Phobos Armor" hidden="false" id="34de-3d0c-dd86-e3f4" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
@@ -11578,10 +11488,6 @@ otherwise, place one blast marker next to it.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d3b-aae8-2134-3b93" name="Astartes Chainswords" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be1-3636-2c36-bc34" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dc2-78a5-e8b1-1263" type="max"/>
-      </constraints>
       <profiles>
         <profile id="412d-7537-0f25-31cc" name="Astartes Chainswords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -13642,10 +13548,6 @@ After this is resolved, count the number of wounds that were scored by the attac
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Astartes Close Combat Weapons" hidden="false" id="5ed8-257d-8a09-f5de">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d227-4725-1051-0646" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd4b-6536-b270-3137" includeChildSelections="false"/>
-      </constraints>
       <profiles>
         <profile name="Astartes Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7996-8a21-67cf-e2fb">
           <characteristics>
@@ -13659,9 +13561,9 @@ After this is resolved, count the number of wounds that were scored by the attac
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Astartes Boltpistols" hidden="false" id="d5fd-c17e-f7b5-d5a3">
+    <selectionEntry type="upgrade" import="true" name="Astartes Pistols" hidden="false" id="d5fd-c17e-f7b5-d5a3">
       <profiles>
-        <profile name="Astartes Bolt Pistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="83b3-4926-804b-ee4f">
+        <profile name="Astartes Pistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="83b3-4926-804b-ee4f">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
@@ -13672,14 +13574,10 @@ After this is resolved, count the number of wounds that were scored by the attac
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00d1-ca21-8cb5-c22a" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dce2-21ba-3030-82d0" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Astartes Boltguns" hidden="false" id="dcd7-9926-fc86-d1e1">
+    <selectionEntry type="upgrade" import="true" name="Astartes Bolt Weapons" hidden="false" id="dcd7-9926-fc86-d1e1">
       <profiles>
-        <profile name="Astartes Boltguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="077a-f35d-1e4a-844e">
+        <profile name="Astartes Bolt Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="077a-f35d-1e4a-844e">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
@@ -13690,10 +13588,6 @@ After this is resolved, count the number of wounds that were scored by the attac
           </characteristics>
         </profile>
       </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3492-1cde-ea24-346a" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1cb-715a-a68a-23ff" includeChildSelections="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Rapid Fire" id="6f17-ab2b-8167-131d" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
       </infoLinks>

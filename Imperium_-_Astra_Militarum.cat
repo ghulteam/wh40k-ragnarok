@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="55" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1192,7 +1192,6 @@
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="b943-4ba8-577a-cbfc" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Enable Bodyguard Units" hidden="false" id="a841-46de-5e54-5c0c" type="selectionEntry" targetId="da2a-70c0-9822-60cb"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2ce6-a6c0-939f-d4b5" name="Crusaders" hidden="false" collective="false" import="true" type="unit">
@@ -2574,11 +2573,6 @@
           </constraints>
         </entryLink>
         <entryLink id="65cc-1d2d-772f-ac41" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="fff4-7541-7f51-d5da" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
-          <entryLinks>
-            <entryLink import="true" name="Command Squad" hidden="false" id="b8c7-6973-0e35-ecee" type="selectionEntry" targetId="7dee-c7f6-5568-2d96"/>
-          </entryLinks>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -3067,13 +3061,6 @@
           </constraints>
         </entryLink>
         <entryLink id="bc6e-e542-4d67-7eff" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="d872-1ef4-17cb-b264" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
-          <entryLinks>
-            <entryLink import="true" name="Militarum Tempestus Command Squad" hidden="false" id="53d5-946d-27dc-b25e" type="selectionEntry" targetId="e73a-a81b-6539-91b4"/>
-            <entryLink import="true" name="Militarum Tempestus Scions" hidden="false" id="f7b5-bfe4-72fc-45a7" type="selectionEntry" targetId="4594-e76d-4dc9-e667"/>
-            <entryLink import="true" name="Militarum Tempestus Aquilons" hidden="false" id="74b4-5717-cb50-1bd5" type="selectionEntry" targetId="559c-00f3-ad31-1035"/>
-          </entryLinks>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -7610,11 +7597,6 @@ Praetor Launcher for this action.</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5131-4237-2e9b-a337" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="13d0-d533-0f27-1f56" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
-          <entryLinks>
-            <entryLink import="true" name="Command Squad" hidden="false" id="5340-cd70-4773-beb4" type="selectionEntry" targetId="7dee-c7f6-5568-2d96"/>
-          </entryLinks>
-        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Platoon Commander" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0ac8-e9db-d261-0049">
@@ -7697,24 +7679,4 @@ Praetor Launcher for this action.</characteristic>
 ASTRA MILITARUM units in this Detachment can use the Leadership characteristic of their Commander instead of their own.</description>
     </rule>
   </rules>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Bodyguard Unit" id="5000-2279-81fa-7c79" hidden="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb49-3432-dc00-feea" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="da2a-70c0-9822-60cb" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="1db6-59cb-28cd-51be" id="5154-b762-5ddb-b26d" primary="false" name="Bodyguard"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Bodyguard" id="5078-17cf-6385-082f" hidden="false" type="profile" targetId="ed86-d4f3-a9f5-1923"/>
-      </infoLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
 </catalogue>
