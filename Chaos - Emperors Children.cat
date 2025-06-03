@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1da7-af26-6602-d159" name="Chaos - Emperors Children" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="19" revision="10" battleScribeVersion="2.03" hidden="false" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1da7-af26-6602-d159" name="Chaos - Emperors Children" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="19" revision="11" battleScribeVersion="2.03" hidden="false" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Chaos Space Marines" id="e7a5-da01-91b5-274e" targetId="df5c-f15d-f672-a301"/>
     <catalogueLink type="catalogue" name="Library - Chaos Primarchs" id="a93a-576a-4b2b-626d" targetId="6638-9778-3d62-e10b"/>
@@ -548,7 +548,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="62bc-7b3a-4ebf-a2f0" collective="false">
@@ -566,7 +566,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="15 models" hidden="false" id="e9f9-a168-cc23-a3f3" collective="false">
@@ -584,7 +584,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="37"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="0eb2-c4c6-fa53-9eb0" collective="false">
@@ -602,7 +602,7 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="52"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -610,46 +610,33 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="35ee-c668-2f19-02c9" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Heretic Pistols" hidden="false" id="07c3-7dfc-7183-1b41" collective="false" targetId="38ef-020f-e1dd-10cf" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b9d-b418-74b6-36fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f7-597c-84bb-fc88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bolt pistols and Dueling sabers" hidden="false" id="f560-ff86-22c8-f4ad" collective="false">
-          <entryLinks>
-            <entryLink import="true" name="Bolt Pistols" hidden="false" id="07c3-7dfc-7183-1b41" collective="false" targetId="470f-196a-65be-f649" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b9d-b418-74b6-36fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f7-597c-84bb-fc88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dueling sabers" hidden="false" id="32c2-bf6e-6626-2f92">
-              <profiles>
-                <profile name="Dueling sabers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5b9c-6585-3982-43aa">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69df-a7fa-11c7-ffab" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8806-d255-1e4c-5433" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dueling sabers" hidden="false" id="32c2-bf6e-6626-2f92">
+          <profiles>
+            <profile name="Dueling sabers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5b9c-6585-3982-43aa">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eba7-d418-9c17-8bd5" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1618-73f2-e4f2-c596" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69df-a7fa-11c7-ffab" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8806-d255-1e4c-5433" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -747,114 +734,25 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Heavy Weapons" id="fda0-93c4-845a-d519" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" value="1" field="ff68-f500-7afd-df07">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="a236-3491-697c-a7ac" childId="2834-6390-0e8a-6026" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff68-f500-7afd-df07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Autocannon" hidden="false" id="6536-ae8e-a5cd-7b00" collective="false" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aa02-5eed-1c12-cf15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Heavy Bolter" hidden="false" id="c711-2eeb-7bab-a0c6" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d479-1d5b-5a70-19cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Lascannon" hidden="false" id="0458-25b1-36c0-4830" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9053-efa4-9c66-ec83" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Missile Launcher" hidden="false" id="e014-1e88-1299-225b" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a98-8269-e976-c0bb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Reaper Chaincannon" hidden="false" id="3c60-9728-fb35-bb41" collective="false" targetId="0bf2-3b88-063d-39bb" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff9e-45cf-3995-ad0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Melee Weapon" hidden="false" id="8ee3-7461-8082-28b1">
-              <profiles>
-                <profile name="Heavy Melee Weapon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4f0b-0e43-cdbb-e24a">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cbec-fc92-3f71-0372"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="4e7e-3e5b-e080-b1e1" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Heretic  Bolt Weapons" hidden="false" id="a45f-6cd9-3208-97d8" collective="false" targetId="57da-a574-631c-47e0" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d79-2c6c-a7df-66ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b9-62e0-30af-d1cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heretic Close Combat Weapons" hidden="false" id="a2a3-8d4e-d287-53f7" collective="false" targetId="b31f-1ba0-837b-43bf" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0353-9769-661a-5e27" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9bc-1ee3-7c06-62cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Boltguns and Close Combat Weapons" hidden="false" id="a6d2-02be-63a5-2492" collective="false">
-          <entryLinks>
-            <entryLink import="true" name="Boltguns" hidden="false" id="a45f-6cd9-3208-97d8" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d79-2c6c-a7df-66ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b9-62e0-30af-d1cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Close Combat Weapons" hidden="false" id="a2a3-8d4e-d287-53f7" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0353-9769-661a-5e27" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9bc-1ee3-7c06-62cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6963-e46a-981b-7cd3" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2742-c095-7430-0cd4" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Daemon Prince of Slaanesh" hidden="false" id="2f28-a8fe-ad2c-5b62" collective="false">
       <profiles>
