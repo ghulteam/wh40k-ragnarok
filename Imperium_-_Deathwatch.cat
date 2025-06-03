@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
+<catalogue id="6ab6-cc3e-7adb-2ea2" name="Imperium - Deathwatch" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" authorName="ghulteam">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -929,7 +929,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dbfa-a64f-53a9-ee19" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -947,7 +947,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -957,27 +957,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58e-3697-99be-4972" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8fa-85e8-8685-3b99" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="5fae-2edb-d1d6-53fe" name="Deathwatch Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a58c-ae77-6d0e-aea8" name="Deathwatch Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
-            <entryLink id="1774-b703-1b0c-e6ba" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry"/>
+            <entryLink id="1774-b703-1b0c-e6ba" name="Astartes Close Combat Weapons" hidden="false" collective="false" import="true" targetId="5ed8-257d-8a09-f5de" type="selectionEntry"/>
+            <entryLink import="true" name="Deathwatch Melee Weapons" hidden="false" id="1ebd-d6fe-9020-c5cd" type="selectionEntry" targetId="c615-a2f1-e6ff-a323">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="fb2b-e7b1-4b2c-6745" name="Heavy Weapons" hidden="false" collective="false" import="true">
@@ -1025,14 +1011,14 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <infoLink id="327b-9095-ac5b-66b2" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="d9dd-e2ff-ab1d-51ed" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ce8-3145-28e0-6839" type="max"/>
@@ -1040,7 +1026,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             </entryLink>
             <entryLink id="f670-3470-3811-5e9c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="316e-464c-42d6-3c31" type="max"/>
@@ -1048,7 +1034,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             </entryLink>
             <entryLink id="e511-fd23-d27d-60d4" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfca-84db-bb48-f95b" type="max"/>
@@ -1351,27 +1337,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab0-5d2b-c8ec-b278" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="162c-dd04-bb56-1df5" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="0379-3c80-531f-d019" name="Deathwatch Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a250-eef3-2fa6-75ee" name="Deathwatch Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
-            <entryLink id="890b-e073-3c12-eda0" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry"/>
+            <entryLink id="890b-e073-3c12-eda0" name="Astartes Close Combat Weapons" hidden="false" collective="false" import="true" targetId="5ed8-257d-8a09-f5de" type="selectionEntry"/>
+            <entryLink import="true" name="Deathwatch Melee Weapons" hidden="false" id="0a85-691b-300c-babb" type="selectionEntry" targetId="c615-a2f1-e6ff-a323">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1834,7 +1806,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="76f8-f048-831a-0890" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1864,7 +1836,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1953,7 +1925,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
               </characteristics>
@@ -1983,7 +1955,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -1991,7 +1963,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="x2" field="2883-af07-d4e8-d8d0"/>
+                    <modifier type="set" value="x3" field="2883-af07-d4e8-d8d0"/>
                   </modifiers>
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="fa4a-964f-28ea-0841" childId="c04b-3b1b-9d62-b0c5" shared="true"/>
@@ -2375,7 +2347,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                     <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
                   </characteristics>
                 </profile>
@@ -2558,6 +2530,20 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <infoLinks>
         <infoLink name="Deep Strike" id="7f64-762b-597c-439e" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathwatch Melee Weapons" hidden="false" id="c615-a2f1-e6ff-a323" collective="false">
+      <profiles>
+        <profile name="Deathwatch Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1d02-6028-5811-6ad4">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
