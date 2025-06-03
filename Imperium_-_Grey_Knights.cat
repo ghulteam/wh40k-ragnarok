@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e69b-9027-dfed-8d30" name="Imperium - Grey Knights" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e69b-9027-dfed-8d30" name="Imperium - Grey Knights" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a3ae-0df8-209f-4979" name="Faction: Grey Knights" hidden="false"/>
     <categoryEntry id="bb03-fbb1-1b83-32ee" name="Grand Master" hidden="false"/>
@@ -1304,29 +1304,6 @@
         <categoryLink id="9f95-d291-5ae2-38f6" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="8297-6116-e346-dc04" name="Interceptor Squad" hidden="false" targetId="0692-df48-3db6-f79e" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5acd-a6e2-682a-989a" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="503a-0958-dd18-3cb7" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ac1-bca1-dc95-0c24" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="759a-3e3a-2621-d532" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="77ee-0d30-51e9-2351" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0fe3-8260-5fed-0aff">
           <constraints>
@@ -1349,7 +1326,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9125-b480-3181-2199" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1367,7 +1344,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1381,6 +1358,12 @@
         </entryLink>
         <entryLink id="0f07-3469-83c7-e57e" name="Storm Bolters" hidden="false" collective="false" import="true" targetId="511f-66bd-355d-3972" type="selectionEntry"/>
         <entryLink import="true" name="Nemesis Smite" hidden="false" id="8a8b-901d-fac9-1d6f" type="selectionEntry" targetId="7806-64d4-1ce5-2d08"/>
+        <entryLink import="true" name="Nemesis Combat Weapons" hidden="false" id="345a-657b-c36d-4c47" type="selectionEntry" targetId="6605-2acc-8348-7296">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d71e-655d-3181-cda0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02a5-7ffe-8b44-85ca" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1501,29 +1484,6 @@
         <categoryLink id="b317-9ee8-6845-c972" name="Terminator" hidden="false" targetId="3726-f1d3-1b96-0eb0" primary="false"/>
         <categoryLink id="c90e-639f-0a37-92ba" name="Paladin Squad" hidden="false" targetId="dbcb-c9aa-f41e-fbe2" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d841-54da-bb9d-e3cf" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c5-b6d5-17a9-c285" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5772-d366-cac9-4a82" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="37d4-2171-1adb-30b7" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="cb85-4e26-e86b-22ab" name="Unit Size" hidden="false" collective="false" import="true">
           <constraints>
@@ -1585,6 +1545,12 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Nemesis Smite" hidden="false" id="5594-1d81-854e-f93e" type="selectionEntry" targetId="7806-64d4-1ce5-2d08"/>
+        <entryLink import="true" name="Nemesis Paladin Combat Weapons" hidden="false" id="cac6-8213-1c29-6687" type="selectionEntry" targetId="cfd2-eaba-e55b-c946">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0493-0750-403a-f594" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b27-4219-49c0-ccc2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1644,7 +1610,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c580-5352-2df4-d482" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1662,7 +1628,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1694,6 +1660,62 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Nemesis Smite" hidden="false" id="1dcd-c77f-67ce-2f37" type="selectionEntry" targetId="7806-64d4-1ce5-2d08"/>
+        <entryLink import="true" name="Astartes Close Combat Weapons" hidden="false" id="87ab-af55-46a4-34f6" type="selectionEntry" targetId="5ed8-257d-8a09-f5de">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="18fd-6429-c177-93ef" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9706-4e9b-e6a3-d9a7" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="18fd-6429-c177-93ef">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="81c1-43d8-5188-634e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="39ec-bff1-54fd-fa5a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="9706-4e9b-e6a3-d9a7">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="81c1-43d8-5188-634e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="39ec-bff1-54fd-fa5a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Nemesis Combat Weapons" hidden="false" id="779c-f981-a8bd-b1e3" type="selectionEntry" targetId="6605-2acc-8348-7296">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91d9-193f-8cde-acfc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b30-ed59-aaf4-d27a" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="91d9-193f-8cde-acfc">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="81c1-43d8-5188-634e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="39ec-bff1-54fd-fa5a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="2b30-ed59-aaf4-d27a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="81c1-43d8-5188-634e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="3e53-9fb3-d8fc-4b30" childId="39ec-bff1-54fd-fa5a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1709,29 +1731,6 @@
         <categoryLink id="35e6-613c-02f8-edcb" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="82b6-7d49-518c-39bd" name="Purifier Squad" hidden="false" targetId="d88e-48b0-5e19-cc4e" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="06fa-f7fa-d124-a551" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea4c-383d-f2b2-41e9" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae8b-21b0-4e41-c383" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e85a-2502-2025-b96a" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="452d-cbf5-b798-5245" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="2645-19a4-8d77-927a">
           <constraints>
@@ -1754,7 +1753,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6f0e-c5ba-7434-8bfc" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1772,7 +1771,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1810,15 +1809,18 @@
       <entryLinks>
         <entryLink id="442b-29b4-68ff-b904" name="Storm Bolters" hidden="false" collective="false" import="true" targetId="511f-66bd-355d-3972" type="selectionEntry"/>
         <entryLink import="true" name="Purifying Flame" hidden="false" id="6b0c-b85b-bb98-7bdb" type="selectionEntry" targetId="4fbf-7f5e-5e92-a738"/>
+        <entryLink import="true" name="Nemesis Combat Weapons" hidden="false" id="253c-172d-fe75-cdee" type="selectionEntry" targetId="6605-2acc-8348-7296">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feee-ad78-abbc-65f7" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f0-6311-3f8f-8761" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5a96-ef82-6866-b8f7" name="Strike Squad" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="c90d-ab12-56b8-4fee" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="81a4-cb93-797d-8fe2" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="b8a1-acb7-34c3-6478" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
@@ -1828,29 +1830,6 @@
         <categoryLink id="4d85-9410-e0bb-0f83" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="6c46-4227-8a3c-77bb" name="Strike Squad" hidden="false" targetId="98e4-8421-6bef-d9f4" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0197-6682-c1f4-68a5" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014a-ce38-9cae-db93" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd6-5b83-0d94-739c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4acd-7ca6-f245-ccd5" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="98d1-5456-b440-9d1c" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="5363-a0a7-54d7-91dd">
           <constraints>
@@ -1873,7 +1852,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="65cb-432b-c87e-b24d" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -1891,7 +1870,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1912,6 +1891,12 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Nemesis Smite" hidden="false" id="5a01-e6c4-6a66-705d" type="selectionEntry" targetId="7806-64d4-1ce5-2d08"/>
+        <entryLink import="true" name="Nemesis Combat Weapons" hidden="false" id="c562-a1ff-7bae-06d0" type="selectionEntry" targetId="6605-2acc-8348-7296">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fbd-512f-d6ee-ef0d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9b0-f5fd-c1d4-1b29" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1931,29 +1916,6 @@
         <categoryLink id="00c7-21da-dc37-fc36" name="Terminator" hidden="false" targetId="3726-f1d3-1b96-0eb0" primary="false"/>
         <categoryLink id="1965-8297-be0e-cc73" name="Terminator Squad" hidden="false" targetId="2406-529a-90cc-8748" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="e478-11b4-1efb-0892" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5924-d507-8bc3-3b59" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c3-7dd6-1673-3ae0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="96c0-db96-75c5-8806" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="83d2-99cf-091b-8590" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="d890-5712-d98f-5146">
           <constraints>
@@ -2015,6 +1977,12 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Nemesis Smite" hidden="false" id="c399-ad85-16db-1f5e" type="selectionEntry" targetId="7806-64d4-1ce5-2d08"/>
+        <entryLink import="true" name="Nemesis Terminator Combat Weapons" hidden="false" id="a2cc-93db-593d-a5ae" type="selectionEntry" targetId="b3f9-5a20-e447-cbb6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="510d-70f8-ea1f-d49f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb4a-a4df-73ea-7d78" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -2296,6 +2264,48 @@
         <infoLink name="Witchfire" id="eb2f-7b84-abcf-6ad6" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
         <infoLink name="Inferno" id="fc9d-7635-ea45-28bb" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis Combat Weapons" hidden="false" id="6605-2acc-8348-7296">
+      <profiles>
+        <profile name="Nemesis Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e450-de53-7f29-a036">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis Terminator Combat Weapons" hidden="false" id="b3f9-5a20-e447-cbb6">
+      <profiles>
+        <profile name="Nemesis Terminator Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="10c3-1497-c4fe-eb3f">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis Paladin Combat Weapons" hidden="false" id="cfd2-eaba-e55b-c946">
+      <profiles>
+        <profile name="Nemesis Paladin Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4aa2-4a56-007c-5ba0">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
