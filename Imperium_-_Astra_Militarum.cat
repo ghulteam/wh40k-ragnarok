@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -890,11 +890,6 @@
         <categoryLink id="040a-70c0-2999-a5f9" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="756c-d0c7-a4c7-6163" name="Platoon Commander" hidden="false" collective="false" import="true" targetId="9363-476d-913d-61a5" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="8405-016b-0756-8a70" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="3f68-6d06-f55f-0693" name="Infantry Squad" hidden="false" collective="false" import="true" targetId="bd04-8c51-67d7-943a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c1f6-c072-d8fe-1764" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
@@ -1192,6 +1187,12 @@
         <categoryLink targetId="3a9f-824e-55e5-7763" id="f0c7-120c-b27d-aa46" primary="false" name="Artillery Team"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Platoon Commander" hidden="false" id="4dab-eab0-e230-9b97" type="selectionEntry" targetId="5c95-13e3-6f41-df44">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="b943-4ba8-577a-cbfc" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Enable Bodyguard Units" hidden="false" id="a841-46de-5e54-5c0c" type="selectionEntry" targetId="da2a-70c0-9822-60cb"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2ce6-a6c0-939f-d4b5" name="Crusaders" hidden="false" collective="false" import="true" type="unit">
@@ -2514,6 +2515,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="9bfc-12bd-f45a-1143" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
+        <infoLink name="Baleful Judge" id="b705-af3b-04fd-49bf" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="188a-9858-24aa-6d11" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2572,6 +2574,11 @@
           </constraints>
         </entryLink>
         <entryLink id="65cc-1d2d-772f-ac41" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="fff4-7541-7f51-d5da" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
+          <entryLinks>
+            <entryLink import="true" name="Command Squad" hidden="false" id="b8c7-6973-0e35-ecee" type="selectionEntry" targetId="7dee-c7f6-5568-2d96"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
@@ -2601,6 +2608,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="957a-6218-1e36-5f23" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
+        <infoLink name="Baleful Judge" id="3df3-257b-8745-ee44" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aa08-4625-3ccf-c68d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2673,6 +2681,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="9999-b6be-9d58-1989" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
+        <infoLink name="Baleful Judge" id="d53f-9fdc-0fe3-4dd5" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b6f7-3db4-109c-afd9" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2730,6 +2739,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="1da7-ce0f-c019-eda3" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
+        <infoLink name="Baleful Judge" id="af04-2f0b-ea6d-b322" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f379-75f1-2232-e8cc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2751,7 +2761,7 @@
         <entryLink id="fc6a-8546-3ac8-829f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2e8-0b49-fdc8-4989" name="Doomhammer" hidden="false" collective="false" import="true" type="unit">
@@ -3057,6 +3067,13 @@
           </constraints>
         </entryLink>
         <entryLink id="bc6e-e542-4d67-7eff" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="d872-1ef4-17cb-b264" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
+          <entryLinks>
+            <entryLink import="true" name="Militarum Tempestus Command Squad" hidden="false" id="53d5-946d-27dc-b25e" type="selectionEntry" targetId="e73a-a81b-6539-91b4"/>
+            <entryLink import="true" name="Militarum Tempestus Scions" hidden="false" id="f7b5-bfe4-72fc-45a7" type="selectionEntry" targetId="4594-e76d-4dc9-e667"/>
+            <entryLink import="true" name="Militarum Tempestus Aquilons" hidden="false" id="74b4-5717-cb50-1bd5" type="selectionEntry" targetId="559c-00f3-ad31-1035"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
@@ -3157,46 +3174,6 @@
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9363-476d-913d-61a5" name="Platoon Commander" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="b35a-170f-6120-eff2" name="Platoon Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b2fd-5128-26be-2336" name="Officer" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="7452-8086-60e7-561a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="4060-1bcb-8257-90b3" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
-        <categoryLink id="410f-1d9b-c6dd-ba39" name="Faction: [REGIMENT]" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
-        <categoryLink id="5ddb-3d63-419b-d731" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="d3e3-fef3-1cc1-15a5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="3252-b7eb-4a15-811d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="4676-a115-fe6b-0f71" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
-        <categoryLink id="ffce-043d-6a19-2dcb" name="Platoon Commander" hidden="false" targetId="b6a1-41e0-5fe3-e661" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d85c-051c-172f-5892" name="Officer Weapons" hidden="false" collective="false" import="true" targetId="24c6-0611-6c6f-91dd" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ac-6cbf-43cd-0817" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="195d-b9ac-b926-c016" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="97d5-2ef3-714c-16a8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd04-8c51-67d7-943a" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
@@ -4595,6 +4572,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d690-6a47-e6f2-e981" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Special Weapons" hidden="false" id="f23f-41d3-ba88-643f" type="selectionEntry" targetId="e8eb-9521-791d-5f9d">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39aa-5d44-83fa-8c6e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Regimental Standard" hidden="false" id="d414-f248-cee5-11ee" collective="false">
@@ -4605,7 +4590,7 @@
                 <profile name="Regimental Standard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="fb36-8f2d-c6b1-7d1d">
                   <characteristics>
                     <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of [REGIMENT] units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
-In Addition, whilst a friendly LIGHT [REGIMENT] Units is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
+In Addition, whilst a friendly LIGHT [REGIMENT] unit is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4653,7 +4638,12 @@ In Addition, whilst a friendly LIGHT [REGIMENT] Units is within 6&quot; of a uni
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d0df-23ba-4380-5dc1"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="3" field="d0df-23ba-4380-5dc1">
+            <modifier type="decrement" value="1" field="d0df-23ba-4380-5dc1">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="7dee-c7f6-5568-2d96" childId="f23f-41d3-ba88-643f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="d0df-23ba-4380-5dc1">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="7dee-c7f6-5568-2d96" childId="9dc7-5404-a524-75b8" shared="true"/>
               </conditions>
@@ -7121,7 +7111,7 @@ Praetor Launcher for this action.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7605,6 +7595,51 @@ Praetor Launcher for this action.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Platoon Commander" hidden="false" id="5c95-13e3-6f41-df44">
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Officer" id="ec2b-6a30-64a6-509f" hidden="false" type="profile" targetId="8694-ef52-5c68-4939"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="37a5-7dda-f294-cd54" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="f72b-2401-4fa3-443f" collective="false" targetId="24c6-0611-6c6f-91dd" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d490-e961-c5fe-f9e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5131-4237-2e9b-a337" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bodyguard Unit" hidden="false" id="13d0-d533-0f27-1f56" type="selectionEntryGroup" targetId="5000-2279-81fa-7c79">
+          <entryLinks>
+            <entryLink import="true" name="Command Squad" hidden="false" id="5340-cd70-4773-beb4" type="selectionEntry" targetId="7dee-c7f6-5568-2d96"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Platoon Commander" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0ac8-e9db-d261-0049">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="7585-a84d-309a-75e5" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="160f-0927-c728-1ce6" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="65e8-c746-2452-0aee" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="bcad-d3f6-974a-32d9" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="3f9d-8310-412e-1741" id="c74f-ea68-3022-60b4" primary="false" name="Faction: [REGIMENT]"/>
+        <categoryLink targetId="93ec-5bb0-7861-be16" id="c212-e722-fb62-c75c" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="6fb8-97f4-5bda-4e43" id="c969-d588-75df-a328" primary="false" name="Officer"/>
+        <categoryLink targetId="b6a1-41e0-5fe3-e661" id="41d4-8b5d-21b5-94f5" primary="false" name="Platoon Commander"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="f47d-feaf-e956-4fcc" name="Ecclesiarchy Battle Conclave" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -7662,4 +7697,24 @@ Praetor Launcher for this action.</characteristic>
 ASTRA MILITARUM units in this Detachment can use the Leadership characteristic of their Commander instead of their own.</description>
     </rule>
   </rules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Bodyguard Unit" id="5000-2279-81fa-7c79" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb49-3432-dc00-feea" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="da2a-70c0-9822-60cb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1db6-59cb-28cd-51be" id="5154-b762-5ddb-b26d" primary="false" name="Bodyguard"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bodyguard" id="5078-17cf-6385-082f" hidden="false" type="profile" targetId="ed86-d4f3-a9f5-1923"/>
+      </infoLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

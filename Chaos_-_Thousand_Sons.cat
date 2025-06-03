@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f991-f86c-a693-dcd9" name="Chaos - Thousand Sons" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f991-f86c-a693-dcd9" name="Chaos - Thousand Sons" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="042b-9cd7-f7fa-78e0" name="Warp Vortex - D3 Roll">
       <characteristicTypes>
@@ -437,7 +437,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="a1e7-ad03-b978-ec8a" id="2b58-cce1-e09f-bc78" primary="false" name="Faction: Tzeentch"/>
         <categoryLink targetId="d0ec-2044-09f4-f7ff" id="e0c8-a0d0-3493-a68f" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="de3f-40e8-687f-1ca8" id="526e-64ab-e66a-176d" primary="false" name="Faction: Heretic Astartes"/>
-        <categoryLink targetId="cd44-4459-9712-0c95" id="9b85-1136-dc19-dd4b" primary="false" name="Tzeentch Daemonkin"/>
+        <categoryLink targetId="cd44-4459-9712-0c95" id="9b85-1136-dc19-dd4b" primary="false" name="Faction: Tzeentch Daemonkin"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9d07-ec7f-ff51-1bf2" name="The Black Staff of Ahriman" hidden="false" collective="false" import="true" type="upgrade">
@@ -839,33 +839,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="45e3-a35f-061e-20e7" name="Hellfyre Missile Rack" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="increment" field="b25e-b019-fb3e-667a" value="1">
-              <conditions>
-                <condition field="selections" scope="4d0f-9457-79cd-0e10" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb7c-79e1-5978-7470" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b25e-b019-fb3e-667a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="8ea0-6e27-cee9-24ac" name="Hellfyre Missile Rack" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="db49-dcf1-59fb-c16f" name="Prosperine khopeshs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d0f-c885-2e96-10ed" type="min"/>
@@ -944,32 +917,15 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45eb-1e35-d694-90aa" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="15ec-1454-54e2-8872" name="Heavy Warpflamer" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="87dc-00b7-f9e0-57c3" name="Heavy Warpflamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="1899-33c2-21c1-d29d" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="c64d-cb59-9a75-7aed" name="Soulreaper Cannon" hidden="false" collective="false" import="true" targetId="3880-a251-e54e-063c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy Warpflamer" hidden="false" id="efae-fe2f-3f6f-4037" type="selectionEntry" targetId="b0da-c014-9551-eff6">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -978,6 +934,19 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <entryLinks>
         <entryLink id="eab7-510a-de12-dfc7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink import="true" name="Warpsmite" hidden="false" id="a6b2-f999-64a9-9cb9" type="selectionEntry" targetId="7a94-d923-8da2-a335"/>
+        <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="7cf4-2507-4302-25a7" type="selectionEntry" targetId="d08a-665e-7702-149c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="028a-d3e4-c31c-f021" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="028a-d3e4-c31c-f021">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="4d0f-9457-79cd-0e10" childId="bb7c-79e1-5978-7470" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -1386,6 +1355,170 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <infoLink name="Witchfire" id="89d1-6bff-0713-61a7" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
         <infoLink name="Inferno" id="3f24-3501-a560-85a5" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sekhetar Robots" hidden="false" id="20eb-b186-2ba1-6075">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="932d-8a60-1800-d89a" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="637e-05db-d6ae-f2a1" type="selectionEntry" targetId="6144-aa85-b770-2f33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e57-13e0-42bd-bfee" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c34a-ed37-27a3-9316" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="303d-9862-d9e3-cc00" type="selectionEntry" targetId="d08a-665e-7702-149c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="19d5-1233-8d15-9bb5" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ce62-4970-c9f6-b77a" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="ce62-4970-c9f6-b77a">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="20eb-b186-2ba1-6075" childId="2550-815e-c3ba-b039" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="19d5-1233-8d15-9bb5">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="20eb-b186-2ba1-6075" childId="2550-815e-c3ba-b039" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Heavy Warpflamer" hidden="false" id="819f-9a7c-18ec-f621" type="selectionEntry" targetId="b0da-c014-9551-eff6">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="97df-7bed-b4b1-dc1d" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="74c0-da60-161d-7bec" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="97df-7bed-b4b1-dc1d">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="20eb-b186-2ba1-6075" childId="2550-815e-c3ba-b039" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="74c0-da60-161d-7bec">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="20eb-b186-2ba1-6075" childId="2550-815e-c3ba-b039" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="d9d0-251e-da88-6ec9" hidden="false" defaultSelectionEntryId="acd5-05a0-701f-25e0">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2 models" hidden="false" id="acd5-05a0-701f-25e0">
+              <profiles>
+                <profile name="Sekhetar Robots (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8782-4dc1-1c3f-3353">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 models" hidden="false" id="df55-5fce-d3f0-1eac">
+              <profiles>
+                <profile name="Sekhetar Robots (4 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2550-815e-c3ba-b039">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45ce-e5cd-fcb8-7a38" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa0-3129-5ccf-1ac5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arm Weapon" id="68f0-ea6c-a7fe-dead" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pyreflux Meltaguns" hidden="false" id="2953-c508-3401-7b66">
+              <profiles>
+                <profile name="Pyreflux Meltaguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6218-ddbf-967e-8af5">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power Claws" hidden="false" id="75bb-2acf-95ab-69a6">
+              <profiles>
+                <profile name="Power Claws" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="20ef-1f6a-893d-d01d">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ae-68a5-8e9e-2770" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e545-99b9-13c7-6e20" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Stealth" id="21d8-66c0-d160-09c8" hidden="false" type="profile" targetId="b133-8e04-3e7b-9fd6"/>
+        <infoLink name="Infiltrators" id="7ff9-aa6f-2fec-d293" hidden="false" type="rule" targetId="f07d-6c22-ac83-604c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="d08a-665e-7702-149c" collective="false">
+      <profiles>
+        <profile name="Hellfyre Missile Rack" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="84a2-7949-92d7-9629">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Warpflamer" hidden="false" id="b0da-c014-9551-eff6" collective="false">
+      <profiles>
+        <profile name="Heavy Warpflamer" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b217-65ae-3af4-1228">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Inferno" id="f033-5fba-1c96-adfb" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

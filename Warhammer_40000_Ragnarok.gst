@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="24" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="25" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -101,6 +101,7 @@
     <categoryEntry id="1aa3-a793-7c54-abe7" name="Heavy Support, Transport" hidden="false"/>
     <categoryEntry id="4c58-0435-44f4-4154" name="Fast Attack, Transport" hidden="false"/>
     <categoryEntry id="38d6-4782-ed3b-5187" name="Lord of War, Transport" hidden="false"/>
+    <categoryEntry name="Bodyguard" id="1db6-59cb-28cd-51be" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Ad Hoc Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -984,6 +985,14 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enable Bodyguard Units" hidden="false" id="da2a-70c0-9822-60cb">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366c-db5d-91c0-fb52"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="b1fd-719c-4789-4656" id="ae91-5a18-2bda-935d" primary="true" name="List Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="acd4-8bbf-d48d-1a62" name="Warmaster Traits" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true">
@@ -1287,6 +1296,19 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
     <profile id="5711-082b-6f95-d8ef" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bodyguard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ed86-d4f3-a9f5-1923">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Light Character Units may take a choice of Bodyguard Units. 
+-CHARACTER and BODYGUARD act as one Unit; have to keep coherency
+-CHARACTER and BODYGUARD keep their seperate profiles. Track CHARACTER and BODYGUARD Blast and Wound Markers separately. CHARACTER may not be targeted directly unless either the Attacker has &quot;Sniper&quot; Special Rule or the Attacker is a CHARACTER and attacks with a Fight Action
+-When rolling Saves for the CHARACTER or BODYGUARD, if there are still Blast Markers remaining, Blast Markers spill over to other part of the Unit. May result in CHARACTER or BODYGUARD having to roll saves twice in a single round. 
+-CHARACTER and BODYGUARD Unit may only Deep Strike if both have Deep Strike
+-CHARACTER and BODYGUARD may only Infiltrate if both have Infiltrate
+-CHARACTER Abilities are only active and weapons may only be used as long as CHARACTER is still alive. 
+-BODYGUARD Abilities are only active and weapons may only be used as long as BODYGUARD is still alive. 
+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
