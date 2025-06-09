@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="58" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="59" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -2792,7 +2792,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name=" Catachan Jungle Fighters" hidden="false" id="0cb7-8987-0bca-413b" type="selectionEntry" targetId="93c3-f310-5949-c87c">
+    <entryLink import="true" name="Catachan Jungle Fighters" hidden="false" id="0cb7-8987-0bca-413b" type="selectionEntry" targetId="93c3-f310-5949-c87c">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="611f-0459-45cc-cc3b" primary="true" name="Troops"/>
       </categoryLinks>
@@ -3131,6 +3131,11 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Tempestor Prime with Command Squad" hidden="false" id="2f59-43d0-464d-da39" type="selectionEntry" targetId="0b3e-9f9a-791d-bd44">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="45fc-adec-23b1-3ee2" primary="true" name="HQ"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -10518,10 +10523,10 @@ In Addition, whilst a friendly LIGHT ELYSIAN DROP TROOPS Units is within 6&quot;
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Commander with Command Squad" hidden="false" id="6725-268b-4058-1633" collective="false">
       <profiles>
-        <profile name="Command Squad (4/5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ace4-ce80-043c-94a7">
+        <profile name="Commander with Command Squad (4/5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ace4-ce80-043c-94a7">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
@@ -11939,6 +11944,76 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
       </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tempestor Prime with Command Squad" hidden="false" id="0b3e-9f9a-791d-bd44" collective="false">
+      <profiles>
+        <profile name="Tempestor Prime with Command Squad (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9506-5d61-cecd-4dff">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="e22a-7ae0-929e-c9e4" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink name="Officer" id="fc22-91a1-6741-46be" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="0444-9716-5183-1ca3" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="6f92-c1c5-1730-2b59" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Faction: Militarum Tempestus" hidden="false" id="8a3a-9615-b89e-2685" targetId="b681-41e3-5fe3-e661" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="68c1-95d4-65e0-86d3" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="0c81-42e7-1564-7f34" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Militarum Tempestus Command Squad" hidden="false" id="755b-93d8-6d3a-9e58" targetId="b621-41e3-5fe3-e661" primary="false"/>
+        <categoryLink targetId="b6a1-41e3-5f03-e661" id="a37e-b6a3-fc11-456a" primary="false" name="Tempestor Prime"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="a3e9-398c-f022-4b4c" primary="false" name="Character"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Platoon Standard" hidden="false" id="f24b-6b7c-8979-d795" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8785-9403-1185-e7eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Platoon Standard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ebab-5010-edbe-34b4">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of MILITARUM TEMPESTUS units whilst they are within 6&quot; of any friendly MILITARUM TEMPESTUS units with a Platoon Standard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Hot-shot Lasguns" hidden="false" id="2da1-19e5-b27e-eba5" collective="false" targetId="08c7-f4c2-9767-3131" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5094-f124-7f02-6c15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8902-1573-a493-fd52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="0782-3dc1-70ac-3d4b" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="dfcc-a0f0-ed85-9245" type="selectionEntry" targetId="6144-aa85-b770-2f33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e80-a544-394b-4787" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3fd-037d-2bcb-6869" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Officer Weapons" hidden="false" id="35b9-515c-15a9-170c" collective="false" targetId="24c6-0611-6c6f-91dd" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b42d-083c-b764-64ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d1-0502-95cc-c2e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

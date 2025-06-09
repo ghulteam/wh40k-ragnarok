@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="a37b-2844-afcc-f4eb" name="Tyranid Hive Fleets"/>
     <publication id="5101-ac41-4666-a01a" name="Forge World Tyranids"/>
@@ -67,6 +67,8 @@
     <categoryEntry id="228c-e400-b98e-8f15" name="Von Ryan&apos;s Leapers" hidden="false"/>
     <categoryEntry id="3a83-9f3e-700f-8b54" name="Parasite of Mortrex" hidden="false"/>
     <categoryEntry id="d289-336a-e78c-7da0" name="Neruolictor" hidden="false"/>
+    <categoryEntry name="Hyperadapted Raveners" id="6f28-ddac-ce9a-54d1" hidden="false"/>
+    <categoryEntry name="Ravener Prime" id="8b72-2e81-83f9-0895" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="ba9b-43de-53b3-415a" name="Broodlord" hidden="false" collective="false" import="true" targetId="1b06-fb81-fd21-a23e" type="selectionEntry">
@@ -757,6 +759,16 @@
     <entryLink id="69b5-d66d-b30e-0ae3" name="Tyranid Shrikes" hidden="false" collective="false" import="true" targetId="9705-25ff-152f-20a8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1b4b-0cb8-64aa-1c24" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tyranid Prime" hidden="false" id="6593-922d-e897-31c4" type="selectionEntry" targetId="2eab-6d96-5b70-6388">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="7221-411d-2f5d-297e" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hyperadapted Raveners" hidden="false" id="7cb7-f380-e50d-481d" type="selectionEntry" targetId="8079-6361-3ada-6378">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="f9ad-7dd4-8c34-4810" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6516,6 +6528,151 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
       <infoLinks>
         <infoLink name="Witchfire" id="4e97-9b47-8815-b5c4" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hyperadapted Raveners" hidden="false" id="8079-6361-3ada-6378">
+      <profiles>
+        <profile name="Hyperadapted Raveners" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d7ce-7113-f856-35df">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alpha Invader" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9440-d29a-e830-f5ec" page="">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by [HIVE FLEET] RAVENER units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="31c7-5265-3f00-db0a" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="5250-0fc5-3930-75ca" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ravener Melee Weapons" hidden="false" id="d772-587f-bbe8-848e" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c0-eb75-6e7b-33d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a06-b5d7-2e19-c335" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ravener Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="26ee-941e-05de-e621">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Venom Bolt" hidden="false" id="465b-852b-3a7e-86a4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7cd-2ed2-719e-dd86" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b268-6fd5-9bf4-88e8" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Venom Bolt" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a3b0-6fa7-0e2a-9ebe">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Inferno" id="0a4f-35fa-b21c-9d9b" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="7de8-025c-8dd2-77f6" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="90d5-c96d-2ff2-893a" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="c32a-5518-ce7d-c818" primary="false" name="Character"/>
+        <categoryLink targetId="20b7-cc09-763a-ab83" id="a5b3-b7c5-f6a0-28de" primary="false" name="Faction: Tyranids"/>
+        <categoryLink targetId="3699-ec81-e389-df02" id="ea93-a4da-2098-9cde" primary="false" name="Faction: Tyranid Hive Fleets"/>
+        <categoryLink targetId="e4b8-286f-8440-1d05" id="9aba-f268-a6c7-2bcb" primary="false" name="Faction: [HIVE FLEET]"/>
+        <categoryLink targetId="9006-f915-0a26-a45e" id="1273-ae79-385a-aacf" primary="false" name="Synapse Creature"/>
+        <categoryLink targetId="9f26-1ebd-db0b-309b" id="7394-a419-a159-5bd0" primary="false" name="Ravener"/>
+        <categoryLink targetId="6f28-ddac-ce9a-54d1" id="daee-22fe-8018-c1a6" primary="false" name="Hyperadapted Raveners"/>
+        <categoryLink targetId="8b72-2e81-83f9-0895" id="50ad-5af0-24e9-c7eb" primary="false" name="Ravener Prime"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ravener Prime" hidden="false" id="0c75-bb53-fdf1-0e48">
+      <profiles>
+        <profile name="Ravener Prime" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4212-e27d-6fb3-0bc9">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alpha Invader" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="19ed-0073-e95e-15b0" page="">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by [HIVE FLEET] RAVENER units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="b9d7-f29e-d766-965a" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="077b-8cb2-04bb-6bcc" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="20b7-cc09-763a-ab83" id="f3d6-1c35-98ac-c159" primary="false" name="Tyranids"/>
+        <categoryLink targetId="9f26-1ebd-db0b-309b" id="fa32-66a0-7b79-299b" primary="false" name="Ravener"/>
+        <categoryLink targetId="8b72-2e81-83f9-0895" id="45d5-28e3-bf77-65ca" primary="false" name="Ravener Prime"/>
+        <categoryLink targetId="9006-f915-0a26-a45e" id="1e95-4459-63e7-e95d" primary="false" name="Synapse Creature"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="a301-6bfe-582e-2972" primary="false" name="Infantry"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="5072-b6bb-c482-e7f5" primary="false" name="Character"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="b9c8-1539-f7c3-5b5b" primary="false" name="Light"/>
+        <categoryLink targetId="3699-ec81-e389-df02" id="6181-c42e-9702-8b6e" primary="false" name="Faction: Tyranid Hive Fleets"/>
+        <categoryLink targetId="e4b8-286f-8440-1d05" id="8657-2812-f576-7d0d" primary="false" name="Faction: [HIVE FLEET]"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ravener Prime Melee Weapons" hidden="false" id="33df-f6e9-c78d-61f5" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2930-e82d-83ac-6470" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26af-87ff-5990-0db7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ravener Prime Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5b81-2bbe-d70c-1e6d">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
