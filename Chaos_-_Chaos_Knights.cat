@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="21" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="32fa-161a-6bdb-2a07" name="Chaos - Chaos Knights" revision="22" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="21a9-75bf-0619-e801" name="Faction: Chaos Knights" hidden="false"/>
     <categoryEntry id="b868-0761-072e-7456" name="Faction: [Questor Traitoris]" hidden="false"/>
@@ -118,7 +118,11 @@
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="c779-73ea-d815-ec8b" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Knight Ruinator" hidden="false" id="aefa-3bca-bf79-1954" type="selectionEntry" targetId="f4d4-8781-89b6-c2b2"/>
+    <entryLink import="true" name="Knight Ruinator" hidden="false" id="aefa-3bca-bf79-1954" type="selectionEntry" targetId="f4d4-8781-89b6-c2b2">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="165b-63d6-1a13-df0b" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="228d-e058-5c88-cba8" name="Fallen Courts" hidden="false">
@@ -2102,30 +2106,6 @@ One [CHAOS KNIGHTS] unit becomes a CHARACTER and so can be a WARLORD if they are
         <categoryLink id="9ecc-1954-c9fe-a319" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink targetId="7c0f-e608-00d0-e9e7" id="32f6-c3b9-f9e8-e5ff" primary="false" name="Knight Ruinator"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9da3-78b4-2392-0dbd" name="Carapace Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f08-8307-4d85-9986" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="93b8-5574-fa14-0040" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="0529-702c-4138-7704" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="b0eb-a8e8-a689-a5f1" name="Stormspear Missile Pod" hidden="false" collective="false" import="true" targetId="a126-736f-33b7-b330" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="fe65-1549-4c7e-95cf" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="9823-be43-0811-5a0e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a2a8-76c6-15a5-c9d9" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
           <modifiers>
@@ -2163,18 +2143,18 @@ One [CHAOS KNIGHTS] unit becomes a CHARACTER and so can be a WARLORD if they are
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="45"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Terrorpulse Missile Launchers" hidden="false" id="aca9-cf0b-450c-676c">
+        <selectionEntry type="upgrade" import="true" name="Terrorpulse Missiles" hidden="false" id="aca9-cf0b-450c-676c">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0f6e-2b77-0d0c-7efe" includeChildSelections="false"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a39f-d4ae-983b-4e96" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6e-2b77-0d0c-7efe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a39f-d4ae-983b-4e96" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Terrorpulse Missile Launchers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="722e-e74c-594b-242e">
+            <profile name="Terrorpulse Missiles" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="722e-e74c-594b-242e">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -2213,7 +2193,7 @@ One [CHAOS KNIGHTS] unit becomes a CHARACTER and so can be a WARLORD if they are
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
               </characteristics>
