@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="60" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="61" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -139,6 +139,7 @@
     <categoryEntry id="6e71-208e-ad7f-5a57" name="Veteran Intercessor Squad" hidden="false"/>
     <categoryEntry id="c3b5-c2f7-79f7-9548" name="Judiciar" hidden="false"/>
     <categoryEntry name="Relic Glaive Super-heavy Tank" id="2e94-533d-9b89-7239" hidden="false"/>
+    <categoryEntry name="Storm Speeder" id="82f8-e0b1-0a01-77fe" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -2294,7 +2295,11 @@
           </constraints>
           <entryLinks>
             <entryLink id="71bf-18c9-17c5-5440" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
-            <entryLink id="65ba-dd9f-bb9c-2c32" name="Onslaught Gatling Cannon" hidden="false" collective="false" import="true" targetId="7d65-bc0e-c6d8-a54d" type="selectionEntry"/>
+            <entryLink id="65ba-dd9f-bb9c-2c32" name="Onslaught Gatling Cannon" hidden="false" collective="false" import="true" targetId="7d65-bc0e-c6d8-a54d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0c9-aa12-2f9b-c1df" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f7ee-fe09-58cf-37f9" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="09b1-07a6-4582-5cfd">
@@ -2318,9 +2323,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7d65-bc0e-c6d8-a54d" name="Onslaught Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fb-5d05-5edf-7437" type="max"/>
-      </constraints>
       <profiles>
         <profile id="0f3a-c38d-2018-bba8" name="Onslaught Gatling Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -4969,6 +4971,9 @@
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e36-e420-bf6c-b443" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8782,78 +8787,179 @@
         <categoryLink id="3656-b60e-d8ba-8bac" name="Land Speeder Tempests" hidden="false" targetId="dc6a-d79b-8a2c-d193" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8a22-3e9e-5245-573c" name="Land Speeder Tempest" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="upgrade" import="true" name="Armoured Hulls" hidden="false" id="58f0-01eb-45ce-06fc" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf52-1034-c772-ac7a" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7928-a27d-ed20-7178" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9f7-48cd-4b7a-d429" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b49-eed0-0d6d-6e07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="b5f1-f851-dff1-4628" name="Tempest Salvo Launcher" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfc-3be2-79ed-d72f" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cba-d101-6a10-0572" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="52c1-e961-6af3-3339" name="Tempest Salvo Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5d32-a4e6-51b2-0d73" name="Assault Cannon" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c9-03d3-72ee-3ed9" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b381-de66-d211-fefd" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d438-b3d9-607d-1f97" name="Assault Cannon" hidden="false" targetId="27a0-7c43-0ce4-531a" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Armoured Hulls" hidden="false" id="6444-4f1a-229c-3037" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2250-665c-8e90-d5da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a692-2c26-5259-7cbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Armoured Hulls" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a167-e852-f300-a0a8">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="1c5d-efb7-1a78-d5c0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-          </entryLinks>
+          <profiles>
+            <profile name="Armoured Hulls" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="24ce-8e92-8d1f-5672">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="8e35-9ef7-8e02-240e" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0908-59d4-f884-c035" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6802-9b86-5736-a5fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Assault Cannon" id="6cec-5185-3498-c32f" hidden="false" targetId="27a0-7c43-0ce4-531a" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="0908-59d4-f884-c035">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="381d-fec4-be52-e739" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="6802-9b86-5736-a5fd">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="381d-fec4-be52-e739" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="6802-9b86-5736-a5fd">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="31f6-fa50-a652-bd98" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="0908-59d4-f884-c035">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="31f6-fa50-a652-bd98" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tempest Salvo Launcher" hidden="false" id="409a-5e12-d03a-f86b" collective="true">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e6db-fb77-6a11-06c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8802-c1fc-2a45-aa38" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tempest Salvo Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="477d-a4da-aaa2-d6e6">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="4" field="e6db-fb77-6a11-06c3">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="381d-fec4-be52-e739" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="8802-c1fc-2a45-aa38">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="381d-fec4-be52-e739" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="e6db-fb77-6a11-06c3">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="31f6-fa50-a652-bd98" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="8802-c1fc-2a45-aa38">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ea0b-da21-710a-a0b8" childId="31f6-fa50-a652-bd98" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="b02c-5447-49b7-f803" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a0c6-40a7-fbf7-fa4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aef6-93a6-dd91-d8b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="d0f2-4cec-9f2f-9ad0" hidden="false" collective="false" import="true" defaultSelectionEntryId="59b3-dc99-6d04-3934">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5367-822d-6a5e-a8dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc46-54d9-6ebf-d4d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="59b3-dc99-6d04-3934" collective="false">
+              <profiles>
+                <profile name="Land Speeder Tempests (1 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7095-21a6-d3b1-0671">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="31f6-fa50-a652-bd98" collective="false">
+              <profiles>
+                <profile name="Land Speeder Tempests (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="b0eb-5699-06a5-6bf0">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="381d-fec4-be52-e739" collective="false">
+              <profiles>
+                <profile name="Land Speeder Tempests (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2119-65f0-5f3f-4a2b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ac7c-d4c4-d0bf-8d7b" name="Relic Javelin Attack Speeder" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -13542,6 +13648,224 @@ After this is resolved, count the number of wounds that were scored by the attac
         <infoLink name="Rapid Fire" id="6f17-ab2b-8167-131d" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Speeder" hidden="false" id="246b-cf52-83e3-8f6f">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5ece-f162-fce9-d1c4" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Armoured Bulk" hidden="false" id="172f-ae4c-9fa3-c5cb" type="selectionEntry" targetId="c343-cc19-3a64-c7f2"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Storm Speeder" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="353c-25b3-786c-0b2e">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Storm Speeder Hailstrike" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="246b-cf52-83e3-8f6f" childId="659b-2f3f-8c1a-b9e5" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Storm Speeder Hammerstrike " field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="246b-cf52-83e3-8f6f" childId="69c4-135c-aab0-02a3" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Storm Speeder Thunderstrike" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="246b-cf52-83e3-8f6f" childId="18a4-d9c3-e544-d0f9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant" id="4626-d12d-7725-15c7" hidden="false" defaultSelectionEntryId="659b-2f3f-8c1a-b9e5">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hailstrike" hidden="false" id="659b-2f3f-8c1a-b9e5">
+              <entryLinks>
+                <entryLink import="true" name="Twin Ironhail Heavy Stubber" hidden="false" id="97e4-302d-fa0d-9a0d" type="selectionEntry" targetId="3680-d041-a867-ab53"/>
+                <entryLink import="true" name="Fragstorm Grenade Launcher" hidden="false" id="103c-e71d-efe9-0dc9" type="selectionEntry" targetId="93d6-16c7-c4fa-953b">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ad1-7d9e-8373-a727" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a494-6316-a77d-624c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Onslaught Gatling Cannon" hidden="false" id="1b9e-158f-a8f0-eb0c" type="selectionEntry" targetId="7d65-bc0e-c6d8-a54d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2e4-5fa9-a542-c6b2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d2-0df0-04e2-3acf" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hammerstrike " hidden="false" id="69c4-135c-aab0-02a3">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Krakstorm Grenade Launcher" hidden="false" id="dd94-fc6c-084a-1e02">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="951a-0e81-e0eb-ea06" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d131-4e38-32b3-3e46" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Krakstorm Grenade Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7278-c835-0213-8c33">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Melta Destroyer" hidden="false" id="5777-3130-fd13-bac0">
+                  <profiles>
+                    <profile name="Melta Destroyer" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="fa4a-d24e-e98a-c43e">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d66-9a98-bc07-3cb2" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e29-2e75-cac2-28e8" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Destroyer" id="9b31-1d0f-81a6-6aa2" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hammerstrike Missile Launcher" hidden="false" id="7eb8-fbff-7de7-3503">
+                  <profiles>
+                    <profile name="Hammerstrike Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4eca-45ab-7af6-d858">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e4e-87c5-1dd2-08e3" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b99-0be7-ea3d-d6ad" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thunderstrike" hidden="false" id="18a4-d9c3-e544-d0f9">
+              <entryLinks>
+                <entryLink import="true" name="Las-talon" hidden="false" id="bf35-aead-74a1-4288" type="selectionEntry" targetId="81e8-4ce7-961a-737a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d11d-a84d-dfb2-b3be" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc80-9375-ad4b-1544" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin Icarus Rocket Pod" hidden="false" id="6eb0-e266-4872-9c0b" type="selectionEntry" targetId="f37c-f047-78c5-992e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e7c-2e86-daaf-18ba" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7671-f5fe-d98b-4c33" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Stormfury Missiles" hidden="false" id="4da2-c009-d9a6-5234">
+                  <profiles>
+                    <profile name="Stormfury Missiles" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="fbe3-2c2f-c956-67e6">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f1e-0a4e-1028-d38f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a89c-0981-b6f3-3055" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Destroyer" id="20f0-68e9-9869-9663" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd30-4e33-2c89-5a73" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ce7-9cc0-487e-4a0b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="b8b3-c6e3-c87d-6d7f" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="ec72-9618-d6c9-8b34" primary="false" name="Vehicle"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="89cd-7bb1-d5da-82be" primary="false" name="Fly"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="d614-d7c7-d686-ccdf" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="fe1c-5fce-f07d-186b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="82f8-e0b1-0a01-77fe" id="dc5d-1137-eb6b-bc75" primary="false" name="Storm Speeder"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Ironhail Heavy Stubber" hidden="false" id="3680-d041-a867-ab53" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8962-67b2-f423-6b8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd44-df6c-df41-a077" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Twin Ironhail Heavy Stubber" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3874-0e94-1ba2-3c15">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Icarus Rocket Pod" hidden="false" id="f37c-f047-78c5-992e" collective="false">
+      <profiles>
+        <profile name="Icarus Rocket Pod" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="69bc-7759-b85e-a73d">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti-air" id="6aca-d76a-4842-cfdb" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0c52-4d9c-2be4-6e13" name="Dreadnought Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="38a9-fc85-572f-1f9c">
@@ -13873,4 +14197,14 @@ After this is resolved, count the number of wounds that were scored by the attac
   <catalogueLinks>
     <catalogueLink id="4404-0180-5b33-35b4" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Ironhail Heavy Stubber" hidden="false" id="04a1-20dd-86ac-66f1" collective="false" targetId="f2e6-2219-c71f-9401" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1253-41a7-003a-c425" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
 </catalogue>

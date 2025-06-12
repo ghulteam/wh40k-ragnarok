@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c4cc-6685-da8c-eecb" name="Imperium - Blood Angels" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1017,6 +1017,12 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink import="true" name="Apothecary" hidden="false" id="0701-d400-574a-ebe2" type="selectionEntry" targetId="47e5-110b-315c-0cb3">
       <categoryLinks>
         <categoryLink targetId="f7a9-266d-efb6-d80f" id="71f7-0e01-0a13-248c" primary="false" name="Faction: Blood Angels"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Storm Speeder" hidden="false" id="55cf-e5b0-082b-3923" type="selectionEntry" targetId="246b-cf52-83e3-8f6f">
+      <categoryLinks>
+        <categoryLink targetId="f7a9-266d-efb6-d80f" id="8a07-e615-62b4-e15e" primary="false" name="Faction: Blood Angels"/>
+        <categoryLink targetId="3945-9603-5902-58c0" id="58b7-fa25-6faf-5341" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2764,7 +2770,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="1ab8-958a-9454-a68e" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
-            <entryLink import="true" name="Onslaught Gatling Cannon" hidden="false" id="cc73-b537-7fc2-7527" collective="false" targetId="7d65-bc0e-c6d8-a54d" type="selectionEntry"/>
+            <entryLink import="true" name="Onslaught Gatling Cannon" hidden="false" id="cc73-b537-7fc2-7527" collective="false" targetId="7d65-bc0e-c6d8-a54d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9320-7fd3-d5a9-318e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
