@@ -1197,6 +1197,7 @@
     <selectionEntryGroup name="Bodyguard Unit" id="5000-2279-81fa-7c79" hidden="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb49-3432-dc00-feea" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c853-9beb-734c-10a1" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -1208,9 +1209,6 @@
       <categoryLinks>
         <categoryLink name="Bodyguard" hidden="false" id="5154-b762-5ddb-b26d" targetId="1db6-59cb-28cd-51be" primary="false"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Bodyguard" id="5078-17cf-6385-082f" hidden="false" type="profile" targetId="ed86-d4f3-a9f5-1923"/>
-      </infoLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
