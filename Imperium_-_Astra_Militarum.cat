@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="60" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="61" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -125,6 +125,8 @@
     <categoryEntry name="Death Korps Quartermaster Cadre" id="e984-8f10-12f0-dd01" hidden="false"/>
     <categoryEntry name="Death Riders" id="4ef8-3529-5624-24bf" hidden="false"/>
     <categoryEntry name="Faction: Death Korps of Krieg" id="6bec-aa67-8d49-84f1" hidden="false"/>
+    <categoryEntry name="Commisar-General" id="4bd0-fe2b-6823-65fe" hidden="false"/>
+    <categoryEntry name="Commisar-General with Cadet Commisar Retinue" id="23d8-5f60-d327-b63e" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -2460,6 +2462,8 @@
         <categoryLink id="7c47-ac17-84ad-a62a" name="Fortress of Arrogance" hidden="false" targetId="ba94-8dea-0c56-4257" primary="false"/>
         <categoryLink id="4238-13ae-2b5b-ecec" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="a405-a5ad-27f1-d425" name="Faction: Officio Prefectus" hidden="false" targetId="b6a8-41e3-5fe3-e661" primary="false"/>
+        <categoryLink targetId="b6a1-41e3-5fe0-e661" id="73a7-f5c6-a8ee-bfe1" primary="false" name="Commissar Yarrick"/>
+        <categoryLink targetId="b6a1-81e3-5fe3-e661" id="35de-e46e-2841-40b1" primary="false" name="Commissar"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -3148,6 +3152,11 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Commissar-General with Cadet Commisar Retinue" hidden="false" id="e611-8393-941a-050b" type="selectionEntry" targetId="d8e2-8fe0-c212-c13f">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="7455-790c-0092-68b9" primary="true" name="HQ"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -4472,7 +4481,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="9bfc-12bd-f45a-1143" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink name="Baleful Judge" id="b705-af3b-04fd-49bf" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="188a-9858-24aa-6d11" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -4560,7 +4568,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="957a-6218-1e36-5f23" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink name="Baleful Judge" id="3df3-257b-8745-ee44" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aa08-4625-3ccf-c68d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -4633,7 +4640,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="9999-b6be-9d58-1989" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink name="Baleful Judge" id="d53f-9fdc-0fe3-4dd5" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b6f7-3db4-109c-afd9" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -4691,7 +4697,6 @@
       </profiles>
       <infoLinks>
         <infoLink id="1da7-ce0f-c019-eda3" name="Aura of Discipline" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink name="Baleful Judge" id="af04-2f0b-ea6d-b322" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f379-75f1-2232-e8cc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -6534,19 +6539,14 @@
               <profiles>
                 <profile name="Regimental Standard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="fb36-8f2d-c6b1-7d1d">
                   <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of [REGIMENT] units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
-In Addition, whilst a friendly LIGHT [REGIMENT] unit is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 2 to the Leadership characteristic of [REGIMENT] units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
-              <rules>
-                <rule name="Objective Secured (Standard)" id="60d5-b4ba-a022-8a76" hidden="false">
-                  <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
-                </rule>
-              </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="d06d-c704-ab59-b81b">
               <profiles>
@@ -9997,7 +9997,6 @@ In Addition, whilst a friendly LIGHT ELYSIAN DROP TROOPS Units is within 6&quot;
         <infoLink name="Deep Strike" id="0142-c44f-e86b-0a85" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
         <infoLink name="Iron Disipline" id="3f8a-c4e8-7149-6aab" hidden="false" targetId="b022-4e66-fdca-657a" type="profile"/>
         <infoLink name="Aura of Discipline" id="70af-52f1-9127-7dee" hidden="false" type="profile" targetId="3963-637a-dbb7-e721"/>
-        <infoLink name="Baleful Judge" id="ee91-b47a-9feb-9e6a" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="2e40-ed30-5431-570c" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -10616,19 +10615,14 @@ In Addition, whilst a friendly LIGHT ELYSIAN DROP TROOPS Units is within 6&quot;
               <profiles>
                 <profile name="Regimental Standard" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ee9a-df48-57c3-0d7e">
                   <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of [REGIMENT] units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
-In Addition, whilst a friendly LIGHT [REGIMENT] unit is within 6&quot; of a unit with this Ability, it counts as having the Objective Secured ability.</characteristic>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 2 to the Leadership characteristic of [REGIMENT] units whilst they are within 6&quot; of any friendly [REGIMENT] units with a Regimental Standard.
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
-              <rules>
-                <rule name="Objective Secured (Standard)" id="6c3b-f6cc-7b97-d637" hidden="false">
-                  <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
-                </rule>
-              </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="3da2-7550-91c5-ca65">
               <profiles>
@@ -10878,7 +10872,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </profiles>
       <infoLinks>
         <infoLink name="Aura of Discipline" id="c485-3707-2e2d-0ee4" hidden="false" targetId="3963-637a-dbb7-e721" type="profile"/>
-        <infoLink name="Baleful Judge" id="7361-3fa7-ecf6-a258" hidden="false" type="profile" targetId="b2ab-37eb-d555-c4be"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Imperium" hidden="false" id="c20f-e2ed-2d9d-9fcb" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -10967,11 +10960,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Baleful Judge" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="aea2-8bb0-796f-7ba4">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When a Morale test is taken for a ASTRA MILITARUM CAVALRY unit whilst it is within 3&quot; of any friendly units with this ability, if the unmodified roll is a 6 you must take the test again for that unit. Before taking the test again, place one blast marker next to that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12027,6 +12015,81 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Commissar-General with Cadet Commisar Retinue" hidden="false" id="d8e2-8fe0-c212-c13f" collective="false">
+      <profiles>
+        <profile name="Commisar-General with Retinue (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="33e5-dafc-08ec-b38c">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Awe-Inspiring Discipline" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="e76d-3af3-be93-5028">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly ASTRA MILITARUM units are automatically passed whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="5db2-59c6-b08a-3ac6" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="ca76-5ace-2823-5459" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Faction: Officio Prefectus" hidden="false" id="48e8-4199-e0f5-a72b" targetId="b6a8-41e3-5fe3-e661" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="1d2f-9883-c913-72d5" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="b5de-7a34-22df-282c" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="b298-6694-9543-1ca1" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Commissar" hidden="false" id="e366-f91a-3cd4-9052" targetId="b6a1-81e3-5fe3-e661" primary="false"/>
+        <categoryLink targetId="4bd0-fe2b-6823-65fe" id="cc6d-fcc0-350e-b2b4" primary="false" name="Commisar-General"/>
+        <categoryLink targetId="23d8-5f60-d327-b63e" id="5b2a-8e87-cb52-7647" primary="false" name="Commisar-General with Cadet Commisar Retinue"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="21da-74f7-63e0-8a68" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Commisar Pistols" hidden="false" id="d4cc-adf9-de95-4a7e">
+          <profiles>
+            <profile name="Commisar Pistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a035-5b95-4ee2-95c0">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3e-ade6-71fa-2146" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="360c-f0bf-2142-8a32" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commisar Close Combat Weapons" hidden="false" id="1bac-17fb-b96d-91af">
+          <profiles>
+            <profile name="Commisar Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="bd24-51c9-7b19-aeca">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba9a-dffc-ef9a-6ee3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b80d-c21f-199c-3777" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
