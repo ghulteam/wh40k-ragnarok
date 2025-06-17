@@ -150,6 +150,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry id="102b-272b-0d3c-2da0" name="Battalion Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -226,6 +231,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -308,6 +318,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry id="06e1-90a4-1407-f38b" name="Vanguard Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -388,6 +403,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry id="fb01-8e54-8822-7de4" name="Supreme Command Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -408,6 +428,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -489,6 +514,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry id="5642-ce25-4f9d-5cb3" name="Air Wing Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -514,6 +544,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -618,6 +653,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry id="8f70-4411-2a13-96bf" name="Patrol Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -642,6 +682,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -737,6 +782,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="forces" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad65-e0a9-93c2-42f7" type="max"/>
@@ -774,6 +824,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -826,6 +881,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8742-00f9-ef5f-108f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -927,6 +987,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="4aea-2b38-5b28-b864" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>

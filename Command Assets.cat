@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -128,6 +128,28 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Smite" hidden="true" id="19e7-af52-d0cd-a6f4">
+      <profiles>
+        <profile name="Smite - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a26d-dedf-82ea-87a2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one Psyker unit from your army to manifest this power and roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that Psyker unit. On a 7+ place two blast markers next to the closest enemy unit within 36&quot; of that Psyker unit instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -191,6 +213,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e140-b338-5e11-df74" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Smite" hidden="false" id="aa47-cf02-8015-4b5d" type="selectionEntry" targetId="19e7-af52-d0cd-a6f4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9668-003e-6b60-ef88" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -199,7 +226,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Command Asset Filter" id="561c-4821-5f6f-5e23" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Psyker" hidden="false" id="2ab4-9ead-fb18-e755">
+        <selectionEntry type="upgrade" import="true" name="Psychic" hidden="false" id="2ab4-9ead-fb18-e755">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3254-e7bd-2b52-c65f" includeChildSelections="false"/>
           </constraints>
