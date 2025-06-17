@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d2-d7b5-2c22-6bad" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f98-8628-f740-0ef2" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e0d2-d7b5-2c22-6bad" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1f98-8628-f740-0ef2" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Core Command Assets" hidden="false" id="fc45-fc4c-6053-4697" type="selectionEntryGroup" targetId="ff11-d752-38c8-3c16">
@@ -17,8 +17,8 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tactical Command Assets" hidden="false" id="279f-68d7-f2d4-54e1">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389d-f364-90c7-4b5c" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b184-3f07-f847-3db4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="389d-f364-90c7-4b5c" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b184-3f07-f847-3db4" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Tactical Command Assets" hidden="false" id="dce5-b405-2224-08cf" type="selectionEntryGroup" targetId="92b7-4d14-26ad-af3d">
@@ -74,8 +74,8 @@
         <entryLink import="true" name="Command Asset Filter" hidden="false" id="ce83-8db8-2184-ab8b" type="selectionEntryGroup" targetId="561c-4821-5f6f-5e23"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="281e-fde6-9583-c01f" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6638-c683-f7e1-5b87" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="281e-fde6-9583-c01f" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6638-c683-f7e1-5b87" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Steady Sights" hidden="false" id="830b-1304-a11e-4ce8">
@@ -215,10 +215,10 @@
   <forceEntries>
     <forceEntry name="Command Assets" id="5bc4-4fc9-79e7-d5eb" hidden="false">
       <categoryLinks>
-        <categoryLink name="List Configuration" hidden="false" id="7869-e96e-4dd8-6855" targetId="b1fd-719c-4789-4656" type="categoryEntry">
+        <categoryLink name="List Configuration" hidden="false" id="7869-e96e-4dd8-6855" targetId="b1fd-719c-4789-4656">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2bd8-0124-ce9f-a5be"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5cd6-c5c1-9d5a-d6da"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2bd8-0124-ce9f-a5be" includeChildSelections="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5cd6-c5c1-9d5a-d6da" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -226,6 +226,13 @@
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="24dd-c7b2-5c2b-40ea" includeChildSelections="true"/>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="8c27-5053-0c51-3129" includeChildSelections="true"/>
       </constraints>
+      <forceEntries>
+        <forceEntry name="Command Assets" id="1e5e-344d-a865-5f83" hidden="false">
+          <categoryLinks>
+            <categoryLink name="List Configuration" hidden="false" id="ffef-cf8f-9149-8227" targetId="b1fd-719c-4789-4656"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
     </forceEntry>
   </forceEntries>
 </catalogue>
