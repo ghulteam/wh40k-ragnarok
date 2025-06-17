@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="62" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="64" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -140,6 +140,7 @@
     <categoryEntry id="c3b5-c2f7-79f7-9548" name="Judiciar" hidden="false"/>
     <categoryEntry name="Relic Glaive Super-heavy Tank" id="2e94-533d-9b89-7239" hidden="false"/>
     <categoryEntry name="Storm Speeder" id="82f8-e0b1-0a01-77fe" hidden="false"/>
+    <categoryEntry name="Saturnine Terminator Squad" id="f54f-7516-b204-b36f" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -13865,6 +13866,192 @@ After this is resolved, count the number of wounds that were scored by the attac
       <infoLinks>
         <infoLink name="Anti-air" id="6aca-d76a-4842-cfdb" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Saturnine Terminator Squad" hidden="false" id="8fd9-6d0c-ec23-f73b">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="0288-3757-a2f6-ab16" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="8183-6fb5-e7a9-4006" type="selectionEntry" targetId="6144-aa85-b770-2f33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4953-ac6a-f439-801d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebbe-5d54-8b85-4c15" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="3ecb-337b-62f1-1979" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="11fa-be11-f201-a5ec">
+              <profiles>
+                <profile name="Saturnine Terminator Squad (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d382-9008-d59a-8dd9">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d12-a8b9-3720-32f0" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="bd24-a85f-77ff-3555">
+              <profiles>
+                <profile name="Saturnine Terminator Squad (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3187-6379-efa6-a871">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2077-2de5-1931-d0c5" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="44"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e47-e496-62d7-8dd0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b055-4369-9b95-f04d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="2936-d1d3-3b6b-b6fd" hidden="false" defaultSelectionEntryId="ad3f-a54a-51ba-2777">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3230-f282-fac4-7928" includeChildSelections="false"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="b73c-97b1-e5ab-97e0" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="ad3f-a54a-51ba-2777">
+              <infoLinks>
+                <infoLink name="Barrage" id="b140-5030-e1eb-80a5" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
+                <infoLink name="Supercharge" id="9deb-4b6c-23f2-7467" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Plasma Bombard" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9f7c-cb2b-9ea7-3773">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge, Barrage</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5b0a-5eef-9e15-2612" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="12" field="5b0a-5eef-9e15-2612">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="8fd9-6d0c-ec23-f73b" childId="bd24-a85f-77ff-3555" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Heavy Disintegrator" hidden="false" id="8e94-5098-ac17-66bb">
+              <profiles>
+                <profile name="Twin Heavy Disintegrator" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7f2a-3183-9473-f706">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5dcf-0068-ac54-a99b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="6" field="5dcf-0068-ac54-a99b">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="8fd9-6d0c-ec23-f73b" childId="bd24-a85f-77ff-3555" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Disruption Fist with Particle Shredder" hidden="false" id="678a-f1bc-aa96-4eb8">
+              <profiles>
+                <profile name="Disruption Fist" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="993d-ed0b-8e80-18bb">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Particle Shredder" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5940-0751-a7cd-cbe8">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b06f-5e67-3b29-178b" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="6" field="b06f-5e67-3b29-178b">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="8fd9-6d0c-ec23-f73b" childId="bd24-a85f-77ff-3555" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Inferno" id="64e7-c241-a2e7-69a8" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="12" field="3230-f282-fac4-7928">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="8fd9-6d0c-ec23-f73b" childId="bd24-a85f-77ff-3555" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="b73c-97b1-e5ab-97e0">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="8fd9-6d0c-ec23-f73b" childId="bd24-a85f-77ff-3555" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="bd29-1f2c-7a6c-c864" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="b3d1-0499-be51-c83b" primary="false" name="Light"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="ba7e-1a0a-a1ef-1341" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="277d-ad1e-81fc-8a9c" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="3726-f1d3-1b96-0eb0" id="93f6-2987-c2ba-0a7f" primary="false" name="Terminator"/>
+        <categoryLink targetId="f54f-7516-b204-b36f" id="eda1-2691-d677-d15d" primary="false" name="Saturnine Terminator Squad"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

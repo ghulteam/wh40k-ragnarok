@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="34b2-11c8-4cde-9876" name="Imperium - Space Wolves" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -712,13 +712,21 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="0af6-028e-5356-d858" name="Aggressor Squad" hidden="false" collective="false" import="true" targetId="5b03-42d3-7b13-3294" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="06ba-a3b4-f9cd-5630" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
+        <categoryLink targetId="763e-c917-6968-86fe" id="0c0d-1ab3-dd53-93b5" primary="false" name="Long Fangs"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Aggressor Pack" field="name"/>
+      </modifiers>
     </entryLink>
     <entryLink id="8963-45d3-4446-88ea" name="Eradicator Squad" hidden="false" collective="false" import="true" targetId="31c8-f07f-d8cb-71da" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3e17-8c60-a2e4-568f" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
         <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="bf7b-86fe-befd-e2d8" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="763e-c917-6968-86fe" id="ce70-8bf8-69e4-78a5" primary="false" name="Long Fangs"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Eradicator Pack" field="name"/>
+      </modifiers>
     </entryLink>
     <entryLink id="085b-d79a-efc9-8bec" name="Infernus Squad" hidden="false" collective="false" import="true" targetId="e0bb-2f81-ead9-ed08" type="selectionEntry">
       <categoryLinks>
@@ -730,7 +738,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <categoryLinks>
         <categoryLink id="c0cf-a8c3-eba6-5edc" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="c129-c2f5-1cba-6568" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
+        <categoryLink targetId="763e-c917-6968-86fe" id="454d-bc4d-618d-1186" primary="false" name="Long Fangs"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Hellblaster Pack" field="name"/>
+      </modifiers>
     </entryLink>
     <entryLink id="8603-9dc0-d8aa-f0ed" name="Dreadnought" hidden="false" collective="false" import="true" targetId="bd59-298f-ca7d-a418" type="selectionEntry">
       <categoryLinks>
@@ -925,7 +937,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <entryLink id="1a1b-3ba0-806e-8979" name="Desolation Squad" hidden="false" collective="false" import="true" targetId="a74a-1e49-8202-b5b9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="26b1-9d1d-7197-fa50" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
+        <categoryLink targetId="763e-c917-6968-86fe" id="ced8-fe48-1ee7-d54e" primary="false" name="Long Fangs"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Desolation Pack" field="name"/>
+      </modifiers>
     </entryLink>
     <entryLink id="5153-f5e7-80fd-1313" name="Gladiator" hidden="false" collective="false" import="true" targetId="2b08-5b92-d755-fa46" type="selectionEntry">
       <categoryLinks>
@@ -956,6 +972,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="de7b-de59-94bc-cfce" primary="true" name="Fast Attack"/>
         <categoryLink targetId="58c1-00b9-7a20-4110" id="6ae4-f2f3-9822-90c4" primary="false" name="Faction: Space Wolves"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="4420-c380-cb39-33a3" type="selectionEntry" targetId="8fd9-6d0c-ec23-f73b">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="2123-465b-6a46-c2a7" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink targetId="58c1-00b9-7a20-4110" id="7965-6a41-7435-e71b" primary="false" name="Faction: Space Wolves"/>
+        <categoryLink targetId="76d1-5861-671a-048f" id="68b9-b00b-1f13-e233" primary="false" name="Wolf Guard"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

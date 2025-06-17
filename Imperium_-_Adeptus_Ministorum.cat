@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d0a1-5b0f-dc57-76db" name="Imperium - Adepta Sororitas" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="571e-a83e-e771-780a" name="Faction: Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="21f5-1b47-2570-42d1" name="Faction: Adepta Sororitas" hidden="false"/>
@@ -45,6 +45,7 @@
     <categoryEntry name="Celestian" id="4220-0b87-23eb-a862" hidden="false"/>
     <categoryEntry name="Castigator" id="a2fc-b5c8-15a1-6927" hidden="false"/>
     <categoryEntry name="Arch-Confessor Kyrinov" id="d838-b821-117f-b234" hidden="false"/>
+    <categoryEntry name="Sanctifiers" id="8383-ce22-197c-d0b4" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="42db-5e55-cf04-5981" name="Geminae Superia" hidden="false" collective="false" import="true" targetId="ef0f-f67c-da10-8dcf" type="selectionEntry">
@@ -310,6 +311,11 @@
     <entryLink import="true" name="Arch-Confessor Kyrinov" hidden="false" id="c1e4-c8fd-3f23-6eef" type="selectionEntry" targetId="bb86-63fc-fc35-13ca">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="f85c-07c0-0a37-25e8" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sanctifiers" hidden="false" id="dd9d-a9b5-891e-f59b" type="selectionEntry" targetId="a97f-1236-bd8f-c18d">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="e32a-25dc-af5b-5f2a" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3003,18 +3009,18 @@ Each time an ADEPTA SORORITAS CHARACTER in this Detachment is destroyed, you gen
         <categoryLink id="25ca-dc3d-cfac-b035" name="Sisters Novitate Squad" hidden="false" targetId="a84b-4691-a64a-a111" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6ed1-b397-500c-2905" name="Ministorum Flamer" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6ed1-b397-500c-2905" name="Ministorum Flamers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baef-3891-0864-6d46" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfe6-65b1-750a-9a52" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile id="d9d0-dc2e-6e12-9080" name="Ministorum Flamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="d9d0-dc2e-6e12-9080" name="Ministorum Flamers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
               </characteristics>
             </profile>
@@ -3080,7 +3086,7 @@ Each time an ADEPTA SORORITAS CHARACTER in this Detachment is destroyed, you gen
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
                   </characteristics>
@@ -3103,7 +3109,7 @@ Each time an ADEPTA SORORITAS CHARACTER in this Detachment is destroyed, you gen
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                     <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
                   </characteristics>
@@ -3146,7 +3152,7 @@ Each time an ADEPTA SORORITAS CHARACTER in this Detachment is destroyed, you gen
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1877-7b3b-c79c-e88f" name="War Hymn" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+        <profile id="1877-7b3b-c79c-e88f" name="War Hymns" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Attacks characteristic of friendly LIGHT [ORDER] units whilst they are making Fight actions within 6&quot; of this unit.</characteristic>
           </characteristics>
@@ -3700,6 +3706,80 @@ Each time an ADEPTA SORORITAS CHARACTER in this Detachment is destroyed, you gen
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sanctifiers" hidden="false" id="a97f-1236-bd8f-c18d">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="7e24-89c5-6ff1-5bad" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Sanctifiers (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="07dc-0993-e9fd-fbd5">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ministorum Sermon" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="5000-83a1-985d-5dd3">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While this unit is within 6&quot; of a friendly MINISTORUM PRIEST unit, add 1 to wound rolls made with melee weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ministorum Flamers" hidden="false" id="131f-a758-1999-54b9">
+          <profiles>
+            <profile name="Ministorum Flamers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c888-c142-5c96-1cd4">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bee-8779-68df-84b4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b4e-75a0-0d21-425b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Inferno" id="943f-b5d0-461b-2f5f" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sanctifier Melee Weapons" hidden="false" id="7a9b-2cdc-d50c-f6f6">
+          <profiles>
+            <profile name="Sanctifier Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="26bf-410b-12e0-a679">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16fb-d58c-bc8b-e83a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c1-54ed-4915-aa5d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="c468-7860-1647-9a59" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="1f3a-cdae-807c-502e" primary="false" name="Light"/>
+        <categoryLink targetId="8383-ce22-197c-d0b4" id="eab9-ced2-2079-acbb" primary="false" name="Sanctifiers"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="e440-2e2d-dbbd-987d" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="571e-a83e-e771-780a" id="7707-f859-1613-428c" primary="false" name="Faction: Adeptus Ministorum"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

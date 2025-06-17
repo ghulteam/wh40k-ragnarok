@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="28" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="29" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -44,6 +44,12 @@
     <profileType id="96ed-cabc-a90c-b284" name="Warmaster Trait">
       <characteristicTypes>
         <characteristicType id="4ad5-e76c-6781-da08" name="Description"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Command Asset" id="6d25-270e-1ac7-b643" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Faction" id="d491-2248-b56e-766c"/>
+        <characteristicType name="Rule" id="89e3-f069-261b-3ca4"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
