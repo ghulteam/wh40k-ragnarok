@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -133,7 +133,7 @@
         <profile name="Smite - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a26d-dedf-82ea-87a2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one Psyker unit from your army to manifest this power and roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that Psyker unit. On a 7+ place two blast markers next to the closest enemy unit within 36&quot; of that Psyker unit instead.</characteristic>
+            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one PSYKER unit from your army to manifest this power and roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that PSYKER unit. On a 7+ place two blast markers next to the closest enemy unit within 36&quot; of that Psyker unit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -143,6 +143,51 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="From Golden Light They Come" hidden="true" id="1c42-742f-d15e-3724">
+      <profiles>
+        <profile name="From Golden Light They Come" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ae55-236c-c23c-eac3">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
+            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one ADEPTUS CUSTODES LIGHT unit or one ADEPTUS CUSTODES DREADNOUGHT from your army. Remove that unit from the battlefield and set it up anywhere on the battlefield that is more than 9&quot; from any enemy units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Null Zone" hidden="true" id="53d1-0474-989d-c511">
+      <profiles>
+        <profile name="Null Zone - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="516a-a48a-f0de-0608">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used at the start of the Damage phase. When used, select one ADEPTUS ASTARTES PSYKER unit from your army to manifest this power. Until the end of the turn, subtract 2 from saving throws made for enemy units whilst they are within 12&quot; of that PSYKER unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -218,6 +263,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9668-003e-6b60-ef88" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="From Golden Light they come" hidden="false" id="9d21-b6ad-8ff7-7095" type="selectionEntry" targetId="1c42-742f-d15e-3724">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fa6-4b99-00e8-d800" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -229,6 +279,61 @@
         <selectionEntry type="upgrade" import="true" name="Psychic" hidden="false" id="2ab4-9ead-fb18-e755">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3254-e7bd-2b52-c65f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adeptus Astartes" hidden="false" id="d46a-f3e3-d5f0-b0e2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-3a74-a33c-39aa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adepta Sororitas" hidden="false" id="2a84-e21f-6012-9681">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4037-179e-9119-1837" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adeptus Custodes" hidden="false" id="abe0-6339-6f2f-5f3f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a61-7593-d1a4-1624" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adeptus Mechanicus" hidden="false" id="ff35-00ce-1870-c71c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2247-20fb-1a77-61e6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heretic Astartes" hidden="false" id="7dae-928d-cb2f-8c06">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfb6-2c72-5227-dc1b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Daemonica" hidden="false" id="1793-1712-9a7f-5315">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3251-9b2c-c049-8943" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Astra Militarum" hidden="false" id="ea24-0d7a-6da3-2765">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b6-2810-2dbc-c815" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Imperial Knights" hidden="false" id="217c-fb90-0f3b-f0d4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb8-0714-9958-07c2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leagues of Votan" hidden="false" id="89dd-e689-df0d-b73c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="050e-e110-802c-b24c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Questor Traitoris" hidden="false" id="a945-9b64-732d-65dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bc5-cc1d-e3b4-6cfe" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="T&apos;au" hidden="false" id="4007-1756-ffc8-70c9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e495-57a7-7704-4a0a" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
