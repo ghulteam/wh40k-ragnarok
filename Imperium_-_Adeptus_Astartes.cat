@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="46" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="48" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -94,6 +94,9 @@
     <categoryEntry id="aaaa-96d2-985d-3e1e" name="Sigismund" hidden="false"/>
     <categoryEntry id="bac1-ab3e-e700-0b47" name="Marshal" hidden="false"/>
     <categoryEntry name="Castellan" id="a586-016b-460c-1706" hidden="false"/>
+    <categoryEntry name="Execrator" id="d419-7981-6852-2864" hidden="false"/>
+    <categoryEntry name="Execrator" id="1b84-15db-c980-c2db" hidden="false"/>
+    <categoryEntry name="Crusade Ancient" id="6387-d737-847e-3590" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -225,6 +228,9 @@
       <categoryLinks>
         <categoryLink id="b0ea-7c78-fde0-db6c" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Astartes Banner" id="4bfa-f1bf-a5c9-d80f" hidden="false" type="profile" targetId="9b14-07f3-7d04-8408"/>
+      </infoLinks>
     </entryLink>
     <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" import="true" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
       <categoryLinks>
@@ -1363,6 +1369,26 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <categoryLinks>
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="4748-64cd-61b8-6e84" primary="true" name="Elites"/>
         <categoryLink targetId="fe0e-e179-5b4e-c377" id="583b-15b1-16d7-3fd1" primary="false" name="Faction: [CHAPTER]"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Company Heroes" hidden="false" id="39f2-acdd-a168-9ae2" type="selectionEntry" targetId="266b-5b61-c57c-5780">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="81b0-f109-8834-f8ea" primary="true" name="HQ"/>
+        <categoryLink targetId="fe0e-e179-5b4e-c377" id="42df-68bc-a555-3e68" primary="false" name="Faction: [CHAPTER]"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Rites of Battle" id="cce4-fb9f-8a9f-f91c" hidden="false" targetId="34b8-4aae-34bb-40e0" type="profile"/>
+        <infoLink name="Astartes Banner" id="31f8-048d-f7ce-95dc" hidden="false" type="profile" targetId="9b14-07f3-7d04-8408"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Execrator " hidden="false" id="ced8-bed7-bbe3-8b76" type="selectionEntry" targetId="84b4-2d60-ead3-6c40">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="9f7c-ebdb-b0cd-7b3a" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Crusade Ancient" hidden="false" id="cead-db20-0061-effd" type="selectionEntry" targetId="5e71-c058-233d-bfc4">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="c1ba-937b-3b02-c32b" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3426,7 +3452,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7d60-e660-5e81-577f" name="Chaplain Ivanus Enkomi" hidden="false" collective="false" import="true" type="unit">
@@ -6753,6 +6779,128 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Execrator " hidden="false" id="84b4-2d60-ead3-6c40">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="af43-9979-df3e-02e5" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Execrator" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ee2d-65a2-33c9-c86d">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Remorseless Persecution" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2ac1-dd09-e754-9ad7">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly BLACK TEMPLARS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spiritual Leader" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="a3ce-f5ee-eedd-1993">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly BLACK TEMPLARS units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="1001-da93-143e-38d7" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="6a04-6aa6-68bb-3735" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="e289-4a8b-2d73-8ccb" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="cdde-6a3a-2761-c898" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="a415-37e6-4aa1-c78b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="89c1-3354-3e0d-279e" id="0559-78e4-4939-4d58" primary="false" name="Chaplain"/>
+        <categoryLink targetId="f5f2-7b5a-266e-a209" id="26d1-7597-15ba-d964" primary="false" name="Faction: Black Templars"/>
+        <categoryLink targetId="d419-7981-6852-2864" id="01f5-2b7d-12c7-c510" primary="false" name="Execrator"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crozius Arcanum &amp; Execrator Weapon" hidden="false" id="276e-84ae-aa33-8c8e">
+          <profiles>
+            <profile name="Crozius Arcanum &amp; Execrator Weapon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b8a1-a301-0cdc-4dba">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e65-79b8-7459-b3c7" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7555-80af-e824-d97a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crusade Ancient" hidden="false" id="5e71-c058-233d-bfc4">
+      <categoryLinks>
+        <categoryLink targetId="6387-d737-847e-3590" id="19d4-8b32-c996-59ad" primary="false" name="Crusade Ancient"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="23e2-4905-8be8-74c0" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="71a5-a5b9-6970-f206" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="49b7-67c8-b6cf-ae34" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="b594-66c0-44b4-c8ce" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="e3d1-b77b-ac6b-725f" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="f5f2-7b5a-266e-a209" id="0d71-9f8f-1190-0897" primary="false" name="Faction: Black Templars"/>
+        <categoryLink targetId="69b9-2dfd-81e6-5540" id="34fa-166d-eeda-78f7" primary="false" name="Ancient"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Crusade Ancient" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e778-736b-717c-f719">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crusade Banner" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="fcfe-e22c-c511-2837">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly BLACK TEMPLAR units are automatically passed whilst they are within 6&quot; of this unit. In addition, you can re-roll saving throws of 1s made by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="9386-944d-5f8f-3b94" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="c06d-5b68-449b-adf9" collective="false" targetId="2472-1127-ec05-97d0" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

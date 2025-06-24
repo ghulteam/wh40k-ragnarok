@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="64" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="66" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -141,6 +141,7 @@
     <categoryEntry name="Relic Glaive Super-heavy Tank" id="2e94-533d-9b89-7239" hidden="false"/>
     <categoryEntry name="Storm Speeder" id="82f8-e0b1-0a01-77fe" hidden="false"/>
     <categoryEntry name="Saturnine Terminator Squad" id="f54f-7516-b204-b36f" hidden="false"/>
+    <categoryEntry name="Company Heroes" id="dfc0-e8a7-9538-884d" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -1700,9 +1701,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="5ff1-9f49-0acd-6820" name="Astartes Banner" hidden="false" targetId="9b14-07f3-7d04-8408" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="ee18-2cf9-7d53-0b2d" name="Ancient" hidden="false" targetId="69b9-2dfd-81e6-5540" primary="false"/>
         <categoryLink id="910a-d3d7-b1a3-988e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -14048,6 +14046,86 @@ After this is resolved, count the number of wounds that were scored by the attac
         <categoryLink targetId="3726-f1d3-1b96-0eb0" id="93f6-2987-c2ba-0a7f" primary="false" name="Terminator"/>
         <categoryLink targetId="f54f-7516-b204-b36f" id="eda1-2691-d677-d15d" primary="false" name="Saturnine Terminator Squad"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Company Heroes" hidden="false" id="266b-5b61-c57c-5780">
+      <profiles>
+        <profile name="Company Heroes" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ed63-79fe-8f2f-a918">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="63e6-f5ac-6852-4bb5" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="38e2-5d41-b877-7cdb" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="1d2d-8b8e-0868-8392" primary="false" name="Character"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="6133-4f60-344a-51a8" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="dc31-4dc0-5b8c-b82b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="69b9-2dfd-81e6-5540" id="ef74-7a9d-39c9-4320" primary="false" name="Ancient"/>
+        <categoryLink targetId="7934-999d-0625-24a6" id="a694-4e7e-c917-724f" primary="false" name="Company Ancient"/>
+        <categoryLink targetId="080d-1106-4107-3689" id="0fb3-eb41-7813-7084" primary="false" name="Company Champion"/>
+        <categoryLink targetId="7151-56f9-0163-eadc" id="2d4c-a0bf-1950-e97c" primary="false" name="Captain"/>
+        <categoryLink targetId="dfc0-e8a7-9538-884d" id="c2fa-ce78-635d-3864" primary="false" name="Company Heroes"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Honour or Death" id="e744-bfbd-082a-0240" hidden="false" targetId="5f19-998b-04a8-c710" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="c54d-3356-6711-6ed8" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master-crafted Melee Weapons" hidden="false" id="6732-f989-a953-a804" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604e-79f9-2f1c-5764" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5804-fcce-4b69-1eac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Master-crafted Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9a10-12c9-f23b-bd8a">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master-crafted Ranged Weapons" hidden="false" id="8371-8679-75fb-7c48" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d5e-7683-5110-7a14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef9b-50f4-b3fe-a32f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Master-crafted Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="362c-07ee-695d-e7b5">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

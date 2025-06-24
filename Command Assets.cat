@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -34,7 +34,9 @@
         <profile name="Behind Enemy Lines" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0d72-ce78-b496-3da7">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase or Damage phase. When used, select one unit from your army that has an Out of Command marker next to it. Remove that marker from that unit.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Out of Command Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove Out of Command Marker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -44,7 +46,9 @@
         <profile name="Divine Interventions" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e418-7716-eec1-b411">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used after rolling any dice in the Orders, Action or Damage phase. When used, change the result of that dice to a result of your choosing.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After own Dice Roll</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Dice</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Set to face you want</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -54,7 +58,9 @@
         <profile name="Insane Bravery" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b4d9-e6ac-0c7a-2694">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used when a unit in your army fails a Morale test. When used, that unit is considered to have passed that Morale test instead.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Own Unit fails Morale Test</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Friendly Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Morale Test counts as passed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -64,7 +70,9 @@
         <profile name="Tactical Flexibility" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="50fb-8772-f12d-8bfd">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one Detachment from your army (excluding Fortification Network Detachments) that has not yet carried out ist order this phase. That Detachment&apos;s order is replaced with Advance, Aimed Fire or Assault.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -83,7 +91,9 @@
         <profile name="Steady Sights" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a6a-3961-7329-c7f7">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used when you select a Detachment from your army to carry out an Aimed Fire Order, before any units in that Detachment make an action (excluding free actions) this phase. When used, all units in that detachment double the Range characteristic of their non-melee weapons.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit with Aimed Fire</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Double Range for all Weapons of chosen Unit</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -93,7 +103,9 @@
         <profile name="Miraculous Escape" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ca37-756f-1168-fb90">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used at the start of the Damage phase. When used, select one unit from your army and remove one blast marker from it.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove one Blast Marker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -103,7 +115,9 @@
         <profile name="Armour of Contempt" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8c23-8c43-2fdd-7f4b">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used when resolving damage for one of your units, before any saving throws are made for it. Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the blast markers next to it.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -113,7 +127,9 @@
         <profile name="Trophy Kill" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7db0-4a10-7b9e-dec3">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select either the enemy Warmaster or one enemy Super-Heavy unit. Until the end of the turn, you can re-roll hit rolls for attacks made by your units that target the selected unit.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">enemy Warmaster or One enemy SUPER-HEAVY unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Re-Roll Hit Rolls when attacking chosen unit</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -123,7 +139,9 @@
         <profile name="Demolitions" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ed5a-aaca-e485-339d">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one Defensible Terrain feature on the battlefield - you cannot select one that is garrisoned by units from your army. For the rest of the turn, that terrain feature is treated as an enemy Super-Heavy Transport unit that you can target with attacks. If, at the start of the Damage phase, the terrain feature has three or more large blast markers next to it, it is destroyed (no saving throws are made for it). Units that are garrisoning the terrain feature must leave it in the same manner as a unit disembarking a destroyed Transport. Then remove that terrain feature from the battlefield.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Terrain Piece</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Terrain Piece is Targetable as if it was a enemy HEAVY Unit. If destroyed, any Unit occupieing it has to Disembark as if it was a Transporter.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -133,7 +151,9 @@
         <profile name="Smite - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a26d-dedf-82ea-87a2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one PSYKER unit from your army to manifest this power and roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that PSYKER unit. On a 7+ place two blast markers next to the closest enemy unit within 36&quot; of that Psyker unit instead.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12; on 2+ place 1 blast marker, on 7+ place 2 blast markers instead on closes enemy unit in 36&quot; of chosen Psyker.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -142,7 +162,6 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -155,7 +174,9 @@
         <profile name="From Golden Light They Come" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ae55-236c-c23c-eac3">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used in the Action phase. When used, select one ADEPTUS CUSTODES LIGHT unit or one ADEPTUS CUSTODES DREADNOUGHT from your army. Remove that unit from the battlefield and set it up anywhere on the battlefield that is more than 9&quot; from any enemy units.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">1 friendly Adeptus Custodes INFANTRY or DREADNOUGHT Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove from battlefield and Deep Strike the chosen units</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -164,7 +185,6 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -177,7 +197,9 @@
         <profile name="Null Zone - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="516a-a48a-f0de-0608">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
-            <characteristic name="Rule" typeId="89e3-f069-261b-3ca4">This Command Asset can be used at the start of the Damage phase. When used, select one ADEPTUS ASTARTES PSYKER unit from your army to manifest this power. Until the end of the turn, subtract 2 from saving throws made for enemy units whilst they are within 12&quot; of that PSYKER unit.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Adeptus Astartes Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">-2 to saving throws for enemys in 12&quot; of chosen Psyker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -186,7 +208,6 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="ce83-8db8-2184-ab8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
@@ -263,7 +284,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9668-003e-6b60-ef88" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="From Golden Light they come" hidden="false" id="9d21-b6ad-8ff7-7095" type="selectionEntry" targetId="1c42-742f-d15e-3724">
+        <entryLink import="true" name="From Golden Light They Come" hidden="false" id="9d21-b6ad-8ff7-7095" type="selectionEntry" targetId="1c42-742f-d15e-3724">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fa6-4b99-00e8-d800" includeChildSelections="false"/>
           </constraints>
@@ -372,7 +393,6 @@
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="24dd-c7b2-5c2b-40ea" includeChildSelections="true"/>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="8c27-5053-0c51-3129" includeChildSelections="true"/>
       </constraints>
       <forceEntries>
