@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="48" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="49" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -231,6 +231,17 @@
       <infoLinks>
         <infoLink name="Astartes Banner" id="4bfa-f1bf-a5c9-d80f" hidden="false" type="profile" targetId="9b14-07f3-7d04-8408"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" import="true" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
       <categoryLinks>
@@ -1391,6 +1402,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="8f90-47d8-c075-cbb2" id="c1ba-937b-3b02-c32b" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Chapter Master" hidden="false" id="e92d-087a-80bf-64d7" type="selectionEntry" targetId="ebe0-392a-b936-1c76"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="27b6-232c-68c6-567a" name="Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
@@ -1958,6 +1970,17 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by this unit that target CHARACTERS.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Captain Corien Sumatris" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ff33-f703-8f92-ad31">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="dee5-ddba-9d48-ca4c" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2343,7 +2366,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -2580,7 +2603,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -2659,7 +2682,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -4913,13 +4936,13 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2958-dd33-67b4-0f00" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="28ec-866f-84bf-63b6" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="5dde-8934-7b1c-e317" name="Faction: Raptors" hidden="false" targetId="dbf4-016b-60d5-885c" primary="false"/>
         <categoryLink id="8231-204e-7ee3-8df7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="ff10-ece4-f376-a397" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="4464-c57a-3195-809b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="0e2d-58cc-a459-52df" name="Chapter Master" hidden="false" targetId="b3fb-f781-c79e-900b" primary="false"/>
         <categoryLink id="bb78-95a8-de8e-541d" name="Lias Issodon" hidden="false" targetId="fb28-5605-76c0-4362" primary="false"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="0f59-c1ee-11e7-3eff" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fad3-5757-fc43-f71e" name="Malice" hidden="false" collective="false" import="true" type="upgrade">
@@ -6890,7 +6913,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         </profile>
         <profile name="Crusade Banner" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="fcfe-e22c-c511-2837">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly BLACK TEMPLAR units are automatically passed whilst they are within 6&quot; of this unit. In addition, you can re-roll saving throws of 1s made by friendly BLACK TEMPLAR units whilst they are within 6&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly BLACK TEMPLAR units are automatically passed whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6899,8 +6922,139 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <entryLink import="true" name="Close Combat Weapons" hidden="false" id="c06d-5b68-449b-adf9" collective="false" targetId="2472-1127-ec05-97d0" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chapter Master" hidden="false" id="ebe0-392a-b936-1c76" collective="false">
+      <profiles>
+        <profile name="Chapter Master" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fa0d-6ede-d3fe-0fd4">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ebe0-392a-b936-1c76" childId="3726-f1d3-1b96-0eb0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="5&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="4+" field="a56f-38ae-3917-aadc"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ebe0-392a-b936-1c76" childId="c8b5-9ad5-d8df-45f2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ebe0-392a-b936-1c76" childId="cdf9-175a-b31b-44a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ebe0-392a-b936-1c76" childId="8438-9607-67d0-a3e3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="5&quot;" field="606d-344a-bc3d-9dce"/>
+                <modifier type="set" value="4+" field="a56f-38ae-3917-aadc"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Chapter Master" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="49e9-5e3d-0ae4-8dd1">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly [CHAPTER] units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="90b7-1fe6-30b4-6814" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="ee92-1f75-0146-39ed" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="034d-3296-74a4-ed6c" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="3fde-1a1f-3ed0-ff01" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink name="Light" hidden="false" id="6e77-6a3c-53ce-0642" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="b3fb-f781-c79e-900b" id="a4e4-ba70-6d03-2203" primary="false" name="Chapter Master"/>
+        <categoryLink targetId="fe0e-e179-5b4e-c377" id="298d-2a0f-0df6-0fe3" primary="false" name="Faction: [CHAPTER]"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="f811-fa62-5717-c3fd" hidden="false" collective="false" import="true" defaultSelectionEntryId="b4ac-c424-da5a-f861">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e67b-63c1-a95d-5891" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9261-6b0e-ddda-1cab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="a2d4-6a4a-8312-b4cc" collective="false">
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="da47-aae5-1c59-d945" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Jump Pack" hidden="false" id="67a7-2b27-13d0-d833" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
+            <entryLink import="true" name="Bike" hidden="false" id="04dc-4a13-277a-aebd" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="1097-d173-cdcb-1db9" collective="false" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
+            <entryLink import="true" name="Gravis Armor" hidden="false" id="7797-69b4-de89-c9ca" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
+            <entryLink import="true" name="Phobos Armor" hidden="false" id="823c-4196-6390-c1af" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="8993-d51c-ae08-053e" hidden="false" defaultSelectionEntryId="73c2-1b04-575b-c9a9">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Weapons" hidden="false" id="4ef4-d6c8-a181-5459" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+            <entryLink import="true" name="Master-crafted Bolter &amp; Close Combat Weapons" hidden="false" id="36c0-aa9d-0266-64e0" type="selectionEntry" targetId="3615-5b7b-104a-0187"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c11-4c1d-7a85-7521" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1993-8ba6-d26a-a271" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="3ae7-55b7-dee0-3f07" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="c904-a669-ca24-3095" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4744-bcbf-e345-6024" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2ef7-bddb-5a9c-223a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="753f-2a0e-fb4a-9770" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="55c4-05fb-9707-ff2c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="8179-bd57-faaf-9f26" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7d28-8439-1922-469f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="6965-8b5c-fdc8-8d07" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="36f8-6a8c-000e-34a1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d8c2-8922-3cb5-0048" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a7e4-617a-a0b2-8c52" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="76b6-22b5-69bf-f24d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="306c-88f1-83fc-fa6d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
