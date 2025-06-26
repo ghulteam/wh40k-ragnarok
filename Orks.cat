@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -104,26 +104,8 @@
     <categoryEntry name="Ufthak Blackhawk" id="95a7-f6cd-be55-0daa" hidden="false"/>
     <categoryEntry name="Beast Snagga Boyz" id="fe9d-f2b1-95fe-b94b" hidden="false"/>
     <categoryEntry name="Squighog Boyz" id="cb0b-7ccb-7824-3c92" hidden="false"/>
+    <categoryEntry name="Dictator van Straab" id="e3b4-e9b0-3149-9fa6" hidden="false"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry id="f5ed-c693-9721-f825" name="Green Tide" hidden="true">
-      <forceEntries>
-        <forceEntry id="9ae7-7127-2117-429d" name="Green Tide" hidden="false">
-          <categoryLinks>
-            <categoryLink id="d172-e3a9-1960-6e01" name="Green Tide" hidden="false" targetId="67f1-0cab-b562-4002" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-      <categoryLinks>
-        <categoryLink id="82ec-d48f-0bb3-fc23" name="Green Tide" hidden="false" targetId="67f1-0cab-b562-4002" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8d3-cfd5-37e9-270c" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e377-c1df-8ee7-679d" type="min"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
       <categoryLinks>
@@ -555,6 +537,16 @@
     <entryLink import="true" name="Squighog Boyz" hidden="false" id="0bec-e238-b93f-0522" type="selectionEntry" targetId="55a7-0d0b-5ff2-f848">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="7650-9c7a-9231-5996" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Green Tide" hidden="false" id="34cd-491a-a06c-b086" type="selectionEntry" targetId="2aaa-8889-6b75-22e8">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="8806-ea25-16b2-1809" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dictator van Straab &amp; Nobz" hidden="false" id="b775-49eb-7104-f599" type="selectionEntry" targetId="70f7-69cf-c583-c1ab">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="3649-3e6a-0b71-ed2a" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9558,7 +9550,7 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         </profile>
         <profile id="954d-3554-2f27-ebae" name="Follow me Ladz" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the turn every friendly [CLAN] BOYZ unit within 2&quot; of this GREEN TIDE unit merges into this unit. Transfer all Wound marker of the affected Units to this GREEN TIDE unit and count the Instances of Big Shoota and Rokkit Launcha Upgrades of all affected units and remove them from play. Afterwards set up the removed models within cohesion of this GREEN TIDE unit. Models set up this way may not be set up within 1&quot; of enemy units. For each 10 Models added this way, increase the maximum number of Wounds of this GREEN TIDE unit by 2 and attacks by 1. Increase the Number of Equiped Big Shoota and Rokkit Launcha by the Number counted before. If a unit is affected by multiple &quot;Follow me Ladz&quot; abilities, the controlling player may choose which Green Tide the affect Unit may merge into.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [CLAN] BOYZ unit within 48&quot; of this GREEN TIDE fails a morale test, it counts as passed instead and the affected unit merges into this unit. Transfer all Damage marker of the affected Units to this GREEN TIDE unit and take note of the instances of Big Shoota and Rokkit Launcha of the affected unit and remove it from play. Afterwards set up the removed models within cohesion of this GREEN TIDE unit. Models set up this way may not be set up within 1&quot; of enemy units. For each 10 Models added this way, increase the maximum number of Wounds of this GREEN TIDE unit by 2 and attacks by 1. Increase the number of Big Shoota and Rokkit Launcha this Unit is equipped with by the number the affected Unit had. If a unit is affected by multiple &quot;Follow me Ladz&quot; abilities, the controlling player may choose which Green Tide the affected Unit may merge into.</characteristic>
           </characteristics>
         </profile>
         <profile id="0ded-42fe-269c-8839" name="Green Tide Boyz" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -9667,6 +9659,13 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
+                  <repeats>
+                    <repeat value="2" repeats="1" field="selections" scope="2aaa-8889-6b75-22e8" childId="9187-5ed1-de70-b83a" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -9693,6 +9692,11 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
+      <rules>
+        <rule name="Objective Secured (Green Tide)" id="98c5-4b0a-4cd4-621b" hidden="false">
+          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="660b-7280-f536-f868" name="Beastboss" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -10775,6 +10779,60 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
       <infoLinks>
         <infoLink name="Witchfire" id="4f35-4279-67d8-dc24" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dictator van Straab &amp; Nobz" hidden="false" id="70f7-69cf-c583-c1ab">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="853a-0589-016f-2edf" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="489d-b754-b417-ba38" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Nob Choppas" hidden="false" id="bb7e-7a85-22af-1b43" collective="false" targetId="69e4-c313-4ccc-8fba" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe6b-d2e4-6b6e-c607" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f15a-2a1d-a925-ac20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sluggas" hidden="false" id="5f32-bdcd-3cde-8c7a" collective="false" targetId="30be-ea7f-a1d0-026c" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edfb-7fe1-a5ff-3e7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd13-d99b-b70e-8018" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Dictator van Straab &amp; Nobz (11 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="85df-ce3f-5a89-f405" publicationId="83d8-e2fc-f7db-dd02">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hated Tyrant" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9c2c-097a-5ffb-57bb">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls for attacks targeting this unit made by enemy ASTRA MILITARUM units whilst they are within 12&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Officer" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="82d6-7efa-5599-5cdd">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Generate Command Assets step, if this unit is a WARLORD and is on the battlefield, you generate one extra Command Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="617d-e56b-5afd-7d61" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="eea0-479c-f173-edb2" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="504a-a712-ee8d-7846" primary="false" name="Character"/>
+        <categoryLink targetId="8694-0cc5-9ed1-bff2" id="f2a5-bc6f-0ab9-4865" primary="false" name="Faction: [CLAN]"/>
+        <categoryLink targetId="e3b4-e9b0-3149-9fa6" id="5aa7-b5c0-cb3b-b668" primary="false" name="Dictator van Straab"/>
+        <categoryLink targetId="559e-10b0-6b63-c613" id="1332-4f6a-f760-800d" primary="false" name="Nobz"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

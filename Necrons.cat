@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="25" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="26" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -84,55 +84,6 @@
     <categoryEntry id="b4d4-1527-1e92-16fd" name="Faction: Szarekhan" hidden="false"/>
     <categoryEntry id="14a3-33bc-8e9a-6c4f" name="Unholy Necropolis" hidden="false"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry id="0fca-c942-6c70-c3ed" name="Endless Phalanx" hidden="true">
-      <forceEntries>
-        <forceEntry id="c570-c13d-127f-1855" name="Endless Phalanx" hidden="false">
-          <categoryLinks>
-            <categoryLink id="0213-2337-8254-4fa1" name="Endless Phalanx" hidden="false" targetId="f781-20cc-0754-8dac" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-      <categoryLinks>
-        <categoryLink id="4aa6-1ab5-2014-80fe" name="Endless Phalanx" hidden="false" targetId="f781-20cc-0754-8dac" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0b-456c-5f62-18db" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="357a-f7f9-b2f5-5fff" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="4ffd-ebf2-2408-4f1d" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="11c8-a35c-105f-4cc1" name="Unholy Necropolis" hidden="true">
-      <rules>
-        <rule id="9e3e-09b9-c8a0-9fa6" name="Unholy Necropolis" hidden="false">
-          <description>The &quot;Unholy Necropolis&quot; Detachement consists of one Tesseract Vault and eight Monoliths. The Commander of a &quot;Unholy Necropolis&quot; Detachement has to be the Tesseract Vault. If the Tesseract Vault is removed from play move the command token to another model as normal.</description>
-        </rule>
-      </rules>
-      <forceEntries>
-        <forceEntry id="7a28-d2cb-297e-b386" name="Unholy Necropolis" hidden="false">
-          <categoryLinks>
-            <categoryLink id="9a74-9531-3cef-a032" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="false"/>
-            <categoryLink id="a00d-7177-a118-1a9c" name="Tesseract Vault" hidden="false" targetId="3e69-aa98-e66a-d778" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-      <categoryLinks>
-        <categoryLink id="7d8d-a432-9bb2-b627" name="Tesseract Vault" hidden="false" targetId="3e69-aa98-e66a-d778" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3769-e7e6-f55e-8753" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207f-b558-2f62-9f76" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="cce5-00f9-b9e0-5688" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="-8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e0-986b-599e-de61" type="max"/>
-            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d937-5c14-c978-e846" type="min"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
       <categoryLinks>
@@ -488,6 +439,11 @@
       <categoryLinks>
         <categoryLink id="d9d1-1a4a-f1c1-3837" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
         <categoryLink id="495f-f795-1d31-e917" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Endless Phalanx" hidden="false" id="13eb-9f43-b65e-057f" type="selectionEntry" targetId="38fb-b75d-1f2e-882a">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="d12d-91bc-01af-7270" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5690,6 +5646,11 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 100 models, add 1 to your rolls for Living Metal. If this unit contains 150 or more models, add 2 to your rolls for Living Metal. You cannot increase this roll any further.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Phalanx" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="bd0b-6ed6-2278-daf6">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Instead of the regular coherency rules, Models in this unit have to remain in base-to-base contact with at least two other models from the same unit.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e9ab-170a-85c5-1c1e" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
@@ -5701,6 +5662,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <categoryLink id="8f7d-9ae8-a7f3-c54f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="1ed2-6cf3-54c6-afb9" name="Necron Warriors" hidden="false" targetId="ac2b-5e27-1683-ed55" primary="false"/>
         <categoryLink id="f4f1-0a49-1b2c-aeb6" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink targetId="f781-20cc-0754-8dac" id="04a0-da61-292d-10f7" primary="false" name="Endless Phalanx"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3a5b-ce91-11c6-9bca" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0e2-bdb3-757b-6c47">
@@ -5727,7 +5689,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="140"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="160"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44ff-de5e-b9bc-74fb" name="Necron Warriors (150 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
@@ -5748,7 +5710,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="240"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="270"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="82e1-1c1f-0f00-774d" name="Necron Warriors (200 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
@@ -5769,7 +5731,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="320"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="390"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
