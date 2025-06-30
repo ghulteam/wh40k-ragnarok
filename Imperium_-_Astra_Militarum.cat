@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="62" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="63" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -10738,46 +10738,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Combat Engineer Squad" hidden="false" id="1606-2cef-456d-3402" collective="false">
-      <profiles>
-        <profile name="Death Korps Combat Engineer Squad (4/5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3b13-81f5-dfb6-e6f7">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1606-2cef-456d-3402" childId="0d34-089a-a1de-1a3a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Death Korps Combat Engineer Squad (9/10 models)" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1606-2cef-456d-3402" childId="0d34-089a-a1de-1a3a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="7c7f-f763-1f39-410c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1606-2cef-456d-3402" childId="0d34-089a-a1de-1a3a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Krieg Combat Shotguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3314-5fb3-012b-841f">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="54b3-6f6e-0c07-e253" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink name="Faction: Imperium" hidden="false" id="1870-d31a-2d6c-1c6e" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -10787,14 +10747,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         <categoryLink targetId="6bec-aa67-8d49-84f1" id="0d62-8ae0-c85a-2f20" primary="false" name="Faction: Death Korps of Krieg"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="5 Additional Engineers" hidden="false" id="0d34-089a-a1de-1a3a" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a083-9a45-245f-6baf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Weapons Team" hidden="false" id="1efd-f009-e98b-1b20" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6c9-7152-cf9c-0fa7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -10840,6 +10792,24 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Krieg Combat Shotguns" hidden="false" id="47f2-3a58-7a90-0dfd">
+          <profiles>
+            <profile name="Krieg Combat Shotguns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3314-5fb3-012b-841f">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7de-0f16-5a33-c3cb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c86e-5be1-0526-4558" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="2545-190f-e59b-a15d" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -10851,10 +10821,62 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="7dfd-feab-6f09-cf03" hidden="false" defaultSelectionEntryId="1407-5ea9-7d87-09f4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="4/5 Models" hidden="false" id="1407-5ea9-7d87-09f4">
+              <profiles>
+                <profile name="Death Korps Combat Engineer Squad (4/5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d8d4-1abe-8480-2c1f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f55-5831-cca2-84f9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="9/10 Models" hidden="false" id="65c1-f9be-296f-a03e">
+              <profiles>
+                <profile name="Death Korps Combat Engineer Squad (9/10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="5b4b-2e2a-589c-2035">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e899-31c7-9213-dd1d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f8-5c97-1dfa-6737" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dfc-14b0-e762-09d3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Korps Commissar" hidden="false" id="7f40-e4df-167c-cb9f" collective="false">
+    <selectionEntry type="unit" import="true" name="Death Korps Commissar" hidden="false" id="7f40-e4df-167c-cb9f" collective="false">
       <profiles>
         <profile name="Death Korps Commissar" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d015-e632-372f-bb53">
           <characteristics>
@@ -10895,7 +10917,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Korps Death Rider Command Squadron" hidden="false" id="749a-c24e-0d29-9a33" collective="false">
+    <selectionEntry type="unit" import="true" name="Death Korps Death Rider Command Squadron" hidden="false" id="749a-c24e-0d29-9a33" collective="false">
       <profiles>
         <profile name="Flanking Manoeuvres" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="c5ab-f93a-1c3a-8264">
           <characteristics>
@@ -10908,7 +10930,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
           </characteristics>
@@ -10947,7 +10969,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Korps Death Rider Commissar" hidden="false" id="0402-1edf-832a-f67b" collective="false">
+    <selectionEntry type="unit" import="true" name="Death Korps Death Rider Commissar" hidden="false" id="0402-1edf-832a-f67b" collective="false">
       <profiles>
         <profile name="Death Korps Death Rider Commissar" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3cdf-386e-d3c4-ccc2">
           <characteristics>
@@ -10991,37 +11013,7 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Death Korps Death Rider Squadron" hidden="false" id="1250-134c-8024-4be1" collective="false">
-      <profiles>
-        <profile name="Death Korps Death Rider Squadron (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6091-5596-96e5-a415">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1250-134c-8024-4be1" childId="8ad1-c1e8-e89f-01c2" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Death Korps Death Rider Squadron (10 models)" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1250-134c-8024-4be1" childId="8ad1-c1e8-e89f-01c2" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="7c7f-f763-1f39-410c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1250-134c-8024-4be1" childId="8ad1-c1e8-e89f-01c2" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
+    <selectionEntry type="unit" import="true" name="Death Korps Death Rider Squadron" hidden="false" id="1250-134c-8024-4be1" collective="false">
       <infoLinks>
         <infoLink name="Death Korps Hunting Lances" id="2503-b2fd-69d6-77e5" hidden="false" targetId="6885-f404-fb0c-c63c" type="profile"/>
         <infoLink name="Augmented Mount" id="1c41-cb28-d14a-af91" hidden="false" targetId="4166-241c-050f-e8d8" type="profile"/>
@@ -11035,13 +11027,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         <categoryLink targetId="4ef8-3529-5624-24bf" id="3797-7d48-f087-06e4" primary="false" name="Death Riders"/>
         <categoryLink targetId="03c6-df8f-c05f-34aa" id="eede-9f5c-5de7-16e2" primary="false" name="Death Korps Death Rider Squadron"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="5 Additional Riders" hidden="false" id="8ad1-c1e8-e89f-01c2" collective="false">
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="d5d6-9759-1e86-3732" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" id="77eb-1775-1bcd-5933" type="selectionEntry" targetId="6ab0-15ed-d073-419f">
@@ -11057,9 +11042,58 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
-      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="5e73-83d5-9fcb-8aac" hidden="false" defaultSelectionEntryId="cd66-be7f-e52f-bb23">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 Models" hidden="false" id="cd66-be7f-e52f-bb23">
+              <profiles>
+                <profile name="Death Korps Death Rider Squadron (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="363c-ec78-557d-c355">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a4e-32e8-b093-7670" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 Models" hidden="false" id="dcf0-b97f-2386-c223">
+              <profiles>
+                <profile name="Death Korps Death Rider Squadron (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="672e-016b-3e5b-73cc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1926-46dc-0a2b-4186" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="026a-4981-6d8b-7071" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ff0-098f-26b3-ff01" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Death Rider Squadron Commander" hidden="false" id="8609-f906-a564-e6d1" collective="false">
       <profiles>
@@ -11153,36 +11187,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Grenadier Storm Squad" hidden="false" id="6a86-59e7-a72e-3237" collective="false">
-      <profiles>
-        <profile name="Death Korps Grenadier Storm Squad (4/5 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="5280-d9b1-fc72-49b5">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="6a86-59e7-a72e-3237" childId="a79d-eb34-eba8-0ae4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="7c7f-f763-1f39-410c">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="6a86-59e7-a72e-3237" childId="a79d-eb34-eba8-0ae4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Death Korps Grenadier Storm Squad (9/10 models)" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="6a86-59e7-a72e-3237" childId="a79d-eb34-eba8-0ae4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="7d7f-7fb7-16f4-4bf0" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink name="Faction: Imperium" hidden="false" id="6eee-1242-4dd1-982f" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -11203,14 +11207,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="5 additional Grenadiers" hidden="false" id="a79d-eb34-eba8-0ae4" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="597a-d409-cf9b-7f73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="8291-b8c0-af57-643d" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -11228,8 +11224,60 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="0db1-c25b-6076-53c4" hidden="false" defaultSelectionEntryId="8163-fbef-6516-7f81">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="4/5 Models" hidden="false" id="8163-fbef-6516-7f81">
+              <profiles>
+                <profile name="Death Korps Grenadier Storm Squad (4/5 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bafa-7d09-e089-63b8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ce7-79cf-fefc-30c0" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="9/10 Models" hidden="false" id="8c0d-bd06-fe0c-65ee">
+              <profiles>
+                <profile name="Death Korps Grenadier Storm Squad (9/10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2eae-ead1-421d-c361">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5144-dcca-4a05-19a8" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="270c-ca94-410f-42bc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="661c-50c1-5644-fa9b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Heavy Weapons Squad" hidden="false" id="87a1-30f0-1122-bb88" collective="false">
       <profiles>
@@ -11269,19 +11317,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Infantry Squad" hidden="false" id="ad67-788d-1602-b0b0" collective="false">
-      <profiles>
-        <profile name="Death Korps Infantry Squad (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a87e-039c-e5df-4816">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="db66-f9df-2c80-1cc5" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink name="Faction: Imperium" hidden="false" id="fbf4-b61d-9c8a-f544" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -11307,8 +11342,60 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="df31-5782-ee7c-2a0f" hidden="false" defaultSelectionEntryId="2085-a411-5d1d-db53">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 Models" hidden="false" id="2085-a411-5d1d-db53">
+              <profiles>
+                <profile name="Death Korps Infantry Squad (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4be3-0503-9a3d-34e8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d0c-85c8-bfad-c8b9" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 Models" hidden="false" id="f1b5-ca1f-ec8f-beeb">
+              <profiles>
+                <profile name="Death Korps Infantry Squad (20 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4a41-0d35-148b-195b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85e-f859-59f9-c1e3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="444a-9816-318a-d876" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38cf-b2e7-e73f-5995" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" id="8773-54d1-2329-5126" collective="false">
       <categoryLinks>
