@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="63" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="64" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -127,6 +127,7 @@
     <categoryEntry name="Faction: Death Korps of Krieg" id="6bec-aa67-8d49-84f1" hidden="false"/>
     <categoryEntry name="Commisar-General" id="4bd0-fe2b-6823-65fe" hidden="false"/>
     <categoryEntry name="Commisar-General with Cadet Commisar Retinue" id="23d8-5f60-d327-b63e" hidden="false"/>
+    <categoryEntry name="Attila" id="5ab1-4055-1799-99f7" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -3157,6 +3158,20 @@
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="7455-790c-0092-68b9" primary="true" name="HQ"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Attilan Rough Riders" hidden="false" id="b5d6-161a-68ca-1935" type="selectionEntry" targetId="ee1b-b7c0-8922-549a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6849-d47b-fede-6c3e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="90fe-e6a8-b5aa-468e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -7463,36 +7478,8 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c4ea-6d2b-a19b-c71f" name="Mukaali Riders" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c4ea-6d2b-a19b-c71f" name="Mukaali Riders" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="ccc4-17ad-7e02-7296" name="Mukaali Riders (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2">
-              <conditions>
-                <condition field="selections" scope="c4ea-6d2b-a19b-c71f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b394-48ac-f4a7-e758" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Mukaali Riders (6 models)">
-              <conditions>
-                <condition field="selections" scope="c4ea-6d2b-a19b-c71f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b394-48ac-f4a7-e758" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="7c7f-f763-1f39-410c" value="4">
-              <conditions>
-                <condition field="selections" scope="c4ea-6d2b-a19b-c71f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b394-48ac-f4a7-e758" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="af17-9fc2-bf26-6650" name="Stomping Feet" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
@@ -7500,16 +7487,6 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
-          </characteristics>
-        </profile>
-        <profile id="5798-ff7d-0311-39b6" name="Hunting Lances" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
@@ -7530,13 +7507,6 @@
         <categoryLink id="70dd-a003-4dff-e7ec" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
         <categoryLink id="a5d9-cdd3-fb51-1493" name="Mukaali Riders" hidden="false" targetId="b906-8d74-cc1c-4ef6" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b394-48ac-f4a7-e758" name="3 Additional" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="2a16-6304-6205-2567" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink import="true" name="Laspistols" hidden="false" id="7648-3025-e988-c744" type="selectionEntry" targetId="247f-292f-5de5-164b">
@@ -7545,10 +7515,62 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d39-923a-eb91-2def" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Hunting Lances" hidden="false" id="08c2-74e5-f81e-669f" type="selectionEntry" targetId="7050-2b14-bae1-e967">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f464-89fd-0e7b-d5fc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0cc-fae2-ca72-1565" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="f207-548f-627d-a3fb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="c9ef-b054-87fa-a27d">
+              <profiles>
+                <profile name="Mukaali Riders (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f1b6-c93d-a063-3579">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 models" hidden="false" id="6ebb-ef63-bd78-6b7f">
+              <profiles>
+                <profile name="Mukaali Riders (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a12b-f14b-fed4-4a64">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59a0-dd5c-b945-30b1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eef-ebba-8257-d549" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0e5b-cd27-759d-d06c" name="Sentinel Powerlifters" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -8705,29 +8727,6 @@
         <categoryLink id="b09a-9b35-104c-2f44" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
         <categoryLink id="7e2a-01b8-c3c0-6b82" name="Rough Riders" hidden="false" targetId="acc7-cc8d-2ab9-23cd" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b93a-a534-862d-c85e" name="Hunting Lances" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ec-0e6e-a627-4c61" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fc-759a-ad11-40fb" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6e9f-b47d-87ab-8893" name="Hunting Lances" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f9b7-5034-0d32-1882" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="29cf-f7ad-7565-1cc5">
           <constraints>
@@ -8743,14 +8742,14 @@
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f941-e168-8387-0539" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -8761,14 +8760,14 @@
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8785,6 +8784,12 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0a4-4ecd-1250-a0c4" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="caea-5155-722e-902b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunting Lances" hidden="false" id="4c4f-ab9f-6a9e-42b1" type="selectionEntry" targetId="7050-2b14-bae1-e967">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b86-b1f6-d546-e3db" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e354-0a60-cc2d-6c4e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -10367,6 +10372,11 @@ In Addition, whilst a friendly LIGHT ELYSIAN DROP TROOPS Units is within 6&quot;
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="315b-8b48-f68e-7806" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Attila" hidden="false" id="90fe-e6a8-b5aa-468e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665b-56ec-c06c-4f28" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -10939,7 +10949,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       <infoLinks>
         <infoLink name="Augmented Mount" id="56a9-b669-2a1d-6f49" hidden="false" targetId="4166-241c-050f-e8d8" type="profile"/>
         <infoLink name="Deep Strike" id="126f-26fe-a8a2-7e39" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
-        <infoLink name="Death Korps Hunting Lances" id="5d01-f69e-246a-68c2" hidden="false" targetId="6885-f404-fb0c-c63c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Cavalry" hidden="false" id="27f8-b59f-9bad-eee5" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
@@ -10962,6 +10971,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1944-1b32-9536-975d" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de96-0c3e-e4f7-f57c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunting Lances" hidden="false" id="84fb-392f-797a-31d8" type="selectionEntry" targetId="7050-2b14-bae1-e967">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d8d-b9ae-a91e-5b2d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97e7-65d8-8e24-e26b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11015,7 +11030,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Korps Death Rider Squadron" hidden="false" id="1250-134c-8024-4be1" collective="false">
       <infoLinks>
-        <infoLink name="Death Korps Hunting Lances" id="2503-b2fd-69d6-77e5" hidden="false" targetId="6885-f404-fb0c-c63c" type="profile"/>
         <infoLink name="Augmented Mount" id="1c41-cb28-d14a-af91" hidden="false" targetId="4166-241c-050f-e8d8" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -11039,6 +11053,12 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e57-7cc3-e183-4827" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a03f-8925-51dc-5205" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunting Lances" hidden="false" id="dcba-8acb-6f26-e574" type="selectionEntry" targetId="7050-2b14-bae1-e967">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a37-af10-37f9-2b2c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4769-f3a2-4816-caa7" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11121,7 +11141,6 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       </profiles>
       <infoLinks>
         <infoLink name="Officer" id="bbc8-cfcb-f05c-a8c9" hidden="false" targetId="8694-ef52-5c68-4939" type="profile"/>
-        <infoLink name="Death Korps Hunting Lance" id="c691-0d91-40c8-ccd5" hidden="false" targetId="2b99-01c5-3ea9-439a" type="profile"/>
         <infoLink name="Augmented Mount" id="7b94-37eb-3f9d-6b41" hidden="false" targetId="4166-241c-050f-e8d8" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -11141,6 +11160,26 @@ aboard this unit during deployment, this unit has the Infiltrators ability.</cha
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hunting Lance" hidden="false" id="7335-ee61-470c-6e9a">
+          <profiles>
+            <profile name="Hunting Lance" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="84f6-9a7c-2417-82ff">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80e8-c209-992c-1af5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a81-098f-990c-706a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Korps Field Officer" hidden="false" id="d849-7519-6b00-4f9c" collective="false">
       <profiles>
@@ -12175,6 +12214,106 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Attilan Rough Riders" hidden="false" id="ee1b-b7c0-8922-549a" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="c95b-628f-4620-6ab5" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="f145-aa48-9ce7-5fdd" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="6899-41e7-c246-781c" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Cavalry" hidden="false" id="b893-5eaa-bb20-e296" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink name="Rough Riders" hidden="false" id="7712-b4d9-1d5a-f550" targetId="acc7-cc8d-2ab9-23cd" primary="false"/>
+        <categoryLink targetId="5ab1-4055-1799-99f7" id="a0b0-cca6-feb6-ab0f" primary="false" name="Attila"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="217f-f5d3-3a78-8c81" hidden="false" collective="false" import="true" defaultSelectionEntryId="29cf-f7ad-7565-1cc5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a837-15a4-f96c-9df7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62c0-95c3-596d-2ecf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="215e-ea58-a5cf-6ae0" collective="false">
+              <profiles>
+                <profile name="Attilan Rough Riders (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="422b-a002-51ea-49f7">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="4f17-8938-77b7-fb3b" collective="false">
+              <profiles>
+                <profile name="Attilan Rough Riders (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8228-5584-65b0-0d0b">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="3aa1-d6ed-4436-34b5" collective="false" targetId="6ab0-15ed-d073-419f" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4e6-a238-c998-36f4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8dcc-f6a5-02ec-7fde" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lasguns" hidden="false" id="a9c6-e0b2-4f62-7149" type="selectionEntry" targetId="bc34-8370-d13a-bddb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe4-9119-b61c-0fe8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b313-c790-b4cc-abf4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunting Lances" hidden="false" id="be11-500f-7c58-92eb" type="selectionEntry" targetId="7050-2b14-bae1-e967">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f541-4715-1a48-81ca" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ef1-3a7a-093f-55bf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Horsemasters" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="5f83-75a5-de24-4d07">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This Unit may still make a Shoot or Fight action in a turn in which it performed a Fall Back.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunting Lances" hidden="false" id="7050-2b14-bae1-e967">
+      <profiles>
+        <profile name="Hunting Lances" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="04c3-5ce2-d88e-1a23">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
