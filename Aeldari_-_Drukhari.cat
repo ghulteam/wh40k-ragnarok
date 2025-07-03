@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edb6-2137-61ab-0924" name="Aeldari - Drukhari" revision="23" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="edb6-2137-61ab-0924" name="Aeldari - Drukhari" revision="24" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="3cef-65f6-1938-6b57" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="052f-2cba-abf7-da92" name="Faction: [KABAL]" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -42,6 +42,9 @@
     <categoryEntry id="7355-f30b-49c9-5c8f" name="Reaper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="6b4f-d841-6885-81f6" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="882a-3509-5dcc-393c" name="Raven Strike Fighter" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry name="Kabalite Trueborn" id="2e8d-d3aa-2486-ec6e" hidden="false"/>
+    <categoryEntry name="Haemoxytes" id="2f0d-e726-9f50-056e" hidden="false"/>
+    <categoryEntry name="Hekatrix Bloodbrides" id="1194-2731-2aff-76a8" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5a25-f53a-0105-5865" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="17d0-1558-09cd-cb58" type="selectionEntry">
@@ -218,6 +221,21 @@
     <entryLink id="fd5e-41f3-6ef7-d017" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="5967-7f20-d3ac-aeaa" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7212-cbae-1da4-b5f5" name="Heavy Support, Transport" hidden="false" targetId="1aa3-a793-7c54-abe7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kabalite Trueborn" hidden="false" id="6970-d6fc-fd9e-feda" type="selectionEntry" targetId="92ee-741b-e09d-7f8e">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="be9e-83a3-1251-63e4" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hekatrix Bloodbrides" hidden="false" id="f864-be6a-7c24-73c2" type="selectionEntry" targetId="5780-1593-e5b7-e404">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="5fb6-094e-fbc0-2acb" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Haemoxytes" hidden="false" id="9081-9d72-2457-517a" type="selectionEntry" targetId="0626-efe2-ed01-1be5">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="f8a4-ecc1-29c0-42bb" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -667,7 +685,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
         <entryLink id="39e4-6474-cf79-a4db" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9344-200a-ee47-59ed" name="Haemonculus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -680,7 +698,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -911,7 +929,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
             <profile id="7e06-5169-bd8c-7bb5" name="Wych Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">MElee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
@@ -1063,7 +1081,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a677-8ef8-b52a-d60c" name="15 Models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
@@ -1084,7 +1102,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="10 Models" hidden="false" id="1b09-3c80-239f-979e" publicationId="8df9-0b3e-abea-3c15" collective="false">
@@ -1105,7 +1123,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="20 Models" hidden="false" id="3a64-6f57-59ca-ad07" publicationId="8df9-0b3e-abea-3c15" collective="false">
@@ -1126,7 +1144,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1726,7 +1744,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1744,10 +1762,10 @@ rounding down, from this unit. Small blast markers must be removed before large 
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">7</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">7</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1768,7 +1786,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1789,12 +1807,12 @@ rounding down, from this unit. Small blast markers must be removed before large 
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">7</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">7</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="33"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1846,7 +1864,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 <profile id="42a0-1fc9-f972-ac2f" name="Liquifier Gun" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
                     <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
                     <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
@@ -3976,6 +3994,246 @@ rounding down, from this unit. Small blast markers must be removed before large 
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kabalite Trueborn" hidden="false" id="92ee-741b-e09d-7f8e" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: [KABAL]" hidden="false" id="2c48-8418-b039-1882" targetId="052f-2cba-abf7-da92" primary="false"/>
+        <categoryLink name="Faction: Aeldari" hidden="false" id="556a-bbbb-98e5-1832" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink name="Faction: Drukhari" hidden="false" id="6fd9-9fb2-a63b-5864" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="d85f-9468-b8ec-a3d3" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="7e54-6c50-9902-6ec5" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="9b6a-9dbe-25bc-bd65" id="6259-28ac-7188-de0b" primary="false" name="Kabalite Warriors"/>
+        <categoryLink targetId="2e8d-d3aa-2486-ec6e" id="bff7-0682-2d42-4620" primary="false" name="Kabalite Trueborn"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rifles &amp; CCW&apos;s" hidden="false" id="f316-99ad-f9c6-6525" publicationId="8df9-0b3e-abea-3c15" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f10-0786-1cc4-2ca1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc41-320b-014b-30e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Kabalite Close Combat Weapons" id="857f-2f60-3be6-2619" hidden="false" publicationId="8df9-0b3e-abea-3c15" targetId="c12c-0b42-46a1-9158" type="profile"/>
+            <infoLink name="Splinter Rifle" id="030c-e10d-ae52-db00" hidden="false" publicationId="8df9-0b3e-abea-3c15" targetId="5eaa-c4f9-b8ab-2158" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trueborn Special Weapons" hidden="false" id="48dd-d38a-e1e9-cbfd">
+          <profiles>
+            <profile name="Trueborn Special Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="cf1c-fca2-00c8-ad2f">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6389-759c-7895-8ece" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="731b-b5dd-4b73-8769" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="0a22-d0cc-770b-2203">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5e0-8c3e-9f5e-cb4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50da-cba7-f8ab-626c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="10 Models" hidden="false" id="0a22-d0cc-770b-2203" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a856-f742-9971-94cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Kabalite Trueborn (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e235-3c0d-8c58-b482" publicationId="8df9-0b3e-abea-3c15">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Optional Weapons" id="4f5b-9113-a471-c45a" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fa8d-4ccc-9cc6-7ad3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dark Lance" hidden="false" id="d84a-9e70-3bfc-6d09" publicationId="8df9-0b3e-abea-3c15" collective="false" targetId="43f5-4c44-ca95-3cde" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="710b-8e34-e2d5-1b65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Splinter Cannon" hidden="false" id="6c8a-b9e4-f318-00bd" collective="false" targetId="a492-561d-c38a-08d6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e5e9-283d-25ef-40cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="4a17-3675-e0cc-ebd8" publicationId="8df9-0b3e-abea-3c15" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5780-1593-e5b7-e404" name="Hekatrix Bloodbrides" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1a88-bc0a-2b28-a452" name="Faction: [WYCH CULT]" hidden="false" targetId="cb7c-1a71-1a58-69b9" primary="false"/>
+        <categoryLink id="77ab-14f5-237c-2fdb" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="d8df-5fbf-dc21-4dcc" name="Faction: Drukhari" hidden="false" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink id="729f-58c0-a2b0-5ae9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0594-8d09-9dbe-d9dc" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0016-1482-04a6-156e" name="Wyches" hidden="false" targetId="0700-a78d-fa37-15fa" primary="false"/>
+        <categoryLink targetId="1194-2731-2aff-76a8" id="121f-6662-bbb1-eed3" primary="false" name="Hekatrix Bloodbrides"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7a18-b565-c95b-b5ee" name="Pistols &amp; Hekatrix Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e885-bd9f-b179-da1e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ed-ae8a-997e-7a9e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="17c3-4061-8f7a-3fcb" name="Splinter Pistols" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2786-e7d8-ea0d-6673" name="Hekatrix Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="982c-6dc9-4b73-57b1" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="48a5-82fb-2492-b6a3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eea-df37-d415-d0a5" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd2-b94e-d63e-3c0b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e4f2-bc87-7bd7-1a67" name="10 Models" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ccf-4057-8904-8567" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="af87-fb5d-671c-3ce8" name="Hekatrix Bloodbrides (10 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0140-a546-fe46-62a1" name="No Escape" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="50be-48b4-1c8c-d228" type="selectionEntry"/>
+        <entryLink id="6550-7403-5b99-a0b9" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0626-efe2-ed01-1be5" name="Haemoxytes" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="e064-199c-dcb6-c761" name="Ignore Damage (6+)" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6550-c049-89bf-9a74" name="Faction: [HAEMONCULUS COVEN]" hidden="false" targetId="784b-a6b0-402c-c53c" primary="false"/>
+        <categoryLink id="deac-59db-6880-f0dc" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="1da1-b2bf-4960-a8c6" name="Faction: Drukhari" hidden="false" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink id="3ee6-71fc-8406-3ae2" name="Wracks" hidden="false" targetId="523e-aad2-2bc1-0890" primary="false"/>
+        <categoryLink id="3cae-a160-a849-486b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b8c6-cd2d-dcb3-0a64" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink targetId="2f0d-e726-9f50-056e" id="6ce5-6cf1-f823-f18c" primary="false" name="Haemoxytes"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="73d2-90a6-3230-1a57" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="45e2-f8cf-a1d9-7657">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa2-1eff-c994-9755" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8090-7ca6-05f1-87d7" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 Models" hidden="false" id="6685-adb2-a7d5-bfcb" publicationId="8df9-0b3e-abea-3c15" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b73-4a74-919c-6bb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Haemoxytes (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4c15-8bd8-10cc-e8f8" publicationId="8df9-0b3e-abea-3c15">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ed72-83c3-a153-050c" name="Haemonculus Tools" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="2b03-6967-65a2-6e59" type="selectionEntry"/>
+        <entryLink id="9bdf-3571-4f72-92c7" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
