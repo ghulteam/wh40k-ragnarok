@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fe23-200d-6a49-8999" name="Chaos - Legiones Daemonica" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="bb5c-0fba-06fd-2fcb" name="Tally of Pestilence">
       <characteristicTypes>
@@ -2676,6 +2676,18 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
       <infoLinks>
         <infoLink name="Deep Strike" id="d18c-8230-488e-66d3" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d3bc-bcf7-740c-9d56" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1d3b-e535-814d-65f5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="db7e-3978-5f8f-7115" name="Epidemius" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3314,6 +3326,9 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bc-bcf7-740c-9d56" type="equalTo"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d3b-e535-814d-65f5" type="equalTo"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="13dd-e8b8-5428-f7c9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1891-299a-5601-b5a2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="777b-470f-f311-0fad" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7408,7 +7423,11 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger" hidden="false" id="9d93-46bd-1903-c72d">
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="19d3-5a37-244f-00b6" type="selectionEntry" targetId="7347-5716-355f-9165"/>
-        <entryLink import="true" name="Daemonic Gifts" hidden="false" id="c742-2a46-8020-1876" type="selectionEntryGroup" targetId="5db2-f19d-c0f4-9e4d"/>
+        <entryLink import="true" name="Daemonic Gifts" hidden="false" id="c742-2a46-8020-1876" type="selectionEntryGroup" targetId="5db2-f19d-c0f4-9e4d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a05-72bc-3281-92f1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deep Strike" id="b5d1-e4ab-6817-fed6" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
@@ -7458,12 +7477,12 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <modifiers>
             <modifier type="set" value="6+" field="a56f-38ae-3917-aadc">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="9d93-46bd-1903-c72d" childId="55fa-ac02-1076-9c21" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="2" field="ddfe-6a9e-32c1-a51c">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="9d93-46bd-1903-c72d" childId="5aec-5fe4-f263-1373" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7530,17 +7549,17 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <modifiers>
             <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="3db2-5ba9-62b0-c4e6" childId="7ad0-c881-2b9c-0053" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="3db2-5ba9-62b0-c4e6" childId="55fa-ac02-1076-9c21" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="3" field="ddfe-6a9e-32c1-a51c">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="3db2-5ba9-62b0-c4e6" childId="5aec-5fe4-f263-1373" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7621,17 +7640,17 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <modifiers>
             <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="0b2c-8de8-1c86-5a60" childId="7ad0-c881-2b9c-0053" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="0b2c-8de8-1c86-5a60" childId="55fa-ac02-1076-9c21" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="3" field="ddfe-6a9e-32c1-a51c">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="0b2c-8de8-1c86-5a60" childId="5aec-5fe4-f263-1373" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7698,17 +7717,17 @@ Each time you roll damage for a LEGIONES DAEMONICA unit in the Detachment, you c
           <modifiers>
             <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad0-c881-2b9c-0053" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="4d0c-dde1-85bb-7f8d" childId="7ad0-c881-2b9c-0053" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="4" field="ddfe-6a9e-32c1-a51c">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="5aec-5fe4-f263-1373" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="4d0c-dde1-85bb-7f8d" childId="5aec-5fe4-f263-1373" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="4+" field="a56f-38ae-3917-aadc">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="55fa-ac02-1076-9c21" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="7f4e-c309-8249-71ef" childId="55fa-ac02-1076-9c21" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
