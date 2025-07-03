@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5bb-d6ce-d555-8b4a" name="Imperium - Agents of the Imperium" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d5bb-d6ce-d555-8b4a" name="Imperium - Agents of the Imperium" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="89bc-3cf7-adff-c6eb" name="D3 Roll">
       <characteristicTypes>
@@ -362,13 +362,14 @@
         </profile>
         <profile id="6bd5-412c-f933-3cd7" name="Deadshot" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with ranged weapons by this unit that target CHARACTER units.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with ranged weapons by this unit that target CHARACTER units. In addition when this unit makes an attack with its Exitus Weapons that targets a CHARACTER, add the DESTROYER ability to its Exitus Weapons for that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="3aa3-4682-96cb-1776" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
         <infoLink id="726a-e8be-9689-032f" name="Independent Operative" hidden="false" targetId="f7f8-e9c9-25ac-c590" type="profile"/>
+        <infoLink name="Infiltrators" id="06e2-ba9a-1b86-53b3" hidden="false" type="rule" targetId="f07d-6c22-ac83-604c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ad9d-0911-3507-7e6a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -415,8 +416,16 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Lightning Reflexes" hidden="false" id="126b-c2a0-2d9c-a304" type="selectionEntry" targetId="7071-73b3-fb19-4ef3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c8-f8b9-3c81-0ed0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1df1-ffb5-a811-97a9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="6393-b0ef-1dee-0b43" name="Vigilators" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -787,18 +796,20 @@
         </profile>
         <profile id="48d3-6bcb-7130-7023" name="Polymorphine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit uses the Deep Strike ability, you can set it up anywhere on the battlefield that is more than D6+3&quot; away from any enemy units, instead of 9&quot;.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit uses the Deep Strike ability, you can set it up anywhere on the battlefield that is more than 3&quot; away from any enemy units, instead of 9&quot;.
+</characteristic>
           </characteristics>
         </profile>
         <profile id="bd31-28ea-f9ef-531e" name="Reign of Confusion" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If you have any CALLIDUS ASSASSINS in your army, then during the first turn your opponent generates one fewer Command Point  than they normally would.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time your opponent targets a unit from their army with a Command Asset, if that unit is within 12&quot; of this model, increase the cost of that use of that Command Asset by 1CP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="8a10-05d2-89f6-64a2" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
         <infoLink id="5f06-d957-a0c2-9721" name="Independent Operative" hidden="false" targetId="f7f8-e9c9-25ac-c590" type="profile"/>
+        <infoLink name="Infiltrators" id="9973-4887-dd62-e242" hidden="false" type="rule" targetId="f07d-6c22-ac83-604c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ed2-f145-9c3a-35e8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -856,8 +867,16 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Lightning Reflexes" hidden="false" id="e90d-d666-1379-8ea1" type="selectionEntry" targetId="7071-73b3-fb19-4ef3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e843-c22e-4e5e-323b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c47-292b-d7df-7043" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="f86b-df95-bc40-8f15" name="Culexus Assassin" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -909,7 +928,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -943,8 +962,16 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Lightning Reflexes" hidden="false" id="d1f1-fd40-3b7e-1c3f" type="selectionEntry" targetId="7071-73b3-fb19-4ef3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="856f-42a8-0b4b-c61b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8aed-e80d-089e-cb83" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="b5fb-4c3c-4774-88c3" name="Eversor Assassin" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -975,6 +1002,7 @@
       <infoLinks>
         <infoLink id="bc7d-3d92-0ab5-10e9" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
         <infoLink id="f783-f426-b419-e3b1" name="Independent Operative" hidden="false" targetId="f7f8-e9c9-25ac-c590" type="profile"/>
+        <infoLink name="Infiltrators" id="754e-af98-c5a5-94e8" hidden="false" type="rule" targetId="f07d-6c22-ac83-604c"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c20d-7f5c-8ea3-4209" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -1016,8 +1044,8 @@
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
@@ -1029,8 +1057,16 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Lightning Reflexes" hidden="false" id="1c4a-307e-c814-1ba2" type="selectionEntry" targetId="7071-73b3-fb19-4ef3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e31-3cc6-69c4-ca98" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d71-37ee-0745-d0a7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="a464-5eee-9704-d462" name="Elucia Vhane" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2852,6 +2888,15 @@
         <infoLink name="Witchfire" id="65f5-3d55-46e6-0bf2" hidden="false" type="rule" targetId="8ce8-6dd3-c0a8-35ad"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning Reflexes" hidden="false" id="7071-73b3-fb19-4ef3">
+      <profiles>
+        <profile name="Lightning Reflexes" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="eada-be10-a76c-fa61">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Roll D12s when making saving throws for this unit, irrespective of the size of the blast markers next to it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="af11-d47d-30f3-76e7" name="Ordo" hidden="false" collective="false" import="true">
@@ -2942,7 +2987,7 @@
   <sharedProfiles>
     <profile id="9532-3916-1d26-3cb3" name="Psychic Abomination" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be targeted or affected by Command Assets that are psychic powers, or weapons with the Witchfire ability. PSYKER units within 6&quot; of this unit cannot be selected to manifest psychic powers.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be targeted or affected by Command Assets that are psychic powers, or weapons with the Witchfire ability. PSYKER units within 12&quot; of this unit cannot be selected to manifest psychic powers.</characteristic>
       </characteristics>
     </profile>
     <profile id="f7f8-e9c9-25ac-c590" name="Independent Operative" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
