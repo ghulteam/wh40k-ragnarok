@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -57,6 +57,12 @@
     <categoryEntry name="Servitor Battleclade" id="ec38-d969-8c71-74d1" hidden="false"/>
     <categoryEntry name="Arcuitor " id="7886-9227-30c1-d264" hidden="false"/>
     <categoryEntry name="Adsecularis Tech-thralls" id="82af-20b4-3984-2564" hidden="false"/>
+    <categoryEntry name="Scyllax Guardian-Automata Maniple" id="e2dd-ade3-eebf-319d" hidden="false"/>
+    <categoryEntry name="Myrmidon Secutor Host" id="db89-f3ae-5fd5-851d" hidden="false"/>
+    <categoryEntry name="Myrmidons" id="0fe1-7394-3b92-e212" hidden="false"/>
+    <categoryEntry name="Vorax Battle-automata Maniple" id="a5a0-bed2-608d-789d" hidden="false"/>
+    <categoryEntry name="Automata" id="3318-e205-a770-f806" hidden="false"/>
+    <categoryEntry name="Vultarax Stratos-Automata Squadron" id="3878-3f9d-29d1-587a" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -293,6 +299,26 @@
     <entryLink import="true" name="Adsecularis Tech-thralls Covenant" hidden="false" id="7d39-ed6f-dcfd-cfab" type="selectionEntry" targetId="ccdb-0020-3db5-e114">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="2f02-3ed6-6e1a-1abb" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Myrmidon Secutor Host" hidden="false" id="bed0-3bcf-d6ef-bbb5" type="selectionEntry" targetId="50d8-bcf4-58ed-224e">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="bebc-d17f-71dc-1904" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scyllax Guardian-Automata Maniple" hidden="false" id="abef-f516-0d7d-1ddd" type="selectionEntry" targetId="392a-dd59-37ef-2f84">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="3bdb-8e7e-3018-192d" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-automata Maniple" hidden="false" id="49a6-0b6a-1eb7-9b41" type="selectionEntry" targetId="7169-4f5a-07d3-53d7">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="209b-3947-bdfb-aa75" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="44f1-1315-cec1-5faa" type="selectionEntry" targetId="e391-2509-1d36-d7e1">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="2309-9180-1d0e-3d9d" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4490,7 +4516,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="63"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="67"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="06 Models" hidden="false" id="5538-b591-f4ea-ca05">
@@ -4508,7 +4534,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="38"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4569,6 +4595,7 @@
         <categoryLink targetId="4dc1-30a6-aa31-19a9" id="e312-2b9a-35dc-2cea" primary="false" name="Faction: Cult Mechanicus"/>
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="7497-13f2-e02a-4a36" primary="false" name="Faction: [FORGE WORLD]"/>
         <categoryLink targetId="f5cf-ab4f-c147-f6d9" id="99e1-cdfa-ddf2-5485" primary="false" name="Myrmidon Destructor Host"/>
+        <categoryLink targetId="0fe1-7394-3b92-e212" id="4cb1-580e-18b6-5845" primary="false" name="Myrmidons"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Irradiation Engine" hidden="false" id="2526-fba4-364f-a9c9">
@@ -4881,13 +4908,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink name="Vehicle Squadron" id="2b54-d4e7-1510-882e" hidden="false" type="profile" targetId="54ac-32db-574c-706b">
-              <modifiers>
-                <modifier type="set" value="Thanatar Maniple" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="23"/>
           </costs>
@@ -4937,6 +4957,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55d0-768a-1f37-d2b7" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Commander" hidden="false" id="5b2d-4d9f-1136-3532" type="selectionEntry" targetId="7347-5716-355f-9165"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Sollex Heavy-Las" hidden="false" id="705d-1e37-2dd3-9104">
@@ -5006,6 +5027,13 @@
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="2b54-d4e7-1510-882e" hidden="false" type="profile" targetId="54ac-32db-574c-706b">
+          <modifiers>
+            <modifier type="set" value="Thanatar Maniple" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shock Chargers" hidden="false" id="3eeb-8f67-a69c-9790">
       <profiles>
@@ -5014,8 +5042,8 @@
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
@@ -5473,6 +5501,7 @@
         <categoryLink targetId="9f03-eaf2-e06e-f1bc" id="652e-bd7c-8e4e-34f4" primary="false" name="Domitar Battle-Automata Maniple"/>
         <categoryLink targetId="25c7-3353-2028-72b2" id="dc89-34ee-1f0f-a3e1" primary="false" name="Heavy"/>
         <categoryLink targetId="5aeb-0fa6-9427-2144" id="681d-045f-838c-7c72" primary="false" name="Vehicle"/>
+        <categoryLink targetId="3318-e205-a770-f806" id="7fed-ed3a-fdd1-4c41" primary="false" name="Automata"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thallax Cohort" hidden="false" id="c2e5-52b5-69db-3a08">
@@ -5715,7 +5744,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="05 model" hidden="false" id="5206-d50a-244a-7777">
@@ -5733,7 +5762,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="04 model" hidden="false" id="297e-ea51-12b7-3bb7">
@@ -5751,7 +5780,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5915,26 +5944,12 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Melee Weapons" id="f99b-429b-e32b-97d4" hidden="false" defaultSelectionEntryId="6f6c-b61d-a69c-1f53">
+        <selectionEntryGroup name="Melee Weapons" id="f99b-429b-e32b-97d4" hidden="false" defaultSelectionEntryId="e95d-993b-6616-5c26">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a8b-ccc0-f928-f342" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a542-140b-501d-92d9" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="a609-50ba-a44e-dfdf">
-              <profiles>
-                <profile name="Power Blade Array" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8cb7-1fd6-7baa-1fa5">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Siege Wrecker &amp; Shock Charger" hidden="false" id="8014-d1e4-b193-93d0">
               <profiles>
                 <profile name="Siege Wrecker &amp; Shock Charger" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9fa3-380f-a4a7-cf2a">
@@ -5949,12 +5964,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Shock Chargers" hidden="false" id="6f6c-b61d-a69c-1f53" type="selectionEntry" targetId="3eeb-8f67-a69c-9790"/>
+            <entryLink import="true" name="Power Blade Array" hidden="false" id="e95d-993b-6616-5c26" type="selectionEntry" targetId="515b-7841-8b1f-575a"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5966,6 +5982,7 @@
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="8aa4-66f6-f8fc-f773" primary="false" name="Faction: [FORGE WORLD]"/>
         <categoryLink targetId="25c7-3353-2028-72b2" id="7cfd-f7ce-03c7-03a0" primary="false" name="Heavy"/>
         <categoryLink targetId="5aeb-0fa6-9427-2144" id="3bd4-58e6-e270-99f7" primary="false" name="Vehicle"/>
+        <categoryLink targetId="3318-e205-a770-f806" id="7104-9aed-fa05-4985" primary="false" name="Automata"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Servitor Battleclade" hidden="false" id="90fe-b152-e5a5-d80c">
@@ -6080,7 +6097,7 @@
         </profile>
         <profile name="Lord of the Machine Cult" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0344-1469-036e-2d70">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly [FORGE WORLD] units whilst they are within 6&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly [FORGE WORLD] units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Archmagos" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="72f6-6470-11f9-69a7">
@@ -6144,6 +6161,7 @@
         <categoryLink targetId="4dc1-30a6-aa31-19a9" id="697a-80bf-402a-f0c5" primary="false" name="Faction: Cult Mechanicus"/>
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="7c21-523c-92a0-07e2" primary="false" name="Faction: [FORGE WORLD]"/>
         <categoryLink targetId="eb63-c223-c515-ac6b" id="1438-8d24-2c7b-5388" primary="false" name="Tech-Priest"/>
+        <categoryLink targetId="7886-9227-30c1-d264" id="141d-442e-625d-bdbb" primary="false" name="Arcuitor "/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="3434-9bee-348e-e158" type="selectionEntry" targetId="7347-5716-355f-9165"/>
@@ -6357,6 +6375,709 @@
         <categoryLink targetId="9542-47d3-14fe-04e0" id="00e4-7ada-3a11-5c48" primary="false" name="Faction: Adeptus Mechanicus"/>
         <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="f84d-bb8c-3674-8746" primary="false" name="Faction: [FORGE WORLD]"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scyllax Guardian-Automata Maniple" hidden="false" id="392a-dd59-37ef-2f84">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="0f6c-e3ae-47e4-3270" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="e590-7775-42e5-c516" hidden="false" defaultSelectionEntryId="14d7-9b54-109f-5210">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="04 Models" hidden="false" id="14d7-9b54-109f-5210">
+              <profiles>
+                <profile name="Scyllax Guardian-Automata (04 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="eaa4-4fa8-7869-cdb3">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="08 Models" hidden="false" id="bf48-16dd-0419-ed54">
+              <profiles>
+                <profile name="Scyllax Guardian-Automata (08 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6b25-1f3d-39fe-430d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="12 Models" hidden="false" id="822d-b573-7076-3cb7">
+              <profiles>
+                <profile name="Scyllax Guardian-Automata (12 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="39f3-4362-beec-754f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="16 Models" hidden="false" id="a3bd-eaf0-2096-0334">
+              <profiles>
+                <profile name="Scyllax Guardian-Automata (16 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9e54-ef91-353f-c47e">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10f2-b87b-3f7f-c5f4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2de-8dd3-3eb4-5b9a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged Weapons" id="c215-4371-2f4d-8367" hidden="false" defaultSelectionEntryId="ef7d-19c9-ecbe-6b47">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kraken Bolters" hidden="false" id="ef7d-19c9-ecbe-6b47">
+              <profiles>
+                <profile name="Kraken Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="69c3-343a-7405-7b3f">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Fire" id="3d91-9818-f52f-5f8d" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Maxima Bolters" hidden="false" id="bf11-8ffe-d821-8e07">
+              <profiles>
+                <profile name="Maxima Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1257-a932-6101-e17e">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotor Cannons" hidden="false" id="63f2-9d43-0c0d-98a3">
+              <profiles>
+                <profile name="Rotor Cannons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8ccd-0520-c5a3-5fec">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Volkite Chargers" hidden="false" id="f96f-0292-7a66-64ac">
+              <profiles>
+                <profile name="Volkite Chargers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="330e-7e39-0c4a-060a">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="5643-6eb9-d917-c785">
+              <profiles>
+                <profile name="Flamers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a09f-1ffa-caed-34a8">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Inferno" id="9bef-a964-12c7-0a13" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f22c-08f0-6213-4de9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c45-85e7-f8ab-b5bc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scyllax Combat Array" hidden="false" id="c827-b54f-aefb-0fc7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36dc-f280-3d6c-2ffb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3c4-c6ae-b4cc-4302" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scyllax Combat Array" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="d6fd-8b04-af20-de0e">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="1e49-2123-c717-b4fb" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="b4d1-44fd-31a9-5347" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="24a4-cd7d-a468-c5ea" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="e2dd-ade3-eebf-319d" id="89f7-e293-225c-46ba" primary="false" name="Scyllax Guardian-Automata Maniple"/>
+        <categoryLink targetId="3318-e205-a770-f806" id="8e77-e84b-f2db-0bcd" primary="false" name="Automata"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="c457-4cb8-a800-c54d" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="61e6-68a7-7483-8aeb" primary="false" name="Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="50d8-bcf4-58ed-224e">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="bf3e-d410-9abd-c4e1" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="e7a2-30d8-73b5-8232" hidden="false" defaultSelectionEntryId="5814-7c70-07a7-45fc">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 Models" hidden="false" id="5814-7c70-07a7-45fc">
+              <profiles>
+                <profile name="Myrmidon Secutor Host (03 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="edfc-f71e-5956-d7db">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 Models" hidden="false" id="a53a-2d8c-5f41-54e4">
+              <profiles>
+                <profile name="Myrmidon Secutor Host (10 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0ec8-8f01-dd4d-20ad">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="67"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 Models" hidden="false" id="ef98-6e80-9f88-19b7">
+              <profiles>
+                <profile name="Myrmidon Secutor Host (06 Models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c0de-d6c7-c875-32fe">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="38"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6351-15f6-dae4-19c1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc4e-f959-e485-995a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="b007-7b16-d76e-9bd8" primary="false" name="Light"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="c784-3177-257b-8a2a" primary="false" name="Infantry"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="0357-e076-dc08-6917" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="4d59-fa70-8ba7-eda2" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="4dc1-30a6-aa31-19a9" id="a7fe-573d-5dba-d103" primary="false" name="Faction: Cult Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="4b61-2ed6-936a-5446" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="db89-f3ae-5fd5-851d" id="d688-b26b-1064-8280" primary="false" name="Myrmidon Secutor Host"/>
+        <categoryLink targetId="0fe1-7394-3b92-e212" id="b656-61e9-0ef4-dd80" primary="false" name="Myrmidons"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Myrmidon Axes" hidden="false" id="dcf7-d013-f8fc-412f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4787-8dfb-cb37-3c15" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="129d-0f6b-9a58-efc5" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Myrmidon Axes" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b08e-16e6-e3f0-49b2">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Secutor Ranged Weapons" hidden="false" id="f146-a585-0b8b-676f">
+          <profiles>
+            <profile name="Secutor Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ffab-2b2e-880b-36bd">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b386-1abb-6a0f-7ed4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d987-6332-0bcd-833f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="60b9-c38b-a421-fd35">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="da9c-9d88-b9b4-c745" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="cbd2-3ed3-6f6e-1692" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="e9a9-2950-4b76-0f66" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="a189-3287-bf45-696b" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="ade3-4780-a03c-cc9d" primary="false" name="Fly"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="3762-fb8d-c309-9a88" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="b588-c919-6923-3fba" primary="false" name="Vehicle"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="2c6d-8a2e-b658-7e7e" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="bbf4-e0ce-cd78-a7be" hidden="false" defaultSelectionEntryId="c2c9-6fe7-62e3-93b2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6d1-076e-95e7-f51e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11e9-c90b-5102-5393" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="c2c9-6fe7-62e3-93b2">
+              <profiles>
+                <profile name="Artalax (01 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="927b-9d96-36c8-46b2">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="2628-cbcf-a687-1e37">
+              <profiles>
+                <profile name="Artalax (02 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f9cc-3a5a-c38d-2d31">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="26b8-1ee9-9a8f-2cad">
+              <profiles>
+                <profile name="Artalax (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6223-4bdb-5cd3-45fc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vorax Battle-automata Maniple" hidden="false" id="7169-4f5a-07d3-53d7">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="d712-9959-3949-d37b" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Power Blade Array" hidden="false" id="d812-6fb9-727b-a73f" type="selectionEntry" targetId="515b-7841-8b1f-575a">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="74cb-c0f6-fc73-d130" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="09fa-67ca-d2ba-0d25" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Irad-Cleanser" hidden="false" id="bef7-d23a-cf42-4d7b" type="selectionEntry" targetId="97b5-aecb-3e4a-f467">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6e87-a3bb-1fb5-0dd5" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6e87-a3bb-1fb5-0dd5">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7169-4f5a-07d3-53d7" childId="d8c8-2606-2af7-2e76" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="7169-4f5a-07d3-53d7" childId="6a3b-67fd-81b3-6165" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="7169-4f5a-07d3-53d7" childId="2e2d-f2cd-e5b1-d46f" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="6e87-a3bb-1fb5-0dd5">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="7169-4f5a-07d3-53d7" childId="3c0f-9a98-a0bf-1578" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="05df-485d-6c8f-74cb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="1b93-5bdd-e749-45d8">
+              <profiles>
+                <profile name="Vorax Battle-automata (01 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="264c-d905-f706-0d06">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="c36b-2af0-d23d-18a3">
+              <profiles>
+                <profile name="Vorax Battle-automata (02 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bf3d-c085-d55d-7a4c">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="d8c8-2606-2af7-2e76">
+              <profiles>
+                <profile name="Vorax Battle-automata (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ae08-7c9c-52c9-0d64">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="04 models" hidden="false" id="6a3b-67fd-81b3-6165">
+              <profiles>
+                <profile name="Vorax Battle-automata (04 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="cb86-5185-6508-adc0">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="32"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="2e2d-f2cd-e5b1-d46f">
+              <profiles>
+                <profile name="Vorax Battle-automata (05 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8146-b34b-9301-da84">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">5</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="3c0f-9a98-a0bf-1578">
+              <profiles>
+                <profile name="Vorax Battle-automata (06 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="11d9-fb0a-8ff9-60ce">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="48"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rotor Cannons" hidden="false" id="09c4-92b7-894c-1451">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b23-15bc-46cf-233c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3abb-48e7-2535-04b2" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Rotor Cannons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a54c-4f70-32f2-04f2">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lightning Guns" hidden="false" id="5c75-ef3c-2acf-7f5e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8270-2343-af43-2ba1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5742-c897-c10e-cba2" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Lightning Guns" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="486b-2b2f-65df-d605">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="cabc-b217-bcc7-2fb3" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="a74f-2126-d5f4-1257" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="ec81-e5f5-580a-37d1" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="a5a0-bed2-608d-789d" id="f509-c6f8-6cf0-cc90" primary="false" name="Vorax Battle-automata Maniple"/>
+        <categoryLink targetId="3318-e205-a770-f806" id="5476-9a3b-5053-2011" primary="false" name="Automata"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="cc78-2d01-ca2a-0f52" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="7f9d-ec1c-ed75-85c0" primary="false" name="Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="515b-7841-8b1f-575a">
+      <profiles>
+        <profile name="Power Blade Array" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8fc8-63c2-3312-0ae3">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="e391-2509-1d36-d7e1">
+      <categoryLinks>
+        <categoryLink targetId="3878-3f9d-29d1-587a" id="9ad3-a5ab-8bae-cc5d" primary="false" name="Vultarax Stratos-Automata Squadron"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="b33e-eb39-afdd-36ae" primary="false" name="Heavy"/>
+        <categoryLink targetId="3318-e205-a770-f806" id="9058-f055-b2aa-e3c0" primary="false" name="Automata"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="bb25-292f-1f4e-002e" primary="false" name="Fly"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="37b2-4b37-bc6a-229f" primary="false" name="Vehicle"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="d790-c26b-4c25-5a7e" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="0106-6026-497b-df91" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="3a03-747a-4340-d25a" primary="false" name="Faction: [FORGE WORLD]"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="05ab-742a-1b23-5efc" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Armoured Bulk" hidden="false" id="ac24-9014-8dd4-3ae5" type="selectionEntry" targetId="2ab7-fc09-bf28-a68e"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="0faf-f189-efd5-9363" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 model" hidden="false" id="5e89-f2fc-f4a5-0b5c">
+              <profiles>
+                <profile name="Vultarax Stratos-Automata (01 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3bf9-e5c6-21fe-ae13">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="53be-2ded-eda8-490d">
+              <profiles>
+                <profile name="Vultarax Stratos-Automata (02 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="423f-33e6-4112-c165">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="1656-af1f-afb8-7533">
+              <profiles>
+                <profile name="Vultarax Stratos-Automata (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="7d02-9c88-b832-454d">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="27"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="ed03-037c-304a-784a" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Arc Blaster" hidden="false" id="6ddc-e265-d149-cca2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8286-1281-5bb6-6330" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79ef-1a71-01d1-91cb" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Arc Blaster" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c593-074b-edec-2034">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Havoc Launchers" hidden="false" id="b9bb-8127-cab7-717d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6a1-0efb-b914-3bb5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba39-f38c-76dc-432d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Havoc Launchers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="03f1-954a-7f72-6700">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
