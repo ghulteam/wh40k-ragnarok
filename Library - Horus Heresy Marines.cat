@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="abea-f31d-41b1-862d" name="Library - Horus Heresy Marines" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="30" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Library - Weapons" id="f9c9-cf63-6edb-6244" targetId="4c20-063f-968c-8547"/>
+  </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Dark Angels" id="ed4c-c9d4-0e2f-ca8d" hidden="false"/>
+    <categoryEntry name="Emperor&apos;s Children" id="c549-6381-738b-9170" hidden="false"/>
+    <categoryEntry name="Assault Squad" id="64c8-2e41-fb88-8837" hidden="false"/>
+    <categoryEntry name="Faction: [LEGION]" id="33bc-b757-b581-9142" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Legion Filter" hidden="false" id="f88e-8769-cc11-a6e1">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Legion Selector" id="ddb5-436f-1de0-490b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="01 - Dark Angels" hidden="false" id="0ecd-6d8e-6b99-cb7b"/>
+            <selectionEntry type="upgrade" import="true" name="03 - Emperor&apos;s Children" hidden="false" id="4d28-4f91-8a31-4bbf"/>
+            <selectionEntry type="upgrade" import="true" name="04 - Iron Warriors" hidden="false" id="6944-374a-9e7d-9f57"/>
+            <selectionEntry type="upgrade" import="true" name="05- White Scars" hidden="false" id="f5be-6562-9508-237b"/>
+            <selectionEntry type="upgrade" import="true" name="06 - Space Wolves" hidden="false" id="2ffc-2236-9c1e-1b03"/>
+            <selectionEntry type="upgrade" import="true" name="07 - Imperial Fists" hidden="false" id="bd41-006d-f94c-5a9c"/>
+            <selectionEntry type="upgrade" import="true" name="08 - Night Lords" hidden="false" id="957a-309b-d032-be7a"/>
+            <selectionEntry type="upgrade" import="true" name="09 - Blood Angels" hidden="false" id="fe2f-acd1-3d87-4938"/>
+            <selectionEntry type="upgrade" import="true" name="10 - Iron Hands" hidden="false" id="2f19-f31c-f8ca-a91a"/>
+            <selectionEntry type="upgrade" import="true" name="12 - World Eaters" hidden="false" id="6ebc-5525-2666-dd1d"/>
+            <selectionEntry type="upgrade" import="true" name="13 - Ultramarines" hidden="false" id="fa27-e684-ef95-cde2"/>
+            <selectionEntry type="upgrade" import="true" name="14 - Deathguard" hidden="false" id="2c34-7879-81de-0236"/>
+            <selectionEntry type="upgrade" import="true" name="15 - Thousand Sons" hidden="false" id="4ce5-7c37-727e-1df6"/>
+            <selectionEntry type="upgrade" import="true" name="16 - Sons of Horus" hidden="false" id="b7e3-2933-f48c-2448"/>
+            <selectionEntry type="upgrade" import="true" name="17 - Word Bearers" hidden="false" id="bdbd-64b9-c868-6887"/>
+            <selectionEntry type="upgrade" import="true" name="18 - Salamanders" hidden="false" id="04bc-3c24-8932-d1c3"/>
+            <selectionEntry type="upgrade" import="true" name="19 - Raven Guard" hidden="false" id="3cb1-e449-38b6-5806"/>
+            <selectionEntry type="upgrade" import="true" name="20 - Alpha Legion" hidden="false" id="2e6c-a3ec-b819-ef1c"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b14-b7fc-c4d0-f698" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9beb-e7dd-85c4-db9b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="8fa0-dc57-d02e-ac65">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Allegiance" id="4ab2-43a1-2e47-9d83" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="d510-3148-cfe7-9d9a"/>
+            <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="9c65-665c-e6c2-84ab"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d161-c586-0433-9c66" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd68-e4bf-c137-d5e4" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Assault Squad" hidden="false" id="6336-b91c-ef6e-4b48">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="976e-b8df-6352-d034" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="04cd-7e93-7b25-0be7" hidden="false" defaultSelectionEntryId="3fe3-cbdb-9a2c-83e3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="3fe3-cbdb-9a2c-83e3">
+              <profiles>
+                <profile name="Assault Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="6b04-1aca-41b3-2135">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5+" field="a56f-38ae-3917-aadc">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6336-b91c-ef6e-4b48" childId="a2b7-4ef3-4f35-7e19" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="f19f-904f-82e7-f7cd">
+              <profiles>
+                <profile name="Assault Squad (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a6e0-099a-3f7e-c86a">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5+" field="a56f-38ae-3917-aadc">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6336-b91c-ef6e-4b48" childId="a2b7-4ef3-4f35-7e19" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e3c-84a2-4a5c-e71c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d329-cea1-6188-6c8b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Combat Shields" hidden="false" id="a2b7-4ef3-4f35-7e19">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86d5-44cb-f889-2748" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Combat Shields" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0adb-8b82-9a1a-1f83">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Increases the Save Characteristic of this Unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainswords" hidden="false" id="90bf-6ae9-e718-a46f">
+      <profiles>
+        <profile name="Chainswords" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a8f7-782e-01ed-da1c">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt Pistols" hidden="false" id="d958-dd99-c0f8-d206">
+      <profiles>
+        <profile name="Bolt Pistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a043-d7cb-d4ba-7e7d">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="266f-e945-a0bf-dd5e">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="983b-559b-4cda-4c13" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="129a-dc0a-ef67-7018" type="selectionEntry" targetId="5dee-ac4c-683d-7d30">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50cc-be2f-99d7-33b2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c14c-e82f-bfdc-8cd5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="ab31-9d64-57ab-85fd" hidden="false" defaultSelectionEntryId="ed53-8b1d-d3d4-5c6e">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="ed53-8b1d-d3d4-5c6e">
+              <profiles>
+                <profile name="Breacher Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f08c-bf01-6de8-ed60">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="b6e4-8ef9-2bfa-6fbf">
+              <profiles>
+                <profile name="Breacher Squad (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="41e0-5c1b-029f-2cb3">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="522c-54f3-0727-2442" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e67c-5cf3-4245-199c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="9531-e64c-de94-496c" hidden="false" defaultSelectionEntryId="6fde-ba81-1e00-40d3">
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="6fde-ba81-1e00-40d3" type="selectionEntry" targetId="9e5f-a70e-44b4-7a6b"/>
+            <entryLink import="true" name="Volkite Chargers" hidden="false" id="8c2f-a76c-fa08-dc58" type="selectionEntry" targetId="7853-50f2-5cd4-cc9f">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolters" hidden="false" id="9e5f-a70e-44b4-7a6b">
+      <profiles>
+        <profile name="Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="71b6-f3cc-e9bd-b941">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="bfb0-7240-1f34-b746" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite Chargers" hidden="false" id="7853-50f2-5cd4-cc9f">
+      <profiles>
+        <profile name="Volkite Chargers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ee40-93ea-ce4b-080d">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="5dee-ac4c-683d-7d30">
+      <profiles>
+        <profile name="Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4b38-fc8c-e0ae-1300">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Despoiler Squad" hidden="false" id="cdef-d4c3-9cb9-a251">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="9854-97cb-e1d6-2db1" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Bolt Pistols" hidden="false" id="c810-e5ea-2d96-cf64" type="selectionEntry" targetId="d958-dd99-c0f8-d206">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="508d-03b5-878f-375d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32ae-4acf-2183-dd80" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="c794-60eb-db9a-a47d" hidden="false" defaultSelectionEntryId="855a-bffa-be4c-f4be">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd5a-2920-1941-59b0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9623-7409-7e2b-56b9" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="855a-bffa-be4c-f4be">
+              <profiles>
+                <profile name="Despoiler Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fd4a-2f52-eea1-27fc">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="be91-0ff9-d6f2-f263">
+              <profiles>
+                <profile name="Despoiler Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1c4f-4e46-0354-f72e">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon Choice" id="174a-1109-9e14-46f3" hidden="false" defaultSelectionEntryId="f446-f2a8-282e-a4dd">
+          <entryLinks>
+            <entryLink import="true" name="Chainswords" hidden="false" id="f446-f2a8-282e-a4dd" type="selectionEntry" targetId="90bf-6ae9-e718-a46f"/>
+            <entryLink import="true" name="Heavy Chainswords" hidden="false" id="4c95-8991-0f04-00d7" type="selectionEntry" targetId="5b7d-d09e-46e5-d4aa"/>
+            <entryLink import="true" name="Fenrisian Axes" hidden="false" id="3978-656c-2e98-3bdb" type="selectionEntry" targetId="b594-ffb4-de4c-0db7">
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chainaxes" hidden="false" id="da9f-7679-6289-f736" type="selectionEntry" targetId="20c8-5f00-36a6-8c04">
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7aa-dabf-5b5a-2be2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66c3-1a19-f319-3e9e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Chainswords" hidden="false" id="5b7d-d09e-46e5-d4aa">
+      <profiles>
+        <profile name="Heavy Chainswords" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="edab-88a0-7d32-cdf7">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fenrisian Axes" hidden="false" id="b594-ffb4-de4c-0db7">
+      <profiles>
+        <profile name="Fenrisian Axes" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2355-62fa-dc95-660a">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x4</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="force" childId="2ffc-2236-9c1e-1b03" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainaxes" hidden="false" id="20c8-5f00-36a6-8c04">
+      <profiles>
+        <profile name="Chainaxes" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0d52-eb64-3b36-1a5b">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="force" childId="6ebc-5525-2666-dd1d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shrapnel Bolters" hidden="false" id="203f-840e-bd4c-f3ee">
+      <profiles>
+        <profile name="Shrapnel Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f461-b5a9-a180-d55f">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="force" childId="6944-374a-9e7d-9f57" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shrapnel Pistols" hidden="false" id="6d6e-b6fe-6108-cea2">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="force" childId="2ffc-2236-9c1e-1b03" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Shrapnel Pistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a2cc-e1fa-022b-ef75">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">10&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reconnaissance Squad" hidden="false" id="c8cd-92ce-3dbf-b0e8">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="784a-3bb5-41e5-1216" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="abf8-5dd0-af16-caf4" hidden="false" defaultSelectionEntryId="6736-67c9-7598-61e9">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="6736-67c9-7598-61e9">
+              <profiles>
+                <profile name="Reconnaissance Squad (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3b6c-9329-f924-a1d8">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="7957-5f38-2783-9db2">
+              <profiles>
+                <profile name="Reconnaissance Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="5b37-f044-20eb-a92f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5583-7946-bd59-8303" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97d4-b9c9-4a8a-9b24" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Squad" hidden="false" id="a54c-550b-c914-9308">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="26bd-b412-7a93-aa0f" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="e08e-bc34-72e1-4d18" hidden="false" defaultSelectionEntryId="0683-7783-4ba0-d4b5">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="0683-7783-4ba0-d4b5">
+              <profiles>
+                <profile name="Scout Squad (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3eae-22a1-14cd-48c6">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="cf65-b6ab-28ef-d0f6">
+              <profiles>
+                <profile name="Scout Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4b36-3d0c-f946-4d0f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fea-eae2-3536-298c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6924-69cc-708e-8564" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="1e14-e411-4195-5047">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="581b-67a8-1889-6061" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="b582-0c95-4558-699f" hidden="false" defaultSelectionEntryId="6d69-ccb2-b59a-5c95">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="6d69-ccb2-b59a-5c95">
+              <profiles>
+                <profile name="Tactical Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="4921-3ee3-20a8-7af7">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="b36f-628a-d7b3-849c">
+              <profiles>
+                <profile name="Tactical Squad (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="60b9-3a8e-df8d-982c">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Terminator Indomitus Squad" hidden="false" id="b8a3-e8be-3e11-1c03">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="3f25-1375-8441-cafd" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="ca51-153b-d92d-2a32" hidden="false" defaultSelectionEntryId="a723-1a3a-2395-a946">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="05 models" hidden="false" id="a723-1a3a-2395-a946">
+              <profiles>
+                <profile name="Terminator Indomitus Squad (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="bb8f-2314-e737-35d7">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="db61-068c-0426-f275">
+              <profiles>
+                <profile name="Terminator Indomitus Squad (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2aa0-373b-ea2c-9832">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dd2-5827-9b08-66cb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d95-d3ee-3705-fb83" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
