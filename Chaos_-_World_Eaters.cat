@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
@@ -12,6 +12,7 @@
     <categoryEntry name="Goremongers" id="3f7b-1bb8-1b6c-48b8" hidden="false"/>
     <categoryEntry name="Teeth of Khorne" id="3c32-052b-6cae-f2f1" hidden="false"/>
     <categoryEntry name="Slaughterbound" id="6858-3ba3-2b58-79ac" hidden="false"/>
+    <categoryEntry name="Butcher Surgeon" id="4760-eb56-b7f1-0c92" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="86ab-5eac-5402-be03" name="Angron" hidden="false" collective="false" import="true" targetId="9b8e-914b-6e41-3c04" type="selectionEntry">
@@ -377,6 +378,11 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="941d-d371-f539-f577" primary="true" name="Lord of War"/>
         <categoryLink targetId="e3ee-2102-3f3f-0e12" id="2eeb-33e2-36dd-4323" primary="false" name="Faction: Khorne Daemonkin"/>
         <categoryLink targetId="a592-cb8b-b074-9875" id="4dd0-db82-ca87-8bfd" primary="false" name="Faction: World Eaters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Butcher Surgeon" hidden="false" id="8d3d-4294-2d24-6423" type="selectionEntry" targetId="7bce-98a1-ffe4-c5b0">
+      <categoryLinks>
+        <categoryLink targetId="8f90-47d8-c075-cbb2" id="6dd6-7b3c-371f-1ce5" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1497,6 +1503,63 @@ While this Units Detachement is affected by the &quot;Butcher&apos;s Nails&quot;
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Butcher Surgeon" hidden="false" id="7bce-98a1-ffe4-c5b0">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="4f31-bb3f-99c2-80dd" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a936-e292-6731-12a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ae6-13ff-643f-9dcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Close Combat Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="36c8-747f-3f89-c2ad">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="1122-cd6e-55eb-40e9" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="d98f-085a-6b59-3321" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="cc26-fc5d-654f-6446" primary="false" name="Character"/>
+        <categoryLink targetId="841f-fc30-da92-90cf" id="ef47-8e12-f02b-9e60" primary="false" name="Faction: Chaos"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="3c7d-c902-d875-6525" primary="false" name="Faction: Khorne"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="8dad-7de6-48a0-d033" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="4760-eb56-b7f1-0c92" id="7d7e-f91d-1ad5-325f" primary="false" name="Butcher Surgeon"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Butcher&apos;s Nails Implants" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="cd24-2ebd-b783-5e9f">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a critically damaged WORLD EATER INFANTRY unit performs a Fight action within 3&quot; of any friendly units with this ability, you may double it&apos;s number of attacks whilst making that Fight action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Butcher Surgeon" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fa5c-bd4d-86d4-aebd">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

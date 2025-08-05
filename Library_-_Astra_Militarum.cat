@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="51" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -90,22 +90,9 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="99bc-c936-fcbb-b2a0" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ef-afe6-d001-5c6b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a16-1e35-177e-6576" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e9dc-08ea-6a09-16c8" name="Sponsons" hidden="false" collective="false" import="true" targetId="d206-5572-9576-566a" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d401-d7a1-6623-018f" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1937-9ede-2921-9767" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4713-3156-c5cb-ff4f" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="99bc-c936-fcbb-b2a0" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup"/>
+        <entryLink id="e9dc-08ea-6a09-16c8" name="Sponsons" hidden="false" collective="false" import="true" targetId="d206-5572-9576-566a" type="selectionEntryGroup"/>
+        <entryLink id="1937-9ede-2921-9767" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup"/>
         <entryLink id="4d02-340c-e582-0dae" name="Grinding Tracks" hidden="false" collective="false" import="true" targetId="bd97-52de-276d-96b1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb64-79e9-662c-6701" type="min"/>
@@ -1638,9 +1625,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3bfe-49a6-ca64-e283" name="Lumbering Advance" hidden="false" targetId="e710-7227-c628-4e5a" type="profile"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0f9b-83e1-82bc-1448" name="Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a2cb-b1d1-b014-7415">
           <constraints>
@@ -1670,6 +1654,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06c0-2992-0cdd-93eb" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d916-bcc9-2991-efde" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Turret Weapon" id="4a0c-cca1-6504-0a75" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="268c-e28b-4abe-8136" name="Armoured Hull" hidden="false" collective="false" import="true" targetId="8527-132b-ede1-be54" type="selectionEntry">
           <constraints>
@@ -1685,7 +1672,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <entryLink id="bd87-053b-999e-fa38" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2836-6d9c-fccb-9292" name="Malcador Defender" hidden="false" collective="false" import="true" type="unit">
@@ -1702,9 +1689,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="56cf-2574-5b12-ff5b" name="Lumbering Advance" hidden="false" targetId="e710-7227-c628-4e5a" type="profile"/>
-      </infoLinks>
       <selectionEntries>
         <selectionEntry id="3662-04dc-b459-2af1" name="7x Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -1724,6 +1708,21 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Demolisher Cannon" hidden="false" id="f2d7-687d-a4a4-3bcb">
+          <infoLinks>
+            <infoLink name="Demolisher Cannon" id="8a3f-b5a3-ac61-85b5" hidden="false" type="profile" targetId="f9ae-32e8-ca52-59f2">
+              <modifiers>
+                <modifier type="set" value="Destroyer, Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Turret Weapon" id="c19e-dde0-f84c-ddab" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+            <infoLink name="Destroyer" id="2a05-abb0-e951-7e2d" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52c6-19c2-f2fb-eecc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8363-a6bc-a530-5cf0" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1752,23 +1751,13 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="35f2-16e1-c080-d7f6" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="46ec-984c-3ea6-8f83" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="826d-e718-73e4-38c0" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3344-27ed-e5d5-5fa5" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="a049-ca95-ded6-1632" name="Armoured Hull" hidden="false" collective="false" import="true" targetId="8527-132b-ede1-be54" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f80-5371-3815-a840" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71b9-b451-7ee9-dccd" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f185-ad86-def3-45c1" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6b9-db38-fb11-f721" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="f185-ad86-def3-45c1" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup"/>
         <entryLink id="7df5-effc-a7ce-aed9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -1814,23 +1803,28 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eea-1a73-b02e-3ac6" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="223d-e5e0-24a6-10dc" name="Malacador Sponsons" hidden="false" collective="false" import="true" targetId="6b76-7b41-ab08-a1fc" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd94-6ae3-48c6-81e0" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7e-df3b-7932-cb22" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="9ce7-665f-890b-0564" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a8-aa32-05f9-c7b2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac52-ae81-97eb-3d76" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="223d-e5e0-24a6-10dc" name="Malacador Sponsons" hidden="false" collective="false" import="true" targetId="6b76-7b41-ab08-a1fc" type="selectionEntryGroup"/>
         <entryLink id="0bf7-4b28-b2aa-2d2e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="23"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Battle Cannon" hidden="false" id="a464-8edc-c18d-6128">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3365-fc03-6315-1347" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cd5-1b7b-da43-aa0b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Battle Cannon" id="e8ae-9741-54ab-c098" hidden="false" type="profile" targetId="1b34-b1b6-f47e-c6d2">
+              <modifiers>
+                <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Turret Weapon" id="7a67-1f07-74fd-e668" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="8c82-1cf8-8c0f-2b9b" name="Malcador Infernus" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1860,12 +1854,13 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno, Turret Weapon</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="41c2-a115-cc12-c1e4" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+            <infoLink name="Turret Weapon" id="ff39-bf77-d402-af33" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
           </infoLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -2467,16 +2462,19 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Turret Weapon" id="0bb4-9104-bbe0-af3e" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2534,15 +2532,16 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">6</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge, Turret Weapon</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="692f-6f7f-df37-f009" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+            <infoLink name="Turret Weapon" id="458f-7fdc-4637-74e8" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
           </infoLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -2626,16 +2625,19 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Turret Weapon" id="d287-b253-f2bf-b59e" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2681,11 +2683,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="e49f-bc06-53f8-52a4" name="Lumbering Advance" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, if it has remained stationary this turn, double the Attacks characteristic of its Macharius Vulcan Mega-bolter for that action.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry id="f6cf-7866-ca04-5be5" name="Macharius Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -2698,16 +2695,19 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">6</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">3+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Turret Weapon" id="1214-d764-1894-dad1" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3760,22 +3760,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e7c-bf7e-a9c0-b017" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="43a0-279a-96cc-df6e" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfec-66c5-adb6-06b3" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30a-e0e2-3031-af61" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="9246-b21e-4f02-46b0" name="Sponsons" hidden="false" collective="false" import="true" targetId="d206-5572-9576-566a" type="selectionEntryGroup">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fa1-6a76-f6c2-09dd" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="3800-44fb-769e-db3a" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ce-f45b-a67d-8b01" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="43a0-279a-96cc-df6e" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup"/>
+            <entryLink id="9246-b21e-4f02-46b0" name="Sponsons" hidden="false" collective="false" import="true" targetId="d206-5572-9576-566a" type="selectionEntryGroup"/>
+            <entryLink id="3800-44fb-769e-db3a" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup"/>
             <entryLink id="bd97-5912-6bb9-9ccd" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
             <entryLink import="true" name="Turret Weapon" hidden="false" id="41df-590b-19db-6bed" type="selectionEntryGroup" targetId="8599-3938-8abe-f84d">
               <constraints>
@@ -4297,6 +4284,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                     <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Turret Weapon" id="4348-d168-2807-b7b9" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4779,6 +4767,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                     <modifier type="set" value="Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Turret Weapon" id="83c5-c842-6b9e-c315" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>

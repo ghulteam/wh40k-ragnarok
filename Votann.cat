@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="17" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -19,6 +19,12 @@
     <categoryEntry id="b645-cb83-8bc5-81c3" name="Exo-Frame" hidden="false"/>
     <categoryEntry id="3019-02e0-6e96-eed6" name="Hernkyn Yaegirs" hidden="false"/>
     <categoryEntry name="Cthonian Beserks Champion" id="248e-dda1-c969-6d9d" hidden="false"/>
+    <categoryEntry name="Kapricus" id="9078-6566-6c7b-c91f" hidden="false"/>
+    <categoryEntry name="Buri Aegnirssen the Thrice-devoured" id="ef8e-dafe-7f0a-448d" hidden="false"/>
+    <categoryEntry name="Cthonian Earthshakers" id="73d0-15dc-5eb4-8153" hidden="false"/>
+    <categoryEntry name="Memnyr Strategist" id="7468-a7d2-46ad-f43a" hidden="false"/>
+    <categoryEntry name="Steeljacks" id="128f-a262-bc2d-4646" hidden="false"/>
+    <categoryEntry name="Arkanyst Evaluators" id="c58d-708c-7202-aaf3" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="c4f1-12a9-8941-26c7" name="Hearthkyn Warriors" hidden="false" collective="false" import="true" targetId="a795-276f-7f60-479e" type="selectionEntry">
@@ -418,8 +424,8 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -752,7 +758,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
         </entryLink>
-        <entryLink id="8ace-2199-2373-1222" name="Mole grenade launche" hidden="false" collective="false" import="true" targetId="8308-1636-b3c8-639d" type="selectionEntry">
+        <entryLink id="8ace-2199-2373-1222" name="Mole Grenade Launcher" hidden="false" collective="false" import="true" targetId="8308-1636-b3c8-639d" type="selectionEntry">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -1475,16 +1481,16 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8308-1636-b3c8-639d" name="Mole grenade launche" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8308-1636-b3c8-639d" name="Mole Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="0946-4255-72e6-286f" name="Mole grenade launche" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="0946-4255-72e6-286f" name="Mole Grenade Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1717,7 +1723,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -1852,7 +1858,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ac5f-a490-ce5f-44a4" name="Plasma blade gauntlets" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ac5f-a490-ce5f-44a4" name="Plasma Blade Gauntlets" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="17a8-a76b-4a3a-626c" name="Plasma blade gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -1980,6 +1986,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <categoryLink name="Faction: Votann" hidden="false" id="9905-996b-8a9a-4c8f" targetId="c004-b9ae-7fc1-1792" primary="false"/>
         <categoryLink name="Character" hidden="false" id="3436-aa0c-e703-0b13" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink targetId="24e4-f4e1-9028-1eb5" id="289d-b9a7-b1c4-8614" primary="false" name="Cthonian Beserks"/>
+        <categoryLink targetId="248e-dda1-c969-6d9d" id="e997-dc51-aee1-ce26" primary="false" name="Cthonian Beserks Champion"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Masterful Beserks Weapons" hidden="false" id="27d6-7a45-9366-08bd" collective="false">
@@ -2014,6 +2021,144 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <infoLink name="Ignore Damage (5+)" id="a1eb-63b4-b33e-da42" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Buri Aegnirssen the Thrice-devoured" hidden="false" id="7d31-b0f1-8130-497c">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f488-e7e9-0694-3c20" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bane" hidden="false" id="64f8-d78d-d57a-b113">
+          <profiles>
+            <profile name="Bane" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5ed2-d569-e0ed-a981">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e598-d713-dff9-577c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dc0-8640-f054-5c18" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2c63-042c-3aee-a33b" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="e792-242e-d0eb-622b" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Buri Aegnirssen the Thrice-devoured" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3158-b669-e247-5b0f">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="ef8e-dafe-7f0a-448d" id="d146-815c-9059-7e1d" primary="false" name="Buri Aegnirssen the Thrice-devoured"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arkanyst Evaluators" hidden="false" id="d16e-c45f-e9ef-a1df">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5182-ea64-640f-fa79" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="c58d-708c-7202-aaf3" id="095a-68d6-d2b6-2f5b" primary="false" name="Arkanyst Evaluators"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Overcharge" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b252-0d4f-5cbb-80ee">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit Supercharges their Transmatter Inverters, increase the range ny 6&quot; for this shoot action.
+
+This Unit may Supercharge their weapon twice, resulting in two blast markers on a roll of 1. When Supercharging twice, increase the range by 12&quot; for this shoot action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Memnyr Strategist" hidden="false" id="513b-60d0-f5ee-77c4">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="8892-5246-1d87-3569" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="7468-a7d2-46ad-f43a" id="435a-661b-804c-cb3f" primary="false" name="Memnyr Strategist"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Steeljacks" hidden="false" id="5802-1281-b769-56eb">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="2091-2d02-8cdf-4a77" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="128f-a262-bc2d-4646" id="41bd-7411-26a6-7873" primary="false" name="Steeljacks"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cthonian Earthshakers" hidden="false" id="b6fd-b7bc-f012-0bb3">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="acd8-5b04-e9e3-2feb" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="73d0-15dc-5eb4-8153" id="660e-74eb-833b-d1a1" primary="false" name="Cthonian Earthshakers"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mole Mortar Shells" hidden="false" id="73e7-186c-b504-3a3d">
+          <profiles>
+            <profile name="Mole Mortar Shells" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="24b5-cf1a-7459-73cb">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="733b-97bf-a940-2f75" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b184-2177-b001-bd82" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Barrage" id="0518-6efc-46ce-5b2e" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kapricus" hidden="false" id="cf8c-032a-090d-a9d3">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="b086-dd43-850f-8cef" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="9078-6566-6c7b-c91f" id="9492-a913-4d02-a833" primary="false" name="Kapricus"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Transmatter Inverters" hidden="false" id="2d69-eac5-ab25-60a7">
+      <profiles>
+        <profile name="Transmatter Inverters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9088-6880-0e88-9980">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire, Supercharge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="bac6-8230-da66-e57d" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+        <infoLink name="Supercharge" id="a998-2eda-5215-01af" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Volkanite Disintegrators" hidden="false" id="4dfe-e9bf-5271-5084"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f543-d03c-0b4e-84f4" name="Crest" hidden="false" collective="false" import="true">
