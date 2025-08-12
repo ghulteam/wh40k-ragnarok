@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -72,7 +72,7 @@
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Detachment</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command </characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -267,17 +267,29 @@
         <entryLink import="true" name="Demolitions" hidden="false" id="56e7-16b9-f5af-f586" type="selectionEntry" targetId="a294-2561-e82e-d87e">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6698-0d0e-3226-e1c8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9af2-51a0-1fa0-487d" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="9af2-51a0-1fa0-487d"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Trophy Kill" hidden="false" id="f870-bc07-f87b-e4cc" type="selectionEntry" targetId="5c4e-11e3-d2ae-caa2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b56-2edb-f9a3-f644" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f158-989c-a94e-111c" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="f158-989c-a94e-111c"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Steady Sights" hidden="false" id="b331-93fd-4431-7f53" type="selectionEntry" targetId="830b-1304-a11e-4ce8">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e140-b338-5e11-df74" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba20-e471-3e2a-b1b2" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="ba20-e471-3e2a-b1b2"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Smite" hidden="false" id="aa47-cf02-8015-4b5d" type="selectionEntry" targetId="19e7-af52-d0cd-a6f4">
           <constraints>
