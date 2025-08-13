@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -2123,12 +2123,13 @@ When targets would be picked for a Fight action made by this unit, it instead ta
                     <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
                     <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer, Turret Weapon</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="169c-b86d-8d0d-af25" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+                <infoLink name="Turret Weapon" id="01d1-7a50-3161-5490" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
               </infoLinks>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
@@ -2150,7 +2151,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <entryLink id="ddd5-3aa8-e98a-eeaa" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="19"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2180,19 +2181,12 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </profiles>
           <infoLinks>
             <infoLink id="155d-a80f-ddb1-7b37" name="Tank Squadron" hidden="false" targetId="a437-a863-2fd2-bad0" type="profile"/>
-            <infoLink id="0e80-4a50-9c1c-11f0" name="Lumbering Advance" hidden="false" targetId="e710-7227-c628-4e5a" type="profile"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="3e66-89a7-5827-51bf" name="Armoured Hull" hidden="false" collective="false" import="true" targetId="8527-132b-ede1-be54" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d640-8a10-8c8e-c0fa" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6313-23b2-3521-2b92" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="a78a-3274-2216-0803" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="46ec-984c-3ea6-8f83" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9826-7e61-b766-ca50" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caef-742d-50e7-7eba" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="f9a8-54c3-845c-dd27" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
@@ -2205,6 +2199,23 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Demolisher Cannon" hidden="false" id="0313-e121-a444-989c">
+              <infoLinks>
+                <infoLink name="Demolisher Cannon" id="48f0-b01b-75f2-5956" hidden="false" type="profile" targetId="f9ae-32e8-ca52-59f2">
+                  <modifiers>
+                    <modifier type="set" value="Destroyer, Turret Weapon" field="61ff-d2ec-f13b-06fa"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Destroyer" id="4534-04af-8f04-7d3f" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+                <infoLink name="Turret Weapon" id="2e08-f879-86cc-1e75" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b007-b059-6293-a4e6" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edf2-40af-37be-d9b0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4223,7 +4234,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <modifier type="set" field="name" value="Artillery Battery"/>
           </modifiers>
         </infoLink>
-        <infoLink id="b786-113d-ea8d-6774" name="Immobile" hidden="false" targetId="58f6-67e8-632d-1f0a" type="profile"/>
+        <infoLink name="Immobile" id="7254-fb77-5b2e-43a6" hidden="false" targetId="58f6-67e8-632d-1f0a" type="profile"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="2595-b4cd-7deb-5eed" name="Earthshaker Cannon" hidden="false" collective="false" import="true" targetId="aa9a-0803-f70a-b2f3" type="selectionEntry"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="18" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -21,7 +21,7 @@
     <categoryEntry name="Cthonian Beserks Champion" id="248e-dda1-c969-6d9d" hidden="false"/>
     <categoryEntry name="Kapricus" id="9078-6566-6c7b-c91f" hidden="false"/>
     <categoryEntry name="Buri Aegnirssen the Thrice-devoured" id="ef8e-dafe-7f0a-448d" hidden="false"/>
-    <categoryEntry name="Cthonian Earthshakers" id="73d0-15dc-5eb4-8153" hidden="false"/>
+    <categoryEntry name="Cthonian Earthshaker" id="73d0-15dc-5eb4-8153" hidden="false"/>
     <categoryEntry name="Memnyr Strategist" id="7468-a7d2-46ad-f43a" hidden="false"/>
     <categoryEntry name="Steeljacks" id="128f-a262-bc2d-4646" hidden="false"/>
     <categoryEntry name="Arkanyst Evaluators" id="c58d-708c-7202-aaf3" hidden="false"/>
@@ -112,6 +112,16 @@
     <entryLink import="true" name="Chtonian Beserks Champion" hidden="false" id="2566-f748-87bd-fbd5" type="selectionEntry" targetId="4f71-797a-fec1-61ec">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="1f18-ab15-c0e1-856a" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cthonian Earthshaker Battery" hidden="false" id="a4bb-0f4e-ed81-91de" type="selectionEntry" targetId="b6fd-b7bc-f012-0bb3">
+      <categoryLinks>
+        <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="7485-171b-6381-4352" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Buri Aegnirssen the Thrice-devoured" hidden="false" id="5cf8-b5cf-e51f-4928" type="selectionEntry" targetId="7d31-b0f1-8130-497c">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="699d-079b-6941-ea81" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -280,9 +290,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04f1-3a8a-c774-ac18" name="Autoch-pattern bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="04f1-3a8a-c774-ac18" name="Autoch-pattern Bolters" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="dcf0-9a26-7421-5e86" name="Autoch-pattern bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="dcf0-9a26-7421-5e86" name="Autoch-pattern Bolters" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
@@ -871,7 +881,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="006c-1e6c-008d-e6cd" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="75f6-38fc-604e-0546" name="Plasma blade gauntlets" hidden="false" collective="false" import="true" targetId="ac5f-a490-ce5f-44a4" type="selectionEntry">
+            <entryLink id="75f6-38fc-604e-0546" name="Plasma Blade Gauntlets" hidden="false" collective="false" import="true" targetId="ac5f-a490-ce5f-44a4" type="selectionEntry">
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
               </costs>
@@ -1498,12 +1508,12 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="44fe-6497-abd8-1f3f" name="Volkanite disintegrator" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="44fe-6497-abd8-1f3f" name="Volkanite disintegrators" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="7f4a-9f4a-4d4d-8ae8" name="Volkanite disintegrator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="7f4a-9f4a-4d4d-8ae8" name="Volkanite disintegrators" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
@@ -1698,11 +1708,6 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Roll D12s when making saving throws for this unit, irrespective of the size of the blast markers next to it.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Kindred Hero" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="7171-091b-61c4-e445">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly [LEGION] units whilst they are within 6&quot; of a unit with this ability.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="1f2c-6b69-9c77-5116" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -1741,6 +1746,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Kindred Hero" id="c739-2bb0-bd27-7118" hidden="false" type="profile" targetId="4e17-9951-b8b4-ff5a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="c8d9-8696-a6df-ce9a" name="HYLas rotary cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2063,10 +2071,23 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Grudge-fuelled Fortitude" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="87e1-6aed-799d-73a2">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed, and one damage marker is removed from it.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="ef8e-dafe-7f0a-448d" id="d146-815c-9059-7e1d" primary="false" name="Buri Aegnirssen the Thrice-devoured"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="3e81-a90d-f01a-58c5" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="829a-231a-4ceb-150c" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="c55b-d187-c55f-3556" primary="false" name="Character"/>
+        <categoryLink targetId="c004-b9ae-7fc1-1792" id="d6be-d5a8-6aa3-0fbd" primary="false" name="Faction: Votann"/>
+        <categoryLink targetId="2e93-f104-3473-9b4a" id="bb44-3ac9-48d8-beff" primary="false" name="Faction: [LEAGUE]"/>
       </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arkanyst Evaluators" hidden="false" id="d16e-c45f-e9ef-a1df">
       <entryLinks>
@@ -2093,42 +2114,214 @@ This Unit may Supercharge their weapon twice, resulting in two blast markers on 
         <categoryLink targetId="7468-a7d2-46ad-f43a" id="435a-661b-804c-cb3f" primary="false" name="Memnyr Strategist"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Steeljacks" hidden="false" id="5802-1281-b769-56eb">
+    <selectionEntry type="unit" import="true" name="Ironkin Steeljacks" hidden="false" id="5802-1281-b769-56eb">
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="2091-2d02-8cdf-4a77" type="selectionEntry" targetId="7347-5716-355f-9165"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="128f-a262-bc2d-4646" id="41bd-7411-26a6-7873" primary="false" name="Steeljacks"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="1609-1ae9-c0c0-e8b7" hidden="false" defaultSelectionEntryId="e4ca-8204-0fa8-f48d">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="e4ca-8204-0fa8-f48d">
+              <profiles>
+                <profile name="Ironkin Steeljacks (03 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a65d-5dfc-7294-766c">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="66f9-0ba7-80e9-dc2f">
+              <profiles>
+                <profile name="Ironkin Steeljacks (06 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8b2b-7775-1f48-d736">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b007-5c90-b027-391c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18a4-e96c-0eb9-046f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="f042-7e76-466a-436b" hidden="false" defaultSelectionEntryId="2a36-22a8-7842-f6af">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Volkanite Disintegrators &amp; Plasma Knifes" hidden="false" id="2a36-22a8-7842-f6af">
+              <profiles>
+                <profile name="Plasma Knifes" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e0b4-d98c-bcf7-893b">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy Volkanite disintegrators" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b138-ee05-ab37-4395">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Autoch-Pattern Bolters &amp; Concussion Gauntlets" hidden="false" id="c978-5c91-67e9-283a">
+              <profiles>
+                <profile name="Concussion Gauntlets" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="e0bb-d009-ef64-e45e">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Autoch-pattern bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5c1f-90c2-4fd7-6672">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d27-afdd-eabd-bd2e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1d9-92c9-573e-e298" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cthonian Earthshakers" hidden="false" id="b6fd-b7bc-f012-0bb3">
-      <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="acd8-5b04-e9e3-2feb" type="selectionEntry" targetId="7347-5716-355f-9165"/>
-      </entryLinks>
+    <selectionEntry type="unit" import="true" name="Cthonian Earthshaker Battery" hidden="false" id="b6fd-b7bc-f012-0bb3">
       <categoryLinks>
-        <categoryLink targetId="73d0-15dc-5eb4-8153" id="660e-74eb-833b-d1a1" primary="false" name="Cthonian Earthshakers"/>
+        <categoryLink targetId="73d0-15dc-5eb4-8153" id="db47-f318-30ed-f49e" primary="false" name="Cthonian Earthshaker"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="a530-dbcd-78cf-30c7" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="0b4f-238c-46b4-7f49" primary="false" name="Vehicle"/>
+        <categoryLink targetId="c2cd-6e10-a4dd-093c" id="4628-c63c-fbbe-27ae" primary="false" name="Artillery"/>
+        <categoryLink targetId="c004-b9ae-7fc1-1792" id="1252-551d-e8af-c784" primary="false" name="Faction: Votann"/>
+        <categoryLink targetId="2e93-f104-3473-9b4a" id="a44d-edcb-38a2-c71b" primary="false" name="Faction: [LEAGUE]"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mole Mortar Shells" hidden="false" id="73e7-186c-b504-3a3d">
+        <selectionEntry type="upgrade" import="true" name="Cthonian Earthshaker" hidden="false" id="9570-a99d-2a93-a7ea">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c6f-5dbd-4c0c-47bc" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4d0-a84e-b8e2-0242" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mole Mortar Shells" hidden="false" id="73e7-186c-b504-3a3d">
+              <profiles>
+                <profile name="Mole Mortar Shells" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="24b5-cf1a-7459-73cb">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="733b-97bf-a940-2f75" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b184-2177-b001-bd82" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Barrage" id="0518-6efc-46ce-5b2e" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma Picks" hidden="false" id="4ec5-99cb-3f50-870a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f6f-e85c-9c26-defc" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b41-09ba-4f15-3393" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma Picks" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="faf2-a549-f058-37f0">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Crew Autoch-pattern bolter" hidden="false" id="3aa0-a57d-92e9-8d0d">
+              <profiles>
+                <profile name="Crew Autoch-pattern bolter" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="94da-8307-2216-2127">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff2-9ee3-e2a7-8f38" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e1f-4676-a730-b7d2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Immobile" id="5c7c-b3e5-2e29-f5f4" hidden="false" targetId="c7de-0895-b726-fc0b" type="profile"/>
+            <infoLink name="Tank Squadron" id="b98d-3e78-029c-4b85" hidden="false" type="profile" targetId="b90e-00c1-318e-8501">
+              <modifiers>
+                <modifier type="set" value="Earthshaker Battery" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <profiles>
-            <profile name="Mole Mortar Shells" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="24b5-cf1a-7459-73cb">
+            <profile name="Cthonian Earthshakers" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2f9d-c962-20ab-5747">
               <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="733b-97bf-a940-2f75" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b184-2177-b001-bd82" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Barrage" id="0518-6efc-46ce-5b2e" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
-          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Commander" hidden="false" id="acd8-5b04-e9e3-2feb" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="73d0-15dc-5eb4-8153" id="41f3-75ce-28c2-4528" primary="false" name="Cthonian Earthshakers"/>
+          </categoryLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2158,7 +2351,20 @@ This Unit may Supercharge their weapon twice, resulting in two blast markers on 
         <infoLink name="Supercharge" id="a998-2eda-5215-01af" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Volkanite Disintegrators" hidden="false" id="4dfe-e9bf-5271-5084"/>
+    <selectionEntry type="upgrade" import="true" name="Heavy Volkanite Disintegrators" hidden="false" id="4dfe-e9bf-5271-5084">
+      <profiles>
+        <profile name="Heavy Volkanite disintegrators" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7457-bd3c-5402-cc6d">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f543-d03c-0b4e-84f4" name="Crest" hidden="false" collective="false" import="true">
@@ -2190,4 +2396,21 @@ This Unit may Supercharge their weapon twice, resulting in two blast markers on 
   <catalogueLinks>
     <catalogueLink id="cc16-12b8-7048-d4f1" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <sharedProfiles>
+    <profile name="Immobile" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="c7de-0895-b726-fc0b">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit is never Out of Command: an Out of Command marker is never placed next to it. When this unit or a friendly unit makes a Shoot action, it can target enemy units in base contact with this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tank Squadron" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b90e-00c1-318e-8501">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each slot in a Detachment allows you to take up to three of this unit in your army, instead of one. Each unit taken for a single slot must be placed at the same time and within 6&quot; of each other unit taken for the same slot the first time they are set up.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kindred Hero" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4e17-9951-b8b4-ff5a">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly [LEGION] units whilst they are within 6&quot; of a unit with this ability.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
