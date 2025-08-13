@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="6e11-42ed-c084-ce74" name="Datasheet T&apos;au Empire"/>
     <publication id="e282-a216-345a-e73a" name="Datasheet FW T&apos;au Empire"/>
@@ -9284,7 +9284,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <modifiers>
         <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="dc7a-e983-538d-77c4" childId="52d4-107b-1c00-c9d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="c456-789d-6a15-d44b" childId="52d4-107b-1c00-c9d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9398,7 +9398,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <modifiers>
         <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="84f1-86d6-cab7-7415" childId="da4e-b2d4-e842-c79c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="bf14-6a54-615e-af40" childId="da4e-b2d4-e842-c79c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9511,7 +9511,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <modifiers>
         <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="4d30-7443-515c-47c4" childId="23e0-e1de-767f-33ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="d451-b5aa-e306-69f6" childId="23e0-e1de-767f-33ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9636,7 +9636,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <modifiers>
         <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="e111-ea75-b027-99b2" childId="ed18-e177-e9e0-b968" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="e1e2-8197-835d-21bd" childId="ed18-e177-e9e0-b968" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9776,7 +9776,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <modifiers>
         <modifier type="increment" value="2" field="1466-da3f-0d27-dace">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="d1b9-c586-d34d-9e6b" childId="d53e-f52b-85b0-95fb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="816c-fa61-3caf-adda" childId="d53e-f52b-85b0-95fb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10023,18 +10023,19 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a20d-b51f-bf95-f685" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="a20d-b51f-bf95-f685" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="3321-8246-965c-4a65" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="3321-8246-965c-4a65" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="e16f-3ad9-739a-5c6a" name="Kroot Flesh Shaper" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -10489,6 +10490,7 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           </constraints>
           <infoLinks>
             <infoLink name="The Eight" id="962f-bcf6-7a3e-a5d5" hidden="false" type="profile" targetId="85ab-53d3-d4e8-e2f1"/>
+            <infoLink name="Deep Strike" id="4111-84d8-63c2-35eb" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
           </infoLinks>
         </entryLink>
         <entryLink import="true" name="Sub-Commander Torchstar" hidden="false" id="48ca-16bd-3e97-5533" type="selectionEntry" targetId="d451-b5aa-e306-69f6">
@@ -10513,6 +10515,10 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink name="The Eight" id="75e5-714c-37f5-383a" hidden="false" type="profile" targetId="85ab-53d3-d4e8-e2f1"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8e-fdcc-06bb-ee10" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41b3-a44a-a306-1b64" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Commander Bravestorm" hidden="false" id="78d5-6ba4-d2df-3311" type="selectionEntry" targetId="c456-789d-6a15-d44b">
           <constraints>
