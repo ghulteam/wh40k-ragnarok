@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -2736,11 +2736,17 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f41-cbea-8328-312e" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="1466-da3f-0d27-dace"/>
+              </modifiers>
             </entryLink>
             <entryLink id="2efa-a7c1-4f2f-9208" name="Particle Casters" hidden="false" collective="false" import="true" targetId="b512-e1ee-267c-1b4c" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a3a-2db6-a412-29b8" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2819,13 +2825,16 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Destroyer" id="57db-719f-8b97-030d" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a982-8579-c4d0-d586" name="Massive Forelimbs" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3493,7 +3502,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="39"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5c77-afda-bfff-2c9f" name="Heavy Lokhust Destroyers (1 Model)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
@@ -3514,7 +3523,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="239a-f98f-b2f9-c9c1" name="Heavy Lokhust Destroyers (2 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
@@ -3535,10 +3544,20 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon" id="0810-ae7d-ad60-2de8" hidden="false" defaultSelectionEntryId="4de0-661a-1522-f216">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Gauss Cannons" hidden="false" id="4de0-661a-1522-f216" collective="false" targetId="1dc7-d2cf-c1fd-47d9" type="selectionEntry"/>
+            <entryLink import="true" name="Enmitic Exterminator" hidden="false" id="084c-f169-545a-f23d" type="selectionEntry" targetId="cc35-0378-b103-9a2d"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5262-40dd-1d63-da56" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64a4-e6ba-0755-2fca" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3547,12 +3566,6 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8911-4a2c-3f4d-8757" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daa9-35d3-0abe-86de" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="4de0-661a-1522-f216" name="Heavy Gauss Cannons" hidden="false" collective="false" import="true" targetId="1dc7-d2cf-c1fd-47d9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1735-4ec1-2f2b-1014" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4612-9831-4e57-2b9a" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -3586,13 +3599,16 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Destroyer" id="6e35-0d2d-43fd-c4c0" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="1dc7-d2cf-c1fd-47d9" name="Heavy Gauss Cannons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3603,13 +3619,16 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Destroyer" id="dd29-dff9-a64f-0f66" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ebbd-7892-dcbe-d7f8" name="Tesla Carbines (Tomb Blades)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5361,6 +5380,9 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Destroyer" id="4072-35b7-d31b-bc71" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="3dca-73af-d815-a529" name="Royal Warden" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -6641,6 +6663,23 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enmitic Exterminators" hidden="false" id="cc35-0378-b103-9a2d">
+      <profiles>
+        <profile name="Enmitic Exterminators" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6492-27b7-a2ab-c9b2">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="d928-1ade-1f2e-f23b" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
