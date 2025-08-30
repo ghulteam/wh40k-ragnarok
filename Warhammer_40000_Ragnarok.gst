@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="30" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="31" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -52,6 +52,7 @@
         <characteristicType name="When" id="9ca2-3073-58b5-17c3"/>
         <characteristicType name="Target" id="8d85-aa38-a6ef-9a52"/>
         <characteristicType name="Effect" id="89e3-f069-261b-3ca4"/>
+        <characteristicType name="Cost" id="b43c-e245-fbda-1620"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

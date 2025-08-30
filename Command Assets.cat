@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -37,6 +37,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Out of Command Unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove Out of Command Marker</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -49,6 +50,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After own Dice Roll</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Dice</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Set to face you want</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -61,6 +63,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Own Unit fails Morale Test</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Friendly Unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Morale Test counts as passed.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -73,6 +76,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Detachment</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -94,6 +98,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit with Aimed Fire</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Double Range for all Weapons of chosen Unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -106,6 +111,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove one Blast Marker</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -118,6 +124,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1, 2 for units with Sv 5+ or better</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -130,6 +137,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">enemy Warmaster or One enemy SUPER-HEAVY unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Re-Roll Hit Rolls when attacking chosen unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -142,11 +150,12 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Terrain Piece</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Terrain Piece is Targetable as if it was a enemy HEAVY Unit. If destroyed, any Unit occupieing it has to Disembark as if it was a Transporter.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Smite" hidden="true" id="19e7-af52-d0cd-a6f4">
+    <selectionEntry type="upgrade" import="true" name="Smite" hidden="false" id="19e7-af52-d0cd-a6f4">
       <profiles>
         <profile name="Smite - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a26d-dedf-82ea-87a2">
           <characteristics>
@@ -154,22 +163,24 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Psyker</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12; on 2+ place 1 blast marker, on 7+ place 2 blast markers instead on closes enemy unit in 36&quot; of chosen Psyker.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="From Golden Light They Come" hidden="true" id="1c42-742f-d15e-3724">
+    <selectionEntry type="upgrade" import="true" name="From Golden Light They Come" hidden="false" id="1c42-742f-d15e-3724">
       <profiles>
         <profile name="From Golden Light They Come" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ae55-236c-c23c-eac3">
           <characteristics>
@@ -177,22 +188,24 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">1 friendly Adeptus Custodes INFANTRY or DREADNOUGHT Unit</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove from battlefield and Deep Strike the chosen units</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Null Zone" hidden="true" id="53d1-0474-989d-c511">
+    <selectionEntry type="upgrade" import="true" name="Null Zone" hidden="false" id="53d1-0474-989d-c511">
       <profiles>
         <profile name="Null Zone - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="516a-a48a-f0de-0608">
           <characteristics>
@@ -200,16 +213,245 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Adeptus Astartes Psyker</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">-2 to saving throws for enemys in 12&quot; of chosen Psyker</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Noble Sacrifice" hidden="false" id="44cc-cf68-48eb-ad04">
+      <profiles>
+        <profile name="Noble Sacrifice" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="bef8-d5a6-46b3-adf6">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Own Super-Heavy Unit is destroyed</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">The destroyed Super-Heavy Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Do not roll one D12 - Automaticly Explodes</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vortex Grenade" hidden="false" id="c3c9-961f-1f14-70c5">
+      <profiles>
+        <profile name="Vortex Grenade" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4997-2f76-05f3-7b2f">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Enemy unit within 6&quot; of own Light Warlord</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 3 D12s; for each 6+ one blast marker to enemy</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Resupply" hidden="false" id="bd4a-dcea-2d7e-85dc">
+      <profiles>
+        <profile name="Resupply" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a06-5e24-0b93-56a8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Set Up Reinforcements step</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Weapons with One Use Only replenished</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbital Strike" hidden="false" id="38e2-7880-98a3-4794">
+      <profiles>
+        <profile name="Orbital Strike" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d5c6-7ac1-1775-2473">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Point on battlefield in sight of a Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12 for each unit within 6&quot; of Point, -1 for Light Character. On 7-10 1 blast marker for rolled unit, on 11+ two blast markers for rolled unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Finest Hour" hidden="false" id="49d9-f429-d70b-e4c0">
+      <profiles>
+        <profile name="Finest Hour" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f288-e458-2d17-fb68">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Warmaster or one Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">+1 to Attack, +1 to wound rolls for melee weapons, melee weapons get Destroyer until end of turn.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforcements" hidden="false" id="bf3b-3958-aae6-fa28">
+      <profiles>
+        <profile name="Reinforcements" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4157-2f3e-121f-eda0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Set Up Reinforcement step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One destroyed non character unit from your army.</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 2D12. If result exceeds PL rating of Target, place wholly within 9&quot; of any battlefield edge, but further than 9&quot; from any enemy units. This Unit is a new Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medicae Supplies" hidden="false" id="cccc-bbb1-76a8-bf21">
+      <profiles>
+        <profile name="Medicae Supplies" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8b63-20c0-ef5c-03e6">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Light unit from your army with atleast one damage marker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove D3 damage markers from Target</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combined Fire" hidden="false" id="a313-818d-b97c-3eeb">
+      <profiles>
+        <profile name="Combined Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7864-a4a9-38b1-d7ad">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Heavy or Super-Heavy units that have the same datasheet</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Targets combine fire this phase. Choose one enemy within range of all 3 Targets. Targets can only attack chosen enemy this phase, each successful wound deals 1 more blast marker</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Go to Ground" hidden="false" id="c792-ab67-afed-e1ba">
+      <profiles>
+        <profile name="Go to Ground" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="79f3-8595-8541-5131">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Infantry unit from your army, not in base contact with enemy units</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Double save results until end of phase for Target.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1, 2 if Target has 4+ or better save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laserburn" hidden="false" id="88be-6358-e1b0-08ee">
+      <profiles>
+        <profile name="Laserburn" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3f35-85f0-4c3d-da91">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">2 points within 12&quot; of each other</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Draw immaginary 1&quot; line between Targeted Points. Roll D12 for each unit under line, -1 for light characters. 7ü one blast marker for unit beeing rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Force" hidden="false" id="1916-efd4-a7f5-19da">
+      <profiles>
+        <profile name="Force - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8a14-ae4c-6b35-81b0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">+3 to wound rolls for melee weapons, melee weapons have destroyer. Until end of turn.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Telekine Dome" hidden="false" id="f7d2-1ba0-b15d-e49f">
+      <profiles>
+        <profile name="Telekine Dome - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="db26-86ec-c353-fb0c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select friendly unit within 12&quot; of Target. Roll D12s instead of D6s for saving throws for chosen unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxiliary Missile Systems" hidden="false" id="cecf-1605-10ea-8ede">
+      <profiles>
+        <profile name="Auxiliary Missile Systems" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="711b-5365-e41e-b0f2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After VEHICLE from your army made a Shoot action</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Enemy Unit Visible to Unit that just shot</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 1D6 - if result is equal or greater than your BS, place 1 blast marker. If enemy unit is HEAVY or SUPER-HEAVY, place 2 instead.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Born Soldiers" hidden="false" id="5bfa-beee-aaf1-a230">
+      <profiles>
+        <profile name="Born Soldiers" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0fa6-de9a-44a0-1718">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Cadian</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Cadian Commander from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, roll D12s instead of D6s for attacks with ranged weapons by Cadian units in chosen Detachment</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -304,6 +546,76 @@
         <entryLink import="true" name="Null Zone" hidden="false" id="e08b-81c3-6a1a-7b0f" type="selectionEntry" targetId="53d1-0474-989d-c511">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ee8-1573-8abf-057b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Auxiliary Missile Systems" hidden="false" id="14da-aaee-4c03-f2a7" type="selectionEntry" targetId="cecf-1605-10ea-8ede">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4619-a75a-cdf8-33be" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Combined Fire" hidden="false" id="e97d-11e5-bd77-f036" type="selectionEntry" targetId="a313-818d-b97c-3eeb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f48-d2fc-dc34-8eef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Finest Hour" hidden="false" id="3a50-3651-bb62-f6fe" type="selectionEntry" targetId="49d9-f429-d70b-e4c0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf47-e11b-717c-6b8c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Force" hidden="false" id="ea0d-584d-5763-31d3" type="selectionEntry" targetId="1916-efd4-a7f5-19da">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafb-4008-2b2c-e873" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Go to Ground" hidden="false" id="7c68-79c6-b3bf-6df7" type="selectionEntry" targetId="c792-ab67-afed-e1ba">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff83-3a28-8edb-0450" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Laserburn" hidden="false" id="efd3-d459-f36a-9abb" type="selectionEntry" targetId="88be-6358-e1b0-08ee">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baaa-3073-fb46-3308" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Medicae Supplies" hidden="false" id="aac3-497f-c524-6112" type="selectionEntry" targetId="cccc-bbb1-76a8-bf21">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88d3-a394-8927-0c99" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Noble Sacrifice" hidden="false" id="219d-6c2a-da37-4f8d" type="selectionEntry" targetId="44cc-cf68-48eb-ad04">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d7-8dfb-4e6c-c189" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Orbital Strike" hidden="false" id="4797-44ca-27bb-8187" type="selectionEntry" targetId="38e2-7880-98a3-4794">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa07-7d40-c5fa-a61c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Reinforcements" hidden="false" id="bc91-0812-cd4a-6648" type="selectionEntry" targetId="bf3b-3958-aae6-fa28">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0336-8ab7-63e4-1219" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Resupply" hidden="false" id="fab1-32f4-4c21-047c" type="selectionEntry" targetId="bd4a-dcea-2d7e-85dc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591e-e507-61d6-6056" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Telekine Dome" hidden="false" id="0fb9-914e-e9ee-ade8" type="selectionEntry" targetId="f7d2-1ba0-b15d-e49f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7692-5837-6640-ac94" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vortex Grenade" hidden="false" id="9e30-7ae9-38fc-6db7" type="selectionEntry" targetId="c3c9-961f-1f14-70c5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd69-18f8-ef67-8ba3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Born Soldiers" hidden="false" id="63fb-c3c9-4f52-fbb4" type="selectionEntry" targetId="5bfa-beee-aaf1-a230">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e1-4e83-a2c1-88dd" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
