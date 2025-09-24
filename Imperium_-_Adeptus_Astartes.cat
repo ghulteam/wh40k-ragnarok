@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="51" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -97,6 +97,8 @@
     <categoryEntry name="Execrator" id="d419-7981-6852-2864" hidden="false"/>
     <categoryEntry name="Execrator" id="1b84-15db-c980-c2db" hidden="false"/>
     <categoryEntry name="Crusade Ancient" id="6387-d737-847e-3590" hidden="false"/>
+    <categoryEntry name="Aethon Shaan" id="6eae-f929-7571-de49" hidden="false"/>
+    <categoryEntry name="Titus" id="ac40-8858-dbf4-e820" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -1403,6 +1405,16 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Chapter Master" hidden="false" id="e92d-087a-80bf-64d7" type="selectionEntry" targetId="ebe0-392a-b936-1c76"/>
+    <entryLink import="true" name="Lieutenant Titus" hidden="false" id="7129-852f-1b11-dda1" type="selectionEntry" targetId="f9af-c324-a2e2-552d">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="2430-c057-51b6-cef1" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aethon Shaan" hidden="false" id="80b4-94e8-26a1-7763" type="selectionEntry" targetId="8218-911b-d448-2eac">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="6f2e-83c1-f060-78ad" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="27b6-232c-68c6-567a" name="Sword Brethren Squad" hidden="false" collective="false" import="true" type="unit">
@@ -4641,11 +4653,6 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5225-a09c-4c0d-81a7" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1db0-c2bb-4d00-afc7" name="Chapter Master" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly RAVEN GUARD units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="6131-921f-5dde-1ea2" name="Kayvaan Shrike" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
@@ -4672,7 +4679,6 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="b6f7-e3e2-6c65-bf8c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="9742-b524-181c-d16e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="0a0b-32e1-f339-f344" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
-        <categoryLink id="1ad7-5d9d-0391-d757" name="Chapter Master" hidden="false" targetId="b3fb-f781-c79e-900b" primary="false"/>
         <categoryLink id="4b7d-c70c-bb4a-173b" name="Kayvaan Shrike" hidden="false" targetId="ff8b-a5c2-eab1-fe83" primary="false"/>
         <categoryLink id="1a04-88aa-830b-ba5b" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
         <categoryLink id="1cb7-daf1-62ef-cac7" name="Phobos" hidden="false" targetId="9338-3c48-ea3c-cb83" primary="false"/>
@@ -4725,8 +4731,52 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <entryLink id="018c-efa8-f2a4-c0b5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Rank" id="4199-be37-4ee9-3c2f" hidden="false" defaultSelectionEntryId="6c8e-1d7b-57dd-cdc2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Captain" hidden="false" id="743f-e7ea-4496-b01d">
+              <categoryLinks>
+                <categoryLink targetId="7151-56f9-0163-eadc" id="3b7d-41fa-bb04-1fe1" primary="false" name="Captain"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="true" id="118c-86c1-402a-277f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly RAVEN GUARD units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chapter Master" hidden="false" id="6c8e-1d7b-57dd-cdc2">
+              <profiles>
+                <profile name="Chapter Master" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="09d6-8f1b-7078-4f86">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly RAVEN GUARD units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="b3fb-f781-c79e-900b" id="81a1-c07b-5e65-8f08" primary="false" name="Chapter Master"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="8218-911b-d448-2eac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb72-d729-6732-1bff" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e749-7922-7ebc-ddf4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="8c1b-4aba-46e6-9dae" name="Knight-Captain Elam Courbray" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5477,10 +5527,8 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <categoryLink id="be53-db73-a623-9ae0" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="359a-b638-98c2-7403" name="Faction: Ultramarines" hidden="false" targetId="0f44-4bfd-acaf-7de9" primary="false"/>
         <categoryLink id="cb48-5cf6-5d96-5030" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="ac1a-4933-3cd2-2b11" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="1350-c733-d89f-b972" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="ceb0-08e9-209e-4d9a" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="19da-cc8c-30e8-82e3" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
         <categoryLink id="5d8d-4f94-dcd6-420b" name="Chapter Master" hidden="false" targetId="b3fb-f781-c79e-900b" primary="false"/>
         <categoryLink id="6d90-5d0c-d941-bacc" name="Marneus Calgar" hidden="false" targetId="c8f6-9170-8068-230d" primary="false"/>
       </categoryLinks>
@@ -5524,8 +5572,20 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <entryLink id="98e5-1082-c8ee-c7f1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="0def-6349-2c09-ba7f" hidden="false" defaultSelectionEntryId="4ad0-4f79-f31e-4af3">
+          <entryLinks>
+            <entryLink import="true" name="Gravis Armor" hidden="false" id="4ad0-4f79-f31e-4af3" type="selectionEntry" targetId="6200-8ffc-5988-6301"/>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="c177-93c4-684c-4d9e" type="selectionEntry" targetId="8b15-a0be-8cba-a7fb"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d13a-b07b-8f1d-7f62" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cc7-3d4a-1601-12fa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e570-e20f-e2fb-bdab" name="Pedro Kantor" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -6196,13 +6256,13 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </profiles>
       <categoryLinks>
         <categoryLink id="93b0-abac-0856-e900" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="2bac-7f68-df96-ed51" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="ae40-1098-c399-a1d6" name="Faction: Raven Guard" hidden="false" targetId="9d66-7203-6f14-7667" primary="false"/>
         <categoryLink id="2f24-b4e4-d759-a87c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="6cff-07c2-960a-1740" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="2c49-c21b-cdca-c88c" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="aa96-5af5-908b-47ae" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
         <categoryLink id="56ad-ba84-6fd1-9683" name="Shadow Captain Korvydae" hidden="false" targetId="7ed8-73a1-9364-515a" primary="false"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="eec6-38e3-2f07-60b9" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="14e8-b6e9-cd88-9884" name="Thunder Hammer" hidden="false" collective="false" import="true" type="upgrade">
@@ -7055,6 +7115,168 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="306c-88f1-83fc-fa6d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry id="8218-911b-d448-2eac" name="Aethon Shaan" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09c-75c6-e457-0c51" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55c4-05fb-9707-ff2c" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8a6-c027-8ec7-ec81" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4583-bb18-c36f-e715" name="Chapter Master" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly RAVEN GUARD units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2328-16d1-4fa6-89e9" name="Aethon Shaan" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blackwing Mantle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="133a-f5b1-8895-ce9f">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this Unit arives as Reinforcement with its Deep Strike Ability, set up this unit more than 6&quot; away from any enemy units, instead of more than 9&quot; away.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8010-2b24-5657-601d" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="30b2-bc1e-dd6a-0560" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+        <infoLink id="21e1-dd5d-ae18-b568" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="45bc-b10b-d3a0-4300" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e807-2d5b-28db-c843" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="e781-e6fb-40bb-7fb2" name="Faction: Raven Guard" hidden="false" targetId="9d66-7203-6f14-7667" primary="false"/>
+        <categoryLink id="6b64-1ac5-fcce-bf28" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2442-9f67-94af-ce00" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="2c46-b97d-6a48-30a5" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="6424-bc37-91d7-cb23" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="0630-3d40-44bd-3271" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="bacf-be5e-6038-2ce0" name="Chapter Master" hidden="false" targetId="b3fb-f781-c79e-900b" primary="false"/>
+        <categoryLink id="3872-af55-dbf7-4e7a" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="c657-fad1-3c5b-a328" name="Phobos" hidden="false" targetId="9338-3c48-ea3c-cb83" primary="false"/>
+        <categoryLink targetId="6eae-f929-7571-de49" id="dfe0-e63d-291e-520c" primary="false" name="Aethon Shaan"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1a7b-8d5a-f5dc-2541" name="Claws of Serax" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed75-f92d-34c9-356b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cd7-6ec1-fac7-5690" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a688-a9f2-33bc-82b7" name="Claws of Serax" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5af1-bb93-f5c0-11a0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lieutenant Titus" hidden="false" id="f9af-c324-a2e2-552d">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="39d9-46ac-da7c-4ec7" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="92dc-755b-cf03-a14c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Lieutenant Titus" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="438e-f669-392b-7ad6">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Honour of the Chapter" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1cdd-029d-3bd1-baa5">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed, and one damage marker is removed from it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Astartes chainsword" hidden="false" id="f8a3-8d51-4788-4720">
+          <profiles>
+            <profile name="Astartes chainsword" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f061-5daf-b3b0-4acf">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34db-e523-11ff-3f72" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="464c-992f-d00d-c4d4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ac40-8858-dbf4-e820" id="2674-c45a-659d-a53a" primary="false" name="Titus"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="9052-a84c-1e6d-1f23" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="0c68-3904-7a12-60bc" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="442a-0e8b-3531-cc8e" primary="false" name="Character"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="e655-e612-373a-c08c" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="de80-091e-d6c4-33e4" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="0f44-4bfd-acaf-7de9" id="8561-34d6-63fb-a95e" primary="false" name="Faction: Ultramarines"/>
+        <categoryLink targetId="c1bc-cc91-15db-65fc" id="b894-6914-75e8-396d" primary="false" name="Lieutenant"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ef7-bddb-5a9c-223a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="8455-ce0b-fe35-dc21" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
