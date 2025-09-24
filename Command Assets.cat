@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -25,6 +25,11 @@
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="76c8-37f7-f8d3-ba40" includeChildSelections="false"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="419d-7a53-6ad6-81cc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Void Armour" hidden="false" id="3c49-d55d-f057-e008" type="selectionEntry" targetId="6853-d37f-ea69-5b5d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="403e-3992-bfc1-307c" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -458,6 +463,224 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brëkkeknots" hidden="false" id="0c5e-d7a8-8f51-cb1d">
+      <profiles>
+        <profile name="Brëkkeknots" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e4fc-a77f-ba5e-60e0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Kâhl or Einhyr Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="89dd-e689-df0d-b73c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unyielding Aggresion" hidden="false" id="4d6e-f30c-e321-1242">
+      <profiles>
+        <profile name="Unyielding Aggresion" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="83da-0a1b-b0a2-58b5">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Leagues of Votan Commander from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command, Allow Fall Back and Shoot or Fight</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="89dd-e689-df0d-b73c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void Armour" hidden="false" id="6853-d37f-ea69-5b5d">
+      <profiles>
+        <profile name="Void Armour" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4571-39ee-fac5-129c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Leagues of Votan Commander from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Add 2 to saving throws of Detachment until end of phase, up to 4+</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="89dd-e689-df0d-b73c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psychic Barrier" hidden="false" id="81dc-1903-0eec-2279">
+      <profiles>
+        <profile name="Psychic Barrier - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b297-0956-746d-4279">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Friendly Astra Militarum Units in 6&quot; of Target, roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psychic Maelstrom" hidden="false" id="0758-7a6c-abba-f8fd">
+      <profiles>
+        <profile name="Psychic Maelstrom - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a0a-824f-9f80-3972">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Enemy unit within 24&quot; of target, Roll 2 D12s 3 D6s;for each 6+ one blast marker to enemy.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terrifying Visions" hidden="false" id="048a-6d51-136c-b69d">
+      <profiles>
+        <profile name="Terrifying Visions - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="70bc-bcfd-65c3-b473">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Enemy units within 6&quot; of target take 2 damage markers instead of one on failed morale</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volley Fire" hidden="false" id="4f44-2978-8d87-4d41">
+      <profiles>
+        <profile name="Volley Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2205-e53c-e69f-87d8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Mordian</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Mordian Infantry units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 12&quot; of each, each of those units makes one free Shoot action against that enemy unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armoured Fist" hidden="false" id="5f7d-9399-8c3d-e39f">
+      <profiles>
+        <profile name="Armoured Fist" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e4fb-efa6-eaee-2ae2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Armageddon</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Armageddon Transport units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Any Armageddon unit embarked on these transports can disembark and make one free Shoot action</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -616,6 +839,41 @@
         <entryLink import="true" name="Born Soldiers" hidden="false" id="63fb-c3c9-4f52-fbb4" type="selectionEntry" targetId="5bfa-beee-aaf1-a230">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e1-4e83-a2c1-88dd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Brëkkeknots" hidden="false" id="07da-f821-7490-2a96" type="selectionEntry" targetId="0c5e-d7a8-8f51-cb1d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a65-80c4-fcba-e364" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Unyielding Aggresion" hidden="false" id="6730-1179-86de-5da7" type="selectionEntry" targetId="4d6e-f30c-e321-1242">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17c7-7b3d-8bcb-b454" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Psychic Barrier" hidden="false" id="3f2c-ecbc-6a1e-7945" type="selectionEntry" targetId="81dc-1903-0eec-2279">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5961-f665-46ba-ae1a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Psychic Maelstrom" hidden="false" id="1156-3b04-1a64-17ec" type="selectionEntry" targetId="0758-7a6c-abba-f8fd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="875f-b592-abfe-2ae3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Terrifying Visions" hidden="false" id="8422-a054-ffd4-da23" type="selectionEntry" targetId="048a-6d51-136c-b69d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c6e-f074-a787-f9ee" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Volley Fire" hidden="false" id="bce2-ed57-1a53-060b" type="selectionEntry" targetId="4f44-2978-8d87-4d41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d672-ca7f-e8e9-b24c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured Fist" hidden="false" id="431d-adad-af2f-955f" type="selectionEntry" targetId="5f7d-9399-8c3d-e39f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c29-db5b-01bc-c4ed" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
