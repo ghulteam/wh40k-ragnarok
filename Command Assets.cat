@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -681,6 +681,306 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Butcher&apos;s Nails" hidden="false" id="a33a-88a6-45f5-1085">
+      <profiles>
+        <profile name="Butcher&apos;s Nails" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="31c4-5586-83c5-ea3a">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - World Eaters</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Detachment led by World Eater Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change order to Assault and +1 to Attacks characteristics for World Eater units in Target Detachment that performs Fight action</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="In Midnight Clad" hidden="false" id="a1ae-d765-20d8-a62d">
+      <profiles>
+        <profile name="In Midnight Clad" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="640f-4b95-ded3-92f7">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Nightlords</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Night Lord unit from own army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Cannot be targeted, unless closest enemy</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Hex" hidden="false" id="b180-7f31-5edf-921f">
+      <profiles>
+        <profile name="Death Hex - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0d9c-332c-5a5b-20b2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Heretic Astartes Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">-2 to saving throws for enemys in 12&quot; of chosen Psyker</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Time" hidden="false" id="f285-004f-9232-1cd5">
+      <profiles>
+        <profile name="Warp Time - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a6f3-4952-9e03-2922">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Heretic Astartes Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select up to 3 Heretic Astartes units within 12&quot; of target. Each of those makes one free Move Action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Surge" hidden="false" id="921f-c848-0c29-3cea">
+      <profiles>
+        <profile name="Warp Surge" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9758-0ac5-2f77-a59a">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frentic Bloodlust" hidden="false" id="545c-110a-4ea2-1579">
+      <profiles>
+        <profile name="Frentic Bloodlust" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="37e7-3903-5d33-e045">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Khorne</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Friendly Legiones Daemonica Khorne Unit from your Army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Target makes two free Fight actions back-to-back</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hysterical Frenzy" hidden="false" id="deda-24cd-5ba3-1657">
+      <profiles>
+        <profile name="Hysterical Frenzy - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e7ac-4eda-2633-b402">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Slaanesh Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select 1 friendly Legiones Daemonica Slaanesh unit in 12&quot;, Until end of phase, each successful melee hit scores two hits instead</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fleshy Abundance" hidden="false" id="53e7-5cd5-c664-31ae">
+      <profiles>
+        <profile name="Fleshy Abundance - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="83e3-48b3-4c82-c60c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Nurgle Psyker</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, Friendly Legiones Daemonica Nurgle units in 6&quot; of target get Ignore Damage (5+)</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Locus of Rage" hidden="false" id="1eb5-90ed-6145-a2f9">
+      <profiles>
+        <profile name="Locus of Rage" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1b00-88a2-6c84-4b48">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Khorne</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Legiones Daemonica Khorne Commander from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, roll D12s instead of D6s for attacks with melee weapons by Legiones Daemonica Khorne units in chosen Detachment</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Revolting Regeneration" hidden="false" id="022c-2d0b-1b7a-81ab">
+      <profiles>
+        <profile name="Revolting Regeneration - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f367-9895-f4ed-dfc1">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Nurgle Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove up to D3 damage markers from target</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -874,6 +1174,56 @@
         <entryLink import="true" name="Armoured Fist" hidden="false" id="431d-adad-af2f-955f" type="selectionEntry" targetId="5f7d-9399-8c3d-e39f">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c29-db5b-01bc-c4ed" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Butcher&apos;s Nails" hidden="false" id="5942-6c50-c0da-693d" type="selectionEntry" targetId="a33a-88a6-45f5-1085">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7569-73ee-3afb-7a6c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="In Midnight Clad" hidden="false" id="2d31-3080-ce33-b3c5" type="selectionEntry" targetId="a1ae-d765-20d8-a62d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8066-f2da-966f-56a9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Death Hex" hidden="false" id="b9b1-42a6-1440-12b8" type="selectionEntry" targetId="b180-7f31-5edf-921f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bb4-3e08-bc50-c8f5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warp Time" hidden="false" id="3851-9fac-ca08-b8f2" type="selectionEntry" targetId="f285-004f-9232-1cd5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a7-f148-e3c2-3120" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warp Surge" hidden="false" id="0d0b-d918-81fe-b57e" type="selectionEntry" targetId="921f-c848-0c29-3cea">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7e5-3103-c06b-caaf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frentic Bloodlust" hidden="false" id="498a-b01b-8c5d-5d40" type="selectionEntry" targetId="545c-110a-4ea2-1579">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca8b-ac3e-cd25-d54c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hysterical Frenzy" hidden="false" id="918e-204d-befb-782b" type="selectionEntry" targetId="deda-24cd-5ba3-1657">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea2b-06c8-8b8a-86ca" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fleshy Abundance" hidden="false" id="c227-1df8-1ea0-00f9" type="selectionEntry" targetId="53e7-5cd5-c664-31ae">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a80c-a28c-694c-3598" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Locus of Rage" hidden="false" id="b1c6-2cd1-1dcd-f815" type="selectionEntry" targetId="1eb5-90ed-6145-a2f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2768-6041-b76f-4b49" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Revolting Regeneration" hidden="false" id="6c6c-9f50-3c9e-d987" type="selectionEntry" targetId="022c-2d0b-1b7a-81ab">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110e-2b8f-a233-485b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>

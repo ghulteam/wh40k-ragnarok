@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="52" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="53" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -4741,7 +4741,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
                 <categoryLink targetId="7151-56f9-0163-eadc" id="3b7d-41fa-bb04-1fe1" primary="false" name="Captain"/>
               </categoryLinks>
               <profiles>
-                <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="true" id="118c-86c1-402a-277f">
+                <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="118c-86c1-402a-277f">
                   <characteristics>
                     <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly RAVEN GUARD units whilst they are within 6&quot; of this unit.</characteristic>
                   </characteristics>
@@ -5577,7 +5577,7 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="0def-6349-2c09-ba7f" hidden="false" defaultSelectionEntryId="4ad0-4f79-f31e-4af3">
           <entryLinks>
-            <entryLink import="true" name="Gravis Armor" hidden="false" id="4ad0-4f79-f31e-4af3" type="selectionEntry" targetId="6200-8ffc-5988-6301"/>
+            <entryLink import="true" name="Gravis Armour" hidden="false" id="4ad0-4f79-f31e-4af3" type="selectionEntry" targetId="6200-8ffc-5988-6301"/>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="c177-93c4-684c-4d9e" type="selectionEntry" targetId="8b15-a0be-8cba-a7fb"/>
           </entryLinks>
           <constraints>
@@ -7069,7 +7069,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <entryLink import="true" name="Jump Pack" hidden="false" id="67a7-2b27-13d0-d833" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
             <entryLink import="true" name="Bike" hidden="false" id="04dc-4a13-277a-aebd" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="1097-d173-cdcb-1db9" collective="false" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
-            <entryLink import="true" name="Gravis Armor" hidden="false" id="7797-69b4-de89-c9ca" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
+            <entryLink import="true" name="Gravis Armour" hidden="false" id="7797-69b4-de89-c9ca" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
             <entryLink import="true" name="Phobos Armor" hidden="false" id="823c-4196-6390-c1af" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -7222,11 +7222,23 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Honour of the Chapter" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1cdd-029d-3bd1-baa5">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed, and one damage marker is removed from it.</characteristic>
-          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f9af-c324-a2e2-552d" childId="c46b-cd94-7869-e831" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Captain Titus" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f9af-c324-a2e2-552d" childId="dbd3-c3aa-08fa-24cb" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5+" field="a56f-38ae-3917-aadc">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f9af-c324-a2e2-552d" childId="dbd3-c3aa-08fa-24cb" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntries>
@@ -7251,7 +7263,6 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="ac40-8858-dbf4-e820" id="2674-c45a-659d-a53a" primary="false" name="Titus"/>
-        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="9052-a84c-1e6d-1f23" primary="false" name="Infantry"/>
         <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="0c68-3904-7a12-60bc" primary="false" name="Light"/>
         <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="442a-0e8b-3531-cc8e" primary="false" name="Character"/>
         <categoryLink targetId="6268-f517-c933-bf19" id="e655-e612-373a-c08c" primary="false" name="Faction: Adeptus Astartes"/>
@@ -7277,6 +7288,53 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       <infoLinks>
         <infoLink name="Ignore Damage (6+)" id="8455-ce0b-fe35-dc21" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="c396-394f-bb8c-c444" hidden="false" defaultSelectionEntryId="2b3b-83b1-b9e1-fdc1">
+          <entryLinks>
+            <entryLink import="true" name="Jump Pack" hidden="false" id="c46b-cd94-7869-e831" type="selectionEntry" targetId="54ae-a37e-e67e-54e8"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="2b3b-83b1-b9e1-fdc1">
+              <categoryLinks>
+                <categoryLink targetId="2d6e-c03a-7a58-74ce" id="e5b5-d1d0-7ffa-36b9" primary="false" name="Infantry"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b73-5547-e667-d407" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da1f-9401-b86d-a4bc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Rank" id="2ffd-029f-9ede-5dd0" hidden="false" defaultSelectionEntryId="d0e5-b3ec-3ad4-23fa">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lieutenant" hidden="false" id="d0e5-b3ec-3ad4-23fa">
+              <profiles>
+                <profile name="Honour of the Chapter" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6043-e510-41c1-008a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The first time the number of damage markers next to this unit equals its Wounds characteristic, roll a D6; on a 4+ this unit is not destroyed, and one damage marker is removed from it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Captain" hidden="false" id="dbd3-c3aa-08fa-24cb">
+              <profiles>
+                <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="2d7b-f9d6-e6bd-210e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ULTRAMARINES units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a09-0c97-477f-8761" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd33-eb71-3b51-b5b4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
