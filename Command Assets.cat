@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -39,9 +39,9 @@
         <profile name="Behind Enemy Lines" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0d72-ce78-b496-3da7">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Out of Command Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove Out of Command Marker</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase or Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One unit from your army that has an Out of Command marker next to it</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove that marker from that unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -52,9 +52,9 @@
         <profile name="Divine Interventions" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e418-7716-eec1-b411">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After own Dice Roll</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Dice</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Set to face you want</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After rolling any dice in the Orders, Action or Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Dice of that roll</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change the result of that dice to a result of your choosing</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -65,9 +65,9 @@
         <profile name="Insane Bravery" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b4d9-e6ac-0c7a-2694">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Own Unit fails Morale Test</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Friendly Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Morale Test counts as passed.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">A unit in your army fails a Morale test</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Is considered to have passed that Morale test instead.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -78,9 +78,9 @@
         <profile name="Tactical Flexibility" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="50fb-8772-f12d-8bfd">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Detachment</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army (excluding Fortification Network Detachments) that has not yet carried out ist order this phase</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance, Aimed Fire or Assault.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -100,9 +100,9 @@
         <profile name="Steady Sights" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a6a-3961-7329-c7f7">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit with Aimed Fire</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Double Range for all Weapons of chosen Unit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army to carry out an Aimed Fire Order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">all units in that detachment double the Range characteristic of their non-melee weapons.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -113,9 +113,9 @@
         <profile name="Miraculous Escape" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ca37-756f-1168-fb90">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove one Blast Marker</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove one blast marker from it</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -126,9 +126,9 @@
         <profile name="Armour of Contempt" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8c23-8c43-2fdd-7f4b">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When resolving damage for one of your units, before any saving throws are made for it</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the blast markers next to it</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1, 2 for units with Sv 5+ or better</characteristic>
           </characteristics>
         </profile>
@@ -139,9 +139,9 @@
         <profile name="Trophy Kill" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7db0-4a10-7b9e-dec3">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">enemy Warmaster or One enemy SUPER-HEAVY unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Re-Roll Hit Rolls when attacking chosen unit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Either the enemy Warmaster or one enemy Super-Heavy unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, you can re-roll hit rolls for attacks made by your units that target the selected unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -152,9 +152,9 @@
         <profile name="Demolitions" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ed5a-aaca-e485-339d">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Terrain Piece</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Terrain Piece is Targetable as if it was a enemy HEAVY Unit. If destroyed, any Unit occupieing it has to Disembark as if it was a Transporter.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Defensible Terrain feature on the battlefield - you cannot select one that is garrisoned by units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">For the rest of the turn, that terrain feature is treated as an enemy Super-Heavy Transport unit that you can target with attacks. If, at the start of the Damage phase, the terrain feature has three or more large blast markers next to it, it is destroyed (no saving throws are made for it). Units that are garrisoning the terrain feature must leave it in the same manner as a unit disembarking a destroyed Transport. Then remove that terrain feature from the battlefield</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -165,9 +165,9 @@
         <profile name="Smite - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a26d-dedf-82ea-87a2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12; on 2+ place 1 blast marker, on 7+ place 2 blast markers instead on closes enemy unit in 36&quot; of chosen Psyker.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker unit from your army to manifest the power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that Psyker unit. On a 7+ place two blast markers next to the closest enemy unit within 36&quot; of that Psyker unit instead.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -190,9 +190,9 @@
         <profile name="From Golden Light They Come" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ae55-236c-c23c-eac3">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Unit Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">1 friendly Adeptus Custodes INFANTRY or DREADNOUGHT Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove from battlefield and Deep Strike the chosen units</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Custodes Light unit or one Adeptus Custodes Dreadnought from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove that unit from the battlefield and set it up anywhere on the battlefield that is more than 9&quot; from any enemy units.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -215,9 +215,9 @@
         <profile name="Null Zone - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="516a-a48a-f0de-0608">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Adeptus Astartes Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">-2 to saving throws for enemys in 12&quot; of chosen Psyker</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Astartes Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, subtract 2 from saving throws made for enemy units whilst they are within 12&quot; of that Psyker unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -250,9 +250,9 @@
         <profile name="Noble Sacrifice" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="bef8-d5a6-46b3-adf6">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Own Super-Heavy Unit is destroyed</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">The destroyed Super-Heavy Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Do not roll one D12 - Automaticly Explodes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">A Super-Heavy unit from your army is destroyed, before rolling to see whether that unit explodes or collapses in such a way as to crush those nearby</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Do not roll one D12 to see if the unit explodes or collapses in such a way as to crush those nearby - it automatically does so instead</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -263,9 +263,9 @@
         <profile name="Vortex Grenade" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4997-2f76-05f3-7b2f">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Enemy unit within 6&quot; of own Light Warlord</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 3 D12s; for each 6+ one blast marker to enemy</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy unit within 6&quot; of a Light Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll three D12s; for each result of 6+ place one blast marker next to that enemy unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -276,9 +276,9 @@
         <profile name="Resupply" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a06-5e24-0b93-56a8">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Set Up Reinforcements step</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Set Up Reinforcements step of the Orders phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Weapons with One Use Only replenished</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4"> Weapons in that Detachment are equipped with that have the One Use Only ability and have already been used in this battle can be used one additional time this battle.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -289,9 +289,9 @@
         <profile name="Orbital Strike" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d5c6-7ac1-1775-2473">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Point on battlefield in sight of a Warlord from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12 for each unit within 6&quot; of Point, -1 for Light Character. On 7-10 1 blast marker for rolled unit, on 11+ two blast markers for rolled unit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">A point on the battlefield that is visible to at least one Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12 for each unit within 6&quot; of that point, subtracting 1 from the roll if the unit being rolled for is a Light Character. On a 7-10 place one blast marker next to the unit being rolled for; on a 11+ place two blast markers next to the unit being rolled for.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">3</characteristic>
           </characteristics>
         </profile>
@@ -302,9 +302,9 @@
         <profile name="Finest Hour" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f288-e458-2d17-fb68">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Warmaster or one Warlord from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">+1 to Attack, +1 to wound rolls for melee weapons, melee weapons get Destroyer until end of turn.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Your Warmaster or one Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, add 1 to that unit&apos;s Attacks characteristics and add 2 to wound rolls for attacks made with melee weapons by that unit. In addition, until the end of the turn, that unit&apos;s melee weapons have the Destroyer ability.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -315,9 +315,9 @@
         <profile name="Reinforcements" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4157-2f3e-121f-eda0">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Set Up Reinforcement step of the Orders phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One destroyed non character unit from your army.</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 2D12. If result exceeds PL rating of Target, place wholly within 9&quot; of any battlefield edge, but further than 9&quot; from any enemy units. This Unit is a new Detachment.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Set Up Reinforcement step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One unit from your army that has been destroyed and is not a Character</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12. If the result exceeds the Power Rating of that unit, it is returned to the battlefield and set up anywhere that is wholly within 9&quot; of any battlefield edge and more than 9&quot; from any enemy units. That unit is a new, separate Detachment. If the D12 roll is not greater than the Power Rating of that unit, it is not returned</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -328,9 +328,9 @@
         <profile name="Medicae Supplies" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8b63-20c0-ef5c-03e6">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of the Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Light unit from your army with atleast one damage marker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove D3 damage markers from Target</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Light unit from your army that has at least one damage marker next to it</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove D3 damage markers from that unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -341,9 +341,9 @@
         <profile name="Combined Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7864-a4a9-38b1-d7ad">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Heavy or Super-Heavy units that have the same datasheet</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Targets combine fire this phase. Choose one enemy within range of all 3 Targets. Targets can only attack chosen enemy this phase, each successful wound deals 1 more blast marker</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment to carry out an order, before any units in that Detachment make a Shoot action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Heavy or Super-Heavy units in that Detachment that have the same datasheet (e.g. three Vindicators); those units combine fire this phase</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit that is visible to those units and within range of at least one ranged weapon that every unit combinig fire has. Until the end of the phase, the units combining fire can only target that enemy unit, but for each attack made by those units that successfully wounds, place one additional blast marker next to that enemy unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -354,9 +354,9 @@
         <profile name="Go to Ground" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="79f3-8595-8541-5131">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Infantry unit from your army, not in base contact with enemy units</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Double save results until end of phase for Target.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Infantry unit from your army that is not in base contact with any enemy units</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, double the result of saving throws made for that unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1, 2 if Target has 4+ or better save</characteristic>
           </characteristics>
         </profile>
@@ -367,10 +367,10 @@
         <profile name="Laserburn" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3f35-85f0-4c3d-da91">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">2 points within 12&quot; of each other</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Draw immaginary 1&quot; line between Targeted Points. Roll D12 for each unit under line, -1 for light characters. 7ü one blast marker for unit beeing rolled for.</characteristic>
-            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Two points on the battlefield that are within 12&quot; of each other</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Draw an imaginary straight line, 1mm in thickness, between these two points and roll one D12 for each unit that this line crosses, substracting 1 from the result if the unit being rolled for is a Light Character; on a 7+ place one blast marker next to the unit being rolled for</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -380,9 +380,9 @@
         <profile name="Force - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8a14-ae4c-6b35-81b0">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">+3 to wound rolls for melee weapons, melee weapons have destroyer. Until end of turn.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, add 3 to wound rolls for attacks made with melee weapons by that unit. In addition, until the end of the turn, that unit&apos;s melee weapons have the Destroyer ability.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -405,9 +405,9 @@
         <profile name="Telekine Dome - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="db26-86ec-c353-fb0c">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select friendly unit within 12&quot; of Target. Roll D12s instead of D6s for saving throws for chosen unit.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly unit within 12&quot; of that Psyker unit. Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the size of the blast markers next to it</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -430,9 +430,9 @@
         <profile name="Auxiliary Missile Systems" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="711b-5365-e41e-b0f2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After VEHICLE from your army made a Shoot action</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Enemy Unit Visible to Unit that just shot</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll 1D6 - if result is equal or greater than your BS, place 1 blast marker. If enemy unit is HEAVY or SUPER-HEAVY, place 2 instead.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After a VEHICLE Unit from your army has made a Shoot action</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit that is visible to that unit and roll one D6. If the result is equal to or greater than your unit’s Ballistic Skill characteristic, place one Blast Marker next to that enemy unit - if that unit is HEAVY or SUPER-HEAVY, place two blast markers next to it instead.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -443,9 +443,9 @@
         <profile name="Born Soldiers" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0fa6-de9a-44a0-1718">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Cadian</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Cadian Commander from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, roll D12s instead of D6s for attacks with ranged weapons by Cadian units in chosen Detachment</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Cadian Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s instead of D6s for hit rolls for attacks made with ranged weapons by Cadian units in that Detachment.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -468,9 +468,9 @@
         <profile name="Brëkkeknots" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e4fc-a77f-ba5e-60e0">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Kâhl or Einhyr Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When resolving damage for a unit of Kâhl or Einhyr from your army, before any saving throws are made for it</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the size of the blast markers next to it.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -493,9 +493,9 @@
         <profile name="Unyielding Aggresion" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="83da-0a1b-b0a2-58b5">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Leagues of Votan Commander from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change Command to any other Command, Allow Fall Back and Shoot or Fight</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Leagues of Votan Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachement</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">that Detachment&apos;s order is replaced with Advance, Aimed Fire or Assault and, until the end of the phase, Leagues of Votan units in that Detachment that Fall Back can still make Shoot or Fight actions.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -518,9 +518,9 @@
         <profile name="Void Armour" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4571-39ee-fac5-129c">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Leagues of Votan</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Leagues of Votan Commander from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Add 2 to saving throws of Detachment until end of phase, up to 4+</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Leagues of Votan Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 2 to saving throws made for friendly League of Votan units in that Detachment.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -543,9 +543,9 @@
         <profile name="Psychic Barrier - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b297-0956-746d-4279">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Friendly Astra Militarum Units in 6&quot; of Target, roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker unit from zour armz to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 2 to saving throws made for friendly Astra Militarum units whilst they are within 6&quot; of that Psyker unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -574,9 +574,9 @@
         <profile name="Psychic Maelstrom - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6a0a-824f-9f80-3972">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Enemy unit within 24&quot; of target, Roll 2 D12s 3 D6s;for each 6+ one blast marker to enemy.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 24&quot; of that Psyker unit. Roll two D12s and three D6s; for each result of 6+ place one blast marker next to that enemy unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -605,9 +605,9 @@
         <profile name="Terrifying Visions - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="70bc-bcfd-65c3-b473">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Enemy units within 6&quot; of target take 2 damage markers instead of one on failed morale</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Psyker unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time an enemy unit fails a Morale test whilst within 6&quot; of that Psyker unit, two damage markers are placed next to that enemy unit, instead of only one.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -636,9 +636,9 @@
         <profile name="Volley Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2205-e53c-e69f-87d8">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Mordian</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Mordian Infantry units from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 12&quot; of each, each of those units makes one free Shoot action against that enemy unit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Mordian Infantry units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 12&quot; of all those units Each of those Mordian units one free Shoot action. Whilst making these actions, those Mordian units can only target that enemy unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -661,9 +661,9 @@
         <profile name="Armoured Fist" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e4fb-efa6-eaee-2ae2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Armageddon</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Three Armageddon Transport units from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Any Armageddon unit embarked on these transports can disembark and make one free Shoot action</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Armageddon Transport units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Any Armageddon units embarked aboard these transports can disembark and make one free Shoot action.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -686,9 +686,9 @@
         <profile name="Butcher&apos;s Nails" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="31c4-5586-83c5-ea3a">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - World Eaters</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Detachment Activation</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Detachment led by World Eater Commander</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Change order to Assault and +1 to Attacks characteristics for World Eater units in Target Detachment that performs Fight action</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a World Eaters Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachement</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">When used, that Detachment&apos;s order is replaced with Assault and, until the end of the phase add 1 to the Attacks chaceristic of World Eaters units in that Detachment whilst they make Fight actions</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -711,9 +711,9 @@
         <profile name="In Midnight Clad" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="640f-4b95-ded3-92f7">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Nightlords</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Night Lord unit from own army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Cannot be targeted, unless closest enemy</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Night Lords unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, that Night Lords unit can only be the target of attacks made with ranged weapons if it is the closest enemy unit to the firing unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -736,9 +736,9 @@
         <profile name="Death Hex - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0d9c-332c-5a5b-20b2">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Heretic Astartes Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">-2 to saving throws for enemys in 12&quot; of chosen Psyker</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Psyker unit from your army to manifest the power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, substract 2 from saving throws made for enemy units whilst they are within 12&quot; of that Psyker unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -771,9 +771,9 @@
         <profile name="Warp Time - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a6f3-4952-9e03-2922">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Heretic Astartes Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select up to 3 Heretic Astartes units within 12&quot; of target. Each of those makes one free Move Action.</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select up to three Heretic Astartes units within 12&quot; of that Psyker unit. Each of those units makes one free Move Action.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -806,9 +806,9 @@
         <profile name="Warp Surge" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9758-0ac5-2f77-a59a">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll D12s instead of D6s for saving throws</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When resolving damage for one of your Legiones Daemonica units, before any saving throws are made for it</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the size of the blast markers next to it.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -831,9 +831,9 @@
         <profile name="Frentic Bloodlust" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="37e7-3903-5d33-e045">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Khorne</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Friendly Legiones Daemonica Khorne Unit from your Army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Target makes two free Fight actions back-to-back</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase.</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Khorne unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That unit makes two free Fight actions back-to-back.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -856,9 +856,9 @@
         <profile name="Hysterical Frenzy - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e7ac-4eda-2633-b402">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action Phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Slaanesh Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select 1 friendly Legiones Daemonica Slaanesh unit in 12&quot;, Until end of phase, each successful melee hit scores two hits instead</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Slaanesh Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Legiones Daemonica Slaanesh unit within 12&quot; of that Psyker unit. Until the end of the phase, each hit roll for an attack made with a melee weapon by that unit is successful, that attack scores two hits instead of one (make a separate wound roll for each hit).</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -891,9 +891,9 @@
         <profile name="Fleshy Abundance - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="83e3-48b3-4c82-c60c">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Start of Damage phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Nurgle Psyker</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, Friendly Legiones Daemonica Nurgle units in 6&quot; of target get Ignore Damage (5+)</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Nurgle Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, friendly Legiones Daemonica Nurgle units have the Ignore Damage (5+) ability whilst they are within 6&quot; of that Psyker unit.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -926,9 +926,9 @@
         <profile name="Locus of Rage" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1b00-88a2-6c84-4b48">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Khorne</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by Legiones Daemonica Khorne Commander from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until end of phase, roll D12s instead of D6s for attacks with melee weapons by Legiones Daemonica Khorne units in chosen Detachment</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Legiones Daemonica Khorne Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Assault. In Additon, until the end of the phase, roll D12s instead of D6s for attacks made with melee weapons by Legiones Daemonica Khorne units in that Detachment.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -951,9 +951,9 @@
         <profile name="Revolting Regeneration - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f367-9895-f4ed-dfc1">
           <characteristics>
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
-            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">Action phase</characteristic>
-            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One friendly Legiones Daemonica Nurgle Unit</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove up to D3 damage markers from target</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Nurgle Detachment from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove up to D3 damage markers from that unit</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -976,6 +976,427 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Look Out, Sir!" hidden="false" id="5b6f-750f-e208-5925">
+      <profiles>
+        <profile name="Look Out, Sir!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="447c-a7ac-cf29-7f00">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Light Character from your army that has at least one blast marker next to it and is within 6&quot; of one or more friendly Light unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">You can remove up to D3 blast markers from that Character and place them next to one of those Light units instead</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="First Amongst Traitors" hidden="false" id="eb03-dfe9-1b63-daa2">
+      <profiles>
+        <profile name="First Amongst Traitors" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="95af-e5b3-71ed-7fa2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Black Legion</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Black Legion units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes either one free Shoot or one free Fight action. Whilst making these actions, those units can only target Imperium units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock Assault" hidden="false" id="a96f-87c6-d144-99a0">
+      <profiles>
+        <profile name="Shock Assault" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="aef5-68db-e8f2-036d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army to carry out an Assault order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachement</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">All units in that Detachment that you want to make a Move action have done so, each unit in that Detachment can make one Shoot action instead of one Fight action (even though units in Detachments carrying out Assault orders cannot normally make Shoot actions)</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pavane of Slaanesh" hidden="false" id="54c8-8835-746a-a5fe">
+      <profiles>
+        <profile name="Pavane of Slaanesh - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d1d6-93be-c285-43b0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Slaanesh PSyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 24&quot; of them. Roll one D6 for each model in that enemy unit; for each roll of 6, place one blast marker next to that unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aura of Acquiescence" hidden="false" id="92d9-a6e2-0a4f-5803">
+      <profiles>
+        <profile name="Aura of Acquiescence" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="cc28-fe18-eca5-d0d5">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Slaanesh unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, halve the Attacks characteristic of enemy units whilst they are in base contact with that unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phantasmagoria" hidden="false" id="435c-fa00-a74b-d5bf">
+      <profiles>
+        <profile name="Phantasmagoria - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4cb6-44ad-3cc2-4711">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Slaanesh Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, subtract 1 from the Leadership characteristic of enemy units whilst they are within 12&quot; of that Psyker unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Locus of Swiftness" hidden="false" id="30cb-3a44-84ac-8527">
+      <profiles>
+        <profile name="Locus of Swiftness" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="29c8-27e2-9196-8e44">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Slaanesh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Legiones Daemonica Slaanesh Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Assault. Whilst carrying out this ourder, Legiones Daemonica Slaanesh units in that Detachment triple their Move characteristic instead of doubling it, but they cannot end any Move action (excluding Pile-in moves= in base contact with any enemy units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stream of Corruption" hidden="false" id="d924-8ce7-e588-e4e6">
+      <profiles>
+        <profile name="Stream of Corruption - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="38f6-7ce0-c2f5-80ae">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Nurgle Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 12&quot; of that Psyker unit and roll one D12. On a 4-7, place two blast markers next to that enemy unit; on a 8-10, place three blast markers next to that enemy unit; on a 11+ place four blast markers next to that enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Virulent Blessing" hidden="false" id="91e2-fb30-69e9-a7b0">
+      <profiles>
+        <profile name="Virulent Blessing - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0c76-5df8-5378-44b4">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Nurgle Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Legiones DAemonica Nurgle unit within 12&quot; of that Psyker unit. Until the end of the phase, each time that unit makes an attack with a melee weapon and the unmodified wound roll is 7+, that attack successfully wounds the target irrespective of that weapon&apos;s Strength characteristics, and you place two blast markers next to the target unit isntead on only one.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Miasma of Pestilence" hidden="false" id="cb12-bf17-cc69-cb1d">
+      <profiles>
+        <profile name="Miasma of Pestilence - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f188-59c2-fb5c-035c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Nurgle Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Legiones Daemonica Nurgle unit within 12&quot; of that Psyker unit. Until the end of the phase, that Nurgle unit can only be the target of attacks made with ranged weapons if it is the closest enemy unit to the firing unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Locus of Virulence" hidden="false" id="a01c-bd3b-5fb8-7344">
+      <profiles>
+        <profile name="Locus of Virulence" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7348-847c-4f0b-825f">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Legiones Daemonica Nurgle Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, you can re-roll wound rolls for attacks made by Legiones Daemonica Nurgle units in that Detachment</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal Gateway" hidden="false" id="e95c-9d5c-d64a-4e7c">
+      <profiles>
+        <profile name="Infernal Gateway - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2758-525a-7504-6bd9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Tzeentch</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Tzeentch Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield that is within 24&quot; of that Psyker unit. Roll one D12 for each unit within 6&quot; of that point, subtracting 1 from the result if the unit being rolled for is a Light Character. On a 6+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deniziens of the Warp" hidden="false" id="ac6b-3de1-a30e-8390">
+      <profiles>
+        <profile name="Deniziens of the Warp" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f585-08d4-9beb-8dde">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Set Up Reinforcements step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Select one Legiones Daemonica Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">select one friendly Legiones Daemonica unit that has been destroyed and roll 4D12. If the result exceeds the Power Rating of the destroyed unit, it is returned to the battlefield and set up anywhere that is more than 9&quot; from any enemy units. That unit is considered to be part of that Warlord&apos;s Detachment. If the 4D12 roll is not greater than the Power Rating of the unit, it is not returned.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boon of Change" hidden="false" id="35c4-87b2-9f96-796f">
+      <profiles>
+        <profile name="Boon of Change - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="72d5-a9e0-154c-a0c3">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Tzeentch</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Legiones Daemonica Tzeentch Psyker unit from your army to manifest that power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, add 1 to hit rolls and wound rolls for attacks made by friendly Legiones Daemonica Tzeentch units whilst they are within 6&quot; of that Psyker unit and add 1 to saving throws made for friendly Legiones Daemonica Tzeentch units whilst they are within 6&quot; of that Psyker unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Locus of Trickery" hidden="false" id="9cc3-ebfe-ddf3-7841">
+      <profiles>
+        <profile name="Locus of Trickery" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a5fc-a805-a88d-9c93">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Legiones Daemonica - Nurgle</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Legiones Daemonica Tzeentch Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Legiones Daemonica Tzeentch units in that Detachment are obscured targets.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1793-1712-9a7f-5315" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -1226,6 +1647,76 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="110e-2b8f-a233-485b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Look Out, Sir!" hidden="false" id="9cd6-d4b7-18e3-b2f9" type="selectionEntry" targetId="5b6f-750f-e208-5925">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e78-070c-54bf-b4eb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shock Assault" hidden="false" id="0e69-a763-8712-7eef" type="selectionEntry" targetId="a96f-87c6-d144-99a0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f14-8bfc-faff-c11a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pavane of Slaanesh" hidden="false" id="6c94-6d15-7bb5-8dd1" type="selectionEntry" targetId="54c8-8835-746a-a5fe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7f5-fdab-3cf9-5536" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Aura of Acquiescence" hidden="false" id="8974-0e67-5555-c096" type="selectionEntry" targetId="92d9-a6e2-0a4f-5803">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fe6-0f53-88e3-a853" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Phantasmagoria" hidden="false" id="ca8e-0139-c242-e067" type="selectionEntry" targetId="435c-fa00-a74b-d5bf">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8cc-b598-efea-02fa" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Locus of Swiftness" hidden="false" id="ebe1-c3b8-25f4-e310" type="selectionEntry" targetId="30cb-3a44-84ac-8527">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e67-b9c0-91f7-8e08" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stream of Corruption" hidden="false" id="f53e-0b32-4bbd-ef43" type="selectionEntry" targetId="d924-8ce7-e588-e4e6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba87-85ee-eed4-d3e5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Virulent Blessing" hidden="false" id="3faf-5400-9f07-5e1a" type="selectionEntry" targetId="91e2-fb30-69e9-a7b0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb9-5046-7ab1-1638" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Miasma of Pestilence" hidden="false" id="3ebb-9c4d-7a5f-92dd" type="selectionEntry" targetId="cb12-bf17-cc69-cb1d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c5f-eef8-5a0a-9964" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Locus of Virulence" hidden="false" id="afae-3e1c-cc4f-96e7" type="selectionEntry" targetId="a01c-bd3b-5fb8-7344">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dbf-2af4-ade8-cfc2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Infernal Gateway" hidden="false" id="1a32-27cf-fccb-7927" type="selectionEntry" targetId="e95c-9d5c-d64a-4e7c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a7c-88f6-8c35-b8a0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Deniziens of the Warp" hidden="false" id="7f0c-f481-0a4d-2012" type="selectionEntry" targetId="ac6b-3de1-a30e-8390">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e081-5e10-6e42-a255" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boon of Change" hidden="false" id="5c46-d9bd-bbc0-532a" type="selectionEntry" targetId="35c4-87b2-9f96-796f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b32c-fdfb-d9bc-fc0f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Locus of Trickery" hidden="false" id="7ce2-f10a-96b8-87d8" type="selectionEntry" targetId="9cc3-ebfe-ddf3-7841">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfc5-8a65-38c3-c59b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -1295,6 +1786,13 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="First Amongst Traitors" hidden="false" id="97d9-28e7-13e5-40a8" type="selectionEntry" targetId="eb03-dfe9-1b63-daa2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e8-e221-c7d7-d447" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
