@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -278,7 +278,7 @@
             <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Set Up Reinforcements step of the Orders phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army</characteristic>
-            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4"> Weapons in that Detachment are equipped with that have the One Use Only ability and have already been used in this battle can be used one additional time this battle.</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Weapons in that Detachment are equipped with that have the One Use Only ability and have already been used in this battle can be used one additional time this battle.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -1402,6 +1402,1056 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Teleport Homer" hidden="false" id="89cf-e545-fcea-80c3">
+      <profiles>
+        <profile name="Teleport Homer" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="22a7-e31a-7397-ec78">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Astartes Terminator unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove that unit from the battlefield and set it up anywhere on the battlefield that is more than 9&quot; from any enemy units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flamecraft" hidden="false" id="94ae-d528-87f7-d447">
+      <profiles>
+        <profile name="Flamecraft" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5804-e024-78f4-9167">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Salamanders</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Salamanders Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time an attack made with a Small Arms weapon by a Salamanders unit in that Detachment targets an enemy unit within half the weapon&apos;s maximum range, that attack automatically scores a hit (no hit roll is made).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Angels of Death" hidden="false" id="0ca9-0549-02f9-f8f9">
+      <profiles>
+        <profile name="The Angels of Death" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="032a-82b6-4d76-7a87">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Damage phase, before your opponent takes a Morale test for one of their units</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">If that unit is within 12&quot; of any Adeptus Astartes units from your army, the test mus be made using one D12 instead of one D6.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sanctuary" hidden="false" id="8deb-4ab6-6b45-d3ae">
+      <profiles>
+        <profile name="Sanctuary - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8156-7df4-9c54-1ca3">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Grey Knights Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12 for each enemy Daemon unit in base contact with that unit; on a 10+ place one blast marker next to the unit being rolled for. In addition, until the end of the phase, you can re-roll saving throws made for that Psyker unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gate Of Infinty" hidden="false" id="6aa5-e56e-7275-f03e">
+      <profiles>
+        <profile name="Gate Of Infinty - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="bef8-ad0d-9eb1-fb76">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Grey Knights Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Grey Knights unit within 12&quot; of that Psyker unit. Remove the Grey Knights unit from the battlefield and set it up anywhere on the battlefield that is more than 9&quot; from any enemy units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hammerhand" hidden="false" id="9446-0e17-0169-2f6f">
+      <profiles>
+        <profile name="Hammerhand - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b337-e6b0-759e-7c21">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Grey Knights Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Grey Knights unit within 12&quot; of that Psyker unit. Until the ene of the turn, add 1 to wound rolls for attacks made with melee weapons by that unit. In addition, until the end of the phase, each time an attack made with a melee weapon by that unit successfully hits an enemy unit, you can choose to use that weapon&apos;s SAP or SAT characteristic, irrespective of whether the target is Light, Heavy or Super-Heavy.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Engulfing Fear" hidden="false" id="4c26-8f51-de27-d1ed">
+      <profiles>
+        <profile name="Engulfing Fear - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ce7d-eca9-a10b-f699">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Dark Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Dark Angels Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, enemy units subtract 1 from their Leadership characteristic whilst they are within 12&quot; of that Psyker unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Quickening" hidden="false" id="53c6-140a-ccc3-b963">
+      <profiles>
+        <profile name="Quickening - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7b2d-d05d-6ae8-ca78">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Blood Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Blood Angels Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Blood Angels Character within 12&quot; of that Psyker unit. Until the end of the phase, that Character cannot make any Shoot actions, but add 6&quot; to its Move characteristic and 2 to its Attacks characteristic.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Might of Heroes" hidden="false" id="f48c-0c73-49fd-d182">
+      <profiles>
+        <profile name="Might of Heroes - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="cb5e-437c-4ff5-22f8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Astartes Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Adeptus Astartes Character within 12&quot; of that Psyker unit. Until the end of the phase, that Character cannot make Shoot actions, but add 2 to its Attacks characteristic and 3 to wound rolls for attacks it makes with melee weapons.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Machine Empathy" hidden="false" id="ac57-9357-2fa6-1a64">
+      <profiles>
+        <profile name="Machine Empathy" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="17fb-bd1a-b43a-fe68">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Iron Hands</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Iron Hands Vehicle units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Shoot action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbital Barrage" hidden="false" id="45c1-d07d-4887-4203">
+      <profiles>
+        <profile name="Orbital Barrage" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="c02c-8b13-c8da-d872">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Astartes Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield that is visible to that Warlord. Roll one D12 for each unit within 6&quot; of that point, subtracting 1 from the result if the unit being rolled for is a Light Character. On a 6+ place one blast marker next to the unit being rolled for; on an 11+ place two blast markers next to the unit being rolled for instead.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Honour The Chapter" hidden="false" id="b566-43fa-6a38-a803">
+      <profiles>
+        <profile name="Honour The Chapter" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="deef-c7e6-715d-a29a">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Astartes unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That unit makes one free Fight action. Whilst making this action, you can re-roll wound rolls for that unit&apos;s attacks.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Strike From The Shadows" hidden="false" id="479a-50b2-ebc1-c5fd">
+      <profiles>
+        <profile name="Strike From The Shadows" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a473-c0d5-f2bc-602a">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Raven Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Raven Guard Infantry units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, attacks made with melee weapons by those units automatically score a hit (no hit roll is made) if the attacking unit, or its target, is garrisoning a Defensible Terrain feature.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunt The Fallen" hidden="false" id="a62e-ad02-04d3-3cfe">
+      <profiles>
+        <profile name="Hunt The Fallen" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="f698-f6cc-df09-6ec6">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Dark Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to two Dark Angels units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Fight action. Whilst making these actions, add 1 to wound rolls for attacks made by those units if the unit making the attack has the Deathwing or Ravenwing keyword.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A Deed Worthy Of Sage" hidden="false" id="a172-9d0a-e950-4777">
+      <profiles>
+        <profile name="A Deed Worthy Of Sage" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="44fe-6b08-3cea-5320">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Space Wolves</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy Character, Heavy or Super-Heavy unit on the battlefield</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 1 to hit rolls and wound rolls for attacks made by Space Wolves units from your army when targeting that enemy unit - add 2 instead if the unit making the attack is a Character.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Black Rage" hidden="false" id="8ad1-3de8-a810-453d">
+      <profiles>
+        <profile name="Black Rage" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="851d-78b9-d543-ce47">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Blood Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Blood Angels unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, whenever a hit roll for an attack made with a melee weapon by that unit is successful, that attack scores two hits instead of one, or three hits if that unit is Death Company (make a separate wound roll for each hit).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Blood Lance" hidden="false" id="a0e2-631d-577f-0820">
+      <profiles>
+        <profile name="The Blood Lance - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2ac2-a63a-79f5-3f13">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Blood Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Blood Angels Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">select one point on the battlefield within 18&quot; of that Psyker unit. Draw an imaginary straight line, 1mm in thickness, from any part of that unit to that point, then roll one D12 for each unit this line crosses, excluding the Blood Angels Psyker; on a 6+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Descent of Angels" hidden="false" id="96a0-746d-f971-07f9">
+      <profiles>
+        <profile name="Descent of Angels" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="cf6c-6013-7b3d-2eb2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Blood Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Blood Angels Commander to carry out an Assault order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 6&quot; to the Move characteristic and 1 to the Attacks characteristic of each Blood Angels unit in that Detachment that can Fly.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Special Issue Ammunition" hidden="false" id="9f48-cd65-229d-3391">
+      <profiles>
+        <profile name="Special Issue Ammunition" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9eed-8b6f-ea75-72ac">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Deathwatch</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Deathwatch Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time an attack made with a Small Arms weapon by a Deathwatch Light unit in that Detachment successfully hits an enemy unit, you can choose to use that weapon&apos;s SAP or SAT charactersitic, irrespective of wether the target is Light, Heavy or Super-Heavy</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Codex Discipline" hidden="false" id="93ae-b1c4-aafa-3e2d">
+      <profiles>
+        <profile name="Codex Discipline" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6382-1ad1-6749-83f2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Ultramarines</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Ultramarines Commander to carry our an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance, Aim Fire or Assault and, until the end of the phase, Ultramarines units in that Detachment that Fall Back can still make Shoot or Fight actions.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolter Drill" hidden="false" id="0457-387b-98c8-e3af">
+      <profiles>
+        <profile name="Bolter Drill" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5b90-4266-fb53-a54c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Imperial Fists</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Imperial Fists Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time a hit roll for an attack made with a Small Arms weapon by an Imperial Fist unit in that Detachment is successful, that attack scores two hits instead of one (make a separate wound roll for each hit).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning Assault" hidden="false" id="f211-f9da-5976-3c18">
+      <profiles>
+        <profile name="Lightning Assault" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e467-bca4-05ac-b8dc">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - White Scars</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an White Scars Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance and, until the end of the phase, the Move characterstic of White Scar units in that Detachment is doubled.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Siege Masters" hidden="false" id="7e69-8832-a129-4345">
+      <profiles>
+        <profile name="Siege Masters" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="accc-b212-27fd-48d6">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Imperial Fists</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Building unit or Defensible Terrain feature on the battlefield</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, whenever an attack made by an Imperial Fists unit from your army succesfully hits that Building unit or a unit garrisoning that Defensible Terrain feature, you can choose to use the weapon&apos;s SAP or SAT characteristic, irrespective of whether the target is Light, Heavy or Super-Heavy</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Righteous Zeal" hidden="false" id="0fda-149c-69e4-5c70">
+      <profiles>
+        <profile name="Righteous Zeal" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="55fa-eb3d-7fd7-ae19">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Black Templar</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Black Templars Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 1 to the Attacks characteristic of Black Templars units in that Detachment whilst they make Fight actions.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anvils of Strength" hidden="false" id="c9ff-e33a-da9d-14f0">
+      <profiles>
+        <profile name="Anvils of Strength" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="dcca-55ec-2518-737c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Salamanders</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In any phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Salamanders unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 2 to wound rolls for attacks made with melee weapons in that unit - if the unit you selected was a Salamanders Character, add 3 to these wound rolls instead</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shadow Masters" hidden="false" id="7279-9046-97cb-8710">
+      <profiles>
+        <profile name="Shadow Masters" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0840-2122-9b0f-91c0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Raven Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Raven Guard Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Raven Guard units in that Detachment are always obsucred targets.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Flesh is Weak" hidden="false" id="aff6-cdfc-670a-df41">
+      <profiles>
+        <profile name="The Flesh is Weak" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="416c-9617-ad6b-a7e2">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Iron Hands</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Iron Hands Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Iron Hands units in that Detachment have the Ignore Damage (5+) ability</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grim Resolve" hidden="false" id="5809-c9fd-b2a6-b50b">
+      <profiles>
+        <profile name="Grim Resolve" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b85c-cc64-9ff0-40c9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Dark Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Dark Angels Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Aimed Fire and, until the end of the turn, add 1 to wound rolls for attacks made with ranged weapons by Dark Angeld units in that Detachment and add 2 to the Leadership characteristic of Dark Angels units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Red Thirst" hidden="false" id="762a-ecf5-aa33-2a73">
+      <profiles>
+        <profile name="The Red Thirst" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9565-f842-1bf8-43bd">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Blood Angels</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Blood angels Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Assault and, until the end of the phase, add 1 to wound rolls for attacks made with melee weapons by Blood Angels units in that Detachment</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Hunters Unleashed" hidden="false" id="f066-aa61-33e2-d6ac">
+      <profiles>
+        <profile name="The Hunters Unleashed" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9f8b-6d02-8e1d-f4cd">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Space Wolves</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Space Wolves Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s instead of D6s for hit rolls for attacks made with melee weapons by Space Wolves units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mission Tactics" hidden="false" id="4481-cc35-bf3b-c376">
+      <profiles>
+        <profile name="Mission Tactics" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="bd21-50a4-d7e2-c8f7">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Deathwatch</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Deathwatch Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy Detachment; until the end of the phase, add 1 to hit rolls and wound rolls for attacks made by Deathwatch units in that Detachment from your army that target a unit in that enemy Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Born in the Saddle" hidden="false" id="e107-b2bb-1453-7c9f">
+      <profiles>
+        <profile name="Born in the Saddle" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7761-e90a-9fd7-6c57">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - White Scars</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three White Scars Biker units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free action (Move, Shoot, or Fight).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death to the Alien!" hidden="false" id="7a61-1bad-a1c2-3b0e">
+      <profiles>
+        <profile name="Death to the Alien!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="708c-db7a-4069-c03d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Deathwatch</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Deathwatch units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes either one free Shoot action or one free Fight action. Whilst making these actions, those units can only target Orks, Aeldari, Tyranids, Necrons or T&apos;au Empire units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rites of Banishment" hidden="false" id="6cbe-c63e-8205-6e4d">
+      <profiles>
+        <profile name="Rites of Banishment" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="b60b-5918-392d-9c94">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Grey Knights unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time an enemy Daemon units fails a Morale test whilst it is within 6&quot; of the selected unit, two damage markers are placed next to it instead of 1</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemon Hunters" hidden="false" id="4326-5429-bf3f-8b75">
+      <profiles>
+        <profile name="Daemon Hunters" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3ef9-6336-8029-19d3">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Grey Knights Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, you can re-roll hit rolls and wound rolls for attacks made by Grey Knights units in that Detachment that target Daemon units.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Living Lightning" hidden="false" id="5f51-56b3-b66f-cfcd">
+      <profiles>
+        <profile name="Living Lightning - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="071d-edc8-4e2b-1c12">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Space Wolves</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Space Wolves Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 36&quot; of that Psyker unit. Then roll one D12 for each other enemy unit within 6&quot; of that enemy unit; on a 9+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jaws of the World Wolf" hidden="false" id="78fd-4f68-5218-783c">
+      <profiles>
+        <profile name="Jaws of the World Wolf - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1366-6c41-3688-404f">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Space Wolves</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Space Wolves Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield within 24&quot; of that unit. Draw an imaginary straight line, 1mm in thickness, from any part of that unit to that point, then roll one D12 for each unit in this line crosses, excluding the Space Wolves Psyker and units that can Fly; on an 8+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="fe02-7b2a-a05c-4b0c">
+      <profiles>
+        <profile name="Vortex of Doom - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2d59-f188-1852-d151">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Grey Knights</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Grey Knights Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12. On a 5-9 place two blast markers next to the closest enemy unit within 24&quot; of that Psyker unit; on a 10+ place four blast markers next to the closest enemy unit within 24&quot; of that Psyker unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d46a-f3e3-d5f0-b0e2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -1717,6 +2767,201 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfc5-8a65-38c3-c59b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="First Amongst Traitors" hidden="false" id="97d9-28e7-13e5-40a8" type="selectionEntry" targetId="eb03-dfe9-1b63-daa2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e8-e221-c7d7-d447" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Teleport Homer" hidden="false" id="6172-e420-994a-6e6b" type="selectionEntry" targetId="89cf-e545-fcea-80c3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fa5-023e-2a86-4d78" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flamecraft" hidden="false" id="da7c-484b-2564-70d4" type="selectionEntry" targetId="94ae-d528-87f7-d447">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0209-3c1d-f566-123f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Angels of Death" hidden="false" id="fe60-5bab-c7cb-6c63" type="selectionEntry" targetId="0ca9-0549-02f9-f8f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24e0-44af-ba42-a13e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sanctuary" hidden="false" id="8598-4d78-45fd-c7f1" type="selectionEntry" targetId="8deb-4ab6-6b45-d3ae">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f82-5bb7-b33a-5b3f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gate Of Infinty" hidden="false" id="2642-6820-23d8-6b02" type="selectionEntry" targetId="6aa5-e56e-7275-f03e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcf4-fac7-fd4a-9752" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Engulfing Fear" hidden="false" id="fead-fdc7-a6f5-62a4" type="selectionEntry" targetId="4c26-8f51-de27-d1ed">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d60-149a-bdb9-2fe4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Quickening" hidden="false" id="de3b-17e6-3486-0e70" type="selectionEntry" targetId="53c6-140a-ccc3-b963">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07c7-bfdf-576b-f0e4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Might of Heroes" hidden="false" id="fc25-ab44-9187-3027" type="selectionEntry" targetId="f48c-0c73-49fd-d182">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="959c-e63f-1e55-3932" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Machine Empathy" hidden="false" id="bde5-bb4f-3a10-633c" type="selectionEntry" targetId="ac57-9357-2fa6-1a64">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f012-dbc9-28eb-2c91" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Orbital Barrage" hidden="false" id="986b-0895-0ac0-be5c" type="selectionEntry" targetId="45c1-d07d-4887-4203">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1ae-0a83-d4db-6962" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Honour The Chapter" hidden="false" id="dbd0-feb3-c06c-6896" type="selectionEntry" targetId="b566-43fa-6a38-a803">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4635-2b04-0a28-aee4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike From The Shadows" hidden="false" id="1d8d-cfc0-e030-1c47" type="selectionEntry" targetId="479a-50b2-ebc1-c5fd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bba-85d9-10c2-e203" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunt The Fallen" hidden="false" id="33b7-2622-1855-e77b" type="selectionEntry" targetId="a62e-ad02-04d3-3cfe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e85f-b403-8b15-e19f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="A Deed Worthy Of Sage" hidden="false" id="52fd-3499-7359-f9c5" type="selectionEntry" targetId="a172-9d0a-e950-4777">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8b1-d23f-1089-d866" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Black Rage" hidden="false" id="26ae-1154-ad5b-f029" type="selectionEntry" targetId="8ad1-3de8-a810-453d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342b-c349-3fe3-13b8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Blood Lance" hidden="false" id="bbab-c44e-1032-ce6b" type="selectionEntry" targetId="a0e2-631d-577f-0820">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9682-d13e-caa2-dab7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Descent of Angels" hidden="false" id="3228-1f41-36dc-e6f3" type="selectionEntry" targetId="96a0-746d-f971-07f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b84a-d21f-bd3c-8b6f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Special Issue Ammunition" hidden="false" id="f493-c81d-68f6-98cf" type="selectionEntry" targetId="9f48-cd65-229d-3391">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4847-16f6-33c9-a90c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Codex Discipline" hidden="false" id="e7b3-62f2-f278-1e23" type="selectionEntry" targetId="93ae-b1c4-aafa-3e2d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31bd-45c3-16a6-1471" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolter Drill" hidden="false" id="9414-d85e-4267-793e" type="selectionEntry" targetId="0457-387b-98c8-e3af">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b45-1a3f-709c-2373" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lightning Assault" hidden="false" id="00c3-1096-1ada-7df3" type="selectionEntry" targetId="f211-f9da-5976-3c18">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db0-c5f8-b531-1ace" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Siege Masters" hidden="false" id="b2ff-18e4-813d-dc84" type="selectionEntry" targetId="7e69-8832-a129-4345">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eac-8966-727a-f663" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Righteous Zeal" hidden="false" id="abf5-e079-6a58-df35" type="selectionEntry" targetId="0fda-149c-69e4-5c70">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa40-6872-2316-a1c0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Anvils of Strength" hidden="false" id="a696-db05-fb14-95ff" type="selectionEntry" targetId="c9ff-e33a-da9d-14f0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c57-a045-eb29-382d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shadow Masters" hidden="false" id="6259-d582-276e-c095" type="selectionEntry" targetId="7279-9046-97cb-8710">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f926-1edf-bacc-c972" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Flesh is Weak" hidden="false" id="3856-6901-13da-3072" type="selectionEntry" targetId="aff6-cdfc-670a-df41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce30-5724-6ef8-35f7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Grim Resolve" hidden="false" id="e892-0fcb-db39-5d19" type="selectionEntry" targetId="5809-c9fd-b2a6-b50b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c613-d0ee-e5ee-ea4d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Red Thirst" hidden="false" id="00c5-b4ff-b46a-5639" type="selectionEntry" targetId="762a-ecf5-aa33-2a73">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffa0-d0b0-18b4-1d4b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Hunters Unleashed" hidden="false" id="52d7-b52c-d047-26a1" type="selectionEntry" targetId="f066-aa61-33e2-d6ac">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7189-8e50-57e9-4f62" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mission Tactics" hidden="false" id="71fb-9290-5ed9-9668" type="selectionEntry" targetId="4481-cc35-bf3b-c376">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26ae-2a84-3560-17c5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Born in the Saddle" hidden="false" id="5144-9671-b7b0-d11a" type="selectionEntry" targetId="e107-b2bb-1453-7c9f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d0c-9529-3a70-ecc6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Death to the Alien!" hidden="false" id="cb21-1329-72e9-a66c" type="selectionEntry" targetId="7a61-1bad-a1c2-3b0e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d2b-f7aa-3aca-f658" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rites of Banishment" hidden="false" id="71c5-3be8-a3b0-d7e6" type="selectionEntry" targetId="6cbe-c63e-8205-6e4d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8f3-ae3a-761c-03d5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Daemon Hunters" hidden="false" id="ab1f-e9c4-bb9c-77fa" type="selectionEntry" targetId="4326-5429-bf3f-8b75">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99cc-97f7-c189-818b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Living Lightning" hidden="false" id="1fb9-ee59-5444-8824" type="selectionEntry" targetId="5f51-56b3-b66f-cfcd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6cf-495f-f5e5-d783" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vortex of Doom" hidden="false" id="3bc1-9044-8779-719b" type="selectionEntry" targetId="9446-0e17-0169-2f6f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3be-309d-6afd-5ef6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vortex of Doom" hidden="false" id="a9f6-f443-743e-daff" type="selectionEntry" targetId="fe02-7b2a-a05c-4b0c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="508e-03c0-d967-ecd1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Jaws of the World Wolf" hidden="false" id="0201-aac5-2867-5ca3" type="selectionEntry" targetId="78fd-4f68-5218-783c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c11c-5d97-bb48-1c4d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -1786,13 +3031,6 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="First Amongst Traitors" hidden="false" id="97d9-28e7-13e5-40a8" type="selectionEntry" targetId="eb03-dfe9-1b63-daa2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e8-e221-c7d7-d447" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
