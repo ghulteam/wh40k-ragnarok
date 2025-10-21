@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -2193,6 +2193,12 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="82fe-52f6-3642-7f6f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="570e-30f3-d625-c444" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
@@ -2947,7 +2953,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6cf-495f-f5e5-d783" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Vortex of Doom" hidden="false" id="3bc1-9044-8779-719b" type="selectionEntry" targetId="9446-0e17-0169-2f6f">
+        <entryLink import="true" name="Hammerhand" hidden="false" id="3bc1-9044-8779-719b" type="selectionEntry" targetId="9446-0e17-0169-2f6f">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3be-309d-6afd-5ef6" includeChildSelections="false"/>
           </constraints>
@@ -3020,7 +3026,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="050e-e110-802c-b24c" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Questor Traitoris" hidden="false" id="a945-9b64-732d-65dd">
+        <selectionEntry type="upgrade" import="true" name="Chaos Knights" hidden="false" id="a945-9b64-732d-65dd">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bc5-cc1d-e3b4-6cfe" includeChildSelections="false"/>
           </constraints>
@@ -3030,7 +3036,271 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e495-57a7-7704-4a0a" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Necrons" hidden="false" id="6a64-aec3-ea25-5f89">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9d9-ee52-8bd3-ebf4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Orks" hidden="false" id="c23a-4abc-7ece-553e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db71-eb92-b6e1-6096" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tyranids" hidden="false" id="91af-5064-c7e9-d026">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fba-dd25-efe5-8dba" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Genestealer Cults" hidden="false" id="7adc-f777-77b1-8011">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ca-8d64-690a-7c10" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Aeldari" hidden="false" id="6f50-5f57-1694-e351">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79b0-1d36-2db7-a1e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Drukhari" hidden="false" id="c19c-2a51-87ab-8c65">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63f3-015c-4b2f-b99a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Harlequin" hidden="false" id="3457-60b7-9640-1005">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e81d-e6ed-a0ea-7df5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Adeptus Astartes - Chapter" id="570e-30f3-d625-c444" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="3035-de32-2759-a1ba">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f767-9b3c-d5af-a9c6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Black Templar" hidden="false" id="356f-34f8-0d48-6ee1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb71-afb9-24b7-b488" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="e1fa-894a-35b0-a144">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3167-3502-2eb4-bd71" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="82fe-52f6-3642-7f6f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1653-e5db-2f25-2738" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="070a-11a9-8349-50a9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f428-7963-6440-61f2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Deathwatch" hidden="false" id="e0ee-b6e9-fe2e-0cc2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7ba-adae-f8c8-e4d0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grey Knights" hidden="false" id="57e8-c349-cccf-eb99">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a5-1223-68fb-1e4a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Salamander" hidden="false" id="5a47-4517-fa1c-5fb7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4223-f4c3-6279-6e1f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels" hidden="false" id="5443-6864-4972-fb86">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaa1-1f14-3408-c25c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="9daa-6af4-469f-c64b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6c0-21df-d0cc-70ad" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="d46a-f3e3-d5f0-b0e2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legiones Daemonica - God" id="134b-37fd-3cdf-7d94" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="8d5a-60fc-d942-060a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="659b-b3f8-6e7a-e39c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="412e-5e26-bfe2-f128">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cda-1c02-5c6c-7f46" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="2f60-6795-512e-ca44">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d25-ceeb-0ebc-ec42" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="0cdb-6c38-f3d1-cd86">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b2-0f2a-06ff-dfe7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="1793-1712-9a7f-5315" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heretic Astartes - Legion" id="29e9-a103-e40c-8058" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="7dae-928d-cb2f-8c06" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Astra Militarum - Regiment" id="e945-f917-9bf9-2c79" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="ea24-0d7a-6da3-2765" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="T&apos;au - Sept" id="ac69-7b87-356c-8440" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="4007-1756-ffc8-70c9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Adepta Sororitas - Order" id="d423-c58c-fe75-9de2" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="2a84-e21f-6012-9681" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Adeptus Mechanicus - Forgeworld" id="16aa-8ee7-5357-cae6" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="ff35-00ce-1870-c71c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Imperial Knights - Household" id="a811-ed4a-5896-5e9c" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="217c-fb90-0f3b-f0d4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Leagues of Votan - League" id="fccf-98c8-8698-7859" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="89dd-e689-df0d-b73c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Chaos Knights - Questor Traitoris" id="a8ae-c52c-982e-8710" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="a945-9b64-732d-65dd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Necrons - Dynasty" id="84cf-0305-f30d-7bbd" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="6a64-aec3-ea25-5f89" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Orks - Clan" id="aed6-26b6-bf28-a3e8" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="c23a-4abc-7ece-553e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Tyranids - Swarmfleet" id="39f2-6337-c59e-2e25" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="91af-5064-c7e9-d026" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Genestealer Cults - Cult" id="9f1c-f9f8-77bc-996d" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="7adc-f777-77b1-8011" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Drukhari - " id="ed77-94ef-5ac6-bedd" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="c19c-2a51-87ab-8c65" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Aeldari - Craftworld" id="9a79-67cd-3da0-5cc5" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="6f50-5f57-1694-e351" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Harlequin - Masque" id="b1ec-3a25-d991-96b6" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="3457-60b7-9640-1005" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
