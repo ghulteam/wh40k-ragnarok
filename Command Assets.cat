@@ -3341,6 +3341,206 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Protector Doctrina Imperative" hidden="false" id="94b7-58cc-05ca-ec25">
+      <profiles>
+        <profile name="Protector Doctrina Imperative" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3352-7be9-4827-dde0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Skita Skitarii units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Shoot action. Whilst making these actions, add 1 to hit rolls for attacks made with ranged weapons.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Machine Spirit&apos;s Revenge" hidden="false" id="d3c1-d66d-db4e-8283">
+      <profiles>
+        <profile name="Machine Spirit&apos;s Revenge" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="c0ad-b9f6-8d8d-0ba9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When an Adeptus Mechanicus Vehicle unit from your army is destroyed, before it is removed from the battlefield</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D6 for each unit within 6&quot; of the destroyed unit: on a 4+ place one blast marker next to the unit being rolled for (this may result in damage having to be resolved for a unit more than once in the same phase). The destroyed unit is then removed from the battlefield</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Conqueror Doctrina Imperative" hidden="false" id="afea-bca4-f656-341e">
+      <profiles>
+        <profile name="Conqueror Doctrina Imperative" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9ad4-e9b1-7b01-0667">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Skita Skitarii units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Fight action. Whilst making these actions, add 1 to hit rolls for attacks made with melee weapons.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Acquisition At Any Cost" hidden="false" id="70b6-f371-8ad4-99eb">
+      <profiles>
+        <profile name="Acquisition At Any Cost" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7b33-8cd9-72a5-2295">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In any phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Adeptus Mechanicus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, Adeptus Mechanicus units in that Detachment have the Objective Secured ability.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Litany Of The Electromancer" hidden="false" id="8806-7e92-fba0-e891">
+      <profiles>
+        <profile name="Litany Of The Electromancer" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4235-dc76-e90c-04ee">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Adeptus Mechanicus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12 for each Adeptus Mechanicus unit in that Detachment that is in base contact with any enemy units; on an 8+ place one blast marker next to each enemy unit that is in base contact with the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chant Of The Remorseless Fist" hidden="false" id="ffb1-998a-a147-8086">
+      <profiles>
+        <profile name="Chant Of The Remorseless Fist" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="cfc5-3cbb-4c6c-4edc">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Adeptus Mechanicus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s instead of D6s for hit rolls for attacks made with melee weapons by Adeptus Mechanicus units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Benediction Of The Omnissiah" hidden="false" id="cafc-f5de-93f8-a54b">
+      <profiles>
+        <profile name="Benediction Of The Omnissiah" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="4423-68f1-4831-7327">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Adeptus Mechanicus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s instead of D6s for hit rolls for attacks made with ranged weapons by Adeptus Mechanicus units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Incantation Of the Iron Soul" hidden="false" id="d348-1c53-586e-801d">
+      <profiles>
+        <profile name="Incantation Of the Iron Soul" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5db9-25a2-ee92-7a02">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Mechanicus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Adeptus Mechanicus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Morale tests taken for Adeptus Mechanicus units in that Detachment are automatically passed.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ff35-00ce-1870-c71c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -3914,6 +4114,46 @@
         <entryLink import="true" name="First-Hand Field Testing" hidden="false" id="f9cb-404e-cd8e-fee9" type="selectionEntry" targetId="1858-ac55-2832-d933">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d27-d725-5955-9d8f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Protector Doctrina Imperative" hidden="false" id="2a4e-0ba8-680e-a014" type="selectionEntry" targetId="94b7-58cc-05ca-ec25">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b593-ff81-8dee-6bde" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Machine Spirit&apos;s Revenge" hidden="false" id="97e0-f255-625a-1e11" type="selectionEntry" targetId="d3c1-d66d-db4e-8283">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e65-3f8a-4f75-2134" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Conqueror Doctrina Imperative" hidden="false" id="8f37-723d-c1a6-3ddc" type="selectionEntry" targetId="afea-bca4-f656-341e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c732-bb4f-8563-69b4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Acquisition At Any Cost" hidden="false" id="411a-38a5-afd7-e974" type="selectionEntry" targetId="70b6-f371-8ad4-99eb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1de-7f2c-ed1a-4acf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Litany Of The Electromancer" hidden="false" id="dd08-eb10-6df7-c6ad" type="selectionEntry" targetId="8806-7e92-fba0-e891">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="745a-5152-c8d2-56e8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chant Of The Remorseless Fist" hidden="false" id="f71d-d033-1706-c6e1" type="selectionEntry" targetId="ffb1-998a-a147-8086">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6532-0326-1c05-090a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Benediction Of The Omnissiah" hidden="false" id="d678-200b-316f-2006" type="selectionEntry" targetId="cafc-f5de-93f8-a54b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba50-c4a0-37fb-a4b2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Incantation Of the Iron Soul" hidden="false" id="0d47-447e-a5fd-0e39" type="selectionEntry" targetId="d348-1c53-586e-801d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7421-6a89-582a-6065" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
