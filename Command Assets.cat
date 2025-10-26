@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -3541,6 +3541,232 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sworn Guardians" hidden="false" id="e41a-38d6-a6c9-fcd3">
+      <profiles>
+        <profile name="Sworn Guardians" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e725-e943-ec41-71e4">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Light Adeptus Custodes unit from your army that is within 6&quot; of a friendly Imperium Character that has at least one blast marker next to it</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">You can remove up to D3 blast markers from that Character and place them next to that Adeptus Custodes unit instead.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Peerless Warrior" hidden="false" id="e8c7-4563-d4c1-1275">
+      <profiles>
+        <profile name="Peerless Warrior" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5a55-54e5-2b92-73cb">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Adeptus Custodes Character from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 2 to that unit&apos;s Attack characteristic and 3 to wound rolls for attacks it makes with melee weapons.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unleash the Lions" hidden="false" id="c9dc-f217-1427-c180">
+      <profiles>
+        <profile name="Unleash the Lions" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6f98-10e7-912e-d836">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Custodes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Set Up Reinforcements step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Allarus Custodian unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That unit splits off into single model units equal to the number of models in the chosen unit. Each of these units has a maximum Wound of 1 and Attack of 1 but otherwise use the abilities and weapons of the chosen Allarus Custodian unit.
+If the unit had Damage Markers next to it, split them equally between the newly created units. If any of the new units has Damage equal to their total health next to it, that unit is instantly destroyed. Afterwards, if the unit had blast markers next to it, split these equally between the newly created units. These newly created units are part of the originial units detachment. </characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="abe0-6339-6f2f-5f3f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forwards, For The Emperor!" hidden="false" id="bc9f-2a1e-addf-906a">
+      <profiles>
+        <profile name="Forwards, For The Emperor!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="29d2-78d6-f40d-7813">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Astra Militarum Officer Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="First Rank, Fire! Second Rank, Fire!" hidden="false" id="05b5-c4d8-9a96-1f1d">
+      <profiles>
+        <profile name="First Rank, Fire! Second Rank, Fire!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d0d8-1323-391c-e79d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Astra Militarum Officer Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Aimed Fire.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fix Bayonets!" hidden="false" id="314a-0ef2-9f1a-b6d2">
+      <profiles>
+        <profile name="Fix Bayonets!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="53dd-6dcc-816a-ef93">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Astra Militarum Officer Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Assault.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vortex Missile" hidden="false" id="b4da-5ce1-c7e1-1167">
+      <profiles>
+        <profile name="Vortex Missile" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d0dc-be04-a15f-f293">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Deathstrike unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield and place a marker (a coin will do) on that point. At the end of the Action phase, roll one D12 for each unit within 6&quot; of that point; on a 2-3, place one blast marker next to the unit being rolled for; on a 4-8 place two blast markers next to the unit being rolled for; on a 9+ place our blast markers next to the unit being rolled for. Then remove the marker.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Full Throttle" hidden="false" id="8b3f-f691-8073-98d1">
+      <profiles>
+        <profile name="Full Throttle" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1c24-bdb5-b3e4-d3fa">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Astra Militarum Officer Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Astra Militarum Leman Russ units in that Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">After those units have made their actions this phase, each can then make one additional Move action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rolling Bombardment" hidden="false" id="e552-fc94-5694-93a4">
+      <profiles>
+        <profile name="Rolling Bombardment" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2550-9116-48ed-9e18">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Astra Militarum Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield that is visible to that Warlord. Roll one D12 for each unit within 12&quot; of that point, substracting 1 from the result if the unit being rolled for is a Light Character. On a 9+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -4154,6 +4380,51 @@
         <entryLink import="true" name="Incantation Of the Iron Soul" hidden="false" id="0d47-447e-a5fd-0e39" type="selectionEntry" targetId="d348-1c53-586e-801d">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7421-6a89-582a-6065" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sworn Guardians" hidden="false" id="dc64-9f1e-1338-49f1" type="selectionEntry" targetId="e41a-38d6-a6c9-fcd3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c165-721c-45be-581c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Peerless Warrior" hidden="false" id="7054-9653-9ad4-f616" type="selectionEntry" targetId="e8c7-4563-d4c1-1275">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="203a-411a-b981-f73b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Unleash the Lions" hidden="false" id="59c3-93e6-df41-5054" type="selectionEntry" targetId="c9dc-f217-1427-c180">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="650c-bcfa-22c7-a059" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Forwards, For The Emperor!" hidden="false" id="f019-c147-67d7-48a5" type="selectionEntry" targetId="bc9f-2a1e-addf-906a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b509-ebba-197a-10b3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="First Rank, Fire! Second Rank, Fire!" hidden="false" id="d507-fddb-c7d9-af39" type="selectionEntry" targetId="05b5-c4d8-9a96-1f1d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c77-f032-5d1c-a7cc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fix Bayonets!" hidden="false" id="6c88-f9a9-40ca-0f7d" type="selectionEntry" targetId="314a-0ef2-9f1a-b6d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3be-bafc-2bff-ca3f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Full Throttle" hidden="false" id="74d1-2e66-3175-be9d" type="selectionEntry" targetId="8b3f-f691-8073-98d1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d8-6e26-baa8-57b2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vortex Missile" hidden="false" id="98a1-bc6e-b827-385c" type="selectionEntry" targetId="b4da-5ce1-c7e1-1167">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="268e-10ab-bd43-3a53" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rolling Bombardment" hidden="false" id="1592-ac28-9f89-7873" type="selectionEntry" targetId="e552-fc94-5694-93a4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3559-0c2e-7d6c-5233" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
