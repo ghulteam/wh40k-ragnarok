@@ -3767,6 +3767,451 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gunners, Kill on Sight!" hidden="false" id="e392-7f4a-cfc4-68b7">
+      <profiles>
+        <profile name="Gunners, Kill on Sight!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0655-3aea-0661-981d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an Astra Militarum Officer Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Astra Militarum Leman Russ units in that Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">After those units have made their actions this phase, each can then make one additional Shoot action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Superior Intelligence" hidden="false" id="29da-e0d9-633f-3689">
+      <profiles>
+        <profile name="Superior Intelligence" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e125-efaf-89df-9c89">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Militarum Tempestus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the end of the Set Up Reinforcements step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy unit that was set up this phase</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one Militaru Tempestus unit from your army. That Militarum Tempestus unit makes one free Shoot action. Whilst making this action, that Militarum Tempestus unit can only target that enemy unit</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b7e1-61fa-b2bb-dfd7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Outflanking Attack" hidden="false" id="7289-8788-843d-6c6c">
+      <profiles>
+        <profile name="Outflanking Attack" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="317b-7c8d-3c28-7f2a">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Tallarn</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 2 to wound rolls for attacks made with ranged weapons by Tallarn units from your army that target a unit in that Detachment if you can draw an imaginary straight line, 1mm in thickness, from any part of the firing unit to any part of another friendly Tallarn unit, and the line passes through any part of the target.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e227-57c2-0ac3-634e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Firstborn Pride" hidden="false" id="5f9a-6876-fa71-8984">
+      <profiles>
+        <profile name="Firstborn Pride" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="beae-af81-047a-cbb9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Vostroyan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Vostroyan Infantry units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free action (Move, Shoot or Fight).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f42a-4aac-7d80-7a49" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Send In The Next Wave" hidden="false" id="4adc-7a99-e107-f160">
+      <profiles>
+        <profile name="Send In The Next Wave" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="fcf6-703b-35e8-0382">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Valhallan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Set Up Reinforcement step of the Orders phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Select up to three Valhallan Infantry units (excluding Characters) from your army that have been destroyed</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Those units are returned to the battlefield and set up anywhere wholly within 6&quot; of a battlefield edge, more than 9&quot; from any enemy units and within 12&quot; of each other. Those units are a new separate Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2118-8aac-dee4-1f5f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Parade Drill Discipline" hidden="false" id="a760-8ff4-b9f4-289f">
+      <profiles>
+        <profile name="Parade Drill Discipline" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7552-a093-5049-2e23">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Mordian</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Mordian Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Aimed Fire and, until the end of the phase, add 1 to wound rolls for attacks made with ranged weapons by Mordian units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f7b8-6ede-de82-98bd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Troopers" hidden="false" id="bc6b-676d-68c4-d1a7">
+      <profiles>
+        <profile name="Storm Troopers" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d628-6d36-63e9-73d9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Militarum Tempestus</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Militarum Tempestus Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time a hit roll for an attack made with a Small Arms weapon by a Militarum Tempestus unit in that Detachment is successful, that attack scores two hits instead of one (make a separate wound roll for each hit).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b7e1-61fa-b2bb-dfd7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Swift as the Wind" hidden="false" id="b182-85c1-819a-197c">
+      <profiles>
+        <profile name="Swift as the Wind" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a9e3-1f88-4545-7320">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Tallarn</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Tallarn Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance and, until the end of the phase, the Move characteristic of Tallarn units in that Detachment is doubled.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e227-57c2-0ac3-634e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Industrial Efficiency" hidden="false" id="758d-5edf-a4d4-eaea">
+      <profiles>
+        <profile name="Industrial Efficiency" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="13a1-2f66-7fb1-b3a1">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Armageddon</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Armageddon Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, ranged weapons Armageddon units in that Detachment are equipped with have the Rapid Fire ability - weapons that already have this ability sintead double the number of attacks made at up to their maximum range, instead of only half range.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8917-6a01-c5f6-e79c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heirloom Weapons" hidden="false" id="f22b-5d52-0688-5602">
+      <profiles>
+        <profile name="Heirloom Weapons" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="c5ba-3faa-bce8-3791">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Vostroyan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Vostroyan Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, add 6&quot; to the range characteristic of ranged weapons Vostroyan units in that Detachment are equipped with - if that Detachment is carrying out an Aimed Fire order, add 12&quot; instead.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f42a-4aac-7d80-7a49" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grim Demeanour" hidden="false" id="302b-40f9-99ec-1338">
+      <profiles>
+        <profile name="Grim Demeanour" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a6e9-4435-e1bd-57f6">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Valhallan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Valhallan Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, Valhallan units in that Detachment ignore penalties for being critically damaged, and you can re-roll Morale tests taken for them.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2118-8aac-dee4-1f5f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brutal Strength" hidden="false" id="98de-58e8-f571-856a">
+      <profiles>
+        <profile name="Brutal Strength" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="76e8-b238-f975-a2c8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Catachan</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Catachan Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 1 to wound rolls for attacks made with melee weapons by Catachan units in that Detachment - add 2 to wound rolls for attacks made by Catachan Characters instead</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="caf7-1ddd-bf02-b083" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Overlapping Fields of Fire" hidden="false" id="c987-b983-2f8d-6c6e">
+      <profiles>
+        <profile name="Overlapping Fields of Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5436-10ac-a41f-0b2b">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Astra Militarum - Cadian</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, you can re-roll hit rolls for attacks made with ranged weapons by Cadian units from your army that target that enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ea24-0d7a-6da3-2765" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3f35-7ebb-3f51-0b92" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e945-f917-9bf9-2c79" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -4427,6 +4872,71 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3559-0c2e-7d6c-5233" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Gunners, Kill on Sight!" hidden="false" id="5545-46f5-ccd3-f9a6" type="selectionEntry" targetId="e392-7f4a-cfc4-68b7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0800-2947-638d-c34d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Superior Intelligence" hidden="false" id="906f-7099-8db6-ed72" type="selectionEntry" targetId="29da-e0d9-633f-3689">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1439-e754-92cf-e029" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Outflanking Attack" hidden="false" id="5a8d-5d0e-d22a-3664" type="selectionEntry" targetId="7289-8788-843d-6c6c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b806-934e-bfc3-4734" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Firstborn Pride" hidden="false" id="93b5-550e-b601-cde7" type="selectionEntry" targetId="5f9a-6876-fa71-8984">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8725-f4b7-dfde-f4ef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Send In The Next Wave" hidden="false" id="05ad-599f-df66-f985" type="selectionEntry" targetId="4adc-7a99-e107-f160">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e85b-a885-9cfb-e931" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Parade Drill Discipline" hidden="false" id="881d-d575-423c-0545" type="selectionEntry" targetId="a760-8ff4-b9f4-289f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d0-2f5d-5ead-4273" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Storm Troopers" hidden="false" id="e086-93e5-0370-d6a2" type="selectionEntry" targetId="bc6b-676d-68c4-d1a7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e20f-6bfd-7f7c-0662" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Swift as the Wind" hidden="false" id="e277-2264-2f50-7a52" type="selectionEntry" targetId="b182-85c1-819a-197c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49bf-4021-3d8e-27f9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Industrial Efficiency" hidden="false" id="33ba-f441-84a8-c889" type="selectionEntry" targetId="758d-5edf-a4d4-eaea">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66b2-f0d2-dbb4-995b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heirloom Weapons" hidden="false" id="5fbd-4959-286a-b457" type="selectionEntry" targetId="f22b-5d52-0688-5602">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92a6-7145-8d5f-b10d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Grim Demeanour" hidden="false" id="35ca-c9f0-366e-8b2d" type="selectionEntry" targetId="302b-40f9-99ec-1338">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f588-db33-6f2b-5ff1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Brutal Strength" hidden="false" id="dc35-5f9b-9ed9-d97a" type="selectionEntry" targetId="98de-58e8-f571-856a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a30-3341-82ce-c535" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Overlapping Fields of Fire" hidden="false" id="7089-db68-339a-bd5e" type="selectionEntry" targetId="c987-b983-2f8d-6c6e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b2-b4bd-bdee-e610" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -4515,7 +5025,7 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ca-8d64-690a-7c10" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Aeldari" hidden="false" id="6f50-5f57-1694-e351">
+        <selectionEntry type="upgrade" import="true" name="Asuryani" hidden="false" id="6f50-5f57-1694-e351">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79b0-1d36-2db7-a1e4" includeChildSelections="false"/>
           </constraints>
@@ -4956,6 +5466,33 @@ If the unit had Damage Markers next to it, split them equally between the newly 
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mephrit" hidden="false" id="3460-3098-0f06-5687">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eaf-4352-4395-21a3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nihilakh" hidden="false" id="bbe0-2187-522e-3b10">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7afd-db6a-b188-fdf1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Novokh" hidden="false" id="3769-6281-8f67-09ff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b02e-6b0d-dfdf-7745" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nephrekh" hidden="false" id="8739-35b1-009f-ed32">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5b-0414-d44b-3623" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sautekh" hidden="false" id="fbd1-d626-b791-3d1c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa17-8e49-be0e-e507" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Orks - Clan" id="aed6-26b6-bf28-a3e8" hidden="true">
           <modifiers>
@@ -5102,9 +5639,24 @@ If the unit had Damage Markers next to it, split them equally between the newly 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f9b-ede6-f048-e3e0" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kabal of the Black Heart" hidden="false" id="1f53-5009-8b0d-c967">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2042-cd99-187c-e287" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kabal of the Poisoned Tongue" hidden="false" id="8e6d-3111-3180-0eb9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f361-045a-93e7-18a1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kabal of the Flayed Skull" hidden="false" id="3d1f-719c-24b1-fdb5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3b-e5fe-a389-4cda" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Aeldari - Craftworld" id="9a79-67cd-3da0-5cc5" hidden="true">
+        <selectionEntryGroup name="Asuryani- Craftworld" id="9a79-67cd-3da0-5cc5" hidden="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
