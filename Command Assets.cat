@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -3599,7 +3599,7 @@
             <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Set Up Reinforcements step of the Orders phase</characteristic>
             <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Allarus Custodian unit from your army</characteristic>
             <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That unit splits off into single model units equal to the number of models in the chosen unit. Each of these units has a maximum Wound of 1 and Attack of 1 but otherwise use the abilities and weapons of the chosen Allarus Custodian unit.
-If the unit had Damage Markers next to it, split them equally between the newly created units. If any of the new units has Damage equal to their total health next to it, that unit is instantly destroyed. Afterwards, if the unit had blast markers next to it, split these equally between the newly created units. These newly created units are part of the originial units detachment. </characteristic>
+If the unit had Damage Markers next to it, split them equally between the newly created units. If any of the new units has Damage equal to their total health next to it, that unit is instantly destroyed. Afterwards, if the unit had blast markers next to it, split these equally between the newly created units. These newly created units are part of the originial units detachment.</characteristic>
             <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
           </characteristics>
         </profile>
@@ -4207,6 +4207,156 @@ If the unit had Damage Markers next to it, split them equally between the newly 
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sky of Falling Stars" hidden="false" id="7a57-432c-93fd-a840">
+      <profiles>
+        <profile name="Sky of Falling Stars" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="92dc-cdc0-2581-7711">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One C&apos;tan Shard unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select up to 3 different enemy units within 24&quot; of that unit. If that C&apos;tan Shard unit is Titanic, roll one D6 for each enemy unit you selected, otherwise roll one D12 for each enemy unit you selected. In either case, if the result of the dice being rolled is less than the number of models in the unit you are rolling for, place one blast marker next to that unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cosmic Fire" hidden="false" id="326d-8fa8-d15a-138a">
+      <profiles>
+        <profile name="Cosmic Fire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0fbe-54d0-9b7b-d086">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One C&apos;tan Shard unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D6 for each enemy unit within 9&quot; of this unit, adding 1 to the result if your C&apos;tan Shard unit is Titanic. On a 4+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Antimatter Meteor" hidden="false" id="56dc-5361-6914-b316">
+      <profiles>
+        <profile name="Antimatter Meteor" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="06de-a921-79bc-f20c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One C&apos;tan Shard unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">If that C&apos;tan Shard unit is Titanic, roll one D12, otherwise roll one D6. In either case, on a 2-4 place one blast marker next to the closest enemy unit, on a 5-7 place two blast markers next to the closest enemy unit, on an 8-10 place three blast markers next to the closest enemy unit and on a 11+ place four blast markers next to the closest enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Resurrection Orb" hidden="false" id="1657-0d6b-5fab-9099">
+      <profiles>
+        <profile name="Resurrection Orb" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3bb8-5c59-525b-efc8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Overlord, Lord or Destroyer Lord unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Necrons Light unit within 6&quot; of that unit. remove up to D3 damage markers from the Necrons Light unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Star Pulse" hidden="false" id="a45f-1002-644a-c11a">
+      <profiles>
+        <profile name="Star Pulse" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e0db-236b-6afe-8784">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the Start of the Action Phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Necrons Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield that is visible to that Warlord. Roll one D6 for each unit within 6&quot; of that point, subtracting 1 from the roll if the unit being rolled for is a Light Character, and adding 1 to the result if the unit being rolled for is either Super-Heavy or is garrisoning a Defensible Terrain feature. On a 4+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Self-Destruction" hidden="false" id="5918-411f-0247-da37">
+      <profiles>
+        <profile name="Self-Destruction" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="920f-4e03-3950-f3c8">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">After a Canoptek Scarabs unit from your army has made a Fight action</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Select one enemy unit in base contact with the Canoptek Scarabs unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12 for every model in that Canoptek Scarabs unit; for each roll of 3-7 place one blast marker next to that enemy unit, and for each roll of 8+ place two blast markers next to that enemy unit. The Canoptek Scarabs unit is then destroyed.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -4935,6 +5085,36 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         <entryLink import="true" name="Overlapping Fields of Fire" hidden="false" id="7089-db68-339a-bd5e" type="selectionEntry" targetId="c987-b983-2f8d-6c6e">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b2-b4bd-bdee-e610" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sky of Falling Stars" hidden="false" id="b09e-63c9-0e94-d292" type="selectionEntry" page="" targetId="7a57-432c-93fd-a840">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c854-a199-3fda-0afb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Antimatter Meteor" hidden="false" id="020d-ea57-1960-d6d5" type="selectionEntry" targetId="56dc-5361-6914-b316">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4de3-d42f-5c9d-ab9d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cosmic Fire" hidden="false" id="f980-13e7-71b1-4dc9" type="selectionEntry" targetId="326d-8fa8-d15a-138a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="962a-2919-891d-b422" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Resurrection Orb" hidden="false" id="0619-9c82-48c5-8be9" type="selectionEntry" targetId="1657-0d6b-5fab-9099">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec6-d70a-32a8-b56c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Star Pulse" hidden="false" id="d7ce-79fb-faa3-5075" type="selectionEntry" targetId="a45f-1002-644a-c11a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81bf-a171-70b6-ef1c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Self-Destruction" hidden="false" id="1cd3-9211-38d7-ddce" type="selectionEntry" targetId="5918-411f-0247-da37">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1009-5f47-8a5b-1ad0" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
