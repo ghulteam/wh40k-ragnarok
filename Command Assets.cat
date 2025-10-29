@@ -4712,6 +4712,828 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Putrescent Vitality" hidden="false" id="0e55-4f7a-c0b3-3364">
+      <profiles>
+        <profile name="Putrescent Vitality - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1736-171c-91db-67e1">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Nurgle Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Heretic Astartes Nurgle unit within 12&quot; of that Psyker unit. Roll one D6 for each damage marker that is enxt to that unit; for each result of 4+ one damage marker is removed from that unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal Gaze" hidden="false" id="aaae-18c4-efe9-0956">
+      <profiles>
+        <profile name="Infernal Gaze - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="dff9-59c4-c9a9-9857">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Psyker unit from your army to manifest this power,</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one point on the battlefield within 18&quot; of that Psyker unit. Draw an imaginary straight line, 1mm in thickness, from any part of that Psyker unit to that point, then roll one D6 for each unit this line crosses, excluding the Heretic Astartes Psyker; on a 4+ place one blast marker next to the unit being rolled for</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Delightful Agonies" hidden="false" id="f89e-2128-6a70-614a">
+      <profiles>
+        <profile name="Delightful Agonies - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="19e1-9ec2-da11-cea1">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Slaanesh Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one friendly Heretic Astartes Slaanesh unit within 36&quot; of that Psyker unit. Until the end of the turn, that unit ignores penalties for being critically damaged and you add 1 to its Attacks characteristic for each damage marker next to it.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemon Shell" hidden="false" id="581b-7466-7290-ac62">
+      <profiles>
+        <profile name="Daemon Shell" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6342-77cc-22d2-4e2c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Heretic Astartes Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select one enemy unit within 24&quot; of that Warlord and visible to it. Roll one D6; if the result is greater than or equal to that Warlord&apos;s Ballistic Skill characteristic, roll one D12; on a 1-3 place one blast marker next to that enemy unit; on a 4-6, place two blast markers next to that enemy unit; on a 7-9, place three blast markers next to that enemy unit; on an 10+ place four blast markers next to that enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death To The False Emperor!" hidden="false" id="92e0-908e-227c-3bef">
+      <profiles>
+        <profile name="Death To The False Emperor!" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="e9aa-b700-1765-3900">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy Imperium unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, roll D12s instead of D6s for hit rolls for attacks made by Heretic Astartes units from your army that target that enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="All is Dust" hidden="false" id="8015-ade9-97ea-5012">
+      <profiles>
+        <profile name="All is Dust" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="bf04-a207-007b-8d8b">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When resolving damage for a unit of Rubric Marines or Scarab Occult Terminators from your army, before any saving throws are made for it</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Unit</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s when making saving throws for that unit, irrespective of the size of the blast markers next to it.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Black Crusaders" hidden="false" id="379c-5da8-0033-11ea">
+      <profiles>
+        <profile name="Black Crusaders" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2eac-53c4-7db1-e22d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Black Legion</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Black Legion Commander to carry out an Advance order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachmenet</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Black Legion units in that Detachment can, after making their Move action, make both one Fight action and one Shoot action - they can make a Shoot action this phase even if enemy units are in base contact with them, but can only target one of those enemy units whilst doing so.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c845-f220-8808-3a2a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Coruscating Beam" hidden="false" id="f7e7-3d84-9b21-63f9">
+      <profiles>
+        <profile name="Coruscating Beam" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="38b6-0ed6-96d3-2812">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Thousand Sons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Thousand Sons Warlord from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Select two points on the battlefield within 12&quot; of each other and are visible to your Warlord. Draw an imaginary straight line, 1mm in thickness, between those points and rolle one D12 for each unit this line crosses, subtracting 1 from the result if the unit being rolled for is a Light Character; on a 6+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8b5c-8df3-a9ab-8da8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cloud of Flies" hidden="false" id="2b70-2c99-1493-870d">
+      <profiles>
+        <profile name="Cloud of Flies" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="3576-323e-00b3-be0f">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Death Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Death Guard Character from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, friendly Death Guard units are obscured targets whilst they are within 6&quot; of that Character.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4fcd-7bf8-ea3f-15b3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doombolt" hidden="false" id="e137-2a45-2bbc-fd4e">
+      <profiles>
+        <profile name="Doombolt - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0e39-81c0-836c-ac9e">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Thousand Sons</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Thousand Sons Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll three D12s. For each roll of 5-10 place a blast marker next to the closest enemy unit within 24&quot; of that Psyker unit. For each roll of 11+ place two blast markers next to the closest enemy unit within 24&quot; of that Psyker unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8b5c-8df3-a9ab-8da8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plague Wind" hidden="false" id="0f80-f534-5334-1e56">
+      <profiles>
+        <profile name="Plague Wind - Psychic Power" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9481-699e-6e59-b8a3">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Adeptus Astartes - Death Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Death Guard Psyker unit from your army to manifest this power</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12; on a 2+ place one blast marker next to the closest enemy unit within 18&quot; of that Psyker unit. Then roll one D12 for each other enemy unit within 6&quot; of that enemy unit; on a 7+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ab4-9ead-fb18-e755" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4fcd-7bf8-ea3f-15b3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Siege Lords" hidden="false" id="1a91-be96-2253-7b30">
+      <profiles>
+        <profile name="Siege Lords" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="af46-f97a-18d3-eb6f">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Iron Warriors</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Building unit or Defensible Terrain feature on the battlefield</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, whenever an attack made by an Iron Warriors unit from your army succesfully hits that Building unit or a unit garrisoning that Defensible Terrain feature, you can choose to use the weapon&apos;s SAP or SAT characteristic, irrespective of whether the target is Light, Heavy or Super-Heavy.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="97bb-a80b-ff30-96e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dark Raiders" hidden="false" id="3c39-79af-1ef7-98f4">
+      <profiles>
+        <profile name="Dark Raiders" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8146-877c-5ff5-c106">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Red Corsairs</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Red Corsair Commander (or a Commander with the Renegade Chapter keyword) to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance and, until the end of the phase, the Move characteristic of Heretic Astartes units in that Detachment is doubled.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1695-a7b1-3985-143a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terror Tactics" hidden="false" id="1248-bfdc-bf14-77f6">
+      <profiles>
+        <profile name="Terror Tactics" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="71b7-6f71-8a6b-6d96">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Night Lords</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Night Lords Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Night Lords units in that Detachment have the Terror Troops ability.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dec-ac51-59cd-d387" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flawless Perfection" hidden="false" id="98c8-dfb7-d139-fa22">
+      <profiles>
+        <profile name="Flawless Perfection" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="89ec-704f-e725-b134">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Emperor&apos;s Children</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Emperor&apos;s Children Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, roll D12s instead of D6s for hit rolls for attacks made by Emperor&apos;s Children units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8279-3e43-2b56-2c48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hidden In Plain Sight" hidden="false" id="8201-8ff9-eea7-c4e7">
+      <profiles>
+        <profile name="Hidden In Plain Sight" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="0bcd-e90b-1f52-688c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Aplha Legion</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Alpha Legion Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Alpha Legion units in that Detachment are obscured targets.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ac6f-9736-9f0b-e645" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Profane Zeal" hidden="false" id="497f-2c7c-5ea3-31b5">
+      <profiles>
+        <profile name="Profane Zeal" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="732b-2ef8-765b-ca8e">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Word Bearers</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Word Bearers Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, you can re-roll hit rolls for attacks made with melee weapons by Word Bearer units in that Detachment. In addition, until the end of the turn, you can re-roll Morale tests taken for Word Bearers units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fa10-6434-4c26-70a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Inexorable Advance" hidden="false" id="42a4-732d-9362-3ef1">
+      <profiles>
+        <profile name="Inexorable Advance" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1694-b1c1-1785-0c32">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Death Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Death Guard Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with advance and, until the end of thephase, double the Attacks characteristic of ranged weapons with Rapid Fire ability Death Guard units in that Detachment are equipped with.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4fcd-7bf8-ea3f-15b3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Iron Within, Iron Without" hidden="false" id="6bdd-3a02-325d-d23d">
+      <profiles>
+        <profile name="Iron Within, Iron Without" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="9381-00c3-7516-c3e7">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Iron Warriors</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase.</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by an Iron Warriors Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Iron Warriors units in that Detachment have the Ignore Damage (5+) ability.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="97bb-a80b-ff30-96e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Excess of Violence" hidden="false" id="9e90-7ab0-72a1-073a">
+      <profiles>
+        <profile name="Excess of Violence" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="8c04-4722-bf29-a807">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Emperor&apos;s Children</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Emperor&apos;s Children unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, each time a hit roll for an attack made by that unit is successful, that attack scores two hits instead of one (make a separate wound roll for each hit).</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8279-3e43-2b56-2c48" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="I Am Alpharius" hidden="false" id="b530-842d-ce8c-50d2">
+      <profiles>
+        <profile name="I Am Alpharius" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="aca8-e15a-63cb-3ffe">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Alpha Legion</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When an Alpha Legion Warlord from your army is destroyed</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Alpha Legion Character in that Detachment to be the new Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That unit gains the Warlord keyword. If the destroyed unit was your Warmaster, the new Commander becomces your Warmaster and you generate a Warmaster Trait for them - in this case, your Warmaster is not considered to have been destroyed until this new Commander is also destroyed</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ac6f-9736-9f0b-e645" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voice of Lorgar" hidden="false" id="8bf8-86ad-27be-65a3">
+      <profiles>
+        <profile name="Voice of Lorgar" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7314-946d-1db8-22a9">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Word Bearers</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Word Bearers Character from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, the range of all aura abilities that this Character has on ist datasheet are doubled.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fa10-6434-4c26-70a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nurgle&apos;s Rot" hidden="false" id="645f-cec7-5343-64fd">
+      <profiles>
+        <profile name="Nurgle&apos;s Rot" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="c06a-435f-371a-9564">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - Death Guard</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Death Guard unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Roll one D12 for each enemy unit within 6&quot; of that unit; on a 7+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4fcd-7bf8-ea3f-15b3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Teeth of Khorne" hidden="false" id="56aa-3490-8fdd-edae">
+      <profiles>
+        <profile name="Teeth of Khorne" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6aab-11e7-5149-841e">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Heretic Astartes - World Eaters</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by an World Eaters Commander to carry out an Assault order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">After alle units in that Detachment that you want to make a Move action have done so, each unit in that Detachment can make one Shoot action instead of one Fight action (even though units in Detachments carrying out Assault orders cannot normally make Shoot actions). Until the end of this phase Ranged Weapons of World Eaters Units in this Detachment have the Rapid Fire Rule.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7dae-928d-cb2f-8c06" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9fb4-b523-23a5-dc81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29e9-a103-e40c-8058" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -5517,6 +6339,126 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d390-92d3-c5ce-0c36" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Putrescent Vitality" hidden="false" id="13a1-3bb4-2b94-96ac" type="selectionEntry" targetId="0e55-4f7a-c0b3-3364">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f4a-d090-14bc-b7b7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Infernal Gaze" hidden="false" id="f634-5d59-1293-5724" type="selectionEntry" targetId="aaae-18c4-efe9-0956">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78b6-858b-bb41-4fee" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Delightful Agonies" hidden="false" id="7b37-f4a4-2ba6-f976" type="selectionEntry" targetId="f89e-2128-6a70-614a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8cd-84a0-94f9-7335" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Daemon Shell" hidden="false" id="94bd-4670-d683-6e85" type="selectionEntry" targetId="581b-7466-7290-ac62">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afec-4158-ad41-6608" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Death To The False Emperor!" hidden="false" id="7d3a-3b8e-e776-58f6" type="selectionEntry" targetId="92e0-908e-227c-3bef">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d1d-3ad3-9606-2bef" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="All is Dust" hidden="false" id="8ed5-9ba4-c9c8-67ec" type="selectionEntry" targetId="8015-ade9-97ea-5012">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d17-c6b2-a1a4-70d5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Black Crusaders" hidden="false" id="282b-f261-2ed9-a885" type="selectionEntry" targetId="379c-5da8-0033-11ea">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15d5-28c0-c081-aead" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Coruscating Beam" hidden="false" id="5bee-0d63-7084-5a41" type="selectionEntry" targetId="f7e7-3d84-9b21-63f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec77-9db7-49ef-26bb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cloud of Flies" hidden="false" id="968b-da55-f0a2-16ea" type="selectionEntry" targetId="2b70-2c99-1493-870d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b4-00c4-3da7-77f4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Doombolt" hidden="false" id="83d3-c235-99a9-927b" type="selectionEntry" targetId="e137-2a45-2bbc-fd4e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9808-6c42-1d26-0e11" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plague Wind" hidden="false" id="b30f-89f3-6753-6af2" type="selectionEntry" targetId="0f80-f534-5334-1e56">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce98-a85e-54f3-acd0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Siege Lords" hidden="false" id="05f9-05eb-217f-2ad8" type="selectionEntry" targetId="1a91-be96-2253-7b30">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="684d-75f4-38b2-b0b1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Dark Raiders" hidden="false" id="4742-6be2-b5cc-8dbb" type="selectionEntry" targetId="3c39-79af-1ef7-98f4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c50-8471-ac64-2f3d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Terror Tactics" hidden="false" id="f050-8e9d-65b7-b22e" type="selectionEntry" targetId="1248-bfdc-bf14-77f6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="134a-dfc6-8dc8-09d3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flawless Perfection" hidden="false" id="b68b-4846-7920-2a77" type="selectionEntry" targetId="98c8-dfb7-d139-fa22">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07fe-2bb6-e9f4-cb77" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hidden In Plain Sight" hidden="false" id="b656-8335-205e-f49e" type="selectionEntry" targetId="8201-8ff9-eea7-c4e7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1411-4422-f88e-b1fc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Profane Zeal" hidden="false" id="5630-58bd-acb6-bea2" type="selectionEntry" targetId="497f-2c7c-5ea3-31b5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6831-e92b-30d1-eb5e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Inexorable Advance" hidden="false" id="d890-1cc7-49ce-29a8" type="selectionEntry" targetId="42a4-732d-9362-3ef1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93dd-2d95-0d18-e881" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Within, Iron Without" hidden="false" id="4c53-bc82-4a5d-bd2e" type="selectionEntry" targetId="6bdd-3a02-325d-d23d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1521-08b0-fd0c-a144" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Excess of Violence" hidden="false" id="dfe3-07cf-6f55-3fb2" type="selectionEntry" targetId="9e90-7ab0-72a1-073a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="963b-1859-4ae0-c95d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="I Am Alpharius" hidden="false" id="51ff-a063-38d2-ab25" type="selectionEntry" targetId="b530-842d-ce8c-50d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e3-a96d-ef0a-5f12" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Voice of Lorgar" hidden="false" id="19ac-343d-d2cb-ca62" type="selectionEntry" targetId="8bf8-86ad-27be-65a3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1558-e418-7493-d87b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Nurgle&apos;s Rot" hidden="false" id="0001-696f-9739-73fc" type="selectionEntry" targetId="645f-cec7-5343-64fd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9d9-1dde-6c56-9902" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Teeth of Khorne" hidden="false" id="96b7-104c-a964-16b8" type="selectionEntry" targetId="56aa-3490-8fdd-edae">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="253a-408a-d4a8-d75e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -5763,7 +6705,7 @@ If the unit had Damage Markers next to it, split them equally between the newly 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2473-acb3-23e0-2ea1" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Renegade Corsairs" hidden="false" id="1695-a7b1-3985-143a">
+            <selectionEntry type="upgrade" import="true" name="Red Corsairs" hidden="false" id="1695-a7b1-3985-143a">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d369-1778-db3e-eef3" includeChildSelections="false"/>
               </constraints>
@@ -5773,7 +6715,7 @@ If the unit had Damage Markers next to it, split them equally between the newly 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89c9-f32f-2e26-fc30" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Aplha Legion" hidden="false" id="ac6f-9736-9f0b-e645">
+            <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="ac6f-9736-9f0b-e645">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="739a-f7ec-b1fb-ef34" includeChildSelections="false"/>
               </constraints>
