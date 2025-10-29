@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
+<catalogue library="false" id="4aea-2b38-5b28-b864" name="0 - Command Assets" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="28" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="ghulteam">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Core Command Assets" hidden="false" id="8177-0eaf-d3e6-b4cb">
       <constraints>
@@ -4362,6 +4362,356 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Talent for Annihilation" hidden="false" id="b08c-1396-2d6d-ee26">
+      <profiles>
+        <profile name="Talent for Annihilation" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1378-6f4a-72e2-5d84">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Mephrit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Mephrit units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Shoot action. </characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3460-3098-0f06-5687" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaim a Lost Empire" hidden="false" id="c30c-cc06-5688-079d">
+      <profiles>
+        <profile name="Reclaim a Lost Empire" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5a24-c1a8-c346-e717">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Nihilakh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In any phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Nihilakh Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the turn, Nihilakh units in that Detachment have the Objective Secured ability.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="bbe0-2187-522e-3b10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Translocation Beams" hidden="false" id="1603-98d1-d88d-d124">
+      <profiles>
+        <profile name="Translocation Beams" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a0ef-4b02-04f6-8c03">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Nephrekh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Nephrekh Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Assault. Whilst carrying out this order Nephrekh units in that Detachment triple their Move characteristic instead of doubling it and move as if they could Fly, but they cannot end any Move action (excluding Pile-in moves) in base contact with an enemy unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8739-35b1-009f-ed32" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Methodical Destruction" hidden="false" id="133d-06d4-6668-e380">
+      <profiles>
+        <profile name="Methodical Destruction" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="1776-ebbb-2e7d-3ab1">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Sautekh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One enemy unit on the battlefiled</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 1 to hit rolls for attacks made by Sautekh units from your army when targeting the selected unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fbd1-d626-b791-3d1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Awakened by Murder" hidden="false" id="c4d7-fc0a-9d21-bcf0">
+      <profiles>
+        <profile name="Awakened by Murder" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="cc1b-28a8-8d6e-323e">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Novokh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Novokh Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, you can re-roll hit rolls for attacks made with melee weapons by Novokh units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3769-6281-8f67-09ff" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aggressively Territorial" hidden="false" id="408b-1386-3d01-e3c6">
+      <profiles>
+        <profile name="Aggressively Territorial" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ac98-9c7c-5626-2270">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Nihilakh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Nihilakh Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Aimed Fire and, until the end of the phase, re-roll hit rolls of 1 for attacks made with ranged weapons by Nihilakh units in that Detachment.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="bbe0-2187-522e-3b10" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Relentless Advance" hidden="false" id="435b-7c4b-b9bf-aa24">
+      <profiles>
+        <profile name="Relentless Advance" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="7c39-d44e-d598-d7e5">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Sautekh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army led by a Sautekh Commander to carry out an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">That Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">That Detachment&apos;s order is replaced with Advance and, until the end of the phase, the Move characteristic of Sautekh units in that Detachment is doubled.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fbd1-d626-b791-3d1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skins of Living Gold" hidden="false" id="87d7-da60-dd95-c864">
+      <profiles>
+        <profile name="Skins of Living Gold" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5a6b-d9d6-91f1-6a1c">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Nephrekh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment led by a Nephrek Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, Nephrek units in that Detachment are obscured targets.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8739-35b1-009f-ed32" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="ab8d-6031-a3ab-9c51">
+      <profiles>
+        <profile name="Blood Rites" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="a190-b309-7a43-a007">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Novokh</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">Up to three Novokh units from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Each of those units makes one free Fight action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3769-6281-8f67-09ff" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Solar Fury" hidden="false" id="238c-c5a9-1281-e7c1">
+      <profiles>
+        <profile name="Solar Fury" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="2b01-a440-c130-76b0">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Necrons - Mephrit</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Mephrit Commander</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, add 1 to wound rolls for attacks made with ranged weapons by Mephrit units in that Detachment if the target of the attack is within half the weapon&apos;s maximum range</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6a64-aec3-ea25-5f89" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3460-3098-0f06-5687" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="84cf-0305-f30d-7bbd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -5087,7 +5437,7 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b2-b4bd-bdee-e610" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Sky of Falling Stars" hidden="false" id="b09e-63c9-0e94-d292" type="selectionEntry" page="" targetId="7a57-432c-93fd-a840">
+        <entryLink import="true" name="Sky of Falling Stars" hidden="false" id="b09e-63c9-0e94-d292" type="selectionEntry" targetId="7a57-432c-93fd-a840">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c854-a199-3fda-0afb" includeChildSelections="false"/>
           </constraints>
@@ -5115,6 +5465,56 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         <entryLink import="true" name="Self-Destruction" hidden="false" id="1cd3-9211-38d7-ddce" type="selectionEntry" targetId="5918-411f-0247-da37">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1009-5f47-8a5b-1ad0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Talent for Annihilation" hidden="false" id="c392-29a2-a347-541b" type="selectionEntry" targetId="b08c-1396-2d6d-ee26">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d2d-a726-0e57-607a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Reclaim a Lost Empire" hidden="false" id="3f06-6784-75e4-0a86" type="selectionEntry" targetId="c30c-cc06-5688-079d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e2-0a8d-a3aa-477d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Translocation Beams" hidden="false" id="cc9f-955d-abf7-5674" type="selectionEntry" targetId="1603-98d1-d88d-d124">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d18b-f9ad-395e-2091" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Methodical Destruction" hidden="false" id="f2a5-df85-20c7-2af0" type="selectionEntry" targetId="133d-06d4-6668-e380">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bce-ccf6-db5f-a6a8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Awakened by Murder" hidden="false" id="dab7-d60c-65ae-83f9" type="selectionEntry" targetId="c4d7-fc0a-9d21-bcf0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a90-a9e8-f99c-e1e0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Aggressively Territorial" hidden="false" id="e278-eb51-7357-0c85" type="selectionEntry" targetId="408b-1386-3d01-e3c6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6872-0e17-b5d6-e547" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Relentless Advance" hidden="false" id="9ed1-1892-cbb5-1826" type="selectionEntry" targetId="435b-7c4b-b9bf-aa24">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="557a-b02c-5dbc-67bc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Skins of Living Gold" hidden="false" id="580c-77fe-4a1e-09e9" type="selectionEntry" targetId="87d7-da60-dd95-c864">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d4f-4b8c-a30f-fe0d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="e197-46c4-4a67-abdb" type="selectionEntry" targetId="ab8d-6031-a3ab-9c51">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0363-58ba-7cb5-7e86" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Solar Fury" hidden="false" id="9b31-6d14-ca54-bd6d" type="selectionEntry" targetId="238c-c5a9-1281-e7c1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d390-92d3-c5ce-0c36" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
