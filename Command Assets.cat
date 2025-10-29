@@ -5534,6 +5534,106 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hungry For Battle" hidden="false" id="cf99-58ea-8b92-a1d7">
+      <profiles>
+        <profile name="Hungry For Battle" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="95e1-802d-b66b-6298">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Questor Traitoris</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Detachment from your army led by a Questor Traitoris Warlord</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Up to three Questor Traitoris units in that Detachment each makes one free Move action.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a945-9b64-732d-65dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Traitor&apos;s Mark" hidden="false" id="a10a-592a-901e-8110">
+      <profiles>
+        <profile name="The Traitor&apos;s Mark" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="ddce-779f-c135-116d">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Questor Traitoris</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Questor Traitoris unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, that unit has the Terror Troops ability.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a945-9b64-732d-65dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Direct Ion Shields" hidden="false" id="a80b-a90d-a98e-1d50">
+      <profiles>
+        <profile name="Direct Ion Shields" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="d589-7d6a-9dc0-a646">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Questor Traitoris</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">At the start of the Damage phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Questor Traitoris unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Remove one blast marker from that unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a945-9b64-732d-65dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trail of Destruction" hidden="false" id="5354-23d5-5d0d-436c">
+      <profiles>
+        <profile name="Trail of Destruction" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="6083-e970-1efc-caaa">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Questor Traitoris</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">In the Action phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">One Questor Traitoris unit from your army</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, you can re-roll hit rolls and wound rolls for attacks made by that unit.</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="a945-9b64-732d-65dd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="561c-4821-5f6f-5e23" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -6459,6 +6559,26 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="253a-408a-d4a8-d75e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Hungry For Battle" hidden="false" id="4f18-8c78-2c15-5cd1" type="selectionEntry" targetId="cf99-58ea-8b92-a1d7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9db0-22ab-484d-bc06" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Traitor&apos;s Mark" hidden="false" id="b955-bc8e-8c71-c75b" type="selectionEntry" targetId="a10a-592a-901e-8110">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5f6-c19a-c60b-515b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Direct Ion Shields" hidden="false" id="4fae-4c75-2688-368c" type="selectionEntry" targetId="a80b-a90d-a98e-1d50">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ac-1875-242f-7bc3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Trail of Destruction" hidden="false" id="9441-a3f2-b7d2-2184" type="selectionEntry" targetId="5354-23d5-5d0d-436c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec58-9c8a-0eaf-c56b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7151-8701-9dbd-8d7f" includeChildSelections="false"/>
@@ -6517,7 +6637,7 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="050e-e110-802c-b24c" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chaos Knights" hidden="false" id="a945-9b64-732d-65dd">
+        <selectionEntry type="upgrade" import="true" name="Questor Traitoris" hidden="false" id="a945-9b64-732d-65dd">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bc5-cc1d-e3b4-6cfe" includeChildSelections="false"/>
           </constraints>
@@ -6967,15 +7087,6 @@ If the unit had Damage Markers next to it, split them equally between the newly 
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="89dd-e689-df0d-b73c" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Chaos Knights - Questor Traitoris" id="a8ae-c52c-982e-8710" hidden="true">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="561c-4821-5f6f-5e23" childId="a945-9b64-732d-65dd" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
