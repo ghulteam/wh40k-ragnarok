@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -63,6 +63,7 @@
     <categoryEntry name="Vorax Battle-automata Maniple" id="a5a0-bed2-608d-789d" hidden="false"/>
     <categoryEntry name="Automata" id="3318-e205-a770-f806" hidden="false"/>
     <categoryEntry name="Vultarax Stratos-Automata Squadron" id="3878-3f9d-29d1-587a" hidden="false"/>
+    <categoryEntry name="Triaros Armoured Conveyor" id="09a1-75b3-30cb-fdd1" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -319,6 +320,11 @@
     <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="44f1-1315-cec1-5faa" type="selectionEntry" targetId="e391-2509-1d36-d7e1">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="2309-9180-1d0e-3d9d" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="7292-f636-cf2d-3dbd" type="selectionEntry" targetId="d260-b681-3b0a-bb1b">
+      <categoryLinks>
+        <categoryLink targetId="2a11-9193-1a80-f0c6" id="ecf9-a877-abd3-02e3" primary="true" name="Dedicated Transport"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4123,6 +4129,12 @@
     <selectionEntry type="unit" import="true" name="Karacnos Assault Tank" hidden="false" id="0880-fec8-945e-e030">
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="f26e-4211-a20c-1764" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Shock Ram" hidden="false" id="37cc-5953-7e67-fece" type="selectionEntry" targetId="8794-8f26-8ab2-ada5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b0f-c265-7920-31ad" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e34b-ca1f-44fa-9dac" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Karacnos Assault Tank" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="1e62-bfea-375d-5ccd">
@@ -4163,24 +4175,6 @@
           <infoLinks>
             <infoLink name="Barrage" id="c8e0-edf3-a3ee-8b06" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
           </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shock Ram" hidden="false" id="d584-d0d1-54ca-e3c0">
-          <profiles>
-            <profile name="Shock Ram" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ebc1-188e-9dc0-1daa">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0af-8759-f437-6ac9" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d26-e776-5442-947a" includeChildSelections="false"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lightning Lock" hidden="false" id="f45f-27a7-cf73-9610">
           <profiles>
@@ -4223,6 +4217,14 @@
           <entryLinks>
             <entryLink import="true" name="Commander" hidden="false" id="4b84-059f-6ba5-365b" type="selectionEntry" targetId="7347-5716-355f-9165"/>
             <entryLink import="true" name="Armoured Bulk" hidden="false" id="8e31-c422-64b0-fd34" type="selectionEntry" targetId="2ab7-fc09-bf28-a68e"/>
+            <entryLink import="true" name="Volkite Calivers" hidden="false" id="efad-d22e-2555-dcf0" type="selectionEntry" targetId="1012-e803-1655-3a2c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3683-0b41-19d3-1d9e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Krios Battle Tank" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a2e7-eebd-d3da-6f6d">
@@ -4237,28 +4239,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Volkite Calivers" hidden="false" id="ba62-1304-d727-6c75">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6cc-226f-221c-2c9a" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Volkite Calivers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="48d9-e98b-8a91-0d17">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Hull Mounted Weapons" id="94d3-4142-9ea1-54d3" hidden="false" defaultSelectionEntryId="3273-ff74-d2b3-405b">
               <selectionEntries>
@@ -5147,14 +5127,19 @@
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">12</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
         <profile name="Sonic Wave" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6689-c249-ee97-1048">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this Unit makes a Shooting Attack with its Sonic Destructor weapon, place the Large Blast (5&quot;) marker so that its edge touches the Front hull of the firing model. Then move the template in a direct line away from the firing model, travelling in any direction within the weapon’s 45° forward firing arc until its maximum range is reached or the template leaves the battlefield. All units the template passes over suffer a single automatic Hit. Flyers are also Hit if the template passes over their base. Should a model with the Knight, Titan, Super-heavy Vehicle, Building or Fortification Keyword be Hit by this attack, double the Blast Marker this attack deals.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this Unit makes a Shooting Attack with its Sonic Destructor weapon, place the Large Blast (5&quot;) marker so that its edge touches the Front hull of the firing model. Then move the template in a direct line away from the firing model, travelling in any direction within the weapon’s 45° forward firing arc until its maximum range is reached or the template leaves the battlefield. All units the template passes over suffer a single automatic Hit. Flyers are also Hit if the template passes over their base. Should a model with the SUPER-HEAVY or BUILDING Keyword be Hit by this attack, double the Blast Marker this attack deals.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ordinatus Reactor Meltdown" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="30ad-e5f3-1208-1818">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit is destroyed, if it explodes, place two blast markers next to every unit (excluding SUPER-HEAVY units) that is within 6&quot; of this unit, instead of one.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5165,7 +5150,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">*</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">3+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
@@ -5182,7 +5167,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="140"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="115"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ursarax Cohort" hidden="false" id="11b5-736b-1ab3-2f2b">
@@ -7078,6 +7063,96 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Triaros Armoured Conveyor" hidden="false" id="d260-b681-3b0a-bb1b">
+      <profiles>
+        <profile name="Triaros Armoured Conveyor" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e009-4c6e-fb3a-9804">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flare Shield" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="58cd-5fca-9397-bd27">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Reduce the SAT value of shots at this unit by 1, unless the shot has the Destroyer or Apocalypstic Destroyer rule.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="4be8-9c8f-36c7-8b20">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 22 SECUTARII INFANTRY or [FORGE WORLD] INFANTRY models. It cannot transport BELISARIUS CAWL, JUMP PACK, KATAPHRON BREACHER or KATAPHRON DESTROYER units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="09a1-75b3-30cb-fdd1" id="5e60-647f-465c-66e3" primary="false" name="Triaros Armoured Conveyor"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="8f22-6776-c778-4c2d" primary="false" name="Vehicle"/>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="9515-c657-1d1d-79bb" primary="false" name="Heavy"/>
+        <categoryLink targetId="9542-47d3-14fe-04e0" id="b3d0-1af6-e89a-f32d" primary="false" name="Faction: Adeptus Mechanicus"/>
+        <categoryLink targetId="bbd2-1e01-a32a-3e5d" id="f9d1-71df-3d8b-6833" primary="false" name="Faction: [FORGE WORLD]"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="4ab0-56bd-ffb2-59a4" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6f18-a45e-43de-b8b8" id="ba16-bbf2-f249-eb91" primary="false" name="Transport"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Shock Ram" hidden="false" id="15c8-8dfa-38d3-6a3e" type="selectionEntry" targetId="8794-8f26-8ab2-ada5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8bd-299e-5ee8-4d7b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="667c-233e-f291-2406" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="0be2-c0d4-f758-9ab9" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Volkite Culverin" hidden="false" id="1ad4-213e-b4c8-5a4f" type="selectionEntry" targetId="20f6-1b7e-b9fa-2699"/>
+        <entryLink import="true" name="Volkite Calivers" hidden="false" id="ffc9-6693-c982-8436" type="selectionEntry" targetId="1012-e803-1655-3a2c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d81-fc7e-ab8e-3b33" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f82-7ef5-7672-eef4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Twin Mauler Bolt Cannon" hidden="false" id="f438-b756-1c62-1799" type="selectionEntry" targetId="7db7-7944-db53-b589">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b900-fd40-0bca-9e20" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6007-56a3-7edc-886f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock Ram" hidden="false" id="8794-8f26-8ab2-ada5">
+      <profiles>
+        <profile name="Shock Ram" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9d79-8617-4672-aaac">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite Calivers" hidden="false" id="1012-e803-1655-3a2c">
+      <profiles>
+        <profile name="Volkite Calivers" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0186-61ff-383c-fcaf">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
