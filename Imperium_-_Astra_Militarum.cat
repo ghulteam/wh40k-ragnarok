@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="67" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="68" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -8171,20 +8171,9 @@
                 <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
               </characteristics>
             </profile>
-            <profile id="092a-d9d8-8187-32d6" name="Twin Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
           <infoLinks>
             <infoLink id="7acf-53b2-ebca-645d" name="Tank Squadron" hidden="false" targetId="a437-a863-2fd2-bad0" type="profile"/>
-            <infoLink id="f55a-d1bf-92f6-f6ae" name="Turret Weapon" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="4b3c-528f-4ab1-1527" name="Pintle Weapon" hidden="false" collective="false" import="true" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup"/>
@@ -8201,6 +8190,18 @@
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin Lascannon" hidden="false" id="f8e8-2ba4-35e1-7fa4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="027a-2031-3505-ed97" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d7d-e0f3-2758-f549" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Twin Lascannon" id="17d1-eb9a-0762-170a" hidden="false" type="profile" targetId="217f-d2df-e307-6800"/>
+                <infoLink name="Turret Weapon" id="f55a-d1bf-92f6-f6ae" hidden="false" targetId="5c6e-8e31-0425-1422" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>

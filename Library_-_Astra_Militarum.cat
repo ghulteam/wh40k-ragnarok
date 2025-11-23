@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="54" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e0-c079-fb36-cf26" name="Library - Astra Militarum" revision="55" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -1654,15 +1654,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270d-280b-699a-3ce8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8169-3e9e-d06d-3ddf" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06c0-2992-0cdd-93eb" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d916-bcc9-2991-efde" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Turret Weapon" id="4a0c-cca1-6504-0a75" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
-          </infoLinks>
-        </entryLink>
         <entryLink id="268c-e28b-4abe-8136" name="Armoured Hull" hidden="false" collective="false" import="true" targetId="8527-132b-ede1-be54" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f6-3c71-d66d-c2c5" type="min"/>
@@ -1679,6 +1670,18 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="25"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Lascannon" hidden="false" id="c9f4-760a-cf52-96d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a53d-c161-2410-6df8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eea9-2d01-351e-67b7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Turret Weapon" id="5d39-3a44-88ca-ac55" hidden="false" type="rule" targetId="5c6e-8e31-0425-1422"/>
+            <infoLink name="Twin Lascannon" id="6172-29f9-e6a3-5972" hidden="false" type="profile" targetId="217f-d2df-e307-6800"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="2836-6d9c-fccb-9292" name="Malcador Defender" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -5704,6 +5707,16 @@ When targets would be picked for a Fight action made by this unit, it instead ta
     <profile name="Baleful Judge" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b2ab-37eb-d555-c4be">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When a Morale test is taken for a ASTRA MILITARUM INFANTRY unit whilst it is within 3&quot; of any friendly units with this ability, if the unmodified roll is a 6 you must take the test again for that unit. Before taking the test again, place one blast marker next to that unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Lascannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="217f-d2df-e307-6800">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Turret Weapon</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

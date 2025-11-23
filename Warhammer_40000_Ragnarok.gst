@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="31" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="32" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -1350,7 +1350,7 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
     </profile>
     <profile id="8fc3-5045-3aa5-00ce" name="Deep Strike" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, this unit can be set up in Tactical Reserves instead of being set up on the battlefield. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; from any enemy units. No more than half the total number of units in your army can be set up in Tactical Reserves, even if every unit in your army has this ability.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, this unit can be set up in Tactical Reserves instead of being set up on the battlefield. This unit may not arrive as reinforcement using this ability on the first Battle Round. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; from any enemy units. After arriving as reinforcement this way, the affected units may only act, as if their detachment was giving a Advance Order. No more than half the total number of units in your army can be set up in Tactical Reserves, even if every unit in your army has this ability.</characteristic>
       </characteristics>
     </profile>
     <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
