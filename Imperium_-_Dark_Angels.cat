@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="99fe-89ee-feed-f1a3" name="Imperium - Dark Angels" revision="41" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="6ac9-811a-fe59-5de1" name="Faction: Dark Angels" hidden="false"/>
@@ -1628,7 +1628,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <entryLink id="5292-e267-cb59-c1ce" name="Jump Pack" hidden="false" collective="false" import="true" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
             <entryLink id="3e72-c7cb-53d7-ef52" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
             <entryLink id="4ff8-c467-a774-610b" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
-            <entryLink import="true" name="Gravis Armor" hidden="false" id="162c-15ca-68f3-328a" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
+            <entryLink import="true" name="Gravis Armour" hidden="false" id="162c-15ca-68f3-328a" collective="false" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
             <entryLink import="true" name="Phobos Armor" hidden="false" id="2a94-3ec1-77b3-7a12" collective="false" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -1868,7 +1868,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8094-b14b-2a7e-89db" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8094-b14b-2a7e-89db" name="Heavy Weapons" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="9a8e-4346-e851-e128" value="2">
               <conditions>
@@ -1882,17 +1882,32 @@ This model can also Transport up to 1 RHINO model (this model – and any models
           <entryLinks>
             <entryLink id="2e23-f7b6-ef98-6bb4" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="4"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="9fab-ad53-489c-8f7f" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="1968-4d9e-414b-6c97" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="9fab-ad53-489c-8f7f" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="584a-7831-4389-00e4" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="257b-2e43-40d4-aebe" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="2"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="9fab-ad53-489c-8f7f" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="0b5d-0c53-e4bd-6fec" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="098d-bedf-91b5-c61b" type="selectionEntry"/>
@@ -1912,6 +1927,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4" field="7c7f-f763-1f39-410c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="9fab-ad53-489c-8f7f" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -1930,6 +1952,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="8" field="7c7f-f763-1f39-410c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="9fab-ad53-489c-8f7f" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -1942,15 +1971,38 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9fd-2071-e095-3296" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="2735-a64a-b927-75d6" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+        <selectionEntryGroup name="Weapons" id="e4cc-2b48-efee-b0c1" hidden="false"/>
+        <selectionEntryGroup name="Offhand Weapon" id="a090-1ab4-0c64-66ba" hidden="false" defaultSelectionEntryId="2735-a64a-b927-75d6">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="2735-a64a-b927-75d6" collective="false" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9091-0eaa-0780-81c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8457-3f01-1251-81d2" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9091-0eaa-0780-81c8" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1323-ab26-2b6a-3eec" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a65a-96f5-527b-fd5f" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Storm Shields" hidden="false" id="9fab-ad53-489c-8f7f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf89-e8e0-986a-4ab7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="6" field="1466-da3f-0d27-dace">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="cdbf-a940-ae27-4048" childId="f97b-d178-0479-4373" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
@@ -2013,7 +2065,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="31"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d430-b5a2-e0a6-4cff" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -2031,7 +2083,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="56"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="60"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
