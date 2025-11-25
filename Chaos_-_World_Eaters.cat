@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e0f7-8880-627e-e2eb" name="Chaos - World Eaters" revision="34" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="148a-bbc1-ce95-3eb8" name="Lord Invocatus" hidden="false"/>
     <categoryEntry id="9c49-554f-f5bd-c567" name="Lord on Juggernaut" hidden="false"/>
     <categoryEntry id="58e8-2e73-4c1b-d90e" name="Eightbound" hidden="false"/>
-    <categoryEntry id="7d26-0251-53f5-b032" name="Jakhals" hidden="false"/>
     <categoryEntry id="cb0b-8313-b267-bba9" name="Exalted Eightbound" hidden="false"/>
     <categoryEntry id="5314-8dcc-7828-3385" name="Faction: Legiones Daemonica" hidden="false"/>
     <categoryEntry name="Slaughterbrute" id="d22d-3b83-b28f-fe80" hidden="false"/>
@@ -70,9 +69,13 @@
         <categoryLink targetId="e3ee-2102-3f3f-0e12" id="46aa-b9d0-c2b9-adf5" primary="false" name="Faction: Khorne Daemonkin"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="cfec-c3d8-82c4-06ed" name="Jakhals" hidden="false" collective="false" import="true" targetId="4d14-2f5a-e38e-07a1" type="selectionEntry">
+    <entryLink id="cfec-c3d8-82c4-06ed" name="Jakhals" hidden="false" collective="false" import="true" targetId="e6b6-c33a-8658-1780" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8e0e-a51d-76c3-f785" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="6c32-4f1b-6989-2e4e" primary="false" name="Faction: Heretic Astartes"/>
+        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="23eb-1e19-5b4a-7304" primary="false" name="Faction: Khorne"/>
+        <categoryLink targetId="a592-cb8b-b074-9875" id="f2fd-8c45-eba2-9735" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="e3ee-2102-3f3f-0e12" id="fc87-3b4a-d0e0-f7a0" primary="false" name="Faction: Khorne Daemonkin"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3952-9a14-0a97-c120" name="Chaos Terminators" hidden="false" collective="false" import="true" targetId="0dd5-8141-297c-debb" type="selectionEntry">
@@ -387,158 +390,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="4d14-2f5a-e38e-07a1" name="Jakhals" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="adaa-4b5e-31d6-4fbc" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="4010-bbf8-5b65-2297" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="7102-1b5f-3633-a3b7" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="f5ce-2155-7537-a9ff" name="Chaos Cultists" hidden="false" targetId="a32e-2797-e7df-72bc" primary="false"/>
-        <categoryLink id="1241-7530-71e8-4e36" name="Jakhals" hidden="false" targetId="7d26-0251-53f5-b032" primary="false"/>
-        <categoryLink targetId="a592-cb8b-b074-9875" id="f0a5-d0a0-7075-23e7" primary="false" name="Faction: World Eaters"/>
-        <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="85d6-f07e-ab67-6536" primary="false" name="Faction: Khorne"/>
-        <categoryLink targetId="de3f-40e8-687f-1ca8" id="4476-443b-0333-0bc0" primary="false" name="Faction: Heretic Astartes"/>
-        <categoryLink targetId="e3ee-2102-3f3f-0e12" id="545f-aa26-6319-2fb5" primary="false" name="Faction: Khorne Daemonkin"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="cacc-ecc2-bf2f-acf1" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="57fc-9a07-0d3f-371d">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb9-8ba6-cbc2-8ace" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d4-b003-7076-89b7" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="57fc-9a07-0d3f-371d" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="7c48-0b99-e5d7-cfee" name="Jakhals (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d37f-dce3-85fb-6bdf" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="5ddc-b474-1657-1f59" name="Jakhals (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="17ff-2d33-e018-df9a" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9958-6b71-cabb-cc73">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7cb-6c98-08c6-9df1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e2d-f5c5-8e1d-0d03" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="9958-6b71-cabb-cc73" name="Autopistols and Jakhal Chainblades" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntries>
-                <selectionEntry id="34da-c5e2-5232-e15d" name="Autopistols" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ecd-4b1b-6f21-336c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e7-6c63-9209-42a0" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ee00-9d92-34f5-dd7a" name="Autopistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2baf-42ea-4d64-7405" name="Jakhal Chainblades" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d85a-5912-855b-c538" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="865d-9ef3-e9fd-460e" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="6ca1-2169-182b-c7a7" name="Jakhal Chainblades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5f88-ccfd-eb02-c968" name="Jakhal Heavy Weapons" hidden="false" collective="false" import="true" targetId="f7e3-564d-09c1-b2f6" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
-            <modifier type="set" field="704a-830c-9cfa-3929" value="2">
-              <conditions>
-                <condition field="selections" scope="4d14-2f5a-e38e-07a1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d37f-dce3-85fb-6bdf" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="704a-830c-9cfa-3929" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b880-db3f-3efa-44d3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f7e3-564d-09c1-b2f6" name="Jakhal Heavy Weapons" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a36a-1179-3011-875b" name="Jakhal Heavy Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6768-9d78-9c17-71ca" name="Lord Invocatus" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580c-af59-eeff-e3cf" type="max"/>
@@ -1252,12 +1103,12 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="65bf-c0ac-970d-b154" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
         <categoryLink id="618b-3cfd-90fd-80af" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="dc28-12d5-3579-6f53" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="1a62-3c0f-c807-6dee" name="Chaos Cultists" hidden="false" targetId="a32e-2797-e7df-72bc" primary="false"/>
         <categoryLink targetId="a592-cb8b-b074-9875" id="6d33-2cdb-9b6c-beb8" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="3fd8-b6fc-d749-a5fd" id="aef5-9540-3742-6545" primary="false" name="Faction: Khorne"/>
         <categoryLink targetId="de3f-40e8-687f-1ca8" id="3a23-b473-1155-bd69" primary="false" name="Faction: Heretic Astartes"/>
         <categoryLink targetId="e3ee-2102-3f3f-0e12" id="8748-eeff-d2ae-1c3e" primary="false" name="Faction: Khorne Daemonkin"/>
         <categoryLink targetId="3f7b-1bb8-1b6c-48b8" id="ab66-9ce8-b4db-97f6" primary="false" name="Goremongers"/>
+        <categoryLink targetId="5d08-1fa2-a5b6-afc0" id="7e5f-0c8e-c3cb-9d35" primary="false" name="Cultists"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="af73-e02b-e23b-3d34" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9958-6b71-cabb-cc73">
@@ -1575,6 +1426,7 @@ While this Units Detachement is affected by the &quot;Butcher&apos;s Nails&quot;
     <catalogueLink id="f63a-b8a1-3f51-6731" name="Library - Chaos Primarchs" targetId="6638-9778-3d62-e10b" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Chaos" id="7d39-8bef-fa37-ec43" targetId="e1a8-50a4-821a-eda1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Daemons" id="e531-6189-3052-4982" targetId="90ed-6ae6-a8a8-ddaf" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Lost and Damned" id="b914-31bf-953a-0c7b" targetId="7379-19d7-22ee-be35"/>
   </catalogueLinks>
   <rules>
     <rule name="Legion of Rage" id="6c01-b619-86df-eaf4" hidden="false">

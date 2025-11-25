@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e15c-fb59-677b-44e0" name="Chaos - Death Guard" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f6d9-ab1f-fe48-ea06" name="Necrosius the Undying" hidden="false"/>
     <categoryEntry id="dc88-9bb3-da14-d8af" name="Typhus" hidden="false"/>
     <categoryEntry id="533d-a05d-6587-ab3d" name="Lord of Contagion" hidden="false"/>
     <categoryEntry id="60da-f22c-ad03-fdd0" name="Malignant Plague Caster" hidden="false"/>
-    <categoryEntry id="dad6-649b-6537-d5c6" name="Poxwalkers" hidden="false"/>
     <categoryEntry id="55a6-2622-edbb-af29" name="Noxious Blightbringer" hidden="false"/>
     <categoryEntry id="16c1-f61a-5669-ade7" name="Foul Blightspawn" hidden="false"/>
     <categoryEntry id="20b0-5c54-6a75-9552" name="Biologus Putrifier" hidden="false"/>
@@ -341,17 +340,22 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="d7ea-2060-3105-685d" id="63d3-1e5b-27ba-bf7f" primary="false" name="Faction: Nurgle Daemonkin"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6788-682e-bcc1-e717" name="Chaos Cultists" hidden="false" collective="false" import="true" targetId="ccff-966b-bc9a-05c8" type="selectionEntry">
+    <entryLink id="6788-682e-bcc1-e717" name="Chaos Cultists" hidden="false" collective="false" import="true" targetId="3896-5567-987d-938d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5a9f-e733-20c7-de68" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="f352-2ab3-1ddc-194f" primary="false" name="Faction: Death Guard"/>
         <categoryLink targetId="bb55-331f-06ab-80e9" id="bc76-5023-88a0-f3f4" primary="false" name="Faction: Nurgle"/>
         <categoryLink targetId="d7ea-2060-3105-685d" id="05e6-be1d-ba81-8ee8" primary="false" name="Faction: Nurgle Daemonkin"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="2058-910d-7b42-75f5" primary="false" name="Faction: Heretic Astartes"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c4c1-258a-a8c9-085e" name="Poxwalkers" hidden="false" collective="false" import="true" targetId="cde4-c2c1-7c7a-48b9" type="selectionEntry">
+    <entryLink id="c4c1-258a-a8c9-085e" name="Poxwalkers" hidden="false" collective="false" import="true" targetId="b9bd-d248-ef3b-1943" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="794a-accd-7a75-e091" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="6fa4-c186-1c7a-0aa7" primary="false" name="Faction: Death Guard"/>
+        <categoryLink targetId="de3f-40e8-687f-1ca8" id="f7ab-d626-f767-f58a" primary="false" name="Faction: Heretic Astartes"/>
+        <categoryLink targetId="d7ea-2060-3105-685d" id="09e0-0e4b-e22a-6874" primary="false" name="Faction: Nurgle Daemonkin"/>
+        <categoryLink targetId="bb55-331f-06ab-80e9" id="9265-2c63-2d21-4190" primary="false" name="Faction: Nurgle"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e726-8f80-6263-24c6" name="Plaguebearers" hidden="false" collective="false" import="true" targetId="c4f9-4de8-a222-8375" type="selectionEntry">
@@ -963,177 +967,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cde4-c2c1-7c7a-48b9" name="Poxwalkers" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="6052-43a8-459d-c120" name="Mindless" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for this unit are automatically passed.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1ecb-4499-4208-cc3c" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="bdc9-b182-51db-19ff" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="fce2-b9bf-aa04-4e6a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="abc5-1da7-ce0d-ff19" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="c8a2-063e-0888-9b3b" name="Poxwalkers" hidden="false" targetId="dad6-649b-6537-d5c6" primary="false"/>
-        <categoryLink targetId="e9cf-48b2-22ab-8a9e" id="655e-6281-493c-7d89" primary="false" name="Faction: Death Guard"/>
-        <categoryLink targetId="bb55-331f-06ab-80e9" id="a912-3c1c-38b6-0e27" primary="false" name="Faction: Nurgle"/>
-        <categoryLink targetId="de3f-40e8-687f-1ca8" id="2467-3d2c-ef36-87e3" primary="false" name="Faction: Heretic Astartes"/>
-        <categoryLink targetId="d7ea-2060-3105-685d" id="ca81-28fe-cba9-9a8d" primary="false" name="Faction: Nurgle Daemonkin"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4641-652a-bcfb-7562" name="Improvised Weapons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b07c-7a10-90ab-eebc" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59df-3ef6-cc50-6f18" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="bfe2-d43d-f195-d329" name="Improvised Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="f246-8fd7-53ab-ea50" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="d27d-b8ab-f47b-320c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb59-50ae-2e70-d053" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e47-6c68-4ae4-b8a8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="d27d-b8ab-f47b-320c" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="959c-9c57-299e-9a51" name="Poxwalkers (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4237-b78e-57c0-8b76" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ac16-c3d7-78a4-4501" name="Poxwalkers (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="d1bf-df74-01b2-dc0f" name="Diseased Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 20 or more models, add 1 to hit rolls for attacks made by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="35e6-b7f0-f0dc-f7b3" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="7b47-088d-09c9-ff51" name="Poxwalkers (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7c9c-0b62-ad35-bcb3" name="Diseased Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 20 or more models, add 1 to hit rolls for attacks made by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4a6f-6f38-25d0-8e60" name="40 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="2d12-0cfe-0d15-b557" name="Poxwalkers (40 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="cdb1-ec75-9fe3-6b29" name="Diseased Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 20 or more models, add 1 to hit rolls for attacks made by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3c90-0d94-8a02-5467" name="50 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d4c0-86ba-e053-3d6d" name="Poxwalkers (50 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">10</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">10</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="3c77-f4e4-5b1f-021f" name="Diseased Horde" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 20 or more models, add 1 to hit rolls for attacks made by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="cbd2-3aff-78a4-08ed" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6af6-3215-797b-12e2" name="Noxious Blightbringer" hidden="false" collective="false" import="true" type="unit">
@@ -2398,6 +2231,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     <catalogueLink id="7369-fef8-6ea5-e989" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="a930-0d29-65c6-0464" name="Library - Chaos Primarchs" targetId="6638-9778-3d62-e10b" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Daemons" id="0070-f763-460c-a44d" targetId="90ed-6ae6-a8a8-ddaf" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Lost and Damned" id="c55f-f2cb-2324-27c1" targetId="7379-19d7-22ee-be35"/>
   </catalogueLinks>
   <rules>
     <rule name="Legion of Plagues" id="8391-3c81-c488-8947" hidden="false">

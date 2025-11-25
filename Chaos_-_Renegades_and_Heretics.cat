@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d5eb-4684-4b14-aeca" name="Chaos - Renegades and Heretics" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d5eb-4684-4b14-aeca" name="Chaos - Renegades and Heretics" revision="16" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="cdd6-b04b-690c-bca3" name="Mutated Beyond Reason - D3 Roll">
       <characteristicTypes>
@@ -16,7 +16,6 @@
     <categoryEntry id="1062-5334-5e42-9c42" name="Faction: Covenant of Slaanesh" hidden="false"/>
     <categoryEntry id="8b9b-9d59-21dc-be37" name="Faction: Covenant of Tzeentch" hidden="false"/>
     <categoryEntry id="ba79-47bc-ce95-ecc7" name="Rogue Psyker Coven" hidden="false"/>
-    <categoryEntry id="7327-499c-006c-2b3c" name="Renegade Cultists" hidden="false"/>
     <categoryEntry id="dff4-60b8-8563-14a1" name="Renegade Militia Squad" hidden="false"/>
     <categoryEntry id="6fc6-2378-c928-1ada" name="Renegade Mutant Rabble" hidden="false"/>
     <categoryEntry id="6aaf-3e71-1fc6-e5a0" name="Mutants" hidden="false"/>
@@ -35,8 +34,6 @@
     <categoryEntry id="0649-1e37-81ab-f20f" name="Renegade Plague Ogryns" hidden="false"/>
     <categoryEntry id="10fa-e746-6866-c425" name="Renegade Heavy Weapons Squad" hidden="false"/>
     <categoryEntry id="ada6-a083-08a7-ab7a" name="Earthshaker Platform" hidden="false"/>
-    <categoryEntry name="Jakhals" id="767a-9118-e548-828f" hidden="false"/>
-    <categoryEntry name="Poxwalkers" id="46e9-d563-f939-b334" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d766-fc50-1fa9-c661" name="Armoured Sentinels" hidden="false" collective="false" import="true" targetId="8854-9cf7-ef02-5f6a" type="selectionEntry">
@@ -283,10 +280,14 @@
         <categoryLink id="dd6b-c349-4897-2780" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2ea6-04cd-adda-ac6c" name="Renegade Cultists" hidden="false" collective="false" import="true" targetId="d600-4ba7-a38a-b80d" type="selectionEntry">
+    <entryLink id="2ea6-04cd-adda-ac6c" name="Chaos Cultists" hidden="false" collective="false" import="true" targetId="3896-5567-987d-938d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a668-f0a5-2198-5848" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink targetId="1b54-9e1c-00b4-e522" id="c53d-4cc9-b113-63ef" primary="false" name="Faction: Renegades and Heretics"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Covenant" hidden="false" id="6351-699c-63c1-8636" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="281e-50bf-b839-4aab" name="Renegade Disciple Squad" hidden="false" collective="false" import="true" targetId="aaad-63f1-38a0-f9c9" type="selectionEntry">
       <categoryLinks>
@@ -343,14 +344,18 @@
         <categoryLink id="dc74-a301-2715-845b" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Renegade Jakhals" hidden="false" id="cb18-4127-031c-ae2a" type="selectionEntry" targetId="d605-f8e7-0b92-1e4e">
+    <entryLink import="true" name="Jakhals" hidden="false" id="cb18-4127-031c-ae2a" type="selectionEntry" targetId="e6b6-c33a-8658-1780">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="9f46-c160-ad17-ea8b" primary="true" name="Troops"/>
+        <categoryLink targetId="1b54-9e1c-00b4-e522" id="9c4c-9731-0bce-f455" primary="false" name="Faction: Renegades and Heretics"/>
+        <categoryLink targetId="55fe-e44f-ffee-175f" id="cdf8-d78f-904a-92e0" primary="false" name="Faction: Covenant of Khorne"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Renegade Poxwalkers" hidden="false" id="e251-b147-00d1-dfa3" type="selectionEntry" targetId="7f58-6ea9-6f05-2e5d">
+    <entryLink import="true" name="Poxwalkers" hidden="false" id="e251-b147-00d1-dfa3" type="selectionEntry" targetId="b9bd-d248-ef3b-1943">
       <categoryLinks>
         <categoryLink targetId="4182-4f4b-94dc-40d9" id="02d9-5ae6-1641-4cb0" primary="true" name="Troops"/>
+        <categoryLink targetId="1b54-9e1c-00b4-e522" id="c1c5-7dcb-422d-7f1b" primary="false" name="Faction: Renegades and Heretics"/>
+        <categoryLink targetId="e157-e7ee-69a5-a22a" id="9449-dd62-dd9c-b08f" primary="false" name="Faction: Covenant of Nurgle"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1167,105 +1172,6 @@
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d600-4ba7-a38a-b80d" name="Renegade Cultists" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="0d93-71bb-fc5c-aa82" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="b887-9617-cb77-8b77" name="Faction: Renegades and Heretics" hidden="false" targetId="1b54-9e1c-00b4-e522" primary="false"/>
-        <categoryLink id="0939-f74b-1d9f-1035" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="65e8-b3f0-ed20-c364" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="bb14-fff1-d7d4-5261" name="Renegade Cultists" hidden="false" targetId="7327-499c-006c-2b3c" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9a56-1920-7c23-f91d" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="85d3-17c9-14ac-7082">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae41-80a7-3b76-c2e6" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8156-cf6a-9c68-94e1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="85d3-17c9-14ac-7082" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="2898-e1db-6d28-88a6" name="Renegade Cultists (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6440-3df7-86a8-9a44" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="895a-1522-d2f3-a51c" name="Renegade Cultists (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="afc8-04df-f11b-40c0" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d173-85bb-1d22-b1ee" name="Renegade Cultists (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="dac7-7e23-666e-dad6" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="df0f-6fd2-4673-a1aa" value="2">
-              <conditions>
-                <condition field="selections" scope="d600-4ba7-a38a-b80d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6440-3df7-86a8-9a44" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="df0f-6fd2-4673-a1aa" value="3">
-              <conditions>
-                <condition field="selections" scope="d600-4ba7-a38a-b80d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc8-04df-f11b-40c0" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="1"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0f-6fd2-4673-a1aa" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="110b-31dd-5db8-630f" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="805c-45ef-f904-1d09" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="ed96-c170-f79f-c9dc" name="Cultist Weapons" hidden="false" collective="false" import="true" targetId="e864-1d89-e03e-4b30" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aaad-63f1-38a0-f9c9" name="Renegade Disciple Squad" hidden="false" collective="false" import="true" type="unit">
@@ -2347,256 +2253,6 @@
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Renegade Jakhals" hidden="false" id="d605-f8e7-0b92-1e4e" collective="false">
-      <categoryLinks>
-        <categoryLink name="Faction: Chaos" hidden="false" id="0f45-4337-9499-4245" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink name="Light" hidden="false" id="f48a-7ab3-d091-af61" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="81a2-e043-049a-2c87" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink targetId="767a-9118-e548-828f" id="f2cd-e430-1b3c-1475" primary="false" name="Jakhals"/>
-        <categoryLink targetId="7327-499c-006c-2b3c" id="c6b0-94f5-ace6-5cfd" primary="false" name="Renegade Cultists"/>
-        <categoryLink targetId="55fe-e44f-ffee-175f" id="2b1d-b276-842d-04de" primary="false" name="Faction: Covenant of Khorne"/>
-        <categoryLink targetId="1b54-9e1c-00b4-e522" id="c7d1-ee01-4985-b85c" primary="false" name="Faction: Renegades and Heretics"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Size" id="8444-7886-ed34-fc38" hidden="false" collective="false" import="true" defaultSelectionEntryId="57fc-9a07-0d3f-371d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5225-6e3f-64d3-4dbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e123-0e72-0de9-bc97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="6751-dcf9-5213-c2cd" collective="false">
-              <profiles>
-                <profile name="Jakhals (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="fa0c-fb9f-b532-7b1b">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="b6a0-e918-8540-cfdc" collective="false">
-              <profiles>
-                <profile name="Jakhals (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ea0d-a759-3317-aa70">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Weapons" id="4841-4d7d-7acb-cb8c" hidden="false" collective="false" import="true" defaultSelectionEntryId="9958-6b71-cabb-cc73">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b799-6abd-8eaa-89f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdb3-b7ff-eb39-2773" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Autopistols and Jakhal Chainblades" hidden="false" id="e064-945e-ec26-1033" collective="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistols" hidden="false" id="0579-b787-b618-d08a" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68d1-87c2-fa47-79a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9a0-42c3-94b3-160d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Autopistols" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f6b1-585c-aa2d-f846">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Jakhal Chainblades" hidden="false" id="c4cf-71cd-fb52-c95a" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d84c-f80c-8098-5743" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c9-dfc2-fabd-21ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Jakhal Chainblades" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8e4c-6bb3-c64e-f381">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="7b1f-e3e9-b9ae-83af" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Jakhal Heavy Weapons" hidden="false" id="3e3e-4a3a-0dde-4e36" collective="false">
-          <profiles>
-            <profile name="Jakhal Heavy Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9187-ccc4-bc0a-3c0f">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="1" field="1466-da3f-0d27-dace"/>
-            <modifier type="set" value="2" field="752f-03d0-b477-e0b3">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="d605-f8e7-0b92-1e4e" childId="b6a0-e918-8540-cfdc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="752f-03d0-b477-e0b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Renegade Poxwalkers" hidden="false" id="7f58-6ea9-6f05-2e5d" collective="false">
-      <profiles>
-        <profile name="Mindless" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="074e-c250-1f50-5264">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for this unit are automatically passed.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Ignore Damage (6+)" id="8a03-9c0d-b323-be83" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink name="Faction: Chaos" hidden="false" id="7372-2f58-8dfc-c613" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink name="Light" hidden="false" id="7b82-8fd0-224c-fa2b" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="8b1b-30fe-82d9-4cf9" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink targetId="46e9-d563-f939-b334" id="f7a2-9d43-cc44-2096" primary="false" name="Poxwalkers"/>
-        <categoryLink targetId="1b54-9e1c-00b4-e522" id="e486-3a79-6453-cf3f" primary="false" name="Faction: Renegades and Heretics"/>
-        <categoryLink targetId="e157-e7ee-69a5-a22a" id="0d65-fd44-cafa-e1d2" primary="false" name="Faction: Covenant of Nurgle"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Improvised Weapons" hidden="false" id="12ef-5161-b0e1-bb29" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1685-f92b-07a7-e574" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40cf-8806-d240-22f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Improvised Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="13ee-43fa-f9eb-d23a">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Size" id="a5ec-a9eb-f1aa-4abe" hidden="false" collective="false" import="true" defaultSelectionEntryId="d27d-b8ab-f47b-320c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97ba-24eb-8261-3840" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c333-c996-aace-25ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="284d-2588-579b-6858" collective="false">
-              <profiles>
-                <profile name="Poxwalkers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2f31-917b-627e-09f9">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="853f-f49d-3604-bbf0" collective="false">
-              <profiles>
-                <profile name="Poxwalkers (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="f03a-6bc8-fc28-e081">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">2</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Diseased Horde" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9ba9-4fee-5f26-c84b">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 20 models, add 1 to hit rolls for attacks made by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="bbf1-75fd-b50a-6ec4" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a718-5e38-bda2-72ab" name="Chaos Covenant" hidden="false" collective="false" import="true">
@@ -2893,5 +2549,6 @@
   <catalogueLinks>
     <catalogueLink id="d290-87ad-9d65-cce8" name="Library - Astra Militarum" targetId="53e0-c079-fb36-cf26" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="5c9a-0801-7a37-0810" name="Library - Weapons" targetId="4c20-063f-968c-8547" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Lost and Damned" id="cf7d-12ab-923f-44c1" targetId="7379-19d7-22ee-be35"/>
   </catalogueLinks>
 </catalogue>
