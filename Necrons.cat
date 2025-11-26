@@ -4023,11 +4023,6 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="ee87-474d-4644-64c4" name="Cosmic Tyrant" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per turn, you can re-roll one hit roll or one wound roll for an attack made by this unit, or you can re-roll one saving throw made for this unit.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="2b1f-ef9a-e0a9-9cac" name="Immune to Natural Law" hidden="false" targetId="0369-7101-a7df-178b" type="profile"/>
@@ -4060,6 +4055,55 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fractured Personality" id="3743-a64f-3a8a-b48e" hidden="false" defaultSelectionEntryId="a75a-d383-02cc-6102">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8083-0699-a8b2-663f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="760e-0f62-d3d5-866a" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cosmic Tyrant" hidden="false" id="a75a-d383-02cc-6102">
+              <profiles>
+                <profile name="Cosmic Tyrant" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ee87-474d-4644-64c4" publicationId="8df9-0b3e-abea-3c15">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each turn, you can re-roll one hit roll for an attack made by this unit and one wound roll for an attack made by this unit and you can re-roll one saving throw made for this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Transdimensional Displacement" hidden="false" id="0cc5-cb92-980e-4f7e">
+              <profiles>
+                <profile name="Transdimensional Displacement" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="74dd-be9b-c317-946e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This Model is granted the Deep Strike ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="87d4-a0be-337f-780c" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Writhing Worldscape" hidden="false" id="ef42-13ff-77bc-0e16">
+              <profiles>
+                <profile name="Writhing Worldscape" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="6a94-6e88-bc42-4134">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D12 for each enemy unit within 3&quot; of this unit; on a 10+ place one blast marker next to the unit being rolled for.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Untamed Power" hidden="false" id="78af-4f1a-c720-0e0e">
+              <profiles>
+                <profile name="Untamed Power" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1a8c-dc1c-3048-0248">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, you may reduce the total CP cost of a &quot;Sky of Falling Stars&quot;, &quot;Antimatter Meteor&quot;, &quot;Cosmic Fire&quot; or &quot;Time&apos;s Arrow&quot; Command Asset to 0.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1f4d-4fa2-5c44-1af1" name="Close Combat Weapons (Weak)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
