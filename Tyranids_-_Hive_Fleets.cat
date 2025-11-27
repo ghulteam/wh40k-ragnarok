@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="27" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="28" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="a37b-2844-afcc-f4eb" name="Tyranid Hive Fleets"/>
     <publication id="5101-ac41-4666-a01a" name="Forge World Tyranids"/>
@@ -761,7 +761,7 @@
         <categoryLink id="1b4b-0cb8-64aa-1c24" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tyranid Prime" hidden="false" id="6593-922d-e897-31c4" type="selectionEntry" targetId="2eab-6d96-5b70-6388">
+    <entryLink import="true" name="Ravener Prime" hidden="false" id="6593-922d-e897-31c4" type="selectionEntry" targetId="0c75-bb53-fdf1-0e48">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="7221-411d-2f5d-297e" primary="true" name="HQ"/>
       </categoryLinks>
@@ -2621,7 +2621,7 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="9 models" hidden="false" id="54b1-cf0b-70a2-87ac" collective="false">
               <profiles>
-                <profile name="Zoanthropes (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="518c-a884-6fd0-6388" page="">
+                <profile name="Zoanthropes (9 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="518c-a884-6fd0-6388">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -3204,9 +3204,9 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e818-24d5-a54f-4676" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e818-24d5-a54f-4676" name="5/6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="9547-1e8b-71e2-d8d7" name="Raveners (6 models)" publicationId="a37b-2844-afcc-f4eb" page="24" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                <profile id="9547-1e8b-71e2-d8d7" name="Raveners (5/66 models)" publicationId="a37b-2844-afcc-f4eb" page="24" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -6616,6 +6616,27 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
             <infoLink name="Inferno" id="0a4f-35fa-b21c-9d9b" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ravener Ranged Weapons" hidden="false" id="2f77-3a12-4326-b771" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="541e-a7f7-4b90-4db2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="effa-a46f-aacc-b7f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ravener Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="dcde-b53c-7402-271f">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="2d6e-c03a-7a58-74ce" id="7de8-025c-8dd2-77f6" primary="false" name="Infantry"/>
@@ -6629,6 +6650,9 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
         <categoryLink targetId="6f28-ddac-ce9a-54d1" id="daee-22fe-8018-c1a6" primary="false" name="Hyperadapted Raveners"/>
         <categoryLink targetId="8b72-2e81-83f9-0895" id="50ad-5af0-24e9-c7eb" primary="false" name="Ravener Prime"/>
       </categoryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ravener Prime" hidden="false" id="0c75-bb53-fdf1-0e48">
       <profiles>
