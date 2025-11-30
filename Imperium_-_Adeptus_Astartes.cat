@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="55" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="56" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -99,6 +99,7 @@
     <categoryEntry name="Aethon Shaan" id="6eae-f929-7571-de49" hidden="false"/>
     <categoryEntry name="Titus" id="ac40-8858-dbf4-e820" hidden="false"/>
     <categoryEntry name="Suboden Khan" id="3141-c1e0-e929-7e23" hidden="false"/>
+    <categoryEntry name="Caanok Var" id="afe2-7b1f-e451-46f5" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -7505,6 +7506,91 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="17"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ac3-ab43-3c6e-144d" name="Caanok Var" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09c-75c6-e457-0c51" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44ee-4b2f-123d-2645" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9472-6f62-d275-e17b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="822e-5036-099a-064f" name="Cold and Calculating" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by friendly LIGHT IRON HANDS units whilst they are within 6&quot; of any units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e048-d3d6-7902-35fe" name="Canook Var" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ea36-849f-991e-1220">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly IRON HANDS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignore Damage (6+)" id="714b-8845-5a24-638e" hidden="false" type="profile" targetId="a219-d9fd-9c8c-10c2"/>
+        <infoLink name="Deep Strike" id="843a-1e63-d4d1-6e1e" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0431-684e-7fe2-692c" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e580-f4b0-5854-3eab" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="dda8-aa7a-081b-c48c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f052-c377-7665-9d8d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="7e3b-cbd1-f948-6bbc" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="8a06-4332-e3b1-60b7" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="7aea-de4c-7f51-b635" name="Faction: Iron Hands" hidden="false" targetId="3679-5872-2305-7b4f" primary="false"/>
+        <categoryLink targetId="afe2-7b1f-e451-46f5" id="92ce-2a5c-ed48-fd10" primary="false" name="Caanok Var"/>
+        <categoryLink targetId="3726-f1d3-1b96-0eb0" id="7bac-e338-1de7-c684" primary="false" name="Terminator"/>
+        <categoryLink targetId="7151-56f9-0163-eadc" id="6b35-22b9-a997-5dfd" primary="false" name="Captain"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9dd0-0403-84e4-e3d8" name="Axiom" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6be-7bb5-02cf-953b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6058-c624-3d4d-24ac" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="947a-a4d2-57e7-b5e2" name="Axiom" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7785-1436-1314-24f8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
