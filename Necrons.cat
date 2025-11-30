@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -83,6 +83,8 @@
     <categoryEntry id="ee3d-4dc2-67b4-d03c" name="The Silent King" hidden="false"/>
     <categoryEntry id="b4d4-1527-1e92-16fd" name="Faction: Szarekhan" hidden="false"/>
     <categoryEntry id="14a3-33bc-8e9a-6c4f" name="Unholy Necropolis" hidden="false"/>
+    <categoryEntry name="Nekrosor Ammentar" id="da90-b245-ba7e-3731" hidden="false"/>
+    <categoryEntry name="Geomancer" id="c09e-ff46-7acb-8253" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -444,6 +446,11 @@
     <entryLink import="true" name="Endless Phalanx" hidden="false" id="13eb-9f43-b65e-057f" type="selectionEntry" targetId="38fb-b75d-1f2e-882a">
       <categoryLinks>
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="d12d-91bc-01af-7270" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Geomancer" hidden="false" id="c3ec-c7c1-463f-eec8" type="selectionEntry" targetId="ae78-462a-478d-2140">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="ed30-9ff1-e2a4-601c" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5518,7 +5525,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2813-7bf6-d7a7-9474" name="Skorpekh Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2813-7bf6-d7a7-9474" name="Skorpekh Lord" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="db68-f555-a7ad-c658" name="Skorpekh Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -6449,6 +6456,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <categoryLink id="056c-a689-f87a-9d67" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
         <categoryLink id="a64f-3c18-1408-4dd1" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="e946-bade-32c3-e446" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="09b5-6ef6-d8e1-4fc3" id="4f83-44d8-c5f5-e50f" primary="false" name="Chronomancer"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="94a9-7397-f177-9f8a" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
@@ -6734,6 +6742,130 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
       <infoLinks>
         <infoLink name="Rapid Fire" id="d928-1ade-1f2e-f23b" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0f97-d135-9b05-6a76" name="Nekrosor Ammentar" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="512e-27d5-9447-a5d1" name="Nekrosor Ammentar" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22f3-8d7e-ab87-cf19" name="United in Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly [DYNASTY] DESTROYER CULT units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ee16-60c4-1a29-9325" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f655-1090-efa9-1d0d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="848e-4be5-6750-2410" name="Faction: [DYNASTY]" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="c386-7ce8-4a95-5714" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="510b-5920-d4d1-225b" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8be1-8420-25ae-be36" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="8589-618a-6d3c-e582" name="Destroyer Cult" hidden="false" targetId="838d-7bb7-42dc-59d0" primary="false"/>
+        <categoryLink id="e055-0a9b-c41f-5108" name="Skorpekh Lord" hidden="false" targetId="57aa-b1cc-4600-b858" primary="false"/>
+        <categoryLink targetId="da90-b245-ba7e-3731" id="da46-cbb5-67fd-b89e" primary="false" name="Nekrosor Ammentar"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f706-9130-f985-0417" name="Hyperphase Harvester" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e6f-0f7b-669a-aea0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b149-568a-44c1-12e8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="edd2-a02f-6121-290b" name="Hyperphase Harvester" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="525a-bc2a-c737-aa78" name="Enmitic Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bffb-3e16-3735-d5a8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac5-7aa1-3ee9-b227" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9cf4-e011-db1e-2828" name="Enmitic Annihilator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e273-3920-dd4f-6066" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae78-462a-478d-2140" name="Geomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="89e3-8b1c-8fa5-f5a1" name="Geomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3652-ea51-6e0d-ffa7" name="Obelisk Node Control" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Enemy units cannot be set up within 12&quot; of this unit during the Set Up Reinforcements step.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ab78-77a4-8a55-5b1d" name="Cryptek" hidden="false" targetId="d30e-201a-1b4d-d381" primary="false"/>
+        <categoryLink id="5c7c-d3ff-fbf7-e1f9" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="c740-de7f-31cd-0b85" name="Faction: [DYNASTY]" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="fa82-14d9-0e7f-22bb" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="f507-f54a-0b2a-0d38" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="325a-3e34-2fee-5b4a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="c09e-ff46-7acb-8253" id="ccc3-8cc8-5a94-cd97" primary="false" name="Geomancer"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6772-d003-4893-a3f2" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a394-c964-47c1-d20a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d14-4fcc-7b80-ddc3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="88b9-696b-32e7-9ef7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
