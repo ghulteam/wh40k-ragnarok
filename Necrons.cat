@@ -6855,17 +6855,41 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <categoryLink targetId="c09e-ff46-7acb-8253" id="ccc3-8cc8-5a94-cd97" primary="false" name="Geomancer"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6772-d003-4893-a3f2" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a394-c964-47c1-d20a" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d14-4fcc-7b80-ddc3" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="88b9-696b-32e7-9ef7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tremorglaive" hidden="false" id="7bb8-c28d-70f8-5e55">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bff9-fccd-3878-3323" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2251-2698-562b-2fec" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tremorglaive (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2da7-c1ef-5298-f6e9">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Tremorglaive (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="70e3-e320-948c-10f4">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
