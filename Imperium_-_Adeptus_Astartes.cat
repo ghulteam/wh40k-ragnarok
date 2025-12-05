@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="57" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="58" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -100,6 +100,7 @@
     <categoryEntry name="Titus" id="ac40-8858-dbf4-e820" hidden="false"/>
     <categoryEntry name="Suboden Khan" id="3141-c1e0-e929-7e23" hidden="false"/>
     <categoryEntry name="Caanok Var" id="afe2-7b1f-e451-46f5" hidden="false"/>
+    <categoryEntry name="Uriel Ventris" id="37f0-0529-7b9f-c560" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -2447,16 +2448,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
           </characteristics>
-        </profile>
-        <profile id="f23a-8b43-89ad-d9cd" name="Rites of Battle" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ULTRAMARINES units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3f91-2f0b-7a5a-f2b1" name="Battle-forged Heroes" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly ULTRAMARINES TACTICAL SQUAD units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Cato Sicarius" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="3c24-d9a0-e438-b35d" childId="7a5b-539e-af67-2d70" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -2466,7 +2464,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink id="3d60-ef53-cd07-2c42" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="8c82-1589-dd3f-4653" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="eda0-ac00-bc3c-e1bc" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="96c5-30a0-9c40-dcdb" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
         <categoryLink id="8c86-6bb2-eab3-8843" name="Sicarius" hidden="false" targetId="d5ca-1944-f90d-e0d5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -2485,6 +2482,17 @@ This model can also Transport up to 1 RHINO model (this model – and any models
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="6+" field="74b1-f85d-ede5-c758"/>
+                    <modifier type="set" value="7+" field="4b6c-996a-d317-affb"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="3c24-d9a0-e438-b35d" childId="7a5b-539e-af67-2d70" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -2498,6 +2506,48 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Rank" id="1cab-f221-e128-9444" hidden="false" defaultSelectionEntryId="e6f3-563b-314c-b151">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Captain" hidden="false" id="e6f3-563b-314c-b151">
+              <profiles>
+                <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="f23a-8b43-89ad-d9cd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ULTRAMARINES units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Battle-forged Heroes" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="3f91-2f0b-7a5a-f2b1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly ULTRAMARINES TACTICAL SQUAD units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="7151-56f9-0163-eadc" id="241a-02b1-73ce-c25f" primary="false" name="Captain"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knight Champion of Macragge" hidden="false" id="7a5b-539e-af67-2d70">
+              <profiles>
+                <profile name="Battle-forged Heroes" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="04f9-e7ab-2f2d-cff4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by friendly ULTRAMARINES LIGHT units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Honour or Death" id="dcab-c6a8-85aa-0e8a" hidden="false" targetId="5f19-998b-04a8-c710" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a9-d24b-2752-0c09" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a35-9151-a680-92e6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="c592-85bb-94d4-2692" name="High Marshal Helbrecht" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -6721,6 +6771,21 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Banner of Macragge" hidden="false" id="54d0-b2c2-ab15-6542">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f9b-2d8b-204a-2735" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+          </costs>
+          <profiles>
+            <profile name="Banner of Macragge" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="7dc7-6e05-a6cc-d8ae">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Attacks characteristic of ULTRAMARINE units when making Fight actions whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Unit Size" id="652f-8971-f694-8dc4" hidden="false">
@@ -7610,6 +7675,88 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="249b-c0fb-78af-c7d8" name="Uriel Ventris" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09c-75c6-e457-0c51" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ef7-bddb-5a9c-223a" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="717e-bb3e-c747-4a4d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a8f5-397b-c910-e6d5" name="Uriel Ventris" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="03fb-1be6-8e5c-de40">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ULTRAMARINES units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Master of the Fleet" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="53a4-a1b4-cec5-5b30">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When setting up this unit’s Detachment, you can choose three other ULTRAMARINE INFANTRY units in that Detachment. Those units have the Deep Strike ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3f28-8bb3-752a-4461" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f3d8-69c1-07aa-8085" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="1706-0982-ff3b-3c50" name="Faction: Ultramarines" hidden="false" targetId="0f44-4bfd-acaf-7de9" primary="false"/>
+        <categoryLink id="f1bc-6b42-b6ba-c586" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="c201-924b-4a02-98de" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="e18c-0574-b568-d1ac" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f119-834d-6932-c819" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
+        <categoryLink targetId="37f0-0529-7b9f-c560" id="1209-8349-906d-6d97" primary="false" name="Uriel Ventris"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b0a5-a3aa-9db9-8cfc" name="Sword of Idaeus" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4d-4eb3-8047-d948" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9875-f3bb-a991-7317" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7ae8-4eea-9af1-fd11" name="Sword of Idaeus" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2acd-8ce5-5cdd-9351" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="34e3-120d-69a8-edc9" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
