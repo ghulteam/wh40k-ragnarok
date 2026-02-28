@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -67,6 +67,10 @@
     <categoryEntry name="Ordinatus Aktaeus" id="7860-b2fe-bce2-30aa" hidden="false"/>
     <categoryEntry name="Ordinatus Sagittar" id="04cb-4664-51c2-90fc" hidden="false"/>
     <categoryEntry name="Archmagos Prime" id="b2a6-7179-df9c-88ab" hidden="false"/>
+    <categoryEntry name="Thulia Ghuld" id="4328-8928-f701-06ea" hidden="false"/>
+    <categoryEntry name="Archmagos Terminus" id="3d69-6d95-89e8-5a92" hidden="false"/>
+    <categoryEntry name="Hastarii Exterminators" id="4cc8-029a-b529-5c66" hidden="false"/>
+    <categoryEntry name="Hastarii Fusiliers" id="f2d8-d363-afb1-c681" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5d12-b819-3ec3-a33e" name="Belisarius Cawl" hidden="false" collective="false" import="true" targetId="ff60-0474-2266-31ca" type="selectionEntry">
@@ -344,6 +348,11 @@
     <entryLink import="true" name="Ordinatus Aktaeus" hidden="false" id="d465-a7e6-e3da-8ef5" type="selectionEntry" targetId="c3bc-dbd1-ca02-2293">
       <categoryLinks>
         <categoryLink targetId="38d6-4782-ed3b-5187" id="c38e-cfc6-b8a7-63ea" primary="true" name="Lord of War, Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thulia Ghuld" hidden="false" id="8f10-7d28-43a3-1ec9" type="selectionEntry" targetId="1f03-bba8-9f23-159f">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="89be-4060-0b69-090b" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6101,7 +6110,7 @@
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
           </characteristics>
@@ -7351,6 +7360,283 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="105"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thulia Ghuld" hidden="false" id="1f03-bba8-9f23-159f" collective="false">
+      <profiles>
+        <profile name="Thulia Ghuld" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="b25c-6f03-363c-1349">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lord of the Machine Cult" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="94a2-5499-8811-bef6">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly MARS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Archmagos Terminus" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0e77-f849-b5d1-c279">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Generate Command Assets step, if this unit is a WARLORD and is on the battlefield, you generate one extra Command Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Master of Machines" id="fb4c-9b1b-2f31-bf00" hidden="false" targetId="b6e5-0a65-9d35-96c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="5c49-41a3-682e-2a21" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Dominus" hidden="false" id="b956-f190-7d89-8326" targetId="2d8f-9d33-fdad-1c71" primary="false"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" hidden="false" id="df61-e003-d290-9bb8" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink name="Faction: Cult Mechanicus" hidden="false" id="c13a-1f8e-3e97-eff9" targetId="4dc1-30a6-aa31-19a9" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="7421-d367-4595-3aa3" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="0cf6-b76b-8c88-e167" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="ef68-fb86-d665-136e" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Tech-Priest" hidden="false" id="83f4-7403-312c-899b" targetId="eb63-c223-c515-ac6b" primary="false"/>
+        <categoryLink targetId="4328-8928-f701-06ea" id="2f66-4aa8-9fdd-7eee" primary="false" name="Thulia Ghuld"/>
+        <categoryLink targetId="45c4-6800-c18a-44e9" id="443d-f64e-123e-4e91" primary="false" name="Faction: Mars"/>
+        <categoryLink targetId="3d69-6d95-89e8-5a92" id="52cb-6aec-3d11-354c" primary="false" name="Archmagos Terminus"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Omnissian Axe" hidden="false" id="398b-b6a5-aa70-95d3" collective="false" targetId="8014-0efb-0c5a-40d5" type="selectionEntry"/>
+        <entryLink import="true" name="Commander" hidden="false" id="212d-dce3-a5c3-aca6" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Conversion Beamer" hidden="false" id="bf64-5ee3-0afe-4b88" type="selectionEntry" targetId="efc5-37e1-d242-48b7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e4-2a95-78ba-05c6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1db-61c9-7064-a330" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="006e-09c1-024f-c23b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="f1c4-0505-96af-af00" name="Hastarii Exterminators" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="212e-3026-64cc-d105" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="9ce3-f574-6625-39db" name="Faction: [FORGE WORLD]" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="f257-5c9d-3bfd-210e" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d0b1-6818-f921-d361" name="Faction: Skitarii" hidden="false" targetId="47b6-38f8-7a3a-5ccd" primary="false"/>
+        <categoryLink id="fbec-1948-c733-a131" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c35b-d543-3fc2-54ca" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="4cc8-029a-b529-5c66" id="251a-79c0-b2da-6fbf" primary="false" name="Hastarii Exterminators"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1250-eb94-986e-6f99" name="Eradication Casters" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="072a-eb2f-83ba-4dce" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b1e-6c04-4b37-7292" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2cfa-bad1-ad53-8cb4" name="Eradication Casters" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7957-f36d-12ab-59cf" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0fa8-bc8c-9db4-60bc" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8c2-9d85-260c-916d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51dd-3920-b184-5226" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="947c-fc70-ba24-57d0" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9019-6110-7005-51a2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="13de-037b-a900-41d9" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="9822-b64c-f5d5-6a73">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e097-5960-64be-4bc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9117-a3d1-ac16-9ceb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="a9e4-9dc5-9793-36ff">
+              <profiles>
+                <profile name="Hastarii Exterminators (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2526-4463-9597-a699">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="2e10-c213-8cb8-1d98">
+              <profiles>
+                <profile name="Hastarii Exterminators (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="cc9f-e627-434f-2eca">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="fcfe-829b-38c2-8946" name="Hastarii Fusiliers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ca8e-6a91-8be1-7a72" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="8478-aeeb-8f4d-0a43" name="Faction: [FORGE WORLD]" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="feeb-20f9-9d7a-86c0" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="6883-fa9b-b69f-f92e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6982-6481-04b2-64cc" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink targetId="47b6-38f8-7a3a-5ccd" id="4ee8-772a-1f46-fe42" primary="false" name="Faction: Skitarii"/>
+        <categoryLink targetId="f2d8-d363-afb1-c681" id="9937-01f2-1795-c7ad" primary="false" name="Hastarii Fusiliers"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3691-29e9-0ff8-c451" name="Neutron Fusils" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0a-ad49-1009-e3c2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb59-9e76-ea79-f199" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="18ea-715b-ca81-1644" name="Neutron Fusils" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ba44-74f1-2010-f0a2" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e06d-7eed-d163-5ec7" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc2-72b6-9bbd-6efa" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1156-69e4-2e9c-76b0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8110-f617-e829-3bb1" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0635-9323-02e4-26a7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Size" id="6f01-2d30-b3af-3781" hidden="false" publicationId="8df9-0b3e-abea-3c15" collective="false" import="true" defaultSelectionEntryId="9822-b64c-f5d5-6a73">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ca9-41e6-ab3c-a1a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ceb-8ab5-e633-cb26" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="5 models" hidden="false" id="2c80-30ad-4465-d1ef">
+              <profiles>
+                <profile name="Hastarii Fusiliers (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2a00-9e29-8368-9546">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="10 models" hidden="false" id="7b6d-666b-da77-b948">
+              <profiles>
+                <profile name="Hastarii Fusiliers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="54ac-80c8-9cd0-0ee2">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

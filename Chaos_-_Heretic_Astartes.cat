@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -16,6 +16,7 @@
     <categoryEntry id="46a5-c3ea-bb1e-a3ea" name="Dark Apostle" hidden="false"/>
     <categoryEntry id="0419-1721-e268-7d27" name="Vashtorr the Arkifane" hidden="false"/>
     <categoryEntry name="Basilisk" id="ddd9-5021-2262-f85b" hidden="false"/>
+    <categoryEntry name="Warsmith Kravek Morne" id="fba1-d735-88d3-5ef8" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e3a-9e52-abb6-9692" name="Hellforged Mastodon" hidden="false" collective="false" import="true" targetId="033e-f9c8-c4b0-2f34" type="selectionEntry">
@@ -1095,6 +1096,20 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="f67e-95e1-a5a8-c5d6" primary="true" name="Lord of War"/>
         <categoryLink targetId="bb96-706c-0589-c037" id="7c3c-9b36-7986-6578" primary="false" name="Faction: [LEGION]"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warsmith Kravek Morne" hidden="false" id="c960-66dd-dfc4-ceb1" type="selectionEntry" targetId="a6dd-28d7-d395-2af8">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="72e5-0b13-cac1-7280" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ec37-1c21-e72d-2ed9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -2382,6 +2397,79 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <categoryLink targetId="d696-177b-a8d8-35c6" id="3559-0d3e-3ada-1bf8" primary="false" name="Faction: Undivided"/>
         <categoryLink targetId="ddd9-5021-2262-f85b" id="b7f6-15c0-a351-76de" primary="false" name="Basilisk"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Warsmith Kravek Morne" hidden="false" id="a6dd-28d7-d395-2af8" collective="false">
+      <profiles>
+        <profile name="Warsmith Kravek Morne" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="20bf-c760-d91d-ae21">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Master of Mechanisms" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="1026-6244-2952-4c5e">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly IRON WARRIORS VEHICLE unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that VEHICLE unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lord of Iron Warriors" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="489b-0d0e-5119-6ca8">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly IRON WARRIORS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iron Mantle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="5057-6527-862a-2984">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Small blast markers must be removed before large blast markers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="e5fd-bbb1-169b-1a20" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Chaos" hidden="false" id="a7d1-f92e-3994-f322" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="c113-f15b-36de-6f1b" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="541a-6a4e-bf98-98c0" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="3d8a-3670-eb87-7dad" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Warpsmith" hidden="false" id="7c41-4e54-aac2-4fa0" targetId="2a0d-b06f-44d4-87c6" primary="false"/>
+        <categoryLink name="Faction: Heretic Astartes" hidden="false" id="1247-5e79-d796-072c" targetId="de3f-40e8-687f-1ca8" primary="false"/>
+        <categoryLink targetId="fba1-d735-88d3-5ef8" id="a305-89f7-9965-ce6c" primary="false" name="Warsmith Kravek Morne"/>
+        <categoryLink targetId="334b-025a-e0ad-e221" id="6bc3-a041-f820-375b" primary="false" name="Faction: Iron Warriors"/>
+        <categoryLink targetId="24bd-5192-53cb-efe8" id="f2c6-33af-5e40-0ae2" primary="false" name="Terminator"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="6f88-3c17-16fe-29e7" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1610-35d2-e344-7711" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Last Argument" hidden="false" id="7821-b65d-2c07-2bd7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0836-e3bd-505e-35ee" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26f1-893e-0c31-fcb6" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Last Argument" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8837-2793-4de6-c775">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

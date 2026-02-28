@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="14" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="67d0-873b-d760-b8b6" name="Imperium - Imperial Knights" revision="15" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a6fe-fc09-5627-ff05" name="Faction: Imperial Knights" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="d37d-c3f9-f400-4093" name="Faction: [QUESTOR ALLEGIANCE]" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -34,6 +34,8 @@
     <categoryEntry id="25ea-afc0-1d5c-08dc" name="Knight Asterius" hidden="false"/>
     <categoryEntry id="6247-1fda-bdc0-0d1e" name="Armiger Moirax" hidden="false"/>
     <categoryEntry name="Knight Defender" id="fd10-c9f8-5a11-fffa" hidden="false"/>
+    <categoryEntry name="Knight Destrier" id="10ab-b96d-5b3e-b7f1" hidden="false"/>
+    <categoryEntry name="Bellatus Class" id="3df2-1600-58c2-2e93" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="848c-516f-46b0-a227" name="Sacristan Forgeshrine" hidden="false" collective="false" import="true" targetId="5853-cb10-ede1-3e7d" type="selectionEntry">
@@ -144,6 +146,11 @@
     <entryLink import="true" name="Knight Defender" hidden="false" id="0a95-9e43-2f05-28a9" type="selectionEntry" targetId="ae74-51ee-e1e6-9e5f">
       <categoryLinks>
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="aa6a-2d64-cf10-9002" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Knight Destrier" hidden="false" id="f8fb-1913-4c08-e8ee" type="selectionEntry" targetId="1cc7-ed9a-5522-127a">
+      <categoryLinks>
+        <categoryLink targetId="9030-584a-81ae-9e31" id="119b-375d-a5d6-e9c3" primary="true" name="Super-heavy"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3057,6 +3064,157 @@ One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a 
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="1cc7-ed9a-5522-127a" name="Knight Destrier" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="e998-d1dd-00dd-4565" name="Knight Destrier" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="309f-2166-2dd9-acde" name="Destroyed" hidden="false" targetId="abd1-8c2e-fb0f-e980" type="rule"/>
+        <infoLink id="3df2-2873-9f46-b97a" name="Engines of War" hidden="false" targetId="976e-f8cb-6d17-de4e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5c10-f16a-9ebe-4a74" name="Faction: Imperial Knights" hidden="false" targetId="a6fe-fc09-5627-ff05" primary="false"/>
+        <categoryLink id="13da-3c47-a97d-0966" name="Faction: [QUESTOR ALLEGIANCE]" hidden="false" targetId="d37d-c3f9-f400-4093" primary="false"/>
+        <categoryLink id="0eee-e4b0-3243-b2a5" name="Faction: [HOUSEHOLD]" hidden="false" targetId="296b-2a4e-2b42-19b3" primary="false"/>
+        <categoryLink id="2ca0-8311-2566-da95" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2ddc-4328-b3bb-b93c" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="391c-38c0-6154-f02c" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="beed-a2c3-c6ed-f4ae" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink targetId="3df2-1600-58c2-2e93" id="56d8-651c-3fca-ef3d" primary="false" name="Bellatus Class"/>
+        <categoryLink targetId="10ab-b96d-5b3e-b7f1" id="3896-5282-c3fd-5171" primary="false" name="Knight Destrier"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d7c8-cd29-37c2-2b45" name="Shoulder Weapon Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="3124-d305-3522-91c0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c165-6baa-ddf9-754f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff08-ca33-1765-74ea" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4da1-e1a9-bb06-23a8" name="Meltagun" hidden="false" collective="false" import="true" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e28e-e9b2-ef7d-f929" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="df9e-61f2-75dd-4509" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc0c-961f-aaac-615b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapon" id="5ecc-a953-43dc-57ea" hidden="false" defaultSelectionEntryId="ae87-95d5-c168-56f5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a29-2124-e4c0-040d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d6-cb4c-4f8d-2e13" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bellatus Reaper Chainsword" hidden="false" id="ae87-95d5-c168-56f5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ea-59b2-c660-8842" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bellatus Reaper Chainsword" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="d4ee-5d39-bb4c-77d7">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Destroyer" id="710e-757b-2438-23f4" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thundershock Spear" hidden="false" id="5e60-1fe7-b284-8bd2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6563-4452-0d23-cf9e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Thundershock Spear" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="b5df-ced5-104d-10c3">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Destroyer" id="029d-368c-bec9-5222" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged Weapon" id="eb33-29a7-5e27-55c6" hidden="false" defaultSelectionEntryId="e38b-e4e2-e73c-db95">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3816-0e7e-db45-223c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7020-0648-287a-0ca6" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Bombard" hidden="false" id="8b77-3e71-e590-5db9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28d2-ddb1-13e9-8772" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Frag Bombard" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f90f-a8ae-a754-a8ab">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Barrage" id="1a68-400f-0622-8534" hidden="false" type="rule" targetId="7296-134e-970b-4790"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chastiser Gatling Cannon" hidden="false" id="e38b-e4e2-e73c-db95">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe79-257e-98e7-8fbc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Chastiser Gatling Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9854-0d15-52a9-67e9">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ebd8-fef1-5944-f02f" name="Character (Knight Lances)" hidden="false" collective="false" import="true" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
+        <entryLink id="f66e-4290-4d9d-ed7f" name="Warmaster" hidden="false" collective="false" import="true" targetId="1509-e8a6-2816-95d2" type="selectionEntry"/>
+        <entryLink id="b737-3588-149a-c4a1" name="Commander" hidden="false" collective="false" import="true" targetId="8b69-e9c3-4cfe-7fa3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

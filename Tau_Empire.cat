@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d119-e2e1-f336-83fb" name="T&apos;au Empire" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="6e11-42ed-c084-ce74" name="Datasheet T&apos;au Empire"/>
     <publication id="e282-a216-345a-e73a" name="Datasheet FW T&apos;au Empire"/>
@@ -87,6 +87,7 @@
     <categoryEntry id="76eb-f4dd-c8bf-e7f3" name="Kroot Lone-spear" hidden="false"/>
     <categoryEntry id="fe83-8e75-08f5-0cc3" name="Kroot Farstalkers" hidden="false"/>
     <categoryEntry id="b6b4-0b9d-2c78-0715" name="Krootox Rampagers" hidden="false"/>
+    <categoryEntry name="The Twin Lance" id="ea40-4346-51be-c17e" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="1b3c-ffd5-59f4-28b7" name="Commander Shadowsun" hidden="false" collective="false" import="true" targetId="ccb7-9961-bfa0-718f" type="selectionEntry">
@@ -417,6 +418,11 @@
     <entryLink import="true" name="The Eight" hidden="false" id="3c61-849e-edbc-7731" type="selectionEntry" targetId="3321-8246-965c-4a65">
       <categoryLinks>
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="8d89-5a85-5930-42df" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Twin Lance" hidden="false" id="05f1-727c-837e-3b8f" type="selectionEntry" targetId="dcc0-1eba-1e46-d134">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="18e6-2faf-059b-c936" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10501,6 +10507,167 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="The Twin Lance" hidden="false" id="dcc0-1eba-1e46-d134">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9850-9bc5-c636-3e67" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="30be-2747-6653-ac49" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Gun Drone" hidden="false" id="52c6-c833-c5e6-6dfd" type="selectionEntry" targetId="fc45-6ff1-407e-3515">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="963d-8fab-46dd-c9e8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="ea40-4346-51be-c17e" id="406f-7299-c3f6-e190" primary="false" name="The Twin Lance"/>
+        <categoryLink targetId="b408-d848-fa84-cfb9" id="4f1e-4f22-2f32-c974" primary="false" name="Fly"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="5a99-6dcf-eb0c-756b" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="b3e5-537e-e289-b289" primary="false" name="Character"/>
+        <categoryLink targetId="cddc-e90c-2a2c-cc25" id="a02f-96dc-7af8-99ce" primary="false" name="Battlesuit"/>
+        <categoryLink targetId="b9f7-43d5-dd6a-0b50" id="9769-d3b2-128d-14cf" primary="false" name="Jet Pack"/>
+        <categoryLink targetId="0ab2-e0c9-6254-5de7" id="e054-7f0b-0dfe-e13d" primary="false" name="Faction: T&apos;au Empire"/>
+        <categoryLink targetId="13b0-eb31-2aeb-6a2b" id="75af-c1d5-8970-32ae" primary="false" name="Faction: [SEPT]"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="The Twin Lance" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="da3f-eb18-2a1c-1629">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Exemplars of Mont&apos;ka" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="15bd-857f-cfe8-6ebc">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, at the start of the Action phase, this unit can declare Mont&apos;ka even if Kauyon or Mont’ka has already been declared. Mont’ka and Kauyon cannot be both declared in the same turn.
+
+For the purpose of the Master of War ability, this unit counts as a Commander.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusion Eliminator" hidden="false" id="26f6-16ab-a388-54ad">
+          <profiles>
+            <profile name="Fusion Eliminator (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f0ac-7b1c-b6b9-4fa8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fusion Eliminator (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9a7b-4379-e706-efc2">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a75-c346-7918-b477" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f0a-6b64-1286-7990" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ion Scattercannon" hidden="false" id="894d-a2f0-0aa0-7ae3">
+          <profiles>
+            <profile name="Ion Scattercannon (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="afd1-cd96-4896-95c1">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire, Supercharge</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ion Scattercannon (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="918d-b400-79ad-9919">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Supercharge" id="589f-9900-4fa3-6335" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+            <infoLink name="Rapid Fire" id="30d3-8d9a-37f9-1de0" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beb3-0270-fe68-9c0f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b01-d19a-3558-89a5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="XV Pulse Pistol" hidden="false" id="2219-ae4b-bf95-aa58">
+          <profiles>
+            <profile name="XV Pulse Pistol (Melee)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="9fe4-3aa6-75c7-281f">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="XV Pulse Pistol (Ranged)" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="439d-3402-948b-d6f0">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db7-4d6f-cb22-427e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e83-44f3-9646-6a69" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="ec59-a1f9-eedf-78a4" hidden="false" type="rule" targetId="5b2f-f499-bdcd-e45d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shardstorm Burst System" hidden="false" id="5263-0dd3-8fe6-d680">
+          <profiles>
+            <profile name="Shardstorm Burst System" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="0ebf-8c26-c31f-891f">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be22-3275-d92c-f4ea" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5db0-17a6-6408-1fe5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="39"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Master of War" id="acdf-c51e-2467-8b43" hidden="false" type="profile" targetId="a04c-f866-5ae9-ab55"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

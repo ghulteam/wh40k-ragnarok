@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="19" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5c86-8944-3ad3-8a04" name="Leagues of Votann" revision="20" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="c004-b9ae-7fc1-1792" name="Faction: Votann" hidden="false"/>
     <categoryEntry id="2cef-fe29-df2b-471f" name="Hearthkyn Warriors" hidden="false"/>
@@ -18,13 +18,15 @@
     <categoryEntry id="9f04-2063-a5df-7341" name="Exo-Armour" hidden="false"/>
     <categoryEntry id="b645-cb83-8bc5-81c3" name="Exo-Frame" hidden="false"/>
     <categoryEntry id="3019-02e0-6e96-eed6" name="Hernkyn Yaegirs" hidden="false"/>
-    <categoryEntry name="Cthonian Beserks Champion" id="248e-dda1-c969-6d9d" hidden="false"/>
+    <categoryEntry name="Cthonian Beserk Champion" id="248e-dda1-c969-6d9d" hidden="false"/>
     <categoryEntry name="Kapricus" id="9078-6566-6c7b-c91f" hidden="false"/>
     <categoryEntry name="Buri Aegnirssen the Thrice-devoured" id="ef8e-dafe-7f0a-448d" hidden="false"/>
     <categoryEntry name="Cthonian Earthshaker" id="73d0-15dc-5eb4-8153" hidden="false"/>
     <categoryEntry name="Memnyr Strategist" id="7468-a7d2-46ad-f43a" hidden="false"/>
     <categoryEntry name="Steeljacks" id="128f-a262-bc2d-4646" hidden="false"/>
     <categoryEntry name="Arkanyst Evaluators" id="c58d-708c-7202-aaf3" hidden="false"/>
+    <categoryEntry name="Cthonian" id="5038-71e8-87f4-9142" hidden="false"/>
+    <categoryEntry name="Berehk Stornbröw" id="00b9-b06f-e5d6-6a5b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="c4f1-12a9-8941-26c7" name="Hearthkyn Warriors" hidden="false" collective="false" import="true" targetId="a795-276f-7f60-479e" type="selectionEntry">
@@ -122,6 +124,11 @@
     <entryLink import="true" name="Buri Aegnirssen the Thrice-devoured" hidden="false" id="5cf8-b5cf-e51f-4928" type="selectionEntry" targetId="7d31-b0f1-8130-497c">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="699d-079b-6941-ea81" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Berehk Stornbröw" hidden="false" id="eb6e-c69e-df28-49bd" type="selectionEntry" targetId="a5da-d159-ad49-a164">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="886e-dc5a-0902-af92" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -230,7 +237,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1127-c75c-30a4-394c" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="789d-30b2-5226-c1c9" name="Autoch-pattern bolter" hidden="false" collective="false" import="true" targetId="04f1-3a8a-c774-ac18" type="selectionEntry">
+            <entryLink id="789d-30b2-5226-c1c9" name="Autoch-pattern Bolters" hidden="false" collective="false" import="true" targetId="04f1-3a8a-c774-ac18" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d7-5a63-4342-02b9" type="max"/>
               </constraints>
@@ -871,7 +878,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eace-65de-26c4-72c9" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="422a-62ac-3740-8886" name="Volkanite disintegrator" hidden="false" collective="false" import="true" targetId="44fe-6497-abd8-1f3f" type="selectionEntry"/>
+            <entryLink id="422a-62ac-3740-8886" name="Volkanite disintegrators" hidden="false" collective="false" import="true" targetId="44fe-6497-abd8-1f3f" type="selectionEntry"/>
             <entryLink id="ef81-1ae0-50e4-e6d3" name="EtaCarn plasma guns" hidden="false" collective="false" import="true" targetId="29a7-db2b-4364-2160" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -1968,9 +1975,9 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Chtonian Beserks Champion" hidden="false" id="4f71-797a-fec1-61ec" collective="false">
+    <selectionEntry type="unit" import="true" name="Cthonian Beserk Champion" hidden="false" id="4f71-797a-fec1-61ec" collective="false">
       <profiles>
-        <profile name="Chtonian Beserks Champion" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9a58-7515-27e9-c9b5">
+        <profile name="Chtonian Beserk Champion" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="9a58-7515-27e9-c9b5">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -1983,7 +1990,7 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         </profile>
         <profile name="Cyberstimms" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b977-6a77-86f8-0c08">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [LEAGUE] CTHONIAN BESERK unit starts a Move action within 7&quot; of any friendly units with this ability, add 2&quot; to that unit’s Move characteristic for that action.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly [LEAGUE] CTHONIAN unit starts a Move action within 6&quot; of any friendly units with this ability, add 2&quot; to that unit’s Move characteristic for that action.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1993,11 +2000,11 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
         <categoryLink name="Faction: [LEAGUE]" hidden="false" id="edab-a29e-e3ef-334a" targetId="2e93-f104-3473-9b4a" primary="false"/>
         <categoryLink name="Faction: Votann" hidden="false" id="9905-996b-8a9a-4c8f" targetId="c004-b9ae-7fc1-1792" primary="false"/>
         <categoryLink name="Character" hidden="false" id="3436-aa0c-e703-0b13" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink targetId="24e4-f4e1-9028-1eb5" id="289d-b9a7-b1c4-8614" primary="false" name="Cthonian Beserks"/>
         <categoryLink targetId="248e-dda1-c969-6d9d" id="e997-dc51-aee1-ce26" primary="false" name="Cthonian Beserks Champion"/>
+        <categoryLink targetId="5038-71e8-87f4-9142" id="a266-4795-e2a0-6c63" primary="false" name="Cthonian"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Masterful Beserks Weapons" hidden="false" id="27d6-7a45-9366-08bd" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Masterful Beserk Weapons" hidden="false" id="27d6-7a45-9366-08bd" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f9-45b2-230c-4890" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="307c-3adf-fdad-d40f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2008,8 +2015,8 @@ Two Tokens - Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -2317,7 +2324,7 @@ This Unit may Supercharge their weapon twice, resulting in two blast markers on 
             <entryLink import="true" name="Commander" hidden="false" id="acd8-5b04-e9e3-2feb" type="selectionEntry" targetId="7347-5716-355f-9165"/>
           </entryLinks>
           <categoryLinks>
-            <categoryLink targetId="73d0-15dc-5eb4-8153" id="41f3-75ce-28c2-4528" primary="false" name="Cthonian Earthshakers"/>
+            <categoryLink targetId="73d0-15dc-5eb4-8153" id="41f3-75ce-28c2-4528" primary="false" name="Cthonian Earthshaker"/>
           </categoryLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="8"/>
@@ -2364,6 +2371,67 @@ This Unit may Supercharge their weapon twice, resulting in two blast markers on 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Berehk Stornbröw" hidden="false" id="a5da-d159-ad49-a164">
+      <profiles>
+        <profile name="Berehk Stornbröw" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d5a6-89fb-a6b3-b9db">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Break the Foe" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4e0f-6360-1abd-f532">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made with melee weapons by friendly CTHONIAN units whilst they are within 6&quot; of any units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bfdb-785e-4cdd-f758" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ignore Damage (5+)" id="50e4-2b06-e9b3-5aa3" hidden="false" type="profile" targetId="958c-7037-989a-6da0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="0dfe-842b-6aac-9770" primary="false" name="Infantry"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="30dc-bb38-ad66-eb3b" primary="false" name="Light"/>
+        <categoryLink targetId="4b9a-33b1-3b42-e3f8" id="307c-bde0-4bec-2276" primary="false" name="Character"/>
+        <categoryLink targetId="c004-b9ae-7fc1-1792" id="43d8-15a0-89dc-aa03" primary="false" name="Faction: Votann"/>
+        <categoryLink targetId="2e93-f104-3473-9b4a" id="d6d8-d5d3-975b-cee1" primary="false" name="Faction: [LEAGUE]"/>
+        <categoryLink targetId="5038-71e8-87f4-9142" id="1285-c3ae-d01f-f4cf" primary="false" name="Cthonian"/>
+        <categoryLink targetId="00b9-b06f-e5d6-6a5b" id="df5c-85d8-f533-8963" primary="false" name="Berehk Stornbröw"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kromlôk’s Revenge" hidden="false" id="d502-52b3-4950-3b49">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50fb-a0df-c0ba-ddea" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d97e-c1a5-08dd-187a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Kromlôk’s Revenge" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="3df1-d65e-752e-4943">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="51cb-3a82-5605-2474" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
