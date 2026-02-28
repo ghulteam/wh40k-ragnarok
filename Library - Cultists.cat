@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="7379-19d7-22ee-be35" name="Library - Lost and Damned" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="32" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="7379-19d7-22ee-be35" name="Library - Lost and Damned" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="32" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Library - Chaos" id="f40d-ed88-81eb-a788" targetId="e1a8-50a4-821a-eda1"/>
     <catalogueLink type="catalogue" name="Library - Weapons" id="dbdf-7ddf-a065-73e1" targetId="4c20-063f-968c-8547"/>
@@ -106,6 +106,24 @@
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 models" hidden="false" id="a793-9c50-4638-376f">
+              <profiles>
+                <profile name="Traitor Guardsmen (20 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="92ef-95e2-f966-d505">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9e5-b0b8-d02f-c469" includeChildSelections="false"/>
@@ -115,9 +133,6 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Beastmen" hidden="false" id="9ebe-8cfb-3f7e-2514" collective="false">
-      <infoLinks>
-        <infoLink name="Slaves to Mallex" id="9951-1279-addf-0d12" hidden="false" targetId="83db-9b0e-261b-c07f" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Chaos" hidden="false" id="54e8-3990-9259-f85d" targetId="841f-fc30-da92-90cf" primary="false"/>
         <categoryLink name="Light" hidden="false" id="58cf-729f-02dc-8671" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
@@ -650,9 +665,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Slaves to Mallex" id="3a4b-1a79-7c8d-e616" hidden="false" targetId="83db-9b0e-261b-c07f" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Chaos" hidden="false" id="3c99-95d3-ec51-9b8f" targetId="841f-fc30-da92-90cf" primary="false"/>
         <categoryLink name="Light" hidden="false" id="b518-889d-efec-0521" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
@@ -1251,8 +1263,80 @@
         <infoLink name="Ignore Damage (6+)" id="3696-cdc4-ef46-6473" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Size" id="100f-4e9b-41ba-8ff1" hidden="false"/>
+        <selectionEntryGroup name="Unit Size" id="100f-4e9b-41ba-8ff1" hidden="false" defaultSelectionEntryId="02fa-1a72-ae24-16aa">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Poxhounds (4 models)" hidden="false" id="02fa-1a72-ae24-16aa">
+              <profiles>
+                <profile name="Poxhounds (4 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="c751-4485-2f73-b78f">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">3</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Poxhounds (8 models)" hidden="false" id="6cb7-cac0-04e1-0b8f">
+              <profiles>
+                <profile name="Poxhounds (8 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="a888-7efb-f5d6-b333">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">3</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Poxhounds (12 models)" hidden="false" id="f5a5-b76b-939f-af4d">
+              <profiles>
+                <profile name="Poxhounds (12 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2edd-1d48-40a2-a018">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">3</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9c0-2081-e88a-69c3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="907e-806e-4e38-b806" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claws and Teeth" hidden="false" id="d2af-2b43-5231-6c1c">
+          <profiles>
+            <profile name="Claws and Teeth" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4eaa-b32b-3e6a-c738">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1833-01a6-00e5-aec9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd22-d1fe-c944-2ce7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
