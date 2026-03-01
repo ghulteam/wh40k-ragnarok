@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="31" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -105,6 +105,10 @@
     <categoryEntry name="Beast Snagga Boyz" id="fe9d-f2b1-95fe-b94b" hidden="false"/>
     <categoryEntry name="Squighog Boyz" id="cb0b-7ccb-7824-3c92" hidden="false"/>
     <categoryEntry name="Dictator van Straab" id="e3b4-e9b0-3149-9fa6" hidden="false"/>
+    <categoryEntry name="Gargant" id="84e8-c4fd-f4fa-6b2e" hidden="false"/>
+    <categoryEntry name="Mega-Gargant" id="f303-3274-950e-676a" hidden="false"/>
+    <categoryEntry name="Great Gargant" id="0f8e-c2d2-a6ce-71f4" hidden="false"/>
+    <categoryEntry name="Supa-Stompa" id="90ea-00b8-65ac-8d31" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
@@ -547,6 +551,11 @@
     <entryLink import="true" name="Dictator van Straab &amp; Nobz" hidden="false" id="b775-49eb-7104-f599" type="selectionEntry" targetId="70f7-69cf-c583-c1ab">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="3649-3e6a-0b71-ed2a" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Supa-Stompa" hidden="false" id="fb75-06a4-79d8-e674" type="selectionEntry" targetId="1e13-66a2-e5cf-9c16">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="50f9-34f3-e42a-e32c" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2584,30 +2593,6 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         <categoryLink id="f744-2866-e118-6742" name="Kustom Stompa" hidden="false" targetId="4bdf-de7d-4a1f-8074" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1fa1-bea0-b840-e9fe" name="Gaze of Mork" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3825-86d3-7c66-0c71" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfe-acf9-9d98-aaec" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6438-a240-766c-9fad" name="Gaze of Mork" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8e6d-f908-edc6-1acb" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="fb93-66cb-035c-f8f9" name="Mega Klaw" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d93-8bc7-f2e7-a1c7" type="min"/>
@@ -2740,6 +2725,12 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8880-08f2-a3db-1e9f" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-0c00-2e76-bca1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gaze of Mork" hidden="false" id="2ec9-04f7-6eb1-2b47" type="selectionEntry" targetId="6c03-06f8-5824-8dee">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0315-d790-f02b-223d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5bc-e3a8-2cce-2e5f" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6552,14 +6543,10 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="26dd-d9a6-9c85-af0e" name="Stompa Rigger Krew" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair itself. If it does, roll one D6; on a 4+, remove one damage marker from this unit. Only one attempt to repair each unit can be made each turn.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="51b3-ff60-f052-2896" name="Effigy" hidden="false" targetId="5aab-1ee5-6f53-88ef" type="profile"/>
+        <infoLink name="Stompa Rigger Krew" id="3b57-9d8b-35b6-55b9" hidden="false" type="profile" targetId="b970-1843-50c1-2337"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dabb-85dc-a21f-4b2e" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
@@ -7485,25 +7472,30 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16d4-7c03-45ac-6659" name="Lifta Droppa (Stompa)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="16d4-7c03-45ac-6659" name="Supa-Lifta Droppa" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="effe-9441-f9d4-a764" name="Lifta Droppa (Stompa)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="effe-9441-f9d4-a764" name="Supa-Lifta Droppa" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Lifta Droppa</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer, Supa-Lifta Droppa</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8295-5380-cd17-ff83" name="Lifta Droppa" hidden="false" targetId="3c56-0907-3b21-244e" type="rule"/>
+        <infoLink name="Destroyer" id="12af-7a26-f562-76f0" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
       </infoLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
       </costs>
+      <rules>
+        <rule name="Supa-Lifta Droppa" id="8714-52d6-cd3f-2ee0" hidden="false">
+          <description>If an attack made with a Lifta-droppa successfully wounds a HEAVY unit, roll one D12; on a 5+ place two blast marker next to that unit.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="df30-d581-9646-d09d" name="Supa-gatler" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10834,6 +10826,239 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         <categoryLink targetId="559e-10b0-6b63-c613" id="1332-4f6a-f760-800d" primary="false" name="Nobz"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="2ed6-1e64-2a02-4b65" name="Gargant" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="16a1-4c7f-59a4-c1ca" name="Gargant (Transport)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 44 friendly FLASH GITZ or [CLAN] INFANTRY models. Each MEGA ARMOUR or JUMP PACK model takes the space of 2 other INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="840b-0973-e687-d69c" name="Gargant" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">16</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7009-c426-914f-ae08" name="Gargant Rigger Krew" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair itself. If it does, roll two D6; for each 4+, remove one damage marker from this unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Powa Field" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9f16-2ce4-bed1-80e8">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Large blast markers must be removed before small blast markers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c4b5-4264-4f1d-dd99" name="Effigy" hidden="false" targetId="5aab-1ee5-6f53-88ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9faa-58f2-d387-bb0f" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="a4ee-ef4b-7d94-6fd7" name="Faction: [CLAN]" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="da16-c9bd-3912-b018" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="29d4-4664-82a2-c957" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="993b-0941-fae6-dda0" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="9d62-34a6-c28c-c60d" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink targetId="84e8-c4fd-f4fa-6b2e" id="34cf-3a01-0236-62d7" primary="false" name="Gargant"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0cea-b3bd-a99e-aea7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="6e75-aa60-450c-9bc5" name="Supa-rokkit" hidden="false" collective="false" import="true" targetId="8eaa-5e04-c287-af98" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8668-f14d-0824-6a25" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fe0-9399-5d0c-7710" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0f5b-2fbd-816c-3cff" name="Two Supa-rokkits" hidden="false" collective="false" import="true" targetId="5959-8760-3abc-a7dc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="4"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67be-14e7-ff22-c391" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1dca-33e4-89f6-b2a6" name="Big Shoota" hidden="false" collective="false" import="true" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbb1-e246-a9aa-8ccb" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2026-016b-41d0-b7a7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fa4a-1ff7-c53c-1730" name="Deffkannon" hidden="false" collective="false" import="true" targetId="3520-90fa-c5d7-8a54" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf2c-c4df-93eb-835a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdf-b60f-12f8-6b8e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3de1-0e83-c9f5-1815" name="Supa-gatler" hidden="false" collective="false" import="true" targetId="df30-d581-9646-d09d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="070d-76a2-b308-1df2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d5b-331a-ac8a-80b9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe46-026a-6be8-2151" name="Mega-Choppa" hidden="false" collective="false" import="true" targetId="dd7a-d8ff-9e02-3732" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7821-bcaa-70bc-3158" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5d3-c83a-6e4d-7130" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0a72-20a1-b613-49f7" name="Skorcha" hidden="false" collective="false" import="true" targetId="350c-c6dc-abb8-2507" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b917-52c6-ec67-4bd3" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c09d-e68f-7c2e-3c67" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="198"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1e13-66a2-e5cf-9c16" name="Supa-Stompa" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9bc4-ffc4-88e1-b0ac" name="Supa-Stompa (Transport)" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 33 friendly FLASH GITZ or [CLAN] INFANTRY models. Each MEGA ARMOUR or JUMP PACK model takes the space of 2 other INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e06-b87b-487e-4629" name="Supa-Stompa" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">12</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6706-2576-be1f-44df" name="Effigy" hidden="false" targetId="5aab-1ee5-6f53-88ef" type="profile"/>
+        <infoLink name="Stompa Rigger Krew" id="fccf-6694-2791-484a" hidden="false" type="profile" targetId="b970-1843-50c1-2337"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7203-8d13-fd43-1b29" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="8c8f-9cd8-f56e-91b3" name="Faction: [CLAN]" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="8e2c-abf8-7587-28c7" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="0a20-117e-67ee-9677" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="5fd8-32c5-4110-6ab6" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink targetId="90ea-00b8-65ac-8d31" id="489c-5c1a-dabd-ab46" primary="false" name="Supa-Stompa"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9e7d-03f1-c57e-d89a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="6617-ffde-0f43-9275" name="Big Shoota" hidden="false" collective="false" import="true" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-2512-6857-9ff3" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b20-430f-698f-d938" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6a27-8fd1-8cc6-5b5e" name="Skorcha" hidden="false" collective="false" import="true" targetId="350c-c6dc-abb8-2507" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e085-ac25-4dc5-ad0d" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53ce-ccf1-a6d6-f1bb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gaze of Mork" hidden="false" id="1a95-7d68-824f-d411" type="selectionEntry" targetId="6c03-06f8-5824-8dee">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02fc-c181-3156-0105" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06cf-d52e-eb58-3223" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="168"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Titanic Bulk" hidden="false" id="cfb3-023b-ab59-9eb9">
+          <profiles>
+            <profile name="Titanic Bulk" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="30de-64bf-4e22-1477">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c672-817a-5fd9-6bf0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1c1-3d5d-ba5e-7050" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Kustom Weapons" id="96df-fdba-5ca6-925a" hidden="false" defaultSelectionEntryId="75e2-4a45-b594-48cd">
+          <entryLinks>
+            <entryLink import="true" name="Mega-Choppa" hidden="false" id="9be8-7b71-2604-708c" type="selectionEntry" targetId="dd7a-d8ff-9e02-3732">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="775a-61bb-38dd-241b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Supa-gatler" hidden="false" id="75e2-4a45-b594-48cd" type="selectionEntry" targetId="df30-d581-9646-d09d">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="83e1-a16a-3627-ad6b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rippa Fist" hidden="false" id="9bd8-5f65-5dd5-2626" type="selectionEntry" targetId="e3af-672f-0d0b-f561">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c69f-5f92-a805-e6d6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Supa-Zzap Gun" hidden="false" id="32f1-d7fa-5839-adc2" type="selectionEntry" targetId="a1b4-a090-869a-0514">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8415-ab02-35cb-c2a3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Supa-Lifta Droppa" hidden="false" id="593d-929f-c995-70dd" type="selectionEntry" targetId="16d4-7c03-45ac-6659"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9bbe-d936-037a-e43f" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8a53-c750-68a5-2cec" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rippa Fist" hidden="false" id="e3af-672f-0d0b-f561">
+      <profiles>
+        <profile name="Rippa Fist" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="bdeb-8db6-ba86-810a">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Destroyer" id="0252-bf33-c5e3-8676" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supa-Zzap Gun" hidden="false" id="a1b4-a090-869a-0514">
+      <profiles>
+        <profile name="Supa-Zzap Gun" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="a32a-7bbf-2df3-dcf0">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Apocalyptic Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Apocalyptic Destroyer" id="0469-24df-4b19-00ef" hidden="false" type="rule" targetId="2315-eb7a-ff97-9084"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="3c56-0907-3b21-244e" name="Lifta Droppa" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -10864,6 +11089,11 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
     <profile id="8c37-ddc6-af2a-1d62" name="Beast Snagga" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to wound rolls for attacks made by this unit when targeting MONSTER or VEHICLE units.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stompa Rigger Krew" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="b970-1843-50c1-2337" publicationId="8df9-0b3e-abea-3c15">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair itself. If it does, roll one D6; on a 4+, remove one damage marker from this unit. Only one attempt to repair each unit can be made each turn.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
