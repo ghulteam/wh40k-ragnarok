@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3c62-1193-2a3e-3d28" name="Necrons" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="68dd-6404-9212-3a21" name="Mechanical Augmentation">
       <characteristicTypes>
@@ -5530,8 +5530,8 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <profile id="db68-f555-a7ad-c658" name="Skorpekh Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
@@ -6745,13 +6745,13 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
     </selectionEntry>
     <selectionEntry id="0f97-d135-9b05-6a76" name="Nekrosor Ammentar" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="512e-27d5-9447-a5d1" name="Nekrosor Ammentar" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="512e-27d5-9447-a5d1" name="Nekrosor Ammentar" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
@@ -6759,6 +6759,11 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <profile id="22f3-8d7e-ab87-cf19" name="United in Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly [DYNASTY] DESTROYER CULT units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nullstone Field Generator" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="9324-d883-4ce5-b3de">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Everytime a friendly NECRONS unit within 6&quot; of this unit would suffer one or more blast marker from the effect of a psychic power, roll one D6 for every blast marker the unit would suffer; for each 5+ ignore one blast marker.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6776,19 +6781,19 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <categoryLink targetId="da90-b245-ba7e-3731" id="da46-cbb5-67fd-b89e" primary="false" name="Nekrosor Ammentar"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f706-9130-f985-0417" name="Hyperphase Harvester" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f706-9130-f985-0417" name="Unmaker Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e6f-0f7b-669a-aea0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b149-568a-44c1-12e8" type="max"/>
           </constraints>
           <profiles>
-            <profile id="edd2-a02f-6121-290b" name="Hyperphase Harvester" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="edd2-a02f-6121-290b" name="Unmaker Gauntlet" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -6797,17 +6802,17 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="525a-bc2a-c737-aa78" name="Enmitic Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="525a-bc2a-c737-aa78" name="Enmitic Disintegrators " hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bffb-3e16-3735-d5a8" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac5-7aa1-3ee9-b227" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9cf4-e011-db1e-2828" name="Enmitic Annihilator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="9cf4-e011-db1e-2828" name="Enmitic Disintegrators" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -6823,7 +6828,7 @@ At the start of each turn, roll one D6 for each damage marker next to each NECRO
         <entryLink id="e273-3920-dd4f-6066" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="16"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="21"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae78-462a-478d-2140" name="Geomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
