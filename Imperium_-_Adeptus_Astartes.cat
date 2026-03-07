@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="58" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="59" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -101,6 +101,8 @@
     <categoryEntry name="Suboden Khan" id="3141-c1e0-e929-7e23" hidden="false"/>
     <categoryEntry name="Caanok Var" id="afe2-7b1f-e451-46f5" hidden="false"/>
     <categoryEntry name="Uriel Ventris" id="37f0-0529-7b9f-c560" hidden="false"/>
+    <categoryEntry name="Ferren Areios" id="c5b0-49ad-767e-0959" hidden="false"/>
+    <categoryEntry name="Wardens of Ultramar" id="9891-5cd2-b195-0e5c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -1438,6 +1440,16 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <categoryLinks>
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="3300-1de0-ad07-e977" primary="true" name="Lord of War"/>
         <categoryLink targetId="fe0e-e179-5b4e-c377" id="cd0b-43f8-bff7-7f0a" primary="false" name="Faction: [CHAPTER]"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Captain Ferren Areios" hidden="false" id="d430-8556-0f1c-6e09" type="selectionEntry" targetId="f124-81e0-9074-62c3">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="f5c1-fe57-5713-9563" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wardens of Ultramar" hidden="false" id="9449-e946-2e9d-d533" type="selectionEntry" targetId="a7ce-0d15-70c8-638f">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="6a75-a202-d7ad-2e6d" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6788,7 +6800,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Size" id="652f-8971-f694-8dc4" hidden="false">
+        <selectionEntryGroup name="Unit Size" id="652f-8971-f694-8dc4" hidden="false" defaultSelectionEntryId="0b1e-520c-91db-9eef">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="02 models" hidden="false" id="d025-1365-7b30-0fcc">
               <profiles>
@@ -6807,24 +6819,16 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="04 models" hidden="false" id="8417-6771-b1b5-6c7c">
-              <profiles>
-                <profile name="Victrix Honour Guard (4 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8617-f120-dd92-891b">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
-              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0aed-6381-9539-c26c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="0aed-6381-9539-c26c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f263-60c8-d830-261f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="06 models" hidden="false" id="8f13-22d8-89ef-cbb3">
               <profiles>
@@ -6843,6 +6847,52 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="30"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="03 models" hidden="false" id="0b1e-520c-91db-9eef">
+              <profiles>
+                <profile name="Victrix Honour Guard (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="89f4-b210-6545-9568">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="08 models" hidden="false" id="f263-60c8-d830-261f">
+              <profiles>
+                <profile name="Victrix Honour Guard (8 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="8883-7d1c-1142-79c5">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="40"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="064e-b33e-c620-d2d4" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="064e-b33e-c620-d2d4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d025-1365-7b30-0fcc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -7757,6 +7807,177 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       <infoLinks>
         <infoLink name="Deep Strike" id="34e3-120d-69a8-edc9" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f124-81e0-9074-62c3" name="Captain Ferren Areios" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09c-75c6-e457-0c51" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ef7-bddb-5a9c-223a" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d57e-7a02-2204-1ccd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ae38-dd57-6385-39fa" name="Captain Ferren Areios" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rites of Battle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="35c1-fc74-e3ad-5814">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ULTRAMARINES units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unrelenting and Uncompromising" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="f8b7-8f67-b99a-9924">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Any friendly ULTRAMARINE LIGHT unit in 6&quot; of any unit with this ability may ignore any or all modifiers to their Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="07f7-d0d0-fd13-9207" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c260-07f8-b9f3-8f90" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="cc7f-f1b3-3318-9a8b" name="Faction: Ultramarines" hidden="false" targetId="0f44-4bfd-acaf-7de9" primary="false"/>
+        <categoryLink id="290d-e9f9-3934-8c93" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="94b2-8a33-6dd4-927e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ba12-d51f-d598-8387" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink targetId="7151-56f9-0163-eadc" id="3d3c-d2a5-bd7e-1173" primary="false" name="Captain"/>
+        <categoryLink targetId="c5b0-49ad-767e-0959" id="62d2-5209-5279-58e0" primary="false" name="Ferren Areios"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="60d6-cda8-482b-475d" name="Relic Thunder Hammer " hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5293-e990-1cec-3719" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40d4-192d-89b8-c3f3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0305-55c5-74db-2655" name="Relic Thunder Hammer " hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="28c7-c7be-502f-2d39" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wardens of Ultramar" hidden="false" id="a7ce-0d15-70c8-638f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ef7-bddb-5a9c-223a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="4dce-8d39-8724-e51a" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Wardens of Ultramar (6 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="baf7-bf5c-7b52-8986">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Second Company Banner" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4385-c04a-040b-4b8c">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly ULTRAMARINES units are automatically passed whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strategium Command" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="323d-8fa2-b01e-fbde">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="9891-5cd2-b195-0e5c" id="489f-d599-f465-61ee" primary="false" name="Wardens of Ultramar"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="2805-5f91-aeec-1c5c" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="6268-f517-c933-bf19" id="5961-0d89-ce55-e8a5" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0f44-4bfd-acaf-7de9" id="58cc-73dd-c476-c8fd" primary="false" name="Faction: Ultramarines"/>
+        <categoryLink targetId="7eb1-73ba-2de4-ca9b" id="b6b6-c135-fb3a-ffe7" primary="false" name="Light"/>
+        <categoryLink targetId="2d6e-c03a-7a58-74ce" id="76ba-2890-bc2f-0f5f" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1893-936e-28c6-0659" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Wardens Ranged Weapons" hidden="false" id="f5b6-c740-16da-a289">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c19-6a48-f98c-824a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c33c-3eb1-c81c-8cd8" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Wardens Ranged Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c837-e18e-d146-2470">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wardens Melee Weapons" hidden="false" id="14bc-a1a7-ca1f-5faa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fe6-b772-7f6c-68c3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbbc-9cf6-95f0-b7ef" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Wardens Melee Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="4d79-a16b-8490-ef64">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
