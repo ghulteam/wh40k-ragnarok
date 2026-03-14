@@ -6112,6 +6112,19 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tactical Retreat" hidden="false" id="99dc-4ef6-1b2b-0d7c">
+      <profiles>
+        <profile name="Tactical Retreat" typeId="6d25-270e-1ac7-b643" typeName="Command Asset" hidden="false" id="5ca6-92b1-f118-d4ef">
+          <characteristics>
+            <characteristic name="Faction" typeId="d491-2248-b56e-766c">Apocalypse</characteristic>
+            <characteristic name="When" typeId="9ca2-3073-58b5-17c3">When you select a Detachment from your army to carry our an order, before any units in that Detachment make an action (excluding free actions) this phase</characteristic>
+            <characteristic name="Target" typeId="8d85-aa38-a6ef-9a52">A unit in that Detachment</characteristic>
+            <characteristic name="Effect" typeId="89e3-f069-261b-3ca4">Until the end of the phase, that unit canFall Back and still make Shoot or Fight actions</characteristic>
+            <characteristic name="Cost" typeId="b43c-e245-fbda-1620">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Core Command Assets" id="ff11-d752-38c8-3c16" hidden="false">
@@ -7136,6 +7149,11 @@ If the unit had Damage Markers next to it, split them equally between the newly 
         <entryLink import="true" name="Glory Of The Charge" hidden="false" id="8cbf-440c-60e0-ae81" type="selectionEntry" targetId="943a-3b54-46b4-50b5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e462-4e12-bdc5-07d9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Tactical Retreat" hidden="false" id="82fa-73a8-accd-0827" type="selectionEntry" targetId="99dc-4ef6-1b2b-0d7c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2998-94d6-b18c-3fe3" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
