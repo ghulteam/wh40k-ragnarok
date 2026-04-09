@@ -6668,29 +6668,15 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8307-d177-9204-b926" type="max"/>
               </constraints>
             </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Melee Weapon" hidden="false" id="e84c-a5a3-1b78-6a83">
-              <profiles>
-                <profile name="Heavy Melee Weapon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="210f-563a-02f2-36d1">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
-              </costs>
+            <entryLink import="true" name="Heavy Melee Weapons" hidden="false" id="010c-0838-d5fd-c166" type="selectionEntry" targetId="b50e-65db-6663-8c07">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1585-a876-fb8a-70b4"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="52be-deea-53b1-eacd" includeChildSelections="false"/>
               </constraints>
-            </selectionEntry>
-          </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -7152,7 +7138,7 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="25"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3279-bda4-def4-d18d" name="15 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -7171,6 +7157,55 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
               </profiles>
               <costs>
                 <cost name="PL" typeId="1466-da3f-0d27-dace" value="36"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Special Weapons" id="16cb-55a7-d849-f684" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Melee Weapons" hidden="false" id="dba6-ef91-0200-b7e9" type="selectionEntry" targetId="b50e-65db-6663-8c07">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8985-408e-94f7-3908" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="1466-da3f-0d27-dace"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69f4-0e42-25b8-52e4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="69f4-0e42-25b8-52e4">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="8f1f-9eb1-3dc1-232b" shared="true" childName="10 models"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="69f4-0e42-25b8-52e4">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="3279-bda4-def4-d18d" shared="true" childName="15 models"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Weapons" hidden="false" id="4267-dbde-fbdf-3e61">
+              <profiles>
+                <profile name="Special Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5d5c-76d5-3c47-1f97">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4e13-cf1c-bfa0-a645" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="1"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8771,6 +8806,20 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="76"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Melee Weapons" hidden="false" id="b50e-65db-6663-8c07">
+      <profiles>
+        <profile name="Heavy Melee Weapon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="41db-712c-7771-84e7">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

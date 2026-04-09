@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="38" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d57e-a883-a693-4aa3" name="Imperium - Adeptus Mechanicus" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -7402,14 +7402,7 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
         <categoryLink targetId="3d69-6d95-89e8-5a92" id="52cb-6aec-3d11-354c" primary="false" name="Archmagos Terminus"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Omnissian Axe" hidden="false" id="398b-b6a5-aa70-95d3" collective="false" targetId="8014-0efb-0c5a-40d5" type="selectionEntry"/>
         <entryLink import="true" name="Commander" hidden="false" id="212d-dce3-a5c3-aca6" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink import="true" name="Conversion Beamer" hidden="false" id="bf64-5ee3-0afe-4b88" type="selectionEntry" targetId="efc5-37e1-d242-48b7">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e4-2a95-78ba-05c6" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1db-61c9-7064-a330" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="20"/>
@@ -7417,6 +7410,47 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="006e-09c1-024f-c23b" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Conversion Resonator" hidden="false" id="0c78-b24c-45f4-e1f2">
+          <profiles>
+            <profile name="Conversion Resonator" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8ca5-ddd5-e56a-576b">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7ab-85f6-4a91-687e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4382-be3e-a82c-1864" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Destroyer" id="8f4d-b970-9d89-4cb1" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rod of the War Forge" hidden="false" id="89be-8e51-df65-2b41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9146-9ffa-f8db-cf5a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="913d-ab66-80ca-0e7b" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Rod of the War Forge" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="c9b1-4206-6f85-4412">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="f1c4-0505-96af-af00" name="Hastarii Exterminators" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -7438,17 +7472,14 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
             <profile id="2cfa-bad1-ad53-8cb4" name="Eradication Casters" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="7957-f36d-12ab-59cf" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
@@ -7474,6 +7505,24 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hastarii Arc blaster " hidden="false" id="d521-8c64-4d00-3a1a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ae4-ad89-c3dc-fc91" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b63d-2274-7226-b0a0" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hastarii Arc blaster " typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5a38-4a56-b78c-65d2">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="9019-6110-7005-51a2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -7492,13 +7541,13 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
               <profiles>
                 <profile name="Hastarii Exterminators (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2526-4463-9597-a699">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7512,11 +7561,11 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
                   <characteristics>
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7548,17 +7597,14 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
             <profile id="18ea-715b-ca81-1644" name="Neutron Fusils" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="ba44-74f1-2010-f0a2" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-          </infoLinks>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
@@ -7584,6 +7630,24 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hastarii phosphor blasters" hidden="false" id="5d5a-a87a-79c3-b232">
+          <profiles>
+            <profile name="Hastarii phosphor blasters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2610-9477-a051-94e9">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe36-77e1-f6bc-9079" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cad-2edb-4795-3b6a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="0635-9323-02e4-26a7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -7602,13 +7666,13 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
               <profiles>
                 <profile name="Hastarii Fusiliers (5 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="2a00-9e29-8368-9546">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7620,13 +7684,13 @@ It may also carry up to three BATTLE-AUTOMATA - each BATTLE-AUTOMATA takes up th
               <profiles>
                 <profile name="Hastarii Fusiliers (10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="54ac-80c8-9cd0-0ee2">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
