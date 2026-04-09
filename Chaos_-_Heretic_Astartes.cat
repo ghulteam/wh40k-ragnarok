@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="39" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b90a-4197-3cca-014d" name="Chaos - Heretic Astartes" revision="40" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
     <categoryEntry id="7376-c767-9f11-f392" name="Lord Arkos" hidden="false"/>
@@ -1123,6 +1123,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Huron Blackheart with Masters of the Maelstrom" hidden="false" id="665d-43d2-2d99-7177" type="selectionEntry" targetId="976f-2461-0a8e-d2f5"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4cdf-0f1f-0d39-5750" name="Zhufor the Impaler" hidden="false" collective="false" import="true" type="unit">
@@ -1687,7 +1688,7 @@ This model can also Transport up to 1 RHINO model (this model – and any models
     </selectionEntry>
     <selectionEntry id="98af-f691-a660-7501" name="Huron Blackheart" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c49-7d5d-9fbb-673c" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c49-7d5d-9fbb-673c" type="max"/>
       </constraints>
       <profiles>
         <profile id="8322-5249-8603-5a6c" name="Huron Blackheart" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -1764,6 +1765,13 @@ This model can also Transport up to 1 RHINO model (this model – and any models
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="1c49-7d5d-9fbb-673c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="976f-2461-0a8e-d2f5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Huron Blackheart with Masters of the Maelstrom"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5a68-84e4-6544-0681" name="Chosen" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -2433,11 +2441,6 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly IRON WARRIORS units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Iron Mantle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="5057-6527-862a-2984">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Small blast markers must be removed before large blast markers.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" id="e5fd-bbb1-169b-1a20" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
@@ -2481,11 +2484,28 @@ This model can also Transport up to 1 RHINO model (this model – and any models
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Baleflamer" hidden="false" id="fb4e-aa31-56db-fa33">
+          <profiles>
+            <profile name="Baleflamer" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1453-2213-253e-be11">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Inferno" id="886d-6d08-1100-41ab" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry id="976f-2461-0a8e-d2f5" name="Huron Blackheart with Masters of the Maelstrom" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc17-74cb-1c56-2a23" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc17-74cb-1c56-2a23" type="max"/>
       </constraints>
       <profiles>
         <profile id="4267-026d-73ba-dc3a" name="Huron Blackheart with Masters of the Maelstrom" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -2507,6 +2527,16 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <profile id="44a4-0840-26ea-1f14" name="Lord of the Red Corsairs" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly RED CORSAIR units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Choice Samples" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="0b9c-906f-0c75-980e">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly RED CORSAIR LIGHT unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that LIGHT unit. Only one attempt to heal each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fleet Command" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="3549-2175-8f80-ccff">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When setting up this unit’s Detachment, you can choose three RED CORSAIRS INFANTRY units in that Detachment. Those units have the Deep Strike ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2587,8 +2617,15 @@ This model can also Transport up to 1 RHINO model (this model – and any models
         <entryLink id="2b96-5962-ce7f-eed8" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="26"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="dc17-74cb-1c56-2a23">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="98af-f691-a660-7501" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Huron Blackheart"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

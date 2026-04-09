@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="57" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="df5c-f15d-f672-a301" name="Library - Chaos Space Marines" revision="58" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
       <characteristicTypes>
@@ -4382,6 +4382,22 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             <entryLink id="381b-e2de-7a59-8647" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
             <entryLink id="70a2-140c-aa53-f80a" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Missile Launcher" hidden="false" id="977a-1075-c286-bda2">
+              <profiles>
+                <profile name="Heavy Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8b0a-202f-ef0b-8184">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="51a3-0508-ffdf-a471" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a6d-c00d-04bf-4eb9">
           <constraints>
@@ -4409,16 +4425,81 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
           </selectionEntries>
           <entryLinks>
             <entryLink id="6a6d-c00d-04bf-4eb9" name="Twin Heavy Flamer" hidden="false" collective="false" import="true" targetId="ef0f-d8ec-5be7-d039" type="selectionEntry"/>
+            <entryLink import="true" name="Reaper Autocannon" hidden="false" id="169f-7b97-a1fb-36c4" collective="false" targetId="4335-f054-c6ae-0368" type="selectionEntry"/>
+            <entryLink import="true" name="Twin Lascannon" hidden="false" id="4908-51ed-62b6-73e0" type="selectionEntry" targetId="ca25-e5ce-34c4-ec69"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Main cannon" id="edf1-7cb2-8884-a6f2" hidden="false" defaultSelectionEntryId="a160-d39e-6416-cfc3">
+          <entryLinks>
+            <entryLink import="true" name="Battle Cannon" hidden="false" id="a160-d39e-6416-cfc3" collective="false" targetId="c421-b72d-bf12-38b0" type="selectionEntry"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aef-9302-743c-0de4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cef-a1b0-f717-562c" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ectoplasma destructor" hidden="false" id="6381-95e3-64ce-4f04">
+              <profiles>
+                <profile name="Ectoplasma destructor" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8cf6-0c42-eacc-1402">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Supercharge" id="da1e-89ae-ce13-f2d5" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Extra Weapons" id="1ecd-0848-c9ef-2474" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81df-9258-9917-3d7f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two magma cutters" hidden="false" id="f49a-5f02-f120-f524">
+              <profiles>
+                <profile name="Two magma cutters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="817c-6791-0e47-3adf">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two excruciator cannons" hidden="false" id="1415-57ba-4d13-82ff">
+              <profiles>
+                <profile name="Two excruciator cannons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1389-91a3-3765-4bd2">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a160-d39e-6416-cfc3" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d7e-0f1d-4f39-526c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc75-81a2-90e4-ffa3" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="49cf-70b3-3b87-be24" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -6620,13 +6701,6 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
       </costs>
     </selectionEntry>
     <selectionEntry id="07ea-c7a7-cb54-9308" name="Mutilators" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile name="Death Frenzy" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="815f-7615-1185-176b">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll one D6 for each blast marker next to this unit; if any of those dice results are a 6, you can make one Fight action with this unit.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="89d3-7973-b562-5020" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
@@ -6650,9 +6724,9 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -6675,18 +6749,18 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
               <profiles>
                 <profile name="Mutilators (1 model)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0c15-abc5-5db9-c058">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="14"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0553-e439-da52-7bae" includeChildSelections="false"/>
@@ -6694,16 +6768,16 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 models" hidden="false" id="790b-bd2c-a521-4f87">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="28"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
               </costs>
               <profiles>
                 <profile name="Mutilators (2 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="72c4-da43-0938-273d">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
@@ -6715,16 +6789,16 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="3 models" hidden="false" id="fa8f-f63d-f2aa-094d">
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="42"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="27"/>
               </costs>
               <profiles>
                 <profile name="Mutilators (3 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="3e71-f1ee-0437-10f8">
                   <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
@@ -6968,14 +7042,14 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8721-2f3c-6c69-856c" name="2 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -6986,14 +7060,14 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="34"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="22"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9834-245e-d81f-d727" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
@@ -7004,14 +7078,14 @@ This model can also transport up to 2 [LEGION] CHAOS DECIMATOR or HELBRUTE model
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
                     <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="PL" typeId="1466-da3f-0d27-dace" value="50"/>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="33"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
