@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="69" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="70" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -110,6 +110,10 @@
     <categoryEntry name="Commisar-General" id="4bd0-fe2b-6823-65fe" hidden="false"/>
     <categoryEntry name="Commisar-General with Cadet Commisar Retinue" id="23d8-5f60-d327-b63e" hidden="false"/>
     <categoryEntry name="Attila" id="5ab1-4055-1799-99f7" hidden="false"/>
+    <categoryEntry name="Hippogriff AFV" id="b896-fb37-b933-1359" hidden="false"/>
+    <categoryEntry name="Centaur RSV" id="6a55-520d-9331-9e25" hidden="false"/>
+    <categoryEntry name="Commissar Graves" id="51dd-386f-34f9-47c7" hidden="false"/>
+    <categoryEntry name="Vigilance" id="41d3-95f6-50f4-b92b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -3240,6 +3244,11 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Centaur RSV" hidden="false" id="2dd1-4b0c-53d7-b6fa" type="selectionEntry" targetId="8db8-525e-aa84-608c">
+      <categoryLinks>
+        <categoryLink targetId="2a11-9193-1a80-f0c6" id="e472-e28b-562e-d93c" primary="true" name="Dedicated Transport"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -10807,6 +10816,164 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hippogriff AFV" hidden="false" id="6084-3a37-ec33-09e8">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="af91-6f20-4931-4915" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Armoured Hull" hidden="false" id="26e0-6b0f-9ad8-fe87" type="selectionEntry" targetId="8527-132b-ede1-be54"/>
+        <entryLink import="true" name="Heavy Stubber" hidden="false" id="c3f5-3d15-9b62-b415" type="selectionEntry" targetId="1896-0c3b-29df-97e4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1631-7ca0-39f9-6306" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e58-18e9-e7a2-7c2d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Hippogriff AFV" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="ff72-543b-be85-e467">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Main Weapon" id="4c89-def2-0094-c3f3" hidden="false" defaultSelectionEntryId="005f-8b75-5a19-4ca8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d579-c607-8420-6967" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b41-eadd-eeda-e458" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Vigilator Cannon" hidden="false" id="005f-8b75-5a19-4ca8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b2e-9a04-6cc2-b614" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Vigilator Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ca90-7559-c09c-08b6">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Melta Cannon" hidden="false" id="e354-d979-5379-9ea3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57c0-8141-407e-80c9" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Melta Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5f4d-5156-c81b-3e2d">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Lascannon" hidden="false" id="06c2-3677-1e4a-782d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c25-eac6-eeac-637c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy Lascannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="cfc0-b20e-1f2e-a748">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chiron Gatling Cannon" hidden="false" id="6160-c52b-e0bb-abbe">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde5-691b-5014-741a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Chiron Gatling Cannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="570d-883e-fdbd-ce0b">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Centaur RSV" hidden="false" id="8db8-525e-aa84-608c">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="0213-c1e9-e51a-e6f8" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Armoured Hull" hidden="false" id="9577-7894-0fd1-bbf7" type="selectionEntry" targetId="8527-132b-ede1-be54"/>
+        <entryLink import="true" name="Heavy Stubber" hidden="false" id="4626-2c1a-f97c-9bdb" type="selectionEntry" targetId="1896-0c3b-29df-97e4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88bf-5839-d077-3045" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d25c-c88b-a6dc-9fca" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Centaur RSV" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="568e-0cf6-d6ea-3c78">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Centaur RSV" typeId="5dca-db35-b3d1-ce65" typeName="Transport" hidden="false" id="ca03-b141-7e0a-d3ad">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly ASTRA MILITARUM INFANTRY models. Each weapons team model takes the space of 2 other INFANTRY models and each OGRYN model takes the space of 3 other INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rapid Strike Vehicle" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4b08-c4ef-a403-d97b">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While a unit with Objective Secured is embarked within this model, this model has the Objective Secured rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Open-topped" id="1bd2-f831-cf1c-39dc" hidden="false" type="profile" targetId="e66d-fc46-6a89-4318"/>
+      </infoLinks>
+      <rules>
+        <rule name="Objective Secured (Centaur)" id="ef9d-7a49-fff2-50cf" hidden="false">
+          <description>If one or more units from your army with this ability are within 6&quot; of an objective marker, and no enemy units with this ability are within 6&quot; of the same objective marker, you control that objective marker.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="12"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="6c8f-b340-a7f4-3027" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="756a-d551-9835-f22b" primary="false" name="Vehicle"/>
+        <categoryLink targetId="e30a-8f35-5fe6-534d" id="66e1-57d5-595a-b026" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="93ec-5bb0-7861-be16" id="9231-40b8-afe2-acae" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="3f9d-8310-412e-1741" id="ff0c-27d7-27e2-1616" primary="false" name="Faction: [REGIMENT]"/>
+        <categoryLink targetId="6a55-520d-9331-9e25" id="e8cd-daa7-6fef-e477" primary="false" name="Centaur RSV"/>
+        <categoryLink targetId="6f18-a45e-43de-b8b8" id="dd4e-de4c-32d2-9e6f" primary="false" name="Transport"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
