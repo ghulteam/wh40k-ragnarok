@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="32" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="33" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -558,6 +558,16 @@
         <categoryLink targetId="4ba9-66c8-d53f-061d" id="50f9-34f3-e42a-e32c" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Gargant" hidden="false" id="0b24-3d17-5b8e-ac52" type="selectionEntry" targetId="2ed6-1e64-2a02-4b65">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="b869-c47d-15b1-956b" primary="false" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Great Gargant" hidden="false" id="0d65-c511-b2e1-c78f" type="selectionEntry" targetId="0724-2556-48ed-197a">
+      <categoryLinks>
+        <categoryLink targetId="4ba9-66c8-d53f-061d" id="a707-87ce-8179-5480" primary="false" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="4177-ac6f-4aa5-c54a" name="Waaagh!" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -700,6 +710,30 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shootas, Sluggas and Choppas" hidden="false" id="9d3a-063f-28da-35e9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cfc-02db-e268-e29a" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Choppas" hidden="false" id="27c3-4dae-b98a-c875" type="selectionEntry" targetId="444a-0604-fd31-cd6f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e05-6d9d-bcbc-8467" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f5f-870a-a0b6-4020" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shootas" hidden="false" id="58cb-010b-ccf5-4f11" type="selectionEntry" targetId="81d4-c34f-6169-dd15">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff32-27bd-0d46-a440" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7a6-5014-8f92-4db7" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ebe7-d612-4149-933c" name="Special Weapon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true">
           <modifiers>
@@ -10976,6 +11010,7 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         <categoryLink id="0a20-117e-67ee-9677" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
         <categoryLink id="5fd8-32c5-4110-6ab6" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
         <categoryLink targetId="90ea-00b8-65ac-8d31" id="489c-5c1a-dabd-ab46" primary="false" name="Supa-Stompa"/>
+        <categoryLink targetId="5113-f00e-d94a-04f7" id="7f29-105b-e39a-f759" primary="false" name="Stompa"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9e7d-03f1-c57e-d89a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -11106,6 +11141,127 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
       <infoLinks>
         <infoLink name="Destroyer" id="0018-3fb3-bba7-1a9f" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0724-2556-48ed-197a" name="Great Gargant" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7e8d-63fa-bdf2-9c86" name="Gargant (Transport)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 55 friendly FLASH GITZ or [CLAN] INFANTRY models. Each MEGA ARMOUR or JUMP PACK model takes the space of 2 other INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a46-7d7f-c634-a935" name="Great Gargant" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">5</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">20</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e5e2-c551-826b-6d30" name="Gargant Rigger Krew" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair itself. If it does, roll two D6; for each 4+, remove one damage marker from this unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Powa Field (Gargant)" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="c26f-76e4-fda2-304d">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, remove one blast marker from this unit. Large blast markers must be removed before small blast markers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a14f-6093-b8f1-41db" name="Effigy" hidden="false" targetId="5aab-1ee5-6f53-88ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="32f2-98d4-d8ca-017e" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="53c2-284f-2c05-a7b3" name="Faction: [CLAN]" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink id="0b38-d276-6065-4eba" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="96d5-6118-d708-bc16" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="d2fe-a24c-1ada-f8bf" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="52ba-0109-a9a2-cbab" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink targetId="84e8-c4fd-f4fa-6b2e" id="304b-f48a-453f-38aa" primary="false" name="Gargant"/>
+        <categoryLink targetId="0f8e-c2d2-a6ce-71f4" id="5d61-cf01-a6c7-51b6" primary="false" name="Great Gargant"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ba9c-c144-606a-88c0" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="9607-af47-8585-dec0" name="Big Shoota" hidden="false" collective="false" import="true" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faae-8df6-ad05-fb0c" type="min"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fbf-4b81-fb46-6a65" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b3f6-4649-5eb3-2941" name="Skorcha" hidden="false" collective="false" import="true" targetId="350c-c6dc-abb8-2507" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fca8-07bf-95c5-5ea0" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a802-5dec-6eb6-21c0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gaze of Mork" hidden="false" id="b484-652a-2d50-0681" type="selectionEntry" targetId="6c03-06f8-5824-8dee">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb35-50cb-a102-cdcb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ff7-e25c-5647-5ec3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="248"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gargantic Bulk" hidden="false" id="66d7-c00b-8d36-f500">
+          <profiles>
+            <profile name="Gargantic Bulk" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="5f3c-6fc5-d5f8-7bc8">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f495-7bfb-122a-a197" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d02-b57d-ad7d-32c3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Kustom Weapon" id="d71d-043e-fb65-7053" hidden="false" defaultSelectionEntryId="39a2-9bfc-9d4c-c01b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b558-165d-a47f-21e8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ddb-adba-2dbb-bda8" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega-Choppa" hidden="false" id="782a-3d54-49d4-a4ce" type="selectionEntry" targetId="dd7a-d8ff-9e02-3732">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9cd-9aec-f75b-2fe0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Deth Kannon " hidden="false" id="f5be-7547-eea7-58f3" type="selectionEntry" targetId="0d06-09d2-c19f-9357"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Kustom Weapons (Arms)" id="1b18-6df0-9ac0-ead1" hidden="false" defaultSelectionEntryId="ff06-ea32-9669-9df7">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b16-11bb-aa3d-fdc9" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="103c-7b94-2c3f-90d6" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega-Choppa" hidden="false" id="36ad-aae3-981a-ae36" type="selectionEntry" targetId="dd7a-d8ff-9e02-3732">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0a72-18eb-28be-a37b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Supa-gatler" hidden="false" id="e8a4-7bfe-4443-8464" type="selectionEntry" targetId="df30-d581-9646-d09d">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8869-c54a-91dc-a46a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
