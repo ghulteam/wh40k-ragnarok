@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="70" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="fbd9-1863-d624-9a64" name="Imperium - Astra Militarum" revision="71" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -114,6 +114,7 @@
     <categoryEntry name="Centaur RSV" id="6a55-520d-9331-9e25" hidden="false"/>
     <categoryEntry name="Commissar Graves" id="51dd-386f-34f9-47c7" hidden="false"/>
     <categoryEntry name="Vigilance" id="41d3-95f6-50f4-b92b" hidden="false"/>
+    <categoryEntry name="Cadian Recon Squad" id="b99b-28eb-8250-dc99" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="3831-283a-3a5d-d7b3" name="Leman Russ Tank Commander" hidden="false" collective="false" import="true" targetId="882f-8841-6c41-a147" type="selectionEntry">
@@ -3249,6 +3250,23 @@
       <categoryLinks>
         <categoryLink targetId="2a11-9193-1a80-f0c6" id="e472-e28b-562e-d93c" primary="true" name="Dedicated Transport"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cadian Recon Squad" hidden="false" id="37ae-4423-3fcc-6efa" type="selectionEntry" targetId="3172-2a24-7c6d-71ed">
+      <categoryLinks>
+        <categoryLink targetId="4182-4f4b-94dc-40d9" id="ed52-1032-57c5-991a" primary="true" name="Troops"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6849-d47b-fede-6c3e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="25e1-e774-8d25-a2ea" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -10974,6 +10992,94 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
         <categoryLink targetId="6a55-520d-9331-9e25" id="e8cd-daa7-6fef-e477" primary="false" name="Centaur RSV"/>
         <categoryLink targetId="6f18-a45e-43de-b8b8" id="dd4e-de4c-32d2-9e6f" primary="false" name="Transport"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cadian Recon Squad" hidden="false" id="3172-2a24-7c6d-71ed" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" hidden="false" id="418b-f569-a541-45fc" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="0dcd-80f6-35ad-1529" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="bc52-b42d-bafb-c317" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="53ee-5337-16e9-e3c6" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Infantry Squad" hidden="false" id="992c-3474-a0bb-d87f" targetId="b6a1-71e3-5fe3-e661" primary="false"/>
+        <categoryLink targetId="b6a1-41e3-0fe3-e661" id="66b9-6bc8-363a-f0a6" primary="false" name="Faction: Cadian"/>
+        <categoryLink targetId="b99b-28eb-8250-dc99" id="4507-8ad4-b4d0-5dfe" primary="false" name="Cadian Recon Squad"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lasguns" hidden="false" id="9a53-013c-6e98-b0bc" collective="false" targetId="bc34-8370-d13a-bddb" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="517d-ac25-eab3-e798" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb48-fdec-cc52-e01c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="e16f-d149-bddd-b2d4" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink import="true" name="Close Combat Weapons" hidden="false" id="5a86-344e-f2bc-0765" collective="false" targetId="6ab0-15ed-d073-419f" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f952-d2dd-b001-d7fe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f96-31a7-d8ee-db28" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Recon Squad Special Weapons" hidden="false" id="c6c5-e329-34d9-0c64">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0821-8e06-d206-df52"/>
+          </constraints>
+          <profiles>
+            <profile name="Recon Squad Special Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="74e8-137b-e559-1829">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="c748-4978-ae2f-e1a8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e9a-78f2-72fb-2934" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
+          </costs>
+          <profiles>
+            <profile name="Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ccee-54d9-9f18-5cc9">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Cadian Recon Squad (9/10 models)" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="e978-28b5-a564-e070">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Stealth" id="60ac-f54a-154e-8db1" hidden="false" type="profile" targetId="b133-8e04-3e7b-9fd6"/>
+        <infoLink name="Infiltrators" id="b7ae-5c2a-4ec5-2b50" hidden="false" type="rule" targetId="f07d-6c22-ac83-604c"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

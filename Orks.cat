@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="34" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -110,6 +110,9 @@
     <categoryEntry name="Great Gargant" id="0f8e-c2d2-a6ce-71f4" hidden="false"/>
     <categoryEntry name="Supa-Stompa" id="90ea-00b8-65ac-8d31" hidden="false"/>
     <categoryEntry name="Wazdakka Gutsmek" id="fd7e-26a5-b6dc-651d" hidden="false"/>
+    <categoryEntry name="Bigboss" id="b8d6-6e07-69c4-bfd0" hidden="false"/>
+    <categoryEntry name="Wartrakk" id="aced-f1cc-d318-cbdd" hidden="false"/>
+    <categoryEntry name="Big Mek Dakkarig" id="9eaf-2f3a-943d-6e82" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
@@ -572,6 +575,16 @@
     <entryLink import="true" name="Wazdakka Gutsmek" hidden="false" id="57f0-6d8a-61f2-8f7e" type="selectionEntry" targetId="688f-5ab9-3fff-7740">
       <categoryLinks>
         <categoryLink targetId="08d9-07e5-2b35-57b0" id="8782-f3ca-0ced-c988" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bigboss" hidden="false" id="3b4f-3dff-2087-d893" type="selectionEntry" targetId="6dce-3014-f8ee-3166">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="2df9-e22d-6c9f-5ffa" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wartrakk" hidden="false" id="f43b-6b91-28d9-ea6a" type="selectionEntry" targetId="d7e9-c46f-04b6-99fc">
+      <categoryLinks>
+        <categoryLink targetId="3945-9603-5902-58c0" id="a9b2-6b4e-0238-723a" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -11247,6 +11260,11 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
               </constraints>
             </entryLink>
             <entryLink import="true" name="Deth Kannon " hidden="false" id="f5be-7547-eea7-58f3" type="selectionEntry" targetId="0d06-09d2-c19f-9357"/>
+            <entryLink import="true" name="Rippa Fist" hidden="false" id="6c3e-2176-c091-aa4f" type="selectionEntry" targetId="e3af-672f-0d0b-f561">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a9-081d-6272-0e2c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Kustom Weapons (Arms)" id="1b18-6df0-9ac0-ead1" hidden="false" defaultSelectionEntryId="ff06-ea32-9669-9df7">
@@ -11263,6 +11281,11 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
             <entryLink import="true" name="Supa-gatler" hidden="false" id="e8a4-7bfe-4443-8464" type="selectionEntry" targetId="df30-d581-9646-d09d">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8869-c54a-91dc-a46a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rippa Fist" hidden="false" id="9ec3-974c-a34c-7157" type="selectionEntry" targetId="e3af-672f-0d0b-f561">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="956c-e5f8-548b-5ba2" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11346,6 +11369,186 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ripper Fist" hidden="false" id="434a-a3bf-24b1-5842"/>
+    <selectionEntry type="upgrade" import="true" name="Soopagun" hidden="false" id="6154-a0cc-4adb-0c89">
+      <profiles>
+        <profile name="Soopagun" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="6b36-9524-a8ab-c208">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="6dce-3014-f8ee-3166" name="Bigboss" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1dde-ae8c-958b-e472" name="Bigboss" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a42d-3bff-b01a-e589" name="Boss is watching" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with melee weapons by friendly [CLAN] units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="55b5-8c58-e6da-e34e" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="c3a2-64d5-c938-fe6b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7993-1c4c-09eb-05bc" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="10ad-a1bb-d214-16f8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="72ed-59b4-caaf-d59d" name="Faction: [CLAN]" hidden="false" targetId="8694-0cc5-9ed1-bff2" primary="false"/>
+        <categoryLink targetId="b8d6-6e07-69c4-bfd0" id="dad9-8080-e1bf-6545" primary="false" name="Bigboss"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6660-f582-8635-acfa" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="f674-a5cc-7b4b-7719" name="Boss Weapons" hidden="false" collective="false" import="true" targetId="4ccb-2eae-0a99-c726" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b66-d22b-70ff-a48a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48f-c740-ee62-ab01" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wartrakk" hidden="false" id="d7e9-c46f-04b6-99fc">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="7f31-f5e2-76e3-39de" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Choppa" hidden="false" id="ba97-56c1-d1fa-0bbb" type="selectionEntry" targetId="2a26-a22f-a1a0-179b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f53-ddb0-3af9-645a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbc2-c986-db4a-1a3a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="11f6-59b2-5387-ca60" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="c3cc-19f9-1bb2-d9ba" primary="false" name="Vehicle"/>
+        <categoryLink targetId="8694-0cc5-9ed1-bff2" id="d1d3-84cf-e04e-abe1" primary="false" name="Faction: [CLAN]"/>
+        <categoryLink targetId="6e8c-3054-cdbb-4a5a" id="ec92-db32-58f4-aa2b" primary="false" name="Faction: Orks"/>
+        <categoryLink targetId="aced-f1cc-d318-cbdd" id="c3a2-a8b7-f87b-89e3" primary="false" name="Wartrakk"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Wartrakk" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="d2e9-48b1-c993-3a16">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="8f15-3a8d-a02f-e0b0" hidden="false" defaultSelectionEntryId="ace3-8087-ecdb-780d">
+          <entryLinks>
+            <entryLink import="true" name="Twin Big Shoota" hidden="false" id="46d1-03bf-27bd-0879" type="selectionEntry" targetId="4078-6d45-aad2-0fbe">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ad5-6454-4bcb-3106" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rokkitrack" hidden="false" id="ace3-8087-ecdb-780d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0dc-6594-08f5-e303" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rokkitrack" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="7e13-9736-2fef-09bc">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edae-7c4d-049b-baf5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7956-12d2-72a1-3058" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Big Mek Dakkarig" hidden="false" id="bba7-1d81-5ae9-cdf0">
+      <categoryLinks>
+        <categoryLink targetId="25c7-3353-2028-72b2" id="333a-c57c-683e-f3f6" primary="false" name="Heavy"/>
+        <categoryLink targetId="5aeb-0fa6-9427-2144" id="5390-7c45-f2fc-c244" primary="false" name="Vehicle"/>
+        <categoryLink targetId="9eaf-2f3a-943d-6e82" id="b4ad-c86e-245f-809f" primary="false" name="Big Mek Dakkarig"/>
+        <categoryLink targetId="6e8c-3054-cdbb-4a5a" id="3284-456c-114d-1e6f" primary="false" name="Faction: Orks"/>
+        <categoryLink targetId="8694-0cc5-9ed1-bff2" id="2982-ccb9-8afc-6cfb" primary="false" name="Faction: [CLAN]"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5ca1-c694-e5f6-d360" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+        <entryLink import="true" name="Rack of Rokkits" hidden="false" id="b2cb-5009-ce15-73f6" type="selectionEntry" targetId="2977-2656-16c4-356c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48b-22aa-6a1c-1da9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2bf-171b-24b6-1a4c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Kustom Force Field" hidden="false" id="9971-5449-4bee-7e4d" type="selectionEntry" targetId="bc1e-dc33-22fa-e259">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a9-b76f-e81e-158c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="058f-d8d8-8db0-1907" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Big Mek Dakkarig" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="225d-c553-5f04-9882">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce"/>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"/>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77"/>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c"/>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c"/>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290"/>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blitzkannon" hidden="false" id="1586-f28a-27bb-eb75">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a8e-02a5-0298-eb37" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f3e-cffa-3838-3da9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Blitzkannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="072e-42ce-fac6-cf90">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
               </characteristics>
             </profile>
           </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="73" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="74" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -12496,6 +12496,38 @@ otherwise, place one blast marker next to it.</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="a909-906d-65b3-f634" hidden="false" defaultSelectionEntryId="82ef-822b-eea7-b47f">
+          <entryLinks>
+            <entryLink import="true" name="Melta Rifles" hidden="false" id="82ef-822b-eea7-b47f" type="selectionEntry" targetId="edb8-0192-4453-89aa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-e015-0519-2687" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62ce-351c-ba1f-718e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c53-27d9-56cb-00de" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Bolters" hidden="false" id="add4-0d60-87e9-e8cc">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e63b-2a6d-1f9d-1435" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy Bolters" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="43c3-9a5d-625a-2b30">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4d06-078e-bed2-9ced" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -12505,11 +12537,16 @@ otherwise, place one blast marker next to it.</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c07-f6fc-52e0-6fa7" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="535b-62a4-0c07-2025" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+        <entryLink id="535b-62a4-0c07-2025" name="Multi-melta" hidden="true" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
           <modifiers>
             <modifier type="increment" field="a11e-0a25-90bd-d6dc" value="1">
               <conditions>
                 <condition field="selections" scope="31c8-f07f-d8cb-71da" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b31-a076-53b7-e90b" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="31c8-f07f-d8cb-71da" childId="82ef-822b-eea7-b47f" shared="true" childName="Melta Rifles"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12519,12 +12556,6 @@ otherwise, place one blast marker next to it.</characteristic>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
-        </entryLink>
-        <entryLink import="true" name="Melta Rifles" hidden="false" id="82ef-822b-eea7-b47f" type="selectionEntry" targetId="edb8-0192-4453-89aa">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c49e-7c49-a3bf-5177" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-e015-0519-2687" includeChildSelections="false"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
