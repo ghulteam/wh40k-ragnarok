@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="35" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -585,6 +585,11 @@
     <entryLink import="true" name="Wartrakk" hidden="false" id="f43b-6b91-28d9-ea6a" type="selectionEntry" targetId="d7e9-c46f-04b6-99fc">
       <categoryLinks>
         <categoryLink targetId="3945-9603-5902-58c0" id="a9b2-6b4e-0238-723a" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Big Mek Dakkarig" hidden="false" id="0b4d-f1fe-098d-e968" type="selectionEntry" targetId="bba7-1d81-5ae9-cdf0">
+      <categoryLinks>
+        <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="06fb-5adf-5a79-e970" primary="true" name="Heavy Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -11403,7 +11408,7 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
           </characteristics>
         </profile>
-        <profile id="a42d-3bff-b01a-e589" name="Boss is watching" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+        <profile id="a42d-3bff-b01a-e589" name="Breakin’ Heads" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with melee weapons by friendly [CLAN] units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
@@ -11505,32 +11510,21 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
         <categoryLink targetId="9eaf-2f3a-943d-6e82" id="b4ad-c86e-245f-809f" primary="false" name="Big Mek Dakkarig"/>
         <categoryLink targetId="6e8c-3054-cdbb-4a5a" id="3284-456c-114d-1e6f" primary="false" name="Faction: Orks"/>
         <categoryLink targetId="8694-0cc5-9ed1-bff2" id="2982-ccb9-8afc-6cfb" primary="false" name="Faction: [CLAN]"/>
+        <categoryLink targetId="0b42-759c-baec-355a" id="a86e-bd6a-df66-a5c6" primary="false" name="Big Mek"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="5ca1-c694-e5f6-d360" type="selectionEntry" targetId="7347-5716-355f-9165"/>
-        <entryLink import="true" name="Rack of Rokkits" hidden="false" id="b2cb-5009-ce15-73f6" type="selectionEntry" targetId="2977-2656-16c4-356c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48b-22aa-6a1c-1da9" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2bf-171b-24b6-1a4c" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Kustom Force Field" hidden="false" id="9971-5449-4bee-7e4d" type="selectionEntry" targetId="bc1e-dc33-22fa-e259">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a9-b76f-e81e-158c" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="058f-d8d8-8db0-1907" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Big Mek Dakkarig" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="225d-c553-5f04-9882">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce"/>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"/>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77"/>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c"/>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c"/>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290"/>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc"/>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11543,17 +11537,72 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
           <profiles>
             <profile name="Blitzkannon" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="072e-42ce-fac6-cf90">
               <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stompy Feet" hidden="false" id="2994-17a0-ed95-64b8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daad-0c15-cce6-c56e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42a4-5336-55e4-b4b9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Stompy Feet" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f94d-3937-55cd-df07">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dakkablitz" hidden="false" id="cd71-1510-dd98-35cb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ab-9ffb-e280-5311" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5f3-cc57-68ab-83d4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Dakkablitz" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ef63-4de7-0e0f-ff30">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes an attack with its Blitzkannon that targets a LIGHT unit, add the DESTROYER ability to its Blitzkannon for that attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer" id="9236-a1f1-97ea-cda0" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rokkit Launcha" hidden="false" id="dbd2-cf68-dfa3-07e8">
+          <profiles>
+            <profile name="Rokkit Launcha" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="8824-eafd-d718-579c" publicationId="8df9-0b3e-abea-3c15">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46a5-6bae-a989-ecae" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a8-4899-1d9c-b62b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="74" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="04e4-e851-ec5e-d9e6" name="Library - Space Marines" revision="75" battleScribeVersion="2.03" authorName="ghulteam" library="true" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -4052,6 +4052,45 @@
           </profiles>
           <costs>
             <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stormfury Missile Launcher" hidden="false" id="7053-a96c-548e-ed9f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3316-6387-e498-5e8d" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d629-af74-60c4-bf75" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Stormfury Missile Launcher" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="41ee-b3a2-3088-544c">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="b9d3-d9e8-33df-c2f1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="2" field="3316-6387-e498-5e8d"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="c3f2-5ce1-a72e-97cc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="3" field="3316-6387-e498-5e8d"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="2"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12436,13 +12475,6 @@ otherwise, place one blast marker next to it.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="31c8-f07f-d8cb-71da" name="Eradicator Squad" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="e7c3-5441-86c5-1be4" name="Total Obliteration" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made with Weapons by this unit that target HEAVY or SUPER-HEAVY units.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="96dc-bfd8-c486-aab5" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
         <categoryLink id="fcb8-0d8a-3a81-0f75" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -12502,6 +12534,13 @@ otherwise, place one blast marker next to it.</characteristic>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-e015-0519-2687" includeChildSelections="false"/>
               </constraints>
+              <profiles>
+                <profile name="Total Obliteration" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="e7c3-5441-86c5-1be4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls and wound rolls for attacks made with Weapons by this unit that target HEAVY or SUPER-HEAVY units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -12524,7 +12563,15 @@ otherwise, place one blast marker next to it.</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Overlapping Detonations" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="ae5b-fc17-dbd4-507d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes an attack with its Heavy Bolters that targets a LIGHT unit, add the DESTROYER ability to its Heavy Bolters for that attack.</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Destroyer" id="e76d-1552-f78b-c573" hidden="false" type="rule" targetId="aac2-cf46-7dc3-ac07"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
