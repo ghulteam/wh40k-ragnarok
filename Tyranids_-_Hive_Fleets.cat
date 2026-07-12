@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="29" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05b8-bf2e-a136-557b" name="Tyranids - Hive Fleets" revision="30" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="a37b-2844-afcc-f4eb" name="Tyranid Hive Fleets"/>
     <publication id="5101-ac41-4666-a01a" name="Forge World Tyranids"/>
@@ -69,6 +69,9 @@
     <categoryEntry id="d289-336a-e78c-7da0" name="Neruolictor" hidden="false"/>
     <categoryEntry name="Hyperadapted Raveners" id="6f28-ddac-ce9a-54d1" hidden="false"/>
     <categoryEntry name="Ravener Prime" id="8b72-2e81-83f9-0895" hidden="false"/>
+    <categoryEntry name="Dactylis" id="1d85-e263-69d8-0ef2" hidden="false"/>
+    <categoryEntry name="Dominatrix" id="efcd-a39d-220c-ffe0" hidden="false"/>
+    <categoryEntry name="Hydraphant" id="9ed1-816d-d9d9-1312" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="ba9b-43de-53b3-415a" name="Broodlord" hidden="false" collective="false" import="true" targetId="1b06-fb81-fd21-a23e" type="selectionEntry">
@@ -2709,7 +2712,7 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
         </profile>
         <profile id="3dfd-53c8-1402-59b4" name="Toxic Miasma" publicationId="a37b-2844-afcc-f4eb" page="20" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll one D6 for each unit within 6&quot; of any enemy units with this ability; on a 6 place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D6 for each enemy unit within 6&quot; of one or more units with this ability; on a 6 place one blast marker next to the unit being rolled for.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3777,7 +3780,7 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
         </profile>
         <profile id="91d9-9863-f743-c882" name="Hypertoxic Miasma" publicationId="a37b-2844-afcc-f4eb" page="31" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll one D6 for each unit within 6&quot; of any enemy units with this ability; on a 5+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D6 for each enemy unit within 6&quot; of one or more units with this ability; on a 5+ place one blast marker next to the unit being rolled for.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4565,23 +4568,6 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="18"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9614-9cfb-820e-8d02" name="Stinger Salvo" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0bd2-c75b-388c-e39b" name="Stinger Salvo" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6e6e-fbf6-e733-6f1f" name="Hive Crone" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="c3dd-6729-4571-4399" name="Hive Crone" publicationId="a37b-2844-afcc-f4eb" page="40" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -4843,9 +4829,9 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
           </characteristics>
         </profile>
-        <profile id="57cc-c933-35cf-8a80" name="Toxic Miasma" publicationId="5101-ac41-4666-a01a" page="2" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+        <profile id="57cc-c933-35cf-8a80" name="Hypertoxic Miasma" publicationId="5101-ac41-4666-a01a" page="2" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll one D6 for each unit within 6&quot; of any enemy units with this ability; on a 5+ place one blast marker next to the unit being rolled for.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D6 for each enemy unit within 6&quot; of one or more units with this ability; on a 5+ place one blast marker next to the unit being rolled for.</characteristic>
           </characteristics>
         </profile>
         <profile id="4a2a-7e82-ae2b-8275" name="Shrouding Spores" publicationId="5101-ac41-4666-a01a" page="2" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -6722,6 +6708,253 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="11"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9c2b-8bda-e56a-2ea0" name="Dominatrix" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d200-c72a-18ef-cc40" name="Dominatrix" publicationId="5101-ac41-4666-a01a" page="8" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">24</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="c676-4413-b98b-47d4" name="Dire Bio-cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e7-bec9-0799-38d3" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247d-4b66-75f8-2d8a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f757-4eb5-9c07-5214" name="Dire Bio-cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7c6a-bd74-56e0-efc5" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ebb4-b14a-4b31-0f82" name="Lashwhip Pods" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aec-e16a-0291-986d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbce-558c-f5c8-48ae" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="820b-9da9-9a26-d130" name="Lashwhip Pods" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7772-b0a7-37cf-3433" name="Bio-plasma Torrent" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eef-482e-dd7b-adee" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb21-faac-4083-742e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f015-7361-58e2-d83b" name="Bio-plasma Torrent" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">5</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="559e-3709-fd1f-8557" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2e60-0238-00df-1795" name="Gargantuan Scything Talons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f1-b7fd-ccb4-6f57" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fdd-bd59-c89e-5020" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="628b-7a3d-3b99-e855" name="Gargantuan Scything Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1031-839b-6ff7-dbc1" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="be1d-4fef-186c-d5cb" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="340"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f60-2733-03f5-d42e" name="Hydraphant Bio-titan" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="58de-9df9-eb54-f9fa" name="Hydraphant Bio-titan" page="" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">24</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="38e1-954e-cb1c-1f86" name="Incendiary Ichor" publicationId="5101-ac41-4666-a01a" page="8" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a blast marker is placed next to this unit, if there are any enemy units in base contact with this unit, roll one D6; on a 3+ place one blast marker next to an enemy unit in base contact with this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="78a8-290d-9ab0-8578" name="Frenzied Metabolism" publicationId="5101-ac41-4666-a01a" page="8" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, you can place one blast marker next to this unit. If you do so, add 1 to wound rolls for attacks made by this unit for that action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6f4a-f049-9120-6df5" name="Hydraphant Bio-titan" publicationId="5101-ac41-4666-a01a" page="8" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 20 friendly [HIVE FLEET] GENESTEALERS, TERMAGANTS, HORMAGAUNTS, HIVE GUARD, TYRANT GUARD or TYRANID WARRIORS models. Each HIVE GUARD, TYRANT GUARD or TYRANID WARRIOR model takes up the space of 3 other models. It can also transport 1 friendly [HIVE FLEET] TYRANID PRIME or BROODLORD.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="e45b-9614-353a-b6f8" name="Dire Bio-cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5922-ef2a-7d44-d101" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b11-9512-eab5-9f8a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e6f7-9337-736d-135d" name="Dire Bio-cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="cfc9-c1d3-9719-5d94" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a45b-0b67-f022-fde0" name="Lashwhip Pods" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9487-c52d-bd82-fcad" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af82-e29a-02a1-e5c6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="469f-dcf6-eecb-c3e0" name="Lashwhip Pods" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f5ac-5b7b-ee34-9f66" name="Bio-plasma Torrent" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7023-514d-2ac5-c0a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1eb-106d-f54e-ffa4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3bda-ac6f-8af3-aad1" name="Bio-plasma Torrent" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">5</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3029-443d-8d9f-9879" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ed0a-49a5-4a44-0ce5" name="Gargantuan Scything Talons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8591-00a8-645e-d7c7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="137a-9862-335c-07e6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1d03-10cf-8924-fc8f" name="Gargantuan Scything Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d2a7-c8f5-2b0b-d277" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="083b-fdc0-7623-fb9c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="340"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="9030-9019-17ff-f0d5" name="The Will of the Hive Mind" publicationId="a37b-2844-afcc-f4eb" page="3" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -6751,7 +6984,7 @@ TYRANID HIVE FLEETS units in this Detachment automatically pass Morale tests whi
     </profile>
     <profile id="783e-cc0e-f340-23ae" name="Chitin Thorns" publicationId="a37b-2844-afcc-f4eb" page="32" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D6 for each unit within 6&quot; of any enemy units with Chitin Thorns; on a 6 place one blast marker next to the unit being rolled for.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll a D6 for each enemy unit within 6&quot; of one or more units with this ability; on a 6 place one blast marker next to the unit being rolled for.</characteristic>
       </characteristics>
     </profile>
     <profile id="5251-97f7-b0f4-c5bd" name="Monstrous Brood" publicationId="a37b-2844-afcc-f4eb" page="32" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">

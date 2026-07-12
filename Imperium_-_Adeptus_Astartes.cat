@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="59" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="42a3-5961-1e2b-18d6" name="Imperium - Adeptus Astartes" revision="60" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="fe0e-e179-5b4e-c377" name="Faction: [CHAPTER]" hidden="false"/>
@@ -103,6 +103,7 @@
     <categoryEntry name="Uriel Ventris" id="37f0-0529-7b9f-c560" hidden="false"/>
     <categoryEntry name="Ferren Areios" id="c5b0-49ad-767e-0959" hidden="false"/>
     <categoryEntry name="Wardens of Ultramar" id="9891-5cd2-b195-0e5c" hidden="false"/>
+    <categoryEntry name="Kaius Konorius" id="dd9c-7cf2-1e4e-ee52" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -3708,13 +3709,13 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="10"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d375-cc04-a448-5424" name="Chapter Champion" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d375-cc04-a448-5424" name="Kaius Konorius" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="ea85-317c-0243-3da6" name="Chapter Champion" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="ea85-317c-0243-3da6" name="Kaius Konorius" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
@@ -3730,23 +3731,23 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
       <categoryLinks>
         <categoryLink id="bf53-46c4-0546-26e2" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="31d9-81c5-f6d8-3cf0" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="e2ba-2e48-f651-535d" name="Faction: [CHAPTER]" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
         <categoryLink id="454a-0216-9d17-7197" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="53b0-1388-9db3-9e5a" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="3d6e-cffb-0f5a-b67d" name="Chapter Champion" hidden="false" targetId="afac-c197-ae51-1c5a" primary="false"/>
+        <categoryLink targetId="0f44-4bfd-acaf-7de9" id="f69e-c67a-fdd0-ad4e" primary="false" name="Faction: Ultramarines"/>
+        <categoryLink targetId="dd9c-7cf2-1e4e-ee52" id="f8d0-393e-f7ad-2d04" primary="false" name="Kaius Konorius"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f31f-4876-ff98-7f63" name="Champion&apos;s Blade" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f31f-4876-ff98-7f63" name="Severance and Rebuke" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f322-498c-d0e6-2e49" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc3a-2a27-4e5c-c211" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c224-86f8-cc8b-414d" name="Champion&apos;s Blade" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="c224-86f8-cc8b-414d" name="Severance and Rebuke" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
@@ -3759,8 +3760,26 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</characteri
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="PL" typeId="1466-da3f-0d27-dace" value="7"/>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="9"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="1079-9187-c071-a78d" type="selectionEntry" targetId="7347-5716-355f-9165"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f09c-75c6-e457-0c51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2ef7-bddb-5a9c-223a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Ultramarines"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d3d-744d-f2bb-6306" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="d7b0-d3cc-02e3-1f15" name="Honour Guard" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -7977,6 +7996,117 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </selectionEntries>
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="24"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Company Champion" hidden="false" id="5582-2614-3697-fa11" publicationId="8df9-0b3e-abea-3c15" collective="false">
+      <profiles>
+        <profile name="Company Champion" typeId="758b-2459-9a46-721a" typeName="Unit" hidden="false" id="0a5f-1f07-66b3-8723">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="12&quot;" field="606d-344a-bc3d-9dce">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="5582-2614-3697-fa11" childId="54ae-a37e-e67e-54e8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="5582-2614-3697-fa11" childId="c8b5-9ad5-d8df-45f2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="14&quot;" field="606d-344a-bc3d-9dce"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Honour or Death" id="baa5-3dd4-a90e-f272" hidden="false" targetId="5f19-998b-04a8-c710" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="5632-95db-9bfd-0c1d" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="76b6-f333-d9b2-4ef8" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink name="Faction: Imperium" hidden="false" id="5fa5-f58e-b767-4ecc" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="6093-cfdd-ab6a-01d1" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink name="Light" hidden="false" id="7f0d-f546-e72a-2ee0" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="5882-050c-4239-ade5" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink name="Company Champion" hidden="false" id="374d-2658-b252-6485" targetId="080d-1106-4107-3689" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master-crafted Weapons" hidden="false" id="cf27-65c3-dc2b-83e2" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7ab-8a66-3b93-141c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0754-ac43-d417-007f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Master-crafted Weapons" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="ccb0-ca93-642e-841c">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="a41a-6106-aa34-438a" hidden="false" collective="false" import="true" defaultSelectionEntryId="105e-ab71-fcd4-37d8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5c7-5560-aa2e-da53" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19dc-d7c9-7bb7-6bec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="*No Wargear*" hidden="false" id="fcd4-d425-8d37-f741" collective="false">
+              <categoryLinks>
+                <categoryLink name="Infantry" hidden="false" id="768c-fdab-f927-13c4" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="PL" typeId="1466-da3f-0d27-dace" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Jump Pack" hidden="false" id="c6b7-80d3-c125-d46d" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="c4cc-6685-da8c-eecb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Bike" hidden="false" id="30ff-7fd0-6696-e4d6" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c4cc-6685-da8c-eecb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="df98-dc7d-6dec-537e" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="6"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
