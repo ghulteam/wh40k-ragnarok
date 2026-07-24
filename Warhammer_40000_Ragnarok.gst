@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="32" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="f87f-1943-b699-673e" name="Warhammer 40,000: Ragnarok" revision="33" battleScribeVersion="2.03" authorName="ghulteam" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse (2019)" shortName="Apocalypse (2019)" publicationDate="2019"/>
     <publication id="83d8-e2fc-f7db-dd02" name="Warhammer 40,000: Apocalypse (2013)" shortName="Apocalypse (2013)" publicationDate="2013"/>
@@ -1146,7 +1146,7 @@
           <profiles>
             <profile id="0a04-d1d8-1d96-1278" name="09 - Martial Discipline" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="96ed-cabc-a90c-b284" typeName="Warmaster Trait">
               <characteristics>
-                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Friendly units that are within 6&quot; of this unit when they Fall Back can stiull make Shoot and/or Fight actions this phase.</characteristic>
+                <characteristic name="Description" typeId="4ad5-e76c-6781-da08">Friendly units that are within 6&quot; of this unit when they Fall Back can still make Shoot and/or Fight actions this phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>

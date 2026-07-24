@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="36" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="630d-c5c6-dc06-8996" name="Orks" revision="37" battleScribeVersion="2.03" authorName="ghulteam" library="false" gameSystemId="f87f-1943-b699-673e" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -113,6 +113,8 @@
     <categoryEntry name="Bigboss" id="b8d6-6e07-69c4-bfd0" hidden="false"/>
     <categoryEntry name="Wartrakk" id="aced-f1cc-d318-cbdd" hidden="false"/>
     <categoryEntry name="Big Mek Dakkarig" id="9eaf-2f3a-943d-6e82" hidden="false"/>
+    <categoryEntry name="Nazdreg Ug Urdgrub" id="e746-4745-9a75-4ff1" hidden="false"/>
+    <categoryEntry name="Faction: Bad Moon" id="73a4-d67e-7545-450b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
@@ -590,6 +592,11 @@
     <entryLink import="true" name="Big Mek Dakkarig" hidden="false" id="0b4d-f1fe-098d-e968" type="selectionEntry" targetId="bba7-1d81-5ae9-cdf0">
       <categoryLinks>
         <categoryLink targetId="9b66-7ce1-9e7e-58ed" id="06fb-5adf-5a79-e970" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Nazdreg Ug Urdgrub" hidden="false" id="567e-817d-d3b7-da8c" type="selectionEntry" targetId="97ad-a5d4-c1a3-3294">
+      <categoryLinks>
+        <categoryLink targetId="08d9-07e5-2b35-57b0" id="2cec-840d-e24a-b206" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10590,6 +10597,9 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
       <infoLinks>
         <infoLink name="Deep Strike" id="9395-e846-fb72-9d87" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f32-03c0-7b85-02c9" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Painboy on Warbike" hidden="false" id="f199-c814-8909-62fa" publicationId="8df9-0b3e-abea-3c15" collective="false">
       <profiles>
@@ -11603,6 +11613,129 @@ Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS un
       <costs>
         <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="97ad-a5d4-c1a3-3294" name="Nazdreg Ug Urdgrub" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="a678-9727-4f32-d98f" name="Nazdreg Ug Urdgrub" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kustom Blasta X" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="d3dc-48a0-42fd-d102">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Instead of choosing which profile this model uses for its action, it may attack with each eligible weapon profile.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Waaagh! (Bad Moon)" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="4cc7-07ee-d9e0-91bd" publicationId="8df9-0b3e-abea-3c15">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with melee weapons by friendly BAD MOON units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nazdreg&apos;s Know-wotz" typeId="f075-616f-79da-32a6" typeName="Abilities" hidden="false" id="f7c5-8258-85ee-3c83">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When setting up this unit’s Detachment, you can choose three BAD MOON INFANTRY units in that Detachment. Those units have the Deep Strike ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="360f-a981-829c-7843" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="0c2a-fc72-ac0e-8eb2" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f9e2-cace-9a42-fc29" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a236-f7c5-a81a-2241" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="e2b1-d93a-1784-2483" name="Warboss" hidden="false" targetId="b0f1-57b5-c3df-d786" primary="false"/>
+        <categoryLink targetId="73a4-d67e-7545-450b" id="502a-4429-10ba-5c1c" primary="false" name="Faction: Bad Moon"/>
+        <categoryLink targetId="e746-4745-9a75-4ff1" id="e63d-84a4-2956-d378" primary="false" name="Nazdreg Ug Urdgrub"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d0b5-afec-fe7a-5188" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="PL" typeId="1466-da3f-0d27-dace" value="13"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kustom Blasta X" hidden="false" id="d03c-044b-4318-c611">
+          <profiles>
+            <profile name="Kustom Blasta X - Gatler" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f205-4d5f-7950-c5d0">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Kustom Blasta X - Shoota" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="f7ab-cadc-971f-536c">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Kustom Blasta X - Skorcha" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="1178-50a6-51b0-773b">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Kustom Blasta X - Melee" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="2b73-ea6a-c113-fdba">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e7-d003-57a9-1ee6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4308-a6ef-1794-fde7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Inferno" id="faaa-3a98-ac25-70db" hidden="false" type="rule" targetId="f3a7-fc0c-a9e3-d382"/>
+            <infoLink name="Supercharge" id="d9fa-1fe9-032a-cb6b" hidden="false" type="rule" targetId="9988-c2ea-2f30-09c1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Moonchewa" hidden="false" id="d107-5fe5-3cb9-a4fa">
+          <profiles>
+            <profile name="Moonchewa" typeId="c9f1-094d-9681-28f3" typeName="Weapons" hidden="false" id="56f9-2451-f875-58d2">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c33-5cea-73d7-29a9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1141-c98d-f3df-7110" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2881-3553-f374-5c8c" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="ff82-8112-0302-d5a4" hidden="false" type="profile" targetId="8fc3-5045-3aa5-00ce"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
